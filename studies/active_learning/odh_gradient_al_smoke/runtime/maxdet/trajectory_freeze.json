@@ -1,0 +1,12 @@
+{
+  "method": "maxdet",
+  "rounds": {
+    "0": "6b47d2fa997890cb8de31607866472963752576ba4cb73b920b8a5ffe7ea0d02",
+    "1": "fd705e9b67ffe7b0fd0f8f5773e98727b977b6777fc47acad81b05b250164610",
+    "2": "37b12b2a144bf1da1bd146ca90d4c14f4c49892bd47d64202c984efa839e06e9",
+    "3": "8678bb55c27996e983cc35db26f5757157241be9280c3ba3042594c74ecca9d0"
+  },
+  "final_active_count": 452,
+  "total_selected": 96,
+  "test_truth_access_count": 0
+}

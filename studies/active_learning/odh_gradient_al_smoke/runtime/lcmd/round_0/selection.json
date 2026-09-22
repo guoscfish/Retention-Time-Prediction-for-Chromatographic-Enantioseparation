@@ -1,0 +1,267 @@
+{
+  "method": "lcmd",
+  "round": 0,
+  "L_hash": "61ef489582741364f71738834d2af8d070ef998298bbb5af017bc29954cec124",
+  "U_hash": "01412515010dd75226f14e9d984e9aa89e56339eb39d5bb2575676a9d8aa7786",
+  "selected": [
+    946,
+    232,
+    3456,
+    4112,
+    1888,
+    2952,
+    3756,
+    3893,
+    392,
+    3835,
+    1078,
+    1987,
+    4360,
+    2372,
+    11,
+    1910,
+    3687,
+    4402,
+    1835,
+    2215,
+    969,
+    2702,
+    2785,
+    3391,
+    873,
+    894,
+    4186,
+    3238,
+    5,
+    3475,
+    2505,
+    2665
+  ],
+  "selected_hash": "ddf2d68aab5c613ff158c73962eb54ac334ee3346946d8866e468f72e16661e0",
+  "trace": [
+    {
+      "selection_order": 0,
+      "pool_position": 785,
+      "selected_from_center": 162,
+      "largest_cluster_score": 56868295.96043734,
+      "nearest_center_sq_distance_before_selection": 7819854.733298756
+    },
+    {
+      "selection_order": 1,
+      "pool_position": 191,
+      "selected_from_center": 314,
+      "largest_cluster_score": 38801048.920843326,
+      "nearest_center_sq_distance_before_selection": 3564913.221388189
+    },
+    {
+      "selection_order": 2,
+      "pool_position": 2847,
+      "selected_from_center": 314,
+      "largest_cluster_score": 31736166.745422915,
+      "nearest_center_sq_distance_before_selection": 3484214.6328895744
+    },
+    {
+      "selection_order": 3,
+      "pool_position": 3398,
+      "selected_from_center": 314,
+      "largest_cluster_score": 28251952.11253334,
+      "nearest_center_sq_distance_before_selection": 2867764.787715031
+    },
+    {
+      "selection_order": 4,
+      "pool_position": 1565,
+      "selected_from_center": 314,
+      "largest_cluster_score": 25384187.324818306,
+      "nearest_center_sq_distance_before_selection": 2639454.7312739994
+    },
+    {
+      "selection_order": 5,
+      "pool_position": 2438,
+      "selected_from_center": 65,
+      "largest_cluster_score": 23580095.36642239,
+      "nearest_center_sq_distance_before_selection": 2195508.470086882
+    },
+    {
+      "selection_order": 6,
+      "pool_position": 3095,
+      "selected_from_center": 44,
+      "largest_cluster_score": 21689168.647612296,
+      "nearest_center_sq_distance_before_selection": 1569823.918160716
+    },
+    {
+      "selection_order": 7,
+      "pool_position": 3212,
+      "selected_from_center": 134,
+      "largest_cluster_score": 19513412.698779672,
+      "nearest_center_sq_distance_before_selection": 1216767.3777733548
+    },
+    {
+      "selection_order": 8,
+      "pool_position": 324,
+      "selected_from_center": 44,
+      "largest_cluster_score": 18984773.484172598,
+      "nearest_center_sq_distance_before_selection": 1096882.8072909312
+    },
+    {
+      "selection_order": 9,
+      "pool_position": 3165,
+      "selected_from_center": 314,
+      "largest_cluster_score": 18778608.160927948,
+      "nearest_center_sq_distance_before_selection": 2459324.1532358415
+    },
+    {
+      "selection_order": 10,
+      "pool_position": 896,
+      "selected_from_center": 65,
+      "largest_cluster_score": 17949414.289264973,
+      "nearest_center_sq_distance_before_selection": 1478290.7437638412
+    },
+    {
+      "selection_order": 11,
+      "pool_position": 1646,
+      "selected_from_center": 44,
+      "largest_cluster_score": 17887890.676881667,
+      "nearest_center_sq_distance_before_selection": 968405.8371750591
+    },
+    {
+      "selection_order": 12,
+      "pool_position": 3600,
+      "selected_from_center": 162,
+      "largest_cluster_score": 17210011.022892475,
+      "nearest_center_sq_distance_before_selection": 1929447.3501182627
+    },
+    {
+      "selection_order": 13,
+      "pool_position": 1966,
+      "selected_from_center": 244,
+      "largest_cluster_score": 16436402.708343878,
+      "nearest_center_sq_distance_before_selection": 1842073.5673677437
+    },
+    {
+      "selection_order": 14,
+      "pool_position": 11,
+      "selected_from_center": 368,
+      "largest_cluster_score": 15396518.261420775,
+      "nearest_center_sq_distance_before_selection": 1391016.3778709117
+    },
+    {
+      "selection_order": 15,
+      "pool_position": 1584,
+      "selected_from_center": 292,
+      "largest_cluster_score": 15355102.76111814,
+      "nearest_center_sq_distance_before_selection": 1625926.7697674125
+    },
+    {
+      "selection_order": 16,
+      "pool_position": 3039,
+      "selected_from_center": 158,
+      "largest_cluster_score": 15266034.465791779,
+      "nearest_center_sq_distance_before_selection": 1147528.8136478583
+    },
+    {
+      "selection_order": 17,
+      "pool_position": 3635,
+      "selected_from_center": 134,
+      "largest_cluster_score": 15090542.542816069,
+      "nearest_center_sq_distance_before_selection": 1065949.7485547978
+    },
+    {
+      "selection_order": 18,
+      "pool_position": 1520,
+      "selected_from_center": 307,
+      "largest_cluster_score": 14086909.949431725,
+      "nearest_center_sq_distance_before_selection": 1077099.2248567878
+    },
+    {
+      "selection_order": 19,
+      "pool_position": 1835,
+      "selected_from_center": 79,
+      "largest_cluster_score": 13767668.17907189,
+      "nearest_center_sq_distance_before_selection": 2003434.4831852019
+    },
+    {
+      "selection_order": 20,
+      "pool_position": 804,
+      "selected_from_center": 226,
+      "largest_cluster_score": 13498254.823980037,
+      "nearest_center_sq_distance_before_selection": 1196527.8460805663
+    },
+    {
+      "selection_order": 21,
+      "pool_position": 2240,
+      "selected_from_center": 244,
+      "largest_cluster_score": 13280813.590470705,
+      "nearest_center_sq_distance_before_selection": 1738271.6293485975
+    },
+    {
+      "selection_order": 22,
+      "pool_position": 2305,
+      "selected_from_center": 158,
+      "largest_cluster_score": 13148537.80398049,
+      "nearest_center_sq_distance_before_selection": 1000417.718482316
+    },
+    {
+      "selection_order": 23,
+      "pool_position": 2796,
+      "selected_from_center": 197,
+      "largest_cluster_score": 12431499.299670443,
+      "nearest_center_sq_distance_before_selection": 1563633.2750233477
+    },
+    {
+      "selection_order": 24,
+      "pool_position": 723,
+      "selected_from_center": 65,
+      "largest_cluster_score": 12417186.474073857,
+      "nearest_center_sq_distance_before_selection": 1058435.863314706
+    },
+    {
+      "selection_order": 25,
+      "pool_position": 742,
+      "selected_from_center": 226,
+      "largest_cluster_score": 12301726.97789947,
+      "nearest_center_sq_distance_before_selection": 1191947.2858979814
+    },
+    {
+      "selection_order": 26,
+      "pool_position": 3451,
+      "selected_from_center": 314,
+      "largest_cluster_score": 12294718.386458246,
+      "nearest_center_sq_distance_before_selection": 2221667.1697748844
+    },
+    {
+      "selection_order": 27,
+      "pool_position": 2669,
+      "selected_from_center": 44,
+      "largest_cluster_score": 12217710.286470363,
+      "nearest_center_sq_distance_before_selection": 947038.1466033072
+    },
+    {
+      "selection_order": 28,
+      "pool_position": 5,
+      "selected_from_center": 292,
+      "largest_cluster_score": 12200411.882106924,
+      "nearest_center_sq_distance_before_selection": 1396805.3142125765
+    },
+    {
+      "selection_order": 29,
+      "pool_position": 2862,
+      "selected_from_center": 158,
+      "largest_cluster_score": 12148120.085498175,
+      "nearest_center_sq_distance_before_selection": 984970.5766580747
+    },
+    {
+      "selection_order": 30,
+      "pool_position": 2076,
+      "selected_from_center": 128,
+      "largest_cluster_score": 12014469.106612386,
+      "nearest_center_sq_distance_before_selection": 1033531.3061079476
+    },
+    {
+      "selection_order": 31,
+      "pool_position": 2211,
+      "selected_from_center": 307,
+      "largest_cluster_score": 11973443.577362146,
+      "nearest_center_sq_distance_before_selection": 595119.2128313661
+    }
+  ]
+}

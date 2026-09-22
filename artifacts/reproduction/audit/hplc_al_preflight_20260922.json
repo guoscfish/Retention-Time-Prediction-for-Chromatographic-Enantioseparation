@@ -1,0 +1,80 @@
+{
+  "created_utc": "2026-09-22T06:16:56.905298+00:00",
+  "scope": "pre-run audit only; no model training, acquisition trajectory, or test-label evaluation",
+  "repository_commit": "34fde37f76a8899f2b5a0b6b4d36dbe6d1f2a754",
+  "companion_commit": "e28daef7f1033e8f9ddef3fafc90a72e4308e95b",
+  "companion_reference_hashes": {
+    "gradient_features.py": "ac0c2d36912efeb97eddeae3484fc601de1b5b3b94dd5e4570699b8d1c53b278",
+    "gradient_bank.py": "020ac60ba64ce22d8a51e31826f04f961c8b56baba6fe58e88fcb270c7706f05",
+    "lcmd.py": "9c0ede83a898394aa501815f7ae3641bc5f16c7c0343e75ac0a72cecf726e67d",
+    "maxdet.py": "ea8fde846afe418228e510c8e21e4e8f571aba21c188dec4f5d8dfe7bcfe7945",
+    "protocol.py": "919f7382544e1f89eeb8381ca1b53bf0a206637580c6019b966348b8fb8777d1",
+    "sequential_protocol.py": "1ed843625f9eaa808be2b093e942c14bcc7c835c3635afa1df003ae30def3063",
+    "sequential_runner.py": "571fa5ddd64c2777226fcf59fde707309852f9e91bcd073a28068eeb611545e7"
+  },
+  "split_manifest_sha256": "59c43fa95cb365e9e4f10001a29678af0bef3ea70e4ec2d6f97c32e6c47532e3",
+  "split": {
+    "eligible": 4942,
+    "counts": {
+      "train": 4447,
+      "valid": 247,
+      "test": 247
+    },
+    "role_union": 4941,
+    "unused_rounding_rows": [
+      4209
+    ],
+    "excluded_count": 30,
+    "raw_identity_count": 4972,
+    "raw_identity_union_is_0_through_4971": true,
+    "roles_disjoint": true,
+    "unused_is_separate": true
+  },
+  "environment": {
+    "numpy": "1.23.5",
+    "pytest_installed": false,
+    "numpy_trapezoid": false,
+    "numpy_trapz": true
+  },
+  "lcmd_ordinary": {
+    "selected_count": 32,
+    "unique": true,
+    "repeatable": true
+  },
+  "lcmd_duplicate_zero_distance": {
+    "known_failure_reproduced": true,
+    "error": "LCMD selected an empty largest cluster",
+    "fixture": "40 candidate rows equal to [1.0]; training centers [[0.0], [1.0]]; B=32"
+  },
+  "maxdet_direct_solve_reference": {
+    "selected_count": 32,
+    "same_selected_order": true,
+    "max_gain_absolute_error": 5.551115123125783e-16,
+    "float64": true
+  },
+  "baseline_source_hashes_match": {
+    "source_sha256": true,
+    "adapter_sha256": true,
+    "runner_sha256": true
+  },
+  "data_cache_hashes_match": {
+    "csv_sha256": true,
+    "graph_sha256": true,
+    "descriptor_sha256": true
+  },
+  "status": "REVISIONS_REQUIRED_BEFORE_PHASE_2_IMPLEMENTATION_AND_TRAINING",
+  "model_construction_probe": {
+    "torch": "2.2.2",
+    "parameter_tensors": 237,
+    "trainable_parameter_elements": 818091,
+    "batchnorm1d_modules": 20,
+    "training_started": false
+  },
+  "historical_baseline_gradient_probe": {
+    "parameter_tensors_with_non_none_gradient": 139,
+    "parameter_tensors_with_none_gradient": 98,
+    "mode": "train",
+    "source": "artifacts/reproduction/odh_baseline_20260922/smoke_checks.json",
+    "not_a_new_al_gradient_check": true
+  }
+}

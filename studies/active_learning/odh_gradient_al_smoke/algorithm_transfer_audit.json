@@ -1,0 +1,8 @@
+{
+  "MaxDetResult": true,
+  "_positions": true,
+  "conditional_gradient_maxdet": true,
+  "LCMD_distance_kernel_identical": true,
+  "LCMDResult_identical": true,
+  "LCMD_selection_change": "only empty-cluster masking before argmax; independent reference test passes"
+}

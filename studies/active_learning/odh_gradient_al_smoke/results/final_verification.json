@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "test_metrics_independently_recomputed": true,
+  "validation_checkpoint_scores_match": true,
+  "global_freeze_entries": 12,
+  "unique_fits": 10,
+  "fit_attempts": 10,
+  "selections": 9,
+  "unique_gradient_passes": 5,
+  "successful_test_source_reveals": 1,
+  "run_report_replay_added_fits_or_source_reveals": false,
+  "frozen_code_environment_partition_verified": true
+}

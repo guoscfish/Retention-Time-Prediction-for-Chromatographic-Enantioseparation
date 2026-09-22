@@ -1,0 +1,54 @@
+{
+  "status": "COMPLETE_TINY_DEVELOPMENT_SMOKE",
+  "phase2": "COMPLETE",
+  "phase3": "tiny development smoke",
+  "evidence": "ENGINEERING / DEVELOPMENT EVIDENCE ONLY",
+  "seeds": 1,
+  "acquisition_rounds": 3,
+  "signals": {
+    "validation": {
+      "lcmd": {
+        "aulc_relative_improvement": -0.015803294702142395,
+        "endpoint_relative_improvement": -0.04146330757721454,
+        "descriptive_direction_both_lower": false
+      },
+      "maxdet": {
+        "aulc_relative_improvement": 0.04522054182990045,
+        "endpoint_relative_improvement": 0.05619309494159367,
+        "descriptive_direction_both_lower": true
+      }
+    },
+    "test": {
+      "lcmd": {
+        "aulc_relative_improvement": 0.006094773251185283,
+        "endpoint_relative_improvement": 0.020452701547294803,
+        "descriptive_direction_both_lower": true
+      },
+      "maxdet": {
+        "aulc_relative_improvement": -0.02591001255474684,
+        "endpoint_relative_improvement": 0.02444280033748676,
+        "descriptive_direction_both_lower": false
+      }
+    }
+  },
+  "winner_claim": false,
+  "external_validation": false,
+  "recommend_next_screen": true,
+  "next_step": "Only after separate authorization: preregister a two-seed, six-round development check under unchanged three-method/training definitions; test whether the validation direction repeats. Do not claim confirmation, tune on test, or automatically expand.",
+  "automatic_expansion": false,
+  "recommendation_strength": "conditional_development_only",
+  "suggested_next_seeds": 2,
+  "suggested_next_acquisition_rounds": 6,
+  "consistent_gain_across_validation_and_test": false,
+  "critical_review": "CRITICAL_REVIEW.md",
+  "test_source_reveal_count": 1,
+  "pre_freeze_test_requests": 0,
+  "caveats": [
+    "validation/test AULC direction disagrees",
+    "weak terminal test R2",
+    "high-gradient-norm selection bias",
+    "one clamped zero-gradient candidate",
+    "historically exposed row test with chemical overlap",
+    "CC/HPLC initial-fraction denominator mismatch"
+  ]
+}

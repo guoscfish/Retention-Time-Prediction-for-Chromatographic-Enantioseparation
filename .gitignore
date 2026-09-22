@@ -1,5 +1,17 @@
+# Local environments
 .venv-reproduction/
+.conda-hplc-al/
+
+# Regenerable interpreter/tool caches and desktop noise
 __pycache__/
 *.pyc
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+screenlog.*
+
+# Large local artifacts; keep manifests and reports versioned
+studies/active_learning/odh_gradient_al_smoke/runtime/**/*.pt
+studies/active_learning/odh_gradient_al_smoke/duration_audit/**/*.pt
 artifacts/reproduction/odh_cache/
 artifacts/reproduction/**/checkpoint*.pt

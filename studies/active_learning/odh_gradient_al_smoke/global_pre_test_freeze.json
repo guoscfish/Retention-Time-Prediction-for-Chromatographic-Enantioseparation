@@ -1,0 +1,154 @@
+{
+  "status": "FROZEN_BEFORE_TEST_TRUTH",
+  "entries": {
+    "random/0": {
+      "path": "runtime/random/round_0/round.json"
+    },
+    "random/1": {
+      "path": "runtime/random/round_1/round.json"
+    },
+    "random/2": {
+      "path": "runtime/random/round_2/round.json"
+    },
+    "random/3": {
+      "path": "runtime/random/round_3/round.json"
+    },
+    "lcmd/0": {
+      "path": "runtime/lcmd/round_0/round.json"
+    },
+    "lcmd/1": {
+      "path": "runtime/lcmd/round_1/round.json"
+    },
+    "lcmd/2": {
+      "path": "runtime/lcmd/round_2/round.json"
+    },
+    "lcmd/3": {
+      "path": "runtime/lcmd/round_3/round.json"
+    },
+    "maxdet/0": {
+      "path": "runtime/maxdet/round_0/round.json"
+    },
+    "maxdet/1": {
+      "path": "runtime/maxdet/round_1/round.json"
+    },
+    "maxdet/2": {
+      "path": "runtime/maxdet/round_2/round.json"
+    },
+    "maxdet/3": {
+      "path": "runtime/maxdet/round_3/round.json"
+    }
+  },
+  "files": {
+    "protocol.json": "69e978e4ae9a69aed658a69c53163904fe78cfeed56e132be9f7397823cb9c12",
+    "splits/partition.json": "fed7fb0987019894a6519f470730fd2cd628506a238840e209fdb77b81998b32",
+    "runtime/shared_round_0/input.json": "d665359320e596a6fb8743a7f908bc4fddf569719afc536dd73c4804af00ead3",
+    "runtime/shared_round_0/attempt_000/best.pt": "8ab796eb45a69c5c914d10cd9f4aabdd188a98aeb8f4c8c7807afb935cfd893e",
+    "runtime/shared_round_0/attempt_000/training_curve.csv": "04d954ef54cddba7a08f639e681310f4200c48fb23a3a9b84944c46b323d653c",
+    "runtime/shared_round_0/attempt_000/validation_predictions.npz": "248e7b26ac9b0f405dc7a2c36ea3546d04a07ab1ad8c26ce210a78b95798f9ac",
+    "runtime/shared_round_0/fit.json": "26083af0506ecc7d21a3b56a83cba5eb655c08cd372bf101bb0ee554d8704aeb",
+    "runtime/random/round_0/predictions.npz": "dcd5042fc81bfeaf004de54ab9d6fd6d6aca03be716e0000a2df07fce7cc1cfc",
+    "runtime/random/round_0/selection.json": "6383aea14ad7483e527bbe0225696093284b09139725a44a5ab81088cf30b443",
+    "runtime/random/round_0/round.json": "7a580d0031128726c4e4af8ebbf8eb2644b7b426c42bb40ce675dfc7efb338df",
+    "runtime/random/round_1/fit/input.json": "0b39ddab6701c16684f0e70953e4b1be47cf25985d2df255692efcf3a6e81b00",
+    "runtime/random/round_1/fit/attempt_000/best.pt": "c8133be2f27bd918066bf0d39d0d5b20977b161bd6e053c9dcc9334e8f951354",
+    "runtime/random/round_1/fit/attempt_000/training_curve.csv": "c0ea52d509b986a1158b94e689e237640bdca03dcf66fe400f6c358509d0bee1",
+    "runtime/random/round_1/fit/attempt_000/validation_predictions.npz": "433c14ba54deed341cba6ded17f0f5b273b4fe1fc389b4563ee877351d640878",
+    "runtime/random/round_1/fit/fit.json": "d5902a48a8f918bffc08f8622ced8dcb82d4790f90522cb71d506f888056c89b",
+    "runtime/random/round_1/predictions.npz": "1853e5c998d6d1dd618774bdccf72d3ec640d08e4b2868d6b3147dfa2d1ff2dc",
+    "runtime/random/round_1/selection.json": "2ded6883ba971725abbc972a0716387d633360098b176e53daf8b5da0546ac1e",
+    "runtime/random/round_1/round.json": "147978785836bf5b5552a461c6fcceee6fe6656eaf63849b36d67754ddb27813",
+    "runtime/random/round_2/fit/input.json": "d2d7cfa78c79ea3a1fed1e288d401297c4757f0115e6e7252127f99111a28f64",
+    "runtime/random/round_2/fit/attempt_000/best.pt": "ca2da5dbea522076385b152271073bd4426f83573921a330d7aaa81ec72c046c",
+    "runtime/random/round_2/fit/attempt_000/training_curve.csv": "803bdef86012be3fe2b81f8df1fcc6fd44b02c781606d8ac9674d6d16851431c",
+    "runtime/random/round_2/fit/attempt_000/validation_predictions.npz": "ff43aa41a41e90922fdf5e2f01f50495aac4a7bb36248e96ea4a2b9a449f9c1e",
+    "runtime/random/round_2/fit/fit.json": "495012d7a7fb004b158ae04779c2a0f1f9fce0eb26b25bffe1db366ebf40c523",
+    "runtime/random/round_2/predictions.npz": "facedd9fdb1107d682eb607daa3b7a444254b46c19c78fe7c394a05f7d0d1190",
+    "runtime/random/round_2/selection.json": "2c44f47286e2e4737b9364711ba838fa032e4c595451eab74969d57528c07876",
+    "runtime/random/round_2/round.json": "420dd4b8fe084780322d747bcc91499605eca15628063708f366e33f613fee2d",
+    "runtime/random/round_3/fit/input.json": "1a564e41a7bc76dcfd0349f0559a3ae9a2cf01eacb0a77d68aa6fe33c15aff90",
+    "runtime/random/round_3/fit/attempt_000/best.pt": "d8555a0c6bb8af92ab0f8fef2bbf75835b1b0971e0620c7147fbd92500472f7a",
+    "runtime/random/round_3/fit/attempt_000/training_curve.csv": "09d34332f57715225a19df0f3792ed3ef780572e592759f62e4494cde77c1ecd",
+    "runtime/random/round_3/fit/attempt_000/validation_predictions.npz": "755aca601fcc5784202d04e709d36cac45578321e7ff67b80489e5579e1efc1e",
+    "runtime/random/round_3/fit/fit.json": "1ca48a1df0f1dd80a7530de420a1f7dc8491eb56636d658b600d4281fd8cb01c",
+    "runtime/random/round_3/predictions.npz": "768a44f76e5cef5bd077d91ace4cc189d89ba90a8087228778288ca04dfe8c71",
+    "runtime/random/round_3/round.json": "ff705378462a55af89bb9fe1d4fdd8037fa9232c563d52e7285b1ff943ba3ccd",
+    "runtime/lcmd/round_0/predictions.npz": "dcd5042fc81bfeaf004de54ab9d6fd6d6aca03be716e0000a2df07fce7cc1cfc",
+    "runtime/lcmd/round_0/selection.json": "affd7ee0423f53b7fd1af406809c651a395adea85ca1fb40ef113c2dfbd1a1e9",
+    "runtime/shared_round_0/gradient/input.json": "cac212ea311937b892b4a2e40d2eb74e0f4f8ff492bfe4808068df017b647100",
+    "runtime/shared_round_0/gradient/features.npz": "cec658f86fa3d0c6879112c34d9a5d8d384f9edc7a31e4352e6ba5150e7e1cae",
+    "runtime/shared_round_0/gradient/audit.json": "3eca2c7421b395301baacc6d9085378d448d8310cab249824cfc376dcdbab868",
+    "runtime/shared_round_0/gradient/complete.json": "da0ea06df5541a7fd5425cf2c4a112fadfea175df778c55e81f3602076096e8b",
+    "runtime/lcmd/round_0/round.json": "a282f4e15f843dfd128f7061a7c4084de0c873011c5a43d3e442098f275151d0",
+    "runtime/lcmd/round_1/fit/input.json": "b3fcd73b986d927f1fdfcb278baa0ec1925bd83e5241c7321127284bea4263d8",
+    "runtime/lcmd/round_1/fit/attempt_000/best.pt": "997121ccc56b0df780b8c15e0d3d49be82c9ce35cce004944270ed852f44ea36",
+    "runtime/lcmd/round_1/fit/attempt_000/training_curve.csv": "ff2ce18435ded4deaec7b0fa52f2f83d4cfd10c9994f9dc681049c852c1cd63a",
+    "runtime/lcmd/round_1/fit/attempt_000/validation_predictions.npz": "cbd8bac4d3eb511356bd5ad9a5d8a7e99201470b6765b9be12b4167e3a782d8e",
+    "runtime/lcmd/round_1/fit/fit.json": "8eec6e52a105f61726cbc4ebf21392bd3a3304db2160d29c83cd88c47b6be476",
+    "runtime/lcmd/round_1/predictions.npz": "c22edcdab67382b462e0568c397668bb3af31bbe3a3ad6ed098040c2b8b820d8",
+    "runtime/lcmd/round_1/selection.json": "3bf8aec4b86c844bf4d882e6efa74ee2d6b0c15f4065c4746c05dc821004e9c9",
+    "runtime/lcmd/round_1/gradient/input.json": "f511875a425321297aa9b8c26375a3ce2bde8b5e328dece296f15becf450ce81",
+    "runtime/lcmd/round_1/gradient/features.npz": "b056eea75c1190c6bdd255aaa816d821979433be0ac4c2dde2928029e31db60e",
+    "runtime/lcmd/round_1/gradient/audit.json": "eb162591ffe21670d7a94cdb9e13cf1c624d98302811518411ce1c7da14ab23f",
+    "runtime/lcmd/round_1/gradient/complete.json": "707213641f49d7342d1d0e36e49063bbbeb899809f28e033109e67ba43da7387",
+    "runtime/lcmd/round_1/round.json": "643d9eb17944d05d2eab278372cafc7ce14e7120e5ea65ea235623b1e3efe847",
+    "runtime/lcmd/round_2/fit/input.json": "c8ac49b6018f3b6a7fd75e384be42f167ef2a58dcc42eeae37b7b2505c2730af",
+    "runtime/lcmd/round_2/fit/attempt_000/best.pt": "6d311555f196ee144105b59f2e17932a40b26029b15c54ce53bf4bedeb4f20ae",
+    "runtime/lcmd/round_2/fit/attempt_000/training_curve.csv": "74b7dbc5929127114d22db35c77f16fe7122f574cc059bfaacf5eb4ab5cf8e3d",
+    "runtime/lcmd/round_2/fit/attempt_000/validation_predictions.npz": "4e14e27dd09e281a47384a8514e1ee9f43ced8f2b99e62f266cfc12ed0afb8be",
+    "runtime/lcmd/round_2/fit/fit.json": "0393c614a804f3910e06485feee17291ce69a5aa923b48bcff60e9b8c887b5c0",
+    "runtime/lcmd/round_2/predictions.npz": "e704468cf4d8e6bc4879e5ee256fad9195e7dba4c4c319d241db09f4c896681a",
+    "runtime/lcmd/round_2/selection.json": "63dffe7ac7e21324a989c89b0e3402de2b3aceef20a30c79c78c2739a6001d97",
+    "runtime/lcmd/round_2/gradient/input.json": "3789bbeb1ad5e7bc6486aa88061a8e772ba68bf88de6c7dd59df654fee0fe644",
+    "runtime/lcmd/round_2/gradient/features.npz": "2f72474dc70ff5f8224be1ab7eed2eb9a2f9da5be52e003748b1beffc14e8062",
+    "runtime/lcmd/round_2/gradient/audit.json": "6d0df009a37e72a188d6ef3f0091a9e5cd556d0428c6d1428dbf5be70a43c9fe",
+    "runtime/lcmd/round_2/gradient/complete.json": "6325627a5f1277d438427a11c8ef80057703012b3aef865449bced6d5621fc8f",
+    "runtime/lcmd/round_2/round.json": "1c860089944132a6d5928f61dc1228c2f29008abd67a425d216f75eb4aa6aab0",
+    "runtime/lcmd/round_3/fit/input.json": "7502e4fc2c636d48dce90527c216817689cff4dd008b5ced650c8acb2ec8f4ce",
+    "runtime/lcmd/round_3/fit/attempt_000/best.pt": "a96733a76f0040d9967c1a9e3abf42138f16f506c1d566c23796de254c72880e",
+    "runtime/lcmd/round_3/fit/attempt_000/training_curve.csv": "77910644ee35978c67e4ca3078c181958cfb762599f5a37dba002bca3f606054",
+    "runtime/lcmd/round_3/fit/attempt_000/validation_predictions.npz": "e97938dd9c7d9f752f0c200310916d6c7795a08153a172af504df78363a9e8bc",
+    "runtime/lcmd/round_3/fit/fit.json": "bd6705807acab1253cf8b295001dedf6ab68922cfda1f2e1cd7cdccc5c45c5cd",
+    "runtime/lcmd/round_3/predictions.npz": "eb377ceb8a95b2bd3b6930bc60fb97af4be4a21b636962dafd03f9a74140a820",
+    "runtime/lcmd/round_3/round.json": "b5184ab7dd472b9c0d46b07ebd7e20dd16eb47333f13c7e669fb5f18be93c67a",
+    "runtime/maxdet/round_0/predictions.npz": "dcd5042fc81bfeaf004de54ab9d6fd6d6aca03be716e0000a2df07fce7cc1cfc",
+    "runtime/maxdet/round_0/selection.json": "e613244a285771ed8a708dce9ee9a55ca312c23ada92927d6efac41933bb2d8c",
+    "runtime/maxdet/round_0/round.json": "6b47d2fa997890cb8de31607866472963752576ba4cb73b920b8a5ffe7ea0d02",
+    "runtime/maxdet/round_1/fit/input.json": "10ce4f801cd518a97ecab080b0a49d21338956f66029daac94c4bb30583b2cd0",
+    "runtime/maxdet/round_1/fit/attempt_000/best.pt": "c0b525385661d824d7f8587ec08acff50338d6ca0ba2a6140a5c09ec783d4a29",
+    "runtime/maxdet/round_1/fit/attempt_000/training_curve.csv": "60cf93b9e078564e84e59e33f1a69a50041e4f9bfb1ab13786598a64cb29b13e",
+    "runtime/maxdet/round_1/fit/attempt_000/validation_predictions.npz": "f7e26809a21752efdd48d26970edf4ba4a7b0f7f1fcf6a0b7ae7e98f97c8bded",
+    "runtime/maxdet/round_1/fit/fit.json": "43f927e0e703e4877efdd05ae4434f1c2abde0cdb457ea7da8ccfd5fa5664754",
+    "runtime/maxdet/round_1/predictions.npz": "236e7df2d9c079e2c4d42847e98ea5f438bdabe528693c3eb034793c910358da",
+    "runtime/maxdet/round_1/selection.json": "803d1a7e30151efec808051295102158ada6056e1df6c56783063a04894006bf",
+    "runtime/maxdet/round_1/gradient/input.json": "08ec6d3c9417eae2608d2facd7a8889dccceaa29102c5c63ef4f04243d850b28",
+    "runtime/maxdet/round_1/gradient/features.npz": "69a343617aa6d0437d8660bfe0ed2b5ae55d8a57b05415fea4dcf9eecfd6d288",
+    "runtime/maxdet/round_1/gradient/audit.json": "1bca04022b44856be68e7e8a7b6c73d798cc36b12d6eb633121e065be3a76e41",
+    "runtime/maxdet/round_1/gradient/complete.json": "4acdaf9a2e7d2ec4a6127e5ee31175c388d4ed7c3916d5fdef75c49fc2eb6f64",
+    "runtime/maxdet/round_1/round.json": "fd705e9b67ffe7b0fd0f8f5773e98727b977b6777fc47acad81b05b250164610",
+    "runtime/maxdet/round_2/fit/input.json": "71bc6b092e1114ce665ac6b47a8697d1a6dc4efa7583ba639b7d053f99502acf",
+    "runtime/maxdet/round_2/fit/attempt_000/best.pt": "f21d0a7886ab85379ed3bf7b24aa4fb4298088a14ffbe5e4b41717e7b5165337",
+    "runtime/maxdet/round_2/fit/attempt_000/training_curve.csv": "5ec960a8af53d78383692fe4f28ce0107f81f8accbf82c8fe18cb3110921c546",
+    "runtime/maxdet/round_2/fit/attempt_000/validation_predictions.npz": "aefe544c8f5ed9f57ee33b2643d253694c6fceedb61013d26c840105632ede57",
+    "runtime/maxdet/round_2/fit/fit.json": "f9cb83a69d20379e660049701a5ad60eaca6405d29f5e21885393e0320a400e0",
+    "runtime/maxdet/round_2/predictions.npz": "07706033434d1cda3fd77215cc181d4632802ba2ed94679d97b14da8461070bb",
+    "runtime/maxdet/round_2/selection.json": "47b3b3fb059506060ec20037ad915cb067772378d6d4e83c78d91a9389446784",
+    "runtime/maxdet/round_2/gradient/input.json": "ff0dda80d7092f8b0fcec8bcfd58a5460c76f0625a423707cf7e68316e2be00e",
+    "runtime/maxdet/round_2/gradient/features.npz": "34479b702456a3c7f47404a2dcd93f56cff8e8c6042afd9b73f9e90035d60385",
+    "runtime/maxdet/round_2/gradient/audit.json": "75d247ded60b1bdc6183cb19e694d3aa77af0bb3f24fe90783abad8664aa638b",
+    "runtime/maxdet/round_2/gradient/complete.json": "0e2b84ea7254b5f6787514321290875e98e295ee00845746995a2f643e3b5d9b",
+    "runtime/maxdet/round_2/round.json": "37b12b2a144bf1da1bd146ca90d4c14f4c49892bd47d64202c984efa839e06e9",
+    "runtime/maxdet/round_3/fit/input.json": "dbdba55bd7f6a6af87f23ed4ffeedc8a7db9496eeb21766e25b143b4456cba81",
+    "runtime/maxdet/round_3/fit/attempt_000/best.pt": "96d535879fb0c8fee63b3c10c59853cd121406effb10bcde90f97b1598778a91",
+    "runtime/maxdet/round_3/fit/attempt_000/training_curve.csv": "76dc6358793c454f4907e4a8199e0aa459cc049886824ba921c096b473eb94d4",
+    "runtime/maxdet/round_3/fit/attempt_000/validation_predictions.npz": "76db85731f518f8ed12b3804bb70a09f1d5d1d263b348fd388e15e4f4fc08be6",
+    "runtime/maxdet/round_3/fit/fit.json": "eb22ed8f78e47bdf6947fcff26c4d57344232b4550ea2fed6093f9864d70f505",
+    "runtime/maxdet/round_3/predictions.npz": "76f3576a4ccffb8f702d40114923459f10d52d2cf22ee18def7a90554c072b58",
+    "runtime/maxdet/round_3/round.json": "8678bb55c27996e983cc35db26f5757157241be9280c3ba3042594c74ecca9d0",
+    "runtime/random/trajectory_freeze.json": "9427f9e5a9140c2764b9c55c81d26278e1e0778434fa37570ab16b4e74a912b9",
+    "runtime/lcmd/trajectory_freeze.json": "9ffe0ea6e9410a87ca768196b2da0e208ab27290e9048671331a8d091211a9e6",
+    "runtime/maxdet/trajectory_freeze.json": "a3591e2feb3f08e2fe52015e9c9b5cd39ff9328153eb4b9357149a3976084ea6",
+    "pre_test_label_access_audit.json": "fc859dbd6baf76e1ab324b602662b8313a3af5b0149dbc4e00c3a3b46ebddb47"
+  },
+  "test_truth_access_count": 0,
+  "utc": "2026-09-22T10:11:03.794508+00:00"
+}

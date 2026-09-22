@@ -1,0 +1,24 @@
+{
+  "initialization_seed": 525,
+  "training_seed": 525,
+  "initialization_hash": "90ae1f750428ad51517cec81fe86a279dea391079d65096b74209169868df19b",
+  "checkpoint_state_hash": "d479dffdaf3e565381a7212e4a31d2495ba729a95689ea79222bbdfbe96aa519",
+  "checkpoint_path": "attempt_000/best.pt",
+  "checkpoint_hash": "96d535879fb0c8fee63b3c10c59853cd121406effb10bcde90f97b1598778a91",
+  "epochs_run": 200,
+  "best_epoch": 100,
+  "best_validation_mse": 48.549784932127864,
+  "seconds": 436.59777808299987,
+  "stopping_reason": "patience",
+  "attempted_fits": 1,
+  "abandoned_attempts": [],
+  "L_hash": "80222eea58ab0f62e3abbc1dd101189d76d3bd607ad36b8381f170337f8d345c",
+  "budget": 452,
+  "input_hash": "dbdba55bd7f6a6af87f23ed4ffeedc8a7db9496eeb21766e25b143b4456cba81",
+  "files": {
+    "input.json": "dbdba55bd7f6a6af87f23ed4ffeedc8a7db9496eeb21766e25b143b4456cba81",
+    "attempt_000/best.pt": "96d535879fb0c8fee63b3c10c59853cd121406effb10bcde90f97b1598778a91",
+    "attempt_000/training_curve.csv": "76dc6358793c454f4907e4a8199e0aa459cc049886824ba921c096b473eb94d4",
+    "attempt_000/validation_predictions.npz": "76db85731f518f8ed12b3804bb70a09f1d5d1d263b348fd388e15e4f4fc08be6"
+  }
+}

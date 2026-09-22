@@ -1,0 +1,93 @@
+{
+  "seed": 73,
+  "methods": [
+    "random",
+    "lcmd",
+    "maxdet"
+  ],
+  "acquisition_rounds": 3,
+  "batch_size": 32,
+  "budgets": [
+    356,
+    388,
+    420,
+    452
+  ],
+  "initial_labels": 356,
+  "outer_train": 4447,
+  "validation": 247,
+  "test": 247,
+  "eligible": 4942,
+  "experimental_roles": 4941,
+  "unused_rounding": [
+    4209
+  ],
+  "training": {
+    "maximum_epochs": 300,
+    "patience": 100,
+    "min_delta": 0.0,
+    "initialization_seed": 525,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "optimizer": "Adam",
+    "batch_size": 2048,
+    "shuffle": false,
+    "scheduler": false,
+    "loss": "original_q10_pinball_central_MSE_q90_pinball_order_deadtime",
+    "checkpoint": "strict_best_eval_central_validation_MSE_earlier_ties",
+    "scratch": true,
+    "wall_time_limit_seconds": null
+  },
+  "initialization_seed": 525,
+  "random_trajectory_seed": 73900220,
+  "sketch_seed": 4000110,
+  "gradient": "single-output eval-clamped central full-network CountSketch512; float64 accumulation, float32 storage",
+  "gradient_gate": {
+    "maximum_full_pool_seconds": 1200,
+    "maximum_zero_fraction": 0.05,
+    "maximum_duplicate_fraction": 0.5
+  },
+  "metric_nrmse": "RMSE / original_L0_population_std_ddof0",
+  "L0_population_std": 8.603760561288459,
+  "partial_aulc": "trapezoidal error over 356..452; mean=raw/96; lower is better",
+  "test_barrier": "all three methods x all four budgets, checkpoints, selections and predictions",
+  "evidence": "ENGINEERING / DEVELOPMENT EVIDENCE ONLY",
+  "partition_hash": "b1a0db1a185479fc3016ce941028f193af258b5b098ab2eabf6a3cb0d56f1a66",
+  "code": {
+    "src/hplc_al/__init__.py": "546dd379ca1c307747c9173e02740123f17e7d7a4bf9ff2ea1201d9fa829a6a0",
+    "src/hplc_al/acquisition.py": "737d78ce2e568c6318c094bc2b3939a0cceb7d88685e23b93f2668ba4bd71429",
+    "src/hplc_al/common.py": "3dc2f3fcab0c2ca83da4161ea1777bc90860baf06c0b5bb6744351e97c9fb579",
+    "src/hplc_al/data.py": "a8c1133b241c6255d8fb48b395bb77a39222bff24b3f0b50d0223527e609e2f6",
+    "src/hplc_al/gradient.py": "fe7a641ffe0fde4445afb4d4351bcf53a3aafe319026dc987c22a4523aa4031c",
+    "src/hplc_al/protocol.py": "67933af0dd4fbedd22d6abdf4c1156a6594890d4a505d4330040666ad97b0407",
+    "src/hplc_al/reporting.py": "66403bacdca353ea1b784b24cd56cc72a9fbbd97ab747af1fd03238beec4782e",
+    "src/hplc_al/runner.py": "398c1113c30afc0800e1b05b70b76410588ba04e5684b7e0795228c606cacd14",
+    "src/hplc_al/training.py": "352be616288cb2454e02399ef1b4e6e219d2f26aaeaeb74b780f70a35c6ce61b",
+    "src/reproduction/official.py": "38a0c5b938d461a9b3f986a78826ea256f6869f3cf77b471a892d53d644257ce",
+    "code/Single_column_prediction.py": "59b765c8bbdc0e3941dc4f5643f8a77db57675bb8ed62176d4825da6e7e766b8",
+    "code/compound_tools.py": "e9c0b25e95202bb43437ce5cf32125100815d14d0409a671347232640865ddb8",
+    "scripts/run_hplc_al_smoke.py": "7d6ec5adfc1273faf0e4b23869fa73f31a3dffd8d4834bdef43e228c8a2a03c0",
+    "tests/hplc_al/conftest.py": "d1310700ef327090c536df1a586234ecba5b397bf8df5209292eddb57c39371d",
+    "tests/hplc_al/test_acquisition_gradient.py": "b8c4e37438804964300e32fd41c18ebec10495ce663a6be71888356ecfbcbace",
+    "tests/hplc_al/test_protocol.py": "8a940355c427ee7e23c24386478561a15eb647258a441b4ba297d1ffa7b73523",
+    "tests/hplc_al/test_recovery.py": "f5afc391860dd6e76ceaf8d05ee9648d4c5da321d46eed8f13d3cd4bf4685fe3"
+  },
+  "environment": {
+    "python": "3.11.16 (main, Sep  2 2026, 23:33:55) [Clang 21.1.8 ]",
+    "executable": "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/.conda-hplc-al/bin/python",
+    "prefix": "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/.conda-hplc-al",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "cpu_threads": 4,
+    "packages": {
+      "torch": "2.2.2",
+      "numpy": "1.23.5",
+      "scipy": "1.10.1",
+      "torch-geometric": "2.5.3",
+      "rdkit": "2023.9.6",
+      "pandas": "1.5.3",
+      "pytest": "8.3.5"
+    }
+  },
+  "duration_audit_hash": "301e6fccd5431ab0b9e7f2091cff962fcb6372205fc6551fb85620d4d384ba5e",
+  "phase2_test_hash": "64df6427d68903bc24ba6e439396f20f1eb568deceb13598e41521b131bbe753"
+}

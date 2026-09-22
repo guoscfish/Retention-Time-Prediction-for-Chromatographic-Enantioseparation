@@ -1,0 +1,12 @@
+{
+  "method": "lcmd",
+  "rounds": {
+    "0": "a282f4e15f843dfd128f7061a7c4084de0c873011c5a43d3e442098f275151d0",
+    "1": "643d9eb17944d05d2eab278372cafc7ce14e7120e5ea65ea235623b1e3efe847",
+    "2": "1c860089944132a6d5928f61dc1228c2f29008abd67a425d216f75eb4aa6aab0",
+    "3": "b5184ab7dd472b9c0d46b07ebd7e20dd16eb47333f13c7e669fb5f18be93c67a"
+  },
+  "final_active_count": 452,
+  "total_selected": 96,
+  "test_truth_access_count": 0
+}

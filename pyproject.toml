@@ -1,0 +1,16 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+include = ["src/hplc_al/*.py", "tests/hplc_al/*.py", "scripts/run_hplc_al_smoke.py"]
+exclude = [".conda-hplc-al", ".venv-reproduction", "code", "application", "artifacts", "studies"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/run_hplc_al_smoke.py" = ["E402"]
+"tests/hplc_al/conftest.py" = ["E402"]

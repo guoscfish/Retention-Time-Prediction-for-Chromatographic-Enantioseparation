@@ -1,0 +1,12 @@
+{
+  "method": "random",
+  "rounds": {
+    "0": "7a580d0031128726c4e4af8ebbf8eb2644b7b426c42bb40ce675dfc7efb338df",
+    "1": "147978785836bf5b5552a461c6fcceee6fe6656eaf63849b36d67754ddb27813",
+    "2": "420dd4b8fe084780322d747bcc91499605eca15628063708f366e33f613fee2d",
+    "3": "ff705378462a55af89bb9fe1d4fdd8037fa9232c563d52e7285b1ff943ba3ccd"
+  },
+  "final_active_count": 452,
+  "total_selected": 96,
+  "test_truth_access_count": 0
+}

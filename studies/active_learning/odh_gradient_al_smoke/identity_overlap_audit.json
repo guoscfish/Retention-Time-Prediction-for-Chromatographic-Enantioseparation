@@ -1,0 +1,14 @@
+{
+  "labels_read": false,
+  "note": "Chemical identity overlap is not proof of duplicate experiments; fixed baseline split retained.",
+  "unique_canonical_isomeric_smiles_by_role": {
+    "l0": 354,
+    "u0": 3739,
+    "validation": 246,
+    "test": 247
+  },
+  "validation_rows_with_outer_train_chemical_identity": 47,
+  "validation_rows_with_L0_chemical_identity": 3,
+  "test_rows_with_outer_train_chemical_identity": 46,
+  "test_rows_with_L0_chemical_identity": 4
+}

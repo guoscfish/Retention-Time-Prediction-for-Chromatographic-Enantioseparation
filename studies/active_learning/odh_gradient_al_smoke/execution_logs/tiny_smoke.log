@@ -1,0 +1,187 @@
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0', 'epoch': 1, 'best_epoch': 1, 'validation_mse': 267.6061261382905, 'seconds': 2.506801000003179}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0', 'epoch': 25, 'best_epoch': 19, 'validation_mse': 94.57586402984991, 'seconds': 34.329765082999074}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0', 'epoch': 50, 'best_epoch': 49, 'validation_mse': 68.07280273953702, 'seconds': 67.45986945799814}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0', 'epoch': 75, 'best_epoch': 75, 'validation_mse': 63.23690738341247, 'seconds': 98.64832958300394}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0', 'epoch': 100, 'best_epoch': 75, 'validation_mse': 64.28353146156977, 'seconds': 129.1568072500013}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0', 'epoch': 125, 'best_epoch': 75, 'validation_mse': 64.05300336594449, 'seconds': 160.25213291700493}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0', 'epoch': 150, 'best_epoch': 134, 'validation_mse': 65.00833353086759, 'seconds': 192.28178058299818}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0', 'epoch': 175, 'best_epoch': 134, 'validation_mse': 65.17883642173345, 'seconds': 225.05025545800163}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0', 'epoch': 200, 'best_epoch': 134, 'validation_mse': 64.80414687532198, 'seconds': 257.98563862500305}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0', 'epoch': 225, 'best_epoch': 134, 'validation_mse': 64.8892632277799, 'seconds': 290.48559450000175}
+{'stage': 'round_frozen', 'method': 'random', 'round': 0, 'budget': 356, 'validation_rmse': 7.918731533604954}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_1/fit', 'epoch': 1, 'best_epoch': 1, 'validation_mse': 242.56610111365555, 'seconds': 1.400771458997042}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_1/fit', 'epoch': 25, 'best_epoch': 24, 'validation_mse': 82.33836839659152, 'seconds': 34.19746424999903}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_1/fit', 'epoch': 50, 'best_epoch': 43, 'validation_mse': 64.3496460861711, 'seconds': 67.16872970899567}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_1/fit', 'epoch': 75, 'best_epoch': 43, 'validation_mse': 64.50141222130277, 'seconds': 100.22058537499834}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_1/fit', 'epoch': 100, 'best_epoch': 43, 'validation_mse': 64.08478171031655, 'seconds': 133.78687887499837}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_1/fit', 'epoch': 125, 'best_epoch': 43, 'validation_mse': 63.40559558599986, 'seconds': 168.63806629199826}
+{'stage': 'round_frozen', 'method': 'random', 'round': 1, 'budget': 388, 'validation_rmse': 7.787348897625086}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_2/fit', 'epoch': 1, 'best_epoch': 1, 'validation_mse': 246.0780888979471, 'seconds': 1.3586887910059886}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_2/fit', 'epoch': 25, 'best_epoch': 23, 'validation_mse': 98.91014125409096, 'seconds': 29.828619250001793}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_2/fit', 'epoch': 50, 'best_epoch': 47, 'validation_mse': 62.91020320261099, 'seconds': 59.14935045799939}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_2/fit', 'epoch': 75, 'best_epoch': 69, 'validation_mse': 62.01989082650757, 'seconds': 89.32286254100472}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_2/fit', 'epoch': 100, 'best_epoch': 86, 'validation_mse': 58.52341678937161, 'seconds': 126.23225433300104}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_2/fit', 'epoch': 125, 'best_epoch': 86, 'validation_mse': 59.55921247088701, 'seconds': 162.0637857910042}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_2/fit', 'epoch': 150, 'best_epoch': 86, 'validation_mse': 60.736426732076964, 'seconds': 200.5420842080057}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_2/fit', 'epoch': 175, 'best_epoch': 86, 'validation_mse': 60.194727676267746, 'seconds': 235.473016791002}
+{'stage': 'round_frozen', 'method': 'random', 'round': 2, 'budget': 420, 'validation_rmse': 7.6157354202328245}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_3/fit', 'epoch': 1, 'best_epoch': 1, 'validation_mse': 239.92262894542927, 'seconds': 1.5325653330000932}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_3/fit', 'epoch': 25, 'best_epoch': 25, 'validation_mse': 71.28273171245753, 'seconds': 37.09780100000353}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_3/fit', 'epoch': 50, 'best_epoch': 46, 'validation_mse': 65.58189446781415, 'seconds': 73.95923925000534}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_3/fit', 'epoch': 75, 'best_epoch': 58, 'validation_mse': 55.56116687126105, 'seconds': 110.99176070800604}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_3/fit', 'epoch': 100, 'best_epoch': 58, 'validation_mse': 60.38060784920971, 'seconds': 147.80248566600494}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_3/fit', 'epoch': 125, 'best_epoch': 58, 'validation_mse': 64.2936372521569, 'seconds': 185.0534345000051}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/random/round_3/fit', 'epoch': 150, 'best_epoch': 58, 'validation_mse': 57.86353470239863, 'seconds': 222.85200933300075}
+{'stage': 'round_frozen', 'method': 'random', 'round': 3, 'budget': 452, 'validation_rmse': 7.382619828564854}
+{'stage': 'gradient', 'completed': 1, 'total': 4447, 'seconds': 0.020775791999767534}
+{'stage': 'gradient', 'completed': 250, 'total': 4447, 'seconds': 4.593335999998089}
+{'stage': 'gradient', 'completed': 500, 'total': 4447, 'seconds': 9.848073417000705}
+{'stage': 'gradient', 'completed': 750, 'total': 4447, 'seconds': 14.265183499999694}
+{'stage': 'gradient', 'completed': 1000, 'total': 4447, 'seconds': 18.635147583998332}
+{'stage': 'gradient', 'completed': 1250, 'total': 4447, 'seconds': 23.23381604199676}
+{'stage': 'gradient', 'completed': 1500, 'total': 4447, 'seconds': 27.77180383400264}
+{'stage': 'gradient', 'completed': 1750, 'total': 4447, 'seconds': 32.210442834002606}
+{'stage': 'gradient', 'completed': 2000, 'total': 4447, 'seconds': 36.79185729200253}
+{'stage': 'gradient', 'completed': 2250, 'total': 4447, 'seconds': 41.321672792000754}
+{'stage': 'gradient', 'completed': 2500, 'total': 4447, 'seconds': 45.895223416999215}
+{'stage': 'gradient', 'completed': 2750, 'total': 4447, 'seconds': 50.587191250000615}
+{'stage': 'gradient', 'completed': 3000, 'total': 4447, 'seconds': 55.27161991700268}
+{'stage': 'gradient', 'completed': 3250, 'total': 4447, 'seconds': 59.96647099999973}
+{'stage': 'gradient', 'completed': 3500, 'total': 4447, 'seconds': 64.54745737500343}
+{'stage': 'gradient', 'completed': 3750, 'total': 4447, 'seconds': 69.19214924999687}
+{'stage': 'gradient', 'completed': 4000, 'total': 4447, 'seconds': 73.82868749999761}
+{'stage': 'gradient', 'completed': 4250, 'total': 4447, 'seconds': 78.33909937499993}
+{'stage': 'gradient', 'completed': 4447, 'total': 4447, 'seconds': 81.89737458399759}
+{'stage': 'round_frozen', 'method': 'lcmd', 'round': 0, 'budget': 356, 'validation_rmse': 7.918731533604954}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_1/fit', 'epoch': 1, 'best_epoch': 1, 'validation_mse': 244.9719201181113, 'seconds': 1.5823596670015831}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_1/fit', 'epoch': 25, 'best_epoch': 20, 'validation_mse': 110.77336989350384, 'seconds': 34.39774341700104}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_1/fit', 'epoch': 50, 'best_epoch': 46, 'validation_mse': 78.0395155851669, 'seconds': 68.49838416700368}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_1/fit', 'epoch': 75, 'best_epoch': 59, 'validation_mse': 68.09124563329105, 'seconds': 102.88525533400389}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_1/fit', 'epoch': 100, 'best_epoch': 100, 'validation_mse': 62.99744441875572, 'seconds': 137.4914303340047}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_1/fit', 'epoch': 125, 'best_epoch': 100, 'validation_mse': 64.33223003644588, 'seconds': 171.54584516699833}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_1/fit', 'epoch': 150, 'best_epoch': 100, 'validation_mse': 64.40020322317481, 'seconds': 205.46053895899968}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_1/fit', 'epoch': 175, 'best_epoch': 100, 'validation_mse': 64.34722541206332, 'seconds': 238.91465662499832}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_1/fit', 'epoch': 200, 'best_epoch': 100, 'validation_mse': 64.57572953533747, 'seconds': 274.17833062499994}
+{'stage': 'gradient', 'completed': 1, 'total': 4447, 'seconds': 0.01962758300214773}
+{'stage': 'gradient', 'completed': 250, 'total': 4447, 'seconds': 3.8201076249970356}
+{'stage': 'gradient', 'completed': 500, 'total': 4447, 'seconds': 7.496407874998113}
+{'stage': 'gradient', 'completed': 750, 'total': 4447, 'seconds': 11.143360417001531}
+{'stage': 'gradient', 'completed': 1000, 'total': 4447, 'seconds': 14.854915417003212}
+{'stage': 'gradient', 'completed': 1250, 'total': 4447, 'seconds': 18.534918042001664}
+{'stage': 'gradient', 'completed': 1500, 'total': 4447, 'seconds': 22.14653429199825}
+{'stage': 'gradient', 'completed': 1750, 'total': 4447, 'seconds': 25.782868791997316}
+{'stage': 'gradient', 'completed': 2000, 'total': 4447, 'seconds': 29.514417541999137}
+{'stage': 'gradient', 'completed': 2250, 'total': 4447, 'seconds': 33.121889750000264}
+{'stage': 'gradient', 'completed': 2500, 'total': 4447, 'seconds': 36.93960604199674}
+{'stage': 'gradient', 'completed': 2750, 'total': 4447, 'seconds': 40.65446779200283}
+{'stage': 'gradient', 'completed': 3000, 'total': 4447, 'seconds': 44.397035957998014}
+{'stage': 'gradient', 'completed': 3250, 'total': 4447, 'seconds': 47.71759516699967}
+{'stage': 'gradient', 'completed': 3500, 'total': 4447, 'seconds': 50.89781875000335}
+{'stage': 'gradient', 'completed': 3750, 'total': 4447, 'seconds': 54.05327304200182}
+{'stage': 'gradient', 'completed': 4000, 'total': 4447, 'seconds': 57.139693416997034}
+{'stage': 'gradient', 'completed': 4250, 'total': 4447, 'seconds': 60.20428141699813}
+{'stage': 'gradient', 'completed': 4447, 'total': 4447, 'seconds': 62.708490625002014}
+{'stage': 'round_frozen', 'method': 'lcmd', 'round': 1, 'budget': 388, 'validation_rmse': 7.937092945074772}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_2/fit', 'epoch': 1, 'best_epoch': 1, 'validation_mse': 263.5901637989803, 'seconds': 0.9779869589983718}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_2/fit', 'epoch': 25, 'best_epoch': 19, 'validation_mse': 113.8026598688874, 'seconds': 21.064685167002608}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_2/fit', 'epoch': 50, 'best_epoch': 46, 'validation_mse': 65.60444123316881, 'seconds': 42.25444116700237}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_2/fit', 'epoch': 75, 'best_epoch': 68, 'validation_mse': 59.322614597391684, 'seconds': 64.45343312499608}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_2/fit', 'epoch': 100, 'best_epoch': 89, 'validation_mse': 59.124919465411736, 'seconds': 94.31621324999287}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_2/fit', 'epoch': 125, 'best_epoch': 89, 'validation_mse': 60.91042586551887, 'seconds': 125.92426995900314}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_2/fit', 'epoch': 150, 'best_epoch': 89, 'validation_mse': 59.835822031231764, 'seconds': 158.50302816699696}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_2/fit', 'epoch': 175, 'best_epoch': 89, 'validation_mse': 61.59009453395888, 'seconds': 191.01538854199316}
+{'stage': 'gradient', 'completed': 1, 'total': 4447, 'seconds': 0.016686417002347298}
+{'stage': 'gradient', 'completed': 250, 'total': 4447, 'seconds': 5.151292833004845}
+{'stage': 'gradient', 'completed': 500, 'total': 4447, 'seconds': 11.83867758300039}
+{'stage': 'gradient', 'completed': 750, 'total': 4447, 'seconds': 18.73291025000799}
+{'stage': 'gradient', 'completed': 1000, 'total': 4447, 'seconds': 24.592465708003147}
+{'stage': 'gradient', 'completed': 1250, 'total': 4447, 'seconds': 29.837145542012877}
+{'stage': 'gradient', 'completed': 1500, 'total': 4447, 'seconds': 34.746888792011305}
+{'stage': 'gradient', 'completed': 1750, 'total': 4447, 'seconds': 39.41957020800328}
+{'stage': 'gradient', 'completed': 2000, 'total': 4447, 'seconds': 44.15980904200114}
+{'stage': 'gradient', 'completed': 2250, 'total': 4447, 'seconds': 49.00889279200055}
+{'stage': 'gradient', 'completed': 2500, 'total': 4447, 'seconds': 53.99281016700843}
+{'stage': 'gradient', 'completed': 2750, 'total': 4447, 'seconds': 59.08261300000595}
+{'stage': 'gradient', 'completed': 3000, 'total': 4447, 'seconds': 64.16479775001062}
+{'stage': 'gradient', 'completed': 3250, 'total': 4447, 'seconds': 69.25159120801254}
+{'stage': 'gradient', 'completed': 3500, 'total': 4447, 'seconds': 74.15244091700879}
+{'stage': 'gradient', 'completed': 3750, 'total': 4447, 'seconds': 79.30949495801178}
+{'stage': 'gradient', 'completed': 4000, 'total': 4447, 'seconds': 84.23222716701275}
+{'stage': 'gradient', 'completed': 4250, 'total': 4447, 'seconds': 89.1945265000104}
+{'stage': 'gradient', 'completed': 4447, 'total': 4447, 'seconds': 92.80317233300593}
+{'stage': 'round_frozen', 'method': 'lcmd', 'round': 2, 'budget': 420, 'validation_rmse': 7.67726281770018}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_3/fit', 'epoch': 1, 'best_epoch': 1, 'validation_mse': 266.95664702989546, 'seconds': 1.859988500000327}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_3/fit', 'epoch': 25, 'best_epoch': 24, 'validation_mse': 92.50337546973347, 'seconds': 50.760166125008254}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_3/fit', 'epoch': 50, 'best_epoch': 43, 'validation_mse': 59.71754897215255, 'seconds': 101.46643333300017}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_3/fit', 'epoch': 75, 'best_epoch': 61, 'validation_mse': 61.59768246655067, 'seconds': 151.74494008300826}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_3/fit', 'epoch': 100, 'best_epoch': 61, 'validation_mse': 62.82064707524979, 'seconds': 202.05898029200034}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_3/fit', 'epoch': 125, 'best_epoch': 61, 'validation_mse': 63.83196981499376, 'seconds': 252.93364508300147}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_3/fit', 'epoch': 150, 'best_epoch': 61, 'validation_mse': 63.665456369952196, 'seconds': 304.0240598329983}
+{'stage': 'round_frozen', 'method': 'lcmd', 'round': 3, 'budget': 452, 'validation_rmse': 7.688727665242282}
+{'stage': 'round_frozen', 'method': 'maxdet', 'round': 0, 'budget': 356, 'validation_rmse': 7.918731533604954}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_1/fit', 'epoch': 1, 'best_epoch': 1, 'validation_mse': 255.03416118482218, 'seconds': 2.1774325000005774}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_1/fit', 'epoch': 25, 'best_epoch': 19, 'validation_mse': 131.57091552503425, 'seconds': 46.45386729200254}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_1/fit', 'epoch': 50, 'best_epoch': 50, 'validation_mse': 61.418900346840985, 'seconds': 92.53445345800719}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_1/fit', 'epoch': 75, 'best_epoch': 63, 'validation_mse': 56.54567874405771, 'seconds': 135.69505525000568}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_1/fit', 'epoch': 100, 'best_epoch': 63, 'validation_mse': 56.017696008134735, 'seconds': 178.04035237501375}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_1/fit', 'epoch': 125, 'best_epoch': 63, 'validation_mse': 57.406356380286695, 'seconds': 220.15674966700317}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_1/fit', 'epoch': 150, 'best_epoch': 63, 'validation_mse': 56.93380176142338, 'seconds': 258.08872033300577}
+{'stage': 'gradient', 'completed': 1, 'total': 4447, 'seconds': 0.02115429200057406}
+{'stage': 'gradient', 'completed': 250, 'total': 4447, 'seconds': 4.675046333999489}
+{'stage': 'gradient', 'completed': 500, 'total': 4447, 'seconds': 9.224692709001829}
+{'stage': 'gradient', 'completed': 750, 'total': 4447, 'seconds': 13.682977749995189}
+{'stage': 'gradient', 'completed': 1000, 'total': 4447, 'seconds': 18.19046054199862}
+{'stage': 'gradient', 'completed': 1250, 'total': 4447, 'seconds': 22.84840216700104}
+{'stage': 'gradient', 'completed': 1500, 'total': 4447, 'seconds': 27.45441325000138}
+{'stage': 'gradient', 'completed': 1750, 'total': 4447, 'seconds': 32.038165249992744}
+{'stage': 'gradient', 'completed': 2000, 'total': 4447, 'seconds': 36.60120766700129}
+{'stage': 'gradient', 'completed': 2250, 'total': 4447, 'seconds': 41.24576204200275}
+{'stage': 'gradient', 'completed': 2500, 'total': 4447, 'seconds': 46.03244066699699}
+{'stage': 'gradient', 'completed': 2750, 'total': 4447, 'seconds': 50.84922495899082}
+{'stage': 'gradient', 'completed': 3000, 'total': 4447, 'seconds': 55.53675554199435}
+{'stage': 'gradient', 'completed': 3250, 'total': 4447, 'seconds': 61.02330416699988}
+{'stage': 'gradient', 'completed': 3500, 'total': 4447, 'seconds': 66.66635341699293}
+{'stage': 'gradient', 'completed': 3750, 'total': 4447, 'seconds': 73.00878329199622}
+{'stage': 'gradient', 'completed': 4000, 'total': 4447, 'seconds': 79.02042324999638}
+{'stage': 'gradient', 'completed': 4250, 'total': 4447, 'seconds': 84.79018699999142}
+{'stage': 'gradient', 'completed': 4447, 'total': 4447, 'seconds': 89.42853375000414}
+{'stage': 'round_frozen', 'method': 'maxdet', 'round': 1, 'budget': 388, 'validation_rmse': 7.406472192401566}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_2/fit', 'epoch': 1, 'best_epoch': 1, 'validation_mse': 249.6981350297832, 'seconds': 2.254893417004496}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_2/fit', 'epoch': 25, 'best_epoch': 25, 'validation_mse': 70.540524357204, 'seconds': 49.70945337500598}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_2/fit', 'epoch': 50, 'best_epoch': 46, 'validation_mse': 58.65627285763038, 'seconds': 98.44701333300327}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_2/fit', 'epoch': 75, 'best_epoch': 46, 'validation_mse': 62.857060348356065, 'seconds': 147.29832112501026}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_2/fit', 'epoch': 100, 'best_epoch': 80, 'validation_mse': 53.17433808892889, 'seconds': 196.1263476669992}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_2/fit', 'epoch': 125, 'best_epoch': 120, 'validation_mse': 52.37987594815335, 'seconds': 242.57039345800877}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_2/fit', 'epoch': 150, 'best_epoch': 120, 'validation_mse': 52.256004261013004, 'seconds': 294.51922620800906}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_2/fit', 'epoch': 175, 'best_epoch': 120, 'validation_mse': 53.82362230826174, 'seconds': 344.50901454201085}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_2/fit', 'epoch': 200, 'best_epoch': 120, 'validation_mse': 53.342967725787744, 'seconds': 398.11163229199883}
+{'stage': 'gradient', 'completed': 1, 'total': 4447, 'seconds': 0.031596375003573485}
+{'stage': 'gradient', 'completed': 250, 'total': 4447, 'seconds': 6.897991541001829}
+{'stage': 'gradient', 'completed': 500, 'total': 4447, 'seconds': 13.16265591600677}
+{'stage': 'gradient', 'completed': 750, 'total': 4447, 'seconds': 19.488260124999215}
+{'stage': 'gradient', 'completed': 1000, 'total': 4447, 'seconds': 25.816001708008116}
+{'stage': 'gradient', 'completed': 1250, 'total': 4447, 'seconds': 32.29692566599988}
+{'stage': 'gradient', 'completed': 1500, 'total': 4447, 'seconds': 38.76239795800939}
+{'stage': 'gradient', 'completed': 1750, 'total': 4447, 'seconds': 45.19738741600304}
+{'stage': 'gradient', 'completed': 2000, 'total': 4447, 'seconds': 51.50387254099769}
+{'stage': 'gradient', 'completed': 2250, 'total': 4447, 'seconds': 57.78643287500017}
+{'stage': 'gradient', 'completed': 2500, 'total': 4447, 'seconds': 64.43126750001102}
+{'stage': 'gradient', 'completed': 2750, 'total': 4447, 'seconds': 71.0876893329987}
+{'stage': 'gradient', 'completed': 3000, 'total': 4447, 'seconds': 77.59275104101107}
+{'stage': 'gradient', 'completed': 3250, 'total': 4447, 'seconds': 84.17004354100209}
+{'stage': 'gradient', 'completed': 3500, 'total': 4447, 'seconds': 90.61755833300413}
+{'stage': 'gradient', 'completed': 3750, 'total': 4447, 'seconds': 97.3335730000108}
+{'stage': 'gradient', 'completed': 4000, 'total': 4447, 'seconds': 103.72197183300159}
+{'stage': 'gradient', 'completed': 4250, 'total': 4447, 'seconds': 110.15797741600545}
+{'stage': 'gradient', 'completed': 4447, 'total': 4447, 'seconds': 115.35133629100164}
+{'stage': 'round_frozen', 'method': 'maxdet', 'round': 2, 'budget': 420, 'validation_rmse': 7.1615347355597825}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_3/fit', 'epoch': 1, 'best_epoch': 1, 'validation_mse': 250.6075762792053, 'seconds': 2.3332504159916425}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_3/fit', 'epoch': 25, 'best_epoch': 20, 'validation_mse': 92.30400730752315, 'seconds': 56.30260366600123}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_3/fit', 'epoch': 50, 'best_epoch': 50, 'validation_mse': 55.077566939990746, 'seconds': 114.63233395799762}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_3/fit', 'epoch': 75, 'best_epoch': 72, 'validation_mse': 52.312960285628805, 'seconds': 172.06142895799712}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_3/fit', 'epoch': 100, 'best_epoch': 100, 'validation_mse': 48.549784932127864, 'seconds': 229.75911695799732}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_3/fit', 'epoch': 125, 'best_epoch': 100, 'validation_mse': 50.35198329979999, 'seconds': 287.38856604100147}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_3/fit', 'epoch': 150, 'best_epoch': 100, 'validation_mse': 50.54205006889392, 'seconds': 339.35700299999735}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_3/fit', 'epoch': 175, 'best_epoch': 100, 'validation_mse': 51.18910533193207, 'seconds': 387.67026800000167}
+{'stage': 'fit', 'directory': '/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_3/fit', 'epoch': 200, 'best_epoch': 100, 'validation_mse': 50.18209968370565, 'seconds': 435.8519705829967}
+{'stage': 'round_frozen', 'method': 'maxdet', 'round': 3, 'budget': 452, 'validation_rmse': 6.967767571620617}
