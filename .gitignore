@@ -1,0 +1,5 @@
+.venv-reproduction/
+__pycache__/
+*.pyc
+artifacts/reproduction/odh_cache/
+artifacts/reproduction/**/checkpoint*.pt

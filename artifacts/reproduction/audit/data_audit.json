@@ -1,0 +1,361 @@
+{
+  "AD3_charity_0823.csv": {
+    "sha256": "aae34379f13c68ad62701df1fa900872cfc1f985b038e775f1daacb01c0415fd",
+    "bytes": 58282,
+    "rows": 581,
+    "columns": [
+      "Unnamed: 0.1",
+      "Unnamed: 0",
+      "SMILES",
+      "RT",
+      "Speed",
+      "i-PrOH_proportion",
+      "Literature",
+      "Column"
+    ],
+    "unique_raw_smiles": 557,
+    "unique_canonical_isomeric": 557,
+    "unique_canonical_nonisomeric": 287,
+    "invalid_smiles_rows": [],
+    "numeric_invalid_rows": [],
+    "duplicate_full_rows": 0,
+    "duplicate_content_rows_ignoring_export_ids": 0,
+    "repeated_canonical_rows": 24,
+    "unique_literature_values": 45,
+    "literature_missing": 0,
+    "known_conformer_exclusion_rows": [],
+    "rtv_gt_60_count": 4,
+    "eligible_known_rules_count": 577,
+    "ranges": {
+      "RT": [
+        0.97,
+        95.15
+      ],
+      "Speed": [
+        0.15,
+        9.0
+      ],
+      "i-PrOH_proportion": [
+        0.0,
+        0.3
+      ]
+    }
+  },
+  "ADH_charity_0606.csv": {
+    "sha256": "5c07e0a02befd09c51ab4dbeeb2a43d34c45beeff1ea1b1eb1a4353912acafeb",
+    "bytes": 496832,
+    "rows": 5418,
+    "columns": [
+      "Unnamed: 0",
+      "SMILES",
+      "RT",
+      "Speed",
+      "i-PrOH_proportion",
+      "Literature"
+    ],
+    "unique_raw_smiles": 5135,
+    "unique_canonical_isomeric": 5134,
+    "unique_canonical_nonisomeric": 2781,
+    "invalid_smiles_rows": [],
+    "numeric_invalid_rows": [],
+    "duplicate_full_rows": 0,
+    "duplicate_content_rows_ignoring_export_ids": 35,
+    "repeated_canonical_rows": 284,
+    "unique_literature_values": 339,
+    "literature_missing": 0,
+    "known_conformer_exclusion_rows": [],
+    "rtv_gt_60_count": 25,
+    "eligible_known_rules_count": 5393,
+    "ranges": {
+      "RT": [
+        1.9,
+        411.9
+      ],
+      "Speed": [
+        0.2,
+        13.0
+      ],
+      "i-PrOH_proportion": [
+        0.0,
+        0.5
+      ]
+    }
+  },
+  "AD_charity_0823.csv": {
+    "sha256": "b6ad62ba60dc57263986fa3ccd81c7788b622d1ecacac4836c895a292930b209",
+    "bytes": 65825,
+    "rows": 637,
+    "columns": [
+      "Unnamed: 0.1",
+      "Unnamed: 0",
+      "SMILES",
+      "RT",
+      "Speed",
+      "i-PrOH_proportion",
+      "Literature",
+      "Column"
+    ],
+    "unique_raw_smiles": 625,
+    "unique_canonical_isomeric": 625,
+    "unique_canonical_nonisomeric": 315,
+    "invalid_smiles_rows": [],
+    "numeric_invalid_rows": [
+      207
+    ],
+    "duplicate_full_rows": 0,
+    "duplicate_content_rows_ignoring_export_ids": 5,
+    "repeated_canonical_rows": 12,
+    "unique_literature_values": 57,
+    "literature_missing": 0,
+    "known_conformer_exclusion_rows": [],
+    "rtv_gt_60_count": 13,
+    "eligible_known_rules_count": 623,
+    "ranges": {
+      "RT": [
+        0.0,
+        143.1
+      ],
+      "Speed": [
+        0.2,
+        1.5
+      ],
+      "i-PrOH_proportion": [
+        0.0,
+        0.3
+      ]
+    }
+  },
+  "All_column_charity.csv": {
+    "sha256": "8ab096e9d9eb9d3e4da1a679a2df565eada69344c07f29c6ccc59b542e34dcc4",
+    "bytes": 2547184,
+    "rows": 25867,
+    "columns": [
+      "Unnamed: 0",
+      "index",
+      "SMILES",
+      "RT",
+      "Speed",
+      "i-PrOH_proportion",
+      "Literature",
+      "Column"
+    ],
+    "unique_raw_smiles": 23794,
+    "unique_canonical_isomeric": 23782,
+    "unique_canonical_nonisomeric": 12762,
+    "invalid_smiles_rows": [],
+    "numeric_invalid_rows": [
+      4901
+    ],
+    "duplicate_full_rows": 0,
+    "duplicate_content_rows_ignoring_export_ids": 284,
+    "repeated_canonical_rows": 2085,
+    "unique_literature_values": 645,
+    "literature_missing": 0,
+    "known_conformer_exclusion_rows": [
+      1161,
+      2124,
+      7875,
+      8457,
+      13280,
+      20979,
+      21060,
+      21798,
+      21807,
+      21903,
+      21958,
+      22129,
+      22182,
+      22478,
+      22869,
+      23590,
+      24035,
+      24933,
+      25018,
+      25447
+    ],
+    "rtv_gt_60_count": 269,
+    "eligible_known_rules_count": 25577,
+    "ranges": {
+      "RT": [
+        0.0,
+        411.9
+      ],
+      "Speed": [
+        0.1,
+        13.0
+      ],
+      "i-PrOH_proportion": [
+        0.0,
+        0.5
+      ]
+    }
+  },
+  "IA_charity_0823.csv": {
+    "sha256": "4c14a6badff1427163b72cb15f22ae1f2c83f90964cf80300b0227d6a0d585cb",
+    "bytes": 201970,
+    "rows": 1849,
+    "columns": [
+      "Unnamed: 0.1",
+      "Unnamed: 0",
+      "SMILES",
+      "RT",
+      "Speed",
+      "i-PrOH_proportion",
+      "Literature",
+      "Column"
+    ],
+    "unique_raw_smiles": 1724,
+    "unique_canonical_isomeric": 1724,
+    "unique_canonical_nonisomeric": 956,
+    "invalid_smiles_rows": [],
+    "numeric_invalid_rows": [],
+    "duplicate_full_rows": 0,
+    "duplicate_content_rows_ignoring_export_ids": 23,
+    "repeated_canonical_rows": 125,
+    "unique_literature_values": 123,
+    "literature_missing": 0,
+    "known_conformer_exclusion_rows": [
+      80
+    ],
+    "rtv_gt_60_count": 35,
+    "eligible_known_rules_count": 1813,
+    "ranges": {
+      "RT": [
+        2.05,
+        213.8
+      ],
+      "Speed": [
+        0.15,
+        1.5
+      ],
+      "i-PrOH_proportion": [
+        0.0,
+        0.5
+      ]
+    }
+  },
+  "IC_charity_0823.csv": {
+    "sha256": "2e11698c381e6609e03d54ed4a63ece5a13097ccf5e730813f367bc8493c5aa0",
+    "bytes": 225695,
+    "rows": 2091,
+    "columns": [
+      "Unnamed: 0.1",
+      "Unnamed: 0",
+      "SMILES",
+      "RT",
+      "Speed",
+      "i-PrOH_proportion",
+      "Literature",
+      "Column"
+    ],
+    "unique_raw_smiles": 2046,
+    "unique_canonical_isomeric": 2046,
+    "unique_canonical_nonisomeric": 1126,
+    "invalid_smiles_rows": [],
+    "numeric_invalid_rows": [],
+    "duplicate_full_rows": 0,
+    "duplicate_content_rows_ignoring_export_ids": 1,
+    "repeated_canonical_rows": 45,
+    "unique_literature_values": 160,
+    "literature_missing": 0,
+    "known_conformer_exclusion_rows": [
+      593,
+      1650,
+      1658,
+      1712,
+      1717,
+      1727,
+      1736,
+      1738,
+      1740,
+      1767,
+      1820,
+      1886,
+      2006,
+      2015,
+      2054
+    ],
+    "rtv_gt_60_count": 10,
+    "eligible_known_rules_count": 2066,
+    "ranges": {
+      "RT": [
+        3.327,
+        159.19
+      ],
+      "Speed": [
+        0.1,
+        1.5
+      ],
+      "i-PrOH_proportion": [
+        0.0,
+        0.5
+      ]
+    }
+  },
+  "ODH_charity_0616.csv": {
+    "sha256": "a1b437aef0b12c9b3a2f2902a53f149dc4ef04782bf2aecb4cb39f9b28d37afb",
+    "bytes": 471326,
+    "rows": 4972,
+    "columns": [
+      "Unnamed: 0.1",
+      "Unnamed: 0",
+      "SMILES",
+      "RT",
+      "Speed",
+      "i-PrOH_proportion",
+      "Literature",
+      "Column"
+    ],
+    "unique_raw_smiles": 4459,
+    "unique_canonical_isomeric": 4454,
+    "unique_canonical_nonisomeric": 2393,
+    "invalid_smiles_rows": [],
+    "numeric_invalid_rows": [],
+    "duplicate_full_rows": 0,
+    "duplicate_content_rows_ignoring_export_ids": 131,
+    "repeated_canonical_rows": 518,
+    "unique_literature_values": 371,
+    "literature_missing": 0,
+    "known_conformer_exclusion_rows": [
+      4231
+    ],
+    "rtv_gt_60_count": 29,
+    "eligible_known_rules_count": 4942,
+    "ranges": {
+      "RT": [
+        2.35,
+        127.18
+      ],
+      "Speed": [
+        0.1,
+        2.0
+      ],
+      "i-PrOH_proportion": [
+        0.0,
+        0.5
+      ]
+    },
+    "valid_canonical_overlap_train_rows": 47,
+    "valid_nonisomeric_overlap_train_rows": 211,
+    "test_canonical_overlap_train_rows": 46,
+    "test_nonisomeric_overlap_train_rows": 216
+  },
+  "paper_source_data": {
+    "zip_sha256": "a7dd842a4f9425b47f468573d805828dec015ec2ba9c589f621c8f5dbf25c292",
+    "odh_csv_byte_identical": true,
+    "computed_metrics": {
+      "n": 247,
+      "rmse": 3.9172547601706538,
+      "mae": 2.7434876080949295,
+      "r2": 0.7778434105616624,
+      "median_relative_error": 0.1584021759033203,
+      "mean_relative_error": 0.20125498642879322,
+      "relative_l2_error": 0.24285537396117265
+    },
+    "figure_3c_reported": {
+      "mae": 2.74,
+      "median_relative_error": 0.158,
+      "r2": 0.778
+    }
+  }
+}

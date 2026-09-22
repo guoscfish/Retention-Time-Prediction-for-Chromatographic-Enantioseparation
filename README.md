@@ -22,3 +22,10 @@ pytorch==1.11.0,
 pyg==2.0.4,
 mordred==1.2.0,
 pandas==1.3.5,
+
+## Active-learning extension / reproduction work
+
+- [Project roadmap](docs/research/PROJECT_ROADMAP.md)
+- [Original paper and repository audit](docs/research/ORIGINAL_PAPER_AND_REPO_AUDIT.md)
+- [ODH baseline reproduction](docs/research/ODH_BASELINE_REPRODUCTION.md)
+- [Experiment log](docs/research/EXPERIMENT_LOG.md)

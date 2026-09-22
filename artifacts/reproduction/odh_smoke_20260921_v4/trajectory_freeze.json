@@ -1,0 +1,6 @@
+{
+  "epochs_completed": 2,
+  "checkpoint_rule": "final epoch (official-code-compatible; paper early-stop rule unspecified)",
+  "checkpoint_sha256": "a911d2e061f56e8f31279493a1c4798859eedbfa5d136ff1261cabad8e7e2f85",
+  "frozen_utc": "2026-09-21T13:40:13.244903+00:00"
+}
