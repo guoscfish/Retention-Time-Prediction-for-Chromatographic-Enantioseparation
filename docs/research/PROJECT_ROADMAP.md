@@ -68,12 +68,18 @@ All experiments append to EXPERIMENT_LOG.md and retain machine-readable artifact
 
 ## AL readiness checklist
 
-- [ ] Central-output parameter gradients verified on a real batch.
-- [ ] Graph latent `h_graph` verified; official forward returns `(output, h_graph)`.
-- [ ] Label-free graph inputs and candidate inference verified.
-- [ ] Stable CSV row identity and source index preserved through exclusions/splits.
-- [ ] Output semantics audited: q10 / MSE central / q90, with inference clamp.
-- [ ] Reliable baseline and limitations reviewed before Phase 2.
+- [x] Central-output parameter gradients verified on a real batch
+  (`smoke_checks.json`: 139 parameter tensors with finite central gradients).
+- [x] Graph latent `h_graph` verified; official forward returns `(output, h_graph)`
+  with observed smoke shape `(8, 128)`.
+- [x] Label-free graph inputs and candidate inference verified
+  (`label_free_forward_equal: true`).
+- [x] Stable CSV row identity and source index preserved through exclusions/splits
+  in `split_manifest.json`, `sample_manifest.csv`, and `predictions.csv`.
+- [x] Output semantics audited: q10 / MSE central / q90, with inference clamp.
+- [x] Reliable 1,500-epoch final-checkpoint baseline and limitations reviewed
+  before Phase 2. In particular, test q10-q90 coverage is 0.1862348 and does
+  not support interval width as calibrated uncertainty.
 
 Read ORIGINAL_PAPER_AND_REPO_AUDIT.md and ODH_BASELINE_REPRODUCTION.md before
 resuming. An unchecked item is not permission to implement AL.

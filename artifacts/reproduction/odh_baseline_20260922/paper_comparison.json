@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "paper": "artifacts/reproduction/audit/paper_source_data_ODH.csv",
+    "reproduction": "artifacts/reproduction/odh_baseline_20260922/predictions.csv"
+  },
+  "comparison_method": {
+    "paper_metrics": "Recomputed in float64 from paper true and pred columns.",
+    "reproduction_metrics": "Recomputed in float32 from test true_RTv and pred_central columns, matching evaluator tensor precision.",
+    "test_target_exact_order_match": "Equal counts and position-by-position numpy.isclose with rtol=1e-7 and atol=1e-6.",
+    "prediction_pearson_correlation": "numpy.corrcoef on position-aligned paper pred and reproduction pred_central values parsed from CSV."
+  },
+  "paper_metrics": {
+    "rmse": 3.9172547601706538,
+    "mae": 2.7434876080949295,
+    "r2": 0.7778434105616624,
+    "median_relative_error": 0.1584021759033203
+  },
+  "reproduction_metrics": {
+    "rmse": 4.177366733551025,
+    "mae": 2.6786727905273438,
+    "r2": 0.7473608255386353,
+    "median_relative_error": 0.13661861419677734
+  },
+  "test_target_count": 247,
+  "paper_target_count": 247,
+  "test_target_exact_order_match": true,
+  "test_target_bitwise_or_decimal_exact_match": false,
+  "target_order_check_rtol": 1e-7,
+  "target_order_check_atol": 1e-6,
+  "target_mismatch_count_at_tolerance": 0,
+  "max_target_numerical_difference": 1.8310546892053026e-6,
+  "mean_target_numerical_difference": 2.966537164976575e-7,
+  "prediction_pearson_correlation": 0.9611928985986683,
+  "reproduction_test_q10_q90_coverage": 0.1862348178137652
+}

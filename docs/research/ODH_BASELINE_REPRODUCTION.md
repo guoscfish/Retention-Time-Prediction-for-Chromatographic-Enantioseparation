@@ -4,8 +4,8 @@
 
 Base commit: `d284767bf7f1f04b24f758211a1d8d70e82f52ed`.
 Scope: one ODH baseline, no active learning or model tuning.
-Status: audit and smoke gate complete; formal 1500-epoch reproduction deferred
-after measured resource estimate.
+Status: **COMPLETE**. The official-code-compatible formal run completed all
+1,500 epochs on 2026-09-22.
 
 Provisional official-code configuration, pending paper cross-check: ODH CSV;
 exclude known conformer position 4231 and apply the official pre-split RTv > 60
@@ -30,6 +30,40 @@ MAE 2.7435, R2 0.7778, median relative error 15.8402%.
 
 ## Results
 
+### Formal 1,500-epoch reproduction (completed)
+
+Artifact: `artifacts/reproduction/odh_baseline_20260922/`.
+
+- Command: `.venv-reproduction/bin/python scripts/reproduce_odh_baseline.py --mode train --device cpu --threads 4 --output artifacts/reproduction/odh_baseline_20260922`
+- Eligible rows: 4,942; split sizes: train 4,447, validation 247, test 247.
+- Runtime: 12,825.8809 s (3.56 h) on CPU with four threads; 1,500 epochs completed.
+- Checkpoint: final epoch 1,500, as used by the public single-column training
+  branch. The best validation epoch, 913, is recorded only as a diagnostic.
+
+The comparison below was recomputed from the formal `predictions.csv` and the
+author's `artifacts/reproduction/audit/paper_source_data_ODH.csv`; it is not a
+transcription of a chat result.
+
+| Test metric | Paper source-data | Formal reproduction |
+| --- | ---: | ---: |
+| RMSE | 3.9172548 | 4.1773667 |
+| MAE | 2.7434876 | 2.6786728 |
+| R2 | 0.7778434 | 0.7473608 |
+| Median relative error | 0.1584022 | 0.1366186 |
+
+Both files contain 247 test targets. A programmatic position-by-position check
+confirmed that they are the same targets in the same order: all 247 positions
+match under `rtol=1e-7, atol=1e-6`, with maximum numerical difference
+1.8310546892053026e-06 from float serialization. The corresponding paper and
+reproduction predictions have Pearson correlation 0.9611928985986683. The full
+machine-readable result and comparison method are in
+`artifacts/reproduction/odh_baseline_20260922/paper_comparison.json`.
+
+The formal test q10-q90 coverage is only 0.1862348 (46/247). Despite no
+quantile crossing, this is far below the nominal 80% coverage implied by q10
+and q90. The current interval width is therefore **not calibrated uncertainty**
+and must not be used as uncertainty acquisition evidence.
+
 ### Smoke gate (completed)
 
 Artifact: `artifacts/reproduction/odh_smoke_20260921_v4/`.
@@ -42,36 +76,34 @@ Artifact: `artifacts/reproduction/odh_smoke_20260921_v4/`.
 - Epoch 2: train objective 120.9485, validation MSE 267.6448, 14.83 s.
 - Smoke test runtime 44.1 s; measured estimate for 1500 epochs is 6.68 h CPU.
 
-The two-epoch metrics are not baseline metrics. The estimate exceeds this
-round's resource boundary, so the formal run was not started. There is no
-`odh_baseline` result yet and no claim of numerical reproduction.
-
-Reserved formal command (not executed):
-`.venv-reproduction/bin/python scripts/reproduce_odh_baseline.py --mode train --device cpu --threads 4 --output artifacts/reproduction/odh_baseline_20260921`.
-
-The active run is `artifacts/reproduction/odh_baseline_20260922/` in detached
-screen session `odh_baseline_20260922`. `scripts/watch_odh_baseline.sh` runs in
-`odh_baseline_watch` and can restart only from `checkpoint_final.pt` if the main
-session disappears. It stops for manual review if the process fails before the
-first checkpoint, rather than silently changing the protocol.
+The two-epoch smoke metrics are not baseline metrics. Its cost estimate informed
+execution planning only; the completed formal artifact above supersedes the
+earlier deferred status.
 
 ## Limitations and deviations
 
 The paper's early-stopping description is not implemented in the public
-single-column branch. The planned official-code-compatible run therefore uses
-the final 1500th epoch and records the best validation epoch only as a
-diagnostic. The author's ODH graph/descriptors are externally cached because
+single-column branch. The official-code-compatible baseline therefore remains
+the final 1,500th epoch. Epoch 913 is a validation diagnostic only: the test set
+was not used to select a checkpoint, and neither that diagnostic nor proximity
+to the paper result justifies checkpoint replacement or retraining. The
+author's ODH graph/descriptors are externally cached because
 they are absent from Git; cache provenance is recorded alongside hashes. The
 current macOS arm64 machine cannot use the existing `fish` environment because
 importing its torch stack aborts on duplicate OpenMP runtimes. A clean isolated
 Python 3.11 environment is being used; its exact installed versions are saved
 in `environment.json`.
 
+The random-row split includes molecular overlap between train and test, so this
+baseline establishes compatibility with the paper protocol rather than
+leakage-resistant chemical generalization. The q10-q90 coverage limitation
+above also rules out treating interval width as calibrated uncertainty.
+
 ## Reproduction judgement
 
-The baseline is **not yet sufficiently reproduced to enter AL Phase 2**. The
-protocol and implementation path are auditable, the data/split manifest is
-frozen, and AL readiness primitives (central gradient, `h_graph`, label-free
-forward and stable IDs) pass smoke checks. The missing requirement is one full
-official-code-compatible ODH training trajectory and its test metrics. Do not
-proceed to AL while this remains unchecked.
+The ODH baseline is **sufficiently reproduced for Phase 2 gradient-space AL
+infrastructure**. The full official-code-compatible trajectory, final-epoch
+metrics, fixed split, stable identities, central-gradient path, `h_graph`, and
+label-free forward path are now recorded and audited. This is a readiness
+judgement, not authorization to start Phase 2; active-learning implementation
+still requires a new explicit instruction.

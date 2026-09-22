@@ -39,3 +39,21 @@ Append dated entries; never replace prior results with a better-looking trial.
   saved checkpoint if the main session disappears.
 - Status at launch check: epoch 36 completed; recent epochs approximately 10 s;
   no checkpoint boundary reached yet. Final metrics are intentionally pending.
+
+## 2026-09-22: formal ODH reproduction completed
+
+- Runtime: 12,825.8809 s (3.56 h) on CPU with four threads; all 1,500 epochs
+  completed. The official-code-compatible final epoch 1,500 remains the formal
+  checkpoint; best validation epoch 913 is diagnostic only.
+- Test metrics: RMSE 4.1773667, MAE 2.6786728, R2 0.7473608, median relative
+  error 0.1366186. Paper source-data recomputation: RMSE 3.9172548, MAE
+  2.7434876, R2 0.7778434, median relative error 0.1584022.
+- Artifact: `artifacts/reproduction/odh_baseline_20260922/`, including the
+  machine-readable `paper_comparison.json`. A fresh position-by-position check
+  found the same 247 paper/reproduction targets in the same order (maximum
+  numerical difference 1.8310546892053026e-06) and prediction Pearson
+  correlation 0.9611928985986683.
+- Decision: sufficiently reproduced for Phase 2 gradient-space AL
+  infrastructure. Stop after Phase 1 closure pending explicit Phase 2
+  authorization. Test q10-q90 coverage is only 0.1862348, so interval width is
+  not supported as calibrated uncertainty.

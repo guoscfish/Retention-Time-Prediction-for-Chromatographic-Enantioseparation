@@ -21,12 +21,12 @@ The committed CSVs have these row counts (including export index columns):
 | IA | 1,849 | 1,724 | 1,724 |
 | IC | 2,091 | 2,046 | 2,046 |
 
-ODH has 5,393 rows after the checked `bad_ODH`/row-4231 exclusion and before
-the RTv rule; 4,942 remain after RTv <= 60. The audit found 46 test rows whose
-canonical isomeric SMILES also occur in the random-split training rows. This is
-consistent with the paper's interpolation-oriented random-row split and is a
-reason for the later molecule/group-aware phase. Raw repeated structures and
-enantiomer handling must not be conflated with an experimental duplicate.
+ODH has 4,972 raw rows, 4,971 after the checked `bad_ODH`/row-4231 conformer
+exclusion, and 4,942 after the RTv > 60 exclusion. The audit found 46 test rows
+whose canonical isomeric SMILES also occur in the random-split training rows.
+This is consistent with the paper's interpolation-oriented random-row split and
+is a reason for the later molecule/group-aware phase. Raw repeated structures
+and enantiomer handling must not be conflated with an experimental duplicate.
 
 CSV fields are `SMILES`, `RT`, `Speed`, `i-PrOH_proportion`, `Literature`, and
 column/export identifiers. The target implemented by `Construct_dataset` is
