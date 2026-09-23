@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_9_FITS",
+  "selected_arm": "D",
+  "fit_files": {
+    "runtime/seed_525/A/fit.json": "3be445b7e12affec3062a0faef51b0e97c2f0ff3750928d310c6ca21a78e52b0",
+    "runtime/seed_525/B/fit.json": "5765d2cf77dede411b8ebdbd8bdb616f444b99193a371594ecf83f1c3d2148ea",
+    "runtime/seed_525/C/fit.json": "0904d19f762a4049054ec85c3948be904fd5e04a1b0188e9d23520e50dd4229c",
+    "runtime/seed_525/D/fit.json": "a992f18154c1790d50e31fecba493943f8e8e3c7e3311dfc15ef3bc7cab5f800",
+    "runtime/seed_525/E/fit.json": "4998ff79d4f2410f297a7e4002195ff0315b7417ae1d9377a39c9b5b87ce8950",
+    "runtime/seed_1525/A/fit.json": "b0bd9122379cdc118094a3d62a6691ff21cff70d83f2f8634b3885a3895df5d7",
+    "runtime/seed_1525/D/fit.json": "190b00c76ae92c4121f2fa5c66fc658a41d442f9e2f8f3e24e42b4a70f821018",
+    "runtime/seed_2525/A/fit.json": "3cf762fe963888c1de7b8e1acabc8d7e8485efeec9058f2df39aeb9afc3fa696",
+    "runtime/seed_2525/D/fit.json": "b07d1838eaa1a5e69eda216b7d9d7d13a2e3cafd7a3d4673c1a6ff407f753a24"
+  },
+  "label_audit": {
+    "successful_requests": 4,
+    "U0_label_requests": 0,
+    "test_label_requests": 0,
+    "selection_commits": 0,
+    "label_audit_sha256": "6626811f92f1b105c2db36b16b7a328afc870d001c3761ea681f3f0197e7a77a"
+  }
+}

@@ -15,3 +15,4 @@ studies/active_learning/odh_gradient_al_smoke/runtime/**/*.pt
 studies/active_learning/odh_gradient_al_smoke/duration_audit/**/*.pt
 artifacts/reproduction/odh_cache/
 artifacts/reproduction/**/checkpoint*.pt
+studies/active_learning/odh_training_protocol_diagnosis/runtime/**/*.pt

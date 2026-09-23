@@ -1,8 +1,9 @@
 # HPLC AL audit — preflight, implementation and maintenance
 
 Current status (2026-09-22): Phase 2 and the authorized tiny smoke are COMPLETE.
-The original execution gate passed **42 tests**; the maintained code now passes
-**52 tests** after adding historical-source and completed-study protections.
+The original execution gate passed **42 tests**. The first maintenance pass
+reached 52 tests; the later fixed-L0 diagnosis added 13 focused checks, so the
+maintained code now passes **65 tests**.
 These are separate records; the original frozen test evidence is unchanged.
 
 Read [the protocol](HPLC_AL_PROTOCOL.md) for scientific settings,
@@ -174,5 +175,6 @@ read-only check. Completed `run` and `report` now use the same check, preserving
 reviewed conclusions. Mutating preparation, test-gate, duration-audit and protocol
 freeze commands reject completed studies; use `.conda-hplc-al/bin/python -B -m pytest -q` for current
 code checks. The suite now has 52 passing cases, including completion protection
-and historical-source integrity. The original experiment's 42-test gate record
+and historical-source integrity. The subsequent training diagnosis brings the
+current suite to 65 tests. The original experiment's 42-test gate record
 and all 148 completion-bound artifacts remain unchanged.

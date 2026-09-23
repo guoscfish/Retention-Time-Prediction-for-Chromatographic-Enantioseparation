@@ -1,0 +1,6 @@
+arm,batch_size,maximum_epochs,steps_per_epoch,total_optimizer_steps,total_sample_presentations
+A,2048,300,1,300,106800
+B,256,150,2,300,53400
+C,128,100,3,300,35600
+D,256,300,2,600,106800
+E,128,300,3,900,106800

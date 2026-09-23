@@ -1,0 +1,56 @@
+{
+  "arm": "E",
+  "config": {
+    "batch_size": 128,
+    "maximum_epochs": 300,
+    "initialization_seed": 525,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "shuffle": false,
+    "drop_last": false,
+    "early_stopping": false,
+    "scheduler": false,
+    "loss": "original_complete",
+    "checkpoint": "strict_best_validation_central_MSE"
+  },
+  "initialization_seed": 525,
+  "initialization_hash": "90ae1f750428ad51517cec81fe86a279dea391079d65096b74209169868df19b",
+  "batch_size": 128,
+  "epochs_run": 300,
+  "best_epoch": 192,
+  "best_optimizer_step": 576,
+  "best_metrics": {
+    "rmse": 8.21919201511823,
+    "mae": 5.447393781984383,
+    "r2": 0.12681179588505742,
+    "nrmse": 0.9553022723690677
+  },
+  "final_metrics": {
+    "rmse": 8.349965236217892,
+    "mae": 5.449766347282811,
+    "r2": 0.09880465035920305,
+    "nrmse": 0.9705018144958047
+  },
+  "steps_per_epoch": 3,
+  "total_optimizer_steps": 900,
+  "total_sample_presentations": 106800,
+  "seconds": 180.61035887499747,
+  "updates_per_second": 4.98310288294649,
+  "checkpoint_path": "attempt_001/best.pt",
+  "checkpoint_hash": "c4251e3693837db8c824a97edbfd598662afafdbbb068d8dfb7f2d3a0156c9a3",
+  "final_checkpoint_hash": "83660284fdea23aa18f6df44af7bf311bf9227271ec14d0ac1e5595a64979dec",
+  "training_curve": "attempt_001/training_curve.csv",
+  "predictions_path": "attempt_001/validation_predictions.npz",
+  "stopping_reason": "registered_maximum_epochs",
+  "input_hash": "7b8417ef3007fce31412299f3cb910c80ba7b90c0dc40e241f63d3c6afb2ca7f",
+  "abandoned_attempts": [
+    "attempt_000"
+  ],
+  "files": {
+    "input.json": "7b8417ef3007fce31412299f3cb910c80ba7b90c0dc40e241f63d3c6afb2ca7f",
+    "attempt_001/best.pt": "c4251e3693837db8c824a97edbfd598662afafdbbb068d8dfb7f2d3a0156c9a3",
+    "attempt_001/final.pt": "83660284fdea23aa18f6df44af7bf311bf9227271ec14d0ac1e5595a64979dec",
+    "attempt_001/training_curve.csv": "791faa970f05ce38f41f3ef2031073ffdbe5c1e5516f31ee267d5e4c04ed3ac0",
+    "attempt_001/validation_predictions.npz": "1a3f6e75f2dcb1743ae0681a3c2a348d05dc09dfa40933b56c7358006fd81660"
+  }
+}

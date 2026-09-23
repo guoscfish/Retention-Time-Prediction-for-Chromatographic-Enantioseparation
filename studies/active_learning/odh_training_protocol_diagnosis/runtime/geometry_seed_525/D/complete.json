@@ -1,0 +1,13 @@
+{
+  "checkpoint_hash": "51ad4306d87c65756c05d156bdca4cddcdba79c79b5522701c63d0d3237d56fb",
+  "files": {
+    "validation_gradient_audit.json": "f5c6236a899483ac936ae3ad7aa54419b4184c1737195db108880fdc4bce6c86",
+    "validation_features.npz": "44b9553ed00f5ea53f646a78e2172a04c2a4ccd321e5bd3022da25f2a7c80dae",
+    "validation_relevance.csv": "a6b04e805bb91aaccba74e46ab6b9042d92ad250aa9afdcc32014c97a78fca74",
+    "outer_gradient_audit.json": "d198a379176cbc58e31e472a2c78ab7a943c645a463225d09f76ff3893a5989b",
+    "outer_norms_label_free.csv": "5b78e9d597e85866a221784f0f5a3ff5783e60a6b0fa73a24e075b2e1bcdab17",
+    "outer_features.npz": "2ef5f0e8c951c83cf1390471ccb93718d21d76c6ddbb6b1ecfb95b3d3f78c958",
+    "selections.json": "281b51a9124d394158f0d167fa5316830388de240cb1fac33a4291b4c7385e62",
+    "selection_comparison.csv": "4dc1b45c76da784664dc47a7202981a779b1dce0478948480d6934c99a544b6b"
+  }
+}

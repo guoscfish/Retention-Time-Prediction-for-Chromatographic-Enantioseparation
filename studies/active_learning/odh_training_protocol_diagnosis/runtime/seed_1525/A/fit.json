@@ -1,0 +1,54 @@
+{
+  "arm": "A",
+  "config": {
+    "batch_size": 2048,
+    "maximum_epochs": 300,
+    "initialization_seed": 1525,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "shuffle": false,
+    "drop_last": false,
+    "early_stopping": false,
+    "scheduler": false,
+    "loss": "original_complete",
+    "checkpoint": "strict_best_validation_central_MSE"
+  },
+  "initialization_seed": 1525,
+  "initialization_hash": "82f9d7e78b7f6a4794be4114605ed8d8ef7e37d7d2ca3cd8c8c0add062c164da",
+  "batch_size": 2048,
+  "epochs_run": 300,
+  "best_epoch": 86,
+  "best_optimizer_step": 86,
+  "best_metrics": {
+    "rmse": 7.513503344962675,
+    "mae": 5.17502515711765,
+    "r2": 0.2703164166874281,
+    "nrmse": 0.8732813159362827
+  },
+  "final_metrics": {
+    "rmse": 7.633090124232219,
+    "mae": 5.186625094548893,
+    "r2": 0.2469039190781135,
+    "nrmse": 0.8871806775488791
+  },
+  "steps_per_epoch": 1,
+  "total_optimizer_steps": 300,
+  "total_sample_presentations": 106800,
+  "seconds": 283.01137966699025,
+  "updates_per_second": 1.0600280467626413,
+  "checkpoint_path": "attempt_000/best.pt",
+  "checkpoint_hash": "2be3909e6252285a997302e3de1ee7111e4c0f40786cf1e3222e1757d1af2cd0",
+  "final_checkpoint_hash": "04838c79ea5f6a909bf9ae40ecbc1e6e8b85d18326db51e5c50346a21d43e3f0",
+  "training_curve": "attempt_000/training_curve.csv",
+  "predictions_path": "attempt_000/validation_predictions.npz",
+  "stopping_reason": "registered_maximum_epochs",
+  "input_hash": "3ac54b3e0e5dda923be3b6039e35723fac90286f7ce1794573d412c48a586c97",
+  "abandoned_attempts": [],
+  "files": {
+    "input.json": "3ac54b3e0e5dda923be3b6039e35723fac90286f7ce1794573d412c48a586c97",
+    "attempt_000/best.pt": "2be3909e6252285a997302e3de1ee7111e4c0f40786cf1e3222e1757d1af2cd0",
+    "attempt_000/final.pt": "04838c79ea5f6a909bf9ae40ecbc1e6e8b85d18326db51e5c50346a21d43e3f0",
+    "attempt_000/training_curve.csv": "62f70a9e4d14ce2bda44c4a5aa77cad43e918a8a71fb41d2087cdbf2126a586e",
+    "attempt_000/validation_predictions.npz": "ad28d28f4fc1914914175e89fd6db031313d17a4f2908126ea1ea6dc6e05c2d8"
+  }
+}

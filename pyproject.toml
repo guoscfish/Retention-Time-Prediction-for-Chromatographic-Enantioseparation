@@ -5,7 +5,7 @@ addopts = "-p no:cacheprovider"
 [tool.ruff]
 target-version = "py311"
 line-length = 100
-include = ["src/hplc_al/*.py", "tests/hplc_al/*.py", "scripts/run_hplc_al_smoke.py"]
+include = ["src/hplc_al/*.py", "src/hplc_diagnosis/*.py", "tests/hplc_al/*.py", "scripts/run_hplc_al_smoke.py", "scripts/run_hplc_training_diagnosis.py", "scripts/report_hplc_training_diagnosis.py"]
 exclude = [".conda-hplc-al", ".venv-reproduction", "code", "application", "artifacts", "studies"]
 
 [tool.ruff.lint]
@@ -13,4 +13,6 @@ select = ["E4", "E7", "E9", "F", "I"]
 
 [tool.ruff.lint.per-file-ignores]
 "scripts/run_hplc_al_smoke.py" = ["E402"]
+"scripts/run_hplc_training_diagnosis.py" = ["E402"]
+"scripts/report_hplc_training_diagnosis.py" = ["E402"]
 "tests/hplc_al/conftest.py" = ["E402"]

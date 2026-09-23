@@ -1,0 +1,113 @@
+{
+  "selected_practical_arm": "D",
+  "total_fits": 9,
+  "pairs": [
+    {
+      "initialization_seed": 525,
+      "reference_rmse": 7.918731533604954,
+      "practical_arm": "D",
+      "practical_rmse": 7.752414989563484,
+      "absolute_improvement": 0.16631654404146978,
+      "relative_improvement_percent": 2.10029274683284
+    },
+    {
+      "initialization_seed": 1525,
+      "reference_rmse": 7.513503344962675,
+      "practical_arm": "D",
+      "practical_rmse": 7.429391737949848,
+      "absolute_improvement": 0.0841116070128276,
+      "relative_improvement_percent": 1.1194725436466209
+    },
+    {
+      "initialization_seed": 2525,
+      "reference_rmse": 7.944429579010477,
+      "practical_arm": "D",
+      "practical_rmse": 7.755326949298554,
+      "absolute_improvement": 0.1891026297119236,
+      "relative_improvement_percent": 2.3803172755353112
+    }
+  ],
+  "aggregate": [
+    {
+      "arm": "A",
+      "metric": "rmse",
+      "mean": 7.792221485859369,
+      "std": 0.24171873930892893,
+      "initialization_seeds": 3
+    },
+    {
+      "arm": "A",
+      "metric": "mae",
+      "mean": 5.293097017908547,
+      "std": 0.10289192761757815,
+      "initialization_seeds": 3
+    },
+    {
+      "arm": "A",
+      "metric": "r2",
+      "mean": 0.21467268863485944,
+      "std": 0.048260846481185136,
+      "initialization_seeds": 3
+    },
+    {
+      "arm": "A",
+      "metric": "nrmse",
+      "mean": 0.9056762366121033,
+      "std": 0.028094545122107645,
+      "initialization_seeds": 3
+    },
+    {
+      "arm": "D",
+      "metric": "rmse",
+      "mean": 7.645711225603962,
+      "std": 0.18734382944623107,
+      "initialization_seeds": 3
+    },
+    {
+      "arm": "D",
+      "metric": "mae",
+      "mean": 5.111838366499474,
+      "std": 0.11882119187386654,
+      "initialization_seeds": 3
+    },
+    {
+      "arm": "D",
+      "metric": "r2",
+      "mean": 0.24410897491451103,
+      "std": 0.03676671769069166,
+      "initialization_seeds": 3
+    },
+    {
+      "arm": "D",
+      "metric": "nrmse",
+      "mean": 0.8886476060253096,
+      "std": 0.021774644716307055,
+      "initialization_seeds": 3
+    }
+  ],
+  "mean_reference_rmse": 7.792221485859369,
+  "mean_practical_rmse": 7.645711225603962,
+  "mean_absolute_rmse_improvement": 0.1465102602554076,
+  "relative_mean_rmse_improvement_percent": 1.880211702417358,
+  "improved_seed_count": 3,
+  "total_fit_seconds": 2836.322305001988,
+  "total_optimizer_updates": 4200,
+  "total_sample_presentations": 836600,
+  "label_audit": {
+    "successful_requests": 5,
+    "U0_label_requests": 0,
+    "test_label_requests": 0,
+    "selection_commits": 0,
+    "label_audit_sha256": "84f7ec1667674fea091b85ffd1455179e544365be9b9a08c368c018350b60c06"
+  },
+  "limitations": [
+    "same validation selects checkpoints and Part B arm",
+    "seed525 is selection seed, two seeds are repeats",
+    "batch size changes BN/noise/sample exposure and checkpoint opportunities",
+    "three initializations, one fixed L0/validation cohort"
+  ],
+  "deterministic_prefix_checks": {
+    "B_D_first_150_epochs": true,
+    "C_E_first_100_epochs": true
+  }
+}

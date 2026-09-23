@@ -1,0 +1,9 @@
+arm,initialization_seed,norm,error,rows,spearman,pearson,status
+A,525,full_gradient_norm,absolute_error,247,0.2309181459974453,0.2464570984779007,defined
+A,525,full_gradient_norm,squared_error,247,0.2309181459974453,0.17860943013118016,defined
+A,525,sketch_gradient_norm,absolute_error,247,0.2414027336694942,0.254495874323766,defined
+A,525,sketch_gradient_norm,squared_error,247,0.2414027336694942,0.18317302349280537,defined
+D,525,full_gradient_norm,absolute_error,247,0.23164361002366712,0.23695167411202261,defined
+D,525,full_gradient_norm,squared_error,247,0.23164361002366712,0.1415129876674865,defined
+D,525,sketch_gradient_norm,absolute_error,247,0.23765118479185313,0.2463565324665408,defined
+D,525,sketch_gradient_norm,squared_error,247,0.23765118479185313,0.14932408219796425,defined

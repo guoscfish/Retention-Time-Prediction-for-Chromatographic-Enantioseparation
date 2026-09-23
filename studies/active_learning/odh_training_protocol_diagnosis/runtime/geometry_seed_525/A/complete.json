@@ -1,0 +1,13 @@
+{
+  "checkpoint_hash": "8ab796eb45a69c5c914d10cd9f4aabdd188a98aeb8f4c8c7807afb935cfd893e",
+  "files": {
+    "validation_gradient_audit.json": "ecf1c0246cf7f60fc83ca2f06b3c3feaa5c5ffded1b04b624608590b997f10cb",
+    "validation_features.npz": "36b97c6c7310ae486f52f31b72d9e0310616406f8c5de3ee83edfbb6c8b0a27d",
+    "validation_relevance.csv": "e165b684fb27c5c7ede415524ed73164c8df4bfde4dc5150fa4284b16bc61d32",
+    "outer_gradient_audit.json": "d535271d8e2a4b42132e708fe636a2f0d519bdabf494ae6a793e77818a773b15",
+    "outer_norms_label_free.csv": "c0de626be5ecd619f0c9fcda8cd3ceb52d1f570096cd463fc4c24898d6272650",
+    "outer_features.npz": "d7c15d4ad985c155e4326e95504342c5ddb21144691a4bf7903967a963d405a3",
+    "selections.json": "d39541de2535dfb8de908461cb4d433b584c4971768d36eac07cd9e49d7609f5",
+    "selection_comparison.csv": "6055e9c7de9035dfeb4e3c037572b8c742d6c923abaab06e0d2150f71b7e8dc5"
+  }
+}

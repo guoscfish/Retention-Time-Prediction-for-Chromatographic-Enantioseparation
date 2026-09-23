@@ -99,8 +99,9 @@ only verify existing artifacts; they do not regenerate the report or train.
 Use the [root README commands](../../README.md#本地检查) for current checks.
 Historical study README commands are retained as frozen execution evidence.
 The original 42-test gate and 17 source files remain verifiable; the current
-maintenance suite has 52 tests. Its historical-source fallback never authorizes
-training changed code under the old protocol.
+first maintenance suite had 52 tests; the later training diagnosis added 13
+focused checks, bringing the current suite to 65. Its historical-source fallback
+never authorizes training changed code under the old protocol.
 
 Report RMSE, MAE, R2 and NRMSE=RMSE/std(original L0 labels, ddof=0), a fixed
 positive denominator. Partial AULC uses the four budget points with trapezoidal

@@ -1,0 +1,18 @@
+{
+  "arm": "D",
+  "rule": "minimum seed525 best validation RMSE among B-E; ties: fewer updates, fewer epochs, arm ID; select even if worse than A",
+  "evidence": {
+    "A": "3be445b7e12affec3062a0faef51b0e97c2f0ff3750928d310c6ca21a78e52b0",
+    "B": "5765d2cf77dede411b8ebdbd8bdb616f444b99193a371594ecf83f1c3d2148ea",
+    "C": "0904d19f762a4049054ec85c3948be904fd5e04a1b0188e9d23520e50dd4229c",
+    "D": "a992f18154c1790d50e31fecba493943f8e8e3c7e3311dfc15ef3bc7cab5f800",
+    "E": "4998ff79d4f2410f297a7e4002195ff0315b7417ae1d9377a39c9b5b87ce8950"
+  },
+  "part_a_rmse": {
+    "A": 7.918731533604954,
+    "B": 7.7579312989417835,
+    "C": 8.30565877780421,
+    "D": 7.752414989563484,
+    "E": 8.21919201511823
+  }
+}

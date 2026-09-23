@@ -1,0 +1,25 @@
+{'stage': 'gradient', 'rows': 1, 'total': 247, 'seconds': 0.04}
+{'stage': 'gradient', 'rows': 247, 'total': 247, 'seconds': 3.62}
+{'stage': 'gradient', 'rows': 1, 'total': 4447, 'seconds': 0.02}
+{'stage': 'gradient', 'rows': 500, 'total': 4447, 'seconds': 7.31}
+{'stage': 'gradient', 'rows': 1000, 'total': 4447, 'seconds': 14.46}
+{'stage': 'gradient', 'rows': 1500, 'total': 4447, 'seconds': 21.87}
+{'stage': 'gradient', 'rows': 2000, 'total': 4447, 'seconds': 29.18}
+{'stage': 'gradient', 'rows': 2500, 'total': 4447, 'seconds': 36.61}
+{'stage': 'gradient', 'rows': 3000, 'total': 4447, 'seconds': 44.16}
+{'stage': 'gradient', 'rows': 3500, 'total': 4447, 'seconds': 51.62}
+{'stage': 'gradient', 'rows': 4000, 'total': 4447, 'seconds': 60.89}
+{'stage': 'gradient', 'rows': 4447, 'total': 4447, 'seconds': 69.0}
+{'stage': 'gradient', 'rows': 1, 'total': 247, 'seconds': 0.02}
+{'stage': 'gradient', 'rows': 247, 'total': 247, 'seconds': 4.34}
+{'stage': 'gradient', 'rows': 1, 'total': 4447, 'seconds': 0.02}
+{'stage': 'gradient', 'rows': 500, 'total': 4447, 'seconds': 8.63}
+{'stage': 'gradient', 'rows': 1000, 'total': 4447, 'seconds': 17.13}
+{'stage': 'gradient', 'rows': 1500, 'total': 4447, 'seconds': 25.89}
+{'stage': 'gradient', 'rows': 2000, 'total': 4447, 'seconds': 34.34}
+{'stage': 'gradient', 'rows': 2500, 'total': 4447, 'seconds': 42.92}
+{'stage': 'gradient', 'rows': 3000, 'total': 4447, 'seconds': 51.93}
+{'stage': 'gradient', 'rows': 3500, 'total': 4447, 'seconds': 60.64}
+{'stage': 'gradient', 'rows': 4000, 'total': 4447, 'seconds': 69.47}
+{'stage': 'gradient', 'rows': 4447, 'total': 4447, 'seconds': 77.22}
+{'status': 'GEOMETRY_COMPLETE', 'successful_requests': 5, 'U0_label_requests': 0, 'test_label_requests': 0, 'selection_commits': 0, 'label_audit_sha256': '84f7ec1667674fea091b85ffd1455179e544365be9b9a08c368c018350b60c06'}

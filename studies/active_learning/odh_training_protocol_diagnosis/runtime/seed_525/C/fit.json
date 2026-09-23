@@ -1,0 +1,54 @@
+{
+  "arm": "C",
+  "config": {
+    "batch_size": 128,
+    "maximum_epochs": 100,
+    "initialization_seed": 525,
+    "lr": 0.001,
+    "weight_decay": 1e-05,
+    "shuffle": false,
+    "drop_last": false,
+    "early_stopping": false,
+    "scheduler": false,
+    "loss": "original_complete",
+    "checkpoint": "strict_best_validation_central_MSE"
+  },
+  "initialization_seed": 525,
+  "initialization_hash": "90ae1f750428ad51517cec81fe86a279dea391079d65096b74209169868df19b",
+  "batch_size": 128,
+  "epochs_run": 100,
+  "best_epoch": 55,
+  "best_optimizer_step": 165,
+  "best_metrics": {
+    "rmse": 8.30565877780421,
+    "mae": 5.475391025967926,
+    "r2": 0.10834309475454806,
+    "nrmse": 0.9653521525429798
+  },
+  "final_metrics": {
+    "rmse": 8.553430416452068,
+    "mae": 5.596983459314354,
+    "r2": 0.05435036205885169,
+    "nrmse": 0.9941502155391394
+  },
+  "steps_per_epoch": 3,
+  "total_optimizer_steps": 300,
+  "total_sample_presentations": 35600,
+  "seconds": 104.09299183399708,
+  "updates_per_second": 2.8820384034923965,
+  "checkpoint_path": "attempt_000/best.pt",
+  "checkpoint_hash": "268874eb570813bff0243f37a54ca98d9fae6c1ac3c5417bfa02845b87c1206a",
+  "final_checkpoint_hash": "983327fe149a6a1e46291e3ad011b08daaa746ce5b1172796401fac10a955393",
+  "training_curve": "attempt_000/training_curve.csv",
+  "predictions_path": "attempt_000/validation_predictions.npz",
+  "stopping_reason": "registered_maximum_epochs",
+  "input_hash": "f07667b03a338f848f17f6652cecc3355cec26dfeb85b6acd520c5e75cc60ca1",
+  "abandoned_attempts": [],
+  "files": {
+    "input.json": "f07667b03a338f848f17f6652cecc3355cec26dfeb85b6acd520c5e75cc60ca1",
+    "attempt_000/best.pt": "268874eb570813bff0243f37a54ca98d9fae6c1ac3c5417bfa02845b87c1206a",
+    "attempt_000/final.pt": "983327fe149a6a1e46291e3ad011b08daaa746ce5b1172796401fac10a955393",
+    "attempt_000/training_curve.csv": "9bd1547a1ec12d84bc19a66c5dd545949d265f0ccdaf520d4e267cb764d00963",
+    "attempt_000/validation_predictions.npz": "dfd7a724899e951cf83bda223bcf05db9c8291668223038fae769041c86791a6"
+  }
+}

@@ -20,6 +20,13 @@ strategies, formal benchmark, compound/block or multi-column AL. Do not tune
 against test labels, change architecture/descriptors/target, or remove difficult
 test samples to improve metrics.
 
+Update (2026-09-23): the separately authorized fixed-L0 training and gradient
+diagnosis is complete. Batch 256 improves validation RMSE over the reference in
+3/3 initializations (mean 1.88%), while raw gradient selection is strongly
+high-norm biased despite only weak norm/error relevance. This diagnosis ran no
+AL trajectory and does not change the completed phases or authorize Phase 3.
+See [the diagnosis](HPLC_AL_TRAINING_DIAGNOSIS.md).
+
 ## Phases and gates
 
 | Phase | Work | Entrance criterion | Stop / exit criterion |
@@ -46,8 +53,9 @@ diagnostic test AULC worsens 2.59%. No consistent across-split winner. See
 `studies/active_learning/odh_gradient_al_smoke/CRITICAL_REVIEW.md`.
 The larger screen is not started or authorized; a two-seed/six-round development
 check is only conditionally recommended, not a formal benchmark.
-After maintenance, the current suite passes 52 tests. The original 42-test
-record remains frozen. See the [root README](../../README.md#本地检查) for
+The first post-completion maintenance suite passed 52 tests; this diagnosis adds
+13 focused checks, so the current suite passes 65. The original 42-test record
+remains frozen. See the [root README](../../README.md#本地检查) for
 current read-only verification commands; the study README records historical
 execution stages.
 

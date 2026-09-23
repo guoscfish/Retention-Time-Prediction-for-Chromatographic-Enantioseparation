@@ -1,0 +1,87 @@
+{
+  "correlations": [
+    {
+      "arm": "A",
+      "initialization_seed": 525,
+      "norm": "full_gradient_norm",
+      "error": "absolute_error",
+      "rows": 247,
+      "spearman": 0.2309181459974453,
+      "pearson": 0.2464570984779007,
+      "status": "defined"
+    },
+    {
+      "arm": "A",
+      "initialization_seed": 525,
+      "norm": "full_gradient_norm",
+      "error": "squared_error",
+      "rows": 247,
+      "spearman": 0.2309181459974453,
+      "pearson": 0.17860943013118016,
+      "status": "defined"
+    },
+    {
+      "arm": "A",
+      "initialization_seed": 525,
+      "norm": "sketch_gradient_norm",
+      "error": "absolute_error",
+      "rows": 247,
+      "spearman": 0.2414027336694942,
+      "pearson": 0.254495874323766,
+      "status": "defined"
+    },
+    {
+      "arm": "A",
+      "initialization_seed": 525,
+      "norm": "sketch_gradient_norm",
+      "error": "squared_error",
+      "rows": 247,
+      "spearman": 0.2414027336694942,
+      "pearson": 0.18317302349280537,
+      "status": "defined"
+    },
+    {
+      "arm": "D",
+      "initialization_seed": 525,
+      "norm": "full_gradient_norm",
+      "error": "absolute_error",
+      "rows": 247,
+      "spearman": 0.23164361002366712,
+      "pearson": 0.23695167411202261,
+      "status": "defined"
+    },
+    {
+      "arm": "D",
+      "initialization_seed": 525,
+      "norm": "full_gradient_norm",
+      "error": "squared_error",
+      "rows": 247,
+      "spearman": 0.23164361002366712,
+      "pearson": 0.1415129876674865,
+      "status": "defined"
+    },
+    {
+      "arm": "D",
+      "initialization_seed": 525,
+      "norm": "sketch_gradient_norm",
+      "error": "absolute_error",
+      "rows": 247,
+      "spearman": 0.23765118479185313,
+      "pearson": 0.2463565324665408,
+      "status": "defined"
+    },
+    {
+      "arm": "D",
+      "initialization_seed": 525,
+      "norm": "sketch_gradient_norm",
+      "error": "squared_error",
+      "rows": 247,
+      "spearman": 0.23765118479185313,
+      "pearson": 0.14932408219796425,
+      "status": "defined"
+    }
+  ],
+  "primary": "Spearman",
+  "interpretation": "same fixed validation used for checkpoint selection; descriptive, no independent validation",
+  "squared_error_note": "Spearman(abs_error) and Spearman(squared_error) must coincide for nonnegative absolute errors"
+}

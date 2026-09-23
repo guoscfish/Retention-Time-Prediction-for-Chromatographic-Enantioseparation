@@ -1,0 +1,61 @@
+{
+  "status": "COMPLETE_STOPPED",
+  "evidence_class": "VALIDATION_ONLY_DEVELOPMENT_DIAGNOSIS",
+  "total_fits": 9,
+  "selected_practical_arm": "D",
+  "selected_practical_protocol": {
+    "batch_size": 256,
+    "maximum_epochs": 300,
+    "total_optimizer_steps": 600,
+    "sample_presentations": 106800,
+    "selection_scope": "Part B development comparator only; not an automatic official protocol replacement"
+  },
+  "training_conclusion": {
+    "reference_mean_rmse": 7.792221485859369,
+    "reference_rmse_sample_std": 0.24171873930892893,
+    "practical_mean_rmse": 7.645711225603962,
+    "practical_rmse_sample_std": 0.18734382944623107,
+    "mean_absolute_rmse_improvement": 0.1465102602554076,
+    "relative_mean_rmse_improvement_percent": 1.880211702417358,
+    "direction_consistency": "3/3 initializations favor D",
+    "judgement": "modest batch/training-path weakness; severe pure update-count underexposure not supported"
+  },
+  "gradient_error_conclusion": {
+    "spearman_range_full_or_sketch_vs_absolute_error": [
+      0.2309181459974453,
+      0.2414027336694942
+    ],
+    "judgement": "weak positive relevance; magnitude is not a strong per-row error proxy"
+  },
+  "same_state_conclusion": {
+    "raw_selected_median_sketch_norm_percentile_range": [
+      96.87118064043024,
+      99.10779760449768
+    ],
+    "unit_selected_median_sketch_norm_percentile_range": [
+      13.00415546321193,
+      40.57687606942068
+    ],
+    "lcmd_raw_unit_intersection_per_checkpoint": 0,
+    "maxdet_raw_unit_intersection_per_checkpoint": 1,
+    "judgement": "raw magnitude strongly controls selection; unit normalization radically changes geometry but has no measured label-efficiency benefit"
+  },
+  "cause_ranking": [
+    "raw gradient magnitude dominance with weak validation-error relevance",
+    "modest batch-2048 training-path weakness versus batch 256",
+    "initialization and small-cohort variance relative to small effects",
+    "limited fixed-split chemical coverage",
+    "CountSketch distortion is currently lower priority because full/sketch norm diagnostics agree"
+  ],
+  "next_stage_hypothesis": "H3",
+  "next_stage_text": "Both issues exist: first freeze a better-supported training protocol, then preregister a raw-versus-unit-gradient AL ablation.",
+  "not_a_winner_claim": true,
+  "not_authorization_to_execute_next_stage": true,
+  "label_access": {
+    "U0_label_requests": 0,
+    "test_label_requests": 0,
+    "selection_commits": 0
+  },
+  "forbidden_work_executed": false,
+  "stopped": true
+}

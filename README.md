@@ -8,7 +8,7 @@
 - **阅读当前实现**：[主动学习入口](scripts/run_hplc_al_smoke.py) → [核心模块](src/hplc_al/) → [测试](tests/hplc_al/)。
 - **查看实验结果**：[ODH 基线](docs/research/ODH_BASELINE_REPRODUCTION.md)、[主动学习报告](studies/active_learning/odh_gradient_al_smoke/DEVELOPMENT_REPORT.md)、[批判性检查](studies/active_learning/odh_gradient_al_smoke/CRITICAL_REVIEW.md)。
 
-研究文档按用途保留五份，先读需要的那一份：
+研究文档按用途保留六份，先读需要的那一份：
 
 | 你想了解什么 | 文档 |
 | --- | --- |
@@ -16,6 +16,7 @@
 | 原论文和代码差异、基线协议与实测结果 | [ODH 基线与原论文审计](docs/research/ODH_BASELINE_REPRODUCTION.md) |
 | 主动学习的数据边界、训练和选样规则 | [主动学习协议](docs/research/HPLC_AL_PROTOCOL.md) |
 | 运行前问题如何解决、测试覆盖与剩余限制 | [主动学习综合审计](docs/research/HPLC_AL_IMPLEMENTATION_AUDIT.md) |
+| 小样本训练是否欠优化、梯度范数是否支配选样 | [训练与梯度诊断](docs/research/HPLC_AL_TRAINING_DIAGNOSIS.md) |
 | 每一步何时执行、当时的决策和证据 | [实验日志](docs/research/EXPERIMENT_LOG.md) |
 
 日志中的状态描述对应记录当时；当前状态以路线图为准。原运行前审查已并入主动学习审计，原论文审计已并入基线报告。

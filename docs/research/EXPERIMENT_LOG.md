@@ -198,3 +198,27 @@ change navigation only, not historical results or decisions.
   removed document paths remain in current repository documentation or code.
   Read-only study verification passed for 148 bound artifacts and 12 budget
   records; the original source snapshot also verifies. Whitespace check passed.
+
+## 2026-09-23: fixed-L0 training and gradient diagnosis complete
+
+- Ran exactly nine registered scratch fits on the original 356-row L0 and
+  247-row validation split. No early stopping; all arms completed their maximum
+  epochs. No U0/test labels, test metrics, AL trajectories or selection commits.
+- Part A arms A/B/C/D/E used batch/epoch pairs 2048/300, 256/150, 128/100,
+  256/300 and 128/300. A/B/C each have 300 updates; A/D/E each have 300 epochs
+  and 106,800 sample presentations. Seed 525 selected D by frozen validation rule.
+- Paired A vs D RMSE at seeds 525/1525/2525: 7.91873/7.75241,
+  7.51350/7.42939 and 7.94443/7.75533. Mean RMSE improves from
+  7.79222 ± 0.24172 to 7.64571 ± 0.18734 (sample SD), 1.88%; direction 3/3.
+- Same-update seed-525 B already provides nearly all D's improvement; batch 128
+  remains worse at 300 and 900 updates. Evidence supports a modest batch/training
+  path issue, not severe pure update-count underexposure.
+- Validation gradient norm versus absolute-error Spearman is 0.231–0.241 across
+  full/sketch norms and A/D checkpoints. Raw LCMD/MaxDet selected median norm
+  percentiles 96.87–99.11; unit features reduce them to 13.00–40.58 and change
+  LCMD batches 32/32 and MaxDet batches 31/32. No selected labels were revealed.
+- Decision: H3 is the next-stage hypothesis—fix training protocol first, then a
+  separately preregistered raw/unit AL ablation. It is not a winner claim or
+  permission to execute another experiment. Stop condition satisfied.
+- Report: `docs/research/HPLC_AL_TRAINING_DIAGNOSIS.md`; study:
+  `studies/active_learning/odh_training_protocol_diagnosis/`.

@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE",
+  "label_audit": {
+    "successful_requests": 5,
+    "U0_label_requests": 0,
+    "test_label_requests": 0,
+    "selection_commits": 0,
+    "label_audit_sha256": "84f7ec1667674fea091b85ffd1455179e544365be9b9a08c368c018350b60c06"
+  },
+  "files": {
+    "runtime/geometry_seed_525/A/complete.json": "770493ba4f26302f3191e99e9099dce599563149b3c3c973a5714042384927f7",
+    "runtime/geometry_seed_525/A/outer_features.npz": "d7c15d4ad985c155e4326e95504342c5ddb21144691a4bf7903967a963d405a3",
+    "runtime/geometry_seed_525/A/outer_gradient_audit.json": "d535271d8e2a4b42132e708fe636a2f0d519bdabf494ae6a793e77818a773b15",
+    "runtime/geometry_seed_525/A/outer_norms_label_free.csv": "c0de626be5ecd619f0c9fcda8cd3ceb52d1f570096cd463fc4c24898d6272650",
+    "runtime/geometry_seed_525/A/selection_comparison.csv": "6055e9c7de9035dfeb4e3c037572b8c742d6c923abaab06e0d2150f71b7e8dc5",
+    "runtime/geometry_seed_525/A/selections.json": "d39541de2535dfb8de908461cb4d433b584c4971768d36eac07cd9e49d7609f5",
+    "runtime/geometry_seed_525/A/validation_features.npz": "36b97c6c7310ae486f52f31b72d9e0310616406f8c5de3ee83edfbb6c8b0a27d",
+    "runtime/geometry_seed_525/A/validation_gradient_audit.json": "ecf1c0246cf7f60fc83ca2f06b3c3feaa5c5ffded1b04b624608590b997f10cb",
+    "runtime/geometry_seed_525/A/validation_relevance.csv": "e165b684fb27c5c7ede415524ed73164c8df4bfde4dc5150fa4284b16bc61d32",
+    "runtime/geometry_seed_525/D/complete.json": "b2b21853f477625a00c1d27089c5b43909d61d58e5e53437e12e7220014a3c34",
+    "runtime/geometry_seed_525/D/outer_features.npz": "2ef5f0e8c951c83cf1390471ccb93718d21d76c6ddbb6b1ecfb95b3d3f78c958",
+    "runtime/geometry_seed_525/D/outer_gradient_audit.json": "d198a379176cbc58e31e472a2c78ab7a943c645a463225d09f76ff3893a5989b",
+    "runtime/geometry_seed_525/D/outer_norms_label_free.csv": "5b78e9d597e85866a221784f0f5a3ff5783e60a6b0fa73a24e075b2e1bcdab17",
+    "runtime/geometry_seed_525/D/selection_comparison.csv": "4dc1b45c76da784664dc47a7202981a779b1dce0478948480d6934c99a544b6b",
+    "runtime/geometry_seed_525/D/selections.json": "281b51a9124d394158f0d167fa5316830388de240cb1fac33a4291b4c7385e62",
+    "runtime/geometry_seed_525/D/validation_features.npz": "44b9553ed00f5ea53f646a78e2172a04c2a4ccd321e5bd3022da25f2a7c80dae",
+    "runtime/geometry_seed_525/D/validation_gradient_audit.json": "f5c6236a899483ac936ae3ad7aa54419b4184c1737195db108880fdc4bce6c86",
+    "runtime/geometry_seed_525/D/validation_relevance.csv": "a6b04e805bb91aaccba74e46ab6b9042d92ad250aa9afdcc32014c97a78fca74"
+  }
+}
