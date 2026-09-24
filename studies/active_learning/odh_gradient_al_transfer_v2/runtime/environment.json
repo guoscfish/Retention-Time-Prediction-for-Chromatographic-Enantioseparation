@@ -1,0 +1,16 @@
+{
+  "python": "3.11.16 (main, Sep  2 2026, 23:33:55) [Clang 21.1.8 ]",
+  "executable": "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/.conda-hplc-al/bin/python",
+  "prefix": "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/.conda-hplc-al",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "cpu_threads": 4,
+  "packages": {
+    "torch": "2.2.2",
+    "numpy": "1.23.5",
+    "scipy": "1.10.1",
+    "torch-geometric": "2.5.3",
+    "rdkit": "2023.9.6",
+    "pandas": "1.5.3",
+    "pytest": "8.3.5"
+  }
+}

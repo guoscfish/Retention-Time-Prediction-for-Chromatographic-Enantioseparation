@@ -1,0 +1,14 @@
+{
+  "core_dependency_matches": {
+    "torch": true,
+    "torch-geometric": true,
+    "numpy": true,
+    "scipy": true,
+    "rdkit": true,
+    "pandas": true
+  },
+  "torch_threads_match": true,
+  "current_python": "3.11.16 (main, Sep  2 2026, 23:33:55) [Clang 21.1.8 ]",
+  "baseline_python": "3.11.14 | packaged by conda-forge | (main, Oct 22 2025, 22:56:31) [Clang 19.1.7 ]",
+  "same_python_patch_version": false
+}

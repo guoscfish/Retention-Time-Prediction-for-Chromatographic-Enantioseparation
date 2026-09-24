@@ -1,0 +1,28 @@
+{
+  "status": "PASS_SHUFFLE_PROTOCOL_ONLY",
+  "training": {
+    "batch_size": 256,
+    "maximum_epochs": 500,
+    "patience": 100,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "scratch": true,
+    "fresh_adam_every_round": true,
+    "shuffle": "deterministic_each_epoch",
+    "scheduler": false,
+    "checkpoint": "validation_only"
+  },
+  "budgets": [
+    333,
+    365,
+    397,
+    429
+  ],
+  "method_budget_records": 20,
+  "same_seed_same_epoch": true,
+  "different_epoch_changes": true,
+  "epoch_coverage": true,
+  "duration_rule": "report insufficient if maximum_epochs - best_epoch < patience",
+  "duration_training_smoke": "NOT_RUN_TORCH_UNAVAILABLE",
+  "long_al_started": false
+}

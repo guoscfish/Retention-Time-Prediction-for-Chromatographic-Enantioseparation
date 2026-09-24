@@ -1,0 +1,62 @@
+{
+  "initialization_seed": 525,
+  "training_seed": 525,
+  "initialization_hash": "90ae1f750428ad51517cec81fe86a279dea391079d65096b74209169868df19b",
+  "checkpoint_state_hash": "37a9ad3a097ce40d495f4b31b94cc6b76a16a236cde6ab2099abd2758c4936f1",
+  "checkpoint_path": "attempt_000/best.pt",
+  "checkpoint_hash": "577c38710b965a494b6d36032113ffd71f2f04209aeea611d11ab1f4475df159",
+  "epochs_run": 155,
+  "total_optimizer_steps": 310,
+  "best_epoch": 55,
+  "best_validation_mse": 59.07774591317196,
+  "best_validation_metrics": {
+    "rmse": 7.686204909652875,
+    "mae": 5.058523494705015,
+    "r2": 0.23638662981144487,
+    "nrmse": 0.8656376486801944
+  },
+  "best_optimizer_step": 110,
+  "final_validation_metrics": {
+    "rmse": 7.754295598547111,
+    "mae": 5.026336319533437,
+    "r2": 0.22279727902535018,
+    "nrmse": 0.8733061748936185
+  },
+  "final_checkpoint_path": "attempt_000/final.pt",
+  "final_checkpoint_hash": "5198223e41d65650579e2772ffd4ceff9daac7f74ba369711b0a8938152fe9cd",
+  "stopped_epoch": 155,
+  "seconds": 89.77595779199328,
+  "stopping_reason": "patience",
+  "attempted_fits": 1,
+  "abandoned_attempts": [],
+  "L_hash": "431796eafada99c70b1bd7a5f4ff21bde5afa3f05bdb62b7a38b59dfe530b68b",
+  "budget": 333,
+  "steps_per_epoch": 2,
+  "observed_batch_sizes": [
+    256,
+    77
+  ],
+  "input_hash": "7aa605eed8df7f3518d0f5268083d128a21da710c05ba80dbedd5bfc4581d034",
+  "files": {
+    "input.json": "7aa605eed8df7f3518d0f5268083d128a21da710c05ba80dbedd5bfc4581d034",
+    "attempt_000/best.pt": "577c38710b965a494b6d36032113ffd71f2f04209aeea611d11ab1f4475df159",
+    "attempt_000/training_curve.csv": "f833f66d9e3fc0dfec04cb9b8fb9342d07dd0466200ed5c46e3dc4787de49baf",
+    "attempt_000/validation_predictions.npz": "b720848d3999c00b272f33c0a02d2f65c15ee89861fc42fc3c44e353c946f954",
+    "attempt_000/final.pt": "5198223e41d65650579e2772ffd4ceff9daac7f74ba369711b0a8938152fe9cd",
+    "attempt_000/final_validation_predictions.npz": "fba13bebcd7dd0f3c036a311ac0c87fe994799b2be9e75bf1dd7d5b9669928f8"
+  },
+  "seed": 525,
+  "best_validation_rmse": 7.686204909652875,
+  "best_validation_mae": 5.058523494705015,
+  "best_validation_r2": 0.23638662981144487,
+  "best_validation_nrmse": 0.8656376486801944,
+  "L0_population_std": 8.879240547556758,
+  "actual_batch_sizes_per_epoch": [
+    256,
+    77
+  ],
+  "wall_runtime_seconds": 89.78621683399251,
+  "duration_gate": "PASS",
+  "U0_labels_accessed": false,
+  "test_labels_accessed": false
+}

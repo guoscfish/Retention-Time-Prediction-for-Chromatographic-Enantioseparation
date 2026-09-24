@@ -1,0 +1,5 @@
+{
+  "reason": "Interrupted Random round 1 audit None dereference; AL runner omitted assert_environment, default torch threads=10 whereas duration and historical environment use 4. Prior fit execution thread count was not recorded; prior L333 checkpoint differs despite identical fit inputs and initialization. Preserve evidence, reuse validated duration seed 525 for shared round 0, enforce 4 threads for bounded AL.",
+  "no_test_reveal": true,
+  "acquisition_strategy_changed": false
+}

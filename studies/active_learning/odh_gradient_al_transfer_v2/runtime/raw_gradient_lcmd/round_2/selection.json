@@ -1,0 +1,287 @@
+{
+  "method": "raw_gradient_lcmd",
+  "round": 2,
+  "L_hash": "83c805b827b257849abfbdfeb09f0db025f927508d843f5cff94d7092bb19867",
+  "U_hash": "08d684c9e323b955cb45b52eb4b6f73a86d2514bb3559846cea30aaeb8895e00",
+  "selected": [
+    1007,
+    3905,
+    1910,
+    3376,
+    3595,
+    335,
+    2055,
+    3132,
+    503,
+    4707,
+    4805,
+    2744,
+    2820,
+    4241,
+    2911,
+    4297,
+    2954,
+    969,
+    3122,
+    4671,
+    3133,
+    955,
+    2197,
+    1126,
+    2674,
+    3737,
+    1027,
+    3953,
+    836,
+    2985,
+    1819,
+    4455
+  ],
+  "selected_hash": "0476fee1a53aee3c5fc0af4f7cb36b273d3d7722727d8298529fb411d24d43b0",
+  "trace": [
+    {
+      "selection_order": 0,
+      "pool_position": 823,
+      "selected_from_center": 69,
+      "largest_cluster_score": 7725071.280163504,
+      "nearest_center_sq_distance_before_selection": 953130.1246448592
+    },
+    {
+      "selection_order": 1,
+      "pool_position": 3194,
+      "selected_from_center": 331,
+      "largest_cluster_score": 6673186.323522618,
+      "nearest_center_sq_distance_before_selection": 1302262.0599714941
+    },
+    {
+      "selection_order": 2,
+      "pool_position": 1567,
+      "selected_from_center": 60,
+      "largest_cluster_score": 6612218.421084628,
+      "nearest_center_sq_distance_before_selection": 767926.8050607909
+    },
+    {
+      "selection_order": 3,
+      "pool_position": 2766,
+      "selected_from_center": 69,
+      "largest_cluster_score": 6084890.914785565,
+      "nearest_center_sq_distance_before_selection": 857804.7162311301
+    },
+    {
+      "selection_order": 4,
+      "pool_position": 2933,
+      "selected_from_center": 60,
+      "largest_cluster_score": 5844291.616023838,
+      "nearest_center_sq_distance_before_selection": 620838.7707650549
+    },
+    {
+      "selection_order": 5,
+      "pool_position": 271,
+      "selected_from_center": 207,
+      "largest_cluster_score": 5731643.686242041,
+      "nearest_center_sq_distance_before_selection": 622321.169311601
+    },
+    {
+      "selection_order": 6,
+      "pool_position": 1684,
+      "selected_from_center": 78,
+      "largest_cluster_score": 5703889.704966584,
+      "nearest_center_sq_distance_before_selection": 794291.5742015945
+    },
+    {
+      "selection_order": 7,
+      "pool_position": 2562,
+      "selected_from_center": 217,
+      "largest_cluster_score": 5598432.762056925,
+      "nearest_center_sq_distance_before_selection": 1460876.142515996
+    },
+    {
+      "selection_order": 8,
+      "pool_position": 411,
+      "selected_from_center": 69,
+      "largest_cluster_score": 5227086.198554435,
+      "nearest_center_sq_distance_before_selection": 664515.4386444476
+    },
+    {
+      "selection_order": 9,
+      "pool_position": 3843,
+      "selected_from_center": 207,
+      "largest_cluster_score": 5109322.51693044,
+      "nearest_center_sq_distance_before_selection": 486894.8392498739
+    },
+    {
+      "selection_order": 10,
+      "pool_position": 3920,
+      "selected_from_center": 213,
+      "largest_cluster_score": 5012078.842033126,
+      "nearest_center_sq_distance_before_selection": 558187.8985806631
+    },
+    {
+      "selection_order": 11,
+      "pool_position": 2254,
+      "selected_from_center": 210,
+      "largest_cluster_score": 5010387.5420039045,
+      "nearest_center_sq_distance_before_selection": 632805.3716207817
+    },
+    {
+      "selection_order": 12,
+      "pool_position": 2311,
+      "selected_from_center": 197,
+      "largest_cluster_score": 4946761.777051228,
+      "nearest_center_sq_distance_before_selection": 455120.39878137794
+    },
+    {
+      "selection_order": 13,
+      "pool_position": 3464,
+      "selected_from_center": 60,
+      "largest_cluster_score": 4833157.600103246,
+      "nearest_center_sq_distance_before_selection": 518018.0483528045
+    },
+    {
+      "selection_order": 14,
+      "pool_position": 2386,
+      "selected_from_center": 207,
+      "largest_cluster_score": 4622427.677680567,
+      "nearest_center_sq_distance_before_selection": 467693.94742679095
+    },
+    {
+      "selection_order": 15,
+      "pool_position": 3514,
+      "selected_from_center": 165,
+      "largest_cluster_score": 4571952.909975573,
+      "nearest_center_sq_distance_before_selection": 316184.53834672977
+    },
+    {
+      "selection_order": 16,
+      "pool_position": 2421,
+      "selected_from_center": 3,
+      "largest_cluster_score": 4569615.77350728,
+      "nearest_center_sq_distance_before_selection": 832519.5951632699
+    },
+    {
+      "selection_order": 17,
+      "pool_position": 793,
+      "selected_from_center": 385,
+      "largest_cluster_score": 4565812.05673252,
+      "nearest_center_sq_distance_before_selection": 2580468.118855455
+    },
+    {
+      "selection_order": 18,
+      "pool_position": 2552,
+      "selected_from_center": 197,
+      "largest_cluster_score": 4491641.37826985,
+      "nearest_center_sq_distance_before_selection": 277228.1368060975
+    },
+    {
+      "selection_order": 19,
+      "pool_position": 3817,
+      "selected_from_center": 60,
+      "largest_cluster_score": 4315139.551750441,
+      "nearest_center_sq_distance_before_selection": 452989.422207018
+    },
+    {
+      "selection_order": 20,
+      "pool_position": 2563,
+      "selected_from_center": 258,
+      "largest_cluster_score": 4250529.612421288,
+      "nearest_center_sq_distance_before_selection": 518754.11091680895
+    },
+    {
+      "selection_order": 21,
+      "pool_position": 784,
+      "selected_from_center": 358,
+      "largest_cluster_score": 4219140.488313215,
+      "nearest_center_sq_distance_before_selection": 424281.92254631856
+    },
+    {
+      "selection_order": 22,
+      "pool_position": 1800,
+      "selected_from_center": 217,
+      "largest_cluster_score": 4137556.6195409303,
+      "nearest_center_sq_distance_before_selection": 765524.5338921054
+    },
+    {
+      "selection_order": 23,
+      "pool_position": 914,
+      "selected_from_center": 253,
+      "largest_cluster_score": 4116095.9965278083,
+      "nearest_center_sq_distance_before_selection": 248305.7005798801
+    },
+    {
+      "selection_order": 24,
+      "pool_position": 2198,
+      "selected_from_center": 165,
+      "largest_cluster_score": 4034427.598645947,
+      "nearest_center_sq_distance_before_selection": 198789.40658862214
+    },
+    {
+      "selection_order": 25,
+      "pool_position": 3051,
+      "selected_from_center": 202,
+      "largest_cluster_score": 3982938.2079663984,
+      "nearest_center_sq_distance_before_selection": 627816.9687631018
+    },
+    {
+      "selection_order": 26,
+      "pool_position": 840,
+      "selected_from_center": 69,
+      "largest_cluster_score": 3973659.010690742,
+      "nearest_center_sq_distance_before_selection": 533948.0529272839
+    },
+    {
+      "selection_order": 27,
+      "pool_position": 3231,
+      "selected_from_center": 197,
+      "largest_cluster_score": 3969980.8918568315,
+      "nearest_center_sq_distance_before_selection": 247425.01932545123
+    },
+    {
+      "selection_order": 28,
+      "pool_position": 685,
+      "selected_from_center": 201,
+      "largest_cluster_score": 3948880.7220415524,
+      "nearest_center_sq_distance_before_selection": 557384.6116533376
+    },
+    {
+      "selection_order": 29,
+      "pool_position": 2443,
+      "selected_from_center": 213,
+      "largest_cluster_score": 3927267.9864177066,
+      "nearest_center_sq_distance_before_selection": 494714.03933202964
+    },
+    {
+      "selection_order": 30,
+      "pool_position": 1489,
+      "selected_from_center": 62,
+      "largest_cluster_score": 3877155.484463329,
+      "nearest_center_sq_distance_before_selection": 929835.4139319723
+    },
+    {
+      "selection_order": 31,
+      "pool_position": 3644,
+      "selected_from_center": 165,
+      "largest_cluster_score": 3835638.1920573246,
+      "nearest_center_sq_distance_before_selection": 172962.34998210354
+    }
+  ],
+  "selection_audit": {
+    "selector_seconds": 0.19300495799689088,
+    "geometry": {
+      "raw_norm": {
+        "min": 126.75660735724713,
+        "median": 457.1056705015641,
+        "max": 2173.9926117660552
+      },
+      "selected_norm_percentile": 93.8835169777378,
+      "top_decile_selected_fraction": 0.78125,
+      "effective_rank": 31.0,
+      "nearest_L_distance": 782.889024644111,
+      "batch_pairwise_diversity": 1286.931789863355,
+      "zero_gradient_rows": 0
+    },
+    "geometry_name": "raw"
+  },
+  "geometry": "raw",
+  "raw_gradient_bank_hash": "20fe5870cdc6e3a0aa6e35a99a1939bd68b45c37c61ae850d57e7646de13b03d",
+  "unit_gradient_bank_hash": null
+}

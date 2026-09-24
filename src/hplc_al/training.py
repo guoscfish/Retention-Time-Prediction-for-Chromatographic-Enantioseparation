@@ -14,6 +14,7 @@ from .common import (
     INIT_SEED,
     atomic_json,
     ids_hash,
+    metrics,
     read_json,
     sha,
     stable_hash,
@@ -22,6 +23,7 @@ from .common import (
     write_once,
 )
 from .data import batches, predict
+from .deterministic_shuffle import batch_sizes, epoch_batches
 
 
 def fresh_model(seed=INIT_SEED):
@@ -85,11 +87,12 @@ def fit(graphs, labeled, truth, validation, valid_truth, config, directory, bind
     optimizer = torch.optim.Adam(
         model.parameters(), lr=config["learning_rate"], weight_decay=config["weight_decay"]
     )
-    y = torch.tensor(truth, dtype=torch.float32)
     # Graphs remain label-free even for training; targets are separate authorized arrays.
-    train_batches = list(batches(graphs, labeled, config["batch_size"]))
     best, best_epoch, stale = float("inf"), 0, 0
-    fields = ["epoch", "train_loss", "validation_mse", "train_seconds", "validation_seconds"]
+    fields = [
+        "epoch", "train_loss", "validation_mse", "train_seconds",
+        "validation_seconds", "steps_per_epoch", "observed_batch_sizes",
+    ]
     curve = []
     reason = "maximum_epochs"
     with (attempt / "training_curve.csv").open("w", newline="") as f:
@@ -100,10 +103,29 @@ def fit(graphs, labeled, truth, validation, valid_truth, config, directory, bind
             model.train()
             losses = []
             offset = 0
-            for g, h in train_batches:
+            if config.get("shuffle") == "deterministic_each_epoch":
+                paired_batches = epoch_batches(
+                    labeled, truth, config.get("training_seed", config["initialization_seed"]), epoch - 1, config["batch_size"]
+                )
+            else:
+                # Keep the historical fixed-order path available for immutable
+                # development artifacts.  New transfer studies must opt into
+                # deterministic_each_epoch explicitly.
+                paired_batches = ((
+                    labeled[start : start + config["batch_size"]],
+                    truth[start : start + config["batch_size"]],
+                ) for start in range(0, len(labeled), config["batch_size"]))
+            for batch_ids, batch_truth in paired_batches:
+                graph_batches = batches(graphs, batch_ids, len(batch_ids))
+                g, h = next(graph_batches)
+                if hasattr(g, "sample_key"):
+                    graph_ids = g.sample_key.detach().cpu().numpy().reshape(-1)
+                    if not np.array_equal(graph_ids, np.asarray(batch_ids)):
+                        raise RuntimeError("graph IDs and truth batch are misaligned")
                 optimizer.zero_grad(set_to_none=True)
                 output, _ = model(g, h)
-                loss = original_loss(output, y[offset : offset + g.num_graphs])
+                target = torch.tensor(batch_truth, dtype=torch.float32)
+                loss = original_loss(output, target)
                 if not torch.isfinite(loss):
                     raise RuntimeError("nonfinite training objective")
                 loss.backward()
@@ -115,6 +137,8 @@ def fit(graphs, labeled, truth, validation, valid_truth, config, directory, bind
                 optimizer.step()
                 losses.append((loss.item(), g.num_graphs))
                 offset += g.num_graphs
+            if offset != len(labeled):
+                raise RuntimeError("epoch did not present every labeled ID exactly once")
             train_seconds = time.perf_counter() - tick
             tick = time.perf_counter()
             val = predict(model, graphs, validation)[:, 1]
@@ -130,6 +154,8 @@ def fit(graphs, labeled, truth, validation, valid_truth, config, directory, bind
                         score,
                         train_seconds,
                         time.perf_counter() - tick,
+                        len(losses),
+                        str([n for _, n in losses]),
                     ],
                 )
             )
@@ -170,9 +196,23 @@ def fit(graphs, labeled, truth, validation, valid_truth, config, directory, bind
             ):
                 reason = "wall_time_limit"
                 break
+    final_epoch = epoch
+    final_predictions = predict(model, graphs, validation)
+    scale = float(np.std(np.asarray(truth, dtype=np.float64), ddof=0))
+    final_metrics = metrics(final_predictions[:, 1], valid_truth, scale)
+    save_checkpoint(
+        attempt / "final.pt",
+        dict(model=model.state_dict(), epoch=final_epoch, initialization_hash=initial),
+    )
+    np.savez(
+        attempt / "final_validation_predictions.npz",
+        ids=np.array(validation),
+        predictions=final_predictions,
+    )
     checkpoint = attempt / "best.pt"
     model = load_model(checkpoint)
     valid_predictions = predict(model, graphs, validation)
+    best_metrics = metrics(valid_predictions[:, 1], valid_truth, scale)
     np.savez(
         attempt / "validation_predictions.npz",
         ids=np.array(validation),
@@ -186,14 +226,23 @@ def fit(graphs, labeled, truth, validation, valid_truth, config, directory, bind
         checkpoint_path=str(checkpoint.relative_to(directory)),
         checkpoint_hash=sha(checkpoint),
         epochs_run=epoch,
+        total_optimizer_steps=epoch * len(batch_sizes(len(labeled), config["batch_size"])),
         best_epoch=best_epoch,
         best_validation_mse=best,
+        best_validation_metrics=best_metrics,
+        best_optimizer_step=best_epoch * ((len(labeled) + config["batch_size"] - 1) // config["batch_size"]),
+        final_validation_metrics=final_metrics,
+        final_checkpoint_path=str((attempt / "final.pt").relative_to(directory)),
+        final_checkpoint_hash=sha(attempt / "final.pt"),
+        stopped_epoch=final_epoch,
         seconds=time.perf_counter() - started,
         stopping_reason=reason,
         attempted_fits=len(previous) + 1,
         abandoned_attempts=[p.name for p in previous],
         L_hash=ids_hash(labeled),
         budget=len(labeled),
+        steps_per_epoch=len(batch_sizes(len(labeled), config["batch_size"])),
+        observed_batch_sizes=batch_sizes(len(labeled), config["batch_size"]),
         input_hash=sha(directory / "input.json"),
         files={
             str(p.relative_to(directory)): sha(p)
@@ -202,6 +251,8 @@ def fit(graphs, labeled, truth, validation, valid_truth, config, directory, bind
                 checkpoint,
                 attempt / "training_curve.csv",
                 attempt / "validation_predictions.npz",
+                attempt / "final.pt",
+                attempt / "final_validation_predictions.npz",
             ]
         },
     )

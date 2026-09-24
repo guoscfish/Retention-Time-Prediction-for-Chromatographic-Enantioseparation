@@ -1,0 +1,287 @@
+{
+  "method": "unit_gradient_lcmd",
+  "round": 2,
+  "L_hash": "2e7dd60cc6d10f2b5e505ca5bf4bc62fa3792ae20b627b2b61aeab3648dba1a9",
+  "U_hash": "1b827709fab09c5f7875e202ee8a7e1692da848118f485e20f5f1ac15e55c60b",
+  "selected": [
+    1572,
+    1132,
+    1159,
+    2199,
+    2004,
+    768,
+    2787,
+    2200,
+    4368,
+    3004,
+    1077,
+    4339,
+    4012,
+    896,
+    3140,
+    2912,
+    4764,
+    1795,
+    1276,
+    4463,
+    506,
+    3745,
+    3705,
+    2612,
+    440,
+    3802,
+    1070,
+    3886,
+    3331,
+    4301,
+    4500,
+    600
+  ],
+  "selected_hash": "5ad805193588e7d6dc688721bf0676a6ced7a07e00736b205f0a16dcdb6ba7d6",
+  "trace": [
+    {
+      "selection_order": 0,
+      "pool_position": 1288,
+      "selected_from_center": 3,
+      "largest_cluster_score": 12.222308646680968,
+      "nearest_center_sq_distance_before_selection": 0.6023093351291331
+    },
+    {
+      "selection_order": 1,
+      "pool_position": 934,
+      "selected_from_center": 3,
+      "largest_cluster_score": 11.619999311551835,
+      "nearest_center_sq_distance_before_selection": 0.5228602636596731
+    },
+    {
+      "selection_order": 2,
+      "pool_position": 956,
+      "selected_from_center": 97,
+      "largest_cluster_score": 11.04959430403386,
+      "nearest_center_sq_distance_before_selection": 0.6992623264882922
+    },
+    {
+      "selection_order": 3,
+      "pool_position": 1810,
+      "selected_from_center": 190,
+      "largest_cluster_score": 10.854309211900503,
+      "nearest_center_sq_distance_before_selection": 0.5682641942731297
+    },
+    {
+      "selection_order": 4,
+      "pool_position": 1650,
+      "selected_from_center": 3,
+      "largest_cluster_score": 10.773616615210468,
+      "nearest_center_sq_distance_before_selection": 0.520793355025712
+    },
+    {
+      "selection_order": 5,
+      "pool_position": 626,
+      "selected_from_center": 190,
+      "largest_cluster_score": 10.286045017627373,
+      "nearest_center_sq_distance_before_selection": 0.47849304411530813
+    },
+    {
+      "selection_order": 6,
+      "pool_position": 2294,
+      "selected_from_center": 3,
+      "largest_cluster_score": 9.76045643869199,
+      "nearest_center_sq_distance_before_selection": 0.5098908379116514
+    },
+    {
+      "selection_order": 7,
+      "pool_position": 1811,
+      "selected_from_center": 159,
+      "largest_cluster_score": 9.036184558884267,
+      "nearest_center_sq_distance_before_selection": 0.6332830132112801
+    },
+    {
+      "selection_order": 8,
+      "pool_position": 3572,
+      "selected_from_center": 352,
+      "largest_cluster_score": 8.917128937451995,
+      "nearest_center_sq_distance_before_selection": 0.4709774505439486
+    },
+    {
+      "selection_order": 9,
+      "pool_position": 2461,
+      "selected_from_center": 210,
+      "largest_cluster_score": 8.827277735101477,
+      "nearest_center_sq_distance_before_selection": 0.48058616908643503
+    },
+    {
+      "selection_order": 10,
+      "pool_position": 891,
+      "selected_from_center": 190,
+      "largest_cluster_score": 8.583037984391572,
+      "nearest_center_sq_distance_before_selection": 0.46883737194939945
+    },
+    {
+      "selection_order": 11,
+      "pool_position": 3548,
+      "selected_from_center": 97,
+      "largest_cluster_score": 8.39672411614859,
+      "nearest_center_sq_distance_before_selection": 0.5756580493937826
+    },
+    {
+      "selection_order": 12,
+      "pool_position": 3283,
+      "selected_from_center": 61,
+      "largest_cluster_score": 8.367016428149643,
+      "nearest_center_sq_distance_before_selection": 0.5907401612276939
+    },
+    {
+      "selection_order": 13,
+      "pool_position": 736,
+      "selected_from_center": 19,
+      "largest_cluster_score": 8.209252180610713,
+      "nearest_center_sq_distance_before_selection": 0.5675004592504691
+    },
+    {
+      "selection_order": 14,
+      "pool_position": 2574,
+      "selected_from_center": 237,
+      "largest_cluster_score": 7.993565630195402,
+      "nearest_center_sq_distance_before_selection": 0.479620700427821
+    },
+    {
+      "selection_order": 15,
+      "pool_position": 2391,
+      "selected_from_center": 3,
+      "largest_cluster_score": 7.977134412551656,
+      "nearest_center_sq_distance_before_selection": 0.4750767254187047
+    },
+    {
+      "selection_order": 16,
+      "pool_position": 3882,
+      "selected_from_center": 158,
+      "largest_cluster_score": 7.970334480421124,
+      "nearest_center_sq_distance_before_selection": 0.5058508706476752
+    },
+    {
+      "selection_order": 17,
+      "pool_position": 1474,
+      "selected_from_center": 210,
+      "largest_cluster_score": 7.872842513929612,
+      "nearest_center_sq_distance_before_selection": 0.42955089296632565
+    },
+    {
+      "selection_order": 18,
+      "pool_position": 1051,
+      "selected_from_center": 61,
+      "largest_cluster_score": 7.776276266921949,
+      "nearest_center_sq_distance_before_selection": 0.4870060912255805
+    },
+    {
+      "selection_order": 19,
+      "pool_position": 3650,
+      "selected_from_center": 101,
+      "largest_cluster_score": 7.660540145752366,
+      "nearest_center_sq_distance_before_selection": 0.5372550817876478
+    },
+    {
+      "selection_order": 20,
+      "pool_position": 411,
+      "selected_from_center": 142,
+      "largest_cluster_score": 7.582236479211461,
+      "nearest_center_sq_distance_before_selection": 0.6117626520072497
+    },
+    {
+      "selection_order": 21,
+      "pool_position": 3065,
+      "selected_from_center": 237,
+      "largest_cluster_score": 7.513944929767581,
+      "nearest_center_sq_distance_before_selection": 0.43362040384841016
+    },
+    {
+      "selection_order": 22,
+      "pool_position": 3030,
+      "selected_from_center": 3,
+      "largest_cluster_score": 7.502057687132952,
+      "nearest_center_sq_distance_before_selection": 0.4702066394911435
+    },
+    {
+      "selection_order": 23,
+      "pool_position": 2151,
+      "selected_from_center": 210,
+      "largest_cluster_score": 7.4432916209632864,
+      "nearest_center_sq_distance_before_selection": 0.40872429804931354
+    },
+    {
+      "selection_order": 24,
+      "pool_position": 360,
+      "selected_from_center": 289,
+      "largest_cluster_score": 7.330327655846563,
+      "nearest_center_sq_distance_before_selection": 0.5140497310930545
+    },
+    {
+      "selection_order": 25,
+      "pool_position": 3112,
+      "selected_from_center": 197,
+      "largest_cluster_score": 7.320963405656204,
+      "nearest_center_sq_distance_before_selection": 0.5459428498349488
+    },
+    {
+      "selection_order": 26,
+      "pool_position": 886,
+      "selected_from_center": 280,
+      "largest_cluster_score": 7.295032111976138,
+      "nearest_center_sq_distance_before_selection": 0.40721624233782183
+    },
+    {
+      "selection_order": 27,
+      "pool_position": 3182,
+      "selected_from_center": 373,
+      "largest_cluster_score": 7.12636559738251,
+      "nearest_center_sq_distance_before_selection": 0.6648242073788027
+    },
+    {
+      "selection_order": 28,
+      "pool_position": 2728,
+      "selected_from_center": 101,
+      "largest_cluster_score": 7.123285063964718,
+      "nearest_center_sq_distance_before_selection": 0.5342868737755819
+    },
+    {
+      "selection_order": 29,
+      "pool_position": 3517,
+      "selected_from_center": 19,
+      "largest_cluster_score": 7.0824753769267215,
+      "nearest_center_sq_distance_before_selection": 0.5383549660688369
+    },
+    {
+      "selection_order": 30,
+      "pool_position": 3678,
+      "selected_from_center": 67,
+      "largest_cluster_score": 7.068280170623794,
+      "nearest_center_sq_distance_before_selection": 0.4121218311526631
+    },
+    {
+      "selection_order": 31,
+      "pool_position": 489,
+      "selected_from_center": 3,
+      "largest_cluster_score": 7.031851047641808,
+      "nearest_center_sq_distance_before_selection": 0.4529919306484387
+    }
+  ],
+  "selection_audit": {
+    "selector_seconds": 0.2123497909924481,
+    "geometry": {
+      "raw_norm": {
+        "min": 151.00489963999723,
+        "median": 644.3776402381739,
+        "max": 2726.0907053446695
+      },
+      "selected_norm_percentile": 46.486395322689454,
+      "top_decile_selected_fraction": 0.15625,
+      "effective_rank": 31.0,
+      "nearest_L_distance": 499.37737077982143,
+      "batch_pairwise_diversity": 923.0554154540011,
+      "zero_gradient_rows": 0
+    },
+    "geometry_name": "unit-normalized sketched gradient"
+  },
+  "geometry": "unit-normalized sketched gradient",
+  "raw_gradient_bank_hash": "87c30ebb65c9116bebc0976bd4d91f7eebbdc49d7d078be2ff3a7bbfa1f903d6",
+  "unit_gradient_bank_hash": null
+}

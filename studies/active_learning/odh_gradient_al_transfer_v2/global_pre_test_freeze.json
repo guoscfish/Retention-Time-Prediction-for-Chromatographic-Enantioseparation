@@ -1,0 +1,96 @@
+{
+  "status": "FROZEN_BEFORE_TEST_TRUTH",
+  "entries": {
+    "random/0": {
+      "path": "runtime/random/round_0/round.json"
+    },
+    "random/1": {
+      "path": "runtime/random/round_1/round.json"
+    },
+    "random/2": {
+      "path": "runtime/random/round_2/round.json"
+    },
+    "random/3": {
+      "path": "runtime/random/round_3/round.json"
+    },
+    "raw_gradient_lcmd/0": {
+      "path": "runtime/raw_gradient_lcmd/round_0/round.json"
+    },
+    "raw_gradient_lcmd/1": {
+      "path": "runtime/raw_gradient_lcmd/round_1/round.json"
+    },
+    "raw_gradient_lcmd/2": {
+      "path": "runtime/raw_gradient_lcmd/round_2/round.json"
+    },
+    "raw_gradient_lcmd/3": {
+      "path": "runtime/raw_gradient_lcmd/round_3/round.json"
+    },
+    "unit_gradient_lcmd/0": {
+      "path": "runtime/unit_gradient_lcmd/round_0/round.json"
+    },
+    "unit_gradient_lcmd/1": {
+      "path": "runtime/unit_gradient_lcmd/round_1/round.json"
+    },
+    "unit_gradient_lcmd/2": {
+      "path": "runtime/unit_gradient_lcmd/round_2/round.json"
+    },
+    "unit_gradient_lcmd/3": {
+      "path": "runtime/unit_gradient_lcmd/round_3/round.json"
+    },
+    "raw_gradient_maxdet/0": {
+      "path": "runtime/raw_gradient_maxdet/round_0/round.json"
+    },
+    "raw_gradient_maxdet/1": {
+      "path": "runtime/raw_gradient_maxdet/round_1/round.json"
+    },
+    "raw_gradient_maxdet/2": {
+      "path": "runtime/raw_gradient_maxdet/round_2/round.json"
+    },
+    "raw_gradient_maxdet/3": {
+      "path": "runtime/raw_gradient_maxdet/round_3/round.json"
+    },
+    "unit_gradient_maxdet/0": {
+      "path": "runtime/unit_gradient_maxdet/round_0/round.json"
+    },
+    "unit_gradient_maxdet/1": {
+      "path": "runtime/unit_gradient_maxdet/round_1/round.json"
+    },
+    "unit_gradient_maxdet/2": {
+      "path": "runtime/unit_gradient_maxdet/round_2/round.json"
+    },
+    "unit_gradient_maxdet/3": {
+      "path": "runtime/unit_gradient_maxdet/round_3/round.json"
+    }
+  },
+  "test_truth_access_count": 0,
+  "files": {
+    "protocol.json": "a64afcab6d35ab0898b4820ce7ef8085977c44f40326f2a3df8f5283d71ba166",
+    "splits/partition.json": "cfe2f90c5f147d7ff47e1d91f6b964b5458c66cbcf65e9d538a0f2d3bc095d7f",
+    "runtime/environment.json": "e0d6016a0051fda7baac8d6476068857ac5554b60c2881889db39d553fa61fe1",
+    "runtime_gate/runtime_preflight.json": "3acd71b6d7f43f3eb04fead7f0f18aa72a2a2e437389e9b13720060836ebbebe",
+    "training_protocol_frozen.json": "35947f3cd4b26d3d928ea4cb76b9184a29261ce310676328da8c0f0df14f519a",
+    "duration_smoke/summary.json": "b2311a4212eafa0495b80d62783909a5b471ce647e5dd59f386edeeacc0c1c28",
+    "implementation_audit.json": "c282d121ae4049677043ccf99a10020477ed6cfb9036c076d9bd0fce77d1213d",
+    "frozen_source.zip": "d0f03e8ef315e5d222e68d27d94d2dc3cecc559db0d49302dc17f77fefc06b91",
+    "runtime/random/round_0/round.json": "d71f278a1864c05538ab96a2b5001ea08ae6d540d385be05f1c92f2a2c9b60f5",
+    "runtime/random/round_1/round.json": "b493149c7cf0f6888d05f22f2b2e017dec3cd399a8e1577b47d968c48cde2d4f",
+    "runtime/random/round_2/round.json": "004bed7c3c719f8d23b53e3fcf766a89baf02ab1a61f8ca77ddf71a552e5d409",
+    "runtime/random/round_3/round.json": "e8a89954316532d70914ab5a7cc5eb292aa59f586d6065262c5740ef88eb4d5b",
+    "runtime/raw_gradient_lcmd/round_0/round.json": "e3f6fb868852ab801645e20ffdfb9c6d28d9c0cebf6bc57fc4095e41ec6b7a72",
+    "runtime/raw_gradient_lcmd/round_1/round.json": "bd9d94d4358927ad92fa8684eb223fc2ce9459c67a28c133d85cd9b2d132c04c",
+    "runtime/raw_gradient_lcmd/round_2/round.json": "4d660348bf868c931f1f29f222d8f2983ded673156667f320495c69c333330c6",
+    "runtime/raw_gradient_lcmd/round_3/round.json": "fefb725b1830ef6ca1eeb5cbcb961f7502a0c4dbb1fd6083dea631f1050a345e",
+    "runtime/unit_gradient_lcmd/round_0/round.json": "4509fc2e823440d23d61b108452e488290593ad05cede3a9536af4d216fdfeee",
+    "runtime/unit_gradient_lcmd/round_1/round.json": "d907fc512df84310fd9fd89db9a9adb9145411c509fb6ceee7fb6a151240d7fd",
+    "runtime/unit_gradient_lcmd/round_2/round.json": "7df30de5590598ec709564db7a9ff24b40f71684db1ab43a65799c0cb8da6756",
+    "runtime/unit_gradient_lcmd/round_3/round.json": "8b0ff489d73f90a2edcbb3c2d81b948cefc044bd55d391d26edf4508bd836852",
+    "runtime/raw_gradient_maxdet/round_0/round.json": "bfefe9f46d1195a1b1eed1fe34b8cb3e201af1d32a7f96fcae70d97395fac910",
+    "runtime/raw_gradient_maxdet/round_1/round.json": "75448fac3ac4a38dac4852f0311287533f469c230888bd5c286256207853a1c4",
+    "runtime/raw_gradient_maxdet/round_2/round.json": "b2ea99e974020732b1b5930b2aec738d05dfde11bcef0826fd1024ac09780ff7",
+    "runtime/raw_gradient_maxdet/round_3/round.json": "a4d4dae6620ec48ff5cda0deba1ee54d0cb4752bb3e39f9e889ac33404db4b41",
+    "runtime/unit_gradient_maxdet/round_0/round.json": "c46add66dd8be40ae562e8dbd1dcf9410c146b7e192994488c1141313ba4f723",
+    "runtime/unit_gradient_maxdet/round_1/round.json": "9773a8d5e8488008e19b4090263fc4c0af6f9933bd96b7f15d67f7d9b76c754a",
+    "runtime/unit_gradient_maxdet/round_2/round.json": "fd8e35e94b2e175f241f3605fe5ebd04d62797adaa49b4c1b8bea8a65ed97392",
+    "runtime/unit_gradient_maxdet/round_3/round.json": "7d9812745e15c201aca1a7203cf77875c174a764955f11c56035e68b0a790e89"
+  }
+}

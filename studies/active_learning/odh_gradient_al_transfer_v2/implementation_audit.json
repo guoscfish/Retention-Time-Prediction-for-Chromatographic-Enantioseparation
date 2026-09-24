@@ -1,0 +1,44 @@
+{
+  "status": "PASS_PRE_AL",
+  "gradient_definition": "phi_raw = 512D CountSketch(full-network central gradient)",
+  "unit_definition": "phi_unit = phi_raw / max(||phi_raw||_2, 1e-12) after sketch",
+  "unit_name": "unit-normalized sketched gradient",
+  "round_0": {
+    "shared_checkpoint_required": true,
+    "shared_raw_gradient_bank_required": true,
+    "unit_derived_from_raw_bank": true,
+    "separate_round_0_predictors": false
+  },
+  "post_acquisition": "method-specific label sets receive independent scratch retraining",
+  "training": {
+    "batch_size": 256,
+    "maximum_epochs": 500,
+    "patience": 100,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "scratch": true,
+    "fresh_adam_every_round": true,
+    "shuffle": "deterministic_each_epoch",
+    "scheduler": false,
+    "checkpoint": "validation_only"
+  },
+  "batch_sizes": [
+    256,
+    77
+  ],
+  "methods": [
+    "random",
+    "raw_gradient_lcmd",
+    "unit_gradient_lcmd",
+    "raw_gradient_maxdet",
+    "unit_gradient_maxdet"
+  ],
+  "budgets": [
+    333,
+    365,
+    397,
+    429
+  ],
+  "duration_summary_hash": "eca85e6ef112eb296dc5d9a3004f0950e6a6b231290b1a3ee3ad8af60182c25d",
+  "long_al_started": false
+}

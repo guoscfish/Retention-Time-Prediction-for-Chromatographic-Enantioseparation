@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "environment": {
+    "python": "3.11.16 (main, Sep  2 2026, 23:33:55) [Clang 21.1.8 ]",
+    "executable": "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/.conda-hplc-al/bin/python",
+    "prefix": "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/.conda-hplc-al",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "cpu_threads": 4,
+    "packages": {
+      "torch": "2.2.2",
+      "numpy": "1.23.5",
+      "scipy": "1.10.1",
+      "torch-geometric": "2.5.3",
+      "rdkit": "2023.9.6",
+      "pandas": "1.5.3",
+      "pytest": "8.3.5"
+    }
+  },
+  "pytest": [
+    {
+      "command": [
+        "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/.conda-hplc-al/bin/python",
+        "-m",
+        "pytest",
+        "tests/hplc_al/test_transfer_v2_protocol.py",
+        "-q"
+      ],
+      "returncode": 0,
+      "log": "test_transfer_v2_protocol_resume.log",
+      "sha256": "4aa7f21539f88e904b1068c15628b8d8ecd18df618fd34c67b3953d3bd2431b3"
+    },
+    {
+      "command": [
+        "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/.conda-hplc-al/bin/python",
+        "-m",
+        "pytest",
+        "tests/hplc_al",
+        "-q"
+      ],
+      "returncode": 0,
+      "log": "test_hplc_al_resume.log",
+      "sha256": "e95cfa5dbca902e88479fbda4070ed92d373ce555970d8cb82bd3ce59352f7ea"
+    }
+  ],
+  "source_hashes": {
+    "src/hplc_al/__init__.py": "546dd379ca1c307747c9173e02740123f17e7d7a4bf9ff2ea1201d9fa829a6a0",
+    "src/hplc_al/acquisition.py": "1a4b4fd732c574b70eb198cd14b28d16d0abcf936f3791d8ef923b312c2bc009",
+    "src/hplc_al/common.py": "e5d30ba2a813ec508d0e7aca462c55fc94f33f47931b0d36d5e54973c353f2e4",
+    "src/hplc_al/data.py": "981615a3c98410ae95a5a01f47cec0a862c30c5dbb48156a5d588704c99299fd",
+    "src/hplc_al/deterministic_shuffle.py": "077219ef1f11f001e8e692119d3a5e470c4beb94ab8227e5de9499600b52fa4c",
+    "src/hplc_al/gradient.py": "66eeeb4b4d1af7c914fae64957d3ec6e0870e321d9c0e6be0b3767c093bd2a76",
+    "src/hplc_al/preflight_v2.py": "20e7c90ca857c502385b80f144a0f875f633a0dc3ff55252b46c3a2e0af9afd1",
+    "src/hplc_al/protocol.py": "116796e7dba7e804bc6deb6c79abf90e76485df8ac26d2cd7119460386d13a10",
+    "src/hplc_al/reporting.py": "e5fee7299f305cb60bf545a34a8dc8dd1c72c14ea41aad5f9032789d8b4b2330",
+    "src/hplc_al/runner.py": "ed64080a608f58ba68b93b1a1c540a4f9615b27e18a96f05461dc706714f1ab0",
+    "src/hplc_al/training.py": "4738b1f8bdab13020d914992bb9110cffa0a45e733123fe0b9d6e01262237434",
+    "src/hplc_al/transfer_v2.py": "cb0ac451fb88db247239b43308c23e8f4b893e4c8088af770033e12a8e1f1af7",
+    "src/hplc_al/transfer_v2_audit.py": "750bb569cfabdbc1ee21209a85d0766d7d0d7ea97727aca9b6dde6c54f868d4a",
+    "src/hplc_al/transfer_v2_duration.py": "92419b8cebb23d2068a09a46653e39b4afcd7d94624cce59817c250730696c65",
+    "src/hplc_al/transfer_v2_runner.py": "601053c8c2d714c63b3a957f10eccc06d35366034d55e739ef2f62767923a20a",
+    "src/reproduction/official.py": "38a0c5b938d461a9b3f986a78826ea256f6869f3cf77b471a892d53d644257ce",
+    "code/Single_column_prediction.py": "59b765c8bbdc0e3941dc4f5643f8a77db57675bb8ed62176d4825da6e7e766b8",
+    "code/compound_tools.py": "e9c0b25e95202bb43437ce5cf32125100815d14d0409a671347232640865ddb8",
+    "scripts/run_hplc_al_smoke.py": "787a48bdb5fd4cc4935052599fa351c4e21f8855009a84005fc65df1c3e80bce",
+    "tests/hplc_al/conftest.py": "c9b9211d4d7449db73c83602d59a2db355d2467f9a576312f5920568ead82e40",
+    "tests/hplc_al/test_acquisition_gradient.py": "5c31e0fa857bb84450d445f91388fbb477308ca9844e7f33ce2e7ab3710ce372",
+    "tests/hplc_al/test_completed_study.py": "ea062eef10f4f1410e845ec2e7b27e66dd7dfbfd1a72f6a3f04174b9cb1706f8",
+    "tests/hplc_al/test_protocol.py": "fb1e82326fbacddffb95a12843307db77c4062e040ee6d2365c5cd4b4a354fae",
+    "tests/hplc_al/test_recovery.py": "ed58f44c2bf0c298a8ccadf97d39b3bd5f18bc7eb4526067e4b94ea9c4efd973",
+    "tests/hplc_al/test_training_diagnosis.py": "5038bb4bf9cde5f9544f13ba6ffbf3c028d946eba277e8e00e9d02db7b5eb158",
+    "tests/hplc_al/test_transfer_v2_protocol.py": "7b83c9321235b805785ea2de03e6b8c012a92f3b1fb377edef3c2b19e082c57c"
+  },
+  "partition_hash": "683d59abf2daab8e17ba00b1457928e00e59a96c70cc12398eea90ac075f1a26",
+  "L0": 333,
+  "steps_per_epoch": 2,
+  "observed_batch_sizes": [
+    256,
+    77
+  ],
+  "checks": [
+    {
+      "seed": 525,
+      "epochs_verified": 500,
+      "steps_per_epoch": 2,
+      "actual_graph_batch_sizes": [
+        256,
+        77
+      ],
+      "same_seed_same_epoch": true,
+      "different_epoch_different_permutation": true,
+      "every_labeled_id_once": true,
+      "graph_truth_alignment": true,
+      "protected_ids_excluded": true
+    },
+    {
+      "seed": 1525,
+      "epochs_verified": 500,
+      "steps_per_epoch": 2,
+      "actual_graph_batch_sizes": [
+        256,
+        77
+      ],
+      "same_seed_same_epoch": true,
+      "different_epoch_different_permutation": true,
+      "every_labeled_id_once": true,
+      "graph_truth_alignment": true,
+      "protected_ids_excluded": true
+    }
+  ],
+  "duration_evidence_verified": true,
+  "duration_summary_hash": "eca85e6ef112eb296dc5d9a3004f0950e6a6b231290b1a3ee3ad8af60182c25d",
+  "test_truth_access_count": 0,
+  "U0_truth_access_count": 0
+}

@@ -1,0 +1,62 @@
+{
+  "method": "random",
+  "round": 0,
+  "L_hash": "431796eafada99c70b1bd7a5f4ff21bde5afa3f05bdb62b7a38b59dfe530b68b",
+  "U_hash": "17de48dd104e906c722dba7251a6de1824dda384c4e0a63b1736e4c40345f6db",
+  "selected": [
+    4518,
+    2523,
+    3777,
+    422,
+    4433,
+    307,
+    1301,
+    2132,
+    3289,
+    1351,
+    3199,
+    4809,
+    2961,
+    3828,
+    1476,
+    2619,
+    1289,
+    939,
+    1621,
+    2540,
+    1731,
+    2704,
+    3159,
+    2263,
+    3874,
+    710,
+    4474,
+    4063,
+    933,
+    2128,
+    2111,
+    2195
+  ],
+  "selected_hash": "60551b4853326fe3e0413a8b5bfc7e53e0e436e429ad18876c626723adae5ee9",
+  "trace": [],
+  "selection_audit": {
+    "selector_seconds": 0.0003978750028181821,
+    "geometry": {
+      "raw_norm": {
+        "min": 109.9901304201007,
+        "median": 423.0863749876634,
+        "max": 1759.6928258346197
+      },
+      "selected_norm_percentile": 51.06532493816056,
+      "top_decile_selected_fraction": 0.1875,
+      "effective_rank": 31.0,
+      "nearest_L_distance": 260.4998219264115,
+      "batch_pairwise_diversity": 603.7360282301877,
+      "zero_gradient_rows": 0
+    },
+    "gradient_use": "diagnostic only; random selection ignores gradients"
+  },
+  "geometry": "none",
+  "raw_gradient_bank_hash": "217613dd6957bc8d9a26252ad7c5b10e289d974e0eddb0fd89f45c44676043db",
+  "unit_gradient_bank_hash": null
+}

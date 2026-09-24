@@ -1,0 +1,21 @@
+method,budget,best_epoch,stopped_epoch,best_optimizer_step,stopping_reason,steps_per_epoch,actual_batch_sizes,seconds,reused_round_0
+random,333,55,155,110,patience,2,"[256, 77]",89.77595779199328,True
+random,365,33,133,66,patience,2,"[256, 109]",180.41101687500486,False
+random,397,49,149,98,patience,2,"[256, 141]",209.761513541991,False
+random,429,29,129,58,patience,2,"[256, 173]",156.68557400000282,False
+raw_gradient_lcmd,333,55,155,110,patience,2,"[256, 77]",89.77595779199328,True
+raw_gradient_lcmd,365,189,289,378,patience,2,"[256, 109]",310.3602275829908,False
+raw_gradient_lcmd,397,274,374,548,patience,2,"[256, 141]",345.2862421669997,False
+raw_gradient_lcmd,429,66,166,132,patience,2,"[256, 173]",158.3147814170079,False
+unit_gradient_lcmd,333,55,155,110,patience,2,"[256, 77]",89.77595779199328,True
+unit_gradient_lcmd,365,165,265,330,patience,2,"[256, 109]",215.75741629199183,False
+unit_gradient_lcmd,397,35,135,70,patience,2,"[256, 141]",113.41991229099222,False
+unit_gradient_lcmd,429,58,158,116,patience,2,"[256, 173]",148.9209547920036,False
+raw_gradient_maxdet,333,55,155,110,patience,2,"[256, 77]",89.77595779199328,True
+raw_gradient_maxdet,365,157,257,314,patience,2,"[256, 109]",280.6090562080062,False
+raw_gradient_maxdet,397,24,124,48,patience,2,"[256, 141]",88.15407058299752,False
+raw_gradient_maxdet,429,45,145,90,patience,2,"[256, 173]",275.59421595800086,False
+unit_gradient_maxdet,333,55,155,110,patience,2,"[256, 77]",89.77595779199328,True
+unit_gradient_maxdet,365,45,145,90,patience,2,"[256, 109]",247.14056541699392,False
+unit_gradient_maxdet,397,42,142,84,patience,2,"[256, 141]",245.8649427909986,False
+unit_gradient_maxdet,429,28,128,56,patience,2,"[256, 173]",147.65646270799334,False

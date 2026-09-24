@@ -1,0 +1,21 @@
+{
+  "status": "FROZEN_AFTER_DURATION_SMOKE",
+  "training": {
+    "batch_size": 256,
+    "maximum_epochs": 500,
+    "patience": 100,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "scratch": true,
+    "fresh_adam_every_round": true,
+    "shuffle": "deterministic_each_epoch",
+    "scheduler": false,
+    "checkpoint": "validation_only"
+  },
+  "seeds": [
+    525,
+    1525
+  ],
+  "duration_summary_hash": "eca85e6ef112eb296dc5d9a3004f0950e6a6b231290b1a3ee3ad8af60182c25d",
+  "test_truth_access_count": 0
+}

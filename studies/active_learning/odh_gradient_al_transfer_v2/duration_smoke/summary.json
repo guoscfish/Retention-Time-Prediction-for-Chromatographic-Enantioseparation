@@ -1,0 +1,175 @@
+{
+  "status": "PASS",
+  "environment": {
+    "python": "3.11.16 (main, Sep  2 2026, 23:33:55) [Clang 21.1.8 ]",
+    "executable": "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/.conda-hplc-al/bin/python",
+    "prefix": "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/.conda-hplc-al",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "cpu_threads": 4,
+    "packages": {
+      "torch": "2.2.2",
+      "numpy": "1.23.5",
+      "scipy": "1.10.1",
+      "torch-geometric": "2.5.3",
+      "rdkit": "2023.9.6",
+      "pandas": "1.5.3",
+      "pytest": "8.3.5"
+    }
+  },
+  "seeds": [
+    525,
+    1525
+  ],
+  "training_protocol": {
+    "batch_size": 256,
+    "maximum_epochs": 500,
+    "patience": 100,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "scratch": true,
+    "fresh_adam_every_round": true,
+    "shuffle": "deterministic_each_epoch",
+    "scheduler": false,
+    "checkpoint": "validation_only"
+  },
+  "L0": 333,
+  "validation_count": 247,
+  "steps_per_epoch": 2,
+  "observed_batch_sizes": [
+    256,
+    77
+  ],
+  "duration_records": [
+    "seed_525/duration_record.json",
+    "seed_1525/duration_record.json"
+  ],
+  "test_truth_access_count": 0,
+  "U0_truth_access_count": 0,
+  "records": [
+    {
+      "initialization_seed": 525,
+      "training_seed": 525,
+      "initialization_hash": "90ae1f750428ad51517cec81fe86a279dea391079d65096b74209169868df19b",
+      "checkpoint_state_hash": "37a9ad3a097ce40d495f4b31b94cc6b76a16a236cde6ab2099abd2758c4936f1",
+      "checkpoint_path": "attempt_000/best.pt",
+      "checkpoint_hash": "577c38710b965a494b6d36032113ffd71f2f04209aeea611d11ab1f4475df159",
+      "epochs_run": 155,
+      "total_optimizer_steps": 310,
+      "best_epoch": 55,
+      "best_validation_mse": 59.07774591317196,
+      "best_validation_metrics": {
+        "rmse": 7.686204909652875,
+        "mae": 5.058523494705015,
+        "r2": 0.23638662981144487,
+        "nrmse": 0.8656376486801944
+      },
+      "best_optimizer_step": 110,
+      "final_validation_metrics": {
+        "rmse": 7.754295598547111,
+        "mae": 5.026336319533437,
+        "r2": 0.22279727902535018,
+        "nrmse": 0.8733061748936185
+      },
+      "final_checkpoint_path": "attempt_000/final.pt",
+      "final_checkpoint_hash": "5198223e41d65650579e2772ffd4ceff9daac7f74ba369711b0a8938152fe9cd",
+      "stopped_epoch": 155,
+      "seconds": 89.77595779199328,
+      "stopping_reason": "patience",
+      "attempted_fits": 1,
+      "abandoned_attempts": [],
+      "L_hash": "431796eafada99c70b1bd7a5f4ff21bde5afa3f05bdb62b7a38b59dfe530b68b",
+      "budget": 333,
+      "steps_per_epoch": 2,
+      "observed_batch_sizes": [
+        256,
+        77
+      ],
+      "input_hash": "7aa605eed8df7f3518d0f5268083d128a21da710c05ba80dbedd5bfc4581d034",
+      "files": {
+        "input.json": "7aa605eed8df7f3518d0f5268083d128a21da710c05ba80dbedd5bfc4581d034",
+        "attempt_000/best.pt": "577c38710b965a494b6d36032113ffd71f2f04209aeea611d11ab1f4475df159",
+        "attempt_000/training_curve.csv": "f833f66d9e3fc0dfec04cb9b8fb9342d07dd0466200ed5c46e3dc4787de49baf",
+        "attempt_000/validation_predictions.npz": "b720848d3999c00b272f33c0a02d2f65c15ee89861fc42fc3c44e353c946f954",
+        "attempt_000/final.pt": "5198223e41d65650579e2772ffd4ceff9daac7f74ba369711b0a8938152fe9cd",
+        "attempt_000/final_validation_predictions.npz": "fba13bebcd7dd0f3c036a311ac0c87fe994799b2be9e75bf1dd7d5b9669928f8"
+      },
+      "seed": 525,
+      "best_validation_rmse": 7.686204909652875,
+      "best_validation_mae": 5.058523494705015,
+      "best_validation_r2": 0.23638662981144487,
+      "best_validation_nrmse": 0.8656376486801944,
+      "L0_population_std": 8.879240547556758,
+      "actual_batch_sizes_per_epoch": [
+        256,
+        77
+      ],
+      "wall_runtime_seconds": 89.78621683399251,
+      "duration_gate": "PASS",
+      "U0_labels_accessed": false,
+      "test_labels_accessed": false
+    },
+    {
+      "initialization_seed": 1525,
+      "training_seed": 1525,
+      "initialization_hash": "82f9d7e78b7f6a4794be4114605ed8d8ef7e37d7d2ca3cd8c8c0add062c164da",
+      "checkpoint_state_hash": "23376046b8fd4994ac18776d5826258a8fb6aba6408f5c08abf55be3d1b4fa14",
+      "checkpoint_path": "attempt_000/best.pt",
+      "checkpoint_hash": "1a9da9a78f2b763abd744e8e970f75ef90d6d7dd897aeeff50432d32ae7839b5",
+      "epochs_run": 128,
+      "total_optimizer_steps": 256,
+      "best_epoch": 28,
+      "best_validation_mse": 64.70589232815948,
+      "best_validation_metrics": {
+        "rmse": 8.04399728543959,
+        "mae": 5.287642431403944,
+        "r2": 0.1636396455548056,
+        "nrmse": 0.905933029109455
+      },
+      "best_optimizer_step": 56,
+      "final_validation_metrics": {
+        "rmse": 8.540175184282361,
+        "mae": 5.549896030773518,
+        "r2": 0.05727903331988338,
+        "nrmse": 0.9618136977528224
+      },
+      "final_checkpoint_path": "attempt_000/final.pt",
+      "final_checkpoint_hash": "9d6856dd35615e4a67f8de7a5a793c3a86c0e15b68c42884f6792ed28accbc28",
+      "stopped_epoch": 128,
+      "seconds": 99.53262012499908,
+      "stopping_reason": "patience",
+      "attempted_fits": 1,
+      "abandoned_attempts": [],
+      "L_hash": "431796eafada99c70b1bd7a5f4ff21bde5afa3f05bdb62b7a38b59dfe530b68b",
+      "budget": 333,
+      "steps_per_epoch": 2,
+      "observed_batch_sizes": [
+        256,
+        77
+      ],
+      "input_hash": "578c22ce64acf4d836303a8af9109293290adbe55c42b9f323438a0357e6135c",
+      "files": {
+        "input.json": "578c22ce64acf4d836303a8af9109293290adbe55c42b9f323438a0357e6135c",
+        "attempt_000/best.pt": "1a9da9a78f2b763abd744e8e970f75ef90d6d7dd897aeeff50432d32ae7839b5",
+        "attempt_000/training_curve.csv": "c8d077e2c94e44cfa8537ce560d4760fd0b43d98ddca37f4acc4ac0f5702fe48",
+        "attempt_000/validation_predictions.npz": "7b3c165ddfc0ab1a8f6a24373f57ad128d0350bda82abb0cc50351c1483d84b4",
+        "attempt_000/final.pt": "9d6856dd35615e4a67f8de7a5a793c3a86c0e15b68c42884f6792ed28accbc28",
+        "attempt_000/final_validation_predictions.npz": "18f549ce78e20c13d8f95095fec875ae6f157bd92eb2843fb096dd66e5f1a8a1"
+      },
+      "seed": 1525,
+      "best_validation_rmse": 8.04399728543959,
+      "best_validation_mae": 5.287642431403944,
+      "best_validation_r2": 0.1636396455548056,
+      "best_validation_nrmse": 0.905933029109455,
+      "L0_population_std": 8.879240547556758,
+      "actual_batch_sizes_per_epoch": [
+        256,
+        77
+      ],
+      "wall_runtime_seconds": 99.54732204199536,
+      "duration_gate": "PASS",
+      "U0_labels_accessed": false,
+      "test_labels_accessed": false
+    }
+  ],
+  "long_al_started": false
+}

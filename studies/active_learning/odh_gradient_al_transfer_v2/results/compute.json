@@ -1,0 +1,20 @@
+{
+  "valid_AL_unique_fits": 16,
+  "AL_new_fits_this_continuation": 15,
+  "AL_round0_reused_duration_fit": true,
+  "valid_AL_unique_gradient_passes": 11,
+  "acquisition_gradient_passes": 9,
+  "random_diagnostic_gradient_passes": 2,
+  "training_seconds_including_reused_seed525": 3213.7129104159685,
+  "new_AL_training_seconds": 3123.9369526239752,
+  "gradient_extraction_seconds": 858.3599980840081,
+  "selector_seconds": 5.236227665984188,
+  "duration_seed1525_extra_seconds": 99.53262012499908,
+  "valid_work_unique_fits_including_duration": 17,
+  "archived_unique_fits": 2,
+  "archived_unique_gradient_passes": 1,
+  "archived_training_seconds": 389.3355437499995,
+  "archived_gradient_seconds": 95.31851250000182,
+  "total_executed_unique_fits": 19,
+  "total_executed_unique_gradient_passes": 12
+}
