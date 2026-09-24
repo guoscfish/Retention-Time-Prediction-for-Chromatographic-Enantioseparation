@@ -1,0 +1,171 @@
+{
+  "method": "latent_coreset",
+  "round": 2,
+  "L_hash": "b4d45ffd5b58159f2509a7a78179272ab44da4c3a85d1640cd44d0563ef53935",
+  "U_hash": "f866c3548b5becf75e73fae254fce0566d92d7eba749cf36618a84bf0765fc3a",
+  "selected": [
+    1733,
+    278,
+    4610,
+    4520,
+    1909,
+    1536,
+    2955,
+    741,
+    1523,
+    3259,
+    3770,
+    4369,
+    2442,
+    3535,
+    1795,
+    1846,
+    1112,
+    1566,
+    4847,
+    3010,
+    4300,
+    2958,
+    2260,
+    1217,
+    4351,
+    2491,
+    1816,
+    3545,
+    1885,
+    3839,
+    4795,
+    814
+  ],
+  "selected_hash": "2687585c22643b6ebabd9fd3c44489a0b6d346ff80e253a919845d9b8a285cfc",
+  "trace": [
+    {
+      "id": 1733,
+      "nearest_center_distance": 0.08267237991094589
+    },
+    {
+      "id": 278,
+      "nearest_center_distance": 0.07020136713981628
+    },
+    {
+      "id": 4610,
+      "nearest_center_distance": 0.06955599039793015
+    },
+    {
+      "id": 4520,
+      "nearest_center_distance": 0.06932937353849411
+    },
+    {
+      "id": 1909,
+      "nearest_center_distance": 0.0651094987988472
+    },
+    {
+      "id": 1536,
+      "nearest_center_distance": 0.06505537778139114
+    },
+    {
+      "id": 2955,
+      "nearest_center_distance": 0.06481771171092987
+    },
+    {
+      "id": 741,
+      "nearest_center_distance": 0.0646774172782898
+    },
+    {
+      "id": 1523,
+      "nearest_center_distance": 0.06368258595466614
+    },
+    {
+      "id": 3259,
+      "nearest_center_distance": 0.06340614706277847
+    },
+    {
+      "id": 3770,
+      "nearest_center_distance": 0.06225019320845604
+    },
+    {
+      "id": 4369,
+      "nearest_center_distance": 0.06019711494445801
+    },
+    {
+      "id": 2442,
+      "nearest_center_distance": 0.060148805379867554
+    },
+    {
+      "id": 3535,
+      "nearest_center_distance": 0.05933842808008194
+    },
+    {
+      "id": 1795,
+      "nearest_center_distance": 0.05915909633040428
+    },
+    {
+      "id": 1846,
+      "nearest_center_distance": 0.059143226593732834
+    },
+    {
+      "id": 1112,
+      "nearest_center_distance": 0.05779780447483063
+    },
+    {
+      "id": 1566,
+      "nearest_center_distance": 0.05771469697356224
+    },
+    {
+      "id": 4847,
+      "nearest_center_distance": 0.05745265632867813
+    },
+    {
+      "id": 3010,
+      "nearest_center_distance": 0.05691090226173401
+    },
+    {
+      "id": 4300,
+      "nearest_center_distance": 0.05681566894054413
+    },
+    {
+      "id": 2958,
+      "nearest_center_distance": 0.05556577816605568
+    },
+    {
+      "id": 2260,
+      "nearest_center_distance": 0.055497486144304276
+    },
+    {
+      "id": 1217,
+      "nearest_center_distance": 0.05357500538229942
+    },
+    {
+      "id": 4351,
+      "nearest_center_distance": 0.05328759178519249
+    },
+    {
+      "id": 2491,
+      "nearest_center_distance": 0.053112637251615524
+    },
+    {
+      "id": 1816,
+      "nearest_center_distance": 0.05298372730612755
+    },
+    {
+      "id": 3545,
+      "nearest_center_distance": 0.05274374037981033
+    },
+    {
+      "id": 1885,
+      "nearest_center_distance": 0.052421677857637405
+    },
+    {
+      "id": 3839,
+      "nearest_center_distance": 0.05171085149049759
+    },
+    {
+      "id": 4795,
+      "nearest_center_distance": 0.05107952281832695
+    },
+    {
+      "id": 814,
+      "nearest_center_distance": 0.05103606730699539
+    }
+  ]
+}

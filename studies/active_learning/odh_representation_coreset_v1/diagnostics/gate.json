@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "test_truth_access_count": 0,
+  "files": {
+    "diagnostics/chemistry.json": "b2e75ca5c095360a9d8ffa4291608a688d6b9bc3c102108a2fbda79cbc3fad05",
+    "diagnostics/chirality.json": "d3cf8159c4427d1c29801af249a9976a30760172dfb26bcd6bed67b27a661985",
+    "diagnostics/historical_coverage.json": "f9925340ea5c6709a1516357b5e52d4a0055b944a1557d965e67ef56de6b60b6",
+    "diagnostics/lcmd_0/latent/audit.json": "a54c7913fa279d47ad851046e6db94ee7f2ed4fd271ef9e60a3e4a81acf2fc5e",
+    "diagnostics/lcmd_0/latent/complete.json": "7164a472eb714eddb33d0eb919b3931736f630f81c87912ba7dbc9294c80c758",
+    "diagnostics/lcmd_0/latent/features.npz": "259646af337d6ac1a0ec6291d0e6ce077367404658f8dc4a952fe8c18b59bfe6",
+    "diagnostics/lcmd_0/latent/input.json": "45cd972292631544f8608ae2691a0fca4f087d999d533e721c7e2a41993846fb",
+    "diagnostics/lcmd_1/latent/audit.json": "b66b96fe6842227ba7347cfe6861603ba0062ce6e96503153b46172934bc4cb8",
+    "diagnostics/lcmd_1/latent/complete.json": "8fe93ef616deb39714d2633d82fc99308a9a13d409a61b7f2cfb785f2dee1023",
+    "diagnostics/lcmd_1/latent/features.npz": "98793c355600c1c81e6daea1cf060618a9a97f4b4cf1e415ac8ee7a7394e6e7c",
+    "diagnostics/lcmd_1/latent/input.json": "f998b9f0f31bda8c654f723f3726d522244aa75d45ad15860950b97075153e12",
+    "diagnostics/lcmd_2/latent/audit.json": "f9aeb0e4251498b393c17e98f6fcd7a671cf4bb6421f8546b1dbf75a74e7af41",
+    "diagnostics/lcmd_2/latent/complete.json": "4b99dd568586df02a4ef96e18f573a2d7c674b15217f542a766cf4f68e1f33fb",
+    "diagnostics/lcmd_2/latent/features.npz": "8fca6039e1ad36b73ef6ddb220a7599330754aff5d67c6bb8dc09c04a8e2ccd1",
+    "diagnostics/lcmd_2/latent/input.json": "30f87bea46f4842180a6c694893d27fc7f2ceb458c97ac2a91a98cda634050c6",
+    "diagnostics/lcmd_3/latent/audit.json": "594d602e28a85de32065cef46045c59af3665cd8368e9d9bebbf0a75ca080bd2",
+    "diagnostics/lcmd_3/latent/complete.json": "5b1170c00dfa4e43cd1000386dbf9f06fbd0d6f5dbccd08d6c89e71e86d5f96e",
+    "diagnostics/lcmd_3/latent/features.npz": "cdc6245255cebbc3528a7bc27bc7d4eecbfb8f6c997834c276718a6b3bbf1324",
+    "diagnostics/lcmd_3/latent/input.json": "1a30944ecab8be54ad13200ff396ea3018e59b2106456f2673433040b50dd8e1",
+    "diagnostics/morgan.npz": "a23fa7e0c52a1261d677c30949ef6d053bf0bb431c26d2de33c7fa6ebab21a2e",
+    "diagnostics/relation.json": "eef345f45c954db9c678081012b5f32c77046c19191541a6411335e8e4b27cc0",
+    "diagnostics/stability.json": "33179421bcc6e8292577e16ade846c9b9a3fc2591d31222dbe622db529acc4af",
+    "diagnostics/stability_candidates.json": "9acda2a4c74e6af902caf9b529de564eb938ef21373bbfb1941f3b796767a514",
+    "diagnostics/stability_gradient_audit.json": "dcdf9644f7f457c7526b01b623ec873df669bc86b8bc276d1234996adb95f9dd",
+    "diagnostics/stability_gradients.npz": "9fa12f031e5ba49e225fec372239ff846f08aa1db8ba6072099edbee700e9882"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "333-365": {
+    "gradient": {
+      "geometry": "raw_gradient_euclidean",
+      "row_cosine": {
+        "mean": 0.40688546167456185,
+        "min": 0.11236777639918831,
+        "q25": 0.36223008186223493,
+        "median": 0.40885997059655066,
+        "q75": 0.4629557577030583,
+        "max": 0.5718511674896178
+      },
+      "zero_rows_first": 0,
+      "zero_rows_second": 0,
+      "pairwise_distance_rank_correlation": 0.5541914505093741,
+      "pair_count": 130816,
+      "norm_rank_spearman": 0.6028992286652705,
+      "knn_overlap_at_10": {
+        "mean": 0.3619140625,
+        "min": 0.0,
+        "q25": 0.2,
+        "median": 0.3,
+        "q75": 0.5,
+        "max": 0.9
+      },
+      "knn_overlap_at_50": {
+        "mean": 0.44878906250000006,
+        "min": 0.1,
+        "q25": 0.34,
+        "median": 0.42,
+        "q75": 0.52,
+        "max": 0.98
+      }
+    },
+    "latent": {
+      "geometry": "unit_latent_cosine",
+      "row_cosine": {
+        "mean": 0.8300391124832349,
+        "min": 0.616964674360563,
+        "q25": 0.7868948482776821,
+        "median": 0.8391849834695663,
+        "q75": 0.8780616810846558,
+        "max": 0.968259693158551
+      },
+      "zero_rows_first": 0,
+      "zero_rows_second": 0,
+      "pairwise_distance_rank_correlation": 0.8243478919897731,
+      "pair_count": 130816,
+      "knn_overlap_at_10": {
+        "mean": 0.3955078125,
+        "min": 0.0,
+        "q25": 0.2,
+        "median": 0.4,
+        "q75": 0.5,
+        "max": 0.9
+      },
+      "knn_overlap_at_50": {
+        "mean": 0.526875,
+        "min": 0.04,
+        "q25": 0.42,
+        "median": 0.52,
+        "q75": 0.62,
+        "max": 0.96
+      }
+    }
+  },
+  "365-397": {
+    "gradient": {
+      "geometry": "raw_gradient_euclidean",
+      "row_cosine": {
+        "mean": 0.4133239557178941,
+        "min": 0.1459494767904636,
+        "q25": 0.36023640953793135,
+        "median": 0.41438586862943355,
+        "q75": 0.4729496104767601,
+        "max": 0.6433612138711547
+      },
+      "zero_rows_first": 0,
+      "zero_rows_second": 0,
+      "pairwise_distance_rank_correlation": 0.7365418654570856,
+      "pair_count": 130816,
+      "norm_rank_spearman": 0.7885135391274991,
+      "knn_overlap_at_10": {
+        "mean": 0.37832031250000003,
+        "min": 0.0,
+        "q25": 0.2,
+        "median": 0.4,
+        "q75": 0.5,
+        "max": 0.9
+      },
+      "knn_overlap_at_50": {
+        "mean": 0.48062499999999997,
+        "min": 0.16,
+        "q25": 0.4,
+        "median": 0.48,
+        "q75": 0.54,
+        "max": 0.96
+      }
+    },
+    "latent": {
+      "geometry": "unit_latent_cosine",
+      "row_cosine": {
+        "mean": 0.8292536138929341,
+        "min": 0.649180335697439,
+        "q25": 0.7725581087551345,
+        "median": 0.8357767004906733,
+        "q75": 0.8835870044640644,
+        "max": 0.9783827385866155
+      },
+      "zero_rows_first": 0,
+      "zero_rows_second": 0,
+      "pairwise_distance_rank_correlation": 0.8611591484294028,
+      "pair_count": 130816,
+      "knn_overlap_at_10": {
+        "mean": 0.4232421875,
+        "min": 0.0,
+        "q25": 0.3,
+        "median": 0.4,
+        "q75": 0.6,
+        "max": 0.9
+      },
+      "knn_overlap_at_50": {
+        "mean": 0.5686328125,
+        "min": 0.02,
+        "q25": 0.46,
+        "median": 0.56,
+        "q75": 0.68,
+        "max": 0.96
+      }
+    }
+  },
+  "397-429": {
+    "gradient": {
+      "geometry": "raw_gradient_euclidean",
+      "row_cosine": {
+        "mean": 0.38336690204647933,
+        "min": 0.05082191477425217,
+        "q25": 0.31883525783333466,
+        "median": 0.38934041637903316,
+        "q75": 0.45104465564421836,
+        "max": 0.5918130084621767
+      },
+      "zero_rows_first": 0,
+      "zero_rows_second": 0,
+      "pairwise_distance_rank_correlation": 0.6673664981654059,
+      "pair_count": 130816,
+      "norm_rank_spearman": 0.7457024589155538,
+      "knn_overlap_at_10": {
+        "mean": 0.3720703125,
+        "min": 0.0,
+        "q25": 0.2,
+        "median": 0.4,
+        "q75": 0.5,
+        "max": 1.0
+      },
+      "knn_overlap_at_50": {
+        "mean": 0.4719921875,
+        "min": 0.1,
+        "q25": 0.38,
+        "median": 0.46,
+        "q75": 0.54,
+        "max": 0.94
+      }
+    },
+    "latent": {
+      "geometry": "unit_latent_cosine",
+      "row_cosine": {
+        "mean": 0.8477929373429824,
+        "min": 0.6475765827246096,
+        "q25": 0.8159762150017733,
+        "median": 0.8474948115590893,
+        "q75": 0.8841344994363269,
+        "max": 0.9706320718804232
+      },
+      "zero_rows_first": 0,
+      "zero_rows_second": 0,
+      "pairwise_distance_rank_correlation": 0.868721808092995,
+      "pair_count": 130816,
+      "knn_overlap_at_10": {
+        "mean": 0.44453124999999993,
+        "min": 0.0,
+        "q25": 0.3,
+        "median": 0.5,
+        "q75": 0.6,
+        "max": 0.9
+      },
+      "knn_overlap_at_50": {
+        "mean": 0.587109375,
+        "min": 0.08,
+        "q25": 0.48,
+        "median": 0.56,
+        "q75": 0.7,
+        "max": 0.96
+      }
+    }
+  }
+}

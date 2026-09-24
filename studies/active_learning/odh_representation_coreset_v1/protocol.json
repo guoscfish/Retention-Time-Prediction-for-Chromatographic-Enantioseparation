@@ -1,0 +1,60 @@
+{
+  "study": "odh_representation_coreset_v1",
+  "methods": [
+    "random",
+    "raw_gradient_lcmd",
+    "latent_coreset",
+    "morgan_coreset"
+  ],
+  "budgets": [
+    333,
+    365,
+    397,
+    429
+  ],
+  "acquisition_batch": 32,
+  "initialization_seed": 525,
+  "training_seed": 525,
+  "training": {
+    "batch_size": 256,
+    "maximum_epochs": 500,
+    "patience": 100,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "scratch": true,
+    "fresh_adam_every_round": true,
+    "shuffle": "deterministic_each_epoch",
+    "scheduler": false,
+    "checkpoint": "best_validation_central_MSE",
+    "min_delta": 0.0,
+    "initialization_seed": 525,
+    "training_seed": 525,
+    "optimizer": "Adam",
+    "loss": "original_complete",
+    "wall_time_limit_seconds": null
+  },
+  "random_seed": 525900001,
+  "random_definition": "one frozen permutation of sorted U0; disjoint slices of 32",
+  "latent": "task-aware QGeoGNN learned structure/geometry/condition representation",
+  "latent_distance": "1 - cosine(unit h_graph, unit h_graph)",
+  "latent_refresh": "current method checkpoint, each acquisition round",
+  "morgan": {
+    "radius": 2,
+    "nBits": 2048,
+    "useChirality": true,
+    "distance": "1 - Tanimoto"
+  },
+  "kcenter": "farthest first, existing centers=current L, ties=smallest sample ID",
+  "historical_coverage_latent": "shared L333 geometry for every historical batch",
+  "stability_candidates": "512 fixed IDs sampled from historical LCMD U429, seed 525",
+  "stability_gradient_geometry": "Euclidean in raw 512D CountSketch space",
+  "gradient_reuse": "sealed transfer_v2 raw_gradient_lcmd trajectory; exact protocol and IDs",
+  "metadata_fix": "future fit records use training_seed; historical seeds both 525, values unchanged",
+  "scale": 8.879240547556758,
+  "shared_checkpoint_hash": "577c38710b965a494b6d36032113ffd71f2f04209aeea611d11ab1f4475df159",
+  "partition_hash": "683d59abf2daab8e17ba00b1457928e00e59a96c70cc12398eea90ac075f1a26",
+  "aulc": "trapezoidal NRMSE integral over 333..429 divided by 96",
+  "firewall": "all four methods and four budgets frozen before unified test truth reveal",
+  "stop": "one seed, four methods, three acquisitions; no expansion",
+  "diagnostics_gate": "finite aligned state-preserving nonzero latent; valid Morgan; all diagnostics complete; no outcome threshold"
+}

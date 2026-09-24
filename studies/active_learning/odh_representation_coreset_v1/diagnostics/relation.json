@@ -1,0 +1,28 @@
+{
+  "pair_count": 50000,
+  "pair_seed": 525,
+  "pairs_sampling": "ordered distinct endpoints with replacement",
+  "latent_morgan_spearman": 0.1357446790127059,
+  "latent_norm": {
+    "mean": 72.8232335933764,
+    "min": 24.6892949628564,
+    "q25": 44.292453998233555,
+    "median": 55.40327821735665,
+    "q75": 71.66332585611491,
+    "max": 1080.3243572368567
+  },
+  "norm_size": {
+    "graph_atom_count": {
+      "spearman": 0.5384527041337648,
+      "pearson": 0.3100460898408412
+    },
+    "rdkit_atom_count": {
+      "spearman": 0.5384527041337648,
+      "pearson": 0.3100460898408412
+    },
+    "heavy_atom_count": {
+      "spearman": 0.5384527041337648,
+      "pearson": 0.3100460898408412
+    }
+  }
+}

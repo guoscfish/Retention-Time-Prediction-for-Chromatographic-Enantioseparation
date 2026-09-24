@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "same-ID Random L365 independently retrained; no historical artifact modified",
+  "checks": {
+    "checkpoint_state_hash": true,
+    "initialization_hash": true,
+    "epochs_run": true,
+    "best_epoch": true,
+    "best_validation_mse": true
+  }
+}

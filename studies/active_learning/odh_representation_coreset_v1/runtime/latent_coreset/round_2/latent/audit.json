@@ -1,0 +1,16 @@
+{
+  "shape": [
+    4447,
+    128
+  ],
+  "finite": true,
+  "eval_mode": true,
+  "no_grad": true,
+  "duplicate_rows": 0,
+  "zero_norm_rows": 0,
+  "state_before": "1a69f005ab2a86acc34e77d2aa345dd754a3e412eff1c02aaad2e88246bb5391",
+  "state_after": "1a69f005ab2a86acc34e77d2aa345dd754a3e412eff1c02aaad2e88246bb5391",
+  "ordered_ids_hash": "56a52b345d66519be2d1656be7a87d1875f33c951170c952fc5fa0352e831256",
+  "raw_hash": "bdb22b3cc320bfebc295f02dcfae14fefc39de17b937b7244632c116d5dddb14",
+  "unit_hash": "4308dfeeaad6bc642046503bc0dcdbd1ab4b55ec3883afb652bf1de34ac5d7ca"
+}

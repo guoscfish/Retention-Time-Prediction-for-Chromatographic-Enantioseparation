@@ -1,0 +1,5 @@
+{
+  "odh_gradient_al_smoke": true,
+  "odh_training_protocol_diagnosis": true,
+  "odh_gradient_al_transfer_v2": true
+}

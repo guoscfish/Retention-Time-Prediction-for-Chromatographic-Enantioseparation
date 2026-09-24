@@ -1,0 +1,13 @@
+split,method_a,method_b,a_minus_b,a_over_b
+validation,random,raw_gradient_lcmd,0.007134439999651354,1.0082547920288714
+validation,random,latent_coreset,-0.026432120482797417,0.9705604908318989
+validation,random,morgan_coreset,-0.036623469889538685,0.9596674032693291
+validation,raw_gradient_lcmd,latent_coreset,-0.03356656048244877,0.9626143098996617
+validation,raw_gradient_lcmd,morgan_coreset,-0.04375790988919004,0.951810406314289
+validation,latent_coreset,morgan_coreset,-0.010191349406741268,0.9887764980488408
+test,random,raw_gradient_lcmd,0.03927534163328994,1.047917641741052
+test,random,latent_coreset,0.0011915687932941843,1.001389217817106
+test,random,morgan_coreset,-0.002978712358031599,0.9965440029732147
+test,raw_gradient_lcmd,latent_coreset,-0.038083772839995755,0.9555991596375437
+test,raw_gradient_lcmd,morgan_coreset,-0.04225405399132154,0.9509754996752576
+test,latent_coreset,morgan_coreset,-0.004170281151325783,0.9951615068769631

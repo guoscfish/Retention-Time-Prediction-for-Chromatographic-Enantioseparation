@@ -1,0 +1,19 @@
+comparison,count,jaccard,selected_ids
+random vs raw_gradient_lcmd/0,0,0.0,
+random vs latent_coreset/0,0,0.0,
+random vs morgan_coreset/0,0,0.0,
+raw_gradient_lcmd vs latent_coreset/0,0,0.0,
+raw_gradient_lcmd vs morgan_coreset/0,0,0.0,
+latent_coreset vs morgan_coreset/0,2,0.03225806451612903,2308;2419
+random vs raw_gradient_lcmd/1,0,0.0,
+random vs latent_coreset/1,0,0.0,
+random vs morgan_coreset/1,2,0.03225806451612903,533;3850
+raw_gradient_lcmd vs latent_coreset/1,0,0.0,
+raw_gradient_lcmd vs morgan_coreset/1,1,0.015873015873015872,890
+latent_coreset vs morgan_coreset/1,2,0.03225806451612903,1827;4023
+random vs raw_gradient_lcmd/2,0,0.0,
+random vs latent_coreset/2,0,0.0,
+random vs morgan_coreset/2,0,0.0,
+raw_gradient_lcmd vs latent_coreset/2,0,0.0,
+raw_gradient_lcmd vs morgan_coreset/2,2,0.03225806451612903,969;4297
+latent_coreset vs morgan_coreset/2,0,0.0,

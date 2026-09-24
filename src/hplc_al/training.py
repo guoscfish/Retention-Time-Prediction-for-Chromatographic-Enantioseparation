@@ -220,7 +220,7 @@ def fit(graphs, labeled, truth, validation, valid_truth, config, directory, bind
     )
     record = dict(
         initialization_seed=config["initialization_seed"],
-        training_seed=config["initialization_seed"],
+        training_seed=config["training_seed"],
         initialization_hash=initial,
         checkpoint_state_hash=state_hash(model),
         checkpoint_path=str(checkpoint.relative_to(directory)),

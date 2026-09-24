@@ -1,0 +1,171 @@
+{
+  "method": "morgan_coreset",
+  "round": 2,
+  "L_hash": "9bb96ca01ca704a4fbbf7bc4129c08ab879383964045464fb1e6e5863a920b9d",
+  "U_hash": "9e053f8bf9e6cf3344a7e93f34f7749f56562b49f938842c0457d560047b4b24",
+  "selected": [
+    2725,
+    609,
+    4405,
+    1697,
+    1820,
+    4163,
+    2287,
+    3723,
+    2003,
+    4939,
+    649,
+    4297,
+    127,
+    1430,
+    1424,
+    2924,
+    969,
+    2778,
+    3076,
+    3618,
+    3893,
+    3292,
+    3297,
+    4911,
+    75,
+    1076,
+    2568,
+    2952,
+    2803,
+    596,
+    1770,
+    2427
+  ],
+  "selected_hash": "2958f6e919dbb23def78146818c705971ee4b3e5b454b31499f39ff9fd076ea0",
+  "trace": [
+    {
+      "id": 2725,
+      "nearest_center_distance": 0.725806474685669
+    },
+    {
+      "id": 609,
+      "nearest_center_distance": 0.7254902124404907
+    },
+    {
+      "id": 4405,
+      "nearest_center_distance": 0.7246376872062683
+    },
+    {
+      "id": 1697,
+      "nearest_center_distance": 0.7241379022598267
+    },
+    {
+      "id": 1820,
+      "nearest_center_distance": 0.7241379022598267
+    },
+    {
+      "id": 4163,
+      "nearest_center_distance": 0.7234042286872864
+    },
+    {
+      "id": 2287,
+      "nearest_center_distance": 0.7222222089767456
+    },
+    {
+      "id": 3723,
+      "nearest_center_distance": 0.7222222089767456
+    },
+    {
+      "id": 2003,
+      "nearest_center_distance": 0.7213114500045776
+    },
+    {
+      "id": 4939,
+      "nearest_center_distance": 0.7213114500045776
+    },
+    {
+      "id": 649,
+      "nearest_center_distance": 0.7209302186965942
+    },
+    {
+      "id": 4297,
+      "nearest_center_distance": 0.7200000286102295
+    },
+    {
+      "id": 127,
+      "nearest_center_distance": 0.719298243522644
+    },
+    {
+      "id": 1430,
+      "nearest_center_distance": 0.7183098793029785
+    },
+    {
+      "id": 1424,
+      "nearest_center_distance": 0.717391312122345
+    },
+    {
+      "id": 2924,
+      "nearest_center_distance": 0.7164179086685181
+    },
+    {
+      "id": 969,
+      "nearest_center_distance": 0.7142857313156128
+    },
+    {
+      "id": 2778,
+      "nearest_center_distance": 0.7142857313156128
+    },
+    {
+      "id": 3076,
+      "nearest_center_distance": 0.7142857313156128
+    },
+    {
+      "id": 3618,
+      "nearest_center_distance": 0.7142857313156128
+    },
+    {
+      "id": 3893,
+      "nearest_center_distance": 0.7142857313156128
+    },
+    {
+      "id": 3292,
+      "nearest_center_distance": 0.7121211886405945
+    },
+    {
+      "id": 3297,
+      "nearest_center_distance": 0.7118644118309021
+    },
+    {
+      "id": 4911,
+      "nearest_center_distance": 0.7118644118309021
+    },
+    {
+      "id": 75,
+      "nearest_center_distance": 0.7101449370384216
+    },
+    {
+      "id": 1076,
+      "nearest_center_distance": 0.7101449370384216
+    },
+    {
+      "id": 2568,
+      "nearest_center_distance": 0.7101449370384216
+    },
+    {
+      "id": 2952,
+      "nearest_center_distance": 0.7096773982048035
+    },
+    {
+      "id": 2803,
+      "nearest_center_distance": 0.7090908885002136
+    },
+    {
+      "id": 596,
+      "nearest_center_distance": 0.7088607549667358
+    },
+    {
+      "id": 1770,
+      "nearest_center_distance": 0.7083333134651184
+    },
+    {
+      "id": 2427,
+      "nearest_center_distance": 0.7083333134651184
+    }
+  ]
+}

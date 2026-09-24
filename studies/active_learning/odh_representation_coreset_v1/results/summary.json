@@ -1,0 +1,68 @@
+{
+  "status": "COMPLETE_STOPPED",
+  "methods": 4,
+  "seeds": 1,
+  "budgets": [
+    333,
+    365,
+    397,
+    429
+  ],
+  "aulc": [
+    {
+      "method": "random",
+      "split": "validation",
+      "normalized_aulc": 0.8714130280850222,
+      "ratio_to_random": 1.0
+    },
+    {
+      "method": "raw_gradient_lcmd",
+      "split": "validation",
+      "normalized_aulc": 0.8642785880853708,
+      "ratio_to_random": 0.9918127916731637
+    },
+    {
+      "method": "latent_coreset",
+      "split": "validation",
+      "normalized_aulc": 0.8978451485678196,
+      "ratio_to_random": 1.0303324825667153
+    },
+    {
+      "method": "morgan_coreset",
+      "split": "validation",
+      "normalized_aulc": 0.9080364979745609,
+      "ratio_to_random": 1.0420276822920822
+    },
+    {
+      "method": "random",
+      "split": "test",
+      "normalized_aulc": 0.8589179660665754,
+      "ratio_to_random": 1.0
+    },
+    {
+      "method": "raw_gradient_lcmd",
+      "split": "test",
+      "normalized_aulc": 0.8196426244332855,
+      "ratio_to_random": 0.9542734659362735
+    },
+    {
+      "method": "latent_coreset",
+      "split": "test",
+      "normalized_aulc": 0.8577263972732813,
+      "ratio_to_random": 0.998612709431669
+    },
+    {
+      "method": "morgan_coreset",
+      "split": "test",
+      "normalized_aulc": 0.861896678424607,
+      "ratio_to_random": 1.0034679823635226
+    }
+  ],
+  "test_ranking": [
+    "raw_gradient_lcmd",
+    "latent_coreset",
+    "random",
+    "morgan_coreset"
+  ],
+  "history_unchanged": true
+}

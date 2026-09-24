@@ -78,6 +78,7 @@ def training_config(maximum_epochs, patience, wall_time=None):
         patience=patience,
         min_delta=0.0,
         initialization_seed=INIT_SEED,
+        training_seed=INIT_SEED,
         learning_rate=0.001,
         weight_decay=1e-5,
         optimizer="Adam",

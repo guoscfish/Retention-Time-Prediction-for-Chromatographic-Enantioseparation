@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "independent_greedy_oracle_cases": 40,
+  "exact_tie_smallest_ID": true
+}
