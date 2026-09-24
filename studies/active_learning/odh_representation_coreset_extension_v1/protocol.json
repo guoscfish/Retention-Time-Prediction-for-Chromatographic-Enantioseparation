@@ -1,0 +1,62 @@
+{
+  "study": "odh_representation_coreset_extension_v1",
+  "source": {
+    "parent_study": "odh_representation_coreset_v1",
+    "completion_hash": "a20e1fcc7995f46cae6547fa0de4f0cec74357853b2874a0bda49c05f0aed2ee",
+    "protocol_hash": "29a021eeedef70acdc8ccbe0c41cd5a6540f27c3336e763db26b17089edd3602",
+    "terminal_round_hashes": {
+      "random": "bf8bd526a054d61bc3a14cd3fcaf8f6dcc2e044fb68c1bb2d78ced00e3547bbf",
+      "raw_gradient_lcmd": "93e5a6a89bf29753aea75f1102dd490106d7cc08da0473bf895be2ba953c5e26",
+      "latent_coreset": "22436f96c9a82a5e6a004bc9079feffecfa4cd0c025d9701c8d7f672adf7f180",
+      "morgan_coreset": "7b7ba8d8e67f590c19e6d72f97b74792683d0548c8f68a2ede6502476ae2788b"
+    }
+  },
+  "methods": [
+    "random",
+    "raw_gradient_lcmd",
+    "latent_coreset",
+    "morgan_coreset"
+  ],
+  "seed": 525,
+  "training": {
+    "batch_size": 256,
+    "maximum_epochs": 500,
+    "patience": 100,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "scratch": true,
+    "fresh_adam_every_round": true,
+    "shuffle": "deterministic_each_epoch",
+    "scheduler": false,
+    "checkpoint": "best_validation_central_MSE",
+    "min_delta": 0.0,
+    "initialization_seed": 525,
+    "training_seed": 525,
+    "optimizer": "Adam",
+    "loss": "original_complete",
+    "wall_time_limit_seconds": null
+  },
+  "partition_hash": "683d59abf2daab8e17ba00b1457928e00e59a96c70cc12398eea90ac075f1a26",
+  "first_budget": 429,
+  "batch_size": 32,
+  "first_new_budgets": [
+    461,
+    493
+  ],
+  "signal": {
+    "metric": "validation NRMSE with frozen L333 SD",
+    "definition": "at either of the latest two NEW budgets, latent_coreset or morgan_coreset improves on raw_gradient_lcmd by >= 0.01 absolute NRMSE",
+    "threshold": 0.01,
+    "window": 2,
+    "check_every": "after two newly completed budgets for all four methods"
+  },
+  "continuation": "if positive, run the next pair of budgets; otherwise stop",
+  "maximum_extra_rounds": 8,
+  "maximum_budget": 685,
+  "cap_policy": "stop at 685 even if signal persists; report cap explicitly",
+  "random_order": "continue frozen U0 permutation slices 96:128, 128:160, ...",
+  "training_continuation": "scratch re-training after each acquisition, seed 525, same parent protocol",
+  "representation_refresh": "current method checkpoint at every acquisition; Morgan fixed",
+  "test_firewall": "new test-X predictions only until all extensions and stop decisions are frozen; one common test truth reveal afterward",
+  "evidence_limit": "previous study already revealed this test set; extension stopping uses validation only"
+}

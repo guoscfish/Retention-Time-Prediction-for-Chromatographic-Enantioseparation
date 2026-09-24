@@ -1,0 +1,12 @@
+{
+  "status": "INTERRUPTED_BEFORE_NEW_LABEL_TRAINING",
+  "cause": "round record construction used duplicate files keyword",
+  "preserved_random_round_3_selection": true,
+  "files": {
+    "run.log": "766805a2c0a5f1e274f6dfaf05b84b54c8aaee731db1448c8331d6b2d2948fb7",
+    "frozen_source.zip": "fd94b3428eb3aab799055403a51d0d6dc5152eb641e6b24ecc8e7dba160edb6e",
+    "execution_code.json": "b5779667022d63911bd8518c77c1137de44f88f840afba149a5d30d469dce9f7",
+    "tests.log": "8992dd8e63059ca2e7710e0918b86df32d0595134d07ba0c10abdfe3eed5aa0f",
+    "test_gate.json": "bb6b93b54619849a0474cd724fa8917491781cf1cca0e42d062dc965c2343676"
+  }
+}

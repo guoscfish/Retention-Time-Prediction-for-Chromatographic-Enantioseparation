@@ -1,0 +1,188 @@
+{
+  "method": "morgan_coreset",
+  "round": 3,
+  "budget": 429,
+  "L_hash": "04ea7342409d5074d07773069a8892a3bd691dbc296c39fb7ed5e5426c3a9e5a",
+  "U_hash": "895306ce6421efdbcaf4cdd2fd9a72f7da7b24cefc501925786f6427705fa0d3",
+  "selected": [
+    4725,
+    4698,
+    1090,
+    1725,
+    4360,
+    191,
+    257,
+    1658,
+    1552,
+    937,
+    1390,
+    2705,
+    2200,
+    706,
+    693,
+    1422,
+    3068,
+    4153,
+    3231,
+    657,
+    882,
+    610,
+    796,
+    2797,
+    1910,
+    2502,
+    1861,
+    3795,
+    3299,
+    1400,
+    1536,
+    1557
+  ],
+  "selected_hash": "1405704e07602b3ee7774000de9a195fdba902799c214c62fa198dfa4329415b",
+  "trace": [
+    {
+      "id": 4725,
+      "nearest_center_distance": 0.7076923251152039
+    },
+    {
+      "id": 4698,
+      "nearest_center_distance": 0.7066666483879089
+    },
+    {
+      "id": 1090,
+      "nearest_center_distance": 0.7058823704719543
+    },
+    {
+      "id": 1725,
+      "nearest_center_distance": 0.7058823704719543
+    },
+    {
+      "id": 4360,
+      "nearest_center_distance": 0.7051281929016113
+    },
+    {
+      "id": 191,
+      "nearest_center_distance": 0.7045454382896423
+    },
+    {
+      "id": 257,
+      "nearest_center_distance": 0.7045454382896423
+    },
+    {
+      "id": 1658,
+      "nearest_center_distance": 0.7045454382896423
+    },
+    {
+      "id": 1552,
+      "nearest_center_distance": 0.7042253613471985
+    },
+    {
+      "id": 937,
+      "nearest_center_distance": 0.703125
+    },
+    {
+      "id": 1390,
+      "nearest_center_distance": 0.7027027010917664
+    },
+    {
+      "id": 2705,
+      "nearest_center_distance": 0.7027027010917664
+    },
+    {
+      "id": 2200,
+      "nearest_center_distance": 0.7021276354789734
+    },
+    {
+      "id": 706,
+      "nearest_center_distance": 0.7014925479888916
+    },
+    {
+      "id": 693,
+      "nearest_center_distance": 0.699999988079071
+    },
+    {
+      "id": 1422,
+      "nearest_center_distance": 0.699999988079071
+    },
+    {
+      "id": 3068,
+      "nearest_center_distance": 0.699999988079071
+    },
+    {
+      "id": 4153,
+      "nearest_center_distance": 0.699999988079071
+    },
+    {
+      "id": 3231,
+      "nearest_center_distance": 0.6987951993942261
+    },
+    {
+      "id": 657,
+      "nearest_center_distance": 0.6984127163887024
+    },
+    {
+      "id": 882,
+      "nearest_center_distance": 0.698113203048706
+    },
+    {
+      "id": 610,
+      "nearest_center_distance": 0.6964285969734192
+    },
+    {
+      "id": 796,
+      "nearest_center_distance": 0.6964285969734192
+    },
+    {
+      "id": 2797,
+      "nearest_center_distance": 0.6964285969734192
+    },
+    {
+      "id": 1910,
+      "nearest_center_distance": 0.695652186870575
+    },
+    {
+      "id": 2502,
+      "nearest_center_distance": 0.695652186870575
+    },
+    {
+      "id": 1861,
+      "nearest_center_distance": 0.694915235042572
+    },
+    {
+      "id": 3795,
+      "nearest_center_distance": 0.6944444179534912
+    },
+    {
+      "id": 3299,
+      "nearest_center_distance": 0.6941176652908325
+    },
+    {
+      "id": 1400,
+      "nearest_center_distance": 0.6938775777816772
+    },
+    {
+      "id": 1536,
+      "nearest_center_distance": 0.6935483813285828
+    },
+    {
+      "id": 1557,
+      "nearest_center_distance": 0.692307710647583
+    }
+  ],
+  "latent_state_hash": "0b4621fcd1ed82f96dfb43d9cec99c90fad947491b499d7207b8aa1d2c0d0279",
+  "gradient_feature_hash": "9eb5f6c00790a60b660d255b2642c44ebeaf57ecbec0f875b17b6c1ca14782b8",
+  "checkpoint_hash": "086750f25336854297c4dfdfe889382e1ec31c4fa5dea2e265c722b220da7157",
+  "files": {
+    "runtime/morgan_coreset/round_3/fit_stage.json": "9493d2c3dbde98a3d9a50e1b7b13b6677b3b9dd8671ebc92c77752d7b695bef3",
+    "runtime/morgan_coreset/round_3/predictions.npz": "e00a9aa196abeeaf903a441bba7bb30152b7794b30cbfc889f096c3efb2401e3",
+    "runtime/morgan_coreset/round_3/coverage.json": "aefbdc526a5f5c5634eb583c6d9dd5bfedfeadd34b25a32aabe829aa6a499818",
+    "runtime/morgan_coreset/round_3/raw_gradient_bank/audit.json": "ececd2bc067927175f2a1e3406f3add91eb9899f1ef598f8931d02f79a65eae7",
+    "runtime/morgan_coreset/round_3/raw_gradient_bank/features.npz": "9906b74791fa046b5da9c542e2670550d6a555605ee766cb5d49c36e83cbac1d",
+    "runtime/morgan_coreset/round_3/raw_gradient_bank/input.json": "f2d03950bfcc41ea47b9012397c577464d69ad22f479f9ee728d9ad1e3de0d08",
+    "runtime/morgan_coreset/round_3/raw_gradient_bank/complete.json": "f52b2dff406fdc969e8e3ccc5a278a9ccfc3dfcd03797f9a810465c9bb337e4a",
+    "runtime/morgan_coreset/round_3/latent/audit.json": "5b4c6aecab2854fe1d80bc3e88654428a174a249b3d348261aaa9cc1c0823f12",
+    "runtime/morgan_coreset/round_3/latent/features.npz": "5661eb887140eace8b6e062b92e69515898cd4a9900585e3fc3fcd1a7a6663e0",
+    "runtime/morgan_coreset/round_3/latent/input.json": "916fd5d62c84af0bde69697581a238b5dc7352319253d959be3193bdf6a58561",
+    "runtime/morgan_coreset/round_3/latent/complete.json": "2132d79846abc68508f211ef9f7fb2616e44643dae0a7669d5c27bf2cb2e4911"
+  }
+}

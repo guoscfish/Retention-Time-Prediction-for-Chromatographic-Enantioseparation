@@ -1,0 +1,48 @@
+{
+  "initialization_seed": 525,
+  "training_seed": 525,
+  "initialization_hash": "90ae1f750428ad51517cec81fe86a279dea391079d65096b74209169868df19b",
+  "checkpoint_state_hash": "f13ba4ade138faae73fb4f1bd7c830afe956c574388042d841082b60cfb82686",
+  "checkpoint_path": "attempt_000/best.pt",
+  "checkpoint_hash": "ad16a8ed35110533fa011fe200a84ac5da4c853dcf23aab24cd9159bb36118f5",
+  "epochs_run": 139,
+  "total_optimizer_steps": 278,
+  "best_epoch": 39,
+  "best_validation_mse": 60.70777852559202,
+  "best_validation_metrics": {
+    "rmse": 7.791519654444312,
+    "mae": 4.9370175518005,
+    "r2": 0.21531753386934982,
+    "nrmse": 0.9154205790490767
+  },
+  "best_optimizer_step": 78,
+  "final_validation_metrics": {
+    "rmse": 8.263571648104842,
+    "mae": 5.165198527849638,
+    "r2": 0.11735675643565724,
+    "nrmse": 0.9708816609102393
+  },
+  "final_checkpoint_path": "attempt_000/final.pt",
+  "final_checkpoint_hash": "a2a28320f92083411514eb175f233aa5439be4db89f8b5e7a6644e0e99b96c34",
+  "stopped_epoch": 139,
+  "seconds": 223.92582954198588,
+  "stopping_reason": "patience",
+  "attempted_fits": 1,
+  "abandoned_attempts": [],
+  "L_hash": "faa84601d9d70aa090821d0c43d1ed84b92f55f5a0a91132d7a6758d556afe4e",
+  "budget": 461,
+  "steps_per_epoch": 2,
+  "observed_batch_sizes": [
+    256,
+    205
+  ],
+  "input_hash": "837a621397268cf7dbbd3c40bfd34b5284a4a4a59b0dfbb688425061573896a8",
+  "files": {
+    "input.json": "837a621397268cf7dbbd3c40bfd34b5284a4a4a59b0dfbb688425061573896a8",
+    "attempt_000/best.pt": "ad16a8ed35110533fa011fe200a84ac5da4c853dcf23aab24cd9159bb36118f5",
+    "attempt_000/training_curve.csv": "bf2b98bc1a62964e8d4a57ef4669dde0e4fbd9c37e7a8deda77db9353828c86c",
+    "attempt_000/validation_predictions.npz": "77a2794c76e597eccbb6ef18c7fefe988a6d941c69374448a7646b9d2a604f26",
+    "attempt_000/final.pt": "a2a28320f92083411514eb175f233aa5439be4db89f8b5e7a6644e0e99b96c34",
+    "attempt_000/final_validation_predictions.npz": "d35a2d847be618063444ee18a12bea4cc5a22bb4378d88fee21067e722355f3b"
+  }
+}

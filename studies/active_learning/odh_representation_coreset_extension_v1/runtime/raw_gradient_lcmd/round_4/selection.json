@@ -1,0 +1,293 @@
+{
+  "method": "raw_gradient_lcmd",
+  "round": 4,
+  "budget": 461,
+  "L_hash": "e21f9a65bf06cf435a97e3696351cf34a245aabd08e1d8e8dfc8d8f2610deb40",
+  "U_hash": "5403a8f22d322559f91df6598d8268ff3e9522f26f726ca020e3a575c8030968",
+  "selected": [
+    2477,
+    614,
+    3334,
+    680,
+    1730,
+    3603,
+    3329,
+    2179,
+    2659,
+    3698,
+    608,
+    1457,
+    4012,
+    2829,
+    422,
+    4163,
+    2354,
+    824,
+    3699,
+    3140,
+    3250,
+    192,
+    2261,
+    718,
+    2826,
+    1873,
+    2544,
+    2900,
+    942,
+    857,
+    1229,
+    3743
+  ],
+  "selected_hash": "f51651caae2db77b4330abcef11d3560547220621cbade6ab303decfa41a7067",
+  "trace": [
+    {
+      "selection_order": 0,
+      "pool_position": 2004,
+      "selected_from_center": 197,
+      "largest_cluster_score": 6609000.861439117,
+      "nearest_center_sq_distance_before_selection": 258366.10446171858
+    },
+    {
+      "selection_order": 1,
+      "pool_position": 498,
+      "selected_from_center": 197,
+      "largest_cluster_score": 6350634.756977399,
+      "nearest_center_sq_distance_before_selection": 257481.01139859704
+    },
+    {
+      "selection_order": 2,
+      "pool_position": 2682,
+      "selected_from_center": 197,
+      "largest_cluster_score": 6093153.745578801,
+      "nearest_center_sq_distance_before_selection": 212258.9599540202
+    },
+    {
+      "selection_order": 3,
+      "pool_position": 552,
+      "selected_from_center": 197,
+      "largest_cluster_score": 5880894.785624781,
+      "nearest_center_sq_distance_before_selection": 204389.0419787463
+    },
+    {
+      "selection_order": 4,
+      "pool_position": 1392,
+      "selected_from_center": 197,
+      "largest_cluster_score": 5493709.917987548,
+      "nearest_center_sq_distance_before_selection": 178024.1486177656
+    },
+    {
+      "selection_order": 5,
+      "pool_position": 2886,
+      "selected_from_center": 388,
+      "largest_cluster_score": 5211353.752308655,
+      "nearest_center_sq_distance_before_selection": 3209073.2754102144
+    },
+    {
+      "selection_order": 6,
+      "pool_position": 2678,
+      "selected_from_center": 197,
+      "largest_cluster_score": 5163915.260346388,
+      "nearest_center_sq_distance_before_selection": 174000.4339320573
+    },
+    {
+      "selection_order": 7,
+      "pool_position": 1759,
+      "selected_from_center": 197,
+      "largest_cluster_score": 4989914.826414332,
+      "nearest_center_sq_distance_before_selection": 173768.87106392218
+    },
+    {
+      "selection_order": 8,
+      "pool_position": 2158,
+      "selected_from_center": 299,
+      "largest_cluster_score": 4886102.706252317,
+      "nearest_center_sq_distance_before_selection": 895752.5412014008
+    },
+    {
+      "selection_order": 9,
+      "pool_position": 2967,
+      "selected_from_center": 197,
+      "largest_cluster_score": 4816145.955350409,
+      "nearest_center_sq_distance_before_selection": 163823.08137474646
+    },
+    {
+      "selection_order": 10,
+      "pool_position": 493,
+      "selected_from_center": 30,
+      "largest_cluster_score": 4805191.142005982,
+      "nearest_center_sq_distance_before_selection": 334076.84663579985
+    },
+    {
+      "selection_order": 11,
+      "pool_position": 1172,
+      "selected_from_center": 197,
+      "largest_cluster_score": 4652322.8739756625,
+      "nearest_center_sq_distance_before_selection": 155159.0172991879
+    },
+    {
+      "selection_order": 12,
+      "pool_position": 3221,
+      "selected_from_center": 361,
+      "largest_cluster_score": 4527711.411130349,
+      "nearest_center_sq_distance_before_selection": 235372.57611185286
+    },
+    {
+      "selection_order": 13,
+      "pool_position": 2285,
+      "selected_from_center": 197,
+      "largest_cluster_score": 4497163.856676475,
+      "nearest_center_sq_distance_before_selection": 154236.4981871417
+    },
+    {
+      "selection_order": 14,
+      "pool_position": 347,
+      "selected_from_center": 197,
+      "largest_cluster_score": 4342927.358489334,
+      "nearest_center_sq_distance_before_selection": 149407.54469195026
+    },
+    {
+      "selection_order": 15,
+      "pool_position": 3351,
+      "selected_from_center": 197,
+      "largest_cluster_score": 4193519.8137973845,
+      "nearest_center_sq_distance_before_selection": 145102.23065220285
+    },
+    {
+      "selection_order": 16,
+      "pool_position": 1906,
+      "selected_from_center": 30,
+      "largest_cluster_score": 4134593.2681116215,
+      "nearest_center_sq_distance_before_selection": 266466.16249889816
+    },
+    {
+      "selection_order": 17,
+      "pool_position": 670,
+      "selected_from_center": 50,
+      "largest_cluster_score": 4053915.0282127797,
+      "nearest_center_sq_distance_before_selection": 356876.94504969014
+    },
+    {
+      "selection_order": 18,
+      "pool_position": 2968,
+      "selected_from_center": 197,
+      "largest_cluster_score": 4048417.5831451816,
+      "nearest_center_sq_distance_before_selection": 134437.0691724027
+    },
+    {
+      "selection_order": 19,
+      "pool_position": 2524,
+      "selected_from_center": 299,
+      "largest_cluster_score": 3990350.1650509164,
+      "nearest_center_sq_distance_before_selection": 580699.3813740425
+    },
+    {
+      "selection_order": 20,
+      "pool_position": 2609,
+      "selected_from_center": 171,
+      "largest_cluster_score": 3978931.069881298,
+      "nearest_center_sq_distance_before_selection": 311921.34891727625
+    },
+    {
+      "selection_order": 21,
+      "pool_position": 155,
+      "selected_from_center": 197,
+      "largest_cluster_score": 3913980.513972779,
+      "nearest_center_sq_distance_before_selection": 132686.89002491746
+    },
+    {
+      "selection_order": 22,
+      "pool_position": 1831,
+      "selected_from_center": 361,
+      "largest_cluster_score": 3882704.553805801,
+      "nearest_center_sq_distance_before_selection": 151894.66768941586
+    },
+    {
+      "selection_order": 23,
+      "pool_position": 583,
+      "selected_from_center": 30,
+      "largest_cluster_score": 3868127.105612723,
+      "nearest_center_sq_distance_before_selection": 242646.84052526677
+    },
+    {
+      "selection_order": 24,
+      "pool_position": 2282,
+      "selected_from_center": 173,
+      "largest_cluster_score": 3844463.8629908757,
+      "nearest_center_sq_distance_before_selection": 586869.5615272722
+    },
+    {
+      "selection_order": 25,
+      "pool_position": 1515,
+      "selected_from_center": 75,
+      "largest_cluster_score": 3797366.1318626795,
+      "nearest_center_sq_distance_before_selection": 666538.1580685547
+    },
+    {
+      "selection_order": 26,
+      "pool_position": 2062,
+      "selected_from_center": 197,
+      "largest_cluster_score": 3781293.6239478616,
+      "nearest_center_sq_distance_before_selection": 128151.76102715511
+    },
+    {
+      "selection_order": 27,
+      "pool_position": 2342,
+      "selected_from_center": 276,
+      "largest_cluster_score": 3762468.3411434684,
+      "nearest_center_sq_distance_before_selection": 417842.5910512795
+    },
+    {
+      "selection_order": 28,
+      "pool_position": 765,
+      "selected_from_center": 93,
+      "largest_cluster_score": 3720711.1241401313,
+      "nearest_center_sq_distance_before_selection": 706945.8345922804
+    },
+    {
+      "selection_order": 29,
+      "pool_position": 695,
+      "selected_from_center": 214,
+      "largest_cluster_score": 3664691.8718918264,
+      "nearest_center_sq_distance_before_selection": 744136.6219622024
+    },
+    {
+      "selection_order": 30,
+      "pool_position": 987,
+      "selected_from_center": 197,
+      "largest_cluster_score": 3653141.8629207066,
+      "nearest_center_sq_distance_before_selection": 124622.16161777527
+    },
+    {
+      "selection_order": 31,
+      "pool_position": 3003,
+      "selected_from_center": 30,
+      "largest_cluster_score": 3625480.265087456,
+      "nearest_center_sq_distance_before_selection": 220930.6231775189
+    }
+  ],
+  "latent_state_hash": "8ae201a26156eeb0929471dde7341e4faaa80a72f3465c1225f0b533e8196fb6",
+  "gradient_feature_hash": "60278c85892fac2011e88818e1323cf71e29592446c8e632403c7c07ef56ef72",
+  "checkpoint_hash": "efdebbae04d5da24944876112c8e0a13e18b5a73156900f271b0741cb11697c1",
+  "files": {
+    "runtime/raw_gradient_lcmd/round_4/fit_stage.json": "d14a56e63039ba1eff97c29ba959f5386f8f72a90a87bdb0f4a386b775fa00f4",
+    "runtime/raw_gradient_lcmd/round_4/predictions.npz": "c1f7f821909319202fe9419f82ba4541b3c54f9f8fd187f28cc3ffbd1b16ca96",
+    "runtime/raw_gradient_lcmd/round_4/coverage.json": "d0f3a1d21192d003ee4e3c9ca3f5ba11dc044eb64d7199aecf1aa8b5674e3f6b",
+    "runtime/raw_gradient_lcmd/round_4/raw_gradient_bank/audit.json": "48c3c72c00926b8f0fec5435c29d0ce3c0811da845d248ad0f37a1aee8a0ce93",
+    "runtime/raw_gradient_lcmd/round_4/raw_gradient_bank/features.npz": "a3b184d4aea8a41b56231c4012f5ca42aa7148c14a8adcf25526bba56b044a16",
+    "runtime/raw_gradient_lcmd/round_4/raw_gradient_bank/input.json": "d4b9dc299143c3a9c59ce79324928fb8dbd1174aca7df71f7106d35f2761f5f1",
+    "runtime/raw_gradient_lcmd/round_4/raw_gradient_bank/complete.json": "4ef175faf7dd2a499422c73afb7dc7c038a46b1695650c839bd94423d393b833",
+    "runtime/raw_gradient_lcmd/round_4/fit/input.json": "df012800005964acc7849752f5d9c79906d861ba800907d0b51c80cf4c71f3fd",
+    "runtime/raw_gradient_lcmd/round_4/fit/fit.json": "9b91f46cc621202fec9549977962e149e5ed883fce22cb051c63e01f1154c28c",
+    "runtime/raw_gradient_lcmd/round_4/fit/attempt_001/best.pt": "efdebbae04d5da24944876112c8e0a13e18b5a73156900f271b0741cb11697c1",
+    "runtime/raw_gradient_lcmd/round_4/fit/attempt_001/final_validation_predictions.npz": "def25ea8b7f32f950f961ea213b82ed3920b3df92004cfc832101c06e62e59ab",
+    "runtime/raw_gradient_lcmd/round_4/fit/attempt_001/final.pt": "984b9e19daa9c555e99927dd677db2221ca81fc9ed07170bb1e46823b295481d",
+    "runtime/raw_gradient_lcmd/round_4/fit/attempt_001/training_curve.csv": "117f9551b6792cdca98bdd0ff240a49f4e3f9a7dd5a423389d2e99f7cf7da67c",
+    "runtime/raw_gradient_lcmd/round_4/fit/attempt_001/validation_predictions.npz": "36d1c5988042c8eb1aa185175d80d43169255138ab4cd274b15b913f67d2dbcc",
+    "runtime/raw_gradient_lcmd/round_4/fit/attempt_000/best.pt": "804940b2a51571aa65e4c8a242cca4407116f7afb1fa1273f522d8ceb2d93663",
+    "runtime/raw_gradient_lcmd/round_4/fit/attempt_000/training_curve.csv": "ae66dd779e2aa86257da84f4aaac194e90a1be3b468f796a969b213025cb33e4",
+    "runtime/raw_gradient_lcmd/round_4/latent/audit.json": "1ed9e06eb9188ba2d8092f1528edd7c254e2a182457471c6dd57865f7f28833a",
+    "runtime/raw_gradient_lcmd/round_4/latent/features.npz": "d48e7a1e71827dbce66b9533c5c95941da33f6fd90064cf6f823cd0ce4471f7a",
+    "runtime/raw_gradient_lcmd/round_4/latent/input.json": "b4c4f9ca2aca066e112333c2440228dc4c8548cdecc8bf3f5a0a4d5c5b386794",
+    "runtime/raw_gradient_lcmd/round_4/latent/complete.json": "719637492a4c47d7b416ff6d35f3704cb878ad9a5aa91f457c41cfbcd236a008"
+  }
+}

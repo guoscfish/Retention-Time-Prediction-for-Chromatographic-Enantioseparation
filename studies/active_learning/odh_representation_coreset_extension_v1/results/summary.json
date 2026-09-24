@@ -1,0 +1,81 @@
+{
+  "status": "COMPLETE_STOPPED",
+  "start_budget": 429,
+  "stop_budget": 493,
+  "stop_reason": "no_signal",
+  "extra_rounds": 2,
+  "methods": [
+    "random",
+    "raw_gradient_lcmd",
+    "latent_coreset",
+    "morgan_coreset"
+  ],
+  "seed": 525,
+  "best_test_extension_method": "raw_gradient_lcmd",
+  "aulc": [
+    {
+      "method": "random",
+      "split": "validation",
+      "full_normalized_aulc": 0.8696299390720587,
+      "full_ratio_to_random": 1.0,
+      "extension_normalized_aulc": 0.8669553055526136,
+      "extension_ratio_to_random": 1.0
+    },
+    {
+      "method": "raw_gradient_lcmd",
+      "split": "validation",
+      "full_normalized_aulc": 0.8615427377002746,
+      "full_ratio_to_random": 0.9907004105902637,
+      "extension_normalized_aulc": 0.8574389621226304,
+      "extension_ratio_to_random": 0.9890232594817362
+    },
+    {
+      "method": "latent_coreset",
+      "split": "validation",
+      "full_normalized_aulc": 0.8898275553634406,
+      "full_ratio_to_random": 1.023225530060446,
+      "extension_normalized_aulc": 0.877801165556872,
+      "extension_ratio_to_random": 1.0125102873640586
+    },
+    {
+      "method": "morgan_coreset",
+      "split": "validation",
+      "full_normalized_aulc": 0.9163387455072176,
+      "full_ratio_to_random": 1.0537111296846562,
+      "extension_normalized_aulc": 0.9287921168062024,
+      "extension_ratio_to_random": 1.0713264119355874
+    },
+    {
+      "method": "random",
+      "split": "test",
+      "full_normalized_aulc": 0.8566773098349248,
+      "full_ratio_to_random": 1.0,
+      "extension_normalized_aulc": 0.8533163254874487,
+      "extension_ratio_to_random": 1.0
+    },
+    {
+      "method": "raw_gradient_lcmd",
+      "split": "test",
+      "full_normalized_aulc": 0.8016369327749759,
+      "full_ratio_to_random": 0.9357513308359308,
+      "extension_normalized_aulc": 0.7746283952875117,
+      "extension_ratio_to_random": 0.9077857438682105
+    },
+    {
+      "method": "latent_coreset",
+      "split": "test",
+      "full_normalized_aulc": 0.848434973104428,
+      "full_ratio_to_random": 0.9903787147904207,
+      "extension_normalized_aulc": 0.8344978368511478,
+      "extension_ratio_to_random": 0.9779466440823675
+    },
+    {
+      "method": "morgan_coreset",
+      "split": "test",
+      "full_normalized_aulc": 0.8455276595334587,
+      "full_ratio_to_random": 0.9869850057034724,
+      "extension_normalized_aulc": 0.820974131196736,
+      "extension_ratio_to_random": 0.9620982356428754
+    }
+  ]
+}

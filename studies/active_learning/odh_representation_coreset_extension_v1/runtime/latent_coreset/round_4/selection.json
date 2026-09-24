@@ -1,0 +1,195 @@
+{
+  "method": "latent_coreset",
+  "round": 4,
+  "budget": 461,
+  "L_hash": "faa84601d9d70aa090821d0c43d1ed84b92f55f5a0a91132d7a6758d556afe4e",
+  "U_hash": "9fb72fd7abe8ecf4315988c9ce33b4986d3e31fb5009a62a7fc0b732104100f8",
+  "selected": [
+    1678,
+    4513,
+    2594,
+    2980,
+    4162,
+    896,
+    1782,
+    1087,
+    2164,
+    1208,
+    2523,
+    535,
+    954,
+    4801,
+    2157,
+    116,
+    388,
+    4917,
+    2540,
+    760,
+    4921,
+    1245,
+    1266,
+    2822,
+    1233,
+    2916,
+    4628,
+    4193,
+    2836,
+    2797,
+    4336,
+    3161
+  ],
+  "selected_hash": "31f04ff711ff76440e0a7ec824524de962679900e291e3c2b5e1514ad51e2752",
+  "trace": [
+    {
+      "id": 1678,
+      "nearest_center_distance": 0.09180918335914612
+    },
+    {
+      "id": 4513,
+      "nearest_center_distance": 0.08548513054847717
+    },
+    {
+      "id": 2594,
+      "nearest_center_distance": 0.08046659827232361
+    },
+    {
+      "id": 2980,
+      "nearest_center_distance": 0.0792950689792633
+    },
+    {
+      "id": 4162,
+      "nearest_center_distance": 0.0758468359708786
+    },
+    {
+      "id": 896,
+      "nearest_center_distance": 0.07464352995157242
+    },
+    {
+      "id": 1782,
+      "nearest_center_distance": 0.07266820222139359
+    },
+    {
+      "id": 1087,
+      "nearest_center_distance": 0.07218222320079803
+    },
+    {
+      "id": 2164,
+      "nearest_center_distance": 0.07196494191884995
+    },
+    {
+      "id": 1208,
+      "nearest_center_distance": 0.07111736387014389
+    },
+    {
+      "id": 2523,
+      "nearest_center_distance": 0.07103222608566284
+    },
+    {
+      "id": 535,
+      "nearest_center_distance": 0.07042057812213898
+    },
+    {
+      "id": 954,
+      "nearest_center_distance": 0.07029925286769867
+    },
+    {
+      "id": 4801,
+      "nearest_center_distance": 0.07016725093126297
+    },
+    {
+      "id": 2157,
+      "nearest_center_distance": 0.06930267065763474
+    },
+    {
+      "id": 116,
+      "nearest_center_distance": 0.06921279430389404
+    },
+    {
+      "id": 388,
+      "nearest_center_distance": 0.06881090253591537
+    },
+    {
+      "id": 4917,
+      "nearest_center_distance": 0.06876833736896515
+    },
+    {
+      "id": 2540,
+      "nearest_center_distance": 0.06675657629966736
+    },
+    {
+      "id": 760,
+      "nearest_center_distance": 0.06633999943733215
+    },
+    {
+      "id": 4921,
+      "nearest_center_distance": 0.06624361872673035
+    },
+    {
+      "id": 1245,
+      "nearest_center_distance": 0.06614159792661667
+    },
+    {
+      "id": 1266,
+      "nearest_center_distance": 0.06572789698839188
+    },
+    {
+      "id": 2822,
+      "nearest_center_distance": 0.06563485413789749
+    },
+    {
+      "id": 1233,
+      "nearest_center_distance": 0.06562753021717072
+    },
+    {
+      "id": 2916,
+      "nearest_center_distance": 0.06482281535863876
+    },
+    {
+      "id": 4628,
+      "nearest_center_distance": 0.06444814801216125
+    },
+    {
+      "id": 4193,
+      "nearest_center_distance": 0.06351803988218307
+    },
+    {
+      "id": 2836,
+      "nearest_center_distance": 0.06323865801095963
+    },
+    {
+      "id": 2797,
+      "nearest_center_distance": 0.06248895823955536
+    },
+    {
+      "id": 4336,
+      "nearest_center_distance": 0.06243366003036499
+    },
+    {
+      "id": 3161,
+      "nearest_center_distance": 0.06196226924657822
+    }
+  ],
+  "latent_state_hash": "f13ba4ade138faae73fb4f1bd7c830afe956c574388042d841082b60cfb82686",
+  "gradient_feature_hash": "570bd93d6e064267ae2d339377437cbcbe092ab06d691ed13496afbf79109179",
+  "checkpoint_hash": "ad16a8ed35110533fa011fe200a84ac5da4c853dcf23aab24cd9159bb36118f5",
+  "files": {
+    "runtime/latent_coreset/round_4/fit_stage.json": "9cf16b122f17682680edf11f665860ac64f9db5fe715bb27fe6e68bcd3ae0977",
+    "runtime/latent_coreset/round_4/predictions.npz": "a76e38485487cd99022ea95dcad9de9aed7253e3f2b889e218d0665eece07371",
+    "runtime/latent_coreset/round_4/coverage.json": "0af093cc8ad427437bbc42f4e2d9d025ba37bf069f576a0b7b541ec5197642f8",
+    "runtime/latent_coreset/round_4/raw_gradient_bank/audit.json": "4a415a699632211575824f7244384c91ae34d9a368445181aadb68b3bab5a377",
+    "runtime/latent_coreset/round_4/raw_gradient_bank/features.npz": "a1b8d7bb50e13ae797958733d33f0beba769126f536b57c76aa00374337a2663",
+    "runtime/latent_coreset/round_4/raw_gradient_bank/input.json": "c6746cf15400763200259bacdfdf05c58d5f2ec6652dfd456f1e9a50b6ca63d9",
+    "runtime/latent_coreset/round_4/raw_gradient_bank/complete.json": "b547678f20d311bbcc48829bfe4d026fbc03c601012af9be0662678ef23bfaf3",
+    "runtime/latent_coreset/round_4/fit/input.json": "837a621397268cf7dbbd3c40bfd34b5284a4a4a59b0dfbb688425061573896a8",
+    "runtime/latent_coreset/round_4/fit/fit.json": "cffffbe0c5464167efed4f2cd94ae3b67507c32650557f3c991bec3ebcb8dd19",
+    "runtime/latent_coreset/round_4/fit/attempt_000/best.pt": "ad16a8ed35110533fa011fe200a84ac5da4c853dcf23aab24cd9159bb36118f5",
+    "runtime/latent_coreset/round_4/fit/attempt_000/final_validation_predictions.npz": "d35a2d847be618063444ee18a12bea4cc5a22bb4378d88fee21067e722355f3b",
+    "runtime/latent_coreset/round_4/fit/attempt_000/final.pt": "a2a28320f92083411514eb175f233aa5439be4db89f8b5e7a6644e0e99b96c34",
+    "runtime/latent_coreset/round_4/fit/attempt_000/training_curve.csv": "bf2b98bc1a62964e8d4a57ef4669dde0e4fbd9c37e7a8deda77db9353828c86c",
+    "runtime/latent_coreset/round_4/fit/attempt_000/validation_predictions.npz": "77a2794c76e597eccbb6ef18c7fefe988a6d941c69374448a7646b9d2a604f26",
+    "runtime/latent_coreset/round_4/latent/audit.json": "c4719c8a46439f3d385393eb93ef6ebabdb6a97b03ed74b77621e4cc48be5b9a",
+    "runtime/latent_coreset/round_4/latent/features.npz": "a3ef6f02432ca869b9089ff12dc0d1e5cd79cfec30eb756c8d826f1b01e86f40",
+    "runtime/latent_coreset/round_4/latent/input.json": "a9bda57701d914e56f07af15f4e4097090e4f330223a4ad45074917ac421773e",
+    "runtime/latent_coreset/round_4/latent/complete.json": "b7bf8c7c6d8791c80fe6c53fb04266f64cafb37bf10811d3ee21cf4eba713e9a"
+  }
+}

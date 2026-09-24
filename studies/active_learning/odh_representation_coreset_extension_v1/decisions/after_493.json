@@ -1,0 +1,37 @@
+{
+  "checked_after_budget": 493,
+  "positive": false,
+  "details": [
+    {
+      "budget": 461,
+      "nrmse": {
+        "random": 0.8852105969445481,
+        "raw_gradient_lcmd": 0.8570195227381537,
+        "latent_coreset": 0.8774984316184848,
+        "morgan_coreset": 0.9463692956807378
+      },
+      "gains_vs_lcmd": {
+        "latent_coreset": -0.020478908880331104,
+        "morgan_coreset": -0.08934977294258406
+      },
+      "positive_methods": []
+    },
+    {
+      "budget": 493,
+      "nrmse": {
+        "random": 0.835647942335532,
+        "raw_gradient_lcmd": 0.8442490814953743,
+        "latent_coreset": 0.8791626834306319,
+        "morgan_coreset": 0.9029914968632384
+      },
+      "gains_vs_lcmd": {
+        "latent_coreset": -0.03491360193525761,
+        "morgan_coreset": -0.058742415367864176
+      },
+      "positive_methods": []
+    }
+  ],
+  "threshold": 0.01,
+  "decision": "stop_no_signal",
+  "test_truth_access_count": 0
+}

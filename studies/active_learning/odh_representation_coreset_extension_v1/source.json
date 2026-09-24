@@ -1,0 +1,11 @@
+{
+  "parent_study": "odh_representation_coreset_v1",
+  "completion_hash": "a20e1fcc7995f46cae6547fa0de4f0cec74357853b2874a0bda49c05f0aed2ee",
+  "protocol_hash": "29a021eeedef70acdc8ccbe0c41cd5a6540f27c3336e763db26b17089edd3602",
+  "terminal_round_hashes": {
+    "random": "bf8bd526a054d61bc3a14cd3fcaf8f6dcc2e044fb68c1bb2d78ced00e3547bbf",
+    "raw_gradient_lcmd": "93e5a6a89bf29753aea75f1102dd490106d7cc08da0473bf895be2ba953c5e26",
+    "latent_coreset": "22436f96c9a82a5e6a004bc9079feffecfa4cd0c025d9701c8d7f672adf7f180",
+    "morgan_coreset": "7b7ba8d8e67f590c19e6d72f97b74792683d0548c8f68a2ede6502476ae2788b"
+  }
+}
