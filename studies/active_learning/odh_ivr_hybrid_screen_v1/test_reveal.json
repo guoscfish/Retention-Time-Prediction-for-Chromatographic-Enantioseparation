@@ -1,0 +1,7 @@
+{
+  "status": "REVEALED_AFTER_GLOBAL_FREEZE",
+  "source_reveal_count": 1,
+  "files": {
+    "test_truth.npz": "20541dcf719ddfcb2aab0da209af64f6a6079b9ef89ceadfed60d11a6888119e"
+  }
+}

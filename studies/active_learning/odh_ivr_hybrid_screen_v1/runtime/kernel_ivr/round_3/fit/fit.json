@@ -1,0 +1,48 @@
+{
+  "initialization_seed": 525,
+  "training_seed": 525,
+  "initialization_hash": "90ae1f750428ad51517cec81fe86a279dea391079d65096b74209169868df19b",
+  "checkpoint_state_hash": "3eda5d161fec8c22f8469b4dca65965322af7307b73e762a7e09ad979039f883",
+  "checkpoint_path": "attempt_000/best.pt",
+  "checkpoint_hash": "ae6e2e5a98f92d9a91baf30cf09b9f07eaf6fbad9a84fbf862e5c55bd91e280e",
+  "epochs_run": 169,
+  "total_optimizer_steps": 338,
+  "best_epoch": 69,
+  "best_validation_mse": 58.144054798682006,
+  "best_validation_metrics": {
+    "rmse": 7.62522490151484,
+    "mae": 4.713248048234083,
+    "r2": 0.24845511698254763,
+    "nrmse": 0.7648212520242877
+  },
+  "best_optimizer_step": 138,
+  "final_validation_metrics": {
+    "rmse": 7.788430854084144,
+    "mae": 4.862899240694548,
+    "r2": 0.21593955554703315,
+    "nrmse": 0.7811910486655742
+  },
+  "final_checkpoint_path": "attempt_000/final.pt",
+  "final_checkpoint_hash": "3d24a90d07b68f95d7306bb74ac02ef5bc2b98e2968ac0acf4225b2d74f1724d",
+  "stopped_epoch": 169,
+  "seconds": 174.28818137501366,
+  "stopping_reason": "patience",
+  "attempted_fits": 1,
+  "abandoned_attempts": [],
+  "L_hash": "7deb07df645fbd24adf847019c3ea5d56fbf64ec81d9fe41bedaeddffa5c6599",
+  "budget": 429,
+  "steps_per_epoch": 2,
+  "observed_batch_sizes": [
+    256,
+    173
+  ],
+  "input_hash": "d6ea704c0ddfe24ed6c43834c588e3a026335a4d708068f89d190b6cbec2c0ac",
+  "files": {
+    "input.json": "d6ea704c0ddfe24ed6c43834c588e3a026335a4d708068f89d190b6cbec2c0ac",
+    "attempt_000/best.pt": "ae6e2e5a98f92d9a91baf30cf09b9f07eaf6fbad9a84fbf862e5c55bd91e280e",
+    "attempt_000/training_curve.csv": "2bbd19b77b8d701b68b9c88ceb5300040a25bf5d36e91f0c3551e50182fca9dc",
+    "attempt_000/validation_predictions.npz": "25019fd31d86dde65a73d54593e90c49c1a65cccfb3a312499577680719dfe60",
+    "attempt_000/final.pt": "3d24a90d07b68f95d7306bb74ac02ef5bc2b98e2968ac0acf4225b2d74f1724d",
+    "attempt_000/final_validation_predictions.npz": "99c765a9c6ab3bb306a3c1fe7c9dcbdaf58dbca5cf219ae735842ae2f5426438"
+  }
+}

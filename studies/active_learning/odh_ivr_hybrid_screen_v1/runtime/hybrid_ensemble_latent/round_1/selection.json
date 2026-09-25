@@ -1,0 +1,320 @@
+{
+  "method": "hybrid_ensemble_latent",
+  "round": 1,
+  "budget": 365,
+  "L_hash": "783e15ddc5358d728e231be2203908fb58fb2ac7956f34349b38401d36002c55",
+  "U_hash": "0eee7e737accb04251c4345582ef8818ad94f6bfd7037eaf196866fdf4ac3e8e",
+  "selected": [
+    1827,
+    2268,
+    4683,
+    3699,
+    3948,
+    1734,
+    1086,
+    2688,
+    2791,
+    3469,
+    1332,
+    2869,
+    4932,
+    4724,
+    434,
+    1302,
+    3568,
+    2955,
+    3487,
+    1007,
+    934,
+    2194,
+    4088,
+    2504,
+    2658,
+    2524,
+    2949,
+    505,
+    2199,
+    4099,
+    3977,
+    2184
+  ],
+  "selected_hash": "3ade84ee3e79781e89deaff5e16a56abd83d5ad9d76def738c528e4efa98402c",
+  "trace": [
+    {
+      "step": 1,
+      "candidate_position": 1515,
+      "nearest_center_distance": 0.07187920896739386,
+      "uncertainty": 3.315181475754911,
+      "uncertainty_rank": 351
+    },
+    {
+      "step": 2,
+      "candidate_position": 1886,
+      "nearest_center_distance": 0.06498302194398387,
+      "uncertainty": 4.069618087654476,
+      "uncertainty_rank": 169
+    },
+    {
+      "step": 3,
+      "candidate_position": 3856,
+      "nearest_center_distance": 0.0645724303539561,
+      "uncertainty": 3.672780972960421,
+      "uncertainty_rank": 251
+    },
+    {
+      "step": 4,
+      "candidate_position": 3048,
+      "nearest_center_distance": 0.06420538421300159,
+      "uncertainty": 2.3436023165124067,
+      "uncertainty_rank": 904
+    },
+    {
+      "step": 5,
+      "candidate_position": 3257,
+      "nearest_center_distance": 0.063812127766388,
+      "uncertainty": 2.5814894852503314,
+      "uncertainty_rank": 716
+    },
+    {
+      "step": 6,
+      "candidate_position": 1435,
+      "nearest_center_distance": 0.06334113231714811,
+      "uncertainty": 2.261391993734111,
+      "uncertainty_rank": 964
+    },
+    {
+      "step": 7,
+      "candidate_position": 906,
+      "nearest_center_distance": 0.06265078282748748,
+      "uncertainty": 4.094731496720089,
+      "uncertainty_rank": 164
+    },
+    {
+      "step": 8,
+      "candidate_position": 2227,
+      "nearest_center_distance": 0.0611939133755518,
+      "uncertainty": 2.533092180777412,
+      "uncertainty_rank": 755
+    },
+    {
+      "step": 9,
+      "candidate_position": 2311,
+      "nearest_center_distance": 0.06071498403221576,
+      "uncertainty": 2.2874391884259193,
+      "uncertainty_rank": 945
+    },
+    {
+      "step": 10,
+      "candidate_position": 2861,
+      "nearest_center_distance": 0.06061123865952245,
+      "uncertainty": 3.199346623475773,
+      "uncertainty_rank": 395
+    },
+    {
+      "step": 11,
+      "candidate_position": 1109,
+      "nearest_center_distance": 0.059471067015668955,
+      "uncertainty": 2.4956087966674643,
+      "uncertainty_rank": 784
+    },
+    {
+      "step": 12,
+      "candidate_position": 2377,
+      "nearest_center_distance": 0.05834285462982214,
+      "uncertainty": 2.9949949358042294,
+      "uncertainty_rank": 487
+    },
+    {
+      "step": 13,
+      "candidate_position": 4052,
+      "nearest_center_distance": 0.057648986774677335,
+      "uncertainty": 2.4834977097063002,
+      "uncertainty_rank": 791
+    },
+    {
+      "step": 14,
+      "candidate_position": 3882,
+      "nearest_center_distance": 0.057344184792757824,
+      "uncertainty": 2.6604273240726166,
+      "uncertainty_rank": 662
+    },
+    {
+      "step": 15,
+      "candidate_position": 358,
+      "nearest_center_distance": 0.05645451752787223,
+      "uncertainty": 2.8415585125403338,
+      "uncertainty_rank": 568
+    },
+    {
+      "step": 16,
+      "candidate_position": 1083,
+      "nearest_center_distance": 0.05410512729842609,
+      "uncertainty": 2.611438930762958,
+      "uncertainty_rank": 694
+    },
+    {
+      "step": 17,
+      "candidate_position": 2937,
+      "nearest_center_distance": 0.053342154976115275,
+      "uncertainty": 2.521755293868924,
+      "uncertainty_rank": 764
+    },
+    {
+      "step": 18,
+      "candidate_position": 2444,
+      "nearest_center_distance": 0.05252400492833076,
+      "uncertainty": 2.920240166601997,
+      "uncertainty_rank": 529
+    },
+    {
+      "step": 19,
+      "candidate_position": 2874,
+      "nearest_center_distance": 0.05232074269086673,
+      "uncertainty": 3.901304399078613,
+      "uncertainty_rank": 192
+    },
+    {
+      "step": 20,
+      "candidate_position": 839,
+      "nearest_center_distance": 0.05206424761383899,
+      "uncertainty": 2.6153661433519786,
+      "uncertainty_rank": 692
+    },
+    {
+      "step": 21,
+      "candidate_position": 778,
+      "nearest_center_distance": 0.05113049461656005,
+      "uncertainty": 2.894935599070774,
+      "uncertainty_rank": 540
+    },
+    {
+      "step": 22,
+      "candidate_position": 1820,
+      "nearest_center_distance": 0.05064842248590662,
+      "uncertainty": 2.440744979431816,
+      "uncertainty_rank": 823
+    },
+    {
+      "step": 23,
+      "candidate_position": 3376,
+      "nearest_center_distance": 0.05024751805793304,
+      "uncertainty": 2.2033416497964535,
+      "uncertainty_rank": 1020
+    },
+    {
+      "step": 24,
+      "candidate_position": 2079,
+      "nearest_center_distance": 0.05018098129474202,
+      "uncertainty": 2.5213543090282333,
+      "uncertainty_rank": 765
+    },
+    {
+      "step": 25,
+      "candidate_position": 2205,
+      "nearest_center_distance": 0.049910243632271256,
+      "uncertainty": 3.9945644838913794,
+      "uncertainty_rank": 176
+    },
+    {
+      "step": 26,
+      "candidate_position": 2094,
+      "nearest_center_distance": 0.04972950101470386,
+      "uncertainty": 3.736821737362992,
+      "uncertainty_rank": 233
+    },
+    {
+      "step": 27,
+      "candidate_position": 2439,
+      "nearest_center_distance": 0.048461294331158644,
+      "uncertainty": 4.473575470223055,
+      "uncertainty_rank": 118
+    },
+    {
+      "step": 28,
+      "candidate_position": 413,
+      "nearest_center_distance": 0.0482714542880468,
+      "uncertainty": 2.555683152343288,
+      "uncertainty_rank": 738
+    },
+    {
+      "step": 29,
+      "candidate_position": 1825,
+      "nearest_center_distance": 0.04800754262368767,
+      "uncertainty": 5.094294161452414,
+      "uncertainty_rank": 72
+    },
+    {
+      "step": 30,
+      "candidate_position": 3387,
+      "nearest_center_distance": 0.04764782124490963,
+      "uncertainty": 4.182622661131144,
+      "uncertainty_rank": 154
+    },
+    {
+      "step": 31,
+      "candidate_position": 3282,
+      "nearest_center_distance": 0.04762453023293889,
+      "uncertainty": 2.3158870456885516,
+      "uncertainty_rank": 928
+    },
+    {
+      "step": 32,
+      "candidate_position": 1811,
+      "nearest_center_distance": 0.0475973005732131,
+      "uncertainty": 3.117167003285931,
+      "uncertainty_rank": 441
+    }
+  ],
+  "geometry": {
+    "uncertainty_percentile": 86.39683365997061,
+    "shortlist_uncertainty_percentile": 87.4938755512004,
+    "selected_uncertainty_mean": 3.060495571450853,
+    "selected_uncertainty_median": 2.7509929183064754,
+    "shortlist_uncertainty_mean": 3.2685949400308623,
+    "selected_latent_nearest_l_distance": 0.05598701937891304,
+    "selected_morgan_novelty": 0.5856016874313354,
+    "novel_scaffold_fraction": 0.65625,
+    "top32_uncertainty_retained": 0,
+    "top_shortlist_quartile_retained": 9,
+    "hybrid": {
+      "shortlist_fraction": 0.25,
+      "shortlist_size": 1021,
+      "shortlist_threshold": 2.1990560472930265,
+      "pool_size": 4082,
+      "center_count": 365,
+      "batch_size": 32
+    }
+  },
+  "selection_seconds": 358.5566382909892,
+  "test_truth_access_count": 0,
+  "files": {
+    "runtime/hybrid_ensemble_latent/round_1/ensemble_predictions.npz": "1b1175c2d3fbe2a862f1d81ebbc3fe84b15ef94e1ffdc164bf8e718e0f7c2014",
+    "runtime/hybrid_ensemble_latent/round_1/evaluation.json": "4177e5d9274af8115e428635d227157b5c51107786feb1c7d3bc8859b6f4dad9",
+    "runtime/hybrid_ensemble_latent/round_1/fit/attempt_000/best.pt": "f70925eddc90457b2d4c6d53840d907a1141ba4e9cfd727fa4eac6c5a039f4ff",
+    "runtime/hybrid_ensemble_latent/round_1/fit/attempt_000/final.pt": "fcc7c4fa4ae810122c87b6560c81dfac1b8f47cf89e2d023c74fd5d000b4697d",
+    "runtime/hybrid_ensemble_latent/round_1/fit/attempt_000/final_validation_predictions.npz": "f20c6ce31392183ee92fac50bb771e7bc2587fe9dca11a50b50f52e43a873f6c",
+    "runtime/hybrid_ensemble_latent/round_1/fit/attempt_000/training_curve.csv": "f2439b4c5c2dab8eb1bdef93824fc2ee65481fb613c1d3b3365d56842fdfe1d3",
+    "runtime/hybrid_ensemble_latent/round_1/fit/attempt_000/validation_predictions.npz": "9fa4a0588b654e58c3f3854afb249afccb5be879380aa40f8c4516fd7d6bbd7f",
+    "runtime/hybrid_ensemble_latent/round_1/fit/fit.json": "7e275f806f364478e3c18becc0229a2cc21c8e748e18c9c81ff01e55dc5d3e7d",
+    "runtime/hybrid_ensemble_latent/round_1/fit/input.json": "649f60c2dbc5fe8dce672eac535657bb5ea2ab52159e862ee8291087da5fb323",
+    "runtime/hybrid_ensemble_latent/round_1/latent/audit.json": "f58e01f8ce573b55cfe9bc25e7fdf0852eea57a1ba83c5a84cef11bab97b639b",
+    "runtime/hybrid_ensemble_latent/round_1/latent/complete.json": "61f1aa84c943bef14381fc5f2bf9e888552ec5653c0c19db3fa13bf344a500a1",
+    "runtime/hybrid_ensemble_latent/round_1/latent/features.npz": "735654cd7fe8dde878e53a0ac64e6e43e80d2e282d73c34e6edb91104829e269",
+    "runtime/hybrid_ensemble_latent/round_1/latent/input.json": "110fb775116371ba95ba10a9ebbdc22806100a75e9f45fe7e8adb0bdf3030f41",
+    "runtime/hybrid_ensemble_latent/round_1/member_1/fit/attempt_000/best.pt": "8e3dcb8c409c090b2354ad2f8caa9feb3d804eaf126a387ebaaf0640528e21ae",
+    "runtime/hybrid_ensemble_latent/round_1/member_1/fit/attempt_000/final.pt": "54f2e781b77f8b5cb8d9f23dc91c3fe8f9cd8b6538703062347b48a9cbf15490",
+    "runtime/hybrid_ensemble_latent/round_1/member_1/fit/attempt_000/final_validation_predictions.npz": "8b749c9f7c519a0513c9fba37ac66d330b3630d53e2681dd206ee567840d36cd",
+    "runtime/hybrid_ensemble_latent/round_1/member_1/fit/attempt_000/training_curve.csv": "18f52c18808af588fae87b23ce02197aa426611ab9591277ac8d08c211799eff",
+    "runtime/hybrid_ensemble_latent/round_1/member_1/fit/attempt_000/validation_predictions.npz": "8d3a65ed46449a8c51c418879829d64964f905e5070e66ca5c31afcf1ab6ebfb",
+    "runtime/hybrid_ensemble_latent/round_1/member_1/fit/fit.json": "1460b94cc51fb8b4f19bcec329d889ee76e323befb643fb32432791a82730b95",
+    "runtime/hybrid_ensemble_latent/round_1/member_1/fit/input.json": "c1a90d7e39e84b86bdb1d001fb3ca9b2aca73a01dbc0ee20af62b637ae6dc52a",
+    "runtime/hybrid_ensemble_latent/round_1/member_2/fit/attempt_000/best.pt": "4fb032f7c8e731d387ec902497d245871be545252d19f72a97d5871a726aa8dc",
+    "runtime/hybrid_ensemble_latent/round_1/member_2/fit/attempt_000/final.pt": "7be28cd973fe406263dcd46cdb33d6a591178a309dbc2f8f93b5ff117cafdf28",
+    "runtime/hybrid_ensemble_latent/round_1/member_2/fit/attempt_000/final_validation_predictions.npz": "abc61121b4ddefdc9f7d096a107e0b8ad773b4b83c83cd57916b964c0833fe18",
+    "runtime/hybrid_ensemble_latent/round_1/member_2/fit/attempt_000/training_curve.csv": "c4994ff5e69afdb69f71ce84418dd53fa03369a20c7b90e2ec0f2ed82a81507b",
+    "runtime/hybrid_ensemble_latent/round_1/member_2/fit/attempt_000/validation_predictions.npz": "50ecd61bfdc8f50c80cbdf697e9a92e8bca541ccde411099206ef04bf2c439f0",
+    "runtime/hybrid_ensemble_latent/round_1/member_2/fit/fit.json": "4660614bb2e181eb5f7116455e4e30df428d274eac1e47af887aaeaf1bc39532",
+    "runtime/hybrid_ensemble_latent/round_1/member_2/fit/input.json": "d2c3496bac255bb973cfa4ea96a3761c5b742cfb8cbacea0b41a182072cbdcb5",
+    "runtime/hybrid_ensemble_latent/round_1/predictions.npz": "3ec70b551dbd6619c7009b6c7fdaa2d426a8d9f62c23362b303dc17e731f2ebc"
+  }
+}

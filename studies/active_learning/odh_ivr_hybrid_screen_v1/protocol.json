@@ -1,0 +1,72 @@
+{
+  "study": "odh_ivr_hybrid_screen_v1",
+  "seed": 525,
+  "methods": [
+    "kernel_ivr",
+    "hybrid_ensemble_latent"
+  ],
+  "comparators": [
+    "random",
+    "raw_gradient_lcmd"
+  ],
+  "budgets": [
+    333,
+    365,
+    397,
+    429,
+    461,
+    493
+  ],
+  "batch_size": 32,
+  "partition_hash": "683d59abf2daab8e17ba00b1457928e00e59a96c70cc12398eea90ac075f1a26",
+  "training": {
+    "batch_size": 256,
+    "maximum_epochs": 500,
+    "patience": 100,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "scratch": true,
+    "fresh_adam_every_round": true,
+    "shuffle": "deterministic_each_epoch",
+    "scheduler": false,
+    "checkpoint": "best_validation_central_MSE",
+    "min_delta": 0.0,
+    "initialization_seed": 525,
+    "training_seed": 525,
+    "optimizer": "Adam",
+    "loss": "original_complete",
+    "wall_time_limit_seconds": null
+  },
+  "frozen_l333_target_population_sd": 8.879240547556758,
+  "target": "RTv = RT * Speed; central predictor output[:,1]",
+  "evaluation_metric": "trapezoidal NRMSE integral divided by interval width",
+  "ivr": {
+    "reference": "fixed original L0 union U0",
+    "feature": "full-network central RTv gradient CountSketch 512D",
+    "scale": "single global RMS over reference",
+    "prior_precision": 1,
+    "noise_variance": 1,
+    "arithmetic": "float64",
+    "batch": "greedy Sherman-Morrison",
+    "tie_break": "current sorted U order",
+    "refresh": "current trajectory checkpoint"
+  },
+  "hybrid": {
+    "ensemble_size": 3,
+    "member0": "current evaluation checkpoint",
+    "extra_member_seed": "525000000 + 10000*round_index + member (member=1,2)",
+    "uncertainty": "ddof=0 std of output[:,1]",
+    "shortlist_fraction": 0.25,
+    "shortlist_size": "max(32,ceil(.25*current_U_size))",
+    "latent": "unit-normalized h_graph",
+    "distance": "1-cosine",
+    "centers": "all current L",
+    "tie_break": "shortlist order"
+  },
+  "shared_l333_checkpoint_hash": "577c38710b965a494b6d36032113ffd71f2f04209aeea611d11ab1f4475df159",
+  "cc_source_commit": "e50ae7e3719e3563c1c4b11f1d2b7ff180461388",
+  "cc_transfer": "scalar row-kernel IVR; three-member epistemic Top-25% then latent k-center",
+  "hplc_adaptation": "single central RTv output; unit h_graph cosine; CC Hybrid is not bitwise reproduced",
+  "test_firewall": "all new IDs/checkpoints/validation metrics/test-X predictions frozen before one source truth read",
+  "stop": "hard stop after L493; seed525 development only"
+}

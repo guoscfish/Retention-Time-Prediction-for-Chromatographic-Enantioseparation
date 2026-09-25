@@ -1,0 +1,58 @@
+{
+  "status": "COMPLETE_STOPPED_AT_493",
+  "seed": 525,
+  "methods": [
+    "random",
+    "raw_gradient_lcmd",
+    "kernel_ivr",
+    "hybrid_ensemble_latent"
+  ],
+  "test_full_aulc": {
+    "random": 0.8566773098349248,
+    "raw_gradient_lcmd": 0.8016369327749759,
+    "kernel_ivr": 0.815976095432403,
+    "hybrid_ensemble_latent": 0.8403766272757519
+  },
+  "test_extension_aulc": {
+    "random": 0.8533163254874487,
+    "raw_gradient_lcmd": 0.7746283952875117,
+    "kernel_ivr": 0.8095808173033849,
+    "hybrid_ensemble_latent": 0.836231542099335
+  },
+  "test_early_aulc": {
+    "random": 0.8589179660665754,
+    "raw_gradient_lcmd": 0.8196426244332855,
+    "kernel_ivr": 0.8202396141850817,
+    "hybrid_ensemble_latent": 0.8431400173933632
+  },
+  "test_endpoint_493_nrmse": {
+    "random": 0.8556775712030653,
+    "raw_gradient_lcmd": 0.7765862419795342,
+    "kernel_ivr": 0.7927794993858681,
+    "hybrid_ensemble_latent": 0.803921888439757
+  },
+  "recommended_confirmation": "raw_gradient_lcmd",
+  "ivr_lcmd_batch_overlap": [
+    5,
+    4,
+    0,
+    1,
+    0
+  ],
+  "hybrid_lcmd_batch_overlap": [
+    0,
+    1,
+    0,
+    0,
+    1
+  ],
+  "ivr_hybrid_batch_overlap": [
+    0,
+    0,
+    1,
+    1,
+    0
+  ],
+  "comparator_audit_sha256": "1f8c366ed83bd38faa7268e9e43645ec5302b5387b23648b31367936a71f83af",
+  "global_freeze_sha256": "4f8ed6e84305babe37e3e2009d35eb3c0c8842850ed15c2ed502157a859f958b"
+}

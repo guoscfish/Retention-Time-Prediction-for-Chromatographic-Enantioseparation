@@ -1,0 +1,3 @@
+method,evaluation_fits_new,evaluation_fit_l333_reused,extra_ensemble_fits,total_new_fits,evaluation_epochs,extra_ensemble_epochs,total_new_epochs,evaluation_training_seconds,extra_ensemble_training_seconds,total_training_seconds,acquisition_stage_seconds,new_gradient_extractions
+kernel_ivr,5,1,0,5,971,0,971,855.8939393330656,0,855.8939393330656,256.59416537499055,4
+hybrid_ensemble_latent,5,1,10,15,802,1661,2463,760.0128240010235,1280.2746122909593,2040.2874362919829,1358.0244788329874,0
