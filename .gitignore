@@ -27,3 +27,7 @@ studies/active_learning/odh_representation_coreset_extension_v1/runtime/**/*.npz
 studies/active_learning/odh_representation_coreset_extension_v1/runtime/**/*.pt
 studies/active_learning/odh_representation_coreset_extension_v1/representation/*.npz
 studies/active_learning/odh_representation_coreset_extension_v1/test_truth.npz
+studies/active_learning/odh_lcmd_confirmation_v1/**/*.pt
+studies/active_learning/odh_lcmd_confirmation_v1/**/*.npz
+studies/active_learning/odh_lcmd_confirmation_v2/**/*.pt
+studies/active_learning/odh_lcmd_confirmation_v2/**/*.npz

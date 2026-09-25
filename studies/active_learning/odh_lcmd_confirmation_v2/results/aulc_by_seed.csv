@@ -1,0 +1,9 @@
+seed,method,split,normalized_nrmse_aulc
+1525,random,test,0.8559731706964225
+1525,random,validation,0.9017187652618572
+1525,raw_gradient_lcmd,test,0.8243284117889479
+1525,raw_gradient_lcmd,validation,0.8814140900556184
+2525,random,test,0.8506443877854957
+2525,random,validation,0.881855934821921
+2525,raw_gradient_lcmd,test,0.8149344881595634
+2525,raw_gradient_lcmd,validation,0.8940690083869204

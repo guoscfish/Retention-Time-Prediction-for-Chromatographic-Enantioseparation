@@ -1,0 +1,3015 @@
+{
+  "method": "raw_gradient_lcmd",
+  "seed": 2525,
+  "round": 2,
+  "L_hash": "cf104bf0882c75a30b3b8749bf5aa5ab61614ea9b18bc6ee3d56cc8abd81b101",
+  "U_hash": "0747cca906a81539bf630c60fbec45b87ed1bb8d0805ffba2a5cf5ea05a2171e",
+  "selected": [
+    3738,
+    2092,
+    4750,
+    1550,
+    1059,
+    1008,
+    2132,
+    718,
+    2654,
+    3291,
+    3692,
+    3571,
+    2191,
+    4806,
+    2661,
+    562,
+    4423,
+    3161,
+    1366,
+    2801,
+    2496,
+    587,
+    1614,
+    44,
+    491,
+    1555,
+    713,
+    4002,
+    2566,
+    3661,
+    1420,
+    3562
+  ],
+  "selected_hash": "30e0b48a7bc412c0fa9385665036295a0df0f9101011f583967c3b9e31aec62a",
+  "trace": [
+    {
+      "selection_order": 0,
+      "pool_position": 3049,
+      "selected_from_center": 200,
+      "largest_cluster_score": 8537419.301938577,
+      "nearest_center_sq_distance_before_selection": 1439595.4107733895
+    },
+    {
+      "selection_order": 1,
+      "pool_position": 1719,
+      "selected_from_center": 228,
+      "largest_cluster_score": 8335478.340554334,
+      "nearest_center_sq_distance_before_selection": 838486.0352851404
+    },
+    {
+      "selection_order": 2,
+      "pool_position": 3870,
+      "selected_from_center": 122,
+      "largest_cluster_score": 8177243.279653579,
+      "nearest_center_sq_distance_before_selection": 1039678.514517623
+    },
+    {
+      "selection_order": 3,
+      "pool_position": 1272,
+      "selected_from_center": 122,
+      "largest_cluster_score": 7137564.765135956,
+      "nearest_center_sq_distance_before_selection": 899417.6163751124
+    },
+    {
+      "selection_order": 4,
+      "pool_position": 875,
+      "selected_from_center": 200,
+      "largest_cluster_score": 7097823.891165188,
+      "nearest_center_sq_distance_before_selection": 1350690.7508391496
+    },
+    {
+      "selection_order": 5,
+      "pool_position": 832,
+      "selected_from_center": 228,
+      "largest_cluster_score": 6746781.807320273,
+      "nearest_center_sq_distance_before_selection": 695343.26492916
+    },
+    {
+      "selection_order": 6,
+      "pool_position": 1753,
+      "selected_from_center": 199,
+      "largest_cluster_score": 6735000.234934848,
+      "nearest_center_sq_distance_before_selection": 693230.2744272684
+    },
+    {
+      "selection_order": 7,
+      "pool_position": 588,
+      "selected_from_center": 44,
+      "largest_cluster_score": 6500731.52732918,
+      "nearest_center_sq_distance_before_selection": 842228.5360564648
+    },
+    {
+      "selection_order": 8,
+      "pool_position": 2185,
+      "selected_from_center": 236,
+      "largest_cluster_score": 6114809.786900579,
+      "nearest_center_sq_distance_before_selection": 905276.5337429065
+    },
+    {
+      "selection_order": 9,
+      "pool_position": 2683,
+      "selected_from_center": 228,
+      "largest_cluster_score": 6051438.542391112,
+      "nearest_center_sq_distance_before_selection": 657498.1516544442
+    },
+    {
+      "selection_order": 10,
+      "pool_position": 3012,
+      "selected_from_center": 199,
+      "largest_cluster_score": 6041769.960507579,
+      "nearest_center_sq_distance_before_selection": 606696.7000839789
+    },
+    {
+      "selection_order": 11,
+      "pool_position": 2908,
+      "selected_from_center": 122,
+      "largest_cluster_score": 5811498.193404547,
+      "nearest_center_sq_distance_before_selection": 701324.3410722166
+    },
+    {
+      "selection_order": 12,
+      "pool_position": 1800,
+      "selected_from_center": 390,
+      "largest_cluster_score": 5668139.016470384,
+      "nearest_center_sq_distance_before_selection": 576048.0384443536
+    },
+    {
+      "selection_order": 13,
+      "pool_position": 3918,
+      "selected_from_center": 69,
+      "largest_cluster_score": 5490146.373154936,
+      "nearest_center_sq_distance_before_selection": 549893.6268118992
+    },
+    {
+      "selection_order": 14,
+      "pool_position": 2191,
+      "selected_from_center": 254,
+      "largest_cluster_score": 5468579.356221081,
+      "nearest_center_sq_distance_before_selection": 816718.4428430884
+    },
+    {
+      "selection_order": 15,
+      "pool_position": 459,
+      "selected_from_center": 113,
+      "largest_cluster_score": 5224677.64838424,
+      "nearest_center_sq_distance_before_selection": 325630.955880432
+    },
+    {
+      "selection_order": 16,
+      "pool_position": 3610,
+      "selected_from_center": 236,
+      "largest_cluster_score": 5209533.253157673,
+      "nearest_center_sq_distance_before_selection": 880109.0789008662
+    },
+    {
+      "selection_order": 17,
+      "pool_position": 2581,
+      "selected_from_center": 390,
+      "largest_cluster_score": 5092090.97802603,
+      "nearest_center_sq_distance_before_selection": 476009.6659413243
+    },
+    {
+      "selection_order": 18,
+      "pool_position": 1124,
+      "selected_from_center": 190,
+      "largest_cluster_score": 5080002.566360952,
+      "nearest_center_sq_distance_before_selection": 972274.7519661319
+    },
+    {
+      "selection_order": 19,
+      "pool_position": 2297,
+      "selected_from_center": 254,
+      "largest_cluster_score": 4651860.913377993,
+      "nearest_center_sq_distance_before_selection": 572105.1602285707
+    },
+    {
+      "selection_order": 20,
+      "pool_position": 2051,
+      "selected_from_center": 390,
+      "largest_cluster_score": 4616081.312084705,
+      "nearest_center_sq_distance_before_selection": 471099.75873005483
+    },
+    {
+      "selection_order": 21,
+      "pool_position": 478,
+      "selected_from_center": 44,
+      "largest_cluster_score": 4594088.995288771,
+      "nearest_center_sq_distance_before_selection": 487767.1032244796
+    },
+    {
+      "selection_order": 22,
+      "pool_position": 1326,
+      "selected_from_center": 314,
+      "largest_cluster_score": 4592122.3575126855,
+      "nearest_center_sq_distance_before_selection": 247925.56134895852
+    },
+    {
+      "selection_order": 23,
+      "pool_position": 40,
+      "selected_from_center": 338,
+      "largest_cluster_score": 4425102.113443263,
+      "nearest_center_sq_distance_before_selection": 136900.55524941086
+    },
+    {
+      "selection_order": 24,
+      "pool_position": 399,
+      "selected_from_center": 222,
+      "largest_cluster_score": 4385455.66923119,
+      "nearest_center_sq_distance_before_selection": 454547.94718845864
+    },
+    {
+      "selection_order": 25,
+      "pool_position": 1277,
+      "selected_from_center": 106,
+      "largest_cluster_score": 4382057.578958146,
+      "nearest_center_sq_distance_before_selection": 412317.0938211137
+    },
+    {
+      "selection_order": 26,
+      "pool_position": 584,
+      "selected_from_center": 337,
+      "largest_cluster_score": 4379142.530563726,
+      "nearest_center_sq_distance_before_selection": 336381.55620421586
+    },
+    {
+      "selection_order": 27,
+      "pool_position": 3268,
+      "selected_from_center": 338,
+      "largest_cluster_score": 4288201.558193852,
+      "nearest_center_sq_distance_before_selection": 122703.84794416289
+    },
+    {
+      "selection_order": 28,
+      "pool_position": 2107,
+      "selected_from_center": 228,
+      "largest_cluster_score": 4275896.273443196,
+      "nearest_center_sq_distance_before_selection": 480470.13979235594
+    },
+    {
+      "selection_order": 29,
+      "pool_position": 2983,
+      "selected_from_center": 299,
+      "largest_cluster_score": 4241870.526699646,
+      "nearest_center_sq_distance_before_selection": 401310.7606934265
+    },
+    {
+      "selection_order": 30,
+      "pool_position": 1169,
+      "selected_from_center": 338,
+      "largest_cluster_score": 4165497.71024969,
+      "nearest_center_sq_distance_before_selection": 108657.11731032937
+    },
+    {
+      "selection_order": 31,
+      "pool_position": 2900,
+      "selected_from_center": 390,
+      "largest_cluster_score": 4144981.55335465,
+      "nearest_center_sq_distance_before_selection": 377648.95687935664
+    }
+  ],
+  "audit": {
+    "selector": "raw_gradient_lcmd",
+    "gradient": {
+      "rows": 4447,
+      "dimensions": 512,
+      "parameter_count": 818091,
+      "trainable_parameter_tensors": 237,
+      "tensors_receiving_gradient": 139,
+      "tensors_without_gradient": 98,
+      "ever_nonzero_elements": 355714,
+      "zero_gradient_tensors": 98,
+      "full_gradient_norm": {
+        "min": 116.10794605213529,
+        "q25": 364.79242261529885,
+        "median": 500.99106727108614,
+        "q75": 711.4588650683386,
+        "max": 1798.6459386878764,
+        "mean": 556.0385730250453,
+        "zero_count": 0
+      },
+      "sketch_norm": {
+        "min": 115.80584575756009,
+        "q25": 368.72126431983884,
+        "median": 507.18830457528236,
+        "q75": 717.0657210885613,
+        "max": 1832.2424063068956,
+        "mean": 560.8215824375051,
+        "zero_count": 0
+      },
+      "duplicate_feature_rows": 0,
+      "clamped_central_rows": 0,
+      "finite": true,
+      "eval_mode": true,
+      "state_unchanged": true,
+      "mapping_hash": "5d770cca44d6c30cb064d509650c5d732ffe6348f30db4cd9516f0c54281e6cb",
+      "feature_hash": "a3cb79a109dce6cf096e7a74d822a419719e8c1666a98cd5d244241bb04d9bac",
+      "ordered_ids_hash": "56a52b345d66519be2d1656be7a87d1875f33c951170c952fc5fa0352e831256",
+      "seconds": 61.439285083004506,
+      "parameters": [
+        {
+          "name": "gnn_node.atom_encoder.atom_embedding_list.0.weight",
+          "shape": [
+            124,
+            128
+          ],
+          "start": 0,
+          "stop": 15872,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1408
+        },
+        {
+          "name": "gnn_node.atom_encoder.atom_embedding_list.1.weight",
+          "shape": [
+            14,
+            128
+          ],
+          "start": 15872,
+          "stop": 17664,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 384
+        },
+        {
+          "name": "gnn_node.atom_encoder.atom_embedding_list.2.weight",
+          "shape": [
+            17,
+            128
+          ],
+          "start": 17664,
+          "stop": 19840,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 512
+        },
+        {
+          "name": "gnn_node.atom_encoder.atom_embedding_list.3.weight",
+          "shape": [
+            19,
+            128
+          ],
+          "start": 19840,
+          "stop": 22272,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 768
+        },
+        {
+          "name": "gnn_node.atom_encoder.atom_embedding_list.4.weight",
+          "shape": [
+            22,
+            128
+          ],
+          "start": 22272,
+          "stop": 25088,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 384
+        },
+        {
+          "name": "gnn_node.atom_encoder.atom_embedding_list.5.weight",
+          "shape": [
+            14,
+            128
+          ],
+          "start": 25088,
+          "stop": 26880,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 384
+        },
+        {
+          "name": "gnn_node.atom_encoder.atom_embedding_list.6.weight",
+          "shape": [
+            19,
+            128
+          ],
+          "start": 26880,
+          "stop": 29312,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 512
+        },
+        {
+          "name": "gnn_node.atom_encoder.atom_embedding_list.7.weight",
+          "shape": [
+            7,
+            128
+          ],
+          "start": 29312,
+          "stop": 30208,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 256
+        },
+        {
+          "name": "gnn_node.atom_encoder.atom_embedding_list.8.weight",
+          "shape": [
+            15,
+            128
+          ],
+          "start": 30208,
+          "stop": 32128,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 512
+        },
+        {
+          "name": "gnn_node.bond_encoder.bond_embedding_list.0.weight",
+          "shape": [
+            13,
+            128
+          ],
+          "start": 32128,
+          "stop": 33792,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 484
+        },
+        {
+          "name": "gnn_node.bond_encoder.bond_embedding_list.1.weight",
+          "shape": [
+            28,
+            128
+          ],
+          "start": 33792,
+          "stop": 37376,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 487
+        },
+        {
+          "name": "gnn_node.bond_encoder.bond_embedding_list.2.weight",
+          "shape": [
+            8,
+            128
+          ],
+          "start": 37376,
+          "stop": 38400,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 320
+        },
+        {
+          "name": "gnn_node.bond_float_encoder.linear_list.0.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 38400,
+          "stop": 40960,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 2300
+        },
+        {
+          "name": "gnn_node.bond_float_encoder.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 40960,
+          "stop": 41088,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 115
+        },
+        {
+          "name": "gnn_node.bond_float_encoder.linear_list.1.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 41088,
+          "stop": 43648,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 2300
+        },
+        {
+          "name": "gnn_node.bond_float_encoder.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 43648,
+          "stop": 43776,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 115
+        },
+        {
+          "name": "gnn_node.bond_float_encoder.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 43776,
+          "stop": 43777,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.bond_float_encoder.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 43777,
+          "stop": 43778,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.bond_angle_encoder.linear_list.0.weight",
+          "shape": [
+            128,
+            32
+          ],
+          "start": 43778,
+          "stop": 47874,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.bond_angle_encoder.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 47874,
+          "stop": 48002,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.bond_angle_encoder.linear_list.1.weight",
+          "shape": [
+            128,
+            5
+          ],
+          "start": 48002,
+          "stop": 48642,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.bond_angle_encoder.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 48642,
+          "stop": 48770,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.bond_angle_encoder.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 48770,
+          "stop": 48771,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.condition_encoder.linear_list.0.weight",
+          "shape": [
+            128,
+            10
+          ],
+          "start": 48771,
+          "stop": 50051,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.condition_encoder.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 50051,
+          "stop": 50179,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.condition_encoder.linear_list.1.weight",
+          "shape": [
+            128,
+            100
+          ],
+          "start": 50179,
+          "stop": 62979,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.condition_encoder.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 62979,
+          "stop": 63107,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.condition_encoder.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 63107,
+          "stop": 63108,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.condition_encoder.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 63108,
+          "stop": 63109,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.condition_encoder.embedding_list.0.weight",
+          "shape": [
+            7,
+            128
+          ],
+          "start": 63109,
+          "stop": 64005,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.condition_encoder.embedding_list.1.weight",
+          "shape": [
+            11,
+            128
+          ],
+          "start": 64005,
+          "stop": 65413,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs.0.eps",
+          "shape": [
+            1
+          ],
+          "start": 65413,
+          "stop": 65414,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs.0.mlp.0.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 65414,
+          "stop": 81798,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16384
+        },
+        {
+          "name": "gnn_node.convs.0.mlp.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 81798,
+          "stop": 81926,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.0.mlp.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 81926,
+          "stop": 82054,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.0.mlp.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 82054,
+          "stop": 82182,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.0.mlp.3.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 82182,
+          "stop": 98566,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16192
+        },
+        {
+          "name": "gnn_node.convs.0.mlp.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 98566,
+          "stop": 98694,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 127
+        },
+        {
+          "name": "gnn_node.convs.1.eps",
+          "shape": [
+            1
+          ],
+          "start": 98694,
+          "stop": 98695,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs.1.mlp.0.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 98695,
+          "stop": 115079,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16384
+        },
+        {
+          "name": "gnn_node.convs.1.mlp.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 115079,
+          "stop": 115207,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.1.mlp.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 115207,
+          "stop": 115335,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.1.mlp.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 115335,
+          "stop": 115463,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.1.mlp.3.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 115463,
+          "stop": 131847,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16227
+        },
+        {
+          "name": "gnn_node.convs.1.mlp.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 131847,
+          "stop": 131975,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 127
+        },
+        {
+          "name": "gnn_node.convs.2.eps",
+          "shape": [
+            1
+          ],
+          "start": 131975,
+          "stop": 131976,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs.2.mlp.0.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 131976,
+          "stop": 148360,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16384
+        },
+        {
+          "name": "gnn_node.convs.2.mlp.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 148360,
+          "stop": 148488,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.2.mlp.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 148488,
+          "stop": 148616,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.2.mlp.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 148616,
+          "stop": 148744,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.2.mlp.3.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 148744,
+          "stop": 165128,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16372
+        },
+        {
+          "name": "gnn_node.convs.2.mlp.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 165128,
+          "stop": 165256,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.3.eps",
+          "shape": [
+            1
+          ],
+          "start": 165256,
+          "stop": 165257,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs.3.mlp.0.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 165257,
+          "stop": 181641,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16384
+        },
+        {
+          "name": "gnn_node.convs.3.mlp.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 181641,
+          "stop": 181769,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.3.mlp.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 181769,
+          "stop": 181897,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.3.mlp.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 181897,
+          "stop": 182025,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.3.mlp.3.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 182025,
+          "stop": 198409,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16383
+        },
+        {
+          "name": "gnn_node.convs.3.mlp.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 198409,
+          "stop": 198537,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.4.eps",
+          "shape": [
+            1
+          ],
+          "start": 198537,
+          "stop": 198538,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs.4.mlp.0.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 198538,
+          "stop": 214922,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16384
+        },
+        {
+          "name": "gnn_node.convs.4.mlp.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 214922,
+          "stop": 215050,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.4.mlp.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 215050,
+          "stop": 215178,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.4.mlp.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 215178,
+          "stop": 215306,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs.4.mlp.3.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 215306,
+          "stop": 231690,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16384
+        },
+        {
+          "name": "gnn_node.convs.4.mlp.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 231690,
+          "stop": 231818,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.0.eps",
+          "shape": [
+            1
+          ],
+          "start": 231818,
+          "stop": 231819,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.0.mlp.0.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 231819,
+          "stop": 248203,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16384
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.0.mlp.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 248203,
+          "stop": 248331,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.0.mlp.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 248331,
+          "stop": 248459,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.0.mlp.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 248459,
+          "stop": 248587,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.0.mlp.3.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 248587,
+          "stop": 264971,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16251
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.0.mlp.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 264971,
+          "stop": 265099,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.1.eps",
+          "shape": [
+            1
+          ],
+          "start": 265099,
+          "stop": 265100,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.1.mlp.0.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 265100,
+          "stop": 281484,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16384
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.1.mlp.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 281484,
+          "stop": 281612,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.1.mlp.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 281612,
+          "stop": 281740,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.1.mlp.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 281740,
+          "stop": 281868,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.1.mlp.3.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 281868,
+          "stop": 298252,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16066
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.1.mlp.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 298252,
+          "stop": 298380,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 127
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.2.eps",
+          "shape": [
+            1
+          ],
+          "start": 298380,
+          "stop": 298381,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.2.mlp.0.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 298381,
+          "stop": 314765,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16384
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.2.mlp.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 314765,
+          "stop": 314893,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.2.mlp.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 314893,
+          "stop": 315021,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.2.mlp.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 315021,
+          "stop": 315149,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.2.mlp.3.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 315149,
+          "stop": 331533,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16055
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.2.mlp.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 331533,
+          "stop": 331661,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 126
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.3.eps",
+          "shape": [
+            1
+          ],
+          "start": 331661,
+          "stop": 331662,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.3.mlp.0.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 331662,
+          "stop": 348046,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16384
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.3.mlp.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 348046,
+          "stop": 348174,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.3.mlp.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 348174,
+          "stop": 348302,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.3.mlp.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 348302,
+          "stop": 348430,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.3.mlp.3.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 348430,
+          "stop": 364814,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 16045
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.3.mlp.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 364814,
+          "stop": 364942,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 126
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.4.eps",
+          "shape": [
+            1
+          ],
+          "start": 364942,
+          "stop": 364943,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.4.mlp.0.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 364943,
+          "stop": 381327,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.4.mlp.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 381327,
+          "stop": 381455,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.4.mlp.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 381455,
+          "stop": 381583,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.4.mlp.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 381583,
+          "stop": 381711,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.4.mlp.3.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 381711,
+          "stop": 398095,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_angle.4.mlp.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 398095,
+          "stop": 398223,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_float.0.linear_list.0.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 398223,
+          "stop": 400783,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 2560
+        },
+        {
+          "name": "gnn_node.convs_bond_float.0.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 400783,
+          "stop": 400911,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_float.0.linear_list.1.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 400911,
+          "stop": 403471,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 2560
+        },
+        {
+          "name": "gnn_node.convs_bond_float.0.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 403471,
+          "stop": 403599,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_float.0.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 403599,
+          "stop": 403600,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_float.0.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 403600,
+          "stop": 403601,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_float.1.linear_list.0.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 403601,
+          "stop": 406161,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 2560
+        },
+        {
+          "name": "gnn_node.convs_bond_float.1.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 406161,
+          "stop": 406289,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_float.1.linear_list.1.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 406289,
+          "stop": 408849,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 2560
+        },
+        {
+          "name": "gnn_node.convs_bond_float.1.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 408849,
+          "stop": 408977,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_float.1.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 408977,
+          "stop": 408978,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_float.1.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 408978,
+          "stop": 408979,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_float.2.linear_list.0.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 408979,
+          "stop": 411539,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 2560
+        },
+        {
+          "name": "gnn_node.convs_bond_float.2.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 411539,
+          "stop": 411667,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_float.2.linear_list.1.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 411667,
+          "stop": 414227,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 2560
+        },
+        {
+          "name": "gnn_node.convs_bond_float.2.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 414227,
+          "stop": 414355,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_float.2.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 414355,
+          "stop": 414356,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_float.2.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 414356,
+          "stop": 414357,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_float.3.linear_list.0.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 414357,
+          "stop": 416917,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 2560
+        },
+        {
+          "name": "gnn_node.convs_bond_float.3.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 416917,
+          "stop": 417045,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_float.3.linear_list.1.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 417045,
+          "stop": 419605,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 2560
+        },
+        {
+          "name": "gnn_node.convs_bond_float.3.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 419605,
+          "stop": 419733,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "gnn_node.convs_bond_float.3.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 419733,
+          "stop": 419734,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_float.3.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 419734,
+          "stop": 419735,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_bond_float.4.linear_list.0.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 419735,
+          "stop": 422295,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_float.4.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 422295,
+          "stop": 422423,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_float.4.linear_list.1.weight",
+          "shape": [
+            128,
+            20
+          ],
+          "start": 422423,
+          "stop": 424983,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_float.4.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 424983,
+          "stop": 425111,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_float.4.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 425111,
+          "stop": 425112,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_float.4.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 425112,
+          "stop": 425113,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.0.bond_embedding_list.0.weight",
+          "shape": [
+            13,
+            128
+          ],
+          "start": 425113,
+          "stop": 426777,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 640
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.0.bond_embedding_list.1.weight",
+          "shape": [
+            28,
+            128
+          ],
+          "start": 426777,
+          "stop": 430361,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 640
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.0.bond_embedding_list.2.weight",
+          "shape": [
+            8,
+            128
+          ],
+          "start": 430361,
+          "stop": 431385,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 384
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.1.bond_embedding_list.0.weight",
+          "shape": [
+            13,
+            128
+          ],
+          "start": 431385,
+          "stop": 433049,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 640
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.1.bond_embedding_list.1.weight",
+          "shape": [
+            28,
+            128
+          ],
+          "start": 433049,
+          "stop": 436633,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 640
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.1.bond_embedding_list.2.weight",
+          "shape": [
+            8,
+            128
+          ],
+          "start": 436633,
+          "stop": 437657,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 384
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.2.bond_embedding_list.0.weight",
+          "shape": [
+            13,
+            128
+          ],
+          "start": 437657,
+          "stop": 439321,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 640
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.2.bond_embedding_list.1.weight",
+          "shape": [
+            28,
+            128
+          ],
+          "start": 439321,
+          "stop": 442905,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 640
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.2.bond_embedding_list.2.weight",
+          "shape": [
+            8,
+            128
+          ],
+          "start": 442905,
+          "stop": 443929,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 384
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.3.bond_embedding_list.0.weight",
+          "shape": [
+            13,
+            128
+          ],
+          "start": 443929,
+          "stop": 445593,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 640
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.3.bond_embedding_list.1.weight",
+          "shape": [
+            28,
+            128
+          ],
+          "start": 445593,
+          "stop": 449177,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 640
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.3.bond_embedding_list.2.weight",
+          "shape": [
+            8,
+            128
+          ],
+          "start": 449177,
+          "stop": 450201,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 384
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.4.bond_embedding_list.0.weight",
+          "shape": [
+            13,
+            128
+          ],
+          "start": 450201,
+          "stop": 451865,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.4.bond_embedding_list.1.weight",
+          "shape": [
+            28,
+            128
+          ],
+          "start": 451865,
+          "stop": 455449,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_bond_embeding.4.bond_embedding_list.2.weight",
+          "shape": [
+            8,
+            128
+          ],
+          "start": 455449,
+          "stop": 456473,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_angle_float.0.linear_list.0.weight",
+          "shape": [
+            128,
+            32
+          ],
+          "start": 456473,
+          "stop": 460569,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 3744
+        },
+        {
+          "name": "gnn_node.convs_angle_float.0.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 460569,
+          "stop": 460697,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 117
+        },
+        {
+          "name": "gnn_node.convs_angle_float.0.linear_list.1.weight",
+          "shape": [
+            128,
+            5
+          ],
+          "start": 460697,
+          "stop": 461337,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 583
+        },
+        {
+          "name": "gnn_node.convs_angle_float.0.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 461337,
+          "stop": 461465,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 117
+        },
+        {
+          "name": "gnn_node.convs_angle_float.0.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 461465,
+          "stop": 461466,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_angle_float.1.linear_list.0.weight",
+          "shape": [
+            128,
+            32
+          ],
+          "start": 461466,
+          "stop": 465562,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 3616
+        },
+        {
+          "name": "gnn_node.convs_angle_float.1.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 465562,
+          "stop": 465690,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 113
+        },
+        {
+          "name": "gnn_node.convs_angle_float.1.linear_list.1.weight",
+          "shape": [
+            128,
+            5
+          ],
+          "start": 465690,
+          "stop": 466330,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 563
+        },
+        {
+          "name": "gnn_node.convs_angle_float.1.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 466330,
+          "stop": 466458,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 113
+        },
+        {
+          "name": "gnn_node.convs_angle_float.1.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 466458,
+          "stop": 466459,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_angle_float.2.linear_list.0.weight",
+          "shape": [
+            128,
+            32
+          ],
+          "start": 466459,
+          "stop": 470555,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 3872
+        },
+        {
+          "name": "gnn_node.convs_angle_float.2.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 470555,
+          "stop": 470683,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 121
+        },
+        {
+          "name": "gnn_node.convs_angle_float.2.linear_list.1.weight",
+          "shape": [
+            128,
+            5
+          ],
+          "start": 470683,
+          "stop": 471323,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 605
+        },
+        {
+          "name": "gnn_node.convs_angle_float.2.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 471323,
+          "stop": 471451,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 121
+        },
+        {
+          "name": "gnn_node.convs_angle_float.2.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 471451,
+          "stop": 471452,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_angle_float.3.linear_list.0.weight",
+          "shape": [
+            128,
+            32
+          ],
+          "start": 471452,
+          "stop": 475548,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 3648
+        },
+        {
+          "name": "gnn_node.convs_angle_float.3.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 475548,
+          "stop": 475676,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 114
+        },
+        {
+          "name": "gnn_node.convs_angle_float.3.linear_list.1.weight",
+          "shape": [
+            128,
+            5
+          ],
+          "start": 475676,
+          "stop": 476316,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 568
+        },
+        {
+          "name": "gnn_node.convs_angle_float.3.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 476316,
+          "stop": 476444,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 114
+        },
+        {
+          "name": "gnn_node.convs_angle_float.3.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 476444,
+          "stop": 476445,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "gnn_node.convs_angle_float.4.linear_list.0.weight",
+          "shape": [
+            128,
+            32
+          ],
+          "start": 476445,
+          "stop": 480541,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_angle_float.4.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 480541,
+          "stop": 480669,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_angle_float.4.linear_list.1.weight",
+          "shape": [
+            128,
+            5
+          ],
+          "start": 480669,
+          "stop": 481309,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_angle_float.4.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 481309,
+          "stop": 481437,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_angle_float.4.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 481437,
+          "stop": 481438,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms.0.weight",
+          "shape": [
+            128
+          ],
+          "start": 481438,
+          "stop": 481566,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 481566,
+          "stop": 481694,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 481694,
+          "stop": 481822,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 481822,
+          "stop": 481950,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms.2.weight",
+          "shape": [
+            128
+          ],
+          "start": 481950,
+          "stop": 482078,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms.2.bias",
+          "shape": [
+            128
+          ],
+          "start": 482078,
+          "stop": 482206,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms.3.weight",
+          "shape": [
+            128
+          ],
+          "start": 482206,
+          "stop": 482334,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 482334,
+          "stop": 482462,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms.4.weight",
+          "shape": [
+            128
+          ],
+          "start": 482462,
+          "stop": 482590,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms.4.bias",
+          "shape": [
+            128
+          ],
+          "start": 482590,
+          "stop": 482718,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms_ba.0.weight",
+          "shape": [
+            128
+          ],
+          "start": 482718,
+          "stop": 482846,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms_ba.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 482846,
+          "stop": 482974,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms_ba.1.weight",
+          "shape": [
+            128
+          ],
+          "start": 482974,
+          "stop": 483102,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms_ba.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 483102,
+          "stop": 483230,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms_ba.2.weight",
+          "shape": [
+            128
+          ],
+          "start": 483230,
+          "stop": 483358,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms_ba.2.bias",
+          "shape": [
+            128
+          ],
+          "start": 483358,
+          "stop": 483486,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms_ba.3.weight",
+          "shape": [
+            128
+          ],
+          "start": 483486,
+          "stop": 483614,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms_ba.3.bias",
+          "shape": [
+            128
+          ],
+          "start": 483614,
+          "stop": 483742,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms_ba.4.weight",
+          "shape": [
+            128
+          ],
+          "start": 483742,
+          "stop": 483870,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.batch_norms_ba.4.bias",
+          "shape": [
+            128
+          ],
+          "start": 483870,
+          "stop": 483998,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.0.linear_list.0.weight",
+          "shape": [
+            128,
+            10
+          ],
+          "start": 483998,
+          "stop": 485278,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.0.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 485278,
+          "stop": 485406,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.0.linear_list.1.weight",
+          "shape": [
+            128,
+            100
+          ],
+          "start": 485406,
+          "stop": 498206,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.0.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 498206,
+          "stop": 498334,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.0.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 498334,
+          "stop": 498335,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.0.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 498335,
+          "stop": 498336,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.0.embedding_list.0.weight",
+          "shape": [
+            7,
+            128
+          ],
+          "start": 498336,
+          "stop": 499232,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.0.embedding_list.1.weight",
+          "shape": [
+            11,
+            128
+          ],
+          "start": 499232,
+          "stop": 500640,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.1.linear_list.0.weight",
+          "shape": [
+            128,
+            10
+          ],
+          "start": 500640,
+          "stop": 501920,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.1.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 501920,
+          "stop": 502048,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.1.linear_list.1.weight",
+          "shape": [
+            128,
+            100
+          ],
+          "start": 502048,
+          "stop": 514848,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.1.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 514848,
+          "stop": 514976,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.1.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 514976,
+          "stop": 514977,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.1.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 514977,
+          "stop": 514978,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.1.embedding_list.0.weight",
+          "shape": [
+            7,
+            128
+          ],
+          "start": 514978,
+          "stop": 515874,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.1.embedding_list.1.weight",
+          "shape": [
+            11,
+            128
+          ],
+          "start": 515874,
+          "stop": 517282,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.2.linear_list.0.weight",
+          "shape": [
+            128,
+            10
+          ],
+          "start": 517282,
+          "stop": 518562,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.2.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 518562,
+          "stop": 518690,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.2.linear_list.1.weight",
+          "shape": [
+            128,
+            100
+          ],
+          "start": 518690,
+          "stop": 531490,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.2.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 531490,
+          "stop": 531618,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.2.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 531618,
+          "stop": 531619,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.2.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 531619,
+          "stop": 531620,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.2.embedding_list.0.weight",
+          "shape": [
+            7,
+            128
+          ],
+          "start": 531620,
+          "stop": 532516,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.2.embedding_list.1.weight",
+          "shape": [
+            11,
+            128
+          ],
+          "start": 532516,
+          "stop": 533924,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.3.linear_list.0.weight",
+          "shape": [
+            128,
+            10
+          ],
+          "start": 533924,
+          "stop": 535204,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.3.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 535204,
+          "stop": 535332,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.3.linear_list.1.weight",
+          "shape": [
+            128,
+            100
+          ],
+          "start": 535332,
+          "stop": 548132,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.3.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 548132,
+          "stop": 548260,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.3.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 548260,
+          "stop": 548261,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.3.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 548261,
+          "stop": 548262,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.3.embedding_list.0.weight",
+          "shape": [
+            7,
+            128
+          ],
+          "start": 548262,
+          "stop": 549158,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.3.embedding_list.1.weight",
+          "shape": [
+            11,
+            128
+          ],
+          "start": 549158,
+          "stop": 550566,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.4.linear_list.0.weight",
+          "shape": [
+            128,
+            10
+          ],
+          "start": 550566,
+          "stop": 551846,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.4.linear_list.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 551846,
+          "stop": 551974,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.4.linear_list.1.weight",
+          "shape": [
+            128,
+            100
+          ],
+          "start": 551974,
+          "stop": 564774,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.4.linear_list.1.bias",
+          "shape": [
+            128
+          ],
+          "start": 564774,
+          "stop": 564902,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.4.rbf_list.0.gamma",
+          "shape": [
+            1
+          ],
+          "start": 564902,
+          "stop": 564903,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.4.rbf_list.1.gamma",
+          "shape": [
+            1
+          ],
+          "start": 564903,
+          "stop": 564904,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.4.embedding_list.0.weight",
+          "shape": [
+            7,
+            128
+          ],
+          "start": 564904,
+          "stop": 565800,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "gnn_node.convs_condition.4.embedding_list.1.weight",
+          "shape": [
+            11,
+            128
+          ],
+          "start": 565800,
+          "stop": 567208,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "graph_pred_linear.weight",
+          "shape": [
+            3,
+            128
+          ],
+          "start": 567208,
+          "stop": 567592,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 128
+        },
+        {
+          "name": "graph_pred_linear.bias",
+          "shape": [
+            3
+          ],
+          "start": 567592,
+          "stop": 567595,
+          "dtype": "torch.float32",
+          "gradient_received": true,
+          "nonzero_elements": 1
+        },
+        {
+          "name": "NN_descriptor.0.weight",
+          "shape": [
+            128,
+            1827
+          ],
+          "start": 567595,
+          "stop": 801451,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "NN_descriptor.0.bias",
+          "shape": [
+            128
+          ],
+          "start": 801451,
+          "stop": 801579,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "NN_descriptor.2.weight",
+          "shape": [
+            128,
+            128
+          ],
+          "start": 801579,
+          "stop": 817963,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        },
+        {
+          "name": "NN_descriptor.2.bias",
+          "shape": [
+            128
+          ],
+          "start": 817963,
+          "stop": 818091,
+          "dtype": "torch.float32",
+          "gradient_received": false,
+          "nonzero_elements": 0
+        }
+      ]
+    }
+  }
+}
