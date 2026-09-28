@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/scripts/run_hplc_free_llm32.py", line 17, in <module>
+    elif args.command == 'select': run_selection(args.round)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/src/hplc_al/free_llm_runner.py", line 239, in run_selection
+    saved = select(value, catalog, directory / 'llm', protocol['llm'])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/src/hplc_al/free_llm_scientist.py", line 220, in select
+    answer, provenance = transport(messages, config)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-Enantioseparation/src/hplc_al/llm_transport.py", line 27, in call
+    raise RuntimeError("No API key configured for the frozen Responses provider")
+RuntimeError: No API key configured for the frozen Responses provider
