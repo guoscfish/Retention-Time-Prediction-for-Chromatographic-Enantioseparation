@@ -5,7 +5,7 @@
   "selection_frozen": true,
   "labels_revealed": true,
   "fit_complete": true,
-  "next_round_started": false,
+  "next_round_started": true,
   "files": {
     "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/selection.json": "38ae723c4b9f429fbb54384d28523f4707a2667ea81a8d568e90b302058f8838",
     "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/packet.json": "00ec81d0fbbad7d428fe8e5b039d995752e00b50616b612847691cdd885b75fd",
