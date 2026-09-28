@@ -1,0 +1,581 @@
+{
+  "selected": [
+    2685,
+    1737,
+    3706,
+    3892,
+    4707,
+    3931,
+    3716,
+    86,
+    4130,
+    485,
+    1418,
+    4181,
+    1021,
+    1060,
+    2426,
+    4842
+  ],
+  "response": {
+    "type": "selection",
+    "packet_hash": "108876b35f68689355d28c69f914c22a25f0bc847ce798b0a4c31b3fefc2adf7",
+    "choices": [
+      {
+        "id": "r8a4a70f02925",
+        "evidence_ids": [
+          "re970bd0e69b4",
+          "r8d2dfc1e4034"
+        ],
+        "reason": "Completes an enantiomer pair with pending rcdca2a3008cc at identical recorded conditions. Tests the predicted approximately 12 mL stereochemical difference separately from a shared diarylnitro scaffold error."
+      },
+      {
+        "id": "r7cf9807c7193",
+        "evidence_ids": [
+          "re970bd0e69b4",
+          "r8d2dfc1e4034"
+        ],
+        "reason": "Provides a same-condition aryl-methyl substitution contrast to pending rcdca2a3008cc. Its 57.19 mL center and extreme gradient distance warrant checking extrapolation; the purpose is tail-error reduction, not obtaining high retention."
+      },
+      {
+        "id": "rf58940ad378c",
+        "evidence_ids": [
+          "rb433d6cd0b35"
+        ],
+        "reason": "Measures the opposite enantiomer of the largest prior underprediction at matching conditions. Distinguishes genuine stereochemical separation from a scaffold-wide correction learned from one measured member."
+      },
+      {
+        "id": "ra7d76ddee920",
+        "evidence_ids": [
+          "rb433d6cd0b35"
+        ],
+        "reason": "The chloro analogue now has a 44.47 mL center, almost the measured bromo response. Tests whether retraining appropriately transfers the large correction or overgeneralizes across substitution, despite low gradient distance."
+      },
+      {
+        "id": "r11a2515a69a9",
+        "evidence_ids": [
+          "r52c1b40391d8"
+        ],
+        "reason": "Opposite enantiomer of the measured sulfonyl lactam at the same conditions. Tests whether the prior -15.66 mL error was predominantly shared scaffold bias or whether retention differs substantially by configuration."
+      },
+      {
+        "id": "rc1e8b57abfb7",
+        "evidence_ids": [
+          "rd1d1edc7756f"
+        ],
+        "reason": "Completes a same-condition enantiomer comparison for the phosphorus-containing fused scaffold after a -14.77 mL error. Checks the retrained 41.04 mL center without assuming the measured enantiomer's response transfers exactly."
+      },
+      {
+        "id": "rbb54e2582749",
+        "evidence_ids": [
+          "r881bffb63248",
+          "r31b886e9f456"
+        ],
+        "reason": "Connects the measured dibromo/isopropyl and dimethyl/ethyl fused alcohols through a dibromo/ethyl member at matching conditions. Separates side-chain and aromatic-substitution explanations for high retention and tests its much lower 25.81 mL center."
+      },
+      {
+        "id": "r7469bcddb126",
+        "evidence_ids": [],
+        "reason": "Exploratory check of a 0.13 mL center in a high-gradient-distance, large halogenated heteroaromatic structure with no observed analogue above the queried similarity threshold. Distinguishes genuinely low retention from an extrapolation failure; quantile spread is not treated as calibrated uncertainty."
+      },
+      {
+        "id": "r7b370e3658d5",
+        "evidence_ids": [
+          "r4d90fae0652f"
+        ],
+        "reason": "Tests the near-zero prediction shared by several related cyclopentene ester candidates. A related measured member retained at 5.11 mL under the same conditions; this measurement distinguishes a real substituent-dependent decrease from systematic low-end model bias."
+      },
+      {
+        "id": "r884c6a6d4e9c",
+        "evidence_ids": [],
+        "reason": "First endpoint of an exact-stereochemical-identity condition contrast, at IPA 0.2 and flow 1.0. Together with rebfb1f127d97, tests the model's nearly invariant retention-volume predictions across recorded condition changes."
+      },
+      {
+        "id": "rebfb1f127d97",
+        "evidence_ids": [],
+        "reason": "Second endpoint of the exact-identity contrast, at IPA 0.4 and flow 0.6. Determines whether the approximately 13.8 mL predictions at both endpoints hide condition dependence; changing both variables prevents attributing any difference solely to IPA."
+      },
+      {
+        "id": "r672ee83e4ff5",
+        "evidence_ids": [
+          "rafff27982f34"
+        ],
+        "reason": "Opposite enantiomer of the methoxy beta-hydroxy ester at identical conditions. Tests whether the retrained 29.90 mL center appropriately transfers the measured 31.15 mL retention or masks stereoselectivity."
+      },
+      {
+        "id": "r003e6977d8ff",
+        "evidence_ids": [
+          "r4264ec388c7c",
+          "r5f509c3c2604",
+          "rf2c574465521",
+          "rb1e599f21c52"
+        ],
+        "reason": "Tests the revised substitution-and-condition hypothesis in the benzoxazinone ester series. The chloro member shares recorded IPA and flow with the 58.5 mL methoxy observation but has a 19.43 mL center, helping delimit that exceptional response without assuming a universal halogen effect."
+      },
+      {
+        "id": "ra1a1dd6a92b0",
+        "evidence_ids": [],
+        "reason": "Exploratory expansion into a flexible, ether-rich secondary-amine scaffold with very high gradient distance and no matching pending identity. Adds a moderate-center example outside the targeted error families."
+      },
+      {
+        "id": "r9384119653e5",
+        "evidence_ids": [],
+        "reason": "Exploratory hydroxy-carboxylic-acid measurement in a region without an observed match above the queried similarity threshold. Tests a distinct donor/acceptor arrangement and a 35.65 mL center without inferring unrecorded ionization conditions."
+      },
+      {
+        "id": "r3982872baaac",
+        "evidence_ids": [],
+        "reason": "Exploratory high-gradient-distance aromatic hydrocarbon/halogen example with no hydrogen-bond donors or acceptors and a 9.78 mL center. Broadens learning beyond oxygenated and nitrogen-containing high-retention families already emphasized in the combined batch."
+      }
+    ],
+    "hypotheses": [
+      {
+        "id": "h1",
+        "claim": "The retrained diarylnitro predictions may conflate stereochemical and aryl-substitution effects in a sparsely measured high-retention region.",
+        "evidence_ids": [
+          "re970bd0e69b4",
+          "r8d2dfc1e4034"
+        ],
+        "alternative": "The predicted enantiomer difference and substitution contrast are both accurate; measured halogenated analogues already support substantial retention in this family.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r8a4a70f02925",
+          "r7cf9807c7193"
+        ],
+        "learning_value": "Together with the pending member, obtains a stereochemical comparison and a same-condition substitution comparison using two additional rows."
+      },
+      {
+        "id": "h2",
+        "claim": "The piperazinone correction learned after the bromo R member's large underprediction may not transfer equally across configuration and para substitution.",
+        "evidence_ids": [
+          "rb433d6cd0b35"
+        ],
+        "alternative": "The retrained centers correctly capture a shared high-retention scaffold with a substantial enantiomer difference.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "rf58940ad378c",
+          "ra7d76ddee920"
+        ],
+        "learning_value": "Separates stereochemical transfer from bromo-to-chloro transfer around the largest observed frozen error."
+      },
+      {
+        "id": "h3",
+        "claim": "Large prior underpredictions in two sulfonyl-containing cyclic families do not establish that their opposite enantiomers share the same retention.",
+        "evidence_ids": [
+          "r52c1b40391d8",
+          "rd1d1edc7756f",
+          "rc4f7380fc05e",
+          "r13e06c8010e4",
+          "rffbdd082b6a0",
+          "r8944df48a1b8"
+        ],
+        "alternative": "Shared scaffold bias dominates and the opposite enantiomers lie close to the already measured responses.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r11a2515a69a9",
+          "rc1e8b57abfb7"
+        ],
+        "learning_value": "Uses existing measurements as paired anchors, checking stereochemical accuracy without spending two new rows per scaffold."
+      },
+      {
+        "id": "h4",
+        "claim": "The fused-alcohol series requires joint treatment of aromatic substitution and the adjacent alkyl group; scaffold membership alone does not resolve the candidate's retention.",
+        "evidence_ids": [
+          "r881bffb63248",
+          "r31b886e9f456"
+        ],
+        "alternative": "The ethyl dibromo candidate genuinely retains much less than both measured analogues, as its current center suggests.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "rbb54e2582749"
+        ],
+        "learning_value": "A bridging substitution pattern tests the explanation left unresolved by the previous round's fused-alcohol measurement."
+      },
+      {
+        "id": "h5",
+        "claim": "Near-zero center predictions remain a possible local model failure, but the previous boron result does not establish a general low-end bias.",
+        "evidence_ids": [
+          "r74afd33527b3",
+          "r4d90fae0652f"
+        ],
+        "alternative": "Both selected compounds genuinely have very low retention under their recorded conditions.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r7469bcddb126",
+          "r7b370e3658d5"
+        ],
+        "learning_value": "Checks two chemically distinct low-end regimes, one with a measured structural analogue and one explicitly exploratory."
+      },
+      {
+        "id": "h6",
+        "claim": "Nearly identical predicted retention volumes for the same chiral benzoxazine under two recorded condition sets may hide structure-condition dependence.",
+        "evidence_ids": [],
+        "alternative": "Retention volume is approximately unchanged across these two condition sets.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r884c6a6d4e9c",
+          "rebfb1f127d97"
+        ],
+        "learning_value": "Direct exact-identity contrast tests condition sensitivity without assuming monotonic IPA effects or isolating IPA from flow."
+      },
+      {
+        "id": "h7",
+        "claim": "The measured methoxy beta-hydroxy ester's high retention may not transfer unchanged to its opposite enantiomer.",
+        "evidence_ids": [
+          "rafff27982f34",
+          "r8b5dd0538924",
+          "rc7bee0f0431d"
+        ],
+        "alternative": "Both enantiomers retain similarly, and the earlier mixed oxygenated-family errors arise mainly from connectivity and conditions.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r672ee83e4ff5"
+        ],
+        "learning_value": "Replaces a broad oxygenated-substitution explanation with a controlled stereochemical comparison."
+      },
+      {
+        "id": "h8",
+        "claim": "The 58.5 mL methoxy benzoxazinone ester response is not a reliable scaffold-wide retention level.",
+        "evidence_ids": [
+          "r5f509c3c2604",
+          "r4264ec388c7c",
+          "rf2c574465521",
+          "rb1e599f21c52"
+        ],
+        "alternative": "Other substitutions at matching recorded conditions also show exceptional retention that the retrained model misses.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r003e6977d8ff"
+        ],
+        "learning_value": "Tests a nonmethoxy member at the exceptional observation's recorded IPA and flow, narrowing substitution-versus-condition explanations."
+      }
+    ],
+    "feedback_interpretation": "Prior h1 is supported but incomplete: the measured enantiomer gaps were 6.40 and 8.18 mL, while both members of each pair were overpredicted. Thus stereochemical differences and shared scaffold bias coexist. Prior h2's broad substitution sensitivity remains plausible, but the fluoro response of 27.45 mL, versus 58.5 mL for the methoxy member under different conditions, weakens transfer of the exceptional value across the scaffold. Prior h3 gained a third high-retention fused-alcohol observation at 37.85 mL with signed error -7.21, but substitution and condition contributions remain unresolved. Prior h4 identified a numerical problem: the boron response was 5.90 mL versus a 0.53 mL frozen center; nevertheless, its response was relatively low, so this does not establish universal underprediction of boron compounds. Prior h5 does not support a common error direction: the selected beta-hydroxy ester, alpha-hydroxy ester and hydroxy ketone had signed errors -6.19, +12.54 and -4.22 mL. Connectivity, stereochemistry and conditions need more controlled comparisons. The piperazinone and two sulfonyl cyclic observations additionally revealed substantial underprediction. These are frozen premeasurement errors, not errors of the retrained model; initial observations carry no such errors.",
+    "batch_rationale": "Searched the unrestricted 4066-row candidate pool through global coverage and center rankings, distributed hash-order pages, and targeted identity, scaffold and similarity queries; this was a budget-limited search, not exhaustive viewing. The 16 additions complement the 16 pending LCMD rows with one pending-enantiomer completion, a pending substitution contrast, observed-anchored error checks, an exact-identity condition contrast, low-end checks and chemically distinct exploration. Exact duplicate structure-condition rows were avoided. Selection balances possible squared-error reduction with broader chemical and condition coverage, including low and moderate predicted responses. Coverage is used only as gradient-geometry distance, not calibrated uncertainty; quantile widths are not uncertainty estimates, and centers are treated as MSE-trained predictions. All hypotheses and choices are frozen before any of the 32 new responses are revealed."
+  },
+  "queries": 24,
+  "viewed": [
+    "r0002fe16821a",
+    "r003e6977d8ff",
+    "r007353bf6480",
+    "r03654f8d63ee",
+    "r03f03f35391e",
+    "r046a50cd4938",
+    "r047c41121ed4",
+    "r048bf5c0f3b8",
+    "r04d7d0c74252",
+    "r06c1745e8ebc",
+    "r07e9a4b3dd13",
+    "r0a4fe31964b0",
+    "r0b7b83facc22",
+    "r0b7c26ef3b70",
+    "r0e0deac0a55e",
+    "r0eb149180984",
+    "r0ec852c22952",
+    "r100419b85722",
+    "r101cf6a8c67b",
+    "r11a2515a69a9",
+    "r1346d6864274",
+    "r1502061bd0c4",
+    "r160cd587819c",
+    "r189ada127d6f",
+    "r18be00101dbc",
+    "r1c89683ec7a3",
+    "r1e88a38816d9",
+    "r1ff21756774f",
+    "r20254757e2bb",
+    "r2141a00694ff",
+    "r246bbc1cdfad",
+    "r253680156299",
+    "r258cfc4f4e3f",
+    "r25d3910793a7",
+    "r26751053050b",
+    "r27528605a1f4",
+    "r27cc1be56ea4",
+    "r27fdc401352d",
+    "r281fd3514629",
+    "r2971e85a8af0",
+    "r29a8d4957353",
+    "r2ade796fe4ce",
+    "r2b9c397a1159",
+    "r2c4fb5c9284b",
+    "r2c8b3442122e",
+    "r2cd964a60e2d",
+    "r2d811014b884",
+    "r37d895c60c1a",
+    "r3831b274563c",
+    "r38336c09ae42",
+    "r3982872baaac",
+    "r3bb94006c763",
+    "r3be756da3f2c",
+    "r3c9be3edf6e2",
+    "r3d924c6fb0ed",
+    "r3e84f1267c0f",
+    "r3ece625b6d5f",
+    "r3ee1c353dc85",
+    "r3f176e4dc21d",
+    "r3f43c3f98412",
+    "r412096212dec",
+    "r42675ff2cfe1",
+    "r42efe97e99f9",
+    "r433bd30e3c86",
+    "r43ff4da9ce3d",
+    "r448491af4320",
+    "r455078a0a2cf",
+    "r4612b381ac66",
+    "r497d28de6ec2",
+    "r4a18b74ab93d",
+    "r4a2e94c4878a",
+    "r4a630bf0e1a8",
+    "r4a87ffd6e20b",
+    "r4ad797ca8a6f",
+    "r4bc62fa6943b",
+    "r4cd2d6bfc733",
+    "r4d508868f420",
+    "r4e9a074e1a9c",
+    "r502b2d437cfc",
+    "r50bee8f0fa4f",
+    "r512f44518b1b",
+    "r513604d51a41",
+    "r53be99282b46",
+    "r53ef065da9e2",
+    "r5411ef76b9ce",
+    "r541c6effa8fc",
+    "r5446941ae3e3",
+    "r557b03ce605c",
+    "r5642e4cbde22",
+    "r58f2db5906c0",
+    "r597fa3381226",
+    "r5a5ed29e5733",
+    "r5a7d0ebdd32a",
+    "r5b04a19b7698",
+    "r5cfff95afb07",
+    "r5d06fc058287",
+    "r5d08c2985ad8",
+    "r5d23c0027551",
+    "r5db6e7674d48",
+    "r5de9d1f457f5",
+    "r5e6c8ce18d1d",
+    "r5f5fcc3c713d",
+    "r6093b49c858f",
+    "r61bddf81e48f",
+    "r666e2ed053c0",
+    "r672ee83e4ff5",
+    "r679ebdb5d876",
+    "r689d67906605",
+    "r6a209c83eaad",
+    "r6a6bf9e64c81",
+    "r6a8f917c85d1",
+    "r6b867abdc751",
+    "r6d109da5a09e",
+    "r6d5d6f6c2af4",
+    "r6e524f12f2a1",
+    "r6f66b81db8b2",
+    "r6f774e7f01ca",
+    "r71602e0bee21",
+    "r722ce4677beb",
+    "r72d07f1fe0fd",
+    "r7310fa1802b1",
+    "r731cfc370c53",
+    "r737fe6aeb159",
+    "r74436d3c8dd6",
+    "r7469bcddb126",
+    "r74aaebf7c76a",
+    "r75b62a951f5f",
+    "r774e2bf63b9e",
+    "r779e6a9fa18e",
+    "r781b17b59fc4",
+    "r7875911ea73c",
+    "r79af570e1f05",
+    "r7b0f8ff49a5f",
+    "r7b370e3658d5",
+    "r7b82838166c8",
+    "r7c680773856b",
+    "r7c780c0efd5f",
+    "r7c80bb845bcc",
+    "r7cf9807c7193",
+    "r7f559f6327d5",
+    "r7f77158fc588",
+    "r804bcfb2247c",
+    "r82509c9c0057",
+    "r82e670062514",
+    "r832c555734b6",
+    "r833577720979",
+    "r845fa62e262d",
+    "r87f03ef98fa7",
+    "r884c6a6d4e9c",
+    "r8a4a70f02925",
+    "r8c6161085aa9",
+    "r8c9ad7613161",
+    "r8d08e664a36c",
+    "r8d8914d05795",
+    "r8e1dcb029e2f",
+    "r90208fc0af34",
+    "r907caece4df6",
+    "r918fa6238681",
+    "r9253ef849045",
+    "r9384119653e5",
+    "r94bde4deca82",
+    "r94f483736449",
+    "r957f8f71eac4",
+    "r97c7db8260c1",
+    "r9a6a16f16d82",
+    "r9bac454e5c04",
+    "r9cdb7cfcf722",
+    "r9d408dca36af",
+    "r9e402fbb9a8f",
+    "r9f1b717cf61e",
+    "ra11893980120",
+    "ra121b595bd0b",
+    "ra1a1dd6a92b0",
+    "ra1f2bef9b6d6",
+    "ra2c1a77f8aa6",
+    "ra3700d62d0d0",
+    "ra54ea06d6be9",
+    "ra62b47f2b758",
+    "ra71a94efcd7b",
+    "ra7d76ddee920",
+    "ra9eeebac6595",
+    "raaa09ad6b876",
+    "rab9fe2390884",
+    "rac8c087a0c0e",
+    "rad12b38f8ef5",
+    "rae2a9ea79ed2",
+    "raf533f53c681",
+    "raff1123f07dc",
+    "rafff0687aa7a",
+    "rb00b1c6569e1",
+    "rb0e1018b6fa5",
+    "rb0ec3b511940",
+    "rb2036dfd61fd",
+    "rb206c83a29ec",
+    "rb366c0fa39f9",
+    "rb395f696a350",
+    "rb3d4c3684908",
+    "rb54782eeaac5",
+    "rb859c8e80c1c",
+    "rb89fecc8bfac",
+    "rb91159de2254",
+    "rb9cfaeb7e93b",
+    "rb9f3f14dbcb4",
+    "rbaab2992e78c",
+    "rbb54e2582749",
+    "rbbe9eda57663",
+    "rbdf8fe76d394",
+    "rbff31f25e51d",
+    "rc1a6751ca5d2",
+    "rc1e8b57abfb7",
+    "rc21e3de1d510",
+    "rc283cc1a30af",
+    "rc3147b13be2c",
+    "rc36c0db1c084",
+    "rc3bf7b4305fe",
+    "rc4b35bce631c",
+    "rc4e304fb0187",
+    "rc59cf47d2aea",
+    "rc60e40ee0c70",
+    "rc6c7725e2474",
+    "rc6ef9e3c1f9e",
+    "rc968b21947df",
+    "rca9f46fb6c74",
+    "rcc4f5b01ddb7",
+    "rcdfbc88d3253",
+    "rcfcfbe04d73d",
+    "rcfe347c0130d",
+    "rd087add33451",
+    "rd2e752b019b6",
+    "rd39f01a6ac34",
+    "rd402fc68095f",
+    "rd6c094088019",
+    "rd6d5c5766046",
+    "rdaeeef7f4c44",
+    "rdb1af2a1713a",
+    "rdcd7fd181ffa",
+    "re128d33886c9",
+    "re1b69541f3e4",
+    "re2ba035467b0",
+    "re3883f7556f1",
+    "re3b57dd7ccd0",
+    "re3ed94d44907",
+    "re521c5ecbe52",
+    "re5c2761e36e4",
+    "re6d3764788d4",
+    "re7a2f829314c",
+    "re9561700d5ef",
+    "re99368f0a84c",
+    "rea2fc0680ba9",
+    "rebd1f01eef1f",
+    "rebfb1f127d97",
+    "recb2cfc95d4d",
+    "red6ee6704957",
+    "ref14926489a2",
+    "rf08d01edd6e3",
+    "rf26dea195bd0",
+    "rf40906dead36",
+    "rf40d6e6f9e9e",
+    "rf4dc5c3df40b",
+    "rf4f1129f233a",
+    "rf58940ad378c",
+    "rf6eeee8f233b",
+    "rf78ab3e0d82d",
+    "rf7a057684d44",
+    "rf8358c148e8b",
+    "rf96483da3615",
+    "rf9fc1eb1b578",
+    "rfa07e2c61676",
+    "rfa5cb576ec88",
+    "rfd83650e491c",
+    "rfeeb9ca03d7f",
+    "rff2effde0973",
+    "rffe1e99a4351"
+  ],
+  "observed_viewed": [
+    "r13e06c8010e4",
+    "r1d8d1f4aa746",
+    "r2073098e2dfe",
+    "r2f4642870105",
+    "r31b886e9f456",
+    "r3a25307a1bef",
+    "r400e539739b8",
+    "r4264ec388c7c",
+    "r48c4c992f417",
+    "r4bbab910126e",
+    "r4d90fae0652f",
+    "r52c1b40391d8",
+    "r5f509c3c2604",
+    "r74afd33527b3",
+    "r881bffb63248",
+    "r8944df48a1b8",
+    "r8b5dd0538924",
+    "r8d2dfc1e4034",
+    "r8ede8f514008",
+    "r901c4f355b50",
+    "r9131ed0a5b56",
+    "r92ce63ec96e7",
+    "r962d183d3283",
+    "r99a30d9c2bbb",
+    "r9ec25c88b73e",
+    "rafff27982f34",
+    "rb1e599f21c52",
+    "rb433d6cd0b35",
+    "rba976b41630f",
+    "rc4f7380fc05e",
+    "rc7bee0f0431d",
+    "rd1d1edc7756f",
+    "rd95be7b510a1",
+    "re970bd0e69b4",
+    "rf2c574465521",
+    "rfc6cdebca706",
+    "rffbdd082b6a0"
+  ],
+  "model": {
+    "model": "gpt-6-sol",
+    "reasoning_effort": "high",
+    "base_url": "https://token4research.cn/v1",
+    "wire_api": "responses",
+    "store": false,
+    "native_tools": [],
+    "max_output_tokens": 16000,
+    "automatic_fallback": false
+  }
+}

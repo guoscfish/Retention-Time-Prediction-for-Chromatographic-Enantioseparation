@@ -1,0 +1,1027 @@
+{
+  "seed": 1525,
+  "method": "chemical_llm",
+  "round": 2,
+  "selection_count": 16,
+  "packet_version": "odh_llm_hybrid_v1",
+  "pending_lcmd_ids": [
+    "r06a799c26abe",
+    "rd994eaba4de0",
+    "rd087add33451",
+    "r4154c27dd9e8",
+    "r82e670062514",
+    "rc23e6c2d4e4d",
+    "rceee9303da87",
+    "r6bd4655f4455",
+    "r9e402fbb9a8f",
+    "rad20b059065a",
+    "r0f7732a15f58",
+    "rf9fc1eb1b578",
+    "ra44cd0de9294",
+    "r5ae05f023c35",
+    "re4c43efa484a",
+    "rd02449092124"
+  ],
+  "history": [
+    {
+      "round": 0,
+      "selected": [
+        940,
+        4706,
+        3932,
+        4882,
+        260,
+        3568,
+        3083,
+        1011,
+        810,
+        2818,
+        876,
+        2928,
+        2783,
+        3912,
+        2960,
+        3707,
+        970,
+        969,
+        1016,
+        1015,
+        1084,
+        3507,
+        2212,
+        651,
+        4180,
+        4085,
+        466,
+        4410,
+        2493,
+        4104,
+        389,
+        3433
+      ],
+      "predictions": {
+        "940": 17.234771728515625,
+        "4706": 30.18325424194336,
+        "3932": 28.42909049987793,
+        "4882": 18.580148696899414,
+        "260": 19.516679763793945,
+        "3568": 21.387779235839844,
+        "3083": 21.392026901245117,
+        "1011": 16.641380310058594,
+        "810": 17.382631301879883,
+        "2818": 24.349760055541992,
+        "876": 17.059110641479492,
+        "2928": 18.775644302368164,
+        "2783": 16.073026657104492,
+        "3912": 17.074193954467773,
+        "2960": 21.34467315673828,
+        "3707": 18.682769775390625,
+        "970": 32.28879165649414,
+        "969": 32.63832092285156,
+        "1016": 41.829315185546875,
+        "1015": 39.74686050415039,
+        "1084": 33.88825988769531,
+        "3507": 30.637971878051758,
+        "2212": 29.392051696777344,
+        "651": 12.241579055786133,
+        "4180": 24.95987319946289,
+        "4085": 17.896177291870117,
+        "466": 21.508926391601562,
+        "4410": 20.498456954956055,
+        "2493": 15.174570083618164,
+        "4104": 0.5332103371620178,
+        "389": 24.23719596862793,
+        "3433": 30.821256637573242
+      },
+      "hypotheses": [
+        {
+          "id": "h1",
+          "claim": "The model's nearly equal predictions for each selected enantiomer pair may conceal retention differences on OD-H.",
+          "evidence_ids": [],
+          "alternative": "Each pair has similar measured retention, or both members share a larger scaffold-level prediction error.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "rc4f7380fc05e",
+            "r13e06c8010e4",
+            "rffbdd082b6a0",
+            "r8944df48a1b8"
+          ],
+          "learning_value": "Within-pair measurements isolate stereochemical effects while checking two previously unmeasured scaffolds."
+        },
+        {
+          "id": "h2",
+          "claim": "Substitution within the measured cyclic carbamate scaffold may produce large retention changes.",
+          "evidence_ids": [
+            "r2073098e2dfe",
+            "rb1e599f21c52",
+            "rf2c574465521",
+            "r5f509c3c2604"
+          ],
+          "alternative": "The 58.5 mL methoxy-substituted observation is specific to that structure and its recorded conditions.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "r4264ec388c7c"
+          ],
+          "learning_value": "Tests whether the observed within-scaffold variation transfers to a fluoro-substituted member."
+        },
+        {
+          "id": "h3",
+          "claim": "The high predicted retention of the selected fused-ring alcohol may depend strongly on substitution rather than its ring scaffold alone.",
+          "evidence_ids": [
+            "r962d183d3283",
+            "r881bffb63248"
+          ],
+          "alternative": "Its shared chiral ring geometry accounts for much of the measured retention across substituents.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "r31b886e9f456"
+          ],
+          "learning_value": "A third substitution pattern distinguishes these explanations."
+        },
+        {
+          "id": "h4",
+          "claim": "The near-zero center prediction for the boron-containing candidate may be a model edge case.",
+          "evidence_ids": [],
+          "alternative": "Its measured retention is also low under the recorded conditions.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "r74afd33527b3"
+          ],
+          "learning_value": "Directly checks a large discrepancy between the center and quantile outputs without treating their difference as calibrated uncertainty."
+        },
+        {
+          "id": "h5",
+          "claim": "Retention of aromatic hydroxy esters and hydroxy ketones may be sensitive to nearby oxygenated aryl substitution.",
+          "evidence_ids": [
+            "r3a25307a1bef",
+            "r8ede8f514008"
+          ],
+          "alternative": "The measured rows' responses do not transfer across these structural and condition differences.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "rafff27982f34",
+            "r8b5dd0538924",
+            "rc7bee0f0431d"
+          ],
+          "learning_value": "Tests related H-bonding motifs across distinct substitution patterns while avoiding a universal solvent or functional-group rule."
+        }
+      ],
+      "feedback": "Round zero has no prior batch feedback or frozen premeasurement errors. The cited responses are measured observations; candidate centers and quantiles are model outputs. Structural and chiral-recognition explanations remain untested."
+    },
+    {
+      "round": 1,
+      "selected": [
+        4111,
+        2328,
+        3094,
+        2168,
+        2744,
+        551,
+        835,
+        706,
+        2684,
+        976,
+        1007,
+        1723,
+        2690,
+        2661,
+        2539,
+        213,
+        2685,
+        1737,
+        3706,
+        3892,
+        4707,
+        3931,
+        3716,
+        86,
+        4130,
+        485,
+        1418,
+        4181,
+        1021,
+        1060,
+        2426,
+        4842
+      ],
+      "predictions": {
+        "4111": 15.142011642456055,
+        "2328": 12.440770149230957,
+        "3094": 23.177959442138672,
+        "2168": 15.431020736694336,
+        "2744": 21.52842140197754,
+        "551": 20.862504959106445,
+        "835": 24.330293655395508,
+        "706": 22.649436950683594,
+        "2684": 52.353816986083984,
+        "976": 18.79146385192871,
+        "1007": 21.396713256835938,
+        "1723": 10.42216682434082,
+        "2690": 19.730497360229492,
+        "2661": 23.353473663330078,
+        "2539": 30.444196701049805,
+        "213": 12.83231258392334,
+        "2685": 40.221832275390625,
+        "1737": 57.19133758544922,
+        "3706": 34.131717681884766,
+        "3892": 44.47172546386719,
+        "4707": 38.39508819580078,
+        "3931": 41.040367126464844,
+        "3716": 25.81138801574707,
+        "86": 0.1292094737291336,
+        "4130": 0.11408139020204544,
+        "485": 13.823702812194824,
+        "1418": 13.760993957519531,
+        "4181": 29.90221405029297,
+        "1021": 19.4332332611084,
+        "1060": 21.43720054626465,
+        "2426": 35.652000427246094,
+        "4842": 9.781539916992188
+      },
+      "hypotheses": [
+        {
+          "id": "h1",
+          "claim": "The retrained diarylnitro predictions may conflate stereochemical and aryl-substitution effects in a sparsely measured high-retention region.",
+          "evidence_ids": [
+            "re970bd0e69b4",
+            "r8d2dfc1e4034"
+          ],
+          "alternative": "The predicted enantiomer difference and substitution contrast are both accurate; measured halogenated analogues already support substantial retention in this family.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "r8a4a70f02925",
+            "r7cf9807c7193"
+          ],
+          "learning_value": "Together with the pending member, obtains a stereochemical comparison and a same-condition substitution comparison using two additional rows."
+        },
+        {
+          "id": "h2",
+          "claim": "The piperazinone correction learned after the bromo R member's large underprediction may not transfer equally across configuration and para substitution.",
+          "evidence_ids": [
+            "rb433d6cd0b35"
+          ],
+          "alternative": "The retrained centers correctly capture a shared high-retention scaffold with a substantial enantiomer difference.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "rf58940ad378c",
+            "ra7d76ddee920"
+          ],
+          "learning_value": "Separates stereochemical transfer from bromo-to-chloro transfer around the largest observed frozen error."
+        },
+        {
+          "id": "h3",
+          "claim": "Large prior underpredictions in two sulfonyl-containing cyclic families do not establish that their opposite enantiomers share the same retention.",
+          "evidence_ids": [
+            "r52c1b40391d8",
+            "rd1d1edc7756f",
+            "rc4f7380fc05e",
+            "r13e06c8010e4",
+            "rffbdd082b6a0",
+            "r8944df48a1b8"
+          ],
+          "alternative": "Shared scaffold bias dominates and the opposite enantiomers lie close to the already measured responses.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "r11a2515a69a9",
+            "rc1e8b57abfb7"
+          ],
+          "learning_value": "Uses existing measurements as paired anchors, checking stereochemical accuracy without spending two new rows per scaffold."
+        },
+        {
+          "id": "h4",
+          "claim": "The fused-alcohol series requires joint treatment of aromatic substitution and the adjacent alkyl group; scaffold membership alone does not resolve the candidate's retention.",
+          "evidence_ids": [
+            "r881bffb63248",
+            "r31b886e9f456"
+          ],
+          "alternative": "The ethyl dibromo candidate genuinely retains much less than both measured analogues, as its current center suggests.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "rbb54e2582749"
+          ],
+          "learning_value": "A bridging substitution pattern tests the explanation left unresolved by the previous round's fused-alcohol measurement."
+        },
+        {
+          "id": "h5",
+          "claim": "Near-zero center predictions remain a possible local model failure, but the previous boron result does not establish a general low-end bias.",
+          "evidence_ids": [
+            "r74afd33527b3",
+            "r4d90fae0652f"
+          ],
+          "alternative": "Both selected compounds genuinely have very low retention under their recorded conditions.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "r7469bcddb126",
+            "r7b370e3658d5"
+          ],
+          "learning_value": "Checks two chemically distinct low-end regimes, one with a measured structural analogue and one explicitly exploratory."
+        },
+        {
+          "id": "h6",
+          "claim": "Nearly identical predicted retention volumes for the same chiral benzoxazine under two recorded condition sets may hide structure-condition dependence.",
+          "evidence_ids": [],
+          "alternative": "Retention volume is approximately unchanged across these two condition sets.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "r884c6a6d4e9c",
+            "rebfb1f127d97"
+          ],
+          "learning_value": "Direct exact-identity contrast tests condition sensitivity without assuming monotonic IPA effects or isolating IPA from flow."
+        },
+        {
+          "id": "h7",
+          "claim": "The measured methoxy beta-hydroxy ester's high retention may not transfer unchanged to its opposite enantiomer.",
+          "evidence_ids": [
+            "rafff27982f34",
+            "r8b5dd0538924",
+            "rc7bee0f0431d"
+          ],
+          "alternative": "Both enantiomers retain similarly, and the earlier mixed oxygenated-family errors arise mainly from connectivity and conditions.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "r672ee83e4ff5"
+          ],
+          "learning_value": "Replaces a broad oxygenated-substitution explanation with a controlled stereochemical comparison."
+        },
+        {
+          "id": "h8",
+          "claim": "The 58.5 mL methoxy benzoxazinone ester response is not a reliable scaffold-wide retention level.",
+          "evidence_ids": [
+            "r5f509c3c2604",
+            "r4264ec388c7c",
+            "rf2c574465521",
+            "rb1e599f21c52"
+          ],
+          "alternative": "Other substitutions at matching recorded conditions also show exceptional retention that the retrained model misses.",
+          "expected_sign": 0,
+          "candidate_ids": [
+            "r003e6977d8ff"
+          ],
+          "learning_value": "Tests a nonmethoxy member at the exceptional observation's recorded IPA and flow, narrowing substitution-versus-condition explanations."
+        }
+      ],
+      "feedback": "Prior h1 is supported but incomplete: the measured enantiomer gaps were 6.40 and 8.18 mL, while both members of each pair were overpredicted. Thus stereochemical differences and shared scaffold bias coexist. Prior h2's broad substitution sensitivity remains plausible, but the fluoro response of 27.45 mL, versus 58.5 mL for the methoxy member under different conditions, weakens transfer of the exceptional value across the scaffold. Prior h3 gained a third high-retention fused-alcohol observation at 37.85 mL with signed error -7.21, but substitution and condition contributions remain unresolved. Prior h4 identified a numerical problem: the boron response was 5.90 mL versus a 0.53 mL frozen center; nevertheless, its response was relatively low, so this does not establish universal underprediction of boron compounds. Prior h5 does not support a common error direction: the selected beta-hydroxy ester, alpha-hydroxy ester and hydroxy ketone had signed errors -6.19, +12.54 and -4.22 mL. Connectivity, stereochemistry and conditions need more controlled comparisons. The piperazinone and two sulfonyl cyclic observations additionally revealed substantial underprediction. These are frozen premeasurement errors, not errors of the retrained model; initial observations carry no such errors."
+    }
+  ],
+  "initial_cards": [
+    {
+      "id": "re140f487f245",
+      "identity": "d2ac78e1cc7cd75d",
+      "scaffold_group": "4fe8432657cefc7b",
+      "MW": 622.5840000000002,
+      "LogP": 8.140720000000005,
+      "TPSA": 63.24,
+      "HBD": 1,
+      "HBA": 3,
+      "rotatable_bonds": 6,
+      "aromatic_rings": 5,
+      "chiral_centers": 2,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.1,
+      "flow": 0.75,
+      "smiles": "Cc1ccc(S(=O)(=O)N/C(=C2\\C(=O)C[C@@H](c3ccc(Br)cc3)[C@@H]2c2ccc3ccccc3c2)c2ccccc2)cc1",
+      "scaffold": "O=C1CC(c2ccccc2)C(c2ccc3ccccc3c2)C1=C(NS(=O)(=O)c1ccccc1)c1ccccc1",
+      "functional_groups": [
+        "NH1",
+        "ketone",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 19,
+          "CIP": "R"
+        },
+        {
+          "atom": 20,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 18.323747634887695,
+      "pred_center": 21.32066535949707,
+      "pred_q90": 22.66123390197754,
+      "coverage": 0.9203957724308522
+    },
+    {
+      "id": "r6a209c83eaad",
+      "identity": "ed723e2fd8bacffc",
+      "scaffold_group": "31ae7a8c095e7037",
+      "MW": 188.27,
+      "LogP": 3.004900000000001,
+      "TPSA": 20.23,
+      "HBD": 1,
+      "HBA": 1,
+      "rotatable_bonds": 1,
+      "aromatic_rings": 1,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.1,
+      "flow": 1.0,
+      "smiles": "O[C@@H]1CCCC/C1=C\\c1ccccc1",
+      "scaffold": "C(=C1CCCCC1)c1ccccc1",
+      "functional_groups": [
+        "Al_OH"
+      ],
+      "stereocenters": [
+        {
+          "atom": 1,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 7.675669193267822,
+      "pred_center": 9.204187393188477,
+      "pred_q90": 9.999505043029785,
+      "coverage": 0.4067910951203058
+    },
+    {
+      "id": "rb54782eeaac5",
+      "identity": "3c29c9dc795a81cc",
+      "scaffold_group": "ce16c0e2ea22eede",
+      "MW": 251.35099999999997,
+      "LogP": 2.5040000000000004,
+      "TPSA": 37.38,
+      "HBD": 0,
+      "HBA": 2,
+      "rotatable_bonds": 2,
+      "aromatic_rings": 1,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.1,
+      "flow": 0.5,
+      "smiles": "CC(C)[C@@H]1C=Cc2ccccc2N1S(C)(=O)=O",
+      "scaffold": "C1=Cc2ccccc2NC1",
+      "functional_groups": [
+        "NH0"
+      ],
+      "stereocenters": [
+        {
+          "atom": 3,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 14.639843940734863,
+      "pred_center": 15.910231590270996,
+      "pred_q90": 18.033058166503906,
+      "coverage": 0.7162131774229817
+    },
+    {
+      "id": "re3883f7556f1",
+      "identity": "abe45d165c392c4b",
+      "scaffold_group": "3d606d9c8fbfbc16",
+      "MW": 249.39799999999994,
+      "LogP": 4.1060000000000025,
+      "TPSA": 29.1,
+      "HBD": 1,
+      "HBA": 2,
+      "rotatable_bonds": 6,
+      "aromatic_rings": 0,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.1,
+      "flow": 1.0,
+      "smiles": "CCCCCCC[C@@H]1CCC2=C(CCCC2=O)N1",
+      "scaffold": "O=C1CCCC2=C1CCCN2",
+      "functional_groups": [
+        "NH1",
+        "ketone"
+      ],
+      "stereocenters": [
+        {
+          "atom": 7,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 7.350266456604004,
+      "pred_center": 8.974597930908203,
+      "pred_q90": 10.256650924682617,
+      "coverage": 0.09714414211828198
+    },
+    {
+      "id": "r2f65ff17335a",
+      "identity": "ff76e3a951a41c8e",
+      "scaffold_group": "ac04fa95a63f46d6",
+      "MW": 425.5280000000001,
+      "LogP": 5.978040000000005,
+      "TPSA": 40.46,
+      "HBD": 0,
+      "HBA": 4,
+      "rotatable_bonds": 7,
+      "aromatic_rings": 4,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.05,
+      "flow": 0.7,
+      "smiles": "COc1ccc(-n2c(C)cc([C@H](C(=O)OCc3ccccc3)c3ccccc3)c2C)cc1",
+      "scaffold": "O=C(OCc1ccccc1)C(c1ccccc1)c1ccn(-c2ccccc2)c1",
+      "functional_groups": [
+        "NH0",
+        "ester",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 13,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 9.7762451171875,
+      "pred_center": 13.96225643157959,
+      "pred_q90": 15.701519966125488,
+      "coverage": 0.8648527096919272
+    },
+    {
+      "id": "rdba89f56220e",
+      "identity": "c6be782d91b43312",
+      "scaffold_group": "0fb753482e7e0dfe",
+      "MW": 255.11499999999995,
+      "LogP": 2.2258999999999993,
+      "TPSA": 32.34,
+      "HBD": 1,
+      "HBA": 2,
+      "rotatable_bonds": 0,
+      "aromatic_rings": 1,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.2,
+      "flow": 1.0,
+      "smiles": "C[C@H]1Nc2ccc(Br)cc2N(C)C1=O",
+      "scaffold": "O=C1CNc2ccccc2N1",
+      "functional_groups": [
+        "NH0",
+        "NH1",
+        "amide",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 1,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 9.069913864135742,
+      "pred_center": 10.929140090942383,
+      "pred_q90": 13.146164894104004,
+      "coverage": 0.7883966719136497
+    },
+    {
+      "id": "r6d1c4189e72e",
+      "identity": "368c710cfc7524a1",
+      "scaffold_group": "7165dcf6be1f831d",
+      "MW": 156.612,
+      "LogP": 2.3933,
+      "TPSA": 20.23,
+      "HBD": 1,
+      "HBA": 1,
+      "rotatable_bonds": 1,
+      "aromatic_rings": 1,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.05,
+      "flow": 1.0,
+      "smiles": "C[C@H](O)c1ccc(Cl)cc1",
+      "scaffold": "c1ccccc1",
+      "functional_groups": [
+        "Al_OH",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 1,
+          "CIP": "S"
+        }
+      ],
+      "pred_q10": 11.201913833618164,
+      "pred_center": 12.861410140991211,
+      "pred_q90": 14.214131355285645,
+      "coverage": 0.5835394648077356
+    },
+    {
+      "id": "re5e250081f94",
+      "identity": "160333d3555c19ad",
+      "scaffold_group": "6c9bfa53e57bdf65",
+      "MW": 298.38599999999997,
+      "LogP": 3.542600000000002,
+      "TPSA": 42.52,
+      "HBD": 2,
+      "HBA": 4,
+      "rotatable_bonds": 5,
+      "aromatic_rings": 2,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.1,
+      "flow": 1.0,
+      "smiles": "COc1cccc(OC)c1NC[C@@H]1CCc2ccccc2N1",
+      "scaffold": "c1ccc(NCC2CCc3ccccc3N2)cc1",
+      "functional_groups": [
+        "NH1",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 12,
+          "CIP": "S"
+        }
+      ],
+      "pred_q10": 22.911542892456055,
+      "pred_center": 26.812702178955078,
+      "pred_q90": 29.75942611694336,
+      "coverage": 0.8936361592084552
+    },
+    {
+      "id": "re1f7201abd80",
+      "identity": "293a0e6364f93989",
+      "scaffold_group": "9e1af79f5331b5a4",
+      "MW": 223.275,
+      "LogP": 3.4523800000000016,
+      "TPSA": 33.019999999999996,
+      "HBD": 0,
+      "HBA": 2,
+      "rotatable_bonds": 3,
+      "aromatic_rings": 1,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.01,
+      "flow": 1.0,
+      "smiles": "C=C[C@H]1CC(C#N)=C(/C=C/c2ccccc2)O1",
+      "scaffold": "C(=Cc1ccccc1)C1=CCCO1",
+      "functional_groups": [
+        "NH0",
+        "ether",
+        "nitrile"
+      ],
+      "stereocenters": [
+        {
+          "atom": 2,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 10.752923965454102,
+      "pred_center": 12.737194061279297,
+      "pred_q90": 14.009078979492188,
+      "coverage": 0.6195187767033955
+    },
+    {
+      "id": "r5b1382004ea3",
+      "identity": "6b0c3887dbf89fc4",
+      "scaffold_group": "26cf9f7b7bf067b9",
+      "MW": 239.31799999999998,
+      "LogP": 3.492300000000001,
+      "TPSA": 21.259999999999998,
+      "HBD": 1,
+      "HBA": 2,
+      "rotatable_bonds": 3,
+      "aromatic_rings": 2,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.2,
+      "flow": 1.0,
+      "smiles": "c1ccc(CC[C@H]2COc3ccccc3N2)cc1",
+      "scaffold": "c1ccc(CCC2COc3ccccc3N2)cc1",
+      "functional_groups": [
+        "NH1",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 8,
+          "CIP": "S"
+        }
+      ],
+      "pred_q10": 8.979474067687988,
+      "pred_center": 11.052364349365234,
+      "pred_q90": 11.685976028442383,
+      "coverage": 0.45041601079379356
+    },
+    {
+      "id": "r4e42f7622180",
+      "identity": "b1747de173f65607",
+      "scaffold_group": "a42c88345a1dd7bd",
+      "MW": 326.34800000000007,
+      "LogP": 2.9254000000000016,
+      "TPSA": 61.830000000000005,
+      "HBD": 0,
+      "HBA": 5,
+      "rotatable_bonds": 4,
+      "aromatic_rings": 2,
+      "chiral_centers": 2,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.1,
+      "flow": 0.7,
+      "smiles": "CCOC(=O)[C@H]1C(=O)Oc2cc(OC)ccc2[C@H]1c1ccccc1",
+      "scaffold": "O=C1CC(c2ccccc2)c2ccccc2O1",
+      "functional_groups": [
+        "ester",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 5,
+          "CIP": "S"
+        },
+        {
+          "atom": 6,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 11.272566795349121,
+      "pred_center": 13.875032424926758,
+      "pred_q90": 15.150078773498535,
+      "coverage": 0.760737575893861
+    },
+    {
+      "id": "rd796b300fa50",
+      "identity": "0d18bffa3461c8b9",
+      "scaffold_group": "0d48b7d27f611894",
+      "MW": 159.232,
+      "LogP": 2.6580000000000013,
+      "TPSA": 12.36,
+      "HBD": 0,
+      "HBA": 1,
+      "rotatable_bonds": 1,
+      "aromatic_rings": 1,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.1,
+      "flow": 1.0,
+      "smiles": "C[C@@H]1CCC(c2ccccc2)=N1",
+      "scaffold": "c1ccc(C2=NCCC2)cc1",
+      "functional_groups": [
+        "NH0"
+      ],
+      "stereocenters": [
+        {
+          "atom": 1,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 4.559322357177734,
+      "pred_center": 5.464439392089844,
+      "pred_q90": 6.418323040008545,
+      "coverage": 0.3627164380481223
+    },
+    {
+      "id": "r2f8660830425",
+      "identity": "fb980868e2dcc087",
+      "scaffold_group": "7165dcf6be1f831d",
+      "MW": 269.40999999999997,
+      "LogP": 3.1016000000000012,
+      "TPSA": 46.17,
+      "HBD": 1,
+      "HBA": 2,
+      "rotatable_bonds": 4,
+      "aromatic_rings": 1,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.05,
+      "flow": 1.0,
+      "smiles": "CC(C)[C@H](NS(=O)(=O)C(C)(C)C)c1ccccc1",
+      "scaffold": "c1ccccc1",
+      "functional_groups": [
+        "NH1"
+      ],
+      "stereocenters": [
+        {
+          "atom": 3,
+          "CIP": "S"
+        }
+      ],
+      "pred_q10": 7.283995151519775,
+      "pred_center": 8.617143630981445,
+      "pred_q90": 11.470568656921387,
+      "coverage": 0.1688778952102541
+    },
+    {
+      "id": "r5e559799d1ec",
+      "identity": "1438fbfa2e874a35",
+      "scaffold_group": "e37b0d4972618279",
+      "MW": 332.56,
+      "LogP": 5.549700000000006,
+      "TPSA": 26.3,
+      "HBD": 0,
+      "HBA": 2,
+      "rotatable_bonds": 3,
+      "aromatic_rings": 1,
+      "chiral_centers": 2,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.05,
+      "flow": 0.6,
+      "smiles": "CC1(C)C(=O)C[C@@H](c2ccccc2)C[C@H]1O[Si](C)(C)C(C)(C)C",
+      "scaffold": "O=C1CCCC(c2ccccc2)C1",
+      "functional_groups": [
+        "ketone"
+      ],
+      "stereocenters": [
+        {
+          "atom": 8,
+          "CIP": "R"
+        },
+        {
+          "atom": 10,
+          "CIP": "S"
+        }
+      ],
+      "pred_q10": 6.0437116622924805,
+      "pred_center": 6.2213006019592285,
+      "pred_q90": 12.987653732299805,
+      "coverage": 0.620418259500787
+    },
+    {
+      "id": "r24de9100f46c",
+      "identity": "e69c1644716a7c5d",
+      "scaffold_group": "7165dcf6be1f831d",
+      "MW": 206.241,
+      "LogP": 2.1033,
+      "TPSA": 35.53,
+      "HBD": 0,
+      "HBA": 3,
+      "rotatable_bonds": 5,
+      "aromatic_rings": 1,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.01,
+      "flow": 1.0,
+      "smiles": "C=CCO[C@@H](C(=O)OC)c1ccccc1",
+      "scaffold": "c1ccccc1",
+      "functional_groups": [
+        "ester",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 4,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 6.753610610961914,
+      "pred_center": 7.946091175079346,
+      "pred_q90": 9.84681510925293,
+      "coverage": 0.5423881268270744
+    },
+    {
+      "id": "ra382ad25bd48",
+      "identity": "a51f11e3403bda81",
+      "scaffold_group": "dbcda5470781b7f2",
+      "MW": 461.47600000000017,
+      "LogP": 4.432120000000004,
+      "TPSA": 89.97999999999999,
+      "HBD": 0,
+      "HBA": 6,
+      "rotatable_bonds": 6,
+      "aromatic_rings": 2,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.2,
+      "flow": 0.8,
+      "smiles": "CCOP(=O)(OCC)[C@@]12CC(c3ccccc3C)=CC(=O)N1S(=O)(=O)c1ccccc12",
+      "scaffold": "O=C1C=C(c2ccccc2)CC2c3ccccc3S(=O)(=O)N12",
+      "functional_groups": [
+        "NH0",
+        "amide"
+      ],
+      "stereocenters": [
+        {
+          "atom": 8,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 15.775893211364746,
+      "pred_center": 17.35177993774414,
+      "pred_q90": 18.897863388061523,
+      "coverage": 0.6707892961547111
+    },
+    {
+      "id": "r37d895c60c1a",
+      "identity": "6b4a51d8900a2357",
+      "scaffold_group": "395deebe9a3c2706",
+      "MW": 315.43799999999993,
+      "LogP": 3.5633200000000027,
+      "TPSA": 37.38,
+      "HBD": 0,
+      "HBA": 2,
+      "rotatable_bonds": 3,
+      "aromatic_rings": 2,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.03,
+      "flow": 1.0,
+      "smiles": "Cc1ccc(S(=O)(=O)N2CCC[C@@H](c3ccccc3)C2)cc1",
+      "scaffold": "O=S(=O)(c1ccccc1)N1CCCC(c2ccccc2)C1",
+      "functional_groups": [
+        "NH0"
+      ],
+      "stereocenters": [
+        {
+          "atom": 14,
+          "CIP": "S"
+        }
+      ],
+      "pred_q10": 33.329891204833984,
+      "pred_center": 36.447715759277344,
+      "pred_q90": 39.55421829223633,
+      "coverage": 0.7814256802338655
+    },
+    {
+      "id": "raec4c63c8449",
+      "identity": "da42d72c4fd075e5",
+      "scaffold_group": "de632010805a3bf9",
+      "MW": 230.35099999999997,
+      "LogP": 4.307100000000004,
+      "TPSA": 9.23,
+      "HBD": 0,
+      "HBA": 1,
+      "rotatable_bonds": 5,
+      "aromatic_rings": 1,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.0,
+      "flow": 0.5,
+      "smiles": "CCCC[C@@]1(CC2CC2)COc2ccccc21",
+      "scaffold": "c1ccc2c(c1)OCC2CC1CC1",
+      "functional_groups": [
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 4,
+          "CIP": "S"
+        }
+      ],
+      "pred_q10": 8.176468849182129,
+      "pred_center": 9.878133773803711,
+      "pred_q90": 11.485361099243164,
+      "coverage": 0.17270069709916797
+    },
+    {
+      "id": "r0aa07315e456",
+      "identity": "7679e4c27558edf2",
+      "scaffold_group": "2a971400d0bdbdf1",
+      "MW": 191.274,
+      "LogP": 2.2920000000000007,
+      "TPSA": 21.259999999999998,
+      "HBD": 1,
+      "HBA": 2,
+      "rotatable_bonds": 2,
+      "aromatic_rings": 1,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.01,
+      "flow": 1.0,
+      "smiles": "CC[C@@H]1NCCc2cc(OC)ccc21",
+      "scaffold": "c1ccc2c(c1)CCNC2",
+      "functional_groups": [
+        "NH1",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 2,
+          "CIP": "S"
+        }
+      ],
+      "pred_q10": 6.812124729156494,
+      "pred_center": 8.429399490356445,
+      "pred_q90": 9.565154075622559,
+      "coverage": 0.5511580841016416
+    },
+    {
+      "id": "r4dd794cef832",
+      "identity": "dfe6042dd5de0aba",
+      "scaffold_group": "ee4bdeea899650ab",
+      "MW": 279.261,
+      "LogP": 4.251000000000002,
+      "TPSA": 21.259999999999998,
+      "HBD": 1,
+      "HBA": 2,
+      "rotatable_bonds": 1,
+      "aromatic_rings": 2,
+      "chiral_centers": 1,
+      "unassigned_centers": 0,
+      "ipa_fraction": 0.2,
+      "flow": 1.0,
+      "smiles": "FC(F)(F)c1ccc([C@@H]2COc3ccccc3N2)cc1",
+      "scaffold": "c1ccc(C2COc3ccccc3N2)cc1",
+      "functional_groups": [
+        "NH1",
+        "ether",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 10,
+          "CIP": "R"
+        }
+      ],
+      "pred_q10": 7.186107635498047,
+      "pred_center": 9.426968574523926,
+      "pred_q90": 10.59846019744873,
+      "coverage": 0.14346750618394424
+    }
+  ],
+  "overview": {
+    "candidate_count": 4034,
+    "pending_count": 16,
+    "observed_count": 397,
+    "pool_query_budget": 24,
+    "view_budget": 480
+  },
+  "packet_hash": "9a8a4cff5b9fa84fb64aed918a89778b47fc5f1d5a372c5ec88a9e63e9cb2470"
+}

@@ -1,0 +1,213 @@
+{
+  "request_sha256": "bbf0a9c4df7c3f957c8cb7f52c243613930c62be4cc0a57052e1a057ec4c847e",
+  "answer": "{\"type\":\"selection\",\"packet_hash\":\"ca1523b41e1af1bf279f522b0f720bb0590c592525799a63d27e404c86606ee9\",\"choices\":[{\"id\":\"r74afd33527b3\",\"evidence_ids\":[\"rb8969bb6a510\"],\"reason\":\"A measured close boronate analogue retained at 8.8 mL, while this candidate's center is near zero. Tests whether the model underpredicts this structural family.\"},{\"id\":\"rffbdd082b6a0\",\"evidence_ids\":[\"r53eabfa1681d\"],\"reason\":\"Exploratory measurement of a high-center, high-coverage isoxazoline; the measured analogue is too dissimilar to establish a directional expectation.\"},{\"id\":\"rc4f7380fc05e\",\"evidence_ids\":[\"rc2807f84211a\"],\"reason\":\"Samples a nearly uncovered, rigid NH-containing cyclic carbamate. The measured cyclic carbamate has a different ring and substituents, so this tests transfer rather than presumed equivalence.\"},{\"id\":\"r7cf9807c7193\",\"evidence_ids\":[\"r8d2dfc1e4034\",\"re970bd0e69b4\"],\"reason\":\"Tests predictions for nitro-substituted diaryl compounds at the same recorded flow and ipa_fraction as two strongly retained measured analogues; methoxy substitution may change the outcome.\"},{\"id\":\"r2d811014b884\",\"evidence_ids\":[\"r3a67c1239764\"],\"reason\":\"The enantiomer of pending r6c52dc0783b9 provides a direct stereochemical comparison when both responses arrive; the measured ester is only a broad analogy.\"},{\"id\":\"r1c51c81c3a1b\",\"evidence_ids\":[\"rb45809c96c12\",\"r575b352980d8\"],\"reason\":\"Tests whether the high prediction for a thiophene-containing diol reflects its two hydroxyl groups or poor transfer from measured alcohols with different substituents.\"},{\"id\":\"r0753837a710a\",\"evidence_ids\":[\"rb9b09ef97e1a\",\"r1cb1566cc8b3\"],\"reason\":\"Measures a methoxy-substituted aromatic hydroxy acid against measured hydroxy acids whose responses are substantially below this candidate's center.\"},{\"id\":\"r0c63415b82e1\",\"evidence_ids\":[\"r48fa1545df37\"],\"reason\":\"Exploratory aliphatic alcohol at intermediate coverage; helps separate alcohol behavior from the aromatic alcohols represented in the labeled set.\"},{\"id\":\"r11c15feb5814\",\"evidence_ids\":[\"r46938a363686\",\"rab95a230078f\"],\"reason\":\"Complements pending r2f4642870105 with a related sulfonamide at a different recorded ipa_fraction. Measured related compounds show appreciably different responses, making condition and substitution effects worth resolving.\"},{\"id\":\"r9d51f6344c5b\",\"evidence_ids\":[\"r8ec1eec29f35\"],\"reason\":\"Complements pending r9ec25c88b73e with a chlorobenzyl rather than thienyl substituent on a related cyclic amide; tests substituent transfer within the family.\"},{\"id\":\"r84f20b3d3d90\",\"evidence_ids\":[\"r05a75a574387\",\"r68e3d2a0b793\"],\"reason\":\"A chloro analogue of pending rfc6cdebca706 at the same conditions tests whether the brominated and chlorinated lactones follow a shared prediction error.\"},{\"id\":\"r31b886e9f456\",\"evidence_ids\":[\"r575b352980d8\"],\"reason\":\"Exploratory measurement of a high-center, two-stereocenter cyclic alcohol; the measured alcohol does not establish its retention but offers a limited polarity reference.\"},{\"id\":\"r5ae05f023c35\",\"evidence_ids\":[\"r75437dcffc7c\",\"r5a477b34cae6\"],\"reason\":\"A nitro alcohol on thiophene broadens the pending thiophene measurements beyond the pending ester and tests whether aromatic nitro-alcohol behavior transfers.\"},{\"id\":\"r189ada127d6f\",\"evidence_ids\":[\"ra4c774484a8b\"],\"reason\":\"Samples a relatively uncovered sulfonyl-containing ring with a high center prediction; exploratory because the measured sulfonyl compound has a different core.\"},{\"id\":\"r2c46a05a0066\",\"evidence_ids\":[\"r53eabfa1681d\"],\"reason\":\"A moderately predicted isoxazoline balances the high-center isoxazoline selection and tests how substituent changes affect transfer within the ring family.\"},{\"id\":\"r6fcc0e34a73a\",\"evidence_ids\":[\"r8ede8f514008\"],\"reason\":\"Measures a two-stereocenter hydroxy ketone in a sparsely covered region. The measured hydroxy ketone supports only a broad functional-group comparison.\"}],\"hypotheses\":[{\"id\":\"h1\",\"claim\":\"The center model may underpredict retention for the boronate-containing ring family.\",\"evidence_ids\":[\"rb8969bb6a510\"],\"alternative\":\"The tert-butyl substituent in the selected candidate changes retention enough that the measured chlorinated analogue is misleading.\",\"expected_sign\":-1,\"candidate_ids\":[\"r74afd33527b3\"],\"learning_value\":\"A close measured analogue provides a focused check on an extreme near-zero center prediction.\"},{\"id\":\"h2\",\"claim\":\"The center model may overpredict retention for the selected aromatic hydroxy acid.\",\"evidence_ids\":[\"rb9b09ef97e1a\",\"r1cb1566cc8b3\"],\"alternative\":\"Its methoxy substitution creates substantially different retention from the measured acids.\",\"expected_sign\":1,\"candidate_ids\":[\"r0753837a710a\"],\"learning_value\":\"Resolves a large model-versus-analogue discrepancy in a polar, relatively well-represented functional-group family.\"},{\"id\":\"h3\",\"claim\":\"The pending nitrile ester and its selected enantiomer may have meaningfully different retention despite identical nonchiral descriptors and conditions.\",\"evidence_ids\":[],\"alternative\":\"Their responses are close and the predicted center difference largely reflects model behavior rather than chiral recognition.\",\"expected_sign\":0,\"candidate_ids\":[\"r2d811014b884\"],\"learning_value\":\"The simultaneous pending and selected responses will directly test stereochemical transfer without attributing a direction in advance.\"},{\"id\":\"h4\",\"claim\":\"The two selected isoxazolines may expose family-specific prediction errors at different predicted response levels.\",\"evidence_ids\":[\"r53eabfa1681d\"],\"alternative\":\"Their differing substituents make their errors unrelated, so a shared correction would not generalize.\",\"expected_sign\":0,\"candidate_ids\":[\"rffbdd082b6a0\",\"r2c46a05a0066\"],\"learning_value\":\"Checks a high-coverage-gap prediction alongside a more moderate one without treating quantile width as calibrated uncertainty.\"}],\"feedback_interpretation\":\"Round zero has no prior batch outcomes or previous hypotheses to confirm, weaken or contradict. Viewed observed records provide measured responses but no premeasurement errors; prediction gaps and directional claims here remain untested. The 16 pending LCMD responses have not been revealed.\",\"batch_rationale\":\"The 16 selections complement the pending batch with a direct enantiomer, close structural and condition comparisons, and measurements outside its main high-coverage clusters. They also span low, moderate and high center predictions and several functional-group families. Coverage is used as a diversity signal, not as calibrated uncertainty; the choices target potential reductions in overall regression error rather than high retention itself.\"}",
+  "provenance": {
+    "response_id": "resp_07701af6cdbc4cd5016ab93b79eb8487d1a0d7d35c96eed365",
+    "served_model": "gpt-6-sol",
+    "usage": {
+      "attribution": {
+        "items": {
+          "msg_07701af6cdbc4cd5016ab93b79f2d487d1a0f243e375740abd": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 5978,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 5978,
+            "output_tokens": 0
+          },
+          "msg_07701af6cdbc4cd5016ab93b79f2ec87d18c08133e8f2f1a72": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 140,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 140,
+            "output_tokens": 0
+          },
+          "msg_07701af6cdbc4cd5016ab93b79f2fc87d180dd3fb9bff631f5": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 16309,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 16309,
+            "output_tokens": 0
+          },
+          "msg_07701af6cdbc4cd5016ab93b79f30c87d19af8a1368c41cafa": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 204,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 204,
+            "output_tokens": 0
+          },
+          "msg_07701af6cdbc4cd5016ab93b79f31c87d1b3af202b094b241c": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 28478,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 28478,
+            "output_tokens": 0
+          },
+          "msg_07701af6cdbc4cd5016ab93b79f32c87d181e9b1d6965404b1": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 498,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 498,
+            "output_tokens": 0
+          },
+          "msg_07701af6cdbc4cd5016ab93b79f33c87d183b9fd05cc5cf7c9": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 20981,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 20981,
+            "output_tokens": 0
+          },
+          "msg_07701af6cdbc4cd5016ab93b79f34c87d1b94f10eea0a24ba0": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 444,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 444,
+            "output_tokens": 0
+          },
+          "msg_07701af6cdbc4cd5016ab93b79f35c87d187680ba694d3040a": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 23237,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 23237,
+            "output_tokens": 0
+          },
+          "msg_07701af6cdbc4cd5016ab93b79f36887d19f8edb252e6cc8b0": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 456,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 456,
+            "output_tokens": 0
+          },
+          "msg_07701af6cdbc4cd5016ab93b79f37887d190fa3ac2339e31cc": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 16219,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 16219,
+            "output_tokens": 0
+          },
+          "rs_07701af6cdbc4cd5016ab93b7bb9e087d1940309310e6cad49": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_07701af6cdbc4cd5016ab93b856fb487d194daf497393dc3b7": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 328
+          },
+          "msg_07701af6cdbc4cd5016ab93b8f44ec87d19777db53bfa2d729": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 1637
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 1637
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 5159,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 118105,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 2481,
+      "output_tokens_details": {
+        "reasoning_tokens": 844
+      },
+      "total_tokens": 120586
+    },
+    "native_tool_calls": 0
+  }
+}

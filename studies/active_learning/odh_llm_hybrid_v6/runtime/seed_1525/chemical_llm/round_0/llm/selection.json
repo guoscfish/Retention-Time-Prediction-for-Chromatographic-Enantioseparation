@@ -1,0 +1,517 @@
+{
+  "selected": [
+    4104,
+    1016,
+    970,
+    1737,
+    941,
+    3227,
+    3467,
+    4126,
+    3273,
+    3040,
+    3441,
+    3507,
+    866,
+    3666,
+    1680,
+    4182
+  ],
+  "response": {
+    "type": "selection",
+    "packet_hash": "ca1523b41e1af1bf279f522b0f720bb0590c592525799a63d27e404c86606ee9",
+    "choices": [
+      {
+        "id": "r74afd33527b3",
+        "evidence_ids": [
+          "rb8969bb6a510"
+        ],
+        "reason": "A measured close boronate analogue retained at 8.8 mL, while this candidate's center is near zero. Tests whether the model underpredicts this structural family."
+      },
+      {
+        "id": "rffbdd082b6a0",
+        "evidence_ids": [
+          "r53eabfa1681d"
+        ],
+        "reason": "Exploratory measurement of a high-center, high-coverage isoxazoline; the measured analogue is too dissimilar to establish a directional expectation."
+      },
+      {
+        "id": "rc4f7380fc05e",
+        "evidence_ids": [
+          "rc2807f84211a"
+        ],
+        "reason": "Samples a nearly uncovered, rigid NH-containing cyclic carbamate. The measured cyclic carbamate has a different ring and substituents, so this tests transfer rather than presumed equivalence."
+      },
+      {
+        "id": "r7cf9807c7193",
+        "evidence_ids": [
+          "r8d2dfc1e4034",
+          "re970bd0e69b4"
+        ],
+        "reason": "Tests predictions for nitro-substituted diaryl compounds at the same recorded flow and ipa_fraction as two strongly retained measured analogues; methoxy substitution may change the outcome."
+      },
+      {
+        "id": "r2d811014b884",
+        "evidence_ids": [
+          "r3a67c1239764"
+        ],
+        "reason": "The enantiomer of pending r6c52dc0783b9 provides a direct stereochemical comparison when both responses arrive; the measured ester is only a broad analogy."
+      },
+      {
+        "id": "r1c51c81c3a1b",
+        "evidence_ids": [
+          "rb45809c96c12",
+          "r575b352980d8"
+        ],
+        "reason": "Tests whether the high prediction for a thiophene-containing diol reflects its two hydroxyl groups or poor transfer from measured alcohols with different substituents."
+      },
+      {
+        "id": "r0753837a710a",
+        "evidence_ids": [
+          "rb9b09ef97e1a",
+          "r1cb1566cc8b3"
+        ],
+        "reason": "Measures a methoxy-substituted aromatic hydroxy acid against measured hydroxy acids whose responses are substantially below this candidate's center."
+      },
+      {
+        "id": "r0c63415b82e1",
+        "evidence_ids": [
+          "r48fa1545df37"
+        ],
+        "reason": "Exploratory aliphatic alcohol at intermediate coverage; helps separate alcohol behavior from the aromatic alcohols represented in the labeled set."
+      },
+      {
+        "id": "r11c15feb5814",
+        "evidence_ids": [
+          "r46938a363686",
+          "rab95a230078f"
+        ],
+        "reason": "Complements pending r2f4642870105 with a related sulfonamide at a different recorded ipa_fraction. Measured related compounds show appreciably different responses, making condition and substitution effects worth resolving."
+      },
+      {
+        "id": "r9d51f6344c5b",
+        "evidence_ids": [
+          "r8ec1eec29f35"
+        ],
+        "reason": "Complements pending r9ec25c88b73e with a chlorobenzyl rather than thienyl substituent on a related cyclic amide; tests substituent transfer within the family."
+      },
+      {
+        "id": "r84f20b3d3d90",
+        "evidence_ids": [
+          "r05a75a574387",
+          "r68e3d2a0b793"
+        ],
+        "reason": "A chloro analogue of pending rfc6cdebca706 at the same conditions tests whether the brominated and chlorinated lactones follow a shared prediction error."
+      },
+      {
+        "id": "r31b886e9f456",
+        "evidence_ids": [
+          "r575b352980d8"
+        ],
+        "reason": "Exploratory measurement of a high-center, two-stereocenter cyclic alcohol; the measured alcohol does not establish its retention but offers a limited polarity reference."
+      },
+      {
+        "id": "r5ae05f023c35",
+        "evidence_ids": [
+          "r75437dcffc7c",
+          "r5a477b34cae6"
+        ],
+        "reason": "A nitro alcohol on thiophene broadens the pending thiophene measurements beyond the pending ester and tests whether aromatic nitro-alcohol behavior transfers."
+      },
+      {
+        "id": "r189ada127d6f",
+        "evidence_ids": [
+          "ra4c774484a8b"
+        ],
+        "reason": "Samples a relatively uncovered sulfonyl-containing ring with a high center prediction; exploratory because the measured sulfonyl compound has a different core."
+      },
+      {
+        "id": "r2c46a05a0066",
+        "evidence_ids": [
+          "r53eabfa1681d"
+        ],
+        "reason": "A moderately predicted isoxazoline balances the high-center isoxazoline selection and tests how substituent changes affect transfer within the ring family."
+      },
+      {
+        "id": "r6fcc0e34a73a",
+        "evidence_ids": [
+          "r8ede8f514008"
+        ],
+        "reason": "Measures a two-stereocenter hydroxy ketone in a sparsely covered region. The measured hydroxy ketone supports only a broad functional-group comparison."
+      }
+    ],
+    "hypotheses": [
+      {
+        "id": "h1",
+        "claim": "The center model may underpredict retention for the boronate-containing ring family.",
+        "evidence_ids": [
+          "rb8969bb6a510"
+        ],
+        "alternative": "The tert-butyl substituent in the selected candidate changes retention enough that the measured chlorinated analogue is misleading.",
+        "expected_sign": -1,
+        "candidate_ids": [
+          "r74afd33527b3"
+        ],
+        "learning_value": "A close measured analogue provides a focused check on an extreme near-zero center prediction."
+      },
+      {
+        "id": "h2",
+        "claim": "The center model may overpredict retention for the selected aromatic hydroxy acid.",
+        "evidence_ids": [
+          "rb9b09ef97e1a",
+          "r1cb1566cc8b3"
+        ],
+        "alternative": "Its methoxy substitution creates substantially different retention from the measured acids.",
+        "expected_sign": 1,
+        "candidate_ids": [
+          "r0753837a710a"
+        ],
+        "learning_value": "Resolves a large model-versus-analogue discrepancy in a polar, relatively well-represented functional-group family."
+      },
+      {
+        "id": "h3",
+        "claim": "The pending nitrile ester and its selected enantiomer may have meaningfully different retention despite identical nonchiral descriptors and conditions.",
+        "evidence_ids": [],
+        "alternative": "Their responses are close and the predicted center difference largely reflects model behavior rather than chiral recognition.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r2d811014b884"
+        ],
+        "learning_value": "The simultaneous pending and selected responses will directly test stereochemical transfer without attributing a direction in advance."
+      },
+      {
+        "id": "h4",
+        "claim": "The two selected isoxazolines may expose family-specific prediction errors at different predicted response levels.",
+        "evidence_ids": [
+          "r53eabfa1681d"
+        ],
+        "alternative": "Their differing substituents make their errors unrelated, so a shared correction would not generalize.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "rffbdd082b6a0",
+          "r2c46a05a0066"
+        ],
+        "learning_value": "Checks a high-coverage-gap prediction alongside a more moderate one without treating quantile width as calibrated uncertainty."
+      }
+    ],
+    "feedback_interpretation": "Round zero has no prior batch outcomes or previous hypotheses to confirm, weaken or contradict. Viewed observed records provide measured responses but no premeasurement errors; prediction gaps and directional claims here remain untested. The 16 pending LCMD responses have not been revealed.",
+    "batch_rationale": "The 16 selections complement the pending batch with a direct enantiomer, close structural and condition comparisons, and measurements outside its main high-coverage clusters. They also span low, moderate and high center predictions and several functional-group families. Coverage is used as a diversity signal, not as calibrated uncertainty; the choices target potential reductions in overall regression error rather than high retention itself."
+  },
+  "queries": 24,
+  "viewed": [
+    "r00006cdfe409",
+    "r0104563280e1",
+    "r0321f934e9b6",
+    "r04c4d7829a92",
+    "r06dcf776a6dd",
+    "r0753837a710a",
+    "r07e6d79e237b",
+    "r095d08c7e663",
+    "r0b8f183b99e9",
+    "r0c572e1efcbf",
+    "r0c63415b82e1",
+    "r0c93d9748252",
+    "r0e02b5fc33c8",
+    "r0e1539f42f83",
+    "r0f7b97fea72d",
+    "r11922ec48459",
+    "r11a2515a69a9",
+    "r11c15feb5814",
+    "r11c6c14d0c6b",
+    "r13e06c8010e4",
+    "r13f5cc7325bf",
+    "r14b2cfbd402e",
+    "r189ada127d6f",
+    "r18f57f8ef898",
+    "r19468201dd16",
+    "r19c1a3c824d9",
+    "r1b040c70d7ac",
+    "r1be8fe2eec78",
+    "r1c51c81c3a1b",
+    "r1cfcb7839909",
+    "r1e04118171f1",
+    "r1e88a38816d9",
+    "r1fee9214748b",
+    "r2023be7875a9",
+    "r20254757e2bb",
+    "r20c55f9a6f35",
+    "r2258ba312230",
+    "r24ff86471b15",
+    "r29211375c097",
+    "r2976bd70c515",
+    "r2a7c36761b3f",
+    "r2b5caf9a28f0",
+    "r2c46a05a0066",
+    "r2d811014b884",
+    "r2f65ff17335a",
+    "r30c78487d9fb",
+    "r30e403fc9cb2",
+    "r3106c36d6093",
+    "r31b886e9f456",
+    "r34aad416130c",
+    "r350d459c9c09",
+    "r36749c564c90",
+    "r3a8b9a343435",
+    "r3f0cfccb03f2",
+    "r3f59f8a8820f",
+    "r3fbe65be89b3",
+    "r407ac9211735",
+    "r416af6febd58",
+    "r417530f54af3",
+    "r4264ec388c7c",
+    "r44045454aa09",
+    "r444a8863d8fa",
+    "r475000b446fc",
+    "r496628bea8e2",
+    "r49bfc1b5aed8",
+    "r4b300432959a",
+    "r4b40bd9912c0",
+    "r4b9fc4cdb8cc",
+    "r4bc62fa6943b",
+    "r4eb0e27336a6",
+    "r4f3338b2f71a",
+    "r4ff2889dd688",
+    "r522d850df962",
+    "r52ebad8068a7",
+    "r53052169d564",
+    "r53d088acc686",
+    "r54afdd48d07a",
+    "r55b382d85103",
+    "r569b8a4ea302",
+    "r56c223931db5",
+    "r57d23a649690",
+    "r59d6d76ab255",
+    "r5ae05f023c35",
+    "r5b2defec368e",
+    "r5be94040e0a6",
+    "r5c245838af73",
+    "r5d08c2985ad8",
+    "r5e559799d1ec",
+    "r6131009255e5",
+    "r6351ed107f20",
+    "r649021e78b70",
+    "r64d58aea5d59",
+    "r651704f92a5d",
+    "r656197ec4f90",
+    "r66778c5efe97",
+    "r67a90737c122",
+    "r6948a1c5c044",
+    "r6977e97575bd",
+    "r6b133fba10f7",
+    "r6b89b3647801",
+    "r6e6452b50204",
+    "r6fcc0e34a73a",
+    "r6fe1bbeaf34c",
+    "r7130487a8889",
+    "r7353d150a63a",
+    "r737fe6aeb159",
+    "r7469bcddb126",
+    "r74afd33527b3",
+    "r758b59d59549",
+    "r770e38a5c668",
+    "r774e2bf63b9e",
+    "r776df2d8f8cd",
+    "r79e5df51d71b",
+    "r7a5687023ff1",
+    "r7a69f3a4f25c",
+    "r7cf9807c7193",
+    "r7f559f6327d5",
+    "r8047e1962f40",
+    "r80c0dec1989a",
+    "r83526ed7e4dd",
+    "r84072c1a9349",
+    "r84563dabc20f",
+    "r84f20b3d3d90",
+    "r850e69c2bf59",
+    "r8529c8b6375a",
+    "r8944df48a1b8",
+    "r8cffa40369fb",
+    "r9384119653e5",
+    "r94233f0ff066",
+    "r9915baf72423",
+    "r9d18d6de8b57",
+    "r9d51f6344c5b",
+    "r9e0b6da7a119",
+    "r9f7c1860a4e3",
+    "ra24997c58d44",
+    "ra29eb6dc970d",
+    "ra4815274a9c9",
+    "ra54ea06d6be9",
+    "ra5cc0605f81f",
+    "ra67d23337bab",
+    "ra7556b667e11",
+    "ra9a7d810130d",
+    "ra9c7c13062c0",
+    "ra9e5a045b8f6",
+    "raa465ac6c2da",
+    "rabde6e09a1db",
+    "radbe1c3fdc1e",
+    "rae4e91e0ad96",
+    "rb27839704256",
+    "rb3126ff436b3",
+    "rb456ab45f5e8",
+    "rb466c75e969d",
+    "rb5697f288a12",
+    "rb81793c5bfb2",
+    "rb84e6abc7436",
+    "rb8f572e96576",
+    "rb9198a8f35e5",
+    "rb9488de3af30",
+    "rbadd9e0b92f5",
+    "rbb54e2582749",
+    "rbdf822a2c24e",
+    "rbe9b1f8942c9",
+    "rbec1b7c609c3",
+    "rc01f91b61423",
+    "rc0647982fe49",
+    "rc0856d88982c",
+    "rc1681a05565e",
+    "rc2f3c30d4855",
+    "rc319f5109e9b",
+    "rc4317a2908c8",
+    "rc4f7380fc05e",
+    "rc5415122342f",
+    "rc7b3245b0e88",
+    "rc7bee0f0431d",
+    "rc96251995a66",
+    "rca262899e716",
+    "rca9f46fb6c74",
+    "rccbf30c13ce9",
+    "rcdca2a3008cc",
+    "rd201a7494bf8",
+    "rd4cd3933ddb8",
+    "rd50c0b49eb17",
+    "rd5fd1f45e13b",
+    "rd69f3f6e7097",
+    "rd7a4dc4faed3",
+    "rd83ad8a12177",
+    "rd960a7096871",
+    "rda085f5c5bd6",
+    "rdcca09b7a8eb",
+    "rddcd4148d360",
+    "re04d073f5ff8",
+    "re3325268fa8e",
+    "re6d3764788d4",
+    "re85a3f0f78c2",
+    "re86bebb15fd8",
+    "re97fd8480c24",
+    "re9c2dde26c10",
+    "rebf5e40fedb5",
+    "recb2cfc95d4d",
+    "recccc2a1b37d",
+    "red051b4f36f8",
+    "refa13591c11d",
+    "rf1404b590118",
+    "rf2bdba66eff5",
+    "rf3aa1019ae77",
+    "rf40906dead36",
+    "rf647a1bb370a",
+    "rf6585bb49c51",
+    "rf6cf7f174a22",
+    "rf7924bd1e28d",
+    "rf8ddcc0579b3",
+    "rfa070031305e",
+    "rfec42c776379",
+    "rffbdd082b6a0"
+  ],
+  "observed_viewed": [
+    "r001e8509c844",
+    "r00320d757461",
+    "r05a75a574387",
+    "r0e00e52e29af",
+    "r0fc394d0544d",
+    "r147f309e2bc8",
+    "r191cbb488c54",
+    "r1cb1566cc8b3",
+    "r1f3e5c7ff509",
+    "r21209d1de8e9",
+    "r2176acdbc3f5",
+    "r22390bf4b1c1",
+    "r25d9769f1457",
+    "r2d07b801fd6b",
+    "r3a25307a1bef",
+    "r3a67c1239764",
+    "r3b2091eae796",
+    "r4263547530ad",
+    "r46938a363686",
+    "r48fa1545df37",
+    "r526905aa5b9d",
+    "r53eabfa1681d",
+    "r567039b0c00d",
+    "r568d55e3a617",
+    "r575b352980d8",
+    "r58a85591001d",
+    "r5a147becf65e",
+    "r5a477b34cae6",
+    "r5b3e2e90e46b",
+    "r5b7f263ae88e",
+    "r5f78181bf5b3",
+    "r60055485bdbf",
+    "r6082c843ed23",
+    "r62429d4b5450",
+    "r684bd1690738",
+    "r68e3d2a0b793",
+    "r6e02146b24af",
+    "r75437dcffc7c",
+    "r7fa46b9f98e3",
+    "r81843a711ec0",
+    "r85e9fb6416be",
+    "r876f6a77b0a1",
+    "r89feb34c31ca",
+    "r8b8999cf6321",
+    "r8c5edf17c53c",
+    "r8d2dfc1e4034",
+    "r8ec1eec29f35",
+    "r8ede8f514008",
+    "r956137a7759d",
+    "r964c67a989ae",
+    "r9d0dd1ea95d5",
+    "r9ed0bf976528",
+    "ra040f85159df",
+    "ra4c774484a8b",
+    "ra86cf34a8de5",
+    "rab95a230078f",
+    "rb21181ca1a81",
+    "rb45809c96c12",
+    "rb45996b506c9",
+    "rb5b77bc77638",
+    "rb5f27ea20b37",
+    "rb8969bb6a510",
+    "rb9b09ef97e1a",
+    "rba37b9e500ee",
+    "rbf743781c8cc",
+    "rbfaf9a92346f",
+    "rc2807f84211a",
+    "rc2bef557a10f",
+    "rc7a1218d18fa",
+    "rc8643c79f7e7",
+    "rd1cf5bc2c490",
+    "rd3fc758ac8fb",
+    "rd9e198560b6a",
+    "rda0a9252a911",
+    "re034be5c4d4a",
+    "re5e126697a00",
+    "re6c380cfe57f",
+    "re970bd0e69b4",
+    "reae0807aba28",
+    "recf2215ebba2",
+    "rf0c0a929eb99",
+    "rf2208245ea76",
+    "rf2a522cdae1c",
+    "rfd5a1fb16cca",
+    "rfd7344e45720",
+    "rfd796c6831e0",
+    "rfe579f2c7c02",
+    "rfe7729806b15"
+  ],
+  "model": {
+    "model": "gpt-6-sol",
+    "reasoning_effort": "high",
+    "base_url": "https://token4research.cn/v1",
+    "wire_api": "responses",
+    "store": false,
+    "native_tools": [],
+    "max_output_tokens": 16000,
+    "automatic_fallback": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "request_sha256": "4cc380d2ea6f51df858b4d3edbeed19d73fbe5e59b6ae4a028fea7701411baed",
+  "answer": "{\"type\":\"query\",\"queries\":[{\"pool\":\"observed\",\"offset\":0,\"limit\":24,\"sort_by\":\"signed_error\",\"order\":\"desc\"},{\"pool\":\"observed\",\"offset\":0,\"limit\":24,\"sort_by\":\"signed_error\",\"order\":\"asc\"},{\"pool\":\"pending\",\"offset\":0,\"limit\":16}]}{\"type\":\"query\",\"queries\":[{\"pool\":\"observed\",\"offset\":0,\"limit\":24,\"sort_by\":\"signed_error\",\"order\":\"desc\"},{\"pool\":\"observed\",\"offset\":0,\"limit\":24,\"sort_by\":\"signed_error\",\"order\":\"asc\"},{\"pool\":\"pending\",\"offset\":0,\"limit\":16}]}",
+  "provenance": {
+    "response_id": "resp_032e0ff255d69f23016ab93c0bd11487d188d3d9494f84d9d4",
+    "served_model": "gpt-6-sol",
+    "usage": {
+      "input_tokens": 11139,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 187,
+      "output_tokens_details": {
+        "reasoning_tokens": 40
+      },
+      "total_tokens": 11326
+    },
+    "native_tool_calls": 0
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "request_sha256": "d9ebf3a50269d089277f7508f4400de114b6a4c84fc52335aad6b33ae01cd165",
+  "answer": "{\"type\":\"selection\",\"packet_hash\":\"242921fbb0cc2f03357b27af842de0484709d3fa75a0323b439140981c030fae\",\"choices\":[{\"id\":\"rc4f7380fc05e\",\"evidence_ids\":[],\"reason\":\"Exploratory high-coverage row with a center prediction near 32; measures a region distinct from most pending rows without also selecting its near-duplicate.\"},{\"id\":\"re04d073f5ff8\",\"evidence_ids\":[],\"reason\":\"High coverage in a different numerical region from the other selections; tests whether the elevated center prediction generalizes there.\"},{\"id\":\"rabde6e09a1db\",\"evidence_ids\":[],\"reason\":\"Exploratory high-coverage row with unusually large x01 and x07; adds geometric breadth beyond the pending batch.\"},{\"id\":\"rffbdd082b6a0\",\"evidence_ids\":[],\"reason\":\"Tests calibration of the largest viewed center prediction while avoiding its near-duplicate.\"},{\"id\":\"r5e559799d1ec\",\"evidence_ids\":[\"rb5b77bc77638\",\"rfd796c6831e0\"],\"reason\":\"Center prediction is near zero despite a much higher q90. Its response will test whether this model behavior corresponds to a genuinely low outcome; the viewed low observed responses are still above 3.7.\"},{\"id\":\"r1e04118171f1\",\"evidence_ids\":[\"rb5b77bc77638\"],\"reason\":\"A second low-center, high-q90 case in a different scaffold and numerical region tests whether the near-zero-center behavior extends beyond one group.\"},{\"id\":\"r7cf9807c7193\",\"evidence_ids\":[\"r8d2dfc1e4034\",\"re970bd0e69b4\"],\"reason\":\"Same scaffold group as two high measured responses, but with different numerical inputs. Tests whether their high outcomes extend to this high-coverage row.\"},{\"id\":\"r4264ec388c7c\",\"evidence_ids\":[\"r5f509c3c2604\"],\"reason\":\"Same scaffold group and nearby numerical inputs as the highest viewed measured response; tests whether that outcome transfers despite changes in x04 and x10.\"},{\"id\":\"rc6868656b2a7\",\"evidence_ids\":[\"rd9e198560b6a\"],\"reason\":\"Same scaffold group as a measured response of 21.45, with larger x00 and x01. Tests local transfer where the model center is also near 21.\"},{\"id\":\"r3c30e4fe8157\",\"evidence_ids\":[\"rff93c661d463\"],\"reason\":\"Near a measured response of 22 with matching displayed numerical inputs but distinct exact identity; tests local predictive consistency.\"},{\"id\":\"r3d924c6fb0ed\",\"evidence_ids\":[\"r6836ae813ae0\",\"r6f552f80f346\"],\"reason\":\"Same scaffold group as measured responses of 47.2 and 33.5 at smaller x00; tests whether those high outcomes persist as x00 changes.\"},{\"id\":\"r806595dc3504\",\"evidence_ids\":[],\"reason\":\"Exploratory intermediate-center row in a scaffold also represented by the low-center selection r92825ff7ad79; helps resolve whether the model's sharp prediction contrast reflects the numerical inputs.\"},{\"id\":\"r260fe70ee7af\",\"evidence_ids\":[],\"reason\":\"High-coverage, low-x09 row with center near 26. Complements the pending rows in its scaffold group by probing a different x09 and x10 setting.\"},{\"id\":\"r92825ff7ad79\",\"evidence_ids\":[],\"reason\":\"Tests a pronounced center-versus-q90 disagreement at moderate coverage. Quantile width is used to identify model behavior, not as calibrated uncertainty.\"},{\"id\":\"r7b0f8ff49a5f\",\"evidence_ids\":[\"r9420053622f5\"],\"reason\":\"Same scaffold group and close numerical inputs as a measured response of 7.63; tests local transfer at a center prediction near 10.\"},{\"id\":\"r994bdbf08652\",\"evidence_ids\":[],\"reason\":\"Exploratory high-coverage row with an intermediate center prediction; supplies breadth between the selected prediction extremes.\"}],\"hypotheses\":[{\"id\":\"h1\",\"claim\":\"The elevated responses seen in scaffold group 82e0b05966f30d5b may extend to the selected row, above its center prediction.\",\"evidence_ids\":[\"r8d2dfc1e4034\",\"re970bd0e69b4\"],\"alternative\":\"The high responses are specific to their exact identities or numerical settings.\",\"expected_sign\":-1,\"candidate_ids\":[\"r7cf9807c7193\"],\"learning_value\":\"Separates scaffold-level transfer from local exceptions in a high-coverage region.\"},{\"id\":\"h2\",\"claim\":\"The high response measured in scaffold group 9fb562e7496216e4 may transfer to a nearby numerical row.\",\"evidence_ids\":[\"r5f509c3c2604\"],\"alternative\":\"Changes in x04, x10 or exact identity account for a substantially lower response.\",\"expected_sign\":-1,\"candidate_ids\":[\"r4264ec388c7c\"],\"learning_value\":\"Tests whether an influential high measured response should inform nearby predictions.\"},{\"id\":\"h3\",\"claim\":\"Near-zero center predictions on the selected rows may underpredict their responses.\",\"evidence_ids\":[\"rb5b77bc77638\",\"rfd796c6831e0\"],\"alternative\":\"These unmeasured regions have responses below those of the viewed low-response records.\",\"expected_sign\":-1,\"candidate_ids\":[\"r5e559799d1ec\",\"r1e04118171f1\"],\"learning_value\":\"Checks a potential center-prediction failure across two distinct groups; the observed minimum is suggestive, not a response bound.\"},{\"id\":\"h4\",\"claim\":\"Measured high responses within scaffold group e82055973bd7359a may extend to its selected row.\",\"evidence_ids\":[\"r6836ae813ae0\",\"r6f552f80f346\"],\"alternative\":\"The larger x00 or exact identity lowers the response toward the model center.\",\"expected_sign\":0,\"candidate_ids\":[\"r3d924c6fb0ed\"],\"learning_value\":\"Distinguishes group-level signal from sensitivity to the changed numerical inputs.\"},{\"id\":\"h5\",\"claim\":\"A measured response of 21.45 may be locally informative for another row in the same scaffold group.\",\"evidence_ids\":[\"rd9e198560b6a\"],\"alternative\":\"The changes in x00 and x01 materially change the response.\",\"expected_sign\":0,\"candidate_ids\":[\"rc6868656b2a7\"],\"learning_value\":\"Tests local transfer without assuming a directional error.\"}],\"feedback_interpretation\":\"Round zero has no prior batch feedback or previous hypotheses to revise. The viewed observed responses are initial measurements and have no premeasurement signed errors. High and low measured examples motivate local tests but do not establish mechanisms; center predictions and quantile outputs describe model behavior, while coverage describes distance to labeled rows.\",\"batch_rationale\":\"The 16 rows complement the 16 pending rows, which already emphasize high coverage and elevated center predictions. The selection adds distinct high-coverage regions, two near-zero-center cases, intermediate predictions, and local tests against viewed measured responses. Near-duplicates were generally avoided so the batch emphasizes predictive accuracy across the fixed Row distribution rather than maximizing selected responses.\"}",
+  "provenance": {
+    "response_id": "resp_0714625c700eafed016ab93e67f5e887d198e6eef43c92cfc9",
+    "served_model": "gpt-6-sol",
+    "usage": {
+      "attribution": {
+        "items": {
+          "msg_0714625c700eafed016ab93e67fcf487d1b7881d6ee66690a3": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 4145,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 4145,
+                "input_tokens": 4145,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 4145,
+            "output_tokens": 0
+          },
+          "msg_0714625c700eafed016ab93e67fd0c87d18f46caf91e6bb5f0": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 116,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 116,
+                "input_tokens": 116,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 116,
+            "output_tokens": 0
+          },
+          "msg_0714625c700eafed016ab93e67fd2087d1bcc7e2433ab0b4f9": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 10360,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 10360,
+                "input_tokens": 10360,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 10360,
+            "output_tokens": 0
+          },
+          "msg_0714625c700eafed016ab93e67fd3487d18b02646156e24d6e": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 198,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 198,
+                "input_tokens": 198,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 198,
+            "output_tokens": 0
+          },
+          "msg_0714625c700eafed016ab93e67fd4487d1bb8db36ff9fae0c2": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 23305,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 23305,
+                "input_tokens": 23305,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 23305,
+            "output_tokens": 0
+          },
+          "msg_0714625c700eafed016ab93e67fd5487d1b8abfced3e26e477": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 370,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 370,
+                "input_tokens": 370,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 370,
+            "output_tokens": 0
+          },
+          "msg_0714625c700eafed016ab93e67fd6487d1a8d45e01565fe43d": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 32250,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 32250,
+                "input_tokens": 32445,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 32445,
+            "output_tokens": 0
+          },
+          "msg_0714625c700eafed016ab93e67fd7487d198e1cbda048726b1": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 280,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 280,
+            "output_tokens": 0
+          },
+          "msg_0714625c700eafed016ab93e67fd8487d1a65f0bc522f29f58": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 22086,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 22086,
+            "output_tokens": 0
+          },
+          "rs_0714625c700eafed016ab93e69030487d1813f14292d79bc0f": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_0714625c700eafed016ab93e771f7887d1a0863ad91fd5b456": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 322
+          },
+          "msg_0714625c700eafed016ab93e7f5f2487d1a7a612911e7c90e8": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 1579
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 1579
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 5032,
+            "input_tokens": 5032,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 98339,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 75776
+      },
+      "output_tokens": 2417,
+      "output_tokens_details": {
+        "reasoning_tokens": 838
+      },
+      "total_tokens": 100756
+    },
+    "native_tool_calls": 0
+  }
+}

@@ -1,0 +1,2236 @@
+{
+  "queries": [
+    {
+      "pool": "candidates",
+      "similar_to": "r82e670062514",
+      "min_similarity": 0.65,
+      "offset": 0,
+      "limit": 24,
+      "sort_by": "similarity",
+      "order": "desc"
+    },
+    {
+      "pool": "candidates",
+      "similar_to": "re4c43efa484a",
+      "min_similarity": 0.65,
+      "offset": 0,
+      "limit": 24,
+      "sort_by": "similarity",
+      "order": "desc"
+    },
+    {
+      "pool": "candidates",
+      "similar_to": "rad20b059065a",
+      "min_similarity": 0.65,
+      "offset": 0,
+      "limit": 24,
+      "sort_by": "similarity",
+      "order": "desc"
+    },
+    {
+      "pool": "candidates",
+      "similar_to": "rc23e6c2d4e4d",
+      "min_similarity": 0.65,
+      "offset": 0,
+      "limit": 24,
+      "sort_by": "similarity",
+      "order": "desc"
+    },
+    {
+      "pool": "candidates",
+      "similar_to": "r6bd4655f4455",
+      "min_similarity": 0.65,
+      "offset": 0,
+      "limit": 24,
+      "sort_by": "similarity",
+      "order": "desc"
+    },
+    {
+      "pool": "candidates",
+      "similar_to": "r5ae05f023c35",
+      "min_similarity": 0.65,
+      "offset": 0,
+      "limit": 24,
+      "sort_by": "similarity",
+      "order": "desc"
+    },
+    {
+      "pool": "candidates",
+      "similar_to": "rd02449092124",
+      "min_similarity": 0.65,
+      "offset": 0,
+      "limit": 24,
+      "sort_by": "similarity",
+      "order": "desc"
+    }
+  ],
+  "results": [
+    {
+      "pool": "candidates",
+      "total_matches": 7,
+      "offset": 0,
+      "next_offset": null,
+      "records": [
+        {
+          "id": "r6d1b795f5e1e",
+          "identity": "ad4081e1b17241ba",
+          "scaffold_group": "30b4f637cfc5cf63",
+          "MW": 357.40900000000005,
+          "LogP": 4.370200000000004,
+          "TPSA": 58.89,
+          "HBD": 1,
+          "HBA": 4,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 3,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 0.8,
+          "smiles": "COc1cccc([C@@H]2Cc3ccccc3C(=O)C(c3ccccc3O)=N2)c1",
+          "scaffold": "O=C1C(c2ccccc2)=NC(c2ccccc2)Cc2ccccc21",
+          "functional_groups": [
+            "Ar_OH",
+            "NH0",
+            "ether",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 8,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 14.611801147460938,
+          "pred_center": 17.854042053222656,
+          "pred_q90": 19.096267700195312,
+          "coverage": 0.9525522824375984,
+          "similarity": 1.0
+        },
+        {
+          "id": "r74436d3c8dd6",
+          "identity": "bb60328c79d3ff35",
+          "scaffold_group": "30b4f637cfc5cf63",
+          "MW": 357.40900000000005,
+          "LogP": 4.370200000000004,
+          "TPSA": 58.89,
+          "HBD": 1,
+          "HBA": 4,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 3,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.03,
+          "flow": 0.7,
+          "smiles": "COc1ccc([C@H]2Cc3ccccc3C(=O)C(c3ccccc3O)=N2)cc1",
+          "scaffold": "O=C1C(c2ccccc2)=NC(c2ccccc2)Cc2ccccc21",
+          "functional_groups": [
+            "Ar_OH",
+            "NH0",
+            "ether",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 8,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 19.791759490966797,
+          "pred_center": 22.412385940551758,
+          "pred_q90": 25.471410751342773,
+          "coverage": 0.992804137620868,
+          "similarity": 0.78
+        },
+        {
+          "id": "r42bb172a01b3",
+          "identity": "6ad89f1e891febf0",
+          "scaffold_group": "30b4f637cfc5cf63",
+          "MW": 357.40900000000005,
+          "LogP": 4.370200000000004,
+          "TPSA": 58.89,
+          "HBD": 1,
+          "HBA": 4,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 3,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.03,
+          "flow": 0.7,
+          "smiles": "COc1ccc([C@@H]2Cc3ccccc3C(=O)C(c3ccccc3O)=N2)cc1",
+          "scaffold": "O=C1C(c2ccccc2)=NC(c2ccccc2)Cc2ccccc21",
+          "functional_groups": [
+            "Ar_OH",
+            "NH0",
+            "ether",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 8,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 17.553468704223633,
+          "pred_center": 19.666954040527344,
+          "pred_q90": 21.561491012573242,
+          "coverage": 0.9849336631436924,
+          "similarity": 0.78
+        },
+        {
+          "id": "rcc4f5b01ddb7",
+          "identity": "ba1f87717b1b6dd5",
+          "scaffold_group": "30b4f637cfc5cf63",
+          "MW": 341.4100000000001,
+          "LogP": 4.670020000000004,
+          "TPSA": 49.66,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 2,
+          "aromatic_rings": 3,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.03,
+          "flow": 0.7,
+          "smiles": "Cc1cccc([C@H]2Cc3ccccc3C(=O)C(c3ccccc3O)=N2)c1",
+          "scaffold": "O=C1C(c2ccccc2)=NC(c2ccccc2)Cc2ccccc21",
+          "functional_groups": [
+            "Ar_OH",
+            "NH0",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 7,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 14.755583763122559,
+          "pred_center": 17.902379989624023,
+          "pred_q90": 20.591632843017578,
+          "coverage": 0.9905554306273893,
+          "similarity": 0.7450980392156863
+        },
+        {
+          "id": "rc85e692aae88",
+          "identity": "0e618c9a91ca5b72",
+          "scaffold_group": "30b4f637cfc5cf63",
+          "MW": 341.4100000000001,
+          "LogP": 4.670020000000004,
+          "TPSA": 49.66,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 2,
+          "aromatic_rings": 3,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.03,
+          "flow": 0.7,
+          "smiles": "Cc1cccc([C@@H]2Cc3ccccc3C(=O)C(c3ccccc3O)=N2)c1",
+          "scaffold": "O=C1C(c2ccccc2)=NC(c2ccccc2)Cc2ccccc21",
+          "functional_groups": [
+            "Ar_OH",
+            "NH0",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 7,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 8.756535530090332,
+          "pred_center": 11.32048225402832,
+          "pred_q90": 12.737884521484375,
+          "coverage": 0.7863728356195188,
+          "similarity": 0.7450980392156863
+        },
+        {
+          "id": "rc70211c80698",
+          "identity": "8971c40fde1e2af1",
+          "scaffold_group": "30b4f637cfc5cf63",
+          "MW": 327.38300000000004,
+          "LogP": 4.361600000000004,
+          "TPSA": 49.660000000000004,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 2,
+          "aromatic_rings": 3,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.03,
+          "flow": 0.7,
+          "smiles": "O=C1C(c2ccccc2O)=N[C@@H](c2ccccc2)Cc2ccccc21",
+          "scaffold": "O=C1C(c2ccccc2)=NC(c2ccccc2)Cc2ccccc21",
+          "functional_groups": [
+            "Ar_OH",
+            "NH0",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 9,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 8.508148193359375,
+          "pred_center": 11.221263885498047,
+          "pred_q90": 12.323649406433105,
+          "coverage": 0.5077580391275017,
+          "similarity": 0.7083333333333334
+        },
+        {
+          "id": "r8fd90713d2e9",
+          "identity": "65a579a992b1abe3",
+          "scaffold_group": "30b4f637cfc5cf63",
+          "MW": 341.4100000000001,
+          "LogP": 4.670020000000004,
+          "TPSA": 49.66,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 2,
+          "aromatic_rings": 3,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.03,
+          "flow": 0.7,
+          "smiles": "Cc1ccc([C@H]2Cc3ccccc3C(=O)C(c3ccccc3O)=N2)cc1",
+          "scaffold": "O=C1C(c2ccccc2)=NC(c2ccccc2)Cc2ccccc21",
+          "functional_groups": [
+            "Ar_OH",
+            "NH0",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 7,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 14.848150253295898,
+          "pred_center": 18.080493927001953,
+          "pred_q90": 20.84014129638672,
+          "coverage": 0.983809309646953,
+          "similarity": 0.6538461538461539
+        }
+      ]
+    },
+    {
+      "pool": "candidates",
+      "total_matches": 20,
+      "offset": 0,
+      "next_offset": null,
+      "records": [
+        {
+          "id": "r7c4ad1a14605",
+          "identity": "f0172d79d34b8357",
+          "scaffold_group": "4f3db1c42c860ee5",
+          "MW": 319.286,
+          "LogP": 3.096700000000001,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 4,
+          "aromatic_rings": 2,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.15,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc(-c2ccccc2)cc1)[C@@H](N)C(F)(F)F",
+          "scaffold": "c1ccc(-c2ccccc2)cc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 16.859046936035156,
+          "pred_center": 20.21886444091797,
+          "pred_q90": 22.092329025268555,
+          "coverage": 0.9709916797841242,
+          "similarity": 1.0
+        },
+        {
+          "id": "r22b7d8cee6c6",
+          "identity": "b2c9b9f81af3cb13",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 243.18799999999996,
+          "LogP": 1.4296999999999997,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.15,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccccc1)[C@@H](N)C(F)(F)F",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 8.932929992675781,
+          "pred_center": 10.723371505737305,
+          "pred_q90": 12.090563774108887,
+          "coverage": 0.47290308072858106,
+          "similarity": 0.8333333333333334
+        },
+        {
+          "id": "r0aded51ace80",
+          "identity": "2c418fe9316beadd",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 243.18799999999996,
+          "LogP": 1.4296999999999997,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.15,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccccc1)[C@H](N)C(F)(F)F",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 6.8502116203308105,
+          "pred_center": 8.550775527954102,
+          "pred_q90": 9.42092227935791,
+          "coverage": 0.38565324938160556,
+          "similarity": 0.8333333333333334
+        },
+        {
+          "id": "r66c0682a17f1",
+          "identity": "5ebefb639bbaeabe",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 261.17799999999994,
+          "LogP": 1.5688,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.15,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc(F)cc1)[C@@H](N)C(F)(F)F",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 8.055615425109863,
+          "pred_center": 10.725385665893555,
+          "pred_q90": 11.641441345214844,
+          "coverage": 0.44434450191140096,
+          "similarity": 0.717948717948718
+        },
+        {
+          "id": "r47e31948bd79",
+          "identity": "9aceee2566eab901",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 261.17799999999994,
+          "LogP": 1.5688,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.15,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc(F)cc1)[C@H](N)C(F)(F)F",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 6.367392063140869,
+          "pred_center": 9.024862289428711,
+          "pred_q90": 9.776254653930664,
+          "coverage": 0.4108387677085676,
+          "similarity": 0.717948717948718
+        },
+        {
+          "id": "rdb3186057736",
+          "identity": "8ea5a59cf0887b4f",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 322.08399999999995,
+          "LogP": 2.1921999999999997,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc(Br)cc1)[C@@H](N)C(F)(F)F",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 12.237354278564453,
+          "pred_center": 15.185277938842773,
+          "pred_q90": 15.787879943847656,
+          "coverage": 0.4699797616370587,
+          "similarity": 0.7
+        },
+        {
+          "id": "rf647a1bb370a",
+          "identity": "387d9fd5cfbfba80",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 311.18499999999995,
+          "LogP": 2.4485,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc(C(F)(F)F)cc1)[C@H](N)C(F)(F)F",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 16.176395416259766,
+          "pred_center": 19.106218338012695,
+          "pred_q90": 20.219512939453125,
+          "coverage": 0.8023386552732179,
+          "similarity": 0.7
+        },
+        {
+          "id": "rd01fee0c1adf",
+          "identity": "e303c9aadb600c21",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 277.633,
+          "LogP": 2.0831,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc(Cl)cc1)[C@@H](N)C(F)(F)F",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 13.896158218383789,
+          "pred_center": 16.797439575195312,
+          "pred_q90": 17.636734008789062,
+          "coverage": 0.5817404992129526,
+          "similarity": 0.7
+        },
+        {
+          "id": "rc045d25b8bb6",
+          "identity": "6de99f71dbf63326",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 257.215,
+          "LogP": 1.7381199999999999,
+          "TPSA": 79.49,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.15,
+          "flow": 1.0,
+          "smiles": "Cc1ccc(C(=O)C(=[N+]=[N-])[C@@H](N)C(F)(F)F)cc1",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 12,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 10.015909194946289,
+          "pred_center": 12.682588577270508,
+          "pred_q90": 13.596406936645508,
+          "coverage": 0.559253429278165,
+          "similarity": 0.7
+        },
+        {
+          "id": "ra39e4e7adbdd",
+          "identity": "96ab81f5fb3ccdd1",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 277.633,
+          "LogP": 2.0831,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc(Cl)cc1)[C@H](N)C(F)(F)F",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 11.284639358520508,
+          "pred_center": 14.071457862854004,
+          "pred_q90": 14.425554275512695,
+          "coverage": 0.5801664043175174,
+          "similarity": 0.7
+        },
+        {
+          "id": "r1fee9214748b",
+          "identity": "8d6d51f6684e82ed",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 311.18499999999995,
+          "LogP": 2.4485,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc(C(F)(F)F)cc1)[C@@H](N)C(F)(F)F",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 18.437843322753906,
+          "pred_center": 21.57612419128418,
+          "pred_q90": 23.09980010986328,
+          "coverage": 0.8248257252080053,
+          "similarity": 0.7
+        },
+        {
+          "id": "r9568e1f8862e",
+          "identity": "e4179598becfb9ed",
+          "scaffold_group": "2860f6641e0cd734",
+          "MW": 293.248,
+          "LogP": 2.5829000000000004,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 2,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc2ccccc2c1)[C@H](N)C(F)(F)F",
+          "scaffold": "c1ccc2ccccc2c1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 9.962549209594727,
+          "pred_center": 12.32871150970459,
+          "pred_q90": 12.964921951293945,
+          "coverage": 0.6217674836968743,
+          "similarity": 0.6744186046511628
+        },
+        {
+          "id": "r338f35a6865a",
+          "identity": "d052b3993d13db71",
+          "scaffold_group": "2860f6641e0cd734",
+          "MW": 293.248,
+          "LogP": 2.5829000000000004,
+          "TPSA": 79.49000000000001,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 2,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc2ccccc2c1)[C@@H](N)C(F)(F)F",
+          "scaffold": "c1ccc2ccccc2c1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 11.827681541442871,
+          "pred_center": 14.412976264953613,
+          "pred_q90": 15.410809516906738,
+          "coverage": 0.6163705869125253,
+          "similarity": 0.6744186046511628
+        },
+        {
+          "id": "re9fe0cf9686c",
+          "identity": "d9047041e28f4a1d",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 289.2819999999999,
+          "LogP": 2.1516,
+          "TPSA": 79.49,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 4,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "CSc1ccc(C(=O)C(=[N+]=[N-])[C@H](N)C(F)(F)F)cc1",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 13,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 13.454500198364258,
+          "pred_center": 16.24374008178711,
+          "pred_q90": 17.069581985473633,
+          "coverage": 0.5502586013042501,
+          "similarity": 0.6511627906976745
+        },
+        {
+          "id": "r14489966aba1",
+          "identity": "12d478d069972df3",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 273.21399999999994,
+          "LogP": 1.4383,
+          "TPSA": 88.72,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 4,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.15,
+          "flow": 1.0,
+          "smiles": "COc1ccc(C(=O)C(=[N+]=[N-])[C@@H](N)C(F)(F)F)cc1",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ether",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 13,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 9.856419563293457,
+          "pred_center": 12.7816743850708,
+          "pred_q90": 13.951072692871094,
+          "coverage": 0.6465032606251405,
+          "similarity": 0.6511627906976745
+        },
+        {
+          "id": "re92867bf1017",
+          "identity": "5d9f7d119c933680",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 301.224,
+          "LogP": 1.2163000000000002,
+          "TPSA": 105.79,
+          "HBD": 1,
+          "HBA": 4,
+          "rotatable_bonds": 4,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "COC(=O)c1ccc(C(=O)C(=[N+]=[N-])[C@H](N)C(F)(F)F)cc1",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ester",
+            "ether",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 15,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 10.470762252807617,
+          "pred_center": 13.256521224975586,
+          "pred_q90": 14.317015647888184,
+          "coverage": 0.5480098943107713,
+          "similarity": 0.6511627906976745
+        },
+        {
+          "id": "rc60e40ee0c70",
+          "identity": "cbd88b6961c95060",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 268.198,
+          "LogP": 1.30138,
+          "TPSA": 103.28,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "N#Cc1ccc(C(=O)C(=[N+]=[N-])[C@H](N)C(F)(F)F)cc1",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ketone",
+            "halogen",
+            "nitrile"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 20.944128036499023,
+          "pred_center": 24.147377014160156,
+          "pred_q90": 25.81836700439453,
+          "coverage": 0.19631212053069486,
+          "similarity": 0.6511627906976745
+        },
+        {
+          "id": "rbe6a17642309",
+          "identity": "fe1c13f3385ecd38",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 273.21399999999994,
+          "LogP": 1.4383,
+          "TPSA": 88.72,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 4,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.15,
+          "flow": 1.0,
+          "smiles": "COc1ccc(C(=O)C(=[N+]=[N-])[C@H](N)C(F)(F)F)cc1",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ether",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 13,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 11.643023490905762,
+          "pred_center": 14.748933792114258,
+          "pred_q90": 16.341848373413086,
+          "coverage": 0.6575219248931864,
+          "similarity": 0.6511627906976745
+        },
+        {
+          "id": "rd84b5f7b5ad3",
+          "identity": "57c0cae352de9085",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 327.1839999999999,
+          "LogP": 2.3283000000000005,
+          "TPSA": 88.72000000000001,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 4,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc(OC(F)(F)F)cc1)[C@@H](N)C(F)(F)F",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ether",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 12.011555671691895,
+          "pred_center": 14.80699348449707,
+          "pred_q90": 15.965391159057617,
+          "coverage": 0.5812907578142568,
+          "similarity": 0.6511627906976745
+        },
+        {
+          "id": "r6b3fc64d8357",
+          "identity": "14efb44a482d6c40",
+          "scaffold_group": "7165dcf6be1f831d",
+          "MW": 327.1839999999999,
+          "LogP": 2.3283000000000005,
+          "TPSA": 88.72000000000001,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 4,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 1.0,
+          "smiles": "[N-]=[N+]=C(C(=O)c1ccc(OC(F)(F)F)cc1)[C@H](N)C(F)(F)F",
+          "scaffold": "c1ccccc1",
+          "functional_groups": [
+            "NH0",
+            "NH2",
+            "ether",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 10.325465202331543,
+          "pred_center": 12.977616310119629,
+          "pred_q90": 13.832075119018555,
+          "coverage": 0.5154036429053295,
+          "similarity": 0.6511627906976745
+        }
+      ]
+    },
+    {
+      "pool": "candidates",
+      "total_matches": 1,
+      "offset": 0,
+      "next_offset": null,
+      "records": [
+        {
+          "id": "r6508fee7c8b3",
+          "identity": "b015dd5bb756e1dc",
+          "scaffold_group": "c22c2769c4a62c0b",
+          "MW": 292.334,
+          "LogP": 3.7302000000000026,
+          "TPSA": 46.53,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 4,
+          "aromatic_rings": 3,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 0.8,
+          "smiles": "O=C(OC[C@H](O)c1ccccc1)c1cccc2ccccc12",
+          "scaffold": "O=C(OCCc1ccccc1)c1cccc2ccccc12",
+          "functional_groups": [
+            "Al_OH",
+            "ester",
+            "ether"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 15.754361152648926,
+          "pred_center": 18.541580200195312,
+          "pred_q90": 19.969463348388672,
+          "coverage": 0.9480548684506409,
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "pool": "candidates",
+      "total_matches": 27,
+      "offset": 0,
+      "next_offset": 24,
+      "records": [
+        {
+          "id": "r2a7c36761b3f",
+          "identity": "9332ed1b0b882751",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 252.31300000000002,
+          "LogP": 3.200000000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@@H](c1ccccc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 5.264775276184082,
+          "pred_center": 6.87249231338501,
+          "pred_q90": 7.971445083618164,
+          "coverage": 0.706993478749719,
+          "similarity": 0.7027027027027027
+        },
+        {
+          "id": "rbbfdf14f13cd",
+          "identity": "9332ed1b0b882751",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 252.31300000000002,
+          "LogP": 3.200000000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@@H](c1ccccc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 5.093393325805664,
+          "pred_center": 6.795989513397217,
+          "pred_q90": 7.714186668395996,
+          "coverage": 0.6626939509781875,
+          "similarity": 0.7027027027027027
+        },
+        {
+          "id": "r506d1df1ec55",
+          "identity": "69abc5846df2fab3",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 252.31300000000002,
+          "LogP": 3.200000000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccccc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 8.686321258544922,
+          "pred_center": 11.01286506652832,
+          "pred_q90": 12.369714736938477,
+          "coverage": 0.6818079604227569,
+          "similarity": 0.7027027027027027
+        },
+        {
+          "id": "r86e84ef8fb7c",
+          "identity": "69abc5846df2fab3",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 252.31300000000002,
+          "LogP": 3.200000000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccccc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 7.751939296722412,
+          "pred_center": 9.99616813659668,
+          "pred_q90": 11.235854148864746,
+          "coverage": 0.5824151113109962,
+          "similarity": 0.7027027027027027
+        },
+        {
+          "id": "rece3b555ccb4",
+          "identity": "69abc5846df2fab3",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 252.31300000000002,
+          "LogP": 3.200000000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccccc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 8.41392993927002,
+          "pred_center": 10.819317817687988,
+          "pred_q90": 12.106319427490234,
+          "coverage": 0.6388576568473128,
+          "similarity": 0.7027027027027027
+        },
+        {
+          "id": "ree0c2054d882",
+          "identity": "69abc5846df2fab3",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 252.31300000000002,
+          "LogP": 3.200000000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccccc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 8.13836669921875,
+          "pred_center": 10.468826293945312,
+          "pred_q90": 11.752163887023926,
+          "coverage": 0.6004047672588262,
+          "similarity": 0.7027027027027027
+        },
+        {
+          "id": "r226f20ce2e7a",
+          "identity": "4dd293b2e4b855fd",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 252.31300000000002,
+          "LogP": 3.200000000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@@H](c1ccccc1)[C@@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            },
+            {
+              "atom": 2,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 9.769598007202148,
+          "pred_center": 12.572644233703613,
+          "pred_q90": 13.964020729064941,
+          "coverage": 0.7542163256127726,
+          "similarity": 0.7027027027027027
+        },
+        {
+          "id": "re902ddcd1d64",
+          "identity": "4dd293b2e4b855fd",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 252.31300000000002,
+          "LogP": 3.200000000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@@H](c1ccccc1)[C@@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            },
+            {
+              "atom": 2,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 8.976046562194824,
+          "pred_center": 11.642401695251465,
+          "pred_q90": 12.908154487609863,
+          "coverage": 0.620643130200135,
+          "similarity": 0.7027027027027027
+        },
+        {
+          "id": "r8268d798a0d3",
+          "identity": "7b8897f88462d774",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 252.31300000000002,
+          "LogP": 3.200000000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccccc1)[C@@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "R"
+            },
+            {
+              "atom": 2,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 12.512537002563477,
+          "pred_center": 15.37116527557373,
+          "pred_q90": 16.904521942138672,
+          "coverage": 0.8315718461884416,
+          "similarity": 0.7027027027027027
+        },
+        {
+          "id": "r9437ef329089",
+          "identity": "53540a5df82cfcd0",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 266.34,
+          "LogP": 3.508420000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccc(C)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 7,
+              "CIP": "R"
+            },
+            {
+              "atom": 10,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 9.30105972290039,
+          "pred_center": 11.638816833496094,
+          "pred_q90": 13.648689270019531,
+          "coverage": 0.9046548234765011,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "rf7c9be3dc626",
+          "identity": "53540a5df82cfcd0",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 266.34,
+          "LogP": 3.508420000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccc(C)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 7,
+              "CIP": "R"
+            },
+            {
+              "atom": 10,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 9.690375328063965,
+          "pred_center": 12.016827583312988,
+          "pred_q90": 14.050957679748535,
+          "coverage": 0.926242410613897,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "r3fc2b5c94437",
+          "identity": "53540a5df82cfcd0",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 266.34,
+          "LogP": 3.508420000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccc(C)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 7,
+              "CIP": "R"
+            },
+            {
+              "atom": 10,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 8.214312553405762,
+          "pred_center": 10.346884727478027,
+          "pred_q90": 12.18259048461914,
+          "coverage": 0.8000899482797391,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "r8096d0a941bb",
+          "identity": "8116b61121a4f6a7",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 270.303,
+          "LogP": 3.339100000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccc(F)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 10.008811950683594,
+          "pred_center": 12.05610466003418,
+          "pred_q90": 13.921859741210938,
+          "coverage": 0.7829997751293006,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "rf1cd4c50a857",
+          "identity": "da3e8420c257d80f",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 286.758,
+          "LogP": 3.8534000000000033,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@@H](c1ccc(Cl)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 10.966414451599121,
+          "pred_center": 12.918251037597656,
+          "pred_q90": 15.01252269744873,
+          "coverage": 0.8895884866201934,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "rb73c551ac73e",
+          "identity": "54f21a8ef3d1c29c",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 266.34,
+          "LogP": 3.508420000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@@H](c1ccc(C)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 7,
+              "CIP": "S"
+            },
+            {
+              "atom": 10,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 12.756145477294922,
+          "pred_center": 15.537251472473145,
+          "pred_q90": 17.313447952270508,
+          "coverage": 0.8747470204632336,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "rcb1c77bcae42",
+          "identity": "4481c334f262b091",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 331.209,
+          "LogP": 3.962500000000003,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccc(Br)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 11.722105026245117,
+          "pred_center": 14.39006519317627,
+          "pred_q90": 16.579063415527344,
+          "coverage": 0.8246008545086575,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "r646d6d17907f",
+          "identity": "da3e8420c257d80f",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 286.758,
+          "LogP": 3.8534000000000033,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@@H](c1ccc(Cl)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 10.929299354553223,
+          "pred_center": 12.941948890686035,
+          "pred_q90": 15.038405418395996,
+          "coverage": 0.8922869350123679,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "r4f376e5384d0",
+          "identity": "54f21a8ef3d1c29c",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 266.34,
+          "LogP": 3.508420000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@@H](c1ccc(C)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 7,
+              "CIP": "S"
+            },
+            {
+              "atom": 10,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 12.720253944396973,
+          "pred_center": 15.497584342956543,
+          "pred_q90": 17.272451400756836,
+          "coverage": 0.8733977962671464,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "r485d4b5242a2",
+          "identity": "4153c533468ebe7d",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 286.758,
+          "LogP": 3.8534000000000033,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccc(Cl)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 8.194823265075684,
+          "pred_center": 10.279623031616211,
+          "pred_q90": 11.859572410583496,
+          "coverage": 0.5457611873172925,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "r49df50a931af",
+          "identity": "8116b61121a4f6a7",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 270.303,
+          "LogP": 3.339100000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccc(F)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 8.627991676330566,
+          "pred_center": 10.821276664733887,
+          "pred_q90": 12.477879524230957,
+          "coverage": 0.73757589386103,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "r2a67e11e1919",
+          "identity": "5c2db539b394983e",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 331.209,
+          "LogP": 3.962500000000003,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@@H](c1ccc(Br)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 10.087074279785156,
+          "pred_center": 11.84117317199707,
+          "pred_q90": 14.017050743103027,
+          "coverage": 0.8495615021362717,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "r0232daec041d",
+          "identity": "53540a5df82cfcd0",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 266.34,
+          "LogP": 3.508420000000002,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccc(C)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone"
+          ],
+          "stereocenters": [
+            {
+              "atom": 7,
+              "CIP": "R"
+            },
+            {
+              "atom": 10,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 7.479378700256348,
+          "pred_center": 9.389493942260742,
+          "pred_q90": 11.045555114746094,
+          "coverage": 0.7701821452664718,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "rad2234a56eaa",
+          "identity": "4481c334f262b091",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 331.209,
+          "LogP": 3.962500000000003,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@H](c1ccc(Br)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 12.155326843261719,
+          "pred_center": 14.79694652557373,
+          "pred_q90": 16.995140075683594,
+          "coverage": 0.870474477175624,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "r2d9e1c19da81",
+          "identity": "5c2db539b394983e",
+          "scaffold_group": "f8017c0c8bbddb2c",
+          "MW": 331.209,
+          "LogP": 3.962500000000003,
+          "TPSA": 37.3,
+          "HBD": 1,
+          "HBA": 2,
+          "rotatable_bonds": 5,
+          "aromatic_rings": 2,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.5,
+          "smiles": "C=C[C@@H](c1ccc(Br)cc1)[C@H](O)C(=O)c1ccccc1",
+          "scaffold": "O=C(CCc1ccccc1)c1ccccc1",
+          "functional_groups": [
+            "Al_OH",
+            "ketone",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            },
+            {
+              "atom": 2,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 8.862600326538086,
+          "pred_center": 10.797469139099121,
+          "pred_q90": 12.240870475769043,
+          "coverage": 0.9183719361367214,
+          "similarity": 0.6585365853658537
+        }
+      ]
+    },
+    {
+      "pool": "candidates",
+      "total_matches": 5,
+      "offset": 0,
+      "next_offset": null,
+      "records": [
+        {
+          "id": "r9107590c4f7e",
+          "identity": "dc3d6d565f646eeb",
+          "scaffold_group": "4c1f009855a1b8fe",
+          "MW": 235.71400000000003,
+          "LogP": 3.7992000000000026,
+          "TPSA": 21.59,
+          "HBD": 0,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 0.8,
+          "smiles": "C=C(C)C[C@H]1CC(c2ccc(Cl)cc2)=NO1",
+          "scaffold": "c1ccc(C2=NOCC2)cc1",
+          "functional_groups": [
+            "NH0",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 4,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 5.219584941864014,
+          "pred_center": 7.3719987869262695,
+          "pred_q90": 8.776659965515137,
+          "coverage": 0.659995502586013,
+          "similarity": 0.75
+        },
+        {
+          "id": "r761194109ec5",
+          "identity": "61ce336b86add50d",
+          "scaffold_group": "4c1f009855a1b8fe",
+          "MW": 235.71400000000003,
+          "LogP": 3.7992000000000026,
+          "TPSA": 21.59,
+          "HBD": 0,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 0.8,
+          "smiles": "C=C(C)C[C@@H]1CC(c2ccc(Cl)cc2)=NO1",
+          "scaffold": "c1ccc(C2=NOCC2)cc1",
+          "functional_groups": [
+            "NH0",
+            "halogen"
+          ],
+          "stereocenters": [
+            {
+              "atom": 4,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 5.6464619636535645,
+          "pred_center": 7.719173908233643,
+          "pred_q90": 9.149357795715332,
+          "coverage": 0.7492691702271194,
+          "similarity": 0.75
+        },
+        {
+          "id": "rb415d15aa1cb",
+          "identity": "789a30e145e9153c",
+          "scaffold_group": "4c1f009855a1b8fe",
+          "MW": 201.26900000000003,
+          "LogP": 3.145800000000002,
+          "TPSA": 21.59,
+          "HBD": 0,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.05,
+          "flow": 0.6,
+          "smiles": "C=C(C)C[C@@H]1CC(c2ccccc2)=NO1",
+          "scaffold": "c1ccc(C2=NOCC2)cc1",
+          "functional_groups": [
+            "NH0"
+          ],
+          "stereocenters": [
+            {
+              "atom": 4,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 4.961398124694824,
+          "pred_center": 6.7692742347717285,
+          "pred_q90": 7.929743766784668,
+          "coverage": 0.5776928266246908,
+          "similarity": 0.6585365853658537
+        },
+        {
+          "id": "r5415a27bba5c",
+          "identity": "f35da9aebc7c1df8",
+          "scaffold_group": "4c1f009855a1b8fe",
+          "MW": 229.323,
+          "LogP": 3.762640000000003,
+          "TPSA": 21.59,
+          "HBD": 0,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 0.8,
+          "smiles": "C=C(C)C[C@H]1CC(c2ccc(C)c(C)c2)=NO1",
+          "scaffold": "c1ccc(C2=NOCC2)cc1",
+          "functional_groups": [
+            "NH0"
+          ],
+          "stereocenters": [
+            {
+              "atom": 4,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 3.942227602005005,
+          "pred_center": 5.2498250007629395,
+          "pred_q90": 6.495114803314209,
+          "coverage": 0.36001798965594783,
+          "similarity": 0.6511627906976745
+        },
+        {
+          "id": "rc497cd979241",
+          "identity": "b8cec88f50daa24d",
+          "scaffold_group": "4c1f009855a1b8fe",
+          "MW": 229.323,
+          "LogP": 3.762640000000003,
+          "TPSA": 21.59,
+          "HBD": 0,
+          "HBA": 2,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 0.8,
+          "smiles": "C=C(C)C[C@@H]1CC(c2ccc(C)c(C)c2)=NO1",
+          "scaffold": "c1ccc(C2=NOCC2)cc1",
+          "functional_groups": [
+            "NH0"
+          ],
+          "stereocenters": [
+            {
+              "atom": 4,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 3.7957847118377686,
+          "pred_center": 5.108404636383057,
+          "pred_q90": 6.206260681152344,
+          "coverage": 0.28850910726332357,
+          "similarity": 0.6511627906976745
+        }
+      ]
+    },
+    {
+      "pool": "candidates",
+      "total_matches": 1,
+      "offset": 0,
+      "next_offset": null,
+      "records": [
+        {
+          "id": "r6e6452b50204",
+          "identity": "c8978ff88f72fecf",
+          "scaffold_group": "7953343be0b435d5",
+          "MW": 173.193,
+          "LogP": 1.0582,
+          "TPSA": 63.37,
+          "HBD": 1,
+          "HBA": 4,
+          "rotatable_bonds": 3,
+          "aromatic_rings": 1,
+          "chiral_centers": 1,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.1,
+          "flow": 0.8,
+          "smiles": "O=[N+]([O-])C[C@H](O)c1cccs1",
+          "scaffold": "c1ccsc1",
+          "functional_groups": [
+            "Al_OH",
+            "NH0"
+          ],
+          "stereocenters": [
+            {
+              "atom": 1,
+              "CIP": "S"
+            }
+          ],
+          "pred_q10": 20.05023193359375,
+          "pred_center": 22.1470947265625,
+          "pred_q90": 24.717748641967773,
+          "coverage": 0.7843489993253879,
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "pool": "candidates",
+      "total_matches": 1,
+      "offset": 0,
+      "next_offset": null,
+      "records": [
+        {
+          "id": "rc533b8c03f1c",
+          "identity": "e90a42a600471c70",
+          "scaffold_group": "1d5db3c6f635690e",
+          "MW": 194.23,
+          "LogP": 1.8995999999999997,
+          "TPSA": 38.69,
+          "HBD": 1,
+          "HBA": 3,
+          "rotatable_bonds": 1,
+          "aromatic_rings": 1,
+          "chiral_centers": 2,
+          "unassigned_centers": 0,
+          "ipa_fraction": 0.03,
+          "flow": 0.5,
+          "smiles": "COc1ccc2c(c1)[C@H](O)C[C@H](C)O2",
+          "scaffold": "c1ccc2c(c1)CCCO2",
+          "functional_groups": [
+            "Al_OH",
+            "ether"
+          ],
+          "stereocenters": [
+            {
+              "atom": 7,
+              "CIP": "S"
+            },
+            {
+              "atom": 10,
+              "CIP": "R"
+            }
+          ],
+          "pred_q10": 16.669384002685547,
+          "pred_center": 18.858627319335938,
+          "pred_q90": 20.730289459228516,
+          "coverage": 0.9026309871823701,
+          "similarity": 0.717948717948718
+        }
+      ]
+    }
+  ]
+}

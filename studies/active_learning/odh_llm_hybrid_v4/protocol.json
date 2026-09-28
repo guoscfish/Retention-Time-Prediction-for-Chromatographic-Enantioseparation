@@ -1,0 +1,30 @@
+{
+  "study": "odh_llm_hybrid_v4",
+  "version": "odh_llm_hybrid_v1",
+  "seed": 1525,
+  "method": [
+    "chemical_llm",
+    "masked_llm"
+  ],
+  "budgets": [
+    333,
+    365,
+    397,
+    429
+  ],
+  "batch": 16,
+  "llm": {
+    "model": "gpt-6-sol",
+    "reasoning_effort": "high",
+    "base_url": "https://token4research.cn/v1",
+    "wire_api": "responses",
+    "store": false,
+    "native_tools": [],
+    "max_output_tokens": 16000,
+    "automatic_fallback": false
+  },
+  "objective": "LCMD16 + LLM16; chemical information vs masked ablation",
+  "target": "RTv=RT*flow; central predictor output[:,1]",
+  "partition_sha256": "683d59abf2daab8e17ba00b1457928e00e59a96c70cc12398eea90ac075f1a26",
+  "test_truth_access_count": 0
+}

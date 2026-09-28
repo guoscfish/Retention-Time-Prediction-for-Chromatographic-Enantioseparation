@@ -1,0 +1,213 @@
+{
+  "request_sha256": "bb824b8c5270afdb7ef68377b93d95feb07b25f726acec644ccfe1f87536cf17",
+  "answer": "{\"type\":\"selection\",\"packet_hash\":\"ca1523b41e1af1bf279f522b0f720bb0590c592525799a63d27e404c86606ee9\",\"choices\":[{\"id\":\"rc4f7380fc05e\",\"evidence_ids\":[],\"reason\":\"High-coverage oxazolidinone; paired with its enantiomer to test whether the nearly equal center predictions miss chiral separation.\"},{\"id\":\"r13e06c8010e4\",\"evidence_ids\":[],\"reason\":\"Completes the oxazolidinone enantiomer pair and distinguishes a shared scaffold-level prediction error from an enantiomer-specific one.\"},{\"id\":\"rffbdd082b6a0\",\"evidence_ids\":[],\"reason\":\"High-coverage heteroaryl isoxazoline with an unusually high center prediction; its enantiomer provides a controlled comparison.\"},{\"id\":\"r8944df48a1b8\",\"evidence_ids\":[],\"reason\":\"Completes the heteroaryl isoxazoline pair, testing both the high predicted retention and the predicted enantiomer ordering.\"},{\"id\":\"r4264ec388c7c\",\"evidence_ids\":[\"r2073098e2dfe\",\"rb1e599f21c52\",\"rf2c574465521\",\"r5f509c3c2604\"],\"reason\":\"Tests transfer within a measured cyclic carbamate scaffold: related ester-bearing rows retained near 16 mL, while one methoxy-substituted row reached 58.5 mL.\"},{\"id\":\"r31b886e9f456\",\"evidence_ids\":[\"r962d183d3283\",\"r881bffb63248\"],\"reason\":\"A measured dibromo analog retained 49.41 mL and a dimethoxy analog 29.95 mL. This dimethyl alcohol tests whether the high center prediction reflects the shared ring geometry or substituent-specific behavior.\"},{\"id\":\"r92ce63ec96e7\",\"evidence_ids\":[],\"reason\":\"Explores an unmeasured thiophene-substituted hydroxymethyl acetal scaffold with high coverage and a high center prediction.\"},{\"id\":\"r6661ca8564c2\",\"evidence_ids\":[],\"reason\":\"A simpler phenyl nitrile ester complements the two pending nitrile esters, helping separate effects of the nitrile-ester motif from their aryl substituents.\"},{\"id\":\"rafff27982f34\",\"evidence_ids\":[\"r3a25307a1bef\"],\"reason\":\"Hydroxy ester with a different side-chain geometry from the measured hydroxy ester; also complements the pending hydroxy ester without duplicating its identity.\"},{\"id\":\"r901c4f355b50\",\"evidence_ids\":[],\"reason\":\"Measures a less substituted oxazolidinone at 0.25 recorded IPA fraction, testing transfer from the selected oxazolidinone pair at 0.05 without assuming a monotonic solvent effect.\"},{\"id\":\"rba976b41630f\",\"evidence_ids\":[],\"reason\":\"Explores a compact aryl lactam at 0.1 IPA fraction; adds a distinct scaffold and center-prediction range to the batch.\"},{\"id\":\"r400e539739b8\",\"evidence_ids\":[],\"reason\":\"A pyridyl, trifluoromethyl-substituted lactone complements the pending aryl lactones and tests whether their predictions transfer across the heteroaryl substitution and recorded conditions.\"},{\"id\":\"r97ecacc2c8e0\",\"evidence_ids\":[\"reae0807aba28\"],\"reason\":\"Explores an NH-bearing aromatic ester at 0.2 IPA fraction; the measured protected amino ester provides only a broad functional-group comparison, not an assumed retention value.\"},{\"id\":\"r74afd33527b3\",\"evidence_ids\":[],\"reason\":\"Exploratory boron-containing row with a near-zero center prediction and much higher q90; measures a conspicuous model-behavior edge case.\"},{\"id\":\"r8b5dd0538924\",\"evidence_ids\":[\"r3a25307a1bef\"],\"reason\":\"Probes transfer for an aromatic hydroxy ester bearing a methylenedioxy ring. The measured hydroxy ester is an imperfect structural reference.\"},{\"id\":\"rc7bee0f0431d\",\"evidence_ids\":[\"r8ede8f514008\"],\"reason\":\"High-coverage hydroxy ketone with two methylenedioxy rings tests whether the measured diaryl hydroxy ketone is informative despite substantial aryl substitution differences.\"}],\"hypotheses\":[{\"id\":\"h1\",\"claim\":\"The model's nearly equal predictions for each selected enantiomer pair may conceal retention differences on OD-H.\",\"evidence_ids\":[],\"alternative\":\"Each pair has similar measured retention, or both members share a larger scaffold-level prediction error.\",\"expected_sign\":0,\"candidate_ids\":[\"rc4f7380fc05e\",\"r13e06c8010e4\",\"rffbdd082b6a0\",\"r8944df48a1b8\"],\"learning_value\":\"Within-pair measurements isolate stereochemical effects while checking two previously unmeasured scaffolds.\"},{\"id\":\"h2\",\"claim\":\"Substitution within the measured cyclic carbamate scaffold may produce large retention changes.\",\"evidence_ids\":[\"r2073098e2dfe\",\"rb1e599f21c52\",\"rf2c574465521\",\"r5f509c3c2604\"],\"alternative\":\"The 58.5 mL methoxy-substituted observation is specific to that structure and its recorded conditions.\",\"expected_sign\":0,\"candidate_ids\":[\"r4264ec388c7c\"],\"learning_value\":\"Tests whether the observed within-scaffold variation transfers to a fluoro-substituted member.\"},{\"id\":\"h3\",\"claim\":\"The high predicted retention of the selected fused-ring alcohol may depend strongly on substitution rather than its ring scaffold alone.\",\"evidence_ids\":[\"r962d183d3283\",\"r881bffb63248\"],\"alternative\":\"Its shared chiral ring geometry accounts for much of the measured retention across substituents.\",\"expected_sign\":0,\"candidate_ids\":[\"r31b886e9f456\"],\"learning_value\":\"A third substitution pattern distinguishes these explanations.\"},{\"id\":\"h4\",\"claim\":\"The near-zero center prediction for the boron-containing candidate may be a model edge case.\",\"evidence_ids\":[],\"alternative\":\"Its measured retention is also low under the recorded conditions.\",\"expected_sign\":0,\"candidate_ids\":[\"r74afd33527b3\"],\"learning_value\":\"Directly checks a large discrepancy between the center and quantile outputs without treating their difference as calibrated uncertainty.\"},{\"id\":\"h5\",\"claim\":\"Retention of aromatic hydroxy esters and hydroxy ketones may be sensitive to nearby oxygenated aryl substitution.\",\"evidence_ids\":[\"r3a25307a1bef\",\"r8ede8f514008\"],\"alternative\":\"The measured rows' responses do not transfer across these structural and condition differences.\",\"expected_sign\":0,\"candidate_ids\":[\"rafff27982f34\",\"r8b5dd0538924\",\"rc7bee0f0431d\"],\"learning_value\":\"Tests related H-bonding motifs across distinct substitution patterns while avoiding a universal solvent or functional-group rule.\"}],\"feedback_interpretation\":\"Round zero has no prior batch feedback or frozen premeasurement errors. The cited responses are measured observations; candidate centers and quantiles are model outputs. Structural and chiral-recognition explanations remain untested.\",\"batch_rationale\":\"The 16 rows complement the pending numerical batch with two controlled enantiomer pairs, measured-scaffold extensions, a recorded-condition comparison, and distinct exploratory scaffolds. Selection spans response predictions and chemistry; high coverage is used as a distance signal, not calibrated uncertainty or a reason to select every extreme.\"}",
+  "provenance": {
+    "response_id": "resp_0abfc86617b23b1b016ab93ced8fbc87d2a3fc555131fb1e86",
+    "served_model": "gpt-6-sol",
+    "usage": {
+      "attribution": {
+        "items": {
+          "msg_0abfc86617b23b1b016ab93ced9eec87d2ad49c2c9be80fde3": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 5849,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 5849,
+                "input_tokens": 5978,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 5978,
+            "output_tokens": 0
+          },
+          "msg_0abfc86617b23b1b016ab93ced9f0487d29e45b86464e4c0cd": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 95,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 95,
+            "output_tokens": 0
+          },
+          "msg_0abfc86617b23b1b016ab93ced9f1487d2bcca7720f65f5b48": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 23658,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 23658,
+            "output_tokens": 0
+          },
+          "msg_0abfc86617b23b1b016ab93ced9f2487d2a69fa5b57e22ab6f": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 149,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 149,
+            "output_tokens": 0
+          },
+          "msg_0abfc86617b23b1b016ab93ced9f3487d2b9626d88d2ebddcc": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 42376,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 42376,
+            "output_tokens": 0
+          },
+          "msg_0abfc86617b23b1b016ab93ced9f4487d2a2cddad9c3ed2abb": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 194,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 194,
+            "output_tokens": 0
+          },
+          "msg_0abfc86617b23b1b016ab93ced9f5487d2a18fb10972f8f837": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 42032,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 42032,
+            "output_tokens": 0
+          },
+          "msg_0abfc86617b23b1b016ab93ced9f6087d295fc9e85f4599f85": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 161,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 161,
+            "output_tokens": 0
+          },
+          "msg_0abfc86617b23b1b016ab93ced9f7087d29fcc5a55d3be596e": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 8444,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 8444,
+            "output_tokens": 0
+          },
+          "msg_0abfc86617b23b1b016ab93ced9f7c87d2b8f0b154dab869c8": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 61,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 61,
+            "output_tokens": 0
+          },
+          "msg_0abfc86617b23b1b016ab93ced9f8c87d28fda5793e7270599": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 582,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 582,
+            "output_tokens": 0
+          },
+          "rs_0abfc86617b23b1b016ab93cefea4487d2969c3beed7311a5d": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 516
+          },
+          "rs_0abfc86617b23b1b016ab93cf9cc2c87d2b67f041b70247054": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 249
+          },
+          "msg_0abfc86617b23b1b016ab93cfe967887d2ac9728abf87cb994": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 1637
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 1637
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 5159,
+            "input_tokens": 5159,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 128891,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 11008
+      },
+      "output_tokens": 2402,
+      "output_tokens_details": {
+        "reasoning_tokens": 765
+      },
+      "total_tokens": 131293
+    },
+    "native_tool_calls": 0
+  }
+}

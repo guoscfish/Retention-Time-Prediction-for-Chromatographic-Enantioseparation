@@ -1,0 +1,67 @@
+{
+  "request_sha256": "4cc380d2ea6f51df858b4d3edbeed19d73fbe5e59b6ae4a028fea7701411baed",
+  "answer": "{\"type\":\"query\",\"queries\":[{\"pool\":\"observed\",\"offset\":0,\"limit\":24,\"sort_by\":\"signed_error\",\"order\":\"desc\"},{\"pool\":\"observed\",\"offset\":0,\"limit\":24,\"sort_by\":\"signed_error\",\"order\":\"asc\"},{\"pool\":\"pending\",\"offset\":0,\"limit\":16}]}",
+  "provenance": {
+    "response_id": "resp_0c0526ed9cd6a226016ab93a3ebef487d2bef0f94099335d54",
+    "served_model": "gpt-6-sol",
+    "usage": {
+      "attribution": {
+        "items": {
+          "msg_0c0526ed9cd6a226016ab93a3ec4bc87d29dcd9477e6a0a6a3": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 5978,
+                "output_tokens": 0
+              }
+            ],
+            "input_tokens": 5978,
+            "output_tokens": 0
+          },
+          "rs_0c0526ed9cd6a226016ab93a3f7cf087d2a8ea3b7b597c3134": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 66
+          },
+          "msg_0c0526ed9cd6a226016ab93a411c1487d28d05c66c844ed4ec": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "content": [
+              {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 0,
+                "output_tokens": 73
+              }
+            ],
+            "input_tokens": 0,
+            "output_tokens": 73
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0,
+            "input_tokens": 5159,
+            "output_tokens": 0
+          }
+        }
+      },
+      "input_tokens": 11139,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 139,
+      "output_tokens_details": {
+        "reasoning_tokens": 66
+      },
+      "total_tokens": 11278
+    },
+    "native_tool_calls": 0
+  }
+}
