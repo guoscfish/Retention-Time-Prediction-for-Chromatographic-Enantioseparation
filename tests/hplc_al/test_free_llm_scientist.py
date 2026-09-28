@@ -215,3 +215,29 @@ def test_frozen_protocol_matches_prompt_packet_when_present():
         assert protocol['prompt_sha256']==stable_hash(SYSTEM_PROMPT)
         assert protocol['frozen_l333_target_population_sd']==8.879240547556758
         assert protocol['pending_count']==0 and protocol['batch_size']==32
+
+
+def test_cli_native_tool_events_rejected():
+    from hplc_al.llm_cli_transport import audit_events
+    for kind in ['command_execution','mcp_tool_call','web_search','file_change','collab_tool_call']:
+        with pytest.raises(RuntimeError):audit_events([{'type':'item.completed','item':{'type':kind}}])
+    events=[{'type':'thread.started'},{'type':'turn.started'},
+        {'type':'item.completed','item':{'type':'agent_message','text':'{}'}},
+        {'type':'turn.completed','usage':{'input_tokens':1}}]
+    assert audit_events(events)==('{}',{'input_tokens':1})
+
+
+def test_cli_is_ephemeral_and_disables_external_context():
+    from hplc_al.llm_cli_transport import settings,DISABLED,arguments
+    from pathlib import Path
+    config=settings();args=arguments(config,Path('/tmp/empty'),Path('/tmp/empty/system.txt'))
+    assert config['ephemeral'] and config['native_tool_calls_required']==0
+    assert {'shell_tool','apps','plugins','memories','browser_use','multi_agent'}<=set(DISABLED)
+    assert 'project_doc_max_bytes=0' in args and 'web_search="disabled"' in args
+
+
+def test_transport_revision_preserves_scientific_prompt():
+    from hplc_al.free_llm_runner import STUDY
+    from hplc_al.common import read_json
+    original=read_json(STUDY.parent/'SYSTEM_PROMPT.json')
+    assert original['sha256']==stable_hash(SYSTEM_PROMPT)

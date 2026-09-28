@@ -1,0 +1,20 @@
+{'stage': 'gradient', 'completed': 1, 'total': 4447, 'seconds': 0.023606417002156377}
+{'stage': 'gradient', 'completed': 250, 'total': 4447, 'seconds': 1.9717387499986216}
+{'stage': 'gradient', 'completed': 500, 'total': 4447, 'seconds': 4.0282362919533625}
+{'stage': 'gradient', 'completed': 750, 'total': 4447, 'seconds': 6.062883541977499}
+{'stage': 'gradient', 'completed': 1000, 'total': 4447, 'seconds': 8.083575083001051}
+{'stage': 'gradient', 'completed': 1250, 'total': 4447, 'seconds': 10.24182033300167}
+{'stage': 'gradient', 'completed': 1500, 'total': 4447, 'seconds': 12.38433312496636}
+{'stage': 'gradient', 'completed': 1750, 'total': 4447, 'seconds': 14.460566374997143}
+{'stage': 'gradient', 'completed': 2000, 'total': 4447, 'seconds': 16.675719624967314}
+{'stage': 'gradient', 'completed': 2250, 'total': 4447, 'seconds': 18.825971749960445}
+{'stage': 'gradient', 'completed': 2500, 'total': 4447, 'seconds': 21.011200582957827}
+{'stage': 'gradient', 'completed': 2750, 'total': 4447, 'seconds': 23.268824416969437}
+{'stage': 'gradient', 'completed': 3000, 'total': 4447, 'seconds': 25.492851624963805}
+{'stage': 'gradient', 'completed': 3250, 'total': 4447, 'seconds': 27.66610591695644}
+{'stage': 'gradient', 'completed': 3500, 'total': 4447, 'seconds': 29.907111707958393}
+{'stage': 'gradient', 'completed': 3750, 'total': 4447, 'seconds': 32.16336462495383}
+{'stage': 'gradient', 'completed': 4000, 'total': 4447, 'seconds': 34.33513762499206}
+{'stage': 'gradient', 'completed': 4250, 'total': 4447, 'seconds': 36.582295208005235}
+{'stage': 'gradient', 'completed': 4447, 'total': 4447, 'seconds': 38.404220875003375}
+{'status': 'DRY_RUN_PASSED', 'limits': {'query_budget': 24, 'view_budget': 480, 'call_budget': 28, 'page_size': 24}}

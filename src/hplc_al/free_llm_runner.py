@@ -15,12 +15,12 @@ from .free_llm_scientist import (BUDGETS, DESCRIPTOR_SCHEMA, LIMITS, METHOD, SEE
 from .gradient import extract
 from .lcmd_confirmation import _training
 from .llm_catalog import coverage_percentile, metadata
-from .llm_transport import settings
+from .llm_cli_transport import settings, freeze_context
 from .protocol import RestrictedLabelStore, role_ids, transition
 from .training import fit, load_model
 from .runner import assert_environment
 
-STUDY = ROOT / 'studies/active_learning/odh_free_llm32_scientist_v1'
+STUDY = ROOT / 'studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2'
 SOURCE_STUDY = ROOT / 'studies/active_learning/odh_lcmd_confirmation_v2'
 TRAJECTORY = f'{SEED}/{METHOD}'
 
@@ -53,6 +53,7 @@ def verify_record(path):
 def prepare():
     environment = assert_environment()
     verify_protected()
+    freeze_context(settings(), SYSTEM_PROMPT, STUDY / 'cli_context_freeze.json')
     if (STUDY / 'protocol.json').exists():
         value = read_json(STUDY / 'protocol.json')
         verify_files(ROOT, value['source_hashes'])
@@ -129,6 +130,8 @@ def prepare():
             'stereo_contrast': 'same nonisomeric canonical SMILES, different isomeric SMILES; not necessarily enantiomers',
             'same_scaffold': 'same nonempty Murcko scaffold, different isomeric SMILES',
             'condition_contrast': 'same identity or similarity>=0.85, differing IPA or flow'},
+        'transport_revision': 2, 'scientific_prompt_unchanged_from_revision_1': True,
+        'cli_context_freeze_sha256': sha(STUDY / 'cli_context_freeze.json'),
         'source_hashes': src, 'reuse_hashes': bind_files(set(reuse))}
     write_once(STUDY / 'SYSTEM_PROMPT.json', {'prompt': SYSTEM_PROMPT, 'sha256': stable_hash(SYSTEM_PROMPT)})
     write_once(STUDY / 'protocol.json', protocol)

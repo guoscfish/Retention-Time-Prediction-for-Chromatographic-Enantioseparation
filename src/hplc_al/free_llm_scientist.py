@@ -8,7 +8,7 @@ from pathlib import Path
 from .common import read_json, sha, stable_hash, write_once
 from .llm_catalog import (CALL_BUDGET, CHEMISTRY_PROMPT, NUMERIC, PAGE_SIZE,
                           QUERY_BUDGET, VIEW_BUDGET, Catalog)
-from .llm_transport import call
+from .llm_cli_transport import call
 
 METHOD = "free_llm32_scientist"
 SEED = 1525

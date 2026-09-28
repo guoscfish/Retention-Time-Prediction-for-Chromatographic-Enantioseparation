@@ -102,7 +102,7 @@ def report():
         f'独立 `{METHOD}`：pending=0，由模型决定全部32点，保留旧16+16实现。代码审计见 AUDIT.md。',
         '输入包括 canonical isomeric SMILES、CIP、Murcko scaffold、官能团、理化描述符、IPA/flow、q10/center/q90/width和原始梯度空间最近已标记点距离百分位。center由MSE训练，不声称为q50；width不是校准epistemic uncertainty，coverage不是真误差。无任何选择配额。',
         '代码确定性拼接本trajectory最近三轮原始批次、真实响应、测量前冻结预测及误差、最高误差观测、历史假设状态和未决问题。每轮新上下文；同轮relay保留完整已发送页。假设更新由同一个实验规划调用明确给出，不由摘要LLM生成。',
-        'selector只接收显式packet与allowlist查询。selection → SHA256 seal → Git commit → RestrictedLabelStore.commit_selection → reveal → feedback → scratch fit。逻辑标签边界不是OS隔离；Responses tools=[]、store=false，回执检查native calls=0。validation仅供训练checkpoint选择与独立评价。',
+        'selector只接收显式packet与allowlist查询。selection → SHA256 seal → Git commit → RestrictedLabelStore.commit_selection → reveal → feedback → scratch fit。逻辑标签边界不是OS隔离；使用单独冻结的Codex CLI transport revision 2、ephemeral新上下文；关闭技能、外部工具、历史规则，审计全部事件并强制native calls=0。原Responses认证失败版本保留；CLI不暴露实际served model快照版本，也不宣称验证其底层wire store标志。validation仅供训练checkpoint选择与独立评价。',
         f"冻结预算：{protocol['limits']}。模型 `{protocol['llm']['model']}`，effort `{protocol['llm']['reasoning_effort']}`；provider由当前配置读取：`{protocol['llm']['base_url']}`。具体served model/version与usage见每轮llm/turn*.json。",
         'resume验证协议、代码、复用文件、请求哈希、selection/feedback/fit文件；已有selection不调用LLM，完成fit不重训；无回执但已有请求intent则fail closed。manifest逐步记录状态，complete须绑定两轮完成的manifest。',
         f"冻结L333 population SD = **{scale:.12f}**。训练器内动态分母NRMSE不用于本报告。基线split/L333/checkpoint/seed/training代码及配置/预算已逐项验证并冻结复用hash；Random32和Raw Gradient-LCMD32均未重训。",
