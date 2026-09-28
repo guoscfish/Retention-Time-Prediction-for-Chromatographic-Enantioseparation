@@ -3,8 +3,8 @@
   "method": "free_llm32_scientist",
   "round": 1,
   "selection_frozen": true,
-  "labels_revealed": false,
-  "fit_complete": false,
+  "labels_revealed": true,
+  "fit_complete": true,
   "next_round_started": false,
   "files": {
     "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/selection.json": "e6a7f5d10245a9b412381c69bea4cd9755571cdecf077a4844f026f89698df63",
@@ -28,8 +28,23 @@
     "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/turn_04.json": "7a0e88fb003969567e40feb6cce09cbae9030d1a87edb2e14ad16e9cd3500c9b",
     "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/relay_02.json": "20a15eeedbf2e81724d9c78e4c8515f1b75c96a5888b1ef7182055e03edb9b78",
     "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/request_03.json": "ebca44cf7584b167414e75a69c7c8ad508b896842b8ff6d84985e716a5afcfcc",
-    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/selection_seal.json": "78a3a528b22433a80c58e9a7dd7223b91fb0db88b0e5b1899f783b4c41ea2fbd"
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/selection_seal.json": "78a3a528b22433a80c58e9a7dd7223b91fb0db88b0e5b1899f783b4c41ea2fbd",
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/feedback.json": "2010e7ee4439219201a8cdcd116eee986d7f9a47f27d20cc3a8e0d58b7a8ed8e",
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/feedback_seal.json": "5bb4c890d8b3e82708993bcbd7130463134dca5b3846f664768119f1ee94d3d9",
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/input.json": "f60d9672b267e477a5a50850510c263ec2ad1e5e05633ad13092f9d0f363f97b",
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/best.pt": "d810a8e3bb875c83541ec480cf6c4db3f96c9a74e071a3945176c0f3fc0659d7",
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/training_curve.csv": "32f39af5b84c6d2b9628a14e10eee6a40e397b3a7295a74b53bf06670ef55fac",
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/validation_predictions.npz": "a11a55ee2325582796c13b2f14d888ae59c98258b482af67cab578465212df1f",
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/final.pt": "e91004804ea5853f738a05b53ca894524e57d7dc2a911e0b70b76b89bc46439a",
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/final_validation_predictions.npz": "b2f3228abb8c66b5fdf3ae813d1cef8c71da11ef7661b26772db5fbf6b39bb23",
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/fit.json": "a6cfa3cc1f8e934841c4657fb2445ec337f9836d8c375b3a9eb313efb588126d",
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/validation.json": "12e8f599b03905c555caac1db6ae43d355030609dc0629ca391306cb60c3d119"
   },
   "selection_hash": "e6a7f5d10245a9b412381c69bea4cd9755571cdecf077a4844f026f89698df63",
-  "prediction_hash": "2ec6b033add1d2db642f1965d4f0a873451deeb1d927f196b21663a4e0b94c88"
+  "prediction_hash": "2ec6b033add1d2db642f1965d4f0a873451deeb1d927f196b21663a4e0b94c88",
+  "selection_commit": "58e7e1f2e5ec4950f5d57534826e938bd9a8c0a9",
+  "feedback_hash": "2010e7ee4439219201a8cdcd116eee986d7f9a47f27d20cc3a8e0d58b7a8ed8e",
+  "checkpoint_hash": "d810a8e3bb875c83541ec480cf6c4db3f96c9a74e071a3945176c0f3fc0659d7",
+  "validation_prediction_hash": "a11a55ee2325582796c13b2f14d888ae59c98258b482af67cab578465212df1f",
+  "budget_after": 397
 }

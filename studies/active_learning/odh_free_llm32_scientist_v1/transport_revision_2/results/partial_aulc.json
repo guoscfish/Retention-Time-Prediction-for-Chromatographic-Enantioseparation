@@ -1,0 +1,20 @@
+[
+  {
+    "method": "free_llm32_scientist",
+    "interval": "333\u2013397",
+    "raw_nrmse_area": 57.97131744886667,
+    "mean_nrmse": 0.9058018351385417
+  },
+  {
+    "method": "random",
+    "interval": "333\u2013397",
+    "raw_nrmse_area": 58.024941861767765,
+    "mean_nrmse": 0.9066397165901213
+  },
+  {
+    "method": "raw_gradient_lcmd",
+    "interval": "333\u2013397",
+    "raw_nrmse_area": 56.54808673681902,
+    "mean_nrmse": 0.8835638552627972
+  }
+]

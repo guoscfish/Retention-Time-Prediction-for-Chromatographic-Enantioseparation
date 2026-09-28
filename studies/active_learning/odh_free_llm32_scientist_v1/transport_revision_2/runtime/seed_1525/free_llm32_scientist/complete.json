@@ -1,0 +1,13 @@
+{
+  "status": "PHASE1_COMPLETE_L397",
+  "seed": 1525,
+  "method": "free_llm32_scientist",
+  "acquisitions": 2,
+  "budget": 397,
+  "next_round_started": false,
+  "test_truth_access_count": 0,
+  "files": {
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/manifest.json": "3a576044a853a7bc2c154526f0decbc4dc1b61388c3a520324ee785184e148f2",
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/manifest.json": "6c618037a5f828efdc0fce38926476278030341cfbba75b067d089882901dee8"
+  }
+}

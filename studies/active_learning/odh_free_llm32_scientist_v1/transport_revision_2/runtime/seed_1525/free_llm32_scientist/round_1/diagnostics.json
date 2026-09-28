@@ -1,0 +1,344 @@
+{
+  "round": 1,
+  "pair_counts": {
+    "stereo_contrast": 12,
+    "same_scaffold_contrast": 58,
+    "exact_identity_condition_contrast": 1,
+    "near_identity_condition_contrast": 0
+  },
+  "participating_point_counts": {
+    "stereo_contrast": 24,
+    "same_scaffold_contrast": 30,
+    "exact_identity_condition_contrast": 2,
+    "near_identity_condition_contrast": 0
+  },
+  "pairs": {
+    "stereo_contrast": [
+      [
+        "rce6cd6331401",
+        "r5f3d645adffd"
+      ],
+      [
+        "r3807ee109050",
+        "r553d5d71c7ce"
+      ],
+      [
+        "r08f439af24d5",
+        "rb701437e5343"
+      ],
+      [
+        "rdd91211c250f",
+        "r29a8d4957353"
+      ],
+      [
+        "r2cad56a44833",
+        "r3c9be3edf6e2"
+      ],
+      [
+        "r8a4a70f02925",
+        "rcdca2a3008cc"
+      ],
+      [
+        "r3d924c6fb0ed",
+        "r5d08c2985ad8"
+      ],
+      [
+        "rc2171317ddca",
+        "rbcd87f5003d1"
+      ],
+      [
+        "rb6dcc30cdc5c",
+        "r12a02897f3f7"
+      ],
+      [
+        "rd8ee1e150fa9",
+        "rfd3176f1b7dc"
+      ],
+      [
+        "r48ab24c67ef1",
+        "r9c61bbab7ae1"
+      ],
+      [
+        "r1211dbd23fb3",
+        "r797d51145a8f"
+      ]
+    ],
+    "same_scaffold_contrast": [
+      [
+        "rce6cd6331401",
+        "r5f3d645adffd"
+      ],
+      [
+        "rce6cd6331401",
+        "r3807ee109050"
+      ],
+      [
+        "rce6cd6331401",
+        "r553d5d71c7ce"
+      ],
+      [
+        "rce6cd6331401",
+        "r08f439af24d5"
+      ],
+      [
+        "rce6cd6331401",
+        "rb701437e5343"
+      ],
+      [
+        "r5f3d645adffd",
+        "r3807ee109050"
+      ],
+      [
+        "r5f3d645adffd",
+        "r553d5d71c7ce"
+      ],
+      [
+        "r5f3d645adffd",
+        "r08f439af24d5"
+      ],
+      [
+        "r5f3d645adffd",
+        "rb701437e5343"
+      ],
+      [
+        "r3807ee109050",
+        "r553d5d71c7ce"
+      ],
+      [
+        "r3807ee109050",
+        "r08f439af24d5"
+      ],
+      [
+        "r3807ee109050",
+        "rb701437e5343"
+      ],
+      [
+        "r553d5d71c7ce",
+        "r08f439af24d5"
+      ],
+      [
+        "r553d5d71c7ce",
+        "rb701437e5343"
+      ],
+      [
+        "r08f439af24d5",
+        "rb701437e5343"
+      ],
+      [
+        "rdd91211c250f",
+        "r29a8d4957353"
+      ],
+      [
+        "rdd91211c250f",
+        "r2cad56a44833"
+      ],
+      [
+        "rdd91211c250f",
+        "r3c9be3edf6e2"
+      ],
+      [
+        "rdd91211c250f",
+        "r8a4a70f02925"
+      ],
+      [
+        "rdd91211c250f",
+        "rcdca2a3008cc"
+      ],
+      [
+        "r29a8d4957353",
+        "r2cad56a44833"
+      ],
+      [
+        "r29a8d4957353",
+        "r3c9be3edf6e2"
+      ],
+      [
+        "r29a8d4957353",
+        "r8a4a70f02925"
+      ],
+      [
+        "r29a8d4957353",
+        "rcdca2a3008cc"
+      ],
+      [
+        "r2cad56a44833",
+        "r3c9be3edf6e2"
+      ],
+      [
+        "r2cad56a44833",
+        "r8a4a70f02925"
+      ],
+      [
+        "r2cad56a44833",
+        "rcdca2a3008cc"
+      ],
+      [
+        "r3c9be3edf6e2",
+        "r8a4a70f02925"
+      ],
+      [
+        "r3c9be3edf6e2",
+        "rcdca2a3008cc"
+      ],
+      [
+        "r8a4a70f02925",
+        "rcdca2a3008cc"
+      ],
+      [
+        "r3d924c6fb0ed",
+        "r5d08c2985ad8"
+      ],
+      [
+        "r3d924c6fb0ed",
+        "rc2171317ddca"
+      ],
+      [
+        "r3d924c6fb0ed",
+        "rbcd87f5003d1"
+      ],
+      [
+        "r3d924c6fb0ed",
+        "r81c84a17d9c2"
+      ],
+      [
+        "r3d924c6fb0ed",
+        "rb6dcc30cdc5c"
+      ],
+      [
+        "r3d924c6fb0ed",
+        "r12a02897f3f7"
+      ],
+      [
+        "r5d08c2985ad8",
+        "rc2171317ddca"
+      ],
+      [
+        "r5d08c2985ad8",
+        "rbcd87f5003d1"
+      ],
+      [
+        "r5d08c2985ad8",
+        "r81c84a17d9c2"
+      ],
+      [
+        "r5d08c2985ad8",
+        "rb6dcc30cdc5c"
+      ],
+      [
+        "r5d08c2985ad8",
+        "r12a02897f3f7"
+      ],
+      [
+        "rc2171317ddca",
+        "rbcd87f5003d1"
+      ],
+      [
+        "rc2171317ddca",
+        "r81c84a17d9c2"
+      ],
+      [
+        "rc2171317ddca",
+        "rb6dcc30cdc5c"
+      ],
+      [
+        "rc2171317ddca",
+        "r12a02897f3f7"
+      ],
+      [
+        "rbcd87f5003d1",
+        "r81c84a17d9c2"
+      ],
+      [
+        "rbcd87f5003d1",
+        "rb6dcc30cdc5c"
+      ],
+      [
+        "rbcd87f5003d1",
+        "r12a02897f3f7"
+      ],
+      [
+        "r81c84a17d9c2",
+        "rb6dcc30cdc5c"
+      ],
+      [
+        "r81c84a17d9c2",
+        "r12a02897f3f7"
+      ],
+      [
+        "rb6dcc30cdc5c",
+        "r12a02897f3f7"
+      ],
+      [
+        "r003e6977d8ff",
+        "r27528605a1f4"
+      ],
+      [
+        "rd8ee1e150fa9",
+        "rfd3176f1b7dc"
+      ],
+      [
+        "r48ab24c67ef1",
+        "r9c61bbab7ae1"
+      ],
+      [
+        "r31b886e9f456",
+        "r4e9a074e1a9c"
+      ],
+      [
+        "r31b886e9f456",
+        "ra27352464572"
+      ],
+      [
+        "r4e9a074e1a9c",
+        "ra27352464572"
+      ],
+      [
+        "r1211dbd23fb3",
+        "r797d51145a8f"
+      ]
+    ],
+    "exact_identity_condition_contrast": [
+      [
+        "r35456a197b3b",
+        "re0e698813d1a"
+      ]
+    ],
+    "near_identity_condition_contrast": []
+  },
+  "high_coverage_count": 5,
+  "high_width_count": 12,
+  "width_threshold": 22.211211204528812,
+  "prediction_extreme_count": 20,
+  "coverage_percentile_distribution": {
+    "min": 0.13267371261524624,
+    "q25": 0.2742860355295705,
+    "median": 0.3241511131099618,
+    "q75": 0.7765347425230492,
+    "max": 0.9718911625815156
+  },
+  "q_width_distribution": {
+    "min": 15.091187477111816,
+    "q25": 16.70613431930542,
+    "median": 18.80739116668701,
+    "q75": 24.11796474456787,
+    "max": 32.6993408203125
+  },
+  "unique_isomeric_identities": 31,
+  "unique_scaffolds_including_empty": 9,
+  "empty_scaffold_points": 0,
+  "pairwise_similarity_distribution": {
+    "min": 0.05405405405405406,
+    "q25": 0.1,
+    "median": 0.13636363636363635,
+    "q75": 0.20634920634920634,
+    "max": 1.0
+  },
+  "same_state_lcmd32_overlap": {
+    "intersection": 0,
+    "jaccard": 0.0
+  },
+  "historical_lcmd32_overlap": {
+    "intersection": 0,
+    "jaccard": 0.0
+  }
+}
