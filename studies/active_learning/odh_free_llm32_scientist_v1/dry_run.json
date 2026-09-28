@@ -1,0 +1,17 @@
+{
+  "status": "PASSED",
+  "pending_count": 0,
+  "selected_count": 32,
+  "legal_and_viewed": true,
+  "real_llm_calls": 0,
+  "acquisition_labels_revealed": 0,
+  "packet_sha256": "00ec81d0fbbad7d428fe8e5b039d995752e00b50616b612847691cdd885b75fd",
+  "protocol_sha256": "505e1221b0d51c7ab8c368930e58fb608c30c266d7e8409e66d3fc6b41dbb461",
+  "limits": {
+    "query_budget": 24,
+    "view_budget": 480,
+    "call_budget": 28,
+    "page_size": 24
+  },
+  "protected_artifact_count": 566
+}

@@ -17,7 +17,7 @@ from .acquisition import lcmd_tp_select
 from .common import ROOT, atomic_json, read_json, sha, stable_hash, ids_hash, metrics
 from .data import load_graphs, predict
 from .gradient import extract
-from .llm_catalog import CHEMISTRY_PROMPT, COMMON_PROMPT, MASKED_PROMPT, Catalog, metadata, coverage_percentile
+from .llm_catalog import QUERY_BUDGET, VIEW_BUDGET, CALL_BUDGET, PAGE_SIZE, CHEMISTRY_PROMPT, COMMON_PROMPT, MASKED_PROMPT, Catalog, metadata, coverage_percentile
 from .llm_transport import call, settings
 from .protocol import RestrictedLabelStore, role_ids, transition
 from .training import fit, load_model
@@ -72,8 +72,8 @@ def _packet(seed, method, round_index, labeled, pending, candidates, predictions
                      "pending_lcmd_ids": [catalog.to_id[i] for i in pending],
                      "history": history, "initial_cards": catalog.initial(),
                      "overview": {"candidate_count": len(candidates), "pending_count": len(pending),
-                                  "observed_count": len(labeled), "pool_query_budget": 24,
-                                  "view_budget": 480}}
+                                  "observed_count": len(labeled), "pool_query_budget": QUERY_BUDGET, "call_budget": CALL_BUDGET, "page_size": PAGE_SIZE,
+                                  "view_budget": VIEW_BUDGET}}
 
 
 def _llm_select(packet, catalog, directory, method):
@@ -92,7 +92,7 @@ def _llm_select(packet, catalog, directory, method):
     packet_text = json.dumps(packet, ensure_ascii=False)
     messages = [{"role": "system", "content": prompt},
                 {"role": "user", "content": packet_text}]
-    for turn in range(28):
+    for turn in range(CALL_BUDGET):
         request_hash = stable_hash({"messages": messages, "config": config})
         receipt_path = directory / f"turn_{turn:02d}.json"
         if receipt_path.exists():
@@ -107,13 +107,13 @@ def _llm_select(packet, catalog, directory, method):
         try:
             value = _parse_answer(receipt["answer"])
         except (json.JSONDecodeError, RuntimeError):
-            if turn >= 27:
+            if turn >= CALL_BUDGET - 1:
                 raise RuntimeError("LLM did not produce JSON within the answer budget")
             messages += [{"role": "assistant", "content": receipt["answer"]},
                          {"role": "user", "content": json.dumps({
                              "error": "your previous response was not a JSON object; return only one JSON query or final selection",
                              "remaining_queries": catalog.query_budget - catalog.queries,
-                             "remaining_answers": 27 - turn}, ensure_ascii=False)}]
+                             "remaining_answers": CALL_BUDGET - 1 - turn}, ensure_ascii=False)}]
             continue
         if value.get("type") == "selection":
             selected = catalog.validate(value, packet["packet_hash"])
@@ -129,7 +129,7 @@ def _llm_select(packet, catalog, directory, method):
             messages += [{"role": "assistant", "content": receipt["answer"]},
                          {"role": "user", "content": json.dumps({
                              "error": "query budget exhausted; return the final selection now using only viewed records",
-                             "remaining_queries": 0, "remaining_answers": 27 - turn}, ensure_ascii=False)}]
+                             "remaining_queries": 0, "remaining_answers": CALL_BUDGET - 1 - turn}, ensure_ascii=False)}]
             continue
         results = [catalog.query(query) for query in value["queries"]]
         # Keep provider context bounded: full records remain on disk, while the
@@ -141,7 +141,7 @@ def _llm_select(packet, catalog, directory, method):
                     {"role": "assistant", "content": receipt["answer"]},
                     {"role": "user", "content": json.dumps({"query_results": compact_results,
                          "remaining_queries": catalog.query_budget - catalog.queries,
-                         "remaining_answers": 27 - turn}, ensure_ascii=False)}]
+                         "remaining_answers": CALL_BUDGET - 1 - turn}, ensure_ascii=False)}]
     raise RuntimeError("LLM did not return a selection")
 
 
@@ -185,7 +185,8 @@ def run(seed=1525, stop_round=None):
     features, fingerprints = metadata(sorted(l0 + u0))
     protocol = {"study": STUDY.name, "version": "odh_llm_hybrid_v1", "seed": seed,
                 "method": list(METHODS), "budgets": list(BUDGETS), "batch": BATCH,
-                "llm": settings(), "objective": "LCMD16 + LLM16; chemical information vs masked ablation",
+                "llm": settings(), "query_budget": QUERY_BUDGET, "view_budget": VIEW_BUDGET,
+                "call_budget": CALL_BUDGET, "page_size": PAGE_SIZE, "objective": "LCMD16 + LLM16; chemical information vs masked ablation",
                 "target": "RTv=RT*flow; central predictor output[:,1]",
                 "partition_sha256": stable_hash(partition), "test_truth_access_count": 0}
     _write(STUDY / "protocol.json", protocol)

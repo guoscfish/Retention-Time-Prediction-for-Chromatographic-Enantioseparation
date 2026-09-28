@@ -11,7 +11,7 @@ from rdkit.Chem.Scaffolds import MurckoScaffold
 
 from .common import SOURCE, stable_hash
 
-QUERY_BUDGET = 8
+QUERY_BUDGET = 24
 VIEW_BUDGET = 480
 CALL_BUDGET = 28
 PAGE_SIZE = 24
@@ -56,7 +56,8 @@ do not invent strong mechanisms when evidence is absent. expected_sign is -1, 0 
 predicting signed_error (prediction minus measurement), where 0 means no directional
 claim. candidate_ids must be among your choices. Explicitly explain how prior outcomes
 support, weaken or contradict previous hypotheses; round zero may use an empty string.
-"""
+""".replace("At most 24 queries, 480 distinct candidate views (including 20 initial), 28 replies.",
+    f"At most {QUERY_BUDGET} queries, {VIEW_BUDGET} distinct candidate views (including 20 initial), {CALL_BUDGET} replies.")
 CHEMISTRY_PROMPT = """
 CHEMICAL SETTING: HPLC on CHIRALCEL OD-H, cellulose tris(3,5-dimethylphenylcarbamate)
 coated on silica. Target response is retention volume RTv=retention time*flow, in mL.
@@ -107,7 +108,8 @@ def metadata(ids):
 
 class Catalog:
     def __init__(self, features, fingerprints, labeled, unlabeled, pending, predictions,
-                 coverage, observations, *, salt, chemical):
+                 coverage, observations, *, salt, chemical, selection_count=16):
+        self.selection_count = selection_count
         self.chemical = chemical
         self.salt = salt
         self.query_budget = QUERY_BUDGET
@@ -138,6 +140,7 @@ class Catalog:
                 row.update(dict(zip(("pred_q10", "pred_center", "pred_q90"),
                                     map(float, predictions[i]))))
                 row["coverage"] = float(coverage[i])
+                row["q_width"] = row["pred_q90"] - row["pred_q10"]
                 pool = "pending" if i in pending_set else "candidates"
             self.pools[pool][row["id"]] = row
         self.references = {k: v for pool in self.pools.values() for k, v in pool.items()}
@@ -152,7 +155,7 @@ class Catalog:
 
     def query(self, query):
         self.queries += 1
-        if self.queries > QUERY_BUDGET:
+        if self.queries > self.query_budget:
             raise ValueError("query budget exceeded")
         allowed = {"pool", "ids", "offset", "limit", "ranges", "sort_by", "order",
                    "same_identity_as", "same_scaffold_as", "similar_to", "min_similarity"}
@@ -180,7 +183,7 @@ class Catalog:
             rows = [r for r in rows if query["functional_group"] in r["functional_groups"]]
         numeric = set(NUMERIC if self.chemical else ANONYMOUS.values())
         numeric |= ({"response", "premeasurement_center", "signed_error", "abs_error"}
-                    if pool == "observed" else {"pred_q10", "pred_center", "pred_q90", "coverage"})
+                    if pool == "observed" else {"pred_q10", "pred_center", "pred_q90", "coverage", "q_width"})
         if "similar_to" in query:
             numeric.add("similarity")
         for name, bounds in query.get("ranges", {}).items():
@@ -216,8 +219,8 @@ class Catalog:
             raise ValueError("Invalid selection packet binding")
         choices = value.get("choices", [])
         ids = [c["id"] for c in choices]
-        if len(ids) != 16 or len(set(ids)) != 16 or not set(ids) <= self.viewed:
-            raise ValueError("Exactly 16 unique viewed candidate IDs required")
+        if len(ids) != self.selection_count or len(set(ids)) != self.selection_count or not set(ids) <= self.viewed:
+            raise ValueError(f"Exactly {self.selection_count} unique viewed candidate IDs required")
         if not set(ids) <= set(self.pools["candidates"]) or not self.queries:
             raise ValueError("Select only legal candidates after querying")
         hypotheses = value.get("hypotheses", [])
