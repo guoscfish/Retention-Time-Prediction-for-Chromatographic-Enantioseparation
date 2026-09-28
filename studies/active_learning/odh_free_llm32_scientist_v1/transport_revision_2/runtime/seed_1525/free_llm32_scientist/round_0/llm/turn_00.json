@@ -1,0 +1,107 @@
+{
+  "request_sha256": "c08956ea8483d0515138ccb110d267ba86c03a29bc2f011f29710f763ee44448",
+  "answer": "{\"type\":\"query\",\"queries\":[{\"pool\":\"candidates\",\"same_scaffold_as\":\"r8c021fbfc958\",\"offset\":0,\"limit\":24},{\"pool\":\"observed\",\"similar_to\":\"r8c021fbfc958\",\"sort_by\":\"similarity\",\"order\":\"desc\",\"offset\":0,\"limit\":24},{\"pool\":\"observed\",\"sort_by\":\"response\",\"order\":\"desc\",\"offset\":0,\"limit\":24}]}",
+  "answer_sha256": "d0d11d79dc0827d6a4b4c53f0eb117e47aea36c77414277cd770aff710574195",
+  "provenance": {
+    "requested_model": "gpt-6-sol",
+    "served_model_version": "not exposed by CLI; requested model and binary version frozen",
+    "provider": "openai",
+    "cli_version": "codex-cli 0.158.0-alpha.2.1",
+    "native_tool_calls": 0,
+    "usage": {
+      "input_tokens": 11897,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 314,
+      "reasoning_output_tokens": 217
+    },
+    "events": [
+      {
+        "type": "thread.started",
+        "thread_id": "01a0e70e-faaa-7cf2-b5b2-3ef2229a32c8"
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_0",
+          "type": "error",
+          "message": "Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /Users/fish/.codex/config.toml."
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_1",
+          "type": "error",
+          "message": "Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."
+        }
+      },
+      {
+        "type": "turn.started"
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "agent_message",
+          "text": "{\"type\":\"query\",\"queries\":[{\"pool\":\"candidates\",\"same_scaffold_as\":\"r8c021fbfc958\",\"offset\":0,\"limit\":24},{\"pool\":\"observed\",\"similar_to\":\"r8c021fbfc958\",\"sort_by\":\"similarity\",\"order\":\"desc\",\"offset\":0,\"limit\":24},{\"pool\":\"observed\",\"sort_by\":\"response\",\"order\":\"desc\",\"offset\":0,\"limit\":24}]}"
+        }
+      },
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 11897,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 314,
+          "reasoning_output_tokens": 217
+        }
+      }
+    ],
+    "stderr_sha256": "3573e60a5f42863b6627832fa67aa3e94fed208b87235d361b781b667ed6ccd1",
+    "system_prompt_sha256": "a9c5ada4d48295bb2bd7f1877eb5de11ac79c8b6561cea53785ebfa543bbfb4a",
+    "explicit_transcript_sha256": "4a929fab3d63e12eb85b95281eae776aad805ffeae35edace7df3a9c492d56c9",
+    "ephemeral": true,
+    "requested_configuration": {
+      "model": "gpt-6-sol",
+      "reasoning_effort": "high",
+      "provider": "openai",
+      "base_url": "active OpenAI login through local Codex CLI",
+      "wire_api": "codex-cli",
+      "ephemeral": true,
+      "native_tool_calls_required": 0,
+      "automatic_fallback": false,
+      "cli_path": "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex",
+      "cli_sha256": "3e11ccc743e8198a5ef84fb57c89941d845b0ea0302485ed1fbac2f0821aca5a",
+      "cli_version": "codex-cli 0.158.0-alpha.2.1",
+      "context_directory": "/var/folders/9r/0x5sl74n7f147j1dbd2d77pc0000gn/T/odh-free-llm32-scientist-v1-isolated",
+      "disabled_features": [
+        "shell_tool",
+        "unified_exec",
+        "apps",
+        "plugins",
+        "multi_agent",
+        "browser_use",
+        "computer_use",
+        "image_generation",
+        "view_image",
+        "memories",
+        "skill_search",
+        "hooks",
+        "sleep_tool",
+        "code_mode_host",
+        "workspace_dependencies",
+        "unbounded_connection_retries"
+      ],
+      "disabled_system_skills": [
+        "imagegen",
+        "openai-docs",
+        "plugin-creator",
+        "skill-creator",
+        "skill-installer"
+      ],
+      "transcript_prefix_sha256": "9b08ad92c57a0acac1aeda4c7e91d065177b938990e0344e4677c7113eacd196",
+      "served_model_version": "not exposed by CLI; requested model and binary version frozen"
+    }
+  }
+}

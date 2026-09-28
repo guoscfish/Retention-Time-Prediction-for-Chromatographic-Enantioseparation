@@ -1,0 +1,768 @@
+{
+  "selected": [
+    726,
+    317,
+    350,
+    349,
+    354,
+    353,
+    3360,
+    3519,
+    3065,
+    3066,
+    3133,
+    3132,
+    3722,
+    3475,
+    3758,
+    3757,
+    734,
+    735,
+    758,
+    1084,
+    1033,
+    121,
+    238,
+    173,
+    1,
+    1016,
+    1015,
+    3295,
+    3294,
+    4780,
+    4779,
+    3716
+  ],
+  "response": {
+    "type": "selection",
+    "packet_hash": "e628919421a14208bf5a28d447f21b261ce7014f605a3e6d75a586bf42dd92e7",
+    "batch_strategy": "Use matched stereochemical and substitution contrasts around observed long-retention examples, plus condition and prediction-extreme probes. Favor interpretable contrasts over geometric coverage alone.",
+    "batch_rationale": "This is round zero: the L333 responses inform the design, but there are no acquired premeasurement errors. Observed nitro diaryls and arylsulfonyl pyrrolidines have substantial retention, while the frozen model gives related candidates much lower centers. Matched pairs test whether those differences transfer across stereochemistry and substitution. Boronate flow contrasts and very low silicon-containing predictions probe distinct model behavior; high predicted centers are checked with enantiomer pairs. Neither q_width nor coverage is treated as calibrated error.",
+    "choices": [
+      {
+        "id": "r358cbe3ca94e",
+        "reason": "Unsubstituted R sulfur-linked ester anchors a matched substitution series.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h1",
+        "evidence_ids": [
+          "rf2a522cdae1c",
+          "raa43c6e0200c",
+          "r270947c801dc"
+        ]
+      },
+      {
+        "id": "raa8a2a5782ea",
+        "reason": "S enantiomer separates chiral recognition from the parent ester structure.",
+        "role": "matched_control",
+        "hypothesis_id": "h1",
+        "evidence_ids": [
+          "rf2a522cdae1c"
+        ]
+      },
+      {
+        "id": "raedf65f32e8d",
+        "reason": "R meta-fluoro substitution tests transfer from the unsubstituted ester.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h1",
+        "evidence_ids": [
+          "rf2a522cdae1c"
+        ]
+      },
+      {
+        "id": "rd71ed92f0e1b",
+        "reason": "S meta-fluoro partner tests whether the substitution effect depends on configuration.",
+        "role": "matched_control",
+        "hypothesis_id": "h1",
+        "evidence_ids": [
+          "rf2a522cdae1c"
+        ]
+      },
+      {
+        "id": "re330f8c183c1",
+        "reason": "R methoxy-on-sulfur-ring analog contrasts an added acceptor with fluoro substitution.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h1",
+        "evidence_ids": [
+          "raa43c6e0200c",
+          "r270947c801dc"
+        ]
+      },
+      {
+        "id": "r0e1dfb89171c",
+        "reason": "S methoxy partner completes the substitution-by-stereochemistry contrast.",
+        "role": "matched_control",
+        "hypothesis_id": "h1",
+        "evidence_ids": [
+          "raa43c6e0200c",
+          "r270947c801dc"
+        ]
+      },
+      {
+        "id": "ra67208785bd2",
+        "reason": "Para-chloro nitro diaryl is the opposite enantiomer of an observed 45.9 mL example.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h2",
+        "evidence_ids": [
+          "re970bd0e69b4"
+        ]
+      },
+      {
+        "id": "rc3147b13be2c",
+        "reason": "CF3 nitro diaryl is the opposite enantiomer of an observed 53.7 mL example.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h2",
+        "evidence_ids": [
+          "r8d2dfc1e4034"
+        ]
+      },
+      {
+        "id": "r6a6bf9e64c81",
+        "reason": "R para-fluoro analog tests transfer of the observed halogen-series retention.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h2",
+        "evidence_ids": [
+          "re970bd0e69b4"
+        ]
+      },
+      {
+        "id": "rc41a7b79f13d",
+        "reason": "S para-fluoro partner identifies a stereochemical contribution at fixed substitution.",
+        "role": "matched_control",
+        "hypothesis_id": "h2",
+        "evidence_ids": [
+          "re970bd0e69b4"
+        ]
+      },
+      {
+        "id": "r597fa3381226",
+        "reason": "R methoxy nitro diaryl tests whether adding an ether changes the series behavior.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h2",
+        "evidence_ids": [
+          "re970bd0e69b4",
+          "r8d2dfc1e4034"
+        ]
+      },
+      {
+        "id": "r5db6e7674d48",
+        "reason": "S methoxy partner tests the same substitution with configuration reversed.",
+        "role": "matched_control",
+        "hypothesis_id": "h2",
+        "evidence_ids": [
+          "re970bd0e69b4",
+          "r8d2dfc1e4034"
+        ]
+      },
+      {
+        "id": "r5cfff95afb07",
+        "reason": "R para-chloro pyrrolidine complements the observed S para-chloro response.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h3",
+        "evidence_ids": [
+          "r6836ae813ae0"
+        ]
+      },
+      {
+        "id": "r7b1788cb96a1",
+        "reason": "S ortho-chloro partner complements an observed R ortho-chloro response.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h3",
+        "evidence_ids": [
+          "r6f552f80f346"
+        ]
+      },
+      {
+        "id": "r7cb3b65769c0",
+        "reason": "R para-fluoro analog tests halogen replacement within this sulfonamide family.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h3",
+        "evidence_ids": [
+          "r6836ae813ae0"
+        ]
+      },
+      {
+        "id": "rdeea40c9bf86",
+        "reason": "S para-fluoro partner tests substitution and stereochemistry jointly.",
+        "role": "matched_control",
+        "hypothesis_id": "h3",
+        "evidence_ids": [
+          "r6836ae813ae0"
+        ]
+      },
+      {
+        "id": "r94f483736449",
+        "reason": "R tert-butyl-substituted ring tests whether a bulky aryl group departs from observed ring analogs.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h4",
+        "evidence_ids": [
+          "rf2c574465521",
+          "r5f509c3c2604"
+        ]
+      },
+      {
+        "id": "rc6c7725e2474",
+        "reason": "S tert-butyl partner isolates stereochemistry in that structural change.",
+        "role": "matched_control",
+        "hypothesis_id": "h4",
+        "evidence_ids": [
+          "rf2c574465521"
+        ]
+      },
+      {
+        "id": "rb366c0fa39f9",
+        "reason": "S methyl analog complements an observed R methyl analog under the same recorded conditions.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h4",
+        "evidence_ids": [
+          "rb1e599f21c52"
+        ]
+      },
+      {
+        "id": "r4264ec388c7c",
+        "reason": "Fluorinated ring analog probes a high predicted center at different recorded flow and IPA.",
+        "role": "exploratory",
+        "hypothesis_id": "h4",
+        "evidence_ids": [
+          "rf2c574465521",
+          "r5f509c3c2604"
+        ]
+      },
+      {
+        "id": "r6c7738f4f875",
+        "reason": "R dimethoxy lactone complements an observed S enantiomer retained at 41.3 mL.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h4",
+        "evidence_ids": [
+          "r21209d1de8e9"
+        ]
+      },
+      {
+        "id": "r630e85ec162d",
+        "reason": "Low-center fluorinated boronate tests a possible prediction blind spot.",
+        "role": "model_failure_probe",
+        "hypothesis_id": "h5",
+        "evidence_ids": []
+      },
+      {
+        "id": "rb64de4da15c2",
+        "reason": "Its enantiomer tests whether the low-center behavior persists across configuration.",
+        "role": "matched_control",
+        "hypothesis_id": "h5",
+        "evidence_ids": []
+      },
+      {
+        "id": "rc0f7f64c2909",
+        "reason": "Propyl-ester boronate at flow 0.5 anchors an exact-identity flow contrast.",
+        "role": "condition_contrast",
+        "hypothesis_id": "h5",
+        "evidence_ids": []
+      },
+      {
+        "id": "rd5d96a5fd1e6",
+        "reason": "Same identity and IPA at flow 1.0 tests the model's near-invariant RTv prediction.",
+        "role": "condition_contrast",
+        "hypothesis_id": "h5",
+        "evidence_ids": []
+      },
+      {
+        "id": "rffbdd082b6a0",
+        "reason": "High-center heterocyclic candidate tests an extreme prediction on a sparsely analogous structure.",
+        "role": "model_failure_probe",
+        "hypothesis_id": "h6",
+        "evidence_ids": []
+      },
+      {
+        "id": "r8944df48a1b8",
+        "reason": "Enantiomer tests whether any prediction error is shared or stereospecific.",
+        "role": "matched_control",
+        "hypothesis_id": "h6",
+        "evidence_ids": []
+      },
+      {
+        "id": "re86bebb15fd8",
+        "reason": "High-center polar triazole diol probes structure-dependent retention at fixed conditions.",
+        "role": "hypothesis_test",
+        "hypothesis_id": "h7",
+        "evidence_ids": []
+      },
+      {
+        "id": "ra67d23337bab",
+        "reason": "Enantiomer isolates the chiral contribution without changing recorded conditions.",
+        "role": "matched_control",
+        "hypothesis_id": "h7",
+        "evidence_ids": []
+      },
+      {
+        "id": "r416af6febd58",
+        "reason": "Silicon-containing amide has a near-zero center and very wide output span; test the central failure mode, not width as uncertainty.",
+        "role": "model_failure_probe",
+        "hypothesis_id": "h8",
+        "evidence_ids": []
+      },
+      {
+        "id": "r1e04118171f1",
+        "reason": "Its enantiomer checks whether that low-center behavior is shared.",
+        "role": "matched_control",
+        "hypothesis_id": "h8",
+        "evidence_ids": []
+      },
+      {
+        "id": "rbb54e2582749",
+        "reason": "Dibrominated cyclic alcohol contrasts a roughly 29 mL prediction with a related observed 49.4 mL alcohol.",
+        "role": "model_failure_probe",
+        "hypothesis_id": "h8",
+        "evidence_ids": [
+          "r881bffb63248"
+        ]
+      }
+    ],
+    "hypotheses": [
+      {
+        "id": "h1",
+        "claim": "Sulfur-linked ester retention and enantiomer separation may change with aryl substitution in ways the frozen model does not transfer consistently.",
+        "evidence_ids": [
+          "rf2a522cdae1c",
+          "raa43c6e0200c",
+          "r270947c801dc"
+        ],
+        "alternative": "The model's substitution and stereochemical differences transfer adequately; observed pyridyl retention is specific to that different ring.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r358cbe3ca94e",
+          "raa8a2a5782ea",
+          "raedf65f32e8d",
+          "rd71ed92f0e1b",
+          "re330f8c183c1",
+          "r0e1dfb89171c"
+        ],
+        "learning_value": "Three matched enantiomer pairs distinguish shared scaffold bias from substituent-specific chiral effects."
+      },
+      {
+        "id": "h2",
+        "claim": "The frozen model may underpredict retention across related nitro diaryls, as suggested by long observed para-chloro and CF3 examples relative to centers of their candidate analogs.",
+        "evidence_ids": [
+          "re970bd0e69b4",
+          "r8d2dfc1e4034"
+        ],
+        "alternative": "The long responses are confined to the observed configurations or substituents; the candidate centers are appropriate.",
+        "expected_sign": -1,
+        "candidate_ids": [
+          "ra67208785bd2",
+          "rc3147b13be2c",
+          "r6a6bf9e64c81",
+          "rc41a7b79f13d",
+          "r597fa3381226",
+          "r5db6e7674d48"
+        ],
+        "learning_value": "Observed-opposite enantiomers and paired fluoro/methoxy variants separate a family-wide bias from configuration and substitution effects."
+      },
+      {
+        "id": "h3",
+        "claim": "Aryl position and configuration may interact strongly in sulfonyl pyrrolidine retention; the observed para-chloro S and ortho-chloro R responses differ.",
+        "evidence_ids": [
+          "r6836ae813ae0",
+          "r6f552f80f346"
+        ],
+        "alternative": "The observed difference is explained by ordinary substitution effects already captured by the model.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r5cfff95afb07",
+          "r7b1788cb96a1",
+          "r7cb3b65769c0",
+          "rdeea40c9bf86"
+        ],
+        "learning_value": "Completing the chloro stereochemical contrasts and adding a fluoro pair tests transfer without treating a scaffold label as proof of identical recognition."
+      },
+      {
+        "id": "h4",
+        "claim": "The ester-containing ring family may exhibit substitution- and stereochemistry-dependent retention not represented by a single scaffold trend.",
+        "evidence_ids": [
+          "rf2c574465521",
+          "rb1e599f21c52",
+          "r5f509c3c2604",
+          "r21209d1de8e9"
+        ],
+        "alternative": "Its observed response differences reflect structures and recorded conditions that the current model already distinguishes.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r94f483736449",
+          "rc6c7725e2474",
+          "rb366c0fa39f9",
+          "r4264ec388c7c",
+          "r6c7738f4f875"
+        ],
+        "learning_value": "An enantiomer pair and two observed-opposite configurations test whether strong observed retention transfers to nearby structures."
+      },
+      {
+        "id": "h5",
+        "claim": "Very low boronate central predictions may reflect a representation blind spot, while RTv for an exact identity may remain similar across the two recorded flows.",
+        "evidence_ids": [],
+        "alternative": "The low centers are accurate and the small predicted flow difference is appropriate.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r630e85ec162d",
+          "rb64de4da15c2",
+          "rc0f7f64c2909",
+          "rd5d96a5fd1e6"
+        ],
+        "learning_value": "Separates chemical-family prediction behavior from a controlled flow effect without assuming solvent monotonicity."
+      },
+      {
+        "id": "h6",
+        "claim": "The high predicted centers for the heterocyclic enantiomer pair may be a shared structural extrapolation rather than accurate retention.",
+        "evidence_ids": [],
+        "alternative": "Both high centers are accurate, with only the predicted modest stereochemical difference.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "rffbdd082b6a0",
+          "r8944df48a1b8"
+        ],
+        "learning_value": "Tests a high-output region with a matched chiral control."
+      },
+      {
+        "id": "h7",
+        "claim": "The polar triazole diol pair may have a shared prediction error or an unmodeled enantiomeric difference.",
+        "evidence_ids": [],
+        "alternative": "The model captures both the absolute retention and small predicted enantiomer difference.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "re86bebb15fd8",
+          "ra67d23337bab"
+        ],
+        "learning_value": "Adds a polar, high-center matched pair distinct from the hydrophobic series."
+      },
+      {
+        "id": "h8",
+        "claim": "Some prediction extremes may be underestimates: silicon-containing amides have near-zero centers, and a dibrominated cyclic alcohol has a substantially lower center than a related observed alcohol's response.",
+        "evidence_ids": [
+          "r881bffb63248"
+        ],
+        "alternative": "The silicon-containing compounds genuinely elute near their predicted centers, and the alcohol structural difference explains its lower center.",
+        "expected_sign": -1,
+        "candidate_ids": [
+          "r416af6febd58",
+          "r1e04118171f1",
+          "rbb54e2582749"
+        ],
+        "learning_value": "Checks whether low-output collapse and a separate alcohol discrepancy are genuine errors rather than interpreting wide output spans as calibrated uncertainty."
+      }
+    ],
+    "previous_hypothesis_updates": [],
+    "feedback_interpretation": "No acquired-experiment feedback or prior hypotheses exist in round zero. Initial L333 responses are measured evidence, but provide no premeasurement signed errors. Their long-retention matched structures motivated targeted contrasts; directional claims remain hypotheses, not established mechanisms.",
+    "unresolved_questions": [
+      "Do the observed long-retention nitro diaryl and sulfonyl pyrrolidine examples transfer across configuration and substitution?",
+      "Are the boronate and silicon-containing low central predictions genuine retention estimates or model failures?",
+      "How much do exact stereochemistry and the recorded flow change RTv within matched identities?",
+      "Do high predicted centers for the heterocyclic and triazole pairs represent real retention?"
+    ]
+  },
+  "queries": 24,
+  "calls": 5,
+  "viewed": [
+    "r003e6977d8ff",
+    "r0104563280e1",
+    "r06b45e29f6d4",
+    "r073eac87dbaf",
+    "r08f439af24d5",
+    "r0986b76397f4",
+    "r0e1dfb89171c",
+    "r100419b85722",
+    "r114aa7bf3b1a",
+    "r11a2515a69a9",
+    "r1211dbd23fb3",
+    "r12a02897f3f7",
+    "r136966a55cd9",
+    "r13bae104d97f",
+    "r13e06c8010e4",
+    "r13f5cc7325bf",
+    "r1488d5ef92a9",
+    "r15d1b2948ca3",
+    "r15fc08ac51a3",
+    "r16e6d0f45876",
+    "r189ada127d6f",
+    "r1b98d954507f",
+    "r1be8fe2eec78",
+    "r1c17f65d0448",
+    "r1c89683ec7a3",
+    "r1cb876898b0b",
+    "r1cc62b31d8b7",
+    "r1cfcb7839909",
+    "r1e04118171f1",
+    "r201f186265e3",
+    "r20254757e2bb",
+    "r21db495f907c",
+    "r236f55527067",
+    "r2476f0f600ad",
+    "r24e258cf10c4",
+    "r262167fdd474",
+    "r27528605a1f4",
+    "r29a8d4957353",
+    "r2cad56a44833",
+    "r30c78487d9fb",
+    "r31b886e9f456",
+    "r33473936345e",
+    "r344dd26fc1c1",
+    "r35456a197b3b",
+    "r358cbe3ca94e",
+    "r367b3703e0ed",
+    "r3807ee109050",
+    "r396f04915423",
+    "r3c9be3edf6e2",
+    "r3cfe05761778",
+    "r3d924c6fb0ed",
+    "r3f0cfccb03f2",
+    "r3fbe65be89b3",
+    "r407ac9211735",
+    "r4154c27dd9e8",
+    "r416af6febd58",
+    "r417530f54af3",
+    "r41da3cafac92",
+    "r4264ec388c7c",
+    "r4385d8d5b2c1",
+    "r43ff4da9ce3d",
+    "r444a8863d8fa",
+    "r4749e6af864e",
+    "r48c4c992f417",
+    "r4b300432959a",
+    "r4b89ab8f6c9f",
+    "r4b9fc4cdb8cc",
+    "r4e9a074e1a9c",
+    "r4eb0e27336a6",
+    "r513604d51a41",
+    "r553d5d71c7ce",
+    "r5642e4cbde22",
+    "r569b8a4ea302",
+    "r597fa3381226",
+    "r59dd3b195c9d",
+    "r5ae05f023c35",
+    "r5bc669021827",
+    "r5bce2dd6bc7d",
+    "r5cfff95afb07",
+    "r5d08c2985ad8",
+    "r5db6e7674d48",
+    "r5e4c25208653",
+    "r5e559799d1ec",
+    "r5f3d645adffd",
+    "r5f5fcc3c713d",
+    "r620fb0fe5ec6",
+    "r630e85ec162d",
+    "r645acd84e17f",
+    "r649021e78b70",
+    "r64bc2433dd8e",
+    "r64d58aea5d59",
+    "r656197ec4f90",
+    "r67f37b3941c7",
+    "r6948a1c5c044",
+    "r6a6bf9e64c81",
+    "r6b10c08ad2e1",
+    "r6c7738f4f875",
+    "r722ce4677beb",
+    "r747d235f8aa1",
+    "r74afd33527b3",
+    "r754f41892651",
+    "r758b3da82c01",
+    "r7645a13c0d70",
+    "r786a12e20fcc",
+    "r797d51145a8f",
+    "r797ff522280a",
+    "r79e5df51d71b",
+    "r7a5687023ff1",
+    "r7b1788cb96a1",
+    "r7cb3b65769c0",
+    "r7ccd764bea99",
+    "r7cf9807c7193",
+    "r7f559f6327d5",
+    "r80c0dec1989a",
+    "r81c84a17d9c2",
+    "r81d9b5ee4c38",
+    "r832c555734b6",
+    "r83526ed7e4dd",
+    "r8461175c501d",
+    "r85425e729653",
+    "r85e409dfb04b",
+    "r87e9e38ddda7",
+    "r8944df48a1b8",
+    "r89e152857aad",
+    "r8c021fbfc958",
+    "r8d8914d05795",
+    "r8f4dd091f768",
+    "r903033ef44aa",
+    "r92825ff7ad79",
+    "r94f483736449",
+    "r956856498d44",
+    "r97ef394764d7",
+    "r984cf34f4755",
+    "r98d8da6c76a5",
+    "r9a0b2a8d21dc",
+    "r9c19a48a1b96",
+    "r9ca8bfe01a76",
+    "r9ef8133131b9",
+    "ra121b595bd0b",
+    "ra2470ccedfb7",
+    "ra27352464572",
+    "ra28e772a6802",
+    "ra3eb7be1ee02",
+    "ra44cd0de9294",
+    "ra67208785bd2",
+    "ra67d23337bab",
+    "ra9a9b4a761fc",
+    "ra9e5a045b8f6",
+    "raa465ac6c2da",
+    "raa881cd6302d",
+    "raa8a2a5782ea",
+    "raedf65f32e8d",
+    "rafb6302ca4e3",
+    "rafbca8f4863e",
+    "rb1074fa9f123",
+    "rb16ae8d3f7e2",
+    "rb366c0fa39f9",
+    "rb4c8e99e2bf4",
+    "rb4e7f6c699e2",
+    "rb6129e0966aa",
+    "rb64de4da15c2",
+    "rb6dcc30cdc5c",
+    "rb701437e5343",
+    "rb7ce5e779caa",
+    "rb8181e540fbc",
+    "rb9cfaeb7e93b",
+    "rb9f58582fd62",
+    "rbadd9e0b92f5",
+    "rbb54e2582749",
+    "rbcd87f5003d1",
+    "rbdf822a2c24e",
+    "rbdf8fe76d394",
+    "rbdfff5fcbed9",
+    "rc0856d88982c",
+    "rc0f7f64c2909",
+    "rc2171317ddca",
+    "rc3147b13be2c",
+    "rc3e385a24c11",
+    "rc3e4be846e46",
+    "rc41a7b79f13d",
+    "rc4f7380fc05e",
+    "rc6c7725e2474",
+    "rc6ef9e3c1f9e",
+    "rc7bee0f0431d",
+    "rc96251995a66",
+    "rcdca2a3008cc",
+    "rce6cd6331401",
+    "rd087add33451",
+    "rd1f352097690",
+    "rd4cd3933ddb8",
+    "rd54ea3348f7e",
+    "rd5d96a5fd1e6",
+    "rd6c094088019",
+    "rd71ed92f0e1b",
+    "rd960a7096871",
+    "rdb7b821d764e",
+    "rdbad1110c39c",
+    "rdd91211c250f",
+    "rde0f050b2588",
+    "rdeea40c9bf86",
+    "rdef9f5ce09b6",
+    "re04d073f5ff8",
+    "re0e698813d1a",
+    "re1b6ec090a92",
+    "re330f8c183c1",
+    "re47c8480d625",
+    "re63364917248",
+    "re85a3f0f78c2",
+    "re86bebb15fd8",
+    "rec10f32be8cd",
+    "rf236e034c59a",
+    "rf2d28b495f2e",
+    "rf54e861310e6",
+    "rf6531458fc9b",
+    "rf8358c148e8b",
+    "rf83d6b6ff4cd",
+    "rf840f7ba5f30",
+    "rf8b6f81d53ee",
+    "rf9fc1eb1b578",
+    "rfb6f9c8450be",
+    "rfccaa7ebab1e",
+    "rfe820cec358c",
+    "rff8561fa7c09",
+    "rffbdd082b6a0"
+  ],
+  "observed_viewed": [
+    "r07b299adb0a8",
+    "r08a2c07e4543",
+    "r09549247ed18",
+    "r0cd7d9d5b5c4",
+    "r0e00e52e29af",
+    "r1574c3900e3c",
+    "r2073098e2dfe",
+    "r21209d1de8e9",
+    "r22390bf4b1c1",
+    "r25afd6faf8c7",
+    "r25d9769f1457",
+    "r270947c801dc",
+    "r3380e53e86c1",
+    "r3a67c1239764",
+    "r4263547530ad",
+    "r432419af1daa",
+    "r53eabfa1681d",
+    "r567039b0c00d",
+    "r575b352980d8",
+    "r5a477b34cae6",
+    "r5b3e2e90e46b",
+    "r5e932e27aa4f",
+    "r5f509c3c2604",
+    "r650e4f402ab4",
+    "r6836ae813ae0",
+    "r6e749ef3916e",
+    "r6f552f80f346",
+    "r6fbd8253b2c2",
+    "r80496b54b5bf",
+    "r881bffb63248",
+    "r89feb34c31ca",
+    "r8b8999cf6321",
+    "r8d2dfc1e4034",
+    "r8ec1eec29f35",
+    "r90036ee4c8bb",
+    "r9197fb7d017a",
+    "r9420053622f5",
+    "r962d183d3283",
+    "r964c67a989ae",
+    "r984fb564eafc",
+    "ra86cf34a8de5",
+    "raa43c6e0200c",
+    "raa81c13f7fce",
+    "rab95a230078f",
+    "rb1e599f21c52",
+    "rb21181ca1a81",
+    "rb42249097c88",
+    "rb465a2696dbb",
+    "rb79370b72f70",
+    "rbc35502d4aee",
+    "rbced57463d1b",
+    "rbf743781c8cc",
+    "rc452aab34b49",
+    "rc4fd0ec50704",
+    "rcdc43f29b7f4",
+    "rd02e761ac485",
+    "rd3fc758ac8fb",
+    "rd6be48b927e3",
+    "rd9e198560b6a",
+    "rdc67d7787c6b",
+    "re034be5c4d4a",
+    "re45ec1b2650e",
+    "re5e126697a00",
+    "re6c380cfe57f",
+    "re970bd0e69b4",
+    "red8370468021",
+    "rf2a522cdae1c",
+    "rf2c574465521",
+    "rf34d659a894c",
+    "rfd7344e45720",
+    "rfd796c6831e0",
+    "rfe579f2c7c02"
+  ],
+  "receipts": {
+    "turn_01.json": "a00bc82749235d41fc0c16470ba925e0cb4565aa168fa8c213de5e13ee3d4dee",
+    "turn_00.json": "40a086a03dce8c89056e0dade1342637d5368a9646cb40f57ac193840aead6f6",
+    "turn_03.json": "7443b21f1427477b0b7c514b5b210c7a097d42731a9b2aa9a5db9afe16cb011e",
+    "turn_02.json": "d7fc277688097efb523e51f2a0c485cc7f238db50e838711dc9fdebb7a60a7c7",
+    "turn_04.json": "e880c4122a4fd81cc774a1d479ad9f187473ad970a659740e00a3fe1a975a778"
+  }
+}
