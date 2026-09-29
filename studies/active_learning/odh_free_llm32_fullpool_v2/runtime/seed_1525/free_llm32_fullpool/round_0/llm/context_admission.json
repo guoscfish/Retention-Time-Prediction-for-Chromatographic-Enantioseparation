@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "arbitration_input_bound": 166950,
+  "relay_reserve": 4096,
+  "output_reserve": 32000,
+  "context_tokens": 262144,
+  "screen_reply_cap": 2048
+}
