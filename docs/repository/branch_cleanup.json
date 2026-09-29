@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-09-29T03:51:05.812176+00:00",
+  "implementation_commit": "582279fe63c531cd40bd0c374c9588046bcf7168",
+  "deleted_remote_and_local_branches": [
+    {
+      "branch": "codex/odh-representation-coreset-v1",
+      "tip": "3a4ee4589a1bbb159930d8f0e908afd90f98b7d8",
+      "archive_tag": "archive/pre-cleanup-representation-2026-09-29",
+      "tag_pushed_and_verified": true,
+      "ancestor_of_cleanup": true,
+      "unique_content_preserved": "cleanup history + byte-verified archive",
+      "tests_passed": 154
+    },
+    {
+      "branch": "codex/odh-ivr-hybrid-screen-v1",
+      "tip": "9155889eecd259b97072711b90d61d0206a0ce11",
+      "archive_tag": "archive/pre-cleanup-ivr-hybrid-2026-09-29",
+      "tag_pushed_and_verified": true,
+      "ancestor_of_cleanup": true,
+      "unique_content_preserved": "cleanup history + byte-verified archive",
+      "tests_passed": 154
+    },
+    {
+      "branch": "codex/odh-free-llm32-scientist-v1",
+      "tip": "8c8d3d0b7b46e673c9a64df40c252841c63ca634",
+      "archive_tag": "archive/pre-cleanup-free-llm32-2026-09-29",
+      "tag_pushed_and_verified": true,
+      "ancestor_of_cleanup": true,
+      "unique_content_preserved": "cleanup history + byte-verified archive",
+      "tests_passed": 154
+    }
+  ],
+  "remaining_origin_heads_at_cleanup": {
+    "refs/heads/main": "3c15d0a715942dacd510611fc6b20861614cf73d",
+    "refs/heads/refactor/odh-clean-responses-fullpool-v2": "582279fe63c531cd40bd0c374c9588046bcf7168"
+  },
+  "main_unchanged": true,
+  "upstream_unchanged": true,
+  "force_pushes": 0,
+  "merge_to_main": false,
+  "status": "COMPLETE"
+}

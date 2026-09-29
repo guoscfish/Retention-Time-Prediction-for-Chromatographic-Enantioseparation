@@ -127,3 +127,13 @@ No proven dead standalone script beyond retired LLM entry; do not infer dead cod
 ## Destructive-action gate
 
 Audit complete. Next: annotated snapshots for main/representation/IVR/Free-LLM32, push and verify remote tag targets; branch from 8c8d3d0 as refactor/odh-clean-responses-fullpool-v2. Only delete origin experimental refs after tests and ancestry/tag checks. Never delete upstream/main or force-push.
+
+
+## Post-cleanup disposition
+
+The audit above is the original pre-edit assessment. Implementation and verification
+are in [CLEANUP_REPORT.md](CLEANUP_REPORT.md). All three experimental local/origin
+branches were safely deleted after exact-tip tag verification, ancestry checks,
+implementation push and154 passing tests; [receipt](branch_cleanup.json).
+Main and upstream remain unchanged. Unique scientific bytes remain in cleaned
+history and mapped archives; no ambiguous branch was deleted.
