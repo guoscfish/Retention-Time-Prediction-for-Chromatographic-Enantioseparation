@@ -1,14 +1,14 @@
 {
   "status": "PASS",
-  "tests": 168,
+  "tests": 178,
   "failures": 0,
   "errors": 0,
   "skipped": 0,
   "source_hashes": {
     "code/Single_column_prediction.py": "59b765c8bbdc0e3941dc4f5643f8a77db57675bb8ed62176d4825da6e7e766b8",
     "code/compound_tools.py": "e9c0b25e95202bb43437ce5cf32125100815d14d0409a671347232640865ddb8",
-    "scripts/preflight_llm_responses.py": "f91fe9cc59219a4f670ba5b4d1f8268037fd2bbb96cceb50da22cff4ca4dcf3c",
-    "scripts/run_hplc_fullpool_v2.py": "80d15a2394818ad24790f30ce6e8ebca94de1aec1944e4c91dcb4529576ff712",
+    "scripts/preflight_llm_responses.py": "973398609ed70e29898c6f5c11561d4fdf7b663b009f16e3990312dedf4b6680",
+    "scripts/run_hplc_fullpool_v2.py": "b57d93db9ca8ce4bdb782320895fd8192cd846c73ff9d6533d5ad1e4d256d1f4",
     "src/hplc_al/__init__.py": "546dd379ca1c307747c9173e02740123f17e7d7a4bf9ff2ea1201d9fa829a6a0",
     "src/hplc_al/acquisition.py": "1a4b4fd732c574b70eb198cd14b28d16d0abcf936f3791d8ef923b312c2bc009",
     "src/hplc_al/common.py": "e5d30ba2a813ec508d0e7aca462c55fc94f33f47931b0d36d5e54973c353f2e4",
@@ -26,12 +26,13 @@
     "src/hplc_al/llm/catalog.py": "0545583c542ccdea1e76bbe425851bcc8830b67178a1eb27ebc1974f21ece1d1",
     "src/hplc_al/llm/context_stress.py": "b751f13edf03b9fb70c78a1074915dbcb473188122e5bba0766d3d4ae1f09bcc",
     "src/hplc_al/llm/continuous.py": "e7cb71c146bae648e45b243d4a52d3c63851a694137142e5fc275995edc1ee58",
+    "src/hplc_al/llm/credentials.py": "06dfdaf8ffa2d12d4253bdfb2ac1d9599ef0e77aa96ec52b99ebae1d4a56cc54",
     "src/hplc_al/llm/dry_run.py": "e9f885423dde601cd38e36acc26e9b853b87a3a137054f787897e439af030b12",
     "src/hplc_al/llm/full_pool.py": "1e78b66eaff9d6a4507808c4533a1245e32a351abeaea1662ad618be238973ac",
     "src/hplc_al/llm/memory.py": "57b2a7f187e044cf5e95911d328c4d060ac4559eaad0d8ec846963fb01b2301e",
     "src/hplc_al/llm/planner.py": "93e71817034f06523d4d5c6257548a9752e505cfd122c4acaef58b0a833378ae",
     "src/hplc_al/llm/reporting.py": "8ca3fbf13b03f28eeb7f4d2906934d5d78ad9405ac42e3d87cd5b6ac6fefc321",
-    "src/hplc_al/llm/responses_transport.py": "80c23dde0cb37d0f2e81520eae057ae8eeb935cd7ec56b44e92c9b1dc3bb8a97",
+    "src/hplc_al/llm/responses_transport.py": "d66b615e5c7685edb0d68b0375d954959e36d14bd3c5b63db66fe29ed3082b6e",
     "src/hplc_al/llm/runner.py": "69bd39f7eb7af681d4993895da5865c6ea9f2a1678d54b5530f4d0ba18a2f112",
     "src/hplc_al/llm/wire.py": "579d7fc30c2f9754150f9fccff4a2e8cc7a73910c71bf25e4ac1697cd3b6b7e0",
     "src/hplc_al/preflight_v2.py": "20e7c90ca857c502385b80f144a0f875f633a0dc3ff55252b46c3a2e0af9afd1",
@@ -49,9 +50,10 @@
     "src/reproduction/official.py": "38a0c5b938d461a9b3f986a78826ea256f6869f3cf77b471a892d53d644257ce"
   },
   "evidence": {
-    "docs/repository/verification/tests.log": "c364a09af53e905a39f209381c0c4b055bce8e243cd428858123acffe6d70c0e",
-    "docs/repository/verification/tests.xml": "b8cd9e1ec4322b0cd39811bbdd47fcd4b31a1183a2b213bb9ede4338deae4900",
-    "docs/repository/verification/context_stress_review.json": "32e82fbfa265f1e242f002648dda385a067a5b774b4c0da38eafff716bad6b18"
+    "docs/repository/verification/tests.log": "8fda14c4787f09271e43b4bc3937f06d612a602147e2bf6c759948df793dd398",
+    "docs/repository/verification/tests.xml": "df3bbe81579031c3eae648c6278eda5d7c80fc53bd3425bd7975a251027d71b2",
+    "docs/repository/verification/context_stress_review.json": "2db0ac26185a2d7b98729c0d641ca8390e9c5ee3490d30a4f87742e9e1258f23",
+    "docs/repository/verification/transport_403_diagnosis.json": "52e11da54538b51a33d45da9617c723730bc067f830e21b017182b1112d56613"
   },
   "lint": "ruff E4,E7,E9,F,I passed; E402 ignored for script bootstrap",
   "compileall": "PASS"

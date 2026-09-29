@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "kind": "SIMULATED_ENGINEERING_ONLY",
-  "protocol_sha256": "684685953f727e69a84a4afdf6cb1cb82b63f2a645158f63e18422461f8b389d",
+  "protocol_sha256": "fe9c32ae92663cf3dabe8cbcb0e7e6f344428ba2aa209a6753061cbca557f564",
   "packet_sha256": "c9a478c876689b7e5d414409ab2fd14be2f6dff9c0230fdd8128189ee77df14c",
   "labeled_count": 333,
   "legal_candidate_count": 4114,
@@ -4184,5 +4184,5 @@
   "new_acquisition_labels_revealed": 0,
   "test_labels_read": 0,
   "selected_non_nominee_rescue_tested": true,
-  "source_hashes_sha256": "60836a487395f9d7bb240ec2764e942d48e93a5ed48768b49112bb13da694a1e"
+  "source_hashes_sha256": "3dbfdab24e4fcf860c6888a5d260a78c6b68a074c6b88a37fdc98f4c17eb1377"
 }

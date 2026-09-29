@@ -1,0 +1,27 @@
+{
+  "initial_failure": "RESPONSES_HTTP_403 during content-free preflight",
+  "unauthenticated_control": [
+    {
+      "method": "POST",
+      "endpoint": "https://token4research.cn/responses",
+      "user_agent": "Python-urllib/3.11",
+      "http_status": 403,
+      "classification": "CLOUDFLARE_1010_BROWSER_SIGNATURE"
+    },
+    {
+      "method": "POST",
+      "endpoint": "https://token4research.cn/responses",
+      "user_agent": "QGeoGNN-Scientist/2.0",
+      "http_status": 401,
+      "classification": "API_KEY_REQUIRED"
+    }
+  ],
+  "fix": "Truthful application User-Agent and Accept: application/json; same endpoint, model, reasoning and authentication scheme.",
+  "credential_source": "User-designated local key file injected into process environment; no credential value or digest retained.",
+  "standalone_preflight": "PASS",
+  "served_model": "gpt-6-astra",
+  "preflight_sha256": "98a5b9369e5982c79420f4d6004a3064340acd4f4932b020aae7d67aa7de5d89",
+  "scientific_requests": 0,
+  "new_acquisition_labels": 0,
+  "new_fits": 0
+}

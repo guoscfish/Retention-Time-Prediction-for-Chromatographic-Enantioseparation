@@ -1,6 +1,8 @@
 import copy
 import hashlib
+import io
 import json
+import urllib.error
 
 import pytest
 
@@ -117,6 +119,9 @@ def test_explicit_wire_contract_and_safe_receipt(monkeypatch):
         "max_output_tokens": 2048,
     }
     assert req.get_header("Authorization") == "Bearer " + KEY
+    assert req.get_header("User-agent") == rt.USER_AGENT
+    assert req.get_header("Accept") == "application/json"
+    assert receipt["client_user_agent"] == rt.USER_AGENT
     assert receipt["request_sha256"] == hashlib.sha256(req.data).hexdigest()
     assert receipt["answer_sha256"] == hashlib.sha256(answer.encode()).hexdigest()
     assert (
@@ -236,3 +241,27 @@ def test_preflight_failure_no_retry(monkeypatch, tmp_path):
         len(calls) == 1
         and json.loads((tmp_path / "check.json").read_text())["status"] == "FAILED"
     )
+
+
+@pytest.mark.parametrize(
+    "body,code",
+    [
+        (b"error code: 1010\n", "RESPONSES_HTTP_403_CLOUDFLARE_1010"),
+        (b'{"error_code": 1010}', "RESPONSES_HTTP_403_CLOUDFLARE_1010"),
+        (b'{"error":"permissions denied"}', "RESPONSES_HTTP_403"),
+    ],
+)
+def test_http_diagnostic_never_echoes_body_or_retries(monkeypatch, body, code):
+    monkeypatch.setenv(CONFIG["env_key"], KEY)
+    calls = []
+
+    def opener(request, timeout):
+        calls.append(request)
+        raise urllib.error.HTTPError(
+            request.full_url, 403, "Forbidden", {}, io.BytesIO(body + KEY.encode())
+        )
+
+    with pytest.raises(rt.TransportError) as error:
+        rt.call([{"role": "user", "content": "{}"}], CONFIG, opener=opener)
+    assert str(error.value).split(":")[0] == code
+    assert KEY not in str(error.value) and len(calls) == 1

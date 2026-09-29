@@ -1,9 +1,10 @@
 # Cleanup report — 2026-09-29
 
-**READY_FOR_API_KEY.** Repository cleanup, direct Responses implementation, hierarchical
-FullPool-LLM32 V2, tests and a full real-input simulated dry-run are complete. No new
-scientific LLM acquisition, API request, acquisition-label reveal or scratch training
-was performed. The user explicitly chose to stop at environment-key readiness.
+**READY_FOR_SCIENTIFIC_RUN.** Repository cleanup, direct Responses implementation,
+hierarchical FullPool-LLM32 V2, tests and six-round simulated context checks are complete.
+The actual content-free preflight now passes using the user-designated key file after
+the Cloudflare client-signature fix. No scientific acquisition, new acquisition label
+or scratch training has occurred.
 
 ## Navigation and final structure
 
@@ -109,9 +110,9 @@ Every request explicitly includes model, reasoning.effort, input, tools=[],
 store=false and max_output_tokens. Strict HTTP/completed/output/unique-JSON validation,
 secret-free receipts, served-model/usage reporting, redirect denial, no retries after
 ambiguous dispatch, no native tools, no session/history or implicit fallback.
-Preflight has **not sent HTTP**: it reports missing process environment variable and
-READY_FOR_API_KEY. Backend compatibility, real latency/cost and actual provider
-context capacity remain unverified. Small preflight will not prove context capacity
+Real content-free preflight now passes with gpt-6-astra and the designated local key file
+after fixing the Cloudflare1010 client-signature rejection. Current status is
+READY_FOR_SCIENTIFIC_RUN. No scientific acquisition has run. Small preflight does not prove context capacity
 or backend retention policy; store=false is a request contract.
 
 ## Full-pool V2 and verification
@@ -178,4 +179,4 @@ Follow-up [pre-run review](PRE_RUN_REVIEW.md) fixed CSV drift detection before l
 access and documented a reproducible Stage2 context-capacity limitation. The original
 154-test branch-deletion receipt remains historical evidence; the linked current gate records the latest verification.
 
-Final verification: **168 tests passed, 0 failures/errors/skips**; Ruff and compileall passed.
+Final verification: **178 tests passed, 0 failures/errors/skips**; Ruff and compileall passed.

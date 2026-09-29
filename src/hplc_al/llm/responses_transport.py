@@ -17,6 +17,7 @@ import tomllib
 from ..common import atomic_json, stable_hash
 
 MAX_OUTPUT_TOKENS = 32000
+USER_AGENT = "QGeoGNN-Scientist/2.0"
 
 
 class TransportError(RuntimeError):
@@ -153,7 +154,12 @@ def call(messages, config, max_output_tokens=MAX_OUTPUT_TOKENS, *, opener=None):
     request = urllib.request.Request(
         config["base_url"] + "/responses",
         data=body,
-        headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"},
+        headers={
+            "Authorization": "Bearer " + key,
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": USER_AGENT,
+        },
     )
     try:
         open_request = opener or urllib.request.build_opener(_NoRedirect()).open
@@ -162,6 +168,19 @@ def call(messages, config, max_output_tokens=MAX_OUTPUT_TOKENS, *, opener=None):
                 raise TransportError("RESPONSES_HTTP_FAILURE")
             result = json.loads(response.read())
     except urllib.error.HTTPError as error:
+        # Classify a known gateway rejection, but never expose remote error text:
+        # it can contain credentials or other untrusted fields.
+        try:
+            failure = error.read(8192).lower()
+        except OSError:
+            failure = b""
+        if error.code == 403 and (
+            b"error code: 1010" in failure
+            or b'"error_code":1010' in failure.replace(b" ", b"")
+        ):
+            raise TransportError(
+                "RESPONSES_HTTP_403_CLOUDFLARE_1010: client signature rejected; no automatic retry"
+            ) from None
         raise TransportError(f"RESPONSES_HTTP_{error.code}") from None
     except (urllib.error.URLError, OSError, ValueError):
         raise TransportError("RESPONSES_NETWORK_OR_SCHEMA_FAILURE") from None
@@ -223,6 +242,7 @@ def call(messages, config, max_output_tokens=MAX_OUTPUT_TOKENS, *, opener=None):
         "answer_sha256": hashlib.sha256(answer.encode()).hexdigest(),
         "provider_id": config["provider_id"],
         "base_url_hostname": urlsplit(config["base_url"]).hostname,
+        "client_user_agent": USER_AGENT,
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "native_tool_calls": 0,
     }

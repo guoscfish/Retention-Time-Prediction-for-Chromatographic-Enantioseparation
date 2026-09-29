@@ -1,21 +1,30 @@
 """Content-free transport test only. Never launches an acquisition."""
 
-import os
+import argparse
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from hplc_al.common import ROOT, atomic_json
+from hplc_al.llm.credentials import inject_key
 from hplc_al.llm.responses_transport import TransportError, preflight, settings
 
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--key-file", type=Path)
+    args = parser.parse_args(argv)
     path = (
         ROOT
         / "studies/active_learning/odh_free_llm32_fullpool_v2/transport_preflight.json"
     )
-    # Explicit task target; no loading of credentials or fallback authentication.
-    if not os.environ.get("TOKEN4RESEARCH_API_KEY"):
+    # Launcher injects only the user-designated key; transport remains env-only.
+    try:
+        available = inject_key(path=args.key_file)
+    except TransportError as error:
+        print(str(error), file=sys.stderr)
+        return 1
+    if not available:
         atomic_json(
             path,
             {

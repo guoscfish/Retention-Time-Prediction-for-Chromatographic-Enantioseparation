@@ -1,19 +1,20 @@
-# READY_FOR_API_KEY
+# READY_FOR_SCIENTIFIC_RUN
 
-Code/configuration and offline engineering verification only. No real API request,
-scientific response, new acquisition label, scratch fit or V2 performance result.
+The real content-free token4research Responses preflight has passed with the user's
+designated local key file. Returned model: **gpt-6-astra**; requested reasoning: **high**.
+Cloudflare's rejection of the default Python client signature is fixed with the
+truthful `QGeoGNN-Scientist/2.0` User-Agent. No endpoint or model fallback was added.
 
-This machine's `~/.codex/config.toml` is configured for third-party **token4research /
-gpt-6-astra / high / Responses**. No credential is stored in the config or repository.
+No scientific request, acquisition label reveal, scratch fit or V2 result has occurred.
+Six acquisitions remain registered: L333→L365→L397→L429→L461→L493→L525.
 
-Run `.conda-hplc-al/bin/python scripts/run_hplc_fullpool_v2.py run` and paste the
-platform key at its hidden Terminal prompt. This fills the current process's
-`TOKEN4RESEARCH_API_KEY`, runs a content-free preflight, then starts/resumes six rounds
-of32 to L525. The source CSV is checked before every label-store access path.
-Each selection is committed before labels; no seventh acquisition is allowed.
+Start/resume from the repository:
+`.conda-hplc-al/bin/python scripts/run_hplc_fullpool_v2.py run`
 
-See [pre-run review](../../../docs/repository/PRE_RUN_REVIEW.md) and
-[transport/start instructions](../../../docs/repository/RESPONSES_TRANSPORT.md).
-Actual provider/model compatibility remains unverified until key entry and preflight.
-Later runtime progress is recorded in `execution_status.json`; completion results in
-`results/summary.json`. The continuous runner replaces this readiness state with the last verified execution state.
+The launcher automatically reads `~/.config/qgeognn-scientist/token4research.api-key`
+into process memory; no need to paste it again. Actual provider context capacity is
+not established by a small preflight. Every scientific request retains budget/schema
+checks and fails closed. The runner replaces this file with the last execution state.
+
+[Startup instructions](../../../docs/repository/RESPONSES_TRANSPORT.md) ·
+[403 diagnosis](../../../docs/repository/verification/transport_403_diagnosis.json)

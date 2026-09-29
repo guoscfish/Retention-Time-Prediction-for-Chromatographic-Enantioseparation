@@ -33,10 +33,15 @@ cd /Users/fish/Documents/GitHub/Retention-Time-Prediction-for-Chromatographic-En
 .conda-hplc-al/bin/python scripts/run_hplc_fullpool_v2.py run
 ```
 
-Paste the token4research key at the hidden prompt and press Return. Input is not
-echoed, placed in shell history or written to disk; it supplies the current process's
-`TOKEN4RESEARCH_API_KEY` environment variable. If that environment variable is already
-set, the prompt is skipped. The runner does not read `.env` files.
+The launcher now automatically reads your designated file:
+`/Users/fish/.config/qgeognn-scientist/token4research.api-key`.
+No repeated key entry is needed. The file is read only into this process's
+`TOKEN4RESEARCH_API_KEY`; the key is never printed, copied to study files or hashed.
+Existing environment credentials take precedence. `--key-file /absolute/path` explicitly
+selects a different file and overrides an existing environment value. If neither the
+environment nor the default file provides a key, `run` offers a hidden terminal prompt.
+The HTTP transport itself still reads only its registered environment variable.
+The runner does not read `.env` or `auth.json`.
 
 This command first checks the committed implementation/protocol and performs a
 content-free Responses preflight. On success it automatically runs six acquisitions,
@@ -50,18 +55,15 @@ No seventh acquisition is allowed. Extending the budget after science starts req
 a separately registered study. This is offline label acquisition from the existing
 dataset and scratch QGeoGNN training, not instrument control or LLM fine-tuning.
 
-For a **preflight only**, inject the key into the shell without recording its value:
+For a **preflight only**, the same designated file is loaded automatically:
 
 ```sh
-read -rs 'TOKEN4RESEARCH_API_KEY?token4research API key: '
-printf '\n'
-export TOKEN4RESEARCH_API_KEY
 .conda-hplc-al/bin/python scripts/preflight_llm_responses.py
 ```
 
 That separate preflight script never launches an acquisition. Missing keys produce
 `RESPONSES_API_KEY_NOT_CONFIGURED` / `READY_FOR_API_KEY` without sending requests.
-Only `os.environ[env_key]` supplies credentials to HTTP; no auth.json, ChatGPT login,
+Only `os.environ[env_key]` supplies credentials to HTTP; the launcher injects the user-designated file. No auth.json, ChatGPT login,
 Codex CLI, implicit provider or model fallback exists. Credentials and Authorization
 headers are never persisted or hashed into study artifacts.
 
@@ -75,11 +77,24 @@ Receipts record response ID, model when returned, usage when available, request/
 SHA256, provider, hostname and timestamp. Redirects and untrusted HTTP error bodies
 are rejected; ambiguous requests never automatically retry.
 
-Offline checks cannot establish third-party model availability, reasoning acceptance
-or actual context capacity. Preflight validates the small request after key entry;
-local context estimates use o200k_base with a 20% margin, not a provider guarantee.
+A real content-free preflight now passes with the designated key and returns gpt-6-astra.
+It validates this endpoint/key/model request, not maximum context capacity. Local
+context estimates use o200k_base with a 20% margin, not a provider guarantee.
 Provider rejection stops execution without a fallback or silent truncation.
 `store=false` is sent; this repository cannot independently verify backend retention.
 
 Interface reference: [Responses API](https://developers.openai.com/api/reference/typescript/resources/beta/subresources/responses/methods/create).
 This defines the compatible interface, not a claim about token4research internals.
+
+## HTTP 403 diagnosis and fix
+
+The default Python-urllib client signature received Cloudflare403/1010 even without
+a key. The truthful `User-Agent: QGeoGNN-Scientist/2.0` and `Accept: application/json`
+reach the API: without a key it returns401/API_KEY_REQUIRED; with the designated
+key the exact gpt-6-astra/high preflight completes successfully. The endpoint, model,
+reasoning setting and Bearer authentication are unchanged. No browser impersonation,
+provider switch, model fallback or automatic retry is used.
+
+The transport classifies Cloudflare1010 into a safe fixed error code. Raw HTTP error
+bodies and credentials are not persisted or printed. CLI transport failures now print
+a concise diagnostic instead of a traceback. [Evidence](verification/transport_403_diagnosis.json).

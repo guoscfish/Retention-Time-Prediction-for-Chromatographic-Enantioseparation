@@ -4450,7 +4450,7 @@
     4968,
     4971
   ],
-  "protocol_sha256": "684685953f727e69a84a4afdf6cb1cb82b63f2a645158f63e18422461f8b389d",
+  "protocol_sha256": "fe9c32ae92663cf3dabe8cbcb0e7e6f344428ba2aa209a6753061cbca557f564",
   "files": {
     "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/prepared.json": "3b2faf34f207084280b25631d291b7c1c7d8d9bd4b119f27f0893bdaa69d94d2",
     "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/model_state.npz": "98c8a907d3f9a9ef1df47b663b8a3ee1ae960b65ca5407647c65d92f6445cca5",

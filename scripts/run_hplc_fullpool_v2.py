@@ -1,16 +1,16 @@
 """Explicit V2 stages plus a user-started, resumable six-round run."""
 
 import argparse
-import getpass
 import json
-import os
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from hplc_al.llm import runner
+from hplc_al.llm.credentials import inject_key
 from hplc_al.llm.dry_run import dry_run
 from hplc_al.llm.full_pool import BUDGETS, ROUNDS
+from hplc_al.llm.responses_transport import TransportError
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -27,24 +27,33 @@ if __name__ == "__main__":
         ],
     )
     parser.add_argument("--round", type=int, choices=range(ROUNDS))
+    parser.add_argument(
+        "--key-file",
+        type=Path,
+        help="Read a key file into this process only; supported by run",
+    )
     args = parser.parse_args()
     if args.command in ("select", "advance") and args.round is None:
         parser.error("--round is required")
+    if args.key_file is not None and args.command != "run":
+        parser.error("--key-file is supported only by run")
     if args.command == "run":
         from hplc_al.llm.continuous import run
 
-        if not all(
-            (runner.runtime() / f"round_{r}/complete.json").exists()
-            for r in range(ROUNDS)
-        ) and not os.environ.get("TOKEN4RESEARCH_API_KEY"):
-            if not sys.stdin.isatty():
-                parser.error(
-                    "Set TOKEN4RESEARCH_API_KEY in the process environment, or run interactively for a hidden key prompt"
-                )
-            os.environ["TOKEN4RESEARCH_API_KEY"] = getpass.getpass(
-                "token4research API key (hidden, this process only): "
+        try:
+            if not all(
+                (runner.runtime() / f"round_{r}/complete.json").exists()
+                for r in range(ROUNDS)
+            ):
+                inject_key(interactive=True, path=args.key_file)
+            run()
+        except TransportError as error:
+            print(str(error), file=sys.stderr)
+            print(
+                "Execution stopped; no automatic retry or provider/model fallback.",
+                file=sys.stderr,
             )
-        run()
+            raise SystemExit(1) from None
     elif args.command == "prepare":
         with runner.exclusive():
             runner.prepare()

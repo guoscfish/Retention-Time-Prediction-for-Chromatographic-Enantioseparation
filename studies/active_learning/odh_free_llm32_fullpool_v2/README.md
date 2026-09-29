@@ -25,9 +25,10 @@ same Row split / L333 checkpoint / QGeoGNN / fixed denominator
 .conda-hplc-al/bin/python scripts/run_hplc_fullpool_v2.py run
 ```
 
-Run from the repository directory. **Paste the key at the hidden Terminal prompt.**
-It enters only this process's `TOKEN4RESEARCH_API_KEY`; do not paste it into config,
-source files, Git, or chat. Existing environment credentials skip the prompt.
+Run from the repository directory. The launcher automatically reads the user-designated
+`~/.config/qgeognn-scientist/token4research.api-key` into this process's
+`TOKEN4RESEARCH_API_KEY`. Existing environment credentials take precedence; an explicit
+`--key-file /absolute/path` overrides them. No key is stored in scientific artifacts.
 The command runs preflight first and then automatically seals, acquires and trains.
 Rerun the same command to resume. Full details and preflight-only instructions:
 [RESPONSES_TRANSPORT](../../../docs/repository/RESPONSES_TRANSPORT.md).

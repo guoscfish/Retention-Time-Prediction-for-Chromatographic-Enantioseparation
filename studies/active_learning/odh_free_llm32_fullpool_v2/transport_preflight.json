@@ -1,7 +1,31 @@
 {
-  "status": "READY_FOR_API_KEY",
-  "error": "RESPONSES_API_KEY_NOT_CONFIGURED",
-  "missing_environment_variable": "TOKEN4RESEARCH_API_KEY",
-  "requests_sent": 0,
-  "scientific_content": false
+  "status": "PASS",
+  "config": {
+    "provider_id": "token4research",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "base_url": "https://token4research.cn",
+    "wire_api": "responses",
+    "env_key": "TOKEN4RESEARCH_API_KEY"
+  },
+  "config_sha256": "82ca63a8927dec4de504dc44b1ebc1371392901d4d63f92ab84f97a52d61fc9a",
+  "scientific_content": false,
+  "tools": [],
+  "store": false,
+  "receipt": {
+    "response_id": "resp_0e866814f2ade35d016abb6d46814087d1baa1d393e598bf83",
+    "served_model": "gpt-6-astra",
+    "usage": {
+      "input_tokens": 4395,
+      "output_tokens": 9
+    },
+    "request_sha256": "1ec1b9c24d1a6c61fe64846fa0404089fb6466f8f0d5800c1190bd5b42490c92",
+    "answer_sha256": "a29ee2b15c494311c52521766e44af56a3ad2248e7a8ab465e5206463c13d288",
+    "provider_id": "token4research",
+    "base_url_hostname": "token4research.cn",
+    "client_user_agent": "QGeoGNN-Scientist/2.0",
+    "timestamp": "2026-09-29T07:48:23.619406+00:00",
+    "native_tool_calls": 0
+  },
+  "limitations": "Request accepted; cannot independently verify provider retention policy or context limit."
 }

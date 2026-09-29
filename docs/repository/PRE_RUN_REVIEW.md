@@ -1,11 +1,10 @@
 # Pre-run review — 2026-09-29
 
-**READY_FOR_API_KEY**. No scientific API call, new acquired label or scratch fit was run.
+**READY_FOR_SCIENTIFIC_RUN**. Real content-free preflight passed; no scientific API call, new acquired label or scratch fit was run.
 
 This machine is configured for **third-party token4research / gpt-6-astra / high**,
-using `https://token4research.cn/responses`. The key is absent from the process
-environment. Start with `.conda-hplc-al/bin/python scripts/run_hplc_fullpool_v2.py run`
-and paste the token4research key at its hidden Terminal prompt. See
+using `https://token4research.cn/responses`. The launcher reads the user-designated local key file into process memory. Start with `.conda-hplc-al/bin/python scripts/run_hplc_fullpool_v2.py run`
+without needing to paste the key again. See
 [complete startup instructions](RESPONSES_TRANSPORT.md).
 
 ## Registered loop
@@ -64,9 +63,11 @@ every future model response; exceeding a registered bound stops without truncati
 
 ## Remaining external verification
 
-Only key entry and the real content-free preflight can establish token4research key,
-endpoint and model compatibility. The small preflight does not verify maximum
-provider context capacity. A provider rejection stops the run; there is no fallback.
-Local context estimates and tests do not substitute for that external verification.
+The actual content-free preflight now passes with the user-designated key file and
+returns gpt-6-astra. The HTTP403 failure was reproduced as Cloudflare1010 for the
+default Python client signature; the truthful application User-Agent reaches the API.
+See [diagnosis](verification/transport_403_diagnosis.json). The small preflight still
+does not establish maximum provider context capacity. Provider rejection stops the
+run without fallback; local estimates remain estimates.
 
-Final verification: **168 tests passed, 0 failures/errors/skips**; Ruff and compileall passed.
+Final verification: **178 tests passed, 0 failures/errors/skips**; Ruff and compileall passed.
