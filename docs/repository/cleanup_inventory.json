@@ -1,0 +1,951 @@
+{
+  "audit_base": "8c8d3d0b7b46e673c9a64df40c252841c63ca634",
+  "branches": [
+    {
+      "branch": "codex/odh-free-llm32-scientist-v1",
+      "tip": "8c8d3d0b7b46e673c9a64df40c252841c63ca634",
+      "merge_base_main": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "unique_vs_main": [
+        "8c8d3d0 Complete L397 validation-only Free-LLM32 experiment and interim report",
+        "58e7e1f Seal feedback-informed round-one batch before label reveal",
+        "b53a3c9 Record round-zero measured feedback and completed L365 fit",
+        "420e9d9 Seal Free-LLM32 round-zero batch before label reveal",
+        "cfe4edc Freeze isolated Codex CLI transport revision before scientific selections",
+        "3349a35 Record pre-request credential failure without selecting or revealing labels",
+        "e1077f2 Freeze audited Free-LLM32 scientist phase-one protocol and tests",
+        "9155889 Add LLM hybrid acquisition studies",
+        "342ced5 Add LCMD confirmation studies",
+        "e74477c Run seed-525 HPLC IVR and hybrid screen through L493",
+        "3a4ee45 Extend representation coreset study with validation stop rule",
+        "c59c6c3 Add representation coreset study"
+      ],
+      "local_contains": [
+        "* codex/odh-free-llm32-scientist-v1"
+      ],
+      "remote_contains": [
+        "origin/codex/odh-free-llm32-scientist-v1"
+      ],
+      "ancestor_of_latest": true
+    },
+    {
+      "branch": "codex/odh-ivr-hybrid-screen-v1",
+      "tip": "9155889eecd259b97072711b90d61d0206a0ce11",
+      "merge_base_main": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "unique_vs_main": [
+        "9155889 Add LLM hybrid acquisition studies",
+        "342ced5 Add LCMD confirmation studies",
+        "e74477c Run seed-525 HPLC IVR and hybrid screen through L493",
+        "3a4ee45 Extend representation coreset study with validation stop rule",
+        "c59c6c3 Add representation coreset study"
+      ],
+      "local_contains": [
+        "* codex/odh-free-llm32-scientist-v1",
+        "  codex/odh-ivr-hybrid-screen-v1"
+      ],
+      "remote_contains": [
+        "origin/codex/odh-free-llm32-scientist-v1",
+        "  origin/codex/odh-ivr-hybrid-screen-v1"
+      ],
+      "ancestor_of_latest": true
+    },
+    {
+      "branch": "codex/odh-representation-coreset-v1",
+      "tip": "3a4ee4589a1bbb159930d8f0e908afd90f98b7d8",
+      "merge_base_main": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "unique_vs_main": [
+        "3a4ee45 Extend representation coreset study with validation stop rule",
+        "c59c6c3 Add representation coreset study"
+      ],
+      "local_contains": [
+        "* codex/odh-free-llm32-scientist-v1",
+        "  codex/odh-ivr-hybrid-screen-v1",
+        "  codex/odh-representation-coreset-v1"
+      ],
+      "remote_contains": [
+        "origin/codex/odh-free-llm32-scientist-v1",
+        "  origin/codex/odh-ivr-hybrid-screen-v1",
+        "  origin/codex/odh-representation-coreset-v1"
+      ],
+      "ancestor_of_latest": true
+    },
+    {
+      "branch": "main",
+      "tip": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "merge_base_main": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "unique_vs_main": [],
+      "local_contains": [
+        "* codex/odh-free-llm32-scientist-v1",
+        "  codex/odh-ivr-hybrid-screen-v1",
+        "  codex/odh-representation-coreset-v1",
+        "  main"
+      ],
+      "remote_contains": [
+        "origin/HEAD -> origin/main",
+        "  origin/codex/odh-free-llm32-scientist-v1",
+        "  origin/codex/odh-ivr-hybrid-screen-v1",
+        "  origin/codex/odh-representation-coreset-v1",
+        "  origin/main"
+      ],
+      "ancestor_of_latest": true
+    },
+    {
+      "branch": "origin",
+      "tip": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "merge_base_main": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "unique_vs_main": [],
+      "local_contains": [
+        "* codex/odh-free-llm32-scientist-v1",
+        "  codex/odh-ivr-hybrid-screen-v1",
+        "  codex/odh-representation-coreset-v1",
+        "  main"
+      ],
+      "remote_contains": [
+        "origin/HEAD -> origin/main",
+        "  origin/codex/odh-free-llm32-scientist-v1",
+        "  origin/codex/odh-ivr-hybrid-screen-v1",
+        "  origin/codex/odh-representation-coreset-v1",
+        "  origin/main"
+      ],
+      "ancestor_of_latest": true
+    },
+    {
+      "branch": "origin/codex/odh-free-llm32-scientist-v1",
+      "tip": "8c8d3d0b7b46e673c9a64df40c252841c63ca634",
+      "merge_base_main": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "unique_vs_main": [
+        "8c8d3d0 Complete L397 validation-only Free-LLM32 experiment and interim report",
+        "58e7e1f Seal feedback-informed round-one batch before label reveal",
+        "b53a3c9 Record round-zero measured feedback and completed L365 fit",
+        "420e9d9 Seal Free-LLM32 round-zero batch before label reveal",
+        "cfe4edc Freeze isolated Codex CLI transport revision before scientific selections",
+        "3349a35 Record pre-request credential failure without selecting or revealing labels",
+        "e1077f2 Freeze audited Free-LLM32 scientist phase-one protocol and tests",
+        "9155889 Add LLM hybrid acquisition studies",
+        "342ced5 Add LCMD confirmation studies",
+        "e74477c Run seed-525 HPLC IVR and hybrid screen through L493",
+        "3a4ee45 Extend representation coreset study with validation stop rule",
+        "c59c6c3 Add representation coreset study"
+      ],
+      "local_contains": [
+        "* codex/odh-free-llm32-scientist-v1"
+      ],
+      "remote_contains": [
+        "origin/codex/odh-free-llm32-scientist-v1"
+      ],
+      "ancestor_of_latest": true
+    },
+    {
+      "branch": "origin/codex/odh-ivr-hybrid-screen-v1",
+      "tip": "9155889eecd259b97072711b90d61d0206a0ce11",
+      "merge_base_main": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "unique_vs_main": [
+        "9155889 Add LLM hybrid acquisition studies",
+        "342ced5 Add LCMD confirmation studies",
+        "e74477c Run seed-525 HPLC IVR and hybrid screen through L493",
+        "3a4ee45 Extend representation coreset study with validation stop rule",
+        "c59c6c3 Add representation coreset study"
+      ],
+      "local_contains": [
+        "* codex/odh-free-llm32-scientist-v1",
+        "  codex/odh-ivr-hybrid-screen-v1"
+      ],
+      "remote_contains": [
+        "origin/codex/odh-free-llm32-scientist-v1",
+        "  origin/codex/odh-ivr-hybrid-screen-v1"
+      ],
+      "ancestor_of_latest": true
+    },
+    {
+      "branch": "origin/codex/odh-representation-coreset-v1",
+      "tip": "3a4ee4589a1bbb159930d8f0e908afd90f98b7d8",
+      "merge_base_main": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "unique_vs_main": [
+        "3a4ee45 Extend representation coreset study with validation stop rule",
+        "c59c6c3 Add representation coreset study"
+      ],
+      "local_contains": [
+        "* codex/odh-free-llm32-scientist-v1",
+        "  codex/odh-ivr-hybrid-screen-v1",
+        "  codex/odh-representation-coreset-v1"
+      ],
+      "remote_contains": [
+        "origin/codex/odh-free-llm32-scientist-v1",
+        "  origin/codex/odh-ivr-hybrid-screen-v1",
+        "  origin/codex/odh-representation-coreset-v1"
+      ],
+      "ancestor_of_latest": true
+    },
+    {
+      "branch": "origin/main",
+      "tip": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "merge_base_main": "3c15d0a715942dacd510611fc6b20861614cf73d",
+      "unique_vs_main": [],
+      "local_contains": [
+        "* codex/odh-free-llm32-scientist-v1",
+        "  codex/odh-ivr-hybrid-screen-v1",
+        "  codex/odh-representation-coreset-v1",
+        "  main"
+      ],
+      "remote_contains": [
+        "origin/HEAD -> origin/main",
+        "  origin/codex/odh-free-llm32-scientist-v1",
+        "  origin/codex/odh-ivr-hybrid-screen-v1",
+        "  origin/codex/odh-representation-coreset-v1",
+        "  origin/main"
+      ],
+      "ancestor_of_latest": true
+    },
+    {
+      "branch": "upstream",
+      "tip": "d284767bf7f1f04b24f758211a1d8d70e82f52ed",
+      "merge_base_main": "d284767bf7f1f04b24f758211a1d8d70e82f52ed",
+      "unique_vs_main": [],
+      "local_contains": [
+        "* codex/odh-free-llm32-scientist-v1",
+        "  codex/odh-ivr-hybrid-screen-v1",
+        "  codex/odh-representation-coreset-v1",
+        "  main"
+      ],
+      "remote_contains": [
+        "origin/HEAD -> origin/main",
+        "  origin/codex/odh-free-llm32-scientist-v1",
+        "  origin/codex/odh-ivr-hybrid-screen-v1",
+        "  origin/codex/odh-representation-coreset-v1",
+        "  origin/main",
+        "  upstream/HEAD -> upstream/main",
+        "  upstream/main"
+      ],
+      "ancestor_of_latest": true
+    },
+    {
+      "branch": "upstream/main",
+      "tip": "d284767bf7f1f04b24f758211a1d8d70e82f52ed",
+      "merge_base_main": "d284767bf7f1f04b24f758211a1d8d70e82f52ed",
+      "unique_vs_main": [],
+      "local_contains": [
+        "* codex/odh-free-llm32-scientist-v1",
+        "  codex/odh-ivr-hybrid-screen-v1",
+        "  codex/odh-representation-coreset-v1",
+        "  main"
+      ],
+      "remote_contains": [
+        "origin/HEAD -> origin/main",
+        "  origin/codex/odh-free-llm32-scientist-v1",
+        "  origin/codex/odh-ivr-hybrid-screen-v1",
+        "  origin/codex/odh-representation-coreset-v1",
+        "  origin/main",
+        "  upstream/HEAD -> upstream/main",
+        "  upstream/main"
+      ],
+      "ancestor_of_latest": true
+    }
+  ],
+  "studies": [
+    {
+      "study": "odh_free_llm32_scientist_v1",
+      "status": "COMPLETE / DEVELOPMENT",
+      "tracked_files": 111,
+      "selection_files": 4,
+      "fit_records": 2,
+      "complete_markers": [
+        "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/complete.json"
+      ]
+    },
+    {
+      "study": "odh_gradient_al_smoke",
+      "status": "COMPLETE / DEVELOPMENT",
+      "tracked_files": 139,
+      "selection_files": 9,
+      "fit_records": 11,
+      "complete_markers": [
+        "studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_1/gradient/complete.json",
+        "studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_2/gradient/complete.json",
+        "studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_1/gradient/complete.json",
+        "studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_2/gradient/complete.json",
+        "studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0/gradient/complete.json"
+      ]
+    },
+    {
+      "study": "odh_gradient_al_transfer_v2",
+      "status": "COMPLETE / DEVELOPMENT",
+      "tracked_files": 283,
+      "selection_files": 16,
+      "fit_records": 19,
+      "complete_markers": [
+        "studies/active_learning/odh_gradient_al_transfer_v2/runtime/unit_gradient_lcmd/round_1/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_gradient_al_transfer_v2/runtime/unit_gradient_lcmd/round_2/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_gradient_al_transfer_v2/runtime/unit_gradient_maxdet/round_1/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_gradient_al_transfer_v2/runtime/unit_gradient_maxdet/round_2/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_maxdet/round_1/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_maxdet/round_2/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_gradient_al_transfer_v2/runtime/shared_round_0/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_gradient_al_transfer_v2/runtime/random/round_1/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_gradient_al_transfer_v2/runtime/random/round_2/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_1/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_2/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_gradient_al_transfer_v2/interrupted_attempt_20260923/runtime/shared_round_0/raw_gradient_bank/complete.json"
+      ]
+    },
+    {
+      "study": "odh_ivr_hybrid_screen_v1",
+      "status": "COMPLETE / DEVELOPMENT",
+      "tracked_files": 248,
+      "selection_files": 10,
+      "fit_records": 20,
+      "complete_markers": [
+        "studies/active_learning/odh_ivr_hybrid_screen_v1/runtime/hybrid_ensemble_latent/round_1/latent/complete.json",
+        "studies/active_learning/odh_ivr_hybrid_screen_v1/runtime/hybrid_ensemble_latent/round_4/latent/complete.json",
+        "studies/active_learning/odh_ivr_hybrid_screen_v1/runtime/hybrid_ensemble_latent/round_3/latent/complete.json",
+        "studies/active_learning/odh_ivr_hybrid_screen_v1/runtime/hybrid_ensemble_latent/round_2/latent/complete.json",
+        "studies/active_learning/odh_ivr_hybrid_screen_v1/runtime/kernel_ivr/round_1/gradient/complete.json",
+        "studies/active_learning/odh_ivr_hybrid_screen_v1/runtime/kernel_ivr/round_4/gradient/complete.json",
+        "studies/active_learning/odh_ivr_hybrid_screen_v1/runtime/kernel_ivr/round_3/gradient/complete.json",
+        "studies/active_learning/odh_ivr_hybrid_screen_v1/runtime/kernel_ivr/round_2/gradient/complete.json"
+      ]
+    },
+    {
+      "study": "odh_lcmd_confirmation_v1",
+      "status": "PARTIAL / SUPERSEDED / ARCHIVE_ONLY",
+      "tracked_files": 10,
+      "selection_files": 1,
+      "fit_records": 1,
+      "complete_markers": []
+    },
+    {
+      "study": "odh_lcmd_confirmation_v2",
+      "status": "COMPLETE / CANONICAL_BASELINE",
+      "tracked_files": 83,
+      "selection_files": 12,
+      "fit_records": 14,
+      "complete_markers": []
+    },
+    {
+      "study": "odh_llm_hybrid_v1",
+      "status": "FAILED / SUPERSEDED / ARCHIVE_ONLY",
+      "tracked_files": 3,
+      "selection_files": 0,
+      "fit_records": 0,
+      "complete_markers": []
+    },
+    {
+      "study": "odh_llm_hybrid_v2",
+      "status": "FAILED / SUPERSEDED / ARCHIVE_ONLY",
+      "tracked_files": 16,
+      "selection_files": 0,
+      "fit_records": 0,
+      "complete_markers": []
+    },
+    {
+      "study": "odh_llm_hybrid_v3",
+      "status": "FAILED / SUPERSEDED / ARCHIVE_ONLY",
+      "tracked_files": 4,
+      "selection_files": 0,
+      "fit_records": 0,
+      "complete_markers": []
+    },
+    {
+      "study": "odh_llm_hybrid_v4",
+      "status": "PARTIAL / SUPERSEDED / ARCHIVE_ONLY",
+      "tracked_files": 16,
+      "selection_files": 2,
+      "fit_records": 0,
+      "complete_markers": []
+    },
+    {
+      "study": "odh_llm_hybrid_v6",
+      "status": "PARTIAL / SUPERSEDED / ARCHIVE_ONLY",
+      "tracked_files": 16,
+      "selection_files": 2,
+      "fit_records": 0,
+      "complete_markers": []
+    },
+    {
+      "study": "odh_llm_hybrid_v7",
+      "status": "PARTIAL / SUPERSEDED / ARCHIVE_ONLY",
+      "tracked_files": 16,
+      "selection_files": 2,
+      "fit_records": 0,
+      "complete_markers": []
+    },
+    {
+      "study": "odh_llm_hybrid_v8",
+      "status": "PARTIAL / SUPERSEDED / ARCHIVE_ONLY",
+      "tracked_files": 64,
+      "selection_files": 6,
+      "fit_records": 3,
+      "complete_markers": [
+        "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/complete.json"
+      ]
+    },
+    {
+      "study": "odh_representation_coreset_extension_v1",
+      "status": "COMPLETE / DEVELOPMENT",
+      "tracked_files": 143,
+      "selection_files": 8,
+      "fit_records": 8,
+      "complete_markers": [
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/morgan_coreset/round_4/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/morgan_coreset/round_4/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/morgan_coreset/round_3/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/morgan_coreset/round_3/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/latent_coreset/round_4/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/latent_coreset/round_4/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/latent_coreset/round_3/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/latent_coreset/round_3/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/random/round_4/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/random/round_4/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/random/round_3/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/random/round_3/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/raw_gradient_lcmd/round_4/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/raw_gradient_lcmd/round_4/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/raw_gradient_lcmd/round_3/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_extension_v1/runtime/raw_gradient_lcmd/round_3/latent/complete.json"
+      ]
+    },
+    {
+      "study": "odh_representation_coreset_v1",
+      "status": "COMPLETE / DEVELOPMENT",
+      "tracked_files": 190,
+      "selection_files": 12,
+      "fit_records": 13,
+      "complete_markers": [
+        "studies/active_learning/odh_representation_coreset_v1/runtime/morgan_coreset/round_0/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/morgan_coreset/round_1/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/morgan_coreset/round_1/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/morgan_coreset/round_2/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/morgan_coreset/round_2/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/latent_coreset/round_0/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/latent_coreset/round_1/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/latent_coreset/round_1/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/latent_coreset/round_2/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/latent_coreset/round_2/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/random/round_0/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/random/round_1/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/random/round_1/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/random/round_2/raw_gradient_bank/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/random/round_2/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_0/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_1/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_2/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_0/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_1/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_3/latent/complete.json",
+        "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_2/latent/complete.json"
+      ]
+    },
+    {
+      "study": "odh_training_protocol_diagnosis",
+      "status": "COMPLETE / CANONICAL_BASELINE",
+      "tracked_files": 87,
+      "selection_files": 0,
+      "fit_records": 9,
+      "complete_markers": [
+        "studies/active_learning/odh_training_protocol_diagnosis/runtime/geometry_seed_525/A/complete.json",
+        "studies/active_learning/odh_training_protocol_diagnosis/runtime/geometry_seed_525/D/complete.json"
+      ]
+    }
+  ],
+  "module_importers": {
+    "coreset.py": [
+      "src/hplc_al/representation_diagnostics.py",
+      "src/hplc_al/representation_extension.py",
+      "src/hplc_al/representation_runner.py",
+      "tests/hplc_al/test_representation_coreset.py"
+    ],
+    "runner.py": [
+      "scripts/report_hplc_training_diagnosis.py",
+      "scripts/run_hplc_al_smoke.py",
+      "scripts/run_hplc_training_diagnosis.py",
+      "scripts/verify_hplc_transfer_v2_runtime.py",
+      "src/hplc_al/free_llm_runner.py",
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "src/hplc_al/lcmd_confirmation.py",
+      "src/hplc_al/reporting.py",
+      "src/hplc_al/representation_extension.py",
+      "src/hplc_al/representation_runner.py",
+      "src/hplc_al/transfer_v2_duration.py",
+      "src/hplc_al/transfer_v2_runner.py",
+      "src/hplc_diagnosis/runner.py",
+      "tests/hplc_al/test_recovery.py",
+      "tests/hplc_al/test_training_diagnosis.py"
+    ],
+    "ivr_hybrid_screen.py": [
+      "scripts/report_hplc_ivr_hybrid_screen.py",
+      "scripts/run_hplc_ivr_hybrid_screen.py",
+      "tests/hplc_al/test_ivr_hybrid_screen.py"
+    ],
+    "transfer_v2.py": [
+      "scripts/report_hplc_gradient_transfer_v2.py",
+      "scripts/verify_hplc_transfer_v2_runtime.py",
+      "scripts/write_hplc_transfer_v2_report.py",
+      "src/hplc_al/lcmd_confirmation.py",
+      "src/hplc_al/llm_hybrid.py",
+      "src/hplc_al/preflight_v2.py",
+      "src/hplc_al/representation_runner.py",
+      "src/hplc_al/transfer_v2_audit.py",
+      "src/hplc_al/transfer_v2_duration.py",
+      "src/hplc_al/transfer_v2_runner.py",
+      "tests/hplc_al/test_transfer_v2_protocol.py"
+    ],
+    "free_llm_report.py": [
+      "scripts/run_hplc_free_llm32.py"
+    ],
+    "kernel_ivr.py": [
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "tests/hplc_al/test_ivr_hybrid_screen.py"
+    ],
+    "preflight_v2.py": [
+      "scripts/run_hplc_gradient_transfer_v2_preflight.py",
+      "tests/hplc_al/test_transfer_v2_protocol.py"
+    ],
+    "gradient.py": [
+      "src/hplc_al/free_llm_runner.py",
+      "src/hplc_al/lcmd_confirmation.py",
+      "src/hplc_al/llm_hybrid.py",
+      "src/hplc_al/representation_runner.py",
+      "src/hplc_al/runner.py",
+      "src/hplc_al/transfer_v2_runner.py",
+      "src/hplc_diagnosis/geometry.py",
+      "tests/hplc_al/test_acquisition_gradient.py",
+      "tests/hplc_al/test_training_diagnosis.py"
+    ],
+    "hybrid.py": [
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "tests/hplc_al/test_ivr_hybrid_screen.py"
+    ],
+    "lcmd_confirmation.py": [
+      "scripts/report_hplc_lcmd_confirmation.py",
+      "scripts/run_hplc_lcmd_confirmation.py",
+      "src/hplc_al/free_llm_runner.py"
+    ],
+    "latent.py": [
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "src/hplc_al/representation_runner.py",
+      "tests/hplc_al/test_representation_coreset.py"
+    ],
+    "protocol.py": [
+      "scripts/report_hplc_gradient_transfer_v2.py",
+      "scripts/report_hplc_ivr_hybrid_screen.py",
+      "scripts/report_hplc_representation_coreset.py",
+      "scripts/report_hplc_representation_extension.py",
+      "scripts/verify_hplc_transfer_v2_runtime.py",
+      "src/hplc_al/free_llm_report.py",
+      "src/hplc_al/free_llm_runner.py",
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "src/hplc_al/lcmd_confirmation.py",
+      "src/hplc_al/llm_hybrid.py",
+      "src/hplc_al/reporting.py",
+      "src/hplc_al/representation_extension.py",
+      "src/hplc_al/representation_runner.py",
+      "src/hplc_al/runner.py",
+      "src/hplc_al/transfer_v2_duration.py",
+      "src/hplc_al/transfer_v2_runner.py",
+      "src/hplc_diagnosis/runner.py",
+      "tests/hplc_al/conftest.py",
+      "tests/hplc_al/test_acquisition_gradient.py",
+      "tests/hplc_al/test_free_llm_scientist.py",
+      "tests/hplc_al/test_ivr_hybrid_screen.py",
+      "tests/hplc_al/test_protocol.py",
+      "tests/hplc_al/test_recovery.py",
+      "tests/hplc_al/test_representation_coreset.py",
+      "tests/hplc_al/test_representation_extension.py",
+      "tests/hplc_al/test_training_diagnosis.py"
+    ],
+    "__init__.py": [],
+    "transfer_v2_audit.py": [
+      "scripts/audit_hplc_gradient_transfer_v2.py",
+      "scripts/verify_hplc_transfer_v2_runtime.py"
+    ],
+    "representation_extension.py": [
+      "scripts/report_hplc_representation_extension.py",
+      "scripts/run_hplc_representation_extension.py",
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "tests/hplc_al/test_representation_extension.py"
+    ],
+    "llm_catalog.py": [
+      "src/hplc_al/free_llm_report.py",
+      "src/hplc_al/free_llm_runner.py",
+      "src/hplc_al/free_llm_scientist.py",
+      "src/hplc_al/llm_hybrid.py",
+      "tests/hplc_al/test_free_llm_scientist.py"
+    ],
+    "common.py": [
+      "scripts/report_hplc_gradient_transfer_v2.py",
+      "scripts/report_hplc_ivr_hybrid_screen.py",
+      "scripts/report_hplc_representation_coreset.py",
+      "scripts/report_hplc_representation_extension.py",
+      "scripts/report_hplc_training_diagnosis.py",
+      "scripts/verify_hplc_transfer_v2_runtime.py",
+      "scripts/write_hplc_transfer_v2_report.py",
+      "src/hplc_al/coreset.py",
+      "src/hplc_al/data.py",
+      "src/hplc_al/free_llm_report.py",
+      "src/hplc_al/free_llm_runner.py",
+      "src/hplc_al/free_llm_scientist.py",
+      "src/hplc_al/gradient.py",
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "src/hplc_al/latent.py",
+      "src/hplc_al/lcmd_confirmation.py",
+      "src/hplc_al/llm_catalog.py",
+      "src/hplc_al/llm_cli_transport.py",
+      "src/hplc_al/llm_hybrid.py",
+      "src/hplc_al/protocol.py",
+      "src/hplc_al/reporting.py",
+      "src/hplc_al/representation_extension.py",
+      "src/hplc_al/representation_runner.py",
+      "src/hplc_al/runner.py",
+      "src/hplc_al/training.py",
+      "src/hplc_al/transfer_v2_audit.py",
+      "src/hplc_al/transfer_v2_duration.py",
+      "src/hplc_al/transfer_v2_runner.py",
+      "src/hplc_diagnosis/geometry.py",
+      "src/hplc_diagnosis/runner.py",
+      "src/hplc_diagnosis/training.py",
+      "tests/hplc_al/test_acquisition_gradient.py",
+      "tests/hplc_al/test_completed_study.py",
+      "tests/hplc_al/test_free_llm_scientist.py",
+      "tests/hplc_al/test_ivr_hybrid_screen.py",
+      "tests/hplc_al/test_protocol.py",
+      "tests/hplc_al/test_representation_coreset.py",
+      "tests/hplc_al/test_representation_extension.py",
+      "tests/hplc_al/test_transfer_v2_protocol.py"
+    ],
+    "transfer_v2_duration.py": [
+      "scripts/run_hplc_gradient_transfer_v2_duration.py"
+    ],
+    "ensemble.py": [
+      "src/hplc_al/hybrid.py",
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "tests/hplc_al/test_ivr_hybrid_screen.py"
+    ],
+    "llm_hybrid.py": [],
+    "free_llm_runner.py": [
+      "scripts/run_hplc_free_llm32.py",
+      "src/hplc_al/free_llm_report.py",
+      "tests/hplc_al/test_free_llm_scientist.py"
+    ],
+    "representation_runner.py": [
+      "scripts/report_hplc_representation_coreset.py",
+      "scripts/run_hplc_representation_coreset.py",
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "src/hplc_al/representation_extension.py",
+      "tests/hplc_al/test_representation_coreset.py"
+    ],
+    "acquisition.py": [
+      "src/hplc_al/free_llm_runner.py",
+      "src/hplc_al/lcmd_confirmation.py",
+      "src/hplc_al/llm_hybrid.py",
+      "src/hplc_al/representation_extension.py",
+      "src/hplc_al/runner.py",
+      "src/hplc_al/transfer_v2_runner.py",
+      "src/hplc_diagnosis/geometry.py",
+      "tests/hplc_al/test_acquisition_gradient.py"
+    ],
+    "transfer_v2_runner.py": [
+      "scripts/report_hplc_gradient_transfer_v2.py",
+      "scripts/run_hplc_gradient_transfer_v2.py",
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "src/hplc_al/representation_runner.py",
+      "tests/hplc_al/test_representation_coreset.py",
+      "tests/hplc_al/test_transfer_v2_protocol.py"
+    ],
+    "representation_diagnostics.py": [
+      "src/hplc_al/representation_extension.py",
+      "src/hplc_al/representation_runner.py"
+    ],
+    "llm_cli_transport.py": [
+      "src/hplc_al/free_llm_runner.py",
+      "src/hplc_al/free_llm_scientist.py",
+      "tests/hplc_al/test_free_llm_scientist.py"
+    ],
+    "deterministic_shuffle.py": [
+      "scripts/verify_hplc_transfer_v2_runtime.py",
+      "src/hplc_al/preflight_v2.py",
+      "src/hplc_al/training.py",
+      "src/hplc_al/transfer_v2.py",
+      "tests/hplc_al/test_transfer_v2_protocol.py"
+    ],
+    "llm_transport.py": [
+      "src/hplc_al/llm_hybrid.py"
+    ],
+    "training.py": [
+      "scripts/report_hplc_training_diagnosis.py",
+      "src/hplc_al/free_llm_runner.py",
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "src/hplc_al/lcmd_confirmation.py",
+      "src/hplc_al/llm_hybrid.py",
+      "src/hplc_al/representation_extension.py",
+      "src/hplc_al/representation_runner.py",
+      "src/hplc_al/runner.py",
+      "src/hplc_al/transfer_v2_duration.py",
+      "src/hplc_al/transfer_v2_runner.py",
+      "src/hplc_diagnosis/runner.py",
+      "src/hplc_diagnosis/training.py",
+      "tests/hplc_al/test_acquisition_gradient.py",
+      "tests/hplc_al/test_training_diagnosis.py"
+    ],
+    "data.py": [
+      "scripts/reproduce_odh_baseline.py",
+      "scripts/verify_hplc_transfer_v2_runtime.py",
+      "src/hplc_al/data.py",
+      "src/hplc_al/free_llm_runner.py",
+      "src/hplc_al/gradient.py",
+      "src/hplc_al/ivr_hybrid_screen.py",
+      "src/hplc_al/latent.py",
+      "src/hplc_al/lcmd_confirmation.py",
+      "src/hplc_al/llm_hybrid.py",
+      "src/hplc_al/representation_extension.py",
+      "src/hplc_al/representation_runner.py",
+      "src/hplc_al/runner.py",
+      "src/hplc_al/training.py",
+      "src/hplc_al/transfer_v2_duration.py",
+      "src/hplc_al/transfer_v2_runner.py",
+      "src/hplc_diagnosis/geometry.py",
+      "src/hplc_diagnosis/runner.py",
+      "src/hplc_diagnosis/training.py",
+      "tests/hplc_al/conftest.py",
+      "tests/hplc_al/test_acquisition_gradient.py",
+      "tests/hplc_al/test_protocol.py"
+    ],
+    "reporting.py": [
+      "scripts/run_hplc_al_smoke.py"
+    ],
+    "free_llm_scientist.py": [
+      "src/hplc_al/free_llm_report.py",
+      "src/hplc_al/free_llm_runner.py",
+      "tests/hplc_al/test_free_llm_scientist.py"
+    ]
+  },
+  "empty_tracked_files": [
+    "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/round0_select.log"
+  ],
+  "duplicate_study_bytes": [
+    [
+      "studies/active_learning/odh_free_llm32_scientist_v1/SYSTEM_PROMPT.json",
+      "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/SYSTEM_PROMPT.json"
+    ],
+    [
+      "studies/active_learning/odh_free_llm32_scientist_v1/protected_artifacts.json",
+      "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/protected_artifacts.json"
+    ],
+    [
+      "studies/active_learning/odh_free_llm32_scientist_v1/runtime/seed_1525/free_llm32_scientist/round_0/observed.json",
+      "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/observed.json"
+    ],
+    [
+      "studies/active_learning/odh_free_llm32_scientist_v1/runtime/seed_1525/free_llm32_scientist/round_0/packet.json",
+      "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/packet.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_smoke/duration_audit/stage_1/attempt_000/validation_predictions.npz",
+      "studies/active_learning/odh_gradient_al_smoke/runtime/shared_round_0/attempt_000/validation_predictions.npz"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_smoke/execution_logs/first_report.log",
+      "studies/active_learning/odh_gradient_al_smoke/execution_logs/report_replay.log"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_smoke/runtime/lcmd/round_0/predictions.npz",
+      "studies/active_learning/odh_gradient_al_smoke/runtime/maxdet/round_0/predictions.npz",
+      "studies/active_learning/odh_gradient_al_smoke/runtime/random/round_0/predictions.npz"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_smoke/splits/partition.json",
+      "studies/active_learning/odh_training_protocol_diagnosis/partition.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/duration_smoke/partition.json",
+      "studies/active_learning/odh_gradient_al_transfer_v2/splits/partition.json",
+      "studies/active_learning/odh_ivr_hybrid_screen_v1/splits/partition.json",
+      "studies/active_learning/odh_lcmd_confirmation_v1/splits/partition.json",
+      "studies/active_learning/odh_lcmd_confirmation_v2/splits/partition.json",
+      "studies/active_learning/odh_representation_coreset_extension_v1/splits/partition.json",
+      "studies/active_learning/odh_representation_coreset_v1/splits/partition.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/duration_smoke/seed_525/attempt_000/training_curve.csv",
+      "studies/active_learning/odh_representation_coreset_v1/shared/fit/attempt_000/training_curve.csv"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/duration_smoke/seed_525/fit.json",
+      "studies/active_learning/odh_representation_coreset_v1/shared/fit/fit.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/duration_smoke/seed_525/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/shared/fit/input.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/interrupted_attempt_20260923/runtime/random/round_1/fit/input.json",
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/random/round_1/fit/input.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/environment.json",
+      "studies/active_learning/odh_ivr_hybrid_screen_v1/environment.json",
+      "studies/active_learning/odh_lcmd_confirmation_v1/runtime/environment.json",
+      "studies/active_learning/odh_lcmd_confirmation_v2/runtime/environment.json",
+      "studies/active_learning/odh_representation_coreset_v1/environment.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/random/round_0/predictions.npz",
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_0/predictions.npz",
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_maxdet/round_0/predictions.npz",
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/unit_gradient_lcmd/round_0/predictions.npz",
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/unit_gradient_maxdet/round_0/predictions.npz",
+      "studies/active_learning/odh_ivr_hybrid_screen_v1/runtime/hybrid_ensemble_latent/round_0/predictions.npz",
+      "studies/active_learning/odh_ivr_hybrid_screen_v1/runtime/kernel_ivr/round_0/predictions.npz"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/random/round_1/raw_gradient_bank/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/random/round_1/raw_gradient_bank/input.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_1/fit/attempt_000/training_curve.csv",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_1/fit/attempt_000/training_curve.csv"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_1/fit/fit.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_1/fit/fit.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_1/fit/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_1/fit/input.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_2/fit/attempt_000/training_curve.csv",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_2/fit/attempt_000/training_curve.csv"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_2/fit/fit.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_2/fit/fit.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_2/fit/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_2/fit/input.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_3/fit/attempt_000/training_curve.csv",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_3/fit/attempt_000/training_curve.csv"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_3/fit/fit.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_3/fit/fit.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/raw_gradient_lcmd/round_3/fit/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_3/fit/input.json"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/shared_round_0/raw_gradient_bank/features.npz",
+      "studies/active_learning/odh_ivr_hybrid_screen_v1/runtime/kernel_ivr/round_0/gradient/features.npz"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/unit_gradient_maxdet/round_3/fit/attempt_000/best.pt",
+      "studies/active_learning/odh_gradient_al_transfer_v2/runtime/unit_gradient_maxdet/round_3/fit/attempt_001/best.pt"
+    ],
+    [
+      "studies/active_learning/odh_gradient_al_transfer_v2/test_truth.npz",
+      "studies/active_learning/odh_ivr_hybrid_screen_v1/test_truth.npz"
+    ],
+    [
+      "studies/active_learning/odh_lcmd_confirmation_v1/runtime/seed_1525/random/round_0/selection.json",
+      "studies/active_learning/odh_lcmd_confirmation_v2/runtime/seed_1525/random/round_0/selection.json"
+    ],
+    [
+      "studies/active_learning/odh_lcmd_confirmation_v1/selections/seed_1525/random_order.json",
+      "studies/active_learning/odh_lcmd_confirmation_v2/selections/seed_1525/random_order.json"
+    ],
+    [
+      "studies/active_learning/odh_llm_hybrid_v1/runtime/seed_1525/chemical_llm/round_0/packet.json",
+      "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/packet.json",
+      "studies/active_learning/odh_llm_hybrid_v3/runtime/seed_1525/chemical_llm/round_0/packet.json",
+      "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/packet.json",
+      "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/packet.json",
+      "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/packet.json",
+      "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/packet.json"
+    ],
+    [
+      "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json",
+      "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json"
+    ],
+    [
+      "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json",
+      "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_extension_v1/representation/chemistry.json",
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/chemistry.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_extension_v1/representation/random_order.json",
+      "studies/active_learning/odh_representation_coreset_v1/random_order.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_extension_v1/runtime/raw_gradient_lcmd/round_3/latent/audit.json",
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_3/latent/audit.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_extension_v1/runtime/raw_gradient_lcmd/round_3/latent/complete.json",
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_3/latent/complete.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_extension_v1/runtime/raw_gradient_lcmd/round_3/latent/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_3/latent/input.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_extension_v1/test_reveal.json",
+      "studies/active_learning/odh_representation_coreset_v1/test_reveal.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_0/latent/audit.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/latent_coreset/round_0/latent/audit.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/morgan_coreset/round_0/latent/audit.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/random/round_0/latent/audit.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_0/latent/audit.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_0/latent/complete.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/latent_coreset/round_0/latent/complete.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/morgan_coreset/round_0/latent/complete.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/random/round_0/latent/complete.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_0/latent/complete.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_0/latent/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/latent_coreset/round_0/latent/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/morgan_coreset/round_0/latent/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/random/round_0/latent/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_0/latent/input.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_1/latent/audit.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_1/latent/audit.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_1/latent/complete.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_1/latent/complete.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_1/latent/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_1/latent/input.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_2/latent/audit.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_2/latent/audit.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_2/latent/complete.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_2/latent/complete.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_v1/diagnostics/lcmd_2/latent/input.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_2/latent/input.json"
+    ],
+    [
+      "studies/active_learning/odh_representation_coreset_v1/runtime/latent_coreset/round_0/raw_gradient_bank/reuse.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/morgan_coreset/round_0/raw_gradient_bank/reuse.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/random/round_0/raw_gradient_bank/reuse.json",
+      "studies/active_learning/odh_representation_coreset_v1/runtime/raw_gradient_lcmd/round_0/raw_gradient_bank/reuse.json"
+    ]
+  ],
+  "tracked_runtime_noise": []
+}
