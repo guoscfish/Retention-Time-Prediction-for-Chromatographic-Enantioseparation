@@ -1,22 +1,107 @@
 {
-  "kind": "SYNTHETIC_ENGINEERING_REVIEW_NO_SCIENTIFIC_EVIDENCE",
-  "real_api_calls": 0,
-  "real_acquisition_labels": 0,
-  "training_runs": 0,
-  "long_stage1_rationales": {
-    "status": "CONTEXT_BUDGET_EXCEEDED",
-    "maximum_input_estimate": 261244,
-    "output_reserve": 16000,
-    "context_ceiling": 262144,
-    "scientific_schema_valid": true
-  },
-  "synthetic_round1_short_feedback": {
-    "status": "PASS",
-    "candidate_count": 4082,
-    "observed_count": 365,
-    "maximum_input_estimate": 240740,
-    "output_reserve": 16000,
-    "context_ceiling": 262144
-  },
-  "interpretation": "Dry-run success does not guarantee realistic Stage2 text and feedback fit. Provider context limit remains unverified."
+  "status": "PASS",
+  "kind": "SIMULATED_CONTEXT_STRESS_ONLY",
+  "rounds": [
+    {
+      "round": 0,
+      "labeled_count": 333,
+      "legal_candidates": 4114,
+      "coverage": 1.0,
+      "hypotheses_seen": 0,
+      "admission": {
+        "status": "PASS",
+        "arbitration_input_bound": 166950,
+        "relay_reserve": 4096,
+        "output_reserve": 32000,
+        "context_tokens": 262144,
+        "screen_reply_cap": 2048
+      },
+      "max_estimated_input_tokens": 149444
+    },
+    {
+      "round": 1,
+      "labeled_count": 365,
+      "legal_candidates": 4082,
+      "coverage": 1.0,
+      "hypotheses_seen": 8,
+      "admission": {
+        "status": "PASS",
+        "arbitration_input_bound": 179031,
+        "relay_reserve": 4096,
+        "output_reserve": 32000,
+        "context_tokens": 262144,
+        "screen_reply_cap": 2048
+      },
+      "max_estimated_input_tokens": 161353
+    },
+    {
+      "round": 2,
+      "labeled_count": 397,
+      "legal_candidates": 4050,
+      "coverage": 1.0,
+      "hypotheses_seen": 16,
+      "admission": {
+        "status": "PASS",
+        "arbitration_input_bound": 190943,
+        "relay_reserve": 4096,
+        "output_reserve": 32000,
+        "context_tokens": 262144,
+        "screen_reply_cap": 2048
+      },
+      "max_estimated_input_tokens": 173198
+    },
+    {
+      "round": 3,
+      "labeled_count": 429,
+      "legal_candidates": 4018,
+      "coverage": 1.0,
+      "hypotheses_seen": 24,
+      "admission": {
+        "status": "PASS",
+        "arbitration_input_bound": 201352,
+        "relay_reserve": 4096,
+        "output_reserve": 32000,
+        "context_tokens": 262144,
+        "screen_reply_cap": 2048
+      },
+      "max_estimated_input_tokens": 183571
+    },
+    {
+      "round": 4,
+      "labeled_count": 461,
+      "legal_candidates": 3986,
+      "coverage": 1.0,
+      "hypotheses_seen": 32,
+      "admission": {
+        "status": "PASS",
+        "arbitration_input_bound": 211519,
+        "relay_reserve": 4096,
+        "output_reserve": 32000,
+        "context_tokens": 262144,
+        "screen_reply_cap": 2048
+      },
+      "max_estimated_input_tokens": 193784
+    },
+    {
+      "round": 5,
+      "labeled_count": 493,
+      "legal_candidates": 3954,
+      "coverage": 1.0,
+      "hypotheses_seen": 40,
+      "admission": {
+        "status": "PASS",
+        "arbitration_input_bound": 221591,
+        "relay_reserve": 4096,
+        "output_reserve": 32000,
+        "context_tokens": 262144,
+        "screen_reply_cap": 2048
+      },
+      "max_estimated_input_tokens": 203784
+    }
+  ],
+  "note": "Real candidate metadata and initial predictions; synthetic acquired labels, near-cap screening prose, maximum hypothesis count/field lengths/evidence lists. Later predictions held fixed; no real retraining.",
+  "real_llm_calls": 0,
+  "new_labels_revealed": 0,
+  "fits": 0,
+  "protocol_sha256": "684685953f727e69a84a4afdf6cb1cb82b63f2a645158f63e18422461f8b389d"
 }

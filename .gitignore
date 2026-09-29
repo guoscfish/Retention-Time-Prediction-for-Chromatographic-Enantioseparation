@@ -44,3 +44,5 @@ studies/active_learning/odh_free_llm32_fullpool_v2/**/*.pt
 studies/active_learning/odh_free_llm32_fullpool_v2/**/*.npz
 
 studies/active_learning/odh_free_llm32_fullpool_v2/.runner.lock
+
+studies/active_learning/odh_free_llm32_fullpool_v2/.pipeline.lock

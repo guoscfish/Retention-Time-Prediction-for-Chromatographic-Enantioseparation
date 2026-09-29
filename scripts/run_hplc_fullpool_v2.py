@@ -1,24 +1,51 @@
-"""Explicit V2 stages; this script never automatically selects or advances."""
+"""Explicit V2 stages plus a user-started, resumable six-round run."""
 
 import argparse
+import getpass
 import json
+import os
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from hplc_al.llm import runner
 from hplc_al.llm.dry_run import dry_run
+from hplc_al.llm.full_pool import BUDGETS, ROUNDS
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "command", choices=["prepare", "dry-run", "select", "advance", "report"]
+        "command",
+        choices=[
+            "prepare",
+            "dry-run",
+            "context-stress",
+            "select",
+            "advance",
+            "report",
+            "run",
+        ],
     )
-    parser.add_argument("--round", type=int, choices=[0, 1])
+    parser.add_argument("--round", type=int, choices=range(ROUNDS))
     args = parser.parse_args()
     if args.command in ("select", "advance") and args.round is None:
         parser.error("--round is required")
-    if args.command == "prepare":
+    if args.command == "run":
+        from hplc_al.llm.continuous import run
+
+        if not all(
+            (runner.runtime() / f"round_{r}/complete.json").exists()
+            for r in range(ROUNDS)
+        ) and not os.environ.get("TOKEN4RESEARCH_API_KEY"):
+            if not sys.stdin.isatty():
+                parser.error(
+                    "Set TOKEN4RESEARCH_API_KEY in the process environment, or run interactively for a hidden key prompt"
+                )
+            os.environ["TOKEN4RESEARCH_API_KEY"] = getpass.getpass(
+                "token4research API key (hidden, this process only): "
+            )
+        run()
+    elif args.command == "prepare":
         with runner.exclusive():
             runner.prepare()
         print("V2_REGISTERED_NO_SCIENTIFIC_CALLS")
@@ -39,6 +66,19 @@ if __name__ == "__main__":
                 }
             )
         )
+    elif args.command == "context-stress":
+        from hplc_al.common import atomic_json, sha
+        from hplc_al.llm.context_stress import exercise
+
+        with runner.exclusive():
+            protocol, _, _, packet, _, _ = runner.make_round(0)
+            result = exercise(packet, runner.EXPECTED_CONFIG)
+            result["protocol_sha256"] = sha(runner.STUDY / "protocol.json")
+            atomic_json(
+                runner.ROOT / "docs/repository/verification/context_stress_review.json",
+                result,
+            )
+        print("SIX_ROUND_CONTEXT_STRESS_PASS_NO_NETWORK_NO_TRAINING")
     elif args.command == "select":
         runner.run_selection(args.round)
         print("SELECTION_FROZEN_COMMIT_BEFORE_REVEAL")
@@ -47,4 +87,4 @@ if __name__ == "__main__":
         print("ROUND_FIT_COMPLETE")
     else:
         runner.report()
-        print("COMPLETE_PHASE1_L397")
+        print(f"COMPLETE_PHASE1_L{BUDGETS[-1]}")

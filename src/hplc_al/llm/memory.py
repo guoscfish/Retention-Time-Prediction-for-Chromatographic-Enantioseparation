@@ -80,7 +80,7 @@ def build_memory(history, seed, method, study=STUDY_ID):
         "seed": seed,
         "method": method,
         "previous_hypotheses": list(states.values()),
-        "recent_batches": copy.deepcopy(history[-3:]),
+        "recent_batches": copy.deepcopy(history[-2:]),
         "high_error_observations": sorted(
             copy.deepcopy(observations), key=lambda o: (-o["abs_error"], o["id"])
         )[:16],

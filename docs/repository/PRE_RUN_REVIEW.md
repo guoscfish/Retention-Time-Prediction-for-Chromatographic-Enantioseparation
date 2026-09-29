@@ -1,53 +1,72 @@
 # Pre-run review — 2026-09-29
 
-**READY_FOR_API_KEY**, not a claim that only a key remains before scientific execution.
-No API request, new acquisition, real acquired label or retraining was performed.
+**READY_FOR_API_KEY**. No scientific API call, new acquired label or scratch fit was run.
 
-Current user-level config still selects gpt-6-astra without an explicit model_provider;
-it does not yet select the registered token4research/gpt-5.5/high transport. The
-TOKEN4RESEARCH_API_KEY variable is absent from the inspected process environment.
-The key must be a token4research platform key. Do not put its value in config.toml;
-`env_key` contains only the environment-variable name. This runner does not load .env.
+This machine is configured for **third-party token4research / gpt-6-astra / high**,
+using `https://token4research.cn/responses`. The key is absent from the process
+environment. Start with `.conda-hplc-al/bin/python scripts/run_hplc_fullpool_v2.py run`
+and paste the token4research key at its hidden Terminal prompt. See
+[complete startup instructions](RESPONSES_TRANSPORT.md).
 
-## Scientific loop verified
+## Registered loop
 
-L333 / initial fixed checkpoint → screen all 4114 legal candidates → global selection32
-→ committed selection/protocol seal → reveal32 from the existing dataset
-→ frozen premeasurement feedback → scratch train the predictor on L365
-→ newly predicted pool + measured feedback + local hypotheses → screen/select32
-→ seal/reveal → scratch train L397 → stop.
+L333 → screen all legal U → select32 → committed selection/protocol seal → reveal32
+→ frozen premeasurement feedback → scratch train L365 → repeat to L397, L429, L461,
+L493 and L525 → report and stop. Six acquisitions,192 newly acquired labels.
+This is offline active learning from existing measurements. The LLM receives local
+feedback; its weights are not trained. The predictor restarts from scratch each round.
+The247 validation labels are trainer-only; the247 test labels remain inaccessible.
 
-This is offline active learning on existing measured data, not instrument control.
-The LLM's weights are not trained. Its next request gets explicit trajectory-local
-feedback. The predictor is trained from scratch each round, not warm-started.
-There are also247 fixed validation rows for checkpoint selection; those labels and
-scores are never fed to the LLM. The247 test labels remain inaccessible in V2.
+## Resolved findings
 
-## Findings
+1. Source integrity is checked on every entry, including resumes, before label-store
+   construction or reveal. Protocol/source/environment changes fail closed.
+2. Long-context handling is now explicit and verified across six simulated rounds:
+   target300 candidates/chunk, at most16 nominees/chunk, bounded concise prose,
+   shared values and columnar records, exact grouped counts and checked references.
+   Floats displayed to the LLM have six decimal places; host packets, frozen
+   premeasurement predictions, feedback, training and metrics keep original precision.
+   All observed measurements/errors and current hypotheses remain in memory; the
+   complete recent batch narrative window is registered as two batches.
+   Admission reserves arbitration capacity before paid Stage1 calls. No U candidate
+   is filtered out. Oversized expansion pages return an explicit error and do not
+   mark unseen cards visible. Actual requests are checked again before dispatch.
+3. The registered model and local user configuration now match gpt-6-astra/high.
+4. `run` automates preflight, local selection-seal commits, six fits and reporting.
+   It resumes verified artifacts, refuses unrelated staged Git changes, handles an
+   interruption between feedback write and seal, and blocks duplicate pipeline runs.
+   Ambiguous API requests intentionally stop rather than risk duplicate dispatch.
 
-1. **Fixed: resumed source integrity check occurred too late.** Previously, prepare's
-   existing-protocol path verified source-code/reused files but not the original CSV.
-   advance could reveal/write feedback before load_graphs eventually detected CSV
-   drift. prepare now rechecks the original CSV SHA256 on every entry, before any
-   label-store construction or reveal. A regression test checks both prepare and
-   advance reject a changed temporary source without invoking state/label access.
-   Only pre-science V2 engineering artifacts were refreshed; no real response exists,
-   so no scientific protocol history was overwritten. V1 evidence remains unchanged.
-2. **Open: realistic Stage2 context capacity.** The normal real-pool mock has214562
-   estimated input tokens. A synthetic valid-schema Stage1 response with longer
-   reasons/evidence text raises that to261244; with16000 output reserve this exceeds
-   the262144 local ceiling. The host correctly stops, but may have already paid for
-   Stage1 calls in a real run. Synthetic next-round feedback with short reasons fits
-   at240740 input tokens, leaving little space for richer hypotheses and expansions.
-   This is not an API/schema compatibility finding. Verify provider capacity and
-   resolve the representation/output-budget issue before treating the protocol as
-   ready for unattended scientific execution. Do not silently truncate or change the
-   protocol after scientific responses. See [stress evidence](verification/context_stress_review.json).
-3. **Unverified: third-party endpoint/model/limits.** No real preflight yet. The
-   configured endpoint is base_url + /responses; gpt-5.5/high/tools=[]/store=false
-   acceptance and exact provider context limits are not established by offline tests.
-   A small content-free preflight tests compatibility, not full context capacity.
+## Capacity evidence
 
-Latest verification:155 tests passed,0 failed/errors/skipped; Ruff and compileall
-passed; real-pool engineering dry-run still covers4114/4114 IDs across17 chunks.
-These results do not erase the open context-capacity finding.
+Normal real-input dry-run: 4114 legal candidates in 14 chunks,
+coverage1.0; maximum input estimate 127926; zero scientific calls/reveals.
+
+Six-round stress uses real initial metadata, synthetic acquired labels and unchanged
+later predictions. It nominates large cards, approaches the screening-text cap, and
+adds eight hypotheses each round with maximum field lengths and evidence-list sizes.
+It tests serialization and planning, not model quality or actual provider behavior.
+
+| Round | L before | Legal U | Hypotheses seen | Max input estimate | Admission estimate |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 1 | 333 | 4114 | 0 | 149444 | 166950 |
+| 2 | 365 | 4082 | 8 | 161353 | 179031 |
+| 3 | 397 | 4050 | 16 | 173198 | 190943 |
+| 4 | 429 | 4018 | 24 | 183571 | 201352 |
+| 5 | 461 | 3986 | 32 | 193784 | 211519 |
+| 6 | 493 | 3954 | 40 | 203784 | 221591 |
+
+Each round has coverage1.0. Input estimates include a20% tokenizer margin and4096
+framing tokens. Admission additionally reserves4096 relay tokens and32000 output
+tokens within the262144 local ceiling. This is a tested fixture, not a guarantee for
+every future model response; exceeding a registered bound stops without truncation.
+[Machine-readable evidence](verification/context_stress_review.json).
+
+## Remaining external verification
+
+Only key entry and the real content-free preflight can establish token4research key,
+endpoint and model compatibility. The small preflight does not verify maximum
+provider context capacity. A provider rejection stops the run; there is no fallback.
+Local context estimates and tests do not substitute for that external verification.
+
+Final verification: **168 tests passed, 0 failures/errors/skips**; Ruff and compileall passed.

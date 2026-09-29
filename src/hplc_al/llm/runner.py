@@ -25,7 +25,7 @@ from ..protocol import RestrictedLabelStore, role_ids, transition
 from ..runner import assert_environment
 from ..training import fit, load_model
 from .catalog import coverage_percentile, metadata
-from .full_pool import BUDGETS, FIELDS, LIMITS, METHOD, SEED, STUDY_ID, opaque
+from .full_pool import BUDGETS, FIELDS, LIMITS, METHOD, ROUNDS, SEED, STUDY_ID, opaque
 from .memory import OBS_FIELDS, build_memory, feedback
 from .planner import ARBITRATE_PROMPT, SCREEN_PROMPT, plan
 from .reporting import evaluate, label_aulc, selection_diagnostics
@@ -39,7 +39,7 @@ TRAJECTORY = f"{STUDY_ID}/{SEED}/{METHOD}"
 # User-requested registration target, NEVER a runtime configuration fallback.
 EXPECTED_CONFIG = {
     "provider_id": "token4research",
-    "model": "gpt-5.5",
+    "model": "gpt-6-astra",
     "reasoning_effort": "high",
     "base_url": "https://token4research.cn",
     "wire_api": "responses",
@@ -164,6 +164,16 @@ def prepare():
         "screen_prompt": SCREEN_PROMPT,
         "arbitration_prompt": ARBITRATE_PROMPT,
         "candidate_fields": list(FIELDS),
+        "presentation": {
+            "float_decimal_places": 6,
+            "full_precision_host_artifacts": True,
+            "codec": "value_table + record_groups; bijective opaque group aliases; exact grouped counts",
+        },
+        "memory_policy": {
+            "recent_full_batches": 2,
+            "all_observed_measurements_and_frozen_errors": True,
+            "all_previous_hypothesis_states": True,
+        },
         "source_hashes": source_hashes(),
         "reuse_hashes": bind(
             [
@@ -178,7 +188,7 @@ def prepare():
             + [initial / n for n in record["files"]]
         ),
         "test_labels": 0,
-        "stop": "L397; no round2 acquisition",
+        "stop": f"L{BUDGETS[-1]}; {ROUNDS} acquisitions only",
         "context_limit_note": "Conservative local serialization budget; provider context capacity not verified by small preflight.",
         "immutability": "Any scientific response locks protocol; protocol bug requires V3, never nested revision.",
     }
@@ -247,8 +257,8 @@ def initial_state():
 
 
 def make_round(round_index):
-    if round_index not in (0, 1):
-        raise ValueError("hard stop: only two acquisitions; no L397 selection")
+    if round_index not in range(ROUNDS):
+        raise ValueError(f"hard stop: {ROUNDS} acquisitions, L{BUDGETS[-1]}")
     protocol, partition = prepare()
     labeled, unlabeled, history, store = state(partition, round_index)
     directory = runtime() / f"round_{round_index}"
@@ -365,10 +375,16 @@ def run_selection(round_index):
             raise RuntimeError("matching content-free Responses preflight required")
         gate = read_json(STUDY / "test_gate.json")
         dry = read_json(STUDY / "dry_run.json")
+        stress = read_json(
+            ROOT / "docs/repository/verification/context_stress_review.json"
+        )
+        verify_files(ROOT, gate["evidence"])
         if (
             gate["status"] != "PASS"
             or gate["source_hashes"] != protocol["source_hashes"]
             or dry["status"] != "PASS"
+            or stress["status"] != "PASS"
+            or stress["protocol_sha256"] != sha(STUDY / "protocol.json")
         ):
             raise RuntimeError("passing tests and dry run for frozen code required")
         if dry["protocol_sha256"] != sha(STUDY / "protocol.json"):
@@ -436,8 +452,8 @@ def run_selection(round_index):
 
 
 def advance(round_index):
-    if round_index not in (0, 1):
-        raise ValueError("hard stop at L397")
+    if round_index not in range(ROUNDS):
+        raise ValueError(f"hard stop at L{BUDGETS[-1]}")
     with exclusive():
         protocol, partition = prepare()
         directory = runtime() / f"round_{round_index}"
@@ -448,7 +464,7 @@ def advance(round_index):
         selection = read_json(directory / "selection.json")
         store.commit_selection(directory / "selection.json")
         labeled, _ = transition(labeled, unlabeled, selection["selected"])
-        if not (directory / "feedback.json").exists():
+        if not (directory / "feedback_seal.json").exists():
             truth = store.reveal(selection["selected"], "fit")
             features, _ = metadata(selection["selected"])
             write_once(
@@ -517,7 +533,7 @@ def advance(round_index):
 
 def report():
     protocol, partition = prepare()
-    state(partition, 2)
+    state(partition, ROUNDS)
     # Validation metrics from the frozen baseline report; no source target read.
     baseline = read_json(V1 / "results/validation_metrics.json")
     first = next(r for r in baseline if r["budget"] == 333)
@@ -527,15 +543,17 @@ def report():
             for k in ("budget", "rmse", "mae", "r2", "nrmse", "fixed_denominator")
         }
     ]
-    records += [read_json(runtime() / f"round_{r}/validation.json") for r in range(2)]
+    records += [
+        read_json(runtime() / f"round_{r}/validation.json") for r in range(ROUNDS)
+    ]
     result = {
-        "status": "COMPLETE_PHASE1_L397",
+        "status": f"COMPLETE_PHASE1_L{BUDGETS[-1]}",
         "study": STUDY_ID,
         "validation": records,
         "label_aulc": label_aulc(records),
         "test_labels": 0,
         "diagnostics": [
-            read_json(runtime() / f"round_{r}/diagnostics.json") for r in range(2)
+            read_json(runtime() / f"round_{r}/diagnostics.json") for r in range(ROUNDS)
         ],
     }
     write_once(STUDY / "results/summary.json", result)

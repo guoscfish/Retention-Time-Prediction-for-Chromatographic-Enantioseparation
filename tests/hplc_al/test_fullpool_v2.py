@@ -28,6 +28,7 @@ from hplc_al.llm.planner import (
 )
 from hplc_al.llm.reporting import evaluate, label_aulc, selection_diagnostics
 from hplc_al.llm.responses_transport import encode, payload
+from hplc_al.llm.wire import unpack
 from hplc_al.protocol import RestrictedLabelStore
 
 
@@ -183,8 +184,8 @@ def test_directory_can_rescue_any_legal_id_with_no_nominees(tmp_path):
     sent = []
 
     def transport(messages, config, budget):
-        first = json.loads(messages[1]["content"])
-        last = json.loads(messages[-1]["content"])
+        first = unpack(json.loads(messages[1]["content"]))
+        last = unpack(json.loads(messages[-1]["content"]))
         if messages[0]["content"] != ARBITRATE_PROMPT:
             value = {
                 "nominees": [],
@@ -415,10 +416,10 @@ def test_completed_advance_reuses_fit(monkeypatch, tmp_path):
     assert runner.advance(0)["budget"] == 365
 
 
-def test_no_round2():
+def test_no_round6():
     for operation in (runner.make_round, runner.advance):
         with pytest.raises(ValueError):
-            operation(2)
+            operation(6)
 
 
 def test_fixed_metrics_and_aulc():
@@ -541,6 +542,7 @@ def test_resume_checks_source_before_labels(tmp_path, monkeypatch):
     source = tmp_path / "changed.csv"
     source.write_text("RT,Speed\n999,1\n")
     monkeypatch.setattr(runner, "SOURCE", source)
+    monkeypatch.setattr(runner, "STUDY", tmp_path / "isolated-study")
 
     def forbidden(*args, **kwargs):
         raise AssertionError("must stop before label-store construction")

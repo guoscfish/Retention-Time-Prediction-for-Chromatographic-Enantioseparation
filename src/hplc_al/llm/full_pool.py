@@ -11,18 +11,20 @@ from rdkit import Chem
 
 from ..common import stable_hash
 from .responses_transport import MAX_OUTPUT_TOKENS, encode
+from .wire import content
 
 BATCH_SIZE = 32
 SEED = 1525
 METHOD = "free_llm32_fullpool"
 STUDY_ID = "odh_free_llm32_fullpool_v2"
-BUDGETS = [333, 365, 397]
+BUDGETS = [333 + BATCH_SIZE * i for i in range(7)]
+ROUNDS = len(BUDGETS) - 1
 LIMITS = {
     "context_tokens": 262144,
     "tokenizer": "o200k_base",
     "token_safety_factor": 1.2,
     "max_output_tokens": MAX_OUTPUT_TOKENS,
-    "target_chunk_size": 250,
+    "target_chunk_size": 300,
     "nominees_per_chunk": 16,
     "arbitration_calls": 8,
 }
@@ -124,7 +126,7 @@ def ensure_context(messages, limits):
         )
 
 
-def chunks(cards, salt, prompt, common, limits):
+def chunks(cards, salt, prompt, common, limits, mapping=None):
     ordered = sorted(cards, key=lambda c: stable_hash([salt, c["id"]]))
 
     def messages(part):
@@ -132,7 +134,7 @@ def chunks(cards, salt, prompt, common, limits):
             {"role": "system", "content": prompt},
             {
                 "role": "user",
-                "content": encode({**common, "cards": table(part)}).decode(),
+                "content": content({**common, "cards": table(part)}, mapping),
             },
         ]
 

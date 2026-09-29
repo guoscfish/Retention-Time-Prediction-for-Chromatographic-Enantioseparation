@@ -11,11 +11,12 @@ from .planner import ARBITRATE_PROMPT, plan
 from .reporting import selection_diagnostics
 from .responses_transport import encode, payload
 from .runner import EXPECTED_CONFIG, STUDY, exclusive, make_round
+from .wire import unpack
 
 
 def simulated_transport(messages, config, max_output_tokens):
     """Deterministic test fixture, NEVER valid scientific evidence."""
-    first = json.loads(messages[1]["content"])
+    first = unpack(json.loads(messages[1]["content"]))
     if messages[0]["content"] != ARBITRATE_PROMPT:
         card_table = first["cards"]
         ids = [r[card_table["columns"].index("id")] for r in card_table["rows"]]

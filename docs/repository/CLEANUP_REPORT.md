@@ -31,7 +31,7 @@ src/
       reporting.py                diagnostics, validation metrics, label-AULC
       dry_run.py                  explicitly simulated engineering fixture
 scripts/
-  run_hplc_fullpool_v2.py          explicit prepare/dry-run/select/advance/report stages
+  run_hplc_fullpool_v2.py          prepare/dry-run/context-stress/select/advance/report/run
   preflight_llm_responses.py      content-free preflight only
   ...                            reproduction + historical numerical entry points
 studies/
@@ -99,10 +99,10 @@ Random=0.906640, raw-gradient LCMD=0.883564. No V2 metrics are fabricated.
 ## Responses transport and readiness
 
 See [transport contract/configuration](RESPONSES_TRANSPORT.md). Registered provider:
-third-party token4research; model gpt-5.5; effort high; environment variable
+third-party token4research; model gpt-6-astra; effort high; environment variable
 **TOKEN4RESEARCH_API_KEY**. Reads the selected provider from ~/.codex/config.toml;
-uses only its env_key. The global config was inspected but not changed. It currently
-needs the requested provider setup. The key was not copied from chat into tools,
+uses only its env_key. The global config now selects token4research / gpt-6-astra / high,
+preserving unrelated settings. The key was not copied from chat into tools,
 files, hashes, logs, commits or configuration.
 
 Every request explicitly includes model, reasoning.effort, input, tools=[],
@@ -124,31 +124,32 @@ all legal U → salted ordering → token-sized Stage1 chunks (0–16 nominees/c
 → reveal32 → frozen premeasurement feedback → scratch retrain → validation + label-AULC
 ```
 
-No quotas or numerical pre-screen. All4114 legal U candidates entered simulated
-screening contexts across17 chunks (16×250 +114). Missing/duplicate counts0;
-coverage1.0. The simulation produced272 nominees and exercised a non-nominee rescue
-(31/32 chosen from nominees). This is an engineering fixture, not an LLM judgment.
-Max estimated input214562 plus max output16000 fits the registered262144 local
-ceiling. Estimation uses o200k_base plus20% margin and4096 framing reserve. Overflow
-fails closed; no silent truncation. Future rounds with larger memory/longer responses
-can still hit this bound and stop without freezing a selection.
+No quotas or numerical pre-screen. The updated pre-science registration now uses
+six acquisitions to L525 with gpt-6-astra/high. All4114 legal initial candidates enter
+14 simulated screening chunks (13×300 +214), coverage1.0,224 nominees and a successful
+non-nominee rescue. The normal maximum input estimate is127926; output reserve32000,
+local ceiling262144. No scientific response, reveal, training or V2 metric was created.
 
-The first real-pool engineering draft exposed Stage2 overflow under131072; before
-any scientific response, lossless observed-record compression and a measured262144
-ceiling /16-nominee cap were registered. No experiment revision directory or mixed
-trajectory was created. Initial L333 prediction/coverage reuse is verified against
-the identical baseline checkpoint and original hashes; no V1 acquisition or memory
-is reused. Original scalar targets in the initial packet are authorized L333 only.
+Six-round simulated stress reaches493 observed rows and40 old hypotheses before the
+last selection. It preserves candidate fields, all observed feedback/current states
+and exact counts with shared values/references and two recent full batch narratives.
+Displayed floats have six decimal places; host artifacts and scientific calculations
+retain full precision. Prospective output bounds and admission checks prevent paying
+for an obviously oversized arbitration context. Details and actual measured bounds:
+[pre-run review](PRE_RUN_REVIEW.md), [stress evidence](verification/context_stress_review.json).
 
-**155 tests passed; 0 failures, 0 errors, 0 skips** after the source-integrity re-review. [Log](verification/tests.log),
-[JUnit](verification/tests.xml), and V2 test_gate bind the evidence to current code.
-The new package/scripts/tests pass Ruff E4/E7/E9/F/I (script bootstrap E402 excluded)
-and Python compilation. Tests cover response failures/tool calls/JSON ambiguity/key
-handling, stable full coverage/missing/duplicate rejection, budget overflow, all-U
-rescue with zero nominees, immutable receipt replay, ambiguous calls, local memory,
-premeasurement error provenance, label/Git barriers, completed-fit reuse, no round2,
-fixed metrics/AULC and byte-identical historical artifacts. Dry-run made0 real LLM
-calls, revealed0 acquisition labels and read0 test labels.
+The continuous `run` entry point accepts a hidden process-only key, preflights and
+performs local Git seals before every acquisition. It resumes completed artifacts,
+refuses a seventh round and never automatically pushes scientific runtime commits.
+The original scalar targets in the initial packet are authorized L333 only; the
+original checkpoint, split, trainer, target and fixed denominator remain unchanged.
+
+Verification is bound by [test_gate](../../studies/active_learning/odh_free_llm32_fullpool_v2/test_gate.json),
+[log](verification/tests.log) and [JUnit](verification/tests.xml). Tests cover direct
+Responses contracts, credentials, complete coverage, rescues, bounded context,
+replay/drift/ambiguity, scientific memory, precise feedback, Git/label barriers,
+six-round orchestration/resume, crash recovery and byte-identical historical evidence.
+Ruff and Python compilation pass. No API calls, acquired labels or fits were used.
 
 ## Branch/tag reconciliation
 
@@ -175,4 +176,6 @@ pushed annotated tags, ancestry and154 passing tests. Origin now contains only
 
 Follow-up [pre-run review](PRE_RUN_REVIEW.md) fixed CSV drift detection before label
 access and documented a reproducible Stage2 context-capacity limitation. The original
-154-test branch-deletion receipt remains historical evidence; latest gate has155 tests.
+154-test branch-deletion receipt remains historical evidence; the linked current gate records the latest verification.
+
+Final verification: **168 tests passed, 0 failures/errors/skips**; Ruff and compileall passed.

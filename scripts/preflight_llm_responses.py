@@ -36,7 +36,7 @@ def main():
 
         if config != EXPECTED_CONFIG:
             raise TransportError(
-                "RESPONSES_CONFIG_MISMATCH: configure token4research / gpt-5.5 / high as registered"
+                "RESPONSES_CONFIG_MISMATCH: configure token4research / gpt-6-astra / high as registered"
             )
         preflight(path, config)
     except TransportError as error:

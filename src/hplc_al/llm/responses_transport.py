@@ -16,7 +16,7 @@ import tomllib
 
 from ..common import atomic_json, stable_hash
 
-MAX_OUTPUT_TOKENS = 16000
+MAX_OUTPUT_TOKENS = 32000
 
 
 class TransportError(RuntimeError):
