@@ -12,6 +12,7 @@ from .responses_transport import TransportError
 
 MAX_ATTEMPTS = 5
 RETRY_DELAYS = (15, 30, 60, 60)
+MAX_RETRY_DELAY = 15 * 60
 HEARTBEAT_SECONDS = 15
 
 
@@ -88,14 +89,36 @@ def training_detail(directory):
     return f"epoch={last['epoch']} train_loss={last['train_loss']} validation_mse={last['validation_mse']}"
 
 
+def retry_delay(attempt):
+    """Return a bounded delay before a transient retry."""
+    if attempt <= len(RETRY_DELAYS):
+        return RETRY_DELAYS[attempt - 1]
+    return min(
+        MAX_RETRY_DELAY,
+        RETRY_DELAYS[-1] * 2 ** (attempt - len(RETRY_DELAYS)),
+    )
+
+
 def request_with_retries(
-    transport, messages, config, budget, directory, name, digest, *, legacy=False
+    transport,
+    messages,
+    config,
+    budget,
+    directory,
+    name,
+    digest,
+    *,
+    legacy=False,
+    retry_forever=False,
 ):
-    """A lifetime limit across restarts. First valid receipt is always reused.
+    """Retry transient failures and reuse the first valid receipt.
 
     A started attempt without an outcome is ambiguous, including Ctrl-C or a
     process crash. The explicitly authorized policy permits identical replay,
-    counting that attempt and recording possible duplicate provider charges.
+    recording possible duplicate provider charges. The default remains the
+    bounded five-attempt behavior used by callers and tests. The continuous
+    runner opts into persistent retries so a temporary gateway outage cannot
+    terminate a multi-hour study; Ctrl-C and non-retryable failures still stop.
     """
 
     def path(number, kind):
@@ -122,13 +145,16 @@ def request_with_retries(
             outcome = read_json(failed)
             if outcome["request_sha256"] != digest or not outcome["retryable"]:
                 raise RuntimeError("previous terminal failure; no resampling permitted")
-    if count >= MAX_ATTEMPTS:
+    if count >= MAX_ATTEMPTS and not retry_forever:
         raise TransportError("RESPONSES_RETRY_LIMIT_EXHAUSTED")
-    for attempt in range(count + 1, MAX_ATTEMPTS + 1):
+    attempt = count + 1
+    while True:
         if attempt > 1:
-            delay = RETRY_DELAYS[attempt - 2]
+            delay = retry_delay(attempt - 1)
             log(
-                f"{name}: retry {attempt}/{MAX_ATTEMPTS} in {delay}s; identical request, possible duplicate charge"
+                f"{name}: retry {attempt}"
+                + (f"/{MAX_ATTEMPTS}" if not retry_forever else "")
+                + f" in {delay}s; identical request, possible duplicate charge"
             )
             time.sleep(delay)
         write_once(
@@ -143,9 +169,15 @@ def request_with_retries(
             },
         )
         started = time.monotonic()
-        log(f"{name}: sending attempt {attempt}/{MAX_ATTEMPTS}")
+        log(
+            f"{name}: sending attempt {attempt}"
+            + (f"/{MAX_ATTEMPTS}" if not retry_forever else "")
+        )
         try:
-            with heartbeat(f"{name} attempt {attempt}/{MAX_ATTEMPTS}"):
+            with heartbeat(
+                f"{name} attempt {attempt}"
+                + (f"/{MAX_ATTEMPTS}" if not retry_forever else "")
+            ):
                 result = transport(messages, config, budget)
         except Exception as error:
             transient = isinstance(error, TransportError) and retryable(error)
@@ -161,12 +193,17 @@ def request_with_retries(
                     "retryable": transient,
                 },
             )
-            log(f"{name}: attempt {attempt}/{MAX_ATTEMPTS} failed: {code}")
-            if not transient or attempt == MAX_ATTEMPTS:
+            log(
+                f"{name}: attempt {attempt}"
+                + (f"/{MAX_ATTEMPTS}" if not retry_forever else "")
+                + f" failed: {code}"
+            )
+            if not transient or (not retry_forever and attempt == MAX_ATTEMPTS):
                 raise
         else:
             log(f"{name}: response received in {time.monotonic() - started:.1f}s")
             return result
+        attempt += 1
 
 
 def preflight_with_retries(operation):
@@ -180,7 +217,7 @@ def preflight_with_retries(operation):
             log(f"Preflight failed: {safe_error(error)}")
             if not retryable(error) or attempt == MAX_ATTEMPTS:
                 raise
-            delay = RETRY_DELAYS[attempt - 1]
+            delay = retry_delay(attempt)
             log(f"Preflight retry in {delay}s")
             time.sleep(delay)
 

@@ -358,7 +358,14 @@ class Journal:
     """Write-ahead intent and exact replay; retries require explicit host policy."""
 
     def __init__(
-        self, directory, config, limits, transport=call, *, retry_requests=False
+        self,
+        directory,
+        config,
+        limits,
+        transport=call,
+        *,
+        retry_requests=False,
+        retry_forever=False,
     ):
         self.directory = Path(directory)
         self.config = config
@@ -366,6 +373,7 @@ class Journal:
         self.transport = transport
         self.receipts = []
         self.retry_requests = retry_requests
+        self.retry_forever = retry_forever
 
     def ask(self, name, messages):
         ensure_context(messages, self.limits)
@@ -411,6 +419,7 @@ class Journal:
                     name,
                     digest,
                     legacy=legacy,
+                    retry_forever=self.retry_forever,
                 )
             else:
                 answer, receipt = self.transport(
@@ -443,6 +452,7 @@ def plan(
     *,
     transport=call,
     retry_requests=False,
+    retry_forever=False,
 ):
     directory = Path(directory)
     directory.mkdir(parents=True, exist_ok=True)
@@ -496,7 +506,12 @@ def plan(
         directory / "context_admission.json", admission(parts, initial, mapping, limits)
     )
     journal = Journal(
-        directory, config, limits, transport, retry_requests=retry_requests
+        directory,
+        config,
+        limits,
+        transport,
+        retry_requests=retry_requests,
+        retry_forever=retry_forever,
     )
     log(f"Stage 1: {len(legal_ids)} candidates, {len(parts)} screening chunks")
     results, nominees, screened = [], {}, []

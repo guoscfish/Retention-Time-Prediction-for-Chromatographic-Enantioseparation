@@ -51,7 +51,7 @@ The runner commits only this study's nonignored artifacts; it does not push.
 Keep the terminal/process running. Run the same command after interruption: completed
 fits and responses are verified/reused; an unfinished fit restarts from scratch.
 The 2026-09-29 user-authorized execution amendment permits an identical retry of
-an ambiguous intent, counting it toward a five-attempt lifetime limit. Already
+an ambiguous intent, counting it as a possible duplicate dispatch. Already
 validated responses are reused. Retry waits are 15/30/60/60 seconds; authentication,
 JSON/schema, scientific validation and source-integrity failures stop immediately.
 Terminal output includes chunk/arbitration progress, cache reuse, request attempts,
@@ -114,8 +114,10 @@ permission for V2 logging/retries is recorded separately in `execution_amendment
 The runner verifies the new implementation against `execution_test_gate.json` and
 commits the amendment before allowing label access. The original test gate is retained.
 
-Transient 408/429/500/502/503/504/520/522/524 and network/read failures retry, up to
-five total attempts per scientific request across process restarts. The original
+Transient 408/429/500/502/503/504/520/522/524 and network/read failures retry in
+five-attempt bursts across process restarts. After a burst, the continuous runner
+continues identical retries with bounded exponential backoff until success or operator
+interruption. The original
 `screen_004` consumes attempt 1. Each dispatch has a durable `.attempt_NN.started.json`
 and failed outcomes have `.failed.json`; unknown provider usage is not invented.
 First validated response wins; no retries are used to improve a scientific answer.

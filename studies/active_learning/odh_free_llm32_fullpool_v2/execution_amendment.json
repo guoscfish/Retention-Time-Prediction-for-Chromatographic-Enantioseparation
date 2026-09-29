@@ -53,7 +53,7 @@
     "code/Single_column_prediction.py": "59b765c8bbdc0e3941dc4f5643f8a77db57675bb8ed62176d4825da6e7e766b8",
     "code/compound_tools.py": "e9c0b25e95202bb43437ce5cf32125100815d14d0409a671347232640865ddb8",
     "scripts/preflight_llm_responses.py": "bcbca8a4f7e45c8a48bf273fbb524e051994852d03b7f3835802a9e7bcf92226",
-    "scripts/run_hplc_fullpool_v2.py": "6a6d693d125fc8b16b3af64e8fa4afc303c19e9be8a8fb81eb94ae6c590c6d83",
+    "scripts/run_hplc_fullpool_v2.py": "c6f538ef958107bee40641e40d2b278ccdb28348d3c20eef103c94cca0597dc2",
     "src/hplc_al/__init__.py": "546dd379ca1c307747c9173e02740123f17e7d7a4bf9ff2ea1201d9fa829a6a0",
     "src/hplc_al/acquisition.py": "1a4b4fd732c574b70eb198cd14b28d16d0abcf936f3791d8ef923b312c2bc009",
     "src/hplc_al/common.py": "e5d30ba2a813ec508d0e7aca462c55fc94f33f47931b0d36d5e54973c353f2e4",
@@ -70,16 +70,16 @@
     "src/hplc_al/llm/__init__.py": "208dcb4129c46472d097d29c051429e90c87dca052425e6aecf54bd18deaa14b",
     "src/hplc_al/llm/catalog.py": "0545583c542ccdea1e76bbe425851bcc8830b67178a1eb27ebc1974f21ece1d1",
     "src/hplc_al/llm/context_stress.py": "b751f13edf03b9fb70c78a1074915dbcb473188122e5bba0766d3d4ae1f09bcc",
-    "src/hplc_al/llm/continuous.py": "c67c4765ca6e9587fa5496fe5e9fa2bf1d7cc95b90857ae0d5c1810dee836444",
+    "src/hplc_al/llm/continuous.py": "a2b194a8a541c9c1b9be86dd301adbd7dd08877dd8de90a35e1aabf81b74f332",
     "src/hplc_al/llm/credentials.py": "06dfdaf8ffa2d12d4253bdfb2ac1d9599ef0e77aa96ec52b99ebae1d4a56cc54",
     "src/hplc_al/llm/dry_run.py": "e9f885423dde601cd38e36acc26e9b853b87a3a137054f787897e439af030b12",
-    "src/hplc_al/llm/execution.py": "d527acc865769a9f87bc54b838f0ddcb75c2c94c0e6fca7ad5df2629b4a3e65e",
+    "src/hplc_al/llm/execution.py": "cfaafb0319b12dc1274035c405aa3c1bb303378f6189aee1585a7b8551f2c64a",
     "src/hplc_al/llm/full_pool.py": "1e78b66eaff9d6a4507808c4533a1245e32a351abeaea1662ad618be238973ac",
     "src/hplc_al/llm/memory.py": "57b2a7f187e044cf5e95911d328c4d060ac4559eaad0d8ec846963fb01b2301e",
-    "src/hplc_al/llm/planner.py": "13104312f4a1ad9d29e12897e37e85a1fdf2aa6d2a7d3f23153c541cb3ca01ee",
+    "src/hplc_al/llm/planner.py": "a7638d6f1eae9aab50131ac8a9aad80bf5b88c9c64ce1c5b1f7cc16be85917ef",
     "src/hplc_al/llm/reporting.py": "8ca3fbf13b03f28eeb7f4d2906934d5d78ad9405ac42e3d87cd5b6ac6fefc321",
     "src/hplc_al/llm/responses_transport.py": "2e940182619dc1c0c279148b76dd9a4eab8627f941f6f6053b726d705a9b4238",
-    "src/hplc_al/llm/runner.py": "8cb48ae01df557f4010a2b114a9567a17c67f5ddf1d1f5e7f38347286b9d085f",
+    "src/hplc_al/llm/runner.py": "d81f226d53ceb18c0d32bfe2660b46e197048cdf4e934953772746b66ffef5cf",
     "src/hplc_al/llm/wire.py": "579d7fc30c2f9754150f9fccff4a2e8cc7a73910c71bf25e4ac1697cd3b6b7e0",
     "src/hplc_al/preflight_v2.py": "20e7c90ca857c502385b80f144a0f875f633a0dc3ff55252b46c3a2e0af9afd1",
     "src/hplc_al/protocol.py": "116796e7dba7e804bc6deb6c79abf90e76485df8ac26d2cd7119460386d13a10",
@@ -97,6 +97,7 @@
   },
   "scientific_request_payload_changed": false,
   "max_attempts_per_scientific_request": 5,
+  "persistent_transient_retries": true,
   "retry_delays_seconds": [
     15,
     30,
@@ -106,9 +107,10 @@
   "scope": [
     "terminal stage progress and 15-second heartbeat",
     "identical-request retries for explicit transient HTTP or network errors",
-    "count ambiguous interrupted attempts and original screen_004 against the lifetime cap",
+    "count ambiguous interrupted attempts and original screen_004 as append-only dispatch attempts",
     "reuse the first validated saved response; do not resample semantic/schema failures",
-    "append-only attempt intents/outcomes; unknown unreturned usage remains unknown"
+    "append-only attempt intents/outcomes; unknown unreturned usage remains unknown",
+    "after the five-attempt burst, continue identical transient retries with bounded exponential backoff until success or operator interruption"
   ],
   "preserved": [
     "original protocol and lock bytes",
@@ -116,5 +118,5 @@
     "all original requests and four scientific receipts",
     "predictor, original trainer, labels and selection barrier"
   ],
-  "limitation": "No streaming or request-content change. Repeated provider gateway timeouts can still exhaust the cap."
+  "limitation": "No streaming or request-content change. Persistent transient failures continue until operator interruption and may incur duplicate provider charges."
 }

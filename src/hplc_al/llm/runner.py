@@ -116,6 +116,7 @@ def verify_execution_amendment(protocol):
         or amendment["authorization"] != "允许 V2 仅修改日志和重试，复用已有结果"
         or amendment["max_attempts_per_scientific_request"] != 5
         or amendment["scientific_request_payload_changed"] is not False
+        or amendment.get("persistent_transient_retries") is not True
     ):
         raise RuntimeError(
             "execution amendment/source mismatch; no scientific execution"
@@ -442,13 +443,15 @@ def run_selection(round_index):
                 "rule": "Never alter this protocol; protocol bug requires V3.",
             },
         )
+        execution_amended = verify_execution_amendment(protocol)
         saved = plan(
             **packet,
             directory=directory / "llm",
             config=config,
             limits=protocol["limits"],
             transport=call,
-            retry_requests=verify_execution_amendment(protocol),
+            retry_requests=execution_amended,
+            retry_forever=execution_amended,
         )
         row_ids = {opaque(i): i for i in unlabeled}
         chosen = [row_ids[i] for i in saved["selected_ids"]]

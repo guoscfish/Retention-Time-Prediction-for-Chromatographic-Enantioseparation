@@ -77,7 +77,7 @@ def record_status(status, completed=None):
         "Registered: token4research / gpt-6-astra / high; six batches of32, stop at L525.\n"
         "This is the last recorded checkpoint, not a claim that a process is still alive.\n"
         "Resume with `.conda-hplc-al/bin/python scripts/run_hplc_fullpool_v2.py run`.\n"
-        "Completed responses/fits are verified and reused; transient/ambiguous calls use the authorized five-attempt lifetime limit.\n"
+        "Completed responses/fits are verified and reused; scientific transient calls retry in five-attempt bursts with bounded exponential backoff until success or operator interruption.\n"
         "See `execution_status.json` and `results/summary.json` when complete.\n"
     )
 

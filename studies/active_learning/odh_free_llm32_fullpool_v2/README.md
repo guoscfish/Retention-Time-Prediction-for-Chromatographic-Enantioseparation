@@ -38,8 +38,10 @@ Manual stages remain available: `select --round 0` through5, commit the selectio
 artifacts, then `advance --round 0` through5; finally `report`.
 Never modify V1. The user-authorized execution-only amendment enables bounded
 identical-request retries and terminal progress; see [execution amendment](execution_amendment.json).
-Each request has at most five attempts across restarts, including ambiguous attempts.
-Successful responses are reused; authentication/schema/semantic failures are not resampled.
+Scientific transient requests retry in five-attempt bursts across restarts, then continue
+with bounded exponential backoff until a response arrives or the operator interrupts the
+process. Ambiguous attempts are recorded and retried identically. Successful responses
+are reused; authentication/schema/semantic failures are not resampled.
 Scientific protocol changes still require V3, not nested revisions.
 
 Local L333 arrays/checkpoints are hash-verified historical computational reuse.

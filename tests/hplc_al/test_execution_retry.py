@@ -68,6 +68,57 @@ def test_retry_limit_survives_relaunch(tmp_path):
     assert len(calls) == 5
 
 
+def test_persistent_mode_resumes_after_bounded_retry_burst(tmp_path):
+    calls = []
+
+    def fail_then_pass(*args):
+        calls.append(1)
+        if len(calls) <= 5:
+            raise TransportError("RESPONSES_HTTP_524")
+        return success(*args)
+
+    Journal(
+        tmp_path,
+        CONFIG,
+        LIMITS,
+        fail_then_pass,
+        retry_requests=True,
+        retry_forever=True,
+    ).ask("screen_000", MESSAGES)
+    assert len(calls) == 6
+    assert (tmp_path / "screen_000.attempt_06.started.json").exists()
+    assert (tmp_path / "screen_000.receipt.json").exists()
+
+
+def test_persistent_mode_relaunch_continues_after_exhaustion(tmp_path):
+    first_calls = []
+
+    def fail(*args):
+        first_calls.append(1)
+        raise TransportError("RESPONSES_HTTP_524")
+
+    with pytest.raises(TransportError, match="524"):
+        journal(tmp_path, fail).ask("screen_000", MESSAGES)
+    assert len(first_calls) == 5
+
+    second_calls = []
+
+    def pass_on_resume(*args):
+        second_calls.append(1)
+        return success(*args)
+
+    Journal(
+        tmp_path,
+        CONFIG,
+        LIMITS,
+        pass_on_resume,
+        retry_requests=True,
+        retry_forever=True,
+    ).ask("screen_000", MESSAGES)
+    assert len(second_calls) == 1
+    assert (tmp_path / "screen_000.attempt_06.started.json").exists()
+
+
 @pytest.mark.parametrize(
     "code",
     [
