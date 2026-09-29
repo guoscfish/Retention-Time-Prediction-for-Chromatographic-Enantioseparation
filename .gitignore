@@ -35,3 +35,12 @@ studies/active_learning/odh_lcmd_confirmation_v2/**/*.pt
 studies/active_learning/odh_lcmd_confirmation_v2/**/*.npz
 studies/active_learning/odh_free_llm32_scientist_v1/**/*.pt
 studies/active_learning/odh_free_llm32_scientist_v1/**/*.npz
+
+# Preserved ignored local evidence and new scientific runtime binaries
+.cleanup-local-backup/
+studies/archive/**/*.pt
+studies/archive/**/*.npz
+studies/active_learning/odh_free_llm32_fullpool_v2/**/*.pt
+studies/active_learning/odh_free_llm32_fullpool_v2/**/*.npz
+
+studies/active_learning/odh_free_llm32_fullpool_v2/.runner.lock

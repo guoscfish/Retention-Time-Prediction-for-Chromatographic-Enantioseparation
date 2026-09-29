@@ -1,0 +1,737 @@
+{
+  "studies/active_learning/odh_llm_hybrid_v8/label_access_audit.csv": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/label_access_audit.csv",
+    "sha256": "e131092d335af93cc293b15164cc81230aaf23c5b872dc4f85797d15faaca037",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/protocol.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/protocol.json",
+    "sha256": "383dbfb62e90687cfbf4cf3ddc6310013dea07561682dd89f5a852861b64244a",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/attempt_000/best.pt": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/attempt_000/best.pt",
+    "sha256": "fb867d85a64b36f89755e566ea94a6b7fce88f9a019ac025b4be98f75fbb733d",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/attempt_000/final.pt": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/attempt_000/final.pt",
+    "sha256": "34d7754cb5341431a8abb96c10a7c06c2c6a8f9849b9e5b58cb2fc67706da387",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/attempt_000/final_validation_predictions.npz": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/attempt_000/final_validation_predictions.npz",
+    "sha256": "3124d36e4f3b820d7cb2a89915ee081a147d7b534c31d1251f36450af2dd134f",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/attempt_000/training_curve.csv": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/attempt_000/training_curve.csv",
+    "sha256": "2c5e1033208bffd00d05ee519391c563872d6b9b8727a816f853e6715dcf7ced",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/attempt_000/validation_predictions.npz": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/attempt_000/validation_predictions.npz",
+    "sha256": "1f1ee63aa5bc5da72697ca49f6971c7cb16e90508d388b2f9e4aea453f3b670e",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/fit.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/fit.json",
+    "sha256": "ebd353d5176a2d360db3393e94f67fcba6f3aabf67a68e68546a2a4fa4ef6448",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/input.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/fit/input.json",
+    "sha256": "92c4d570b0a414caf6cd608e40d1800d213b63388503ae08e91cb9d894ad8fd6",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json",
+    "sha256": "150f7bcb831fdfd07482fe76d3d3dbbe78e8da5ac4345475734e20973e388a88",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json",
+    "sha256": "b59e453dc1c89cba11660884f987dbebed66422405e7c5e633ecc5f106de994c",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/query_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/query_02.json",
+    "sha256": "d2870eb4bc4ee7921b47681eecfb7b05e8855b88a3cd9467755cbc2b94880018",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/query_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/query_03.json",
+    "sha256": "f8aeab8c049d83a032cc3942602d476c834ce792f22b5bab184b1e9f59f703c5",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/query_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/query_04.json",
+    "sha256": "0d54899d13530033c0cd76dd4fe13433f3645adca93f70e1519759bf28ba5144",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/selection.json",
+    "sha256": "c8aa72dcd562d8b107c17cd8532dc21b5fc7864a39d032824025b931075c7d9e",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json",
+    "sha256": "31ff84d7202b2c9fc36a31d42556a98e69c2447bbd8939d15d4495c34d76c135",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_01.json",
+    "sha256": "acb0efad3d7d75a1be50ed575545b2ae1c76a162a3f3d77795bf0255a8778e76",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_02.json",
+    "sha256": "1f0cde631f809dc2a5bc4e182ebc59a4c1d0fd39bc2edc528878958554052892",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_03.json",
+    "sha256": "c9535813843be0c7ba1d0ed1e85fc81a9aea6878b2e48bcb5556b4625c40b353",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_04.json",
+    "sha256": "c55eafdd8958b4fe9c63f34e64ec16fcee7fbd53c2bd905c87b6141c4a1ae8e3",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_05.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/llm/turn_05.json",
+    "sha256": "9ca071164e5ee6426cac4cd544aa68ad620ee3549f0b1a8d48532d044008f362",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/packet.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/packet.json",
+    "sha256": "5508c6f736d7150e813931ba0657c04c04c21e0eb1f1c42bffa46bb6fd7d4f16",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/selection.json",
+    "sha256": "0b866dbd4b18e72963ae219bb518c000278f958a8ebdb99efa8822ba77222105",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/attempt_000/best.pt": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/attempt_000/best.pt",
+    "sha256": "0ae0e82ff721dc81862af77aed3e8f14e60c55f6a7a5c143423956f3ff5bfea2",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/attempt_000/final.pt": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/attempt_000/final.pt",
+    "sha256": "ed4cb1a5a5c21d1de00b1dd35a3e8ee877a75828457a0ad3a09726cba0511fff",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/attempt_000/final_validation_predictions.npz": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/attempt_000/final_validation_predictions.npz",
+    "sha256": "73b7d69552c70710b64997676d95f44cefb810d9a7c8b8623aa5a26c8a522c23",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/attempt_000/training_curve.csv": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/attempt_000/training_curve.csv",
+    "sha256": "e1e17d695afd89486aedbf465124e9281fa8c86a0190f65cb0c043a81be63310",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/attempt_000/validation_predictions.npz": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/attempt_000/validation_predictions.npz",
+    "sha256": "e24546fda7c0ba36e92d48210f8145a574ac5794ec87769cd670e4f82d2ae67d",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/fit.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/fit.json",
+    "sha256": "b6eb5ae2d820cff10bbd28b82a457aabd157cdb9a554f5478a212b5c15dc95e9",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/input.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/fit/input.json",
+    "sha256": "f0edb114648c8fa986ec5d1f5a47938a0e6204b1eddc617bd4379c86849b2a18",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/query_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/query_00.json",
+    "sha256": "adaea541622da88425d62814a32d40a7f1c9eab9273f94d266c0ff0632be4ec9",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/query_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/query_01.json",
+    "sha256": "253ef12ca1b538d2d689c5b20515ccbbfbfce9bf06a4c29cc338b44bab028dce",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/query_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/query_02.json",
+    "sha256": "c2df9a9e2ba7b9faaa25bfb03f218cabc881f4bcd2d0734675474a2dcc399cef",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/query_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/query_03.json",
+    "sha256": "0588ad2838e8f9d24733d67065f232a6583b2166a7dde73a339b26f4850eb762",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/selection.json",
+    "sha256": "c58f69a835e016c2ea8fd9707861c3bbfac7e86a703065d530dedb75e326fe3e",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/turn_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/turn_00.json",
+    "sha256": "e3b443471700324d25aefc20a0d6ee3c51cad519a9975ca440b1eea552e8cd4c",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/turn_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/turn_01.json",
+    "sha256": "9c8179004ba54d6a741d40ff2fd72cc02aa941ea0fc95d451fc7fdf418622089",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/turn_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/turn_02.json",
+    "sha256": "05e9c1ad5de3aa3014fc79224e1755e07239aee1c3987610364491f50b3aa42f",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/turn_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/turn_03.json",
+    "sha256": "d4267ce60351f5978381858a2573993594555bb56cb39fe987296c30833d6d5d",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/turn_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/llm/turn_04.json",
+    "sha256": "31359f5436329d38814bdf553cec81765a7e011f1ea00c9b180781a5608f33e6",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/packet.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/packet.json",
+    "sha256": "c0c51a369c9a8a49f5b337fb17097661aa437bd433027accd86b85eed24bb105",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_1/selection.json",
+    "sha256": "34225029aaa6ccfd8429933aeea37550cb91f21931e83fbff09cac3551927f85",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_00.json",
+    "sha256": "2b864a8efcac0a9d87ff2db8bde1aabec3c09fe9ff4c547ca9e65c453b0c8cba",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_02.json",
+    "sha256": "31e3eb260a4ba0263349de6afd1d09339a74ac9fbe4b19d5f5ac416c4d2055ff",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_03.json",
+    "sha256": "5fce44cf090c18e688ec0a4703a49628f171d313c7d1985cdb29adc221bdeb6c",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_04.json",
+    "sha256": "fe188373c2a1ca02df35ad76b091a4fe5b60e0648fa9f58f4bfc185d0603e70c",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_05.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_05.json",
+    "sha256": "6f34513b39f7e027950a3b0e35b15b38519deb5dba024272666ee634dc4e4f00",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_06.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/query_06.json",
+    "sha256": "47dfcfbb886bd2f95619353ee3c41fb53b02e80f92741a2adec4cf3b0a834b27",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_00.json",
+    "sha256": "796bb03213b2def4265bc6c9ab48837d1867722b1a4fa02f752b2e4ccacbb862",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_01.json",
+    "sha256": "36f3067fa61b025d2b597ca865847ea7c2f753dd2d69368377b0e520985ebd5f",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_02.json",
+    "sha256": "cc3f5022d1656bebe136d3dd7ae43cdeefef35fa82ceebcb1f8902afcf9cb99e",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_03.json",
+    "sha256": "c46aba8c2b81059b83d80c9d179dafa15042107af73fa30291a2120c0df2971a",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_04.json",
+    "sha256": "b3d09d71c7c528d2f17a21f74a19d731929df19c0bcfe48de7e0c4f994b5a215",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_05.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_05.json",
+    "sha256": "ddf9ed3bb9185103f567577df556cb1b3d904ba5fae41e0c61b2ddc77fbc7204",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_06.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/llm/turn_06.json",
+    "sha256": "a6df442e2482621f0bd2353376708f1c68d8c7f093960263b0d4ce7b4662547e",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/packet.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_2/packet.json",
+    "sha256": "3d32710874231d4e0b0dfb1b02d38a859cc4a65b6de9fbed209f4bcf6130e158",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/complete.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/complete.json",
+    "sha256": "585d9933aab2bf8ffca800428f5de962ddc7fb2b90ea38c51f2e6f2fc5401e16",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/attempt_000/best.pt": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/attempt_000/best.pt",
+    "sha256": "d41442b03ed5869117740545074585f0d828dc486ab5f2f069a1b00bdfcf534e",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/attempt_000/final.pt": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/attempt_000/final.pt",
+    "sha256": "6b73b91a50c8ed65189ee1fc84e1cf42ad11577c4525f2ae3d6794efa56df826",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/attempt_000/final_validation_predictions.npz": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/attempt_000/final_validation_predictions.npz",
+    "sha256": "1de5c813d9299945d35d471424bbc43580530bad52fd08eedcc7dcbc43f507fa",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/attempt_000/training_curve.csv": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/attempt_000/training_curve.csv",
+    "sha256": "eed2c245b1f5fdb082f8d9110e332cc9531825119f711c0647955ffa6db3c5d4",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/attempt_000/validation_predictions.npz": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/attempt_000/validation_predictions.npz",
+    "sha256": "061a0def11f541d100fd1d53022bf3ffa08631e98991a136d3a5f5335c32145c",
+    "tracked": false
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/fit.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/fit.json",
+    "sha256": "c15732eb072d4b24a8ba36de2c07487acdd73ddd4bf844d718658f8f5c8150b5",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/input.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/fit/input.json",
+    "sha256": "185c591bfb00c50ba2768ffbe74366cdd593cfbe1a3b944fd8c7d45c725ec86f",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/query_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/query_00.json",
+    "sha256": "d671a2512f211c80ecb65af927f3b52d9f10eae670e7a517daff4fda4be3cf6b",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/query_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/query_01.json",
+    "sha256": "3e50fda1f1448519e69843253712e63216efd5c5ee6b5254a26ffb9cbfeea2f3",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/query_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/query_02.json",
+    "sha256": "60b96175c32de793daf1a9033b94b74471071837a2f6f3e343feeba3607336c5",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/query_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/query_03.json",
+    "sha256": "e60b30d7482d5f206f8268229848cf0994cf5fe004def7dbe11023c9ceea39bf",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/selection.json",
+    "sha256": "c01f5a0a94d7ea01fef9cd2e61cd6ca8a244c516ba3f3f2e8aec9db658e5f703",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/turn_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/turn_00.json",
+    "sha256": "52078d49483cb99c5f64edb04e4b8e46c60835a5f606dc1df17f6400c1bacf64",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/turn_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/turn_01.json",
+    "sha256": "72fb4cb36446aafc9259b29f61a68040fd9be54de0c18ab3b4e03125700e5fcf",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/turn_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/turn_02.json",
+    "sha256": "2f4548698de198c9196e5844e84dd45b44ad9be18d9fd216b1775cee8f4c4acb",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/turn_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/turn_03.json",
+    "sha256": "1cc32d9ae3c3c4009ec54a06f2d0d7764da423f24ff79b58e15baa85c1e148c2",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/turn_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/llm/turn_04.json",
+    "sha256": "ed9cafa3d81aa3eaf494edd553d097d3079be38245be4ba0c126d3d6e69ae120",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/packet.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/packet.json",
+    "sha256": "4759d9a3fc77558ae0529eddc9be7cc5b92c03900811e93790f38d2fc2b7114a",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/masked_llm/round_0/selection.json",
+    "sha256": "6d6467789463ba3abd8a13b19d438fe8acf085b1a63039824dbddd944a4eb2c7",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/label_access_audit.csv": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/label_access_audit.csv",
+    "sha256": "21d61dd91aa1dccff10114a2665a91892078dbe9440576a5c93d63ea2dd55b53",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/protocol.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/protocol.json",
+    "sha256": "4a61029f3522c3b698adabbac7318d5f1b40c36ed21053496f72baf756b5f699",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json",
+    "sha256": "9a39f3fd02b7bcf57e5e1042cc61b878271f97d11ad229442c2813b5ed56e032",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json",
+    "sha256": "bd297f5f6db380567fcb1b0423c749de0f8d55e4922a351ffd834278bbaffff4",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_02.json",
+    "sha256": "44044268ccc9decc11f076cddc4fec3073d03edeab0b3adfbb4f00b631c9be34",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_03.json",
+    "sha256": "276ebd2a1cbf8feadd69d6643ace923441ccd6b4a9afb22a35d4b15f07082a73",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_04.json",
+    "sha256": "e5572da708e1df6742e98e8e82d655db740687d2d774a847ae87c2acfbe2fc55",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/selection.json",
+    "sha256": "50a824422a28b73ff5dfc54839ca502b273d5bb823e529bb795358282995f0c3",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json",
+    "sha256": "557c0e15bc016eb58f9bc9e6bc6d0d8c6c2919016c3f8c3623b9439bf7c67cd8",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_01.json",
+    "sha256": "872fb18b19149ee79a6a45e308310c560388432b100657e09d51f93003864bab",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_02.json",
+    "sha256": "353b1c063a12c12a8de03737f5783faf47f72ff8ba10f627888f50982a0746b0",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_03.json",
+    "sha256": "cd4a2291b7d8fea26e57dd5261616cde702b76be1e18f88c1cfd1361cc804c32",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_04.json",
+    "sha256": "100da0ef5781b09d2f8e0449096a0efee2942b61d100f37b42a6998cb71549fd",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_05.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/turn_05.json",
+    "sha256": "d98e6830d5784ed9713f964e8421afb1e8e8cd377c39640f9f6f8a4ece6cfa27",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/packet.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/packet.json",
+    "sha256": "5508c6f736d7150e813931ba0657c04c04c21e0eb1f1c42bffa46bb6fd7d4f16",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/selection.json",
+    "sha256": "c1a9b3e0704a6247ffcd24dae8d4cd07bade7c4ccc14d41fe71c47e1150d9533",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/label_access_audit.csv": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/label_access_audit.csv",
+    "sha256": "2cf5b676b52a48f55cc736056bd88cf5afa20fb95ce7b08bf4caba589c7d0aba",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/protocol.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/protocol.json",
+    "sha256": "9c712396b08fe541f50f969521b0c8256ba57a022a545148433e12094c199436",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json",
+    "sha256": "b407103c23de8f0be26d434c41387a517fb8ecb5425c5d0692c23f11d2ef6f02",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json",
+    "sha256": "bd297f5f6db380567fcb1b0423c749de0f8d55e4922a351ffd834278bbaffff4",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/query_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/query_02.json",
+    "sha256": "db89ed30b67d1cf02ecf43312c24fcc5f90db87937af7f0cd62eedf397078ce9",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/query_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/query_03.json",
+    "sha256": "057b9892eb6691a7a316429aa8fd0d516e909543315bc5a2972c98e47ae991b4",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/query_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/query_04.json",
+    "sha256": "09c74c1dd2bde098a5c4eb04694c8348d384dd94ac49c8118d0e85fbc977ccf2",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/selection.json",
+    "sha256": "54f67553dd681b3f7c7a840d2225d1b6cb4030e988c5164854b6c08c37cc3663",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json",
+    "sha256": "6c6c4ac63c5ec1b8319e6c81d92091314d57abcc2be7b5181a16c17964e9f842",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_01.json",
+    "sha256": "b7d6d6b9e48d820b111cb668266b335ff524d9d2acc5b95bbf25d003e4955da0",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_02.json",
+    "sha256": "a38fc444ef831640b5507e001d9ab564032e7ed305cd559b54d8271125268381",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_03.json",
+    "sha256": "d9246eb6fd20e9409611af6508ae469a32a942b76b42fdab3ce0477c701cec88",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_04.json",
+    "sha256": "678c13618f4f7b7da5038c42c79d8c53f416dad95f84c290b99f7ad69f79c715",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_05.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/llm/turn_05.json",
+    "sha256": "58fb47639c3242725f3335ed92daf2e0d73db753d53e5f31c97ed1f461da970e",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/packet.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/packet.json",
+    "sha256": "5508c6f736d7150e813931ba0657c04c04c21e0eb1f1c42bffa46bb6fd7d4f16",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v6/runtime/seed_1525/chemical_llm/round_0/selection.json",
+    "sha256": "32ffd31d608f547b582f603a825412c5828686f0042e103f7bb38aefbe748b32",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/label_access_audit.csv": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/label_access_audit.csv",
+    "sha256": "a8cff86531a4aa519716b0b65a22d69ae0fcb5a6e67a2d4de97028728904237b",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/protocol.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/protocol.json",
+    "sha256": "4523313cce9f64b84f2cac6617af97132ff10eb59728b8a0648945fb661af196",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v7/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json",
+    "sha256": "9a39f3fd02b7bcf57e5e1042cc61b878271f97d11ad229442c2813b5ed56e032",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json",
+    "sha256": "2766037631d13a6b157b2f1832c4099cd6751499dab410b49b6bcf15e19d9bcb",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/query_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/query_02.json",
+    "sha256": "ca72092f028133d5f3df58e8b8d2b484cab9426a6ffcf4c3498dd986e5342945",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/query_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/query_03.json",
+    "sha256": "ac1136a32ca001bd9ee2b928e6a775151ac854b62d05ef53e932df9cf60b727d",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/query_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/query_04.json",
+    "sha256": "835d9e8a2a0bbfe9e87271925369a1e5dab1180043a561843fd8d6cbaa940ecc",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/selection.json",
+    "sha256": "07dd6f607469618342fe001145fba55e1cbde380179215fa98020a3335d6bc1a",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json",
+    "sha256": "44fd94172a1a9309190f31d6b71ff7f1dd62860d37a25c6a831f58ff286b2fdb",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_01.json",
+    "sha256": "23420987c654ff85389e27d9eb4fcb7ec1aa1f66b5ec2ca6b5dfbb86e74e856b",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_02.json",
+    "sha256": "f234e926fa4be206aa01e728cfea1f5efcfc3a840a7a8c07cb370d7aaf61dfc8",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_03.json",
+    "sha256": "a87131841fddf4d73d815a6df9fcddf43be685c0347f1ad1594b2225acc8c467",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_04.json",
+    "sha256": "8a25f0cd2e3c92db5217d5b5956704e604bccfd2c37505bad9597a5a0880e911",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_05.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/llm/turn_05.json",
+    "sha256": "2630755cb6bcb0cd7d6d06f3d50c5d58588e4ad4212b9ba61a4c124578f4cd8a",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/packet.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/packet.json",
+    "sha256": "5508c6f736d7150e813931ba0657c04c04c21e0eb1f1c42bffa46bb6fd7d4f16",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/selection.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v4/runtime/seed_1525/chemical_llm/round_0/selection.json",
+    "sha256": "0505be99c106cda94bae326e904ca9e9e12973001e0463ec3db4649f39b8ae0e",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v3/label_access_audit.csv": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v3/label_access_audit.csv",
+    "sha256": "2d306e192678c0421321ba0f69281e7599c557e1b881a7da34e05d473d7aae15",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v3/protocol.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v3/protocol.json",
+    "sha256": "05bb5c4049d98f6f3a3d776ebc41df00f38d5a65564cf82648eae1db6c908ba5",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v3/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v3/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json",
+    "sha256": "0114bd977e800bb888845f60c3a2c3f5e750a3bb0c43c4bb5db1ec89f9d14442",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v3/runtime/seed_1525/chemical_llm/round_0/packet.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/packet.json",
+    "sha256": "5508c6f736d7150e813931ba0657c04c04c21e0eb1f1c42bffa46bb6fd7d4f16",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/label_access_audit.csv": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/label_access_audit.csv",
+    "sha256": "94df3ea6626061b4d2f23354a1098c67468a9165a8f80064d6d5e2332e2b47b5",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/protocol.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/protocol.json",
+    "sha256": "11155d7f6824c7ae81adcd3476b2249661bdc9088a0e5ecfef516b9465c3371a",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_00.json",
+    "sha256": "71425db6be3bc41a40ca4724dcd31ffd6506e11e2d78c402bf64195faaf93b54",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_01.json",
+    "sha256": "3634ded84948552baa373670d6ab542463ef468515df1d60a15ec09a60ceeb7f",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_02.json",
+    "sha256": "650b25ee78f27def0224873b7e0d4baee6201b27a7149cfabc3a1f2a497ffcb4",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_03.json",
+    "sha256": "812166737e7b1669d80e1eeceb5ccd3a9d3f1981a30bfda466c3ef37ac058ca4",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_04.json",
+    "sha256": "7ce35429f871c571da0abe9c89715b418fcd960dfb4165c850994b5f0c5a433d",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_05.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/query_05.json",
+    "sha256": "62a7c3e70a07505ce956e89ac32452b975ac3d281f73c51cdf2d1b6eb21ed7e7",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_00.json",
+    "sha256": "721927976b213deb5013457374a4f4c0d76167b0f0b5a582c0d7aaf85275a692",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_01.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_01.json",
+    "sha256": "5050a5a5f31bff1ce01133099166a6b39ec28637f6719e74554416a69e3104cb",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_02.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_02.json",
+    "sha256": "551cfc4eae980013a82a58cc36fd5eabb073dc09f4dba3eeae4afcfa8a4db1fb",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_03.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_03.json",
+    "sha256": "d6ab04487480033bed0b3c4048e25f9396d85d6c8c42523006970628df078fea",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_04.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_04.json",
+    "sha256": "b2793a44fed52bb2e5aa9a2ed5561eb075082e84f3133522d083ab5a52a7d08b",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_05.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_05.json",
+    "sha256": "525c748ad4be03de1f9a96e300b7bb753e538b7538f5b5ca22cfbf622dc0bfbb",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_06.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/llm/turn_06.json",
+    "sha256": "57af6f011fab3682848e37d3e4dfc523ac0f6497c8b2a25e8440ebadbe78b240",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v2/runtime/seed_1525/chemical_llm/round_0/packet.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/packet.json",
+    "sha256": "5508c6f736d7150e813931ba0657c04c04c21e0eb1f1c42bffa46bb6fd7d4f16",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v1/label_access_audit.csv": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v1/label_access_audit.csv",
+    "sha256": "c771d5d55afa3ebc78f432c6fbb27b90d86b32d72fae43459a5432b9ad5c600a",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v1/protocol.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v1/protocol.json",
+    "sha256": "3990b622d86d7bd702d2c8d82e426b5abf089b143c8a5a5f43242bf516c72dce",
+    "tracked": true
+  },
+  "studies/active_learning/odh_llm_hybrid_v1/runtime/seed_1525/chemical_llm/round_0/packet.json": {
+    "path": "studies/archive/llm_hybrid/odh_llm_hybrid_v8/runtime/seed_1525/chemical_llm/round_0/packet.json",
+    "sha256": "5508c6f736d7150e813931ba0657c04c04c21e0eb1f1c42bffa46bb6fd7d4f16",
+    "tracked": true
+  }
+}

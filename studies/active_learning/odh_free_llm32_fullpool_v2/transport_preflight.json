@@ -1,0 +1,7 @@
+{
+  "status": "READY_FOR_API_KEY",
+  "error": "RESPONSES_API_KEY_NOT_CONFIGURED",
+  "missing_environment_variable": "TOKEN4RESEARCH_API_KEY",
+  "requests_sent": 0,
+  "scientific_content": false
+}

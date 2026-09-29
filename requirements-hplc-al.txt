@@ -1,2 +1,5 @@
 -r requirements-reproduction.txt
 pytest==8.3.5
+
+# Full-pool serialization token estimate (frozen encoding and safety margin)
+tiktoken==0.12.0

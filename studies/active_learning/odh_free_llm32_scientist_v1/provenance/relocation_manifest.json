@@ -1,0 +1,477 @@
+{
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/INTERIM_REPORT.md": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/INTERIM_REPORT.md",
+    "sha256": "0bc0fcfeb0873462b695aae31da0d0de4e36ee14bfef3ec7bb9d9957fc46c902",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/SYSTEM_PROMPT.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/SYSTEM_PROMPT.json",
+    "sha256": "3e3a8eeaf9d89eb13951c183e8bd75cc321f692bbf990f217f756fdaa1da0b76",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/cli_context_freeze.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/cli_context_freeze.json",
+    "sha256": "704725d54bc3fcb06541da11676293d5f239ab96922ed6e6016fed96f2a4bd5e",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/delivery_artifact_hashes.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/delivery_artifact_hashes.json",
+    "sha256": "d99b69011da87f8bc0c257a54e8f9a92cb6fe121991c57532ab299822c399fa8",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/dry_run.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/dry_run.json",
+    "sha256": "d2f65879e7bdc7e1cf1fe1b3555590f8f45aa270792ec1cc798c16c4de152ad5",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/dry_run.log": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/dry_run.log",
+    "sha256": "6ee3df6ce133a9565a54a991d36967d519acb396fe9754e58906c51dbbd4cbf3",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/final_audit.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/final_audit.json",
+    "sha256": "f2860266dcedf60c237f63df60cad56cb37553a78b5d379e72b6b0d54d3731c8",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/frozen_source.zip": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/frozen_source.zip",
+    "sha256": "db1d3b7a433d8d70dc4dec035498785c3dda2a6f7c87f7b70191381a427eb197",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/label_access_audit.csv": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/label_access_audit.csv",
+    "sha256": "6b3af477d58e1ccd9f0e9208c0206ae6a4c4875c3a0f2342cb32e8c2f9927abe",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/protected_artifacts.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/protected_artifacts.json",
+    "sha256": "77fc5d55ddc3dda5e338587a2d7306d4fe3d887fd8e26d4073c2af9f7163afee",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/protocol.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/protocol.json",
+    "sha256": "8f08a9f7eddf65062778e6d45d449a7e4ea74f16c5cb5e4cc019a77a1cccfaad",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/protocol_freeze.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/protocol_freeze.json",
+    "sha256": "b77c91c2f392a03a31067e56713914581c5d0d1e69a614e06f17f9799a04320c",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/results/partial_aulc.csv": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/results/partial_aulc.csv",
+    "sha256": "b203a4a7860746c40a038e27a1e53cc6f1c23affd31ad69433a3c93060d96720",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/results/partial_aulc.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/results/partial_aulc.json",
+    "sha256": "a952606f1e33c7b9b78e60f3e31c52a0094cdac32fe8659cba18c0e1c581a37a",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/results/validation_learning_curves.png": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/results/validation_learning_curves.png",
+    "sha256": "966b5e351fff1d1af5bbc067b877bd232a07e11f195764685cc36dadf38a6e65",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/results/validation_learning_curves.svg": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/results/validation_learning_curves.svg",
+    "sha256": "7e7b8bf41bd9fae70e6205d91996a4c68cd943134e369ba36bd411e33d5e9474",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/results/validation_metrics.csv": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/results/validation_metrics.csv",
+    "sha256": "811712f4d9615327ebe383af54034b95b57612a08b3e19eb99c7291ef5f89585",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/results/validation_metrics.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/results/validation_metrics.json",
+    "sha256": "c2c29aeed79b26b460647d74ef0858971f0c535fb42fc7c25e0c59ee4517712e",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/round0_advance.log": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/round0_advance.log",
+    "sha256": "60efa13c0d684279f8e5725166f27209d8b18d948573d7d04d224aaa3c4d7e8f",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/round0_resume_verification.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/round0_resume_verification.json",
+    "sha256": "438f41cf41aba8ccf5e83cd5ce27081beceedaaca597613cf36d20668b0f9842",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/round0_select.log": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/round0_select.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/round1_advance.log": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/round1_advance.log",
+    "sha256": "0fa329c6a2bd93e22ccb1a4d42834e8ed3ef40107496a0b6a7d66d7067c66736",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/round1_select.log": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/round1_select.log",
+    "sha256": "c3f08daa6fc4b60b56df14186513007582101666bbb937aa151acab0320417cb",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/complete.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/complete.json",
+    "sha256": "37b27c282c67ca7131c43081feb6626ce76afda3958ab2aa0c40d60aa5024528",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/diagnostics.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/diagnostics.json",
+    "sha256": "3b9bf6cfbdd5d2a82885acabb348b5afb6a8481ef729f199c36e6131837e1757",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/feedback.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/feedback.json",
+    "sha256": "d8c08b1d4e0084a3f81f9122ed89a58f44d62fe8e4f43c6d77436d596bfa65b2",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/feedback_seal.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/feedback_seal.json",
+    "sha256": "0d58c2bdd4fac41462bed034cab356a1f77edf4cbadea486e6857ed69f1b063b",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/fit/attempt_000/best.pt": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/fit/attempt_000/best.pt",
+    "sha256": "78fd072c061fd17cbdb520251f516792ee82df19deb1c15554f0d57803ec3450",
+    "tracked": false
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/fit/attempt_000/final.pt": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/fit/attempt_000/final.pt",
+    "sha256": "f8224e9c69301f83cce612bd668105bd17958b55a7250ee86b8f5f618eff372a",
+    "tracked": false
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/fit/attempt_000/final_validation_predictions.npz": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/fit/attempt_000/final_validation_predictions.npz",
+    "sha256": "fc202c56069b2c1c876721588cc9e664be9e69abd54106a8197c3436c10b05cc",
+    "tracked": false
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/fit/attempt_000/training_curve.csv": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/fit/attempt_000/training_curve.csv",
+    "sha256": "1beb3caed90d2f3e55556e53addf55f98447d4759e3187a6651d59cf7951e2ef",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/fit/attempt_000/validation_predictions.npz": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/fit/attempt_000/validation_predictions.npz",
+    "sha256": "4307161b220532d5474cf40674bc04d8e01e814ce6559c2f27372d78879db55b",
+    "tracked": false
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/fit/fit.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/fit/fit.json",
+    "sha256": "14bc8ef3c7285e5e059fa8829e87e011d64b79c6bc8227c9f747535d448b6d83",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/fit/input.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/fit/input.json",
+    "sha256": "ccb2d489bdbe289d3b17265259663e97166784747f3b97adb9fbb7e8c5a1b107",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/lcmd_shadow.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/lcmd_shadow.json",
+    "sha256": "b0712a8b7fba8a4b5c189150a77ae5ed4fa34bcd90394b3d75a75c76840e4296",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/relay_00.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/relay_00.json",
+    "sha256": "67c778ce7af301e748d04c847532d76c34923238b8e705504b8232bacdbcfd5a",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/relay_01.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/relay_01.json",
+    "sha256": "14155eee81611d706a06dadce0761d90160111c4918c4182a1d8a7c97a42275e",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/relay_02.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/relay_02.json",
+    "sha256": "b1f0e6b236f1da8acf891271aa6a288f58ee062e739fcf9b415944b4db7b84bf",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/relay_03.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/relay_03.json",
+    "sha256": "a0bad9d2670c62d012265b4875c0da2bedb8edf625ade99493b6393dcb9b32a9",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/request_00.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/request_00.json",
+    "sha256": "702ae13a61b9efac1d3ee35a68e04ee4880ca11dd740364d4d06d7db2be9bf8d",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/request_01.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/request_01.json",
+    "sha256": "4eb0952fef2734f409a08ad2ebc516e69a350ff4c6f48baf01ecc8610173f891",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/request_02.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/request_02.json",
+    "sha256": "1e56c49034a8c2fe6900f8704c9be8b9af0a8e8ea52be338f48ac1c20add19b3",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/request_03.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/request_03.json",
+    "sha256": "47fb19554c9ff42a4045c910dcff84ae4f006c2074f2c3649484e69393d9cf52",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/request_04.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/request_04.json",
+    "sha256": "2630f2678f25754981ae02dc84df16e091ef12f84c822c4f414d6ae6ebc39404",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/selection.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/selection.json",
+    "sha256": "6b19c16e68b95c187ba0bc2d7f585a66cf23e86bc0391e280f23d5ec01589c14",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/turn_00.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/turn_00.json",
+    "sha256": "40a086a03dce8c89056e0dade1342637d5368a9646cb40f57ac193840aead6f6",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/turn_01.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/turn_01.json",
+    "sha256": "a00bc82749235d41fc0c16470ba925e0cb4565aa168fa8c213de5e13ee3d4dee",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/turn_02.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/turn_02.json",
+    "sha256": "d7fc277688097efb523e51f2a0c485cc7f238db50e838711dc9fdebb7a60a7c7",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/turn_03.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/turn_03.json",
+    "sha256": "7443b21f1427477b0b7c514b5b210c7a097d42731a9b2aa9a5db9afe16cb011e",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/llm/turn_04.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/llm/turn_04.json",
+    "sha256": "e880c4122a4fd81cc774a1d479ad9f187473ad970a659740e00a3fe1a975a778",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/manifest.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/manifest.json",
+    "sha256": "3a576044a853a7bc2c154526f0decbc4dc1b61388c3a520324ee785184e148f2",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/model_state.npz": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/model_state.npz",
+    "sha256": "98c8a907d3f9a9ef1df47b663b8a3ee1ae960b65ca5407647c65d92f6445cca5",
+    "tracked": false
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/observed.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/observed.json",
+    "sha256": "f2ada7c58f403eeae8da268a140973a2bd5eefc4cfe16908833b5ee3a49a648f",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/packet.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/packet.json",
+    "sha256": "00ec81d0fbbad7d428fe8e5b039d995752e00b50616b612847691cdd885b75fd",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/prepared.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/prepared.json",
+    "sha256": "3b2faf34f207084280b25631d291b7c1c7d8d9bd4b119f27f0893bdaa69d94d2",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/selection.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/selection.json",
+    "sha256": "38ae723c4b9f429fbb54384d28523f4707a2667ea81a8d568e90b302058f8838",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/selection_seal.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/selection_seal.json",
+    "sha256": "2c6484ea9995d86ac03f6ddd4612627bd090f8d3541709b56993eff855e97b05",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_0/validation.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/validation.json",
+    "sha256": "f7a0fb2ce2d22d2b02ef8f43f9b6360c3955f914570c50f2f214222f19caec0f",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/diagnostics.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/diagnostics.json",
+    "sha256": "b1584648feb0dadf484da45b4de4f9c38cf5f685959c075d93d9ca22fd3ee091",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/feedback.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/feedback.json",
+    "sha256": "2010e7ee4439219201a8cdcd116eee986d7f9a47f27d20cc3a8e0d58b7a8ed8e",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/feedback_seal.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/feedback_seal.json",
+    "sha256": "5bb4c890d8b3e82708993bcbd7130463134dca5b3846f664768119f1ee94d3d9",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/best.pt": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/best.pt",
+    "sha256": "d810a8e3bb875c83541ec480cf6c4db3f96c9a74e071a3945176c0f3fc0659d7",
+    "tracked": false
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/final.pt": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/final.pt",
+    "sha256": "e91004804ea5853f738a05b53ca894524e57d7dc2a911e0b70b76b89bc46439a",
+    "tracked": false
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/final_validation_predictions.npz": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/final_validation_predictions.npz",
+    "sha256": "b2f3228abb8c66b5fdf3ae813d1cef8c71da11ef7661b26772db5fbf6b39bb23",
+    "tracked": false
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/training_curve.csv": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/training_curve.csv",
+    "sha256": "32f39af5b84c6d2b9628a14e10eee6a40e397b3a7295a74b53bf06670ef55fac",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/validation_predictions.npz": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/fit/attempt_000/validation_predictions.npz",
+    "sha256": "a11a55ee2325582796c13b2f14d888ae59c98258b482af67cab578465212df1f",
+    "tracked": false
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/fit.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/fit/fit.json",
+    "sha256": "a6cfa3cc1f8e934841c4657fb2445ec337f9836d8c375b3a9eb313efb588126d",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/fit/input.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/fit/input.json",
+    "sha256": "f60d9672b267e477a5a50850510c263ec2ad1e5e05633ad13092f9d0f363f97b",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/lcmd_shadow.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/lcmd_shadow.json",
+    "sha256": "5162e2178ec792532e8433d16a0c6417093498bb264c7cbe21b312bd14d541d2",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/relay_00.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/relay_00.json",
+    "sha256": "bb6367494d7045598297a1dadd8c892c824776f115b22d65c28496bcfe053243",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/relay_01.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/relay_01.json",
+    "sha256": "8bfeac215c5440724df58af2204857b4e5513ca4189f9f24f13f94e79a92eadd",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/relay_02.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/relay_02.json",
+    "sha256": "20a15eeedbf2e81724d9c78e4c8515f1b75c96a5888b1ef7182055e03edb9b78",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/relay_03.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/relay_03.json",
+    "sha256": "3dbd3ff0e26e5ccbe0de5096bd29f5922e78a378486866d95e86fbf3cecc800b",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/request_00.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/request_00.json",
+    "sha256": "3177afb08381278f4b4f7fb3efb702c1f38aa36b40910e61c06efcd841895f20",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/request_01.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/request_01.json",
+    "sha256": "621adeb5154dd273c8a1c208ea7c752bfab0e067d08037c952a545ac85b97ded",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/request_02.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/request_02.json",
+    "sha256": "5d831eed143ebe80b6bcd78b6025dac7ffceb1518dda5f64d569440d3c2fe7dc",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/request_03.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/request_03.json",
+    "sha256": "ebca44cf7584b167414e75a69c7c8ad508b896842b8ff6d84985e716a5afcfcc",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/request_04.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/request_04.json",
+    "sha256": "798806765c7e0f347b01468c5081fee016b76cab43aaff4c63e9dee6a24fa276",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/selection.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/selection.json",
+    "sha256": "24d3bcf0e9d3c745bdf35ac96653ee86b511691215ce9fa235c7d95b1d288283",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/turn_00.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/turn_00.json",
+    "sha256": "e2411f386875b81e1416bdaccd922c5e8ed4773a2b006235ad8ec57068392b60",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/turn_01.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/turn_01.json",
+    "sha256": "75fdf21e2751aaa8d940924cf29a70917824d9c7dced072a2b83fc95722eba1d",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/turn_02.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/turn_02.json",
+    "sha256": "36202d76c273efa17318010c64871a158d3a401e1efd3d2dc7555cab6157d05d",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/turn_03.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/turn_03.json",
+    "sha256": "fa05f3af651c69bc136a91ff6446a2771ee5355ea8f87383748fb340f2fdfab0",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/llm/turn_04.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/llm/turn_04.json",
+    "sha256": "7a0e88fb003969567e40feb6cce09cbae9030d1a87edb2e14ad16e9cd3500c9b",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/manifest.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/manifest.json",
+    "sha256": "6c618037a5f828efdc0fce38926476278030341cfbba75b067d089882901dee8",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/model_state.npz": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/model_state.npz",
+    "sha256": "2ec6b033add1d2db642f1965d4f0a873451deeb1d927f196b21663a4e0b94c88",
+    "tracked": false
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/observed.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/observed.json",
+    "sha256": "b095ed1ebe650fd011ac703982cc1a845e892f7c5e8f1b6eedaf340be130c301",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/packet.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/packet.json",
+    "sha256": "bc3455b2c224663dc17ba9f395414d48ef0ba573f8055545d41b78f26a40912f",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/prepared.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/prepared.json",
+    "sha256": "d8d487ae42e2f510aa6ba3972d0d9c99909f59bd631c64676218391141b58b41",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/selection.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/selection.json",
+    "sha256": "e6a7f5d10245a9b412381c69bea4cd9755571cdecf077a4844f026f89698df63",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/selection_seal.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/selection_seal.json",
+    "sha256": "78a3a528b22433a80c58e9a7dd7223b91fb0db88b0e5b1899f783b4c41ea2fbd",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/runtime/seed_1525/free_llm32_scientist/round_1/validation.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_1/validation.json",
+    "sha256": "12e8f599b03905c555caac1db6ae43d355030609dc0629ca391306cb60c3d119",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/test_gate.json": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/test_gate.json",
+    "sha256": "444e109a791bd2061e698216769dc4af7e8e8279457d36d90969e3b06c4ea0d0",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/tests.log": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/tests.log",
+    "sha256": "3fad9b6d00a2f7c9f424b00df37842610d392c3a56caab63f6de8ff5f37f4bf8",
+    "tracked": true
+  },
+  "studies/active_learning/odh_free_llm32_scientist_v1/transport_revision_2/tests.xml": {
+    "path": "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/tests.xml",
+    "sha256": "c8df887c167cd7ccc6003636de58a3185b458ac88aaf52110af2ad6aaf978901",
+    "tracked": true
+  }
+}
