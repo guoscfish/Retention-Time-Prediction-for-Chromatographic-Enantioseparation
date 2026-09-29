@@ -13,7 +13,7 @@
   "tools": [],
   "store": false,
   "receipt": {
-    "response_id": "resp_0f3f432b746fc1f1016abb6e453da887d28d20d7f74d7335b3",
+    "response_id": "resp_09e91f5acb73c785016abb71b29dc087d2b463c5384a047b12",
     "served_model": "gpt-6-astra",
     "usage": {
       "input_tokens": 4395,
@@ -24,7 +24,7 @@
     "provider_id": "token4research",
     "base_url_hostname": "token4research.cn",
     "client_user_agent": "QGeoGNN-Scientist/2.0",
-    "timestamp": "2026-09-29T07:52:39.790640+00:00",
+    "timestamp": "2026-09-29T08:07:16.186514+00:00",
     "native_tool_calls": 0
   },
   "limitations": "Request accepted; cannot independently verify provider retention policy or context limit."

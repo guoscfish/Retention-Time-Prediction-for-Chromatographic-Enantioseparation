@@ -25,6 +25,7 @@ from ..protocol import RestrictedLabelStore, role_ids, transition
 from ..runner import assert_environment
 from ..training import fit, load_model
 from .catalog import coverage_percentile, metadata
+from .execution import attempt_summary, heartbeat, log, training_detail
 from .full_pool import BUDGETS, FIELDS, LIMITS, METHOD, ROUNDS, SEED, STUDY_ID, opaque
 from .memory import OBS_FIELDS, build_memory, feedback
 from .planner import ARBITRATE_PROMPT, SCREEN_PROMPT, plan
@@ -90,6 +91,43 @@ def source_hashes():
     return bind(sorted(paths))
 
 
+def verify_execution_amendment(protocol):
+    """Preserve the original protocol; accept only the user's sealed ops exception."""
+    current = source_hashes()
+    if current == protocol["source_hashes"]:
+        return False
+    amendment = read_json(STUDY / "execution_amendment.json")
+    allowed = {
+        "src/hplc_al/llm/execution.py",
+        "src/hplc_al/llm/runner.py",
+        "src/hplc_al/llm/planner.py",
+        "src/hplc_al/llm/continuous.py",
+        "src/hplc_al/llm/responses_transport.py",
+        "scripts/run_hplc_fullpool_v2.py",
+        "scripts/preflight_llm_responses.py",
+    }
+    old = protocol["source_hashes"]
+    changed = {p for p in set(old) | set(current) if old.get(p) != current.get(p)}
+    if (
+        amendment["protocol_sha256"] != sha(STUDY / "protocol.json")
+        or amendment["original_source_hashes"] != old
+        or amendment["source_hashes"] != current
+        or not changed <= allowed
+        or amendment["authorization"] != "允许 V2 仅修改日志和重试，复用已有结果"
+        or amendment["max_attempts_per_scientific_request"] != 5
+        or amendment["scientific_request_payload_changed"] is not False
+    ):
+        raise RuntimeError(
+            "execution amendment/source mismatch; no scientific execution"
+        )
+    gate = read_json(STUDY / "execution_test_gate.json")
+    if gate["status"] != "PASS" or gate["source_hashes"] != current:
+        raise RuntimeError("passing tests for execution amendment required")
+    verify_files(ROOT, gate["evidence"])
+    verify_files(ROOT, gate["test_hashes"])
+    return True
+
+
 def prepare():
     """Offline registration against existing sealed L333; no target CSV parsing."""
     partition = read_json(BASELINE / "splits/partition.json")
@@ -99,10 +137,8 @@ def prepare():
         raise RuntimeError("source data drift; no label access permitted")
     if (STUDY / "protocol.json").exists():
         protocol = read_json(STUDY / "protocol.json")
-        if (
-            protocol["source_hashes"] != source_hashes()
-            or protocol["environment"] != assert_environment()
-        ):
+        verify_execution_amendment(protocol)
+        if protocol["environment"] != assert_environment():
             raise RuntimeError(
                 "protocol/source/environment drift; stop and register V3"
             )
@@ -203,7 +239,13 @@ def require_git_commit(directory):
     if sealed["protocol_sha256"] != sha(STUDY / "protocol.json"):
         raise RuntimeError("protocol/selection mismatch")
     # Commit protocol and seal; seal hashes all transitive request, state and selection files.
-    for p in (path, STUDY / "protocol.json", STUDY / "protocol_freeze.json"):
+    commit_paths = [path, STUDY / "protocol.json", STUDY / "protocol_freeze.json"]
+    if (STUDY / "execution_amendment.json").exists():
+        commit_paths += [
+            STUDY / "execution_amendment.json",
+            STUDY / "execution_test_gate.json",
+        ]
+    for p in commit_paths:
         content = subprocess.check_output(
             ["git", "show", f"HEAD:{p.relative_to(ROOT)}"], cwd=ROOT
         )
@@ -362,7 +404,11 @@ def run_selection(round_index):
             raise RuntimeError(
                 "configured provider/model differs from registered V2; no fallback"
             )
-        protocol, _, directory, packet, labeled, unlabeled = make_round(round_index)
+        log(
+            f"Round {round_index + 1}/{ROUNDS}: preparing candidate predictions and local memory"
+        )
+        with heartbeat("Candidate preparation"):
+            protocol, _, directory, packet, labeled, unlabeled = make_round(round_index)
         if (directory / "selection_seal.json").exists():
             verify_record(directory / "selection_seal.json")
             return read_json(directory / "selection.json")
@@ -402,6 +448,7 @@ def run_selection(round_index):
             config=config,
             limits=protocol["limits"],
             transport=call,
+            retry_requests=verify_execution_amendment(protocol),
         )
         row_ids = {opaque(i): i for i in unlabeled}
         chosen = [row_ids[i] for i in saved["selected_ids"]]
@@ -483,23 +530,31 @@ def advance(round_index):
         valid_truth = RestrictedLabelStore(
             partition, STUDY / "label_access_audit.csv", TRAJECTORY + "/trainer"
         ).reveal(valid, "validation")
-        graphs = load_graphs(partition)
-        source = directory / "fit"
-        record = fit(
-            graphs,
-            labeled,
-            truth,
-            valid,
-            valid_truth,
-            protocol["training"],
-            source,
-            {
-                "study": STUDY_ID,
-                "seed": SEED,
-                "method": METHOD,
-                "round": round_index + 1,
-            },
+        log(
+            f"Round {round_index + 1}: feedback saved; preparing scratch fit with L{len(labeled)}"
         )
+        with heartbeat("Loading training graphs"):
+            graphs = load_graphs(partition)
+        source = directory / "fit"
+        with heartbeat(
+            f"Round {round_index + 1} scratch training",
+            lambda: training_detail(directory),
+        ):
+            record = fit(
+                graphs,
+                labeled,
+                truth,
+                valid,
+                valid_truth,
+                protocol["training"],
+                source,
+                {
+                    "study": STUDY_ID,
+                    "seed": SEED,
+                    "method": METHOD,
+                    "round": round_index + 1,
+                },
+            )
         with np.load(
             source
             / Path(record["checkpoint_path"]).parent
@@ -514,6 +569,9 @@ def advance(round_index):
                 len(labeled),
             )
         write_once(directory / "validation.json", metric)
+        log(
+            f"Round {round_index + 1}: scratch fit finished; validation metrics saved at {directory / 'validation.json'}"
+        )
         files = bind(
             [source / n for n in record["files"]]
             + [
@@ -557,4 +615,5 @@ def report():
         ],
     }
     write_once(STUDY / "results/summary.json", result)
+    write_once(STUDY / "results/execution_attempts.json", attempt_summary(runtime()))
     return result

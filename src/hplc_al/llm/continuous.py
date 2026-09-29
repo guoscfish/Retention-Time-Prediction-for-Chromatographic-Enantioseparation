@@ -3,9 +3,11 @@
 import fcntl
 import hashlib
 import subprocess
+from contextlib import contextmanager
 
 from ..common import ROOT, atomic_json, sha
 from . import runner
+from .execution import log, preflight_with_retries, safe_error
 from .full_pool import BUDGETS, ROUNDS
 from .responses_transport import preflight, require_key, settings
 
@@ -40,6 +42,14 @@ def check_checkout():
             raise RuntimeError(
                 "Commit the registered protocol before scientific execution"
             )
+    for name in ("execution_amendment.json", "execution_test_gate.json"):
+        path = runner.STUDY / name
+        if path.exists() and hashlib.sha256(
+            git("show", f"HEAD:{path.relative_to(ROOT)}")
+        ).hexdigest() != sha(path):
+            raise RuntimeError(
+                "Commit the verified execution amendment before scientific execution"
+            )
 
 
 def commit_artifacts(message):
@@ -67,9 +77,38 @@ def record_status(status, completed=None):
         "Registered: token4research / gpt-6-astra / high; six batches of32, stop at L525.\n"
         "This is the last recorded checkpoint, not a claim that a process is still alive.\n"
         "Resume with `.conda-hplc-al/bin/python scripts/run_hplc_fullpool_v2.py run`.\n"
-        "Completed responses/fits are verified and reused; ambiguous API calls require review.\n"
+        "Completed responses/fits are verified and reused; transient/ambiguous calls use the authorized five-attempt lifetime limit.\n"
         "See `execution_status.json` and `results/summary.json` when complete.\n"
     )
+
+
+@contextmanager
+def failure_status():
+    """Record failure while the pipeline lock is still held."""
+    try:
+        yield
+    except BaseException as error:
+        status = (
+            "INTERRUPTED" if isinstance(error, KeyboardInterrupt) else "STOPPED_FAILURE"
+        )
+        completed = 0
+        for r in range(ROUNDS):
+            if not (runner.runtime() / f"round_{r}/complete.json").exists():
+                break
+            completed += 1
+        atomic_json(
+            runner.STUDY / "last_failure.json",
+            {
+                "status": status,
+                "error": safe_error(error),
+                "completed_rounds": completed,
+            },
+        )
+        record_status(status, completed)
+        log(
+            f"{status}: last recorded checkpoint L{BUDGETS[completed]}, {completed}/{ROUNDS} rounds; saved responses retained"
+        )
+        raise
 
 
 def run(progress=print):
@@ -79,51 +118,66 @@ def run(progress=print):
             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
             raise RuntimeError("another continuous V2 process is running") from None
-        with runner.exclusive():
-            runner.prepare()
-            check_checkout()
-        complete = all(
-            (runner.runtime() / f"round_{r}/complete.json").exists()
-            for r in range(ROUNDS)
-        )
-        if complete:
-            result = runner.report()  # Verify all six rounds and their Git seals.
+        with failure_status():
+            with runner.exclusive():
+                runner.prepare()
+                check_checkout()
+            complete = all(
+                (runner.runtime() / f"round_{r}/complete.json").exists()
+                for r in range(ROUNDS)
+            )
+            if complete:
+                result = runner.report()  # Verify all six rounds and their Git seals.
+                record_status(result["status"], ROUNDS)
+                commit_artifacts(
+                    f"Complete FullPool V2 six-round report at L{BUDGETS[-1]}"
+                )
+                progress(result["status"], flush=True)
+                return result
+            if not complete:
+                config = settings()
+                if config != runner.EXPECTED_CONFIG:
+                    raise RuntimeError(
+                        "configured provider/model differs from registered V2"
+                    )
+                require_key(config)
+                progress(
+                    "Running content-free token4research Responses preflight...",
+                    flush=True,
+                )
+                preflight_with_retries(
+                    lambda: preflight(runner.STUDY / "transport_preflight.json", config)
+                )
+                log(
+                    "Preflight PASS; provider=token4research model=gpt-6-astra reasoning=high; six rounds ending at L525"
+                )
+                record_status("IN_PROGRESS")
+            for r in range(ROUNDS):
+                directory = runner.runtime() / f"round_{r}"
+                progress(
+                    f"Round {r + 1}/{ROUNDS}: L{BUDGETS[r]} -> L{BUDGETS[r + 1]}",
+                    flush=True,
+                )
+                if not (directory / "complete.json").exists():
+                    runner.run_selection(r)
+                    log(
+                        f"Round {r + 1}: committing selection and request receipts before revealing labels"
+                    )
+                    commit_artifacts(
+                        f"Seal FullPool V2 round {r} selection before label reveal"
+                    )
+                    progress(
+                        "Selection committed; revealing 32 labels and scratch training...",
+                        flush=True,
+                    )
+                runner.advance(r)  # Verifies and reuses completed fits.
+                commit_artifacts(
+                    f"Record FullPool V2 L{BUDGETS[r + 1]} feedback and fit"
+                )
+                record_status("IN_PROGRESS", r + 1)
+                log(f"Round {r + 1}/{ROUNDS} complete and committed; L{BUDGETS[r + 1]}")
+            result = runner.report()
             record_status(result["status"], ROUNDS)
             commit_artifacts(f"Complete FullPool V2 six-round report at L{BUDGETS[-1]}")
             progress(result["status"], flush=True)
             return result
-        if not complete:
-            config = settings()
-            if config != runner.EXPECTED_CONFIG:
-                raise RuntimeError(
-                    "configured provider/model differs from registered V2"
-                )
-            require_key(config)
-            progress(
-                "Running content-free token4research Responses preflight...", flush=True
-            )
-            preflight(runner.STUDY / "transport_preflight.json", config)
-            record_status("IN_PROGRESS")
-        for r in range(ROUNDS):
-            directory = runner.runtime() / f"round_{r}"
-            progress(
-                f"Round {r + 1}/{ROUNDS}: L{BUDGETS[r]} -> L{BUDGETS[r + 1]}",
-                flush=True,
-            )
-            if not (directory / "complete.json").exists():
-                runner.run_selection(r)
-                commit_artifacts(
-                    f"Seal FullPool V2 round {r} selection before label reveal"
-                )
-                progress(
-                    "Selection committed; revealing 32 labels and scratch training...",
-                    flush=True,
-                )
-            runner.advance(r)  # Verifies and reuses completed fits.
-            commit_artifacts(f"Record FullPool V2 L{BUDGETS[r + 1]} feedback and fit")
-            record_status("IN_PROGRESS", r + 1)
-        result = runner.report()
-        record_status(result["status"], ROUNDS)
-        commit_artifacts(f"Complete FullPool V2 six-round report at L{BUDGETS[-1]}")
-        progress(result["status"], flush=True)
-        return result

@@ -4,6 +4,7 @@ import hashlib
 from pathlib import Path
 
 from ..common import read_json, stable_hash, write_once
+from .execution import log, request_with_retries
 from .full_pool import (
     BATCH_SIZE,
     chunks,
@@ -354,17 +355,23 @@ def admission(parts, initial, mapping, limits):
 
 
 class Journal:
-    """Write-ahead intent; exact receipt replay; ambiguous call never retried."""
+    """Write-ahead intent and exact replay; retries require explicit host policy."""
 
-    def __init__(self, directory, config, limits, transport=call):
+    def __init__(
+        self, directory, config, limits, transport=call, *, retry_requests=False
+    ):
         self.directory = Path(directory)
         self.config = config
         self.limits = limits
         self.transport = transport
         self.receipts = []
+        self.retry_requests = retry_requests
 
     def ask(self, name, messages):
         ensure_context(messages, self.limits)
+        log(
+            f"{name}: estimated input {token_bound(messages)} tokens; output cap {self.limits['max_output_tokens']}"
+        )
         request = payload(messages, self.config, self.limits["max_output_tokens"])
         digest = hashlib.sha256(encode(request)).hexdigest()
         intent = self.directory / f"{name}.request.json"
@@ -374,21 +381,41 @@ class Journal:
             "config_sha256": stable_hash(self.config),
             "request": request,
         }
+        legacy = intent.exists() and not list(
+            self.directory.glob(f"{name}.attempt_*.started.json")
+        )
         if intent.exists():
             if read_json(intent) != record:
                 raise RuntimeError("request/protocol drift; start a new study version")
-            if not receipt_path.exists():
+            if not receipt_path.exists() and not self.retry_requests:
                 raise RuntimeError(
                     "ambiguous request without receipt; never automatically retry"
                 )
-            saved = read_json(receipt_path)
         else:
             if receipt_path.exists():
                 raise RuntimeError("orphan receipt")
             write_once(intent, record)
-            answer, receipt = self.transport(
-                messages, self.config, self.limits["max_output_tokens"]
-            )
+        if receipt_path.exists():
+            log(f"{name}: reusing saved response; no API call")
+            saved = read_json(receipt_path)
+        else:
+            if self.retry_requests:
+                # A newly written intent has no previous attempt; a pre-existing
+                # intent from the original runner consumes attempt 1.
+                answer, receipt = request_with_retries(
+                    self.transport,
+                    messages,
+                    self.config,
+                    self.limits["max_output_tokens"],
+                    self.directory,
+                    name,
+                    digest,
+                    legacy=legacy,
+                )
+            else:
+                answer, receipt = self.transport(
+                    messages, self.config, self.limits["max_output_tokens"]
+                )
             saved = {"answer": answer, "receipt": receipt}
             # Persist validated HTTP response even when downstream scientific schema fails.
             write_once(receipt_path, saved)
@@ -415,6 +442,7 @@ def plan(
     limits,
     *,
     transport=call,
+    retry_requests=False,
 ):
     directory = Path(directory)
     directory.mkdir(parents=True, exist_ok=True)
@@ -467,9 +495,13 @@ def plan(
     write_once(
         directory / "context_admission.json", admission(parts, initial, mapping, limits)
     )
-    journal = Journal(directory, config, limits, transport)
+    journal = Journal(
+        directory, config, limits, transport, retry_requests=retry_requests
+    )
+    log(f"Stage 1: {len(legal_ids)} candidates, {len(parts)} screening chunks")
     results, nominees, screened = [], {}, []
     for index, part in enumerate(parts):
+        log(f"Stage 1 chunk {index + 1}/{len(parts)}: {len(part)} candidates")
         value = {**common, "cards": table(part)}
         messages = [
             {"role": "system", "content": SCREEN_PROMPT},
@@ -483,6 +515,9 @@ def plan(
             nominees[nomination["candidate_id"]] = nomination
         screened.append(ids)
         results.append({"chunk_index": index, **result})
+        log(
+            f"Stage 1 chunk {index + 1}/{len(parts)} validated; {len(result['nominees'])} nominees; covered {sum(map(len, screened))}/{len(legal_ids)}"
+        )
     audit = coverage_audit(legal_ids, screened, nominees)
     write_once(directory / "screening_audit.json", audit)
     write_once(directory / "full_pool_summary.json", full_summary)
@@ -494,7 +529,13 @@ def plan(
         {"role": "user", "content": content(initial, mapping)},
     ]
     visible = set(nominees)
+    log(
+        f"Stage 1 complete: coverage=1.0; {len(nominees)} nominees. Starting global arbitration"
+    )
     for turn in range(limits["arbitration_calls"]):
+        log(
+            f"Stage 2 arbitration {turn + 1}/{limits['arbitration_calls']}; {len(visible)} visible cards"
+        )
         result = journal.ask(f"arbitrate_{turn:02d}", messages)
         if result.get("type") == "selection":
             selected = validate_selection(
@@ -517,6 +558,9 @@ def plan(
                 "visible_in_arbitration": sorted(visible),
             }
             write_once(directory / "selection.json", saved)
+            log(
+                "Stage 2 complete: 32 selections validated; pending Git seal before label reveal"
+            )
             return saved
         if result.get("type") == "expand" and set(result) == {
             "type",

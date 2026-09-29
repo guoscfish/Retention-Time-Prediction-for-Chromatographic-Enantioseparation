@@ -10,7 +10,7 @@ Row cohort; none should be relabeled as independent external validation.
 | Recommended numerical AL comparator | [Raw-gradient LCMD confirmation v2](odh_lcmd_confirmation_v2/) | COMPLETE / CANONICAL_BASELINE; Random vs raw-gradient LCMD, paired seeds; preserve registered scope |
 | IVR/hybrid alternatives | [IVR/hybrid screen](odh_ivr_hybrid_screen_v1/REPORT.md) | COMPLETE / DEVELOPMENT; method comparison, not current winner by assertion |
 | Free LLM batch planning | [Free-LLM32 v1](odh_free_llm32_scientist_v1/README.md) | COMPLETE_PHASE1_L397 / DEVELOPMENT; frozen historical CLI transport |
-| Hierarchical full-pool LLM planning | [FullPool-LLM32 v2](odh_free_llm32_fullpool_v2/README.md) | IMPLEMENTED; no new scientific acquisition; readiness in STATUS.md |
+| Hierarchical full-pool LLM planning | [FullPool-LLM32 v2](odh_free_llm32_fullpool_v2/README.md) | PARTIAL screening; 4 saved responses, 0 acquisitions; bounded retry recovery ready, see STATUS.md |
 
 Other retained methodological evidence:
 

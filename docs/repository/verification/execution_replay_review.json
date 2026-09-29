@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "original_protocol_unchanged": true,
+  "existing_scientific_artifacts_verified": 12,
+  "saved_responses_replayed_without_network": 4,
+  "same_pending_request_hash_verified": true,
+  "scientific_payload_builder_ast_unchanged": true,
+  "frozen_prompts_unchanged": true,
+  "full_pool_simulation_matches_original_audit": true,
+  "real_scientific_requests": 0,
+  "new_labels_revealed": 0
+}

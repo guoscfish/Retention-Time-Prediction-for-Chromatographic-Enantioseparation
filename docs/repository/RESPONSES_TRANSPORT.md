@@ -50,7 +50,12 @@ Each selection is committed locally before any acquisition label is revealed.
 The runner commits only this study's nonignored artifacts; it does not push.
 Keep the terminal/process running. Run the same command after interruption: completed
 fits and responses are verified/reused; an unfinished fit restarts from scratch.
-An intent without a response receipt stops as ambiguous and is never blindly resent.
+The 2026-09-29 user-authorized execution amendment permits an identical retry of
+an ambiguous intent, counting it toward a five-attempt lifetime limit. Already
+validated responses are reused. Retry waits are 15/30/60/60 seconds; authentication,
+JSON/schema, scientific validation and source-integrity failures stop immediately.
+Terminal output includes chunk/arbitration progress, cache reuse, request attempts,
+elapsed-time heartbeats every 15 seconds, Git seals and training epoch progress.
 No seventh acquisition is allowed. Extending the budget after science starts requires
 a separately registered study. This is offline label acquisition from the existing
 dataset and scratch QGeoGNN training, not instrument control or LLM fine-tuning.
@@ -98,3 +103,32 @@ provider switch, model fallback or automatic retry is used.
 The transport classifies Cloudflare1010 into a safe fixed error code. Raw HTTP error
 bodies and credentials are not persisted or printed. CLI transport failures now print
 a concise diagnostic instead of a traceback. [Evidence](verification/transport_403_diagnosis.json).
+
+
+## HTTP 524 recovery and terminal progress (2026-09-29)
+
+Snapshot `75dd26d` preserves all four successful Responses receipts and the fifth
+ambiguous request. No new acquisition labels had been revealed. The user's explicit
+permission for V2 logging/retries is recorded separately in `execution_amendment.json`;
+`protocol.json`, its seal, frozen prompts and original requests remain byte-identical.
+The runner verifies the new implementation against `execution_test_gate.json` and
+commits the amendment before allowing label access. The original test gate is retained.
+
+Transient 408/429/500/502/503/504/520/522/524 and network/read failures retry, up to
+five total attempts per scientific request across process restarts. The original
+`screen_004` consumes attempt 1. Each dispatch has a durable `.attempt_NN.started.json`
+and failed outcomes have `.failed.json`; unknown provider usage is not invented.
+First validated response wins; no retries are used to improve a scientific answer.
+An exhausted request remains stopped on relaunch. No provider/model fallback.
+`results/execution_attempts.json` separates dispatch intents from usable receipts;
+receipt token totals do not include unknown usage for failed/unreturned attempts.
+
+A 524 means the gateway did not receive a timely origin response. The existing
+600-second client timeout does not change the gateway limit. This amendment leaves
+nonstreaming requests unchanged; retries improve recovery but cannot guarantee that
+a persistently slow gateway will succeed. See [Cloudflare 524 documentation](https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-5xx-errors/error-524/).
+
+Verification: 196 tests passed; frozen payload AST and prompts checked; four actual
+receipts replayed offline without new requests; simulated full-pool audit matches the
+original; content-free third-party preflight passed. No real acquisition was started
+by the repair. Run the same `run` command to resume.

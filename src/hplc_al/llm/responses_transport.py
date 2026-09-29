@@ -3,16 +3,16 @@
 from __future__ import annotations
 
 import hashlib
+import http.client
 import json
 import os
 import re
+import tomllib
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit
-
-import tomllib
 
 from ..common import atomic_json, stable_hash
 
@@ -182,8 +182,10 @@ def call(messages, config, max_output_tokens=MAX_OUTPUT_TOKENS, *, opener=None):
                 "RESPONSES_HTTP_403_CLOUDFLARE_1010: client signature rejected; no automatic retry"
             ) from None
         raise TransportError(f"RESPONSES_HTTP_{error.code}") from None
-    except (urllib.error.URLError, OSError, ValueError):
-        raise TransportError("RESPONSES_NETWORK_OR_SCHEMA_FAILURE") from None
+    except (urllib.error.URLError, OSError, http.client.HTTPException):
+        raise TransportError("RESPONSES_NETWORK_FAILURE") from None
+    except ValueError:
+        raise TransportError("RESPONSES_SCHEMA_FAILURE") from None
     if (
         not isinstance(result, dict)
         or result.get("status") != "completed"

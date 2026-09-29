@@ -2,7 +2,7 @@
 
 Current registration: **token4research / gpt-6-astra / high**, seed1525,
 six acquisitions of32: **L333 → L365 → L397 → L429 → L461 → L493 → L525**.
-No scientific V2 acquisition has run. [STATUS](STATUS.md), [PROTOCOL](PROTOCOL.md),
+Four scientific screening responses are saved; no acquisition has completed. [STATUS](STATUS.md), [PROTOCOL](PROTOCOL.md),
 and [machine contract](protocol.json) define readiness and the frozen experiment.
 
 ```text
@@ -36,8 +36,11 @@ Rerun the same command to resume. Full details and preflight-only instructions:
 Offline verification: `prepare`, `dry-run`, `context-stress`.
 Manual stages remain available: `select --round 0` through5, commit the selection
 artifacts, then `advance --round 0` through5; finally `report`.
-Never modify V1. An ambiguous scientific request is not automatically retried.
-A protocol bug after any scientific response requires V3, not nested revisions.
+Never modify V1. The user-authorized execution-only amendment enables bounded
+identical-request retries and terminal progress; see [execution amendment](execution_amendment.json).
+Each request has at most five attempts across restarts, including ambiguous attempts.
+Successful responses are reused; authentication/schema/semantic failures are not resampled.
+Scientific protocol changes still require V3, not nested revisions.
 
 Local L333 arrays/checkpoints are hash-verified historical computational reuse.
 A fresh clone must restore the original ignored binary artifacts; Git stores their

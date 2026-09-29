@@ -50,10 +50,16 @@ if __name__ == "__main__":
         except TransportError as error:
             print(str(error), file=sys.stderr)
             print(
-                "Execution stopped; no automatic retry or provider/model fallback.",
+                "Execution stopped: retry limit reached or non-retryable failure. Saved responses remain reusable; provider/model unchanged.",
                 file=sys.stderr,
             )
             raise SystemExit(1) from None
+        except KeyboardInterrupt:
+            print(
+                "Interrupted. Saved responses retained; any in-flight attempt counts toward the retry limit.",
+                file=sys.stderr,
+            )
+            raise SystemExit(130) from None
     elif args.command == "prepare":
         with runner.exclusive():
             runner.prepare()

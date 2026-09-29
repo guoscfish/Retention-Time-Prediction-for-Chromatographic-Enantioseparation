@@ -1,6 +1,8 @@
 {
-  "status": "STOPPED_HTTP_524",
+  "status": "READY_TO_RESUME_WITH_BOUNDED_RETRIES",
   "completed_rounds": 0,
   "budget": 333,
-  "pending_request": "screen_004"
+  "saved_screening_responses": 4,
+  "pending_request": "screen_004",
+  "new_acquisition_labels_revealed": 0
 }
