@@ -4,8 +4,7 @@ The registered V2 provider is **token4research, a third party**, at
 `https://token4research.cn/responses`. Model: **gpt-6-astra**, reasoning: **high**.
 The platform key must be a **token4research key**.
 
-The following nonsecret settings have been applied to this machine's
-`/Users/fish/.codex/config.toml`, preserving unrelated settings:
+The V2 runner carries these nonsecret settings in its sealed registration:
 
 ```toml
 model_provider = "token4research"
@@ -83,6 +82,8 @@ SHA256, provider, hostname and timestamp. Redirects and untrusted HTTP error bod
 are rejected; ambiguous requests never automatically retry.
 
 A real content-free preflight now passes with the designated key and returns gpt-6-astra.
+The V2 launcher uses this sealed registration directly, so an unrelated
+`~/.codex/config.toml` profile cannot redirect or block the study.
 It validates this endpoint/key/model request, not maximum context capacity. Local
 context estimates use o200k_base with a 20% margin, not a provider guarantee.
 Provider rejection stops execution without a fallback or silent truncation.

@@ -9,7 +9,7 @@ from ..common import ROOT, atomic_json, sha
 from . import runner
 from .execution import log, preflight_with_retries, safe_error
 from .full_pool import BUDGETS, ROUNDS
-from .responses_transport import preflight, require_key, settings
+from .responses_transport import preflight, require_key
 
 
 def git(*args):
@@ -135,7 +135,9 @@ def run(progress=print):
                 progress(result["status"], flush=True)
                 return result
             if not complete:
-                config = settings()
+                # The V2 protocol is bound to this exact provider/model. Do not
+                # inherit an unrelated mutable Codex desktop configuration.
+                config = dict(runner.EXPECTED_CONFIG)
                 if config != runner.EXPECTED_CONFIG:
                     raise RuntimeError(
                         "configured provider/model differs from registered V2"

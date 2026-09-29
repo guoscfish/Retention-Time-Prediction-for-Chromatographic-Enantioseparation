@@ -30,7 +30,7 @@ from .full_pool import BUDGETS, FIELDS, LIMITS, METHOD, ROUNDS, SEED, STUDY_ID, 
 from .memory import OBS_FIELDS, build_memory, feedback
 from .planner import ARBITRATE_PROMPT, SCREEN_PROMPT, plan
 from .reporting import evaluate, label_aulc, selection_diagnostics
-from .responses_transport import call, require_key, settings
+from .responses_transport import call, require_key
 
 STUDY = ROOT / "studies/active_learning" / STUDY_ID
 BASELINE = ROOT / "studies/active_learning/odh_lcmd_confirmation_v2"
@@ -399,7 +399,9 @@ def make_round(round_index):
 
 def run_selection(round_index):
     with exclusive():
-        config = settings()
+        # The V2 protocol is bound to this exact provider/model. Do not inherit
+        # an unrelated mutable Codex desktop configuration.
+        config = dict(EXPECTED_CONFIG)
         require_key(config)
         if config != EXPECTED_CONFIG:
             raise RuntimeError(

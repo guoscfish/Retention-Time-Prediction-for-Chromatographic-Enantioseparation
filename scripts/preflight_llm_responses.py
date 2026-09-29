@@ -8,7 +8,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from hplc_al.common import ROOT, atomic_json
 from hplc_al.llm.credentials import inject_key
 from hplc_al.llm.execution import preflight_with_retries
-from hplc_al.llm.responses_transport import TransportError, preflight, settings
+from hplc_al.llm.responses_transport import TransportError, preflight
 
 
 def main(argv=None):
@@ -41,13 +41,9 @@ def main(argv=None):
         )
         return 0
     try:
-        config = settings()
         from hplc_al.llm.runner import EXPECTED_CONFIG
 
-        if config != EXPECTED_CONFIG:
-            raise TransportError(
-                "RESPONSES_CONFIG_MISMATCH: configure token4research / gpt-6-astra / high as registered"
-            )
+        config = dict(EXPECTED_CONFIG)
         preflight_with_retries(lambda: preflight(path, config))
     except TransportError as error:
         print(str(error), file=sys.stderr)

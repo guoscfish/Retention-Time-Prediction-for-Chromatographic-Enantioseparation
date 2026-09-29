@@ -91,7 +91,6 @@ def fake_pipeline(monkeypatch, tmp_path):
     monkeypatch.setattr(runner, "exclusive", nullcontext)
     monkeypatch.setattr(runner, "prepare", lambda: events.append("prepare"))
     monkeypatch.setattr(continuous, "check_checkout", lambda: events.append("checkout"))
-    monkeypatch.setattr(continuous, "settings", lambda: runner.EXPECTED_CONFIG)
     monkeypatch.setattr(continuous, "require_key", lambda c: events.append("key"))
     monkeypatch.setattr(continuous, "preflight", lambda *a: events.append("preflight"))
     monkeypatch.setattr(
