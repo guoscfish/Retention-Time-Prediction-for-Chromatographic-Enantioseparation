@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "tests": 154,
+  "tests": 155,
   "failures": 0,
   "errors": 0,
   "skipped": 0,
@@ -30,7 +30,7 @@
     "src/hplc_al/llm/planner.py": "eaed75c1464d63fba1ad94c02cd025dabc15dddf3f1da2406ad2364252e40355",
     "src/hplc_al/llm/reporting.py": "8ca3fbf13b03f28eeb7f4d2906934d5d78ad9405ac42e3d87cd5b6ac6fefc321",
     "src/hplc_al/llm/responses_transport.py": "2bad4403ca9deb5393a25275a2e10e6eac28231cf47c5d9fced906a310cc2324",
-    "src/hplc_al/llm/runner.py": "5e0310d95cdf269424c7c5aab2c5dcc56dccb5467964cb2127a6e0dee03e01fd",
+    "src/hplc_al/llm/runner.py": "31a68e73a8fbd6811387bed0918f92a42a21b0eb95197d4b267a875afe0b8af6",
     "src/hplc_al/preflight_v2.py": "20e7c90ca857c502385b80f144a0f875f633a0dc3ff55252b46c3a2e0af9afd1",
     "src/hplc_al/protocol.py": "116796e7dba7e804bc6deb6c79abf90e76485df8ac26d2cd7119460386d13a10",
     "src/hplc_al/reporting.py": "e5fee7299f305cb60bf545a34a8dc8dd1c72c14ea41aad5f9032789d8b4b2330",
@@ -46,8 +46,8 @@
     "src/reproduction/official.py": "38a0c5b938d461a9b3f986a78826ea256f6869f3cf77b471a892d53d644257ce"
   },
   "evidence": {
-    "docs/repository/verification/tests.log": "0b2b9fdb731c69d5b187300d95d43adcf4b3621491ff5f6d5c84a38af3fa9394",
-    "docs/repository/verification/tests.xml": "e783cd86bddef4725c7448efb9d85bdca6c7f0b40dfe9613aed3c571d3c6ff92"
+    "docs/repository/verification/tests.log": "b16012756441497b5273e5203ccfe20aceea7bbf71da2af35733196079d48c86",
+    "docs/repository/verification/tests.xml": "032e01a7c31c6b997ae8ce66408d9169da972edb393167c91bc926a067e0b5b0"
   },
   "lint": "ruff E4,E7,E9,F,I passed on new package, scripts and tests; E402 ignored for explicit script bootstrap",
   "compileall": "PASS"

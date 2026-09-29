@@ -140,7 +140,7 @@ trajectory was created. Initial L333 prediction/coverage reuse is verified again
 the identical baseline checkpoint and original hashes; no V1 acquisition or memory
 is reused. Original scalar targets in the initial packet are authorized L333 only.
 
-**154 tests passed; 0 failures, 0 errors, 0 skips.** [Log](verification/tests.log),
+**155 tests passed; 0 failures, 0 errors, 0 skips** after the source-integrity re-review. [Log](verification/tests.log),
 [JUnit](verification/tests.xml), and V2 test_gate bind the evidence to current code.
 The new package/scripts/tests pass Ruff E4/E7/E9/F/I (script bootstrap E402 excluded)
 and Python compilation. Tests cover response failures/tool calls/JSON ambiguity/key
@@ -172,3 +172,7 @@ local/origin experimental branches were removed after verifying their exact tips
 pushed annotated tags, ancestry and154 passing tests. Origin now contains only
 `main` and `refactor/odh-clean-responses-fullpool-v2`. See the
 [branch cleanup receipt](branch_cleanup.json). All four archive tags remain pushed.
+
+Follow-up [pre-run review](PRE_RUN_REVIEW.md) fixed CSV drift detection before label
+access and documented a reproducible Stage2 context-capacity limitation. The original
+154-test branch-deletion receipt remains historical evidence; latest gate has155 tests.

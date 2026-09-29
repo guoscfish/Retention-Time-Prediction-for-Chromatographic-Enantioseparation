@@ -92,6 +92,11 @@ def source_hashes():
 
 def prepare():
     """Offline registration against existing sealed L333; no target CSV parsing."""
+    partition = read_json(BASELINE / "splits/partition.json")
+    # Recheck on every entry, including resumes, before any label-store access.
+    # load_graphs also checks inputs, but advance reaches it only after feedback.
+    if sha(SOURCE) != partition["source_sha256"]:
+        raise RuntimeError("source data drift; no label access permitted")
     if (STUDY / "protocol.json").exists():
         protocol = read_json(STUDY / "protocol.json")
         if (
@@ -107,8 +112,7 @@ def prepare():
             != read_json(STUDY / "protocol_freeze.json")["sha256"]
         ):
             raise RuntimeError("protocol seal mismatch")
-        return protocol, read_json(BASELINE / "splits/partition.json")
-    partition = read_json(BASELINE / "splits/partition.json")
+        return protocol, partition
     old = read_json(V1_SUCCESS / "protocol.json")
     base_protocol = read_json(BASELINE / "protocol.json")
     initial = BASELINE / f"shared/seed_{SEED}/fit"

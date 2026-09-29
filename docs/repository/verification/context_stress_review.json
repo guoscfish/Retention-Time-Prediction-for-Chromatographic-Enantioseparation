@@ -1,0 +1,22 @@
+{
+  "kind": "SYNTHETIC_ENGINEERING_REVIEW_NO_SCIENTIFIC_EVIDENCE",
+  "real_api_calls": 0,
+  "real_acquisition_labels": 0,
+  "training_runs": 0,
+  "long_stage1_rationales": {
+    "status": "CONTEXT_BUDGET_EXCEEDED",
+    "maximum_input_estimate": 261244,
+    "output_reserve": 16000,
+    "context_ceiling": 262144,
+    "scientific_schema_valid": true
+  },
+  "synthetic_round1_short_feedback": {
+    "status": "PASS",
+    "candidate_count": 4082,
+    "observed_count": 365,
+    "maximum_input_estimate": 240740,
+    "output_reserve": 16000,
+    "context_ceiling": 262144
+  },
+  "interpretation": "Dry-run success does not guarantee realistic Stage2 text and feedback fit. Provider context limit remains unverified."
+}

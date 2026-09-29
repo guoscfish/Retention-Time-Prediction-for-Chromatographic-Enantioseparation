@@ -535,3 +535,18 @@ def test_exclusive_host_lock(tmp_path, monkeypatch):
         with pytest.raises(RuntimeError, match="another V2"):
             with runner.exclusive():
                 pass
+
+
+def test_resume_checks_source_before_labels(tmp_path, monkeypatch):
+    source = tmp_path / "changed.csv"
+    source.write_text("RT,Speed\n999,1\n")
+    monkeypatch.setattr(runner, "SOURCE", source)
+
+    def forbidden(*args, **kwargs):
+        raise AssertionError("must stop before label-store construction")
+
+    monkeypatch.setattr(runner, "state", forbidden)
+    with pytest.raises(RuntimeError, match="source data drift"):
+        runner.prepare()
+    with pytest.raises(RuntimeError, match="source data drift"):
+        runner.advance(0)
