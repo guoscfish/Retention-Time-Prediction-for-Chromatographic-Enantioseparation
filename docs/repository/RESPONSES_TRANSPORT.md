@@ -164,3 +164,10 @@ This delivery-only amendment preserves the protocol seal, prompts, provider, mod
 reasoning effort, candidate chunking and label-reveal barrier. Prior execution
 amendment/gate files are archived byte-for-byte under `provenance/pre_streaming/`;
 the current gate records fresh regression evidence and source hashes.
+
+Live verification: the original `screen_007` request completed on its first SSE
+attempt in 285.292 seconds (first bytes at 9.170 seconds), after seven legacy HTTP
+524 failures. All 15 nominees for the 300-candidate chunk passed the original
+screening validator. Returned usage: 80,357 input and 5,545 output tokens. All
+pre-repair request/receipt/attempt files retained their hashes; no labels were
+revealed by this test. See [live evidence](verification/transport_stream_live_recovery.json).

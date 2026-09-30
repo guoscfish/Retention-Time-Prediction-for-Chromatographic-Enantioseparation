@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "request": "screen_007",
+  "candidates": 300,
+  "nominees": 15,
+  "covered_candidates": 2400,
+  "original_artifacts_unchanged": true,
+  "new_labels_revealed": 0,
+  "receipt": {
+    "response_id": "resp_0cc137bc3b0477e4016abc9605f15c87d0a5cc3858ade8384e",
+    "served_model": "gpt-6-astra",
+    "usage": {
+      "input_tokens": 80357,
+      "output_tokens": 5545
+    },
+    "request_sha256": "1204b55c274b7954ceab9b990519fd8a8c646a463714dd195fc79a51b1de2576",
+    "request_hash_scope": "scientific_payload_without_stream",
+    "wire_request_sha256": "458d4006bd3c26cb550b151b7d0dcaa7fa3cdf1ce551578ba0f6304afa2c9b03",
+    "transport": "responses_sse",
+    "response_format": "sse",
+    "stream": {
+      "events_received": 1644,
+      "bytes_received": 609311,
+      "first_byte_seconds": 9.17
+    },
+    "elapsed_seconds": 285.292,
+    "answer_sha256": "beb8fd5eb926f5679fbbdde571a243518ffb76e2e228d82cc4259a81bce595a6",
+    "provider_id": "token4research",
+    "base_url_hostname": "token4research.cn",
+    "client_user_agent": "QGeoGNN-Scientist/2.0",
+    "timestamp": "2026-09-30T04:59:11.387256+00:00",
+    "native_tool_calls": 0
+  }
+}
