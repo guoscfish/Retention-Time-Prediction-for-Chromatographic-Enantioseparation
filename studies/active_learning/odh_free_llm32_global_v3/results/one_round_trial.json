@@ -1,0 +1,95 @@
+{
+  "status": "ONE_ROUND_TRIAL_COMPLETE",
+  "recorded_at": "2026-09-30T16:46:41.432827+00:00",
+  "completed_rounds": 1,
+  "registered_rounds": 6,
+  "budget_before": 333,
+  "budget_after": 365,
+  "stopped_after_requested_one_round": true,
+  "next_round_started": false,
+  "selection": {
+    "mode": "global_all_candidates",
+    "candidate_count": 4114,
+    "selected_count": 32,
+    "all_candidates_in_one_request": true,
+    "reused_existing_sealed_selection": true,
+    "additional_llm_calls_during_training_trial": 0,
+    "actual_usage": {
+      "input_tokens": 414325,
+      "output_tokens": 5061
+    },
+    "selection_elapsed_seconds": 167.368
+  },
+  "training": {
+    "epochs_run": 304,
+    "best_epoch": 204,
+    "seconds": 206.037165708025,
+    "stopping_reason": "patience",
+    "attempted_fits": 1,
+    "initialization_seed": 1525,
+    "training_seed": 1525,
+    "checkpoint_hash": "d6cb85a2f3079edaae0e3463159aabec4c9c8b44b58c62139751bb3f4dd4c6eb"
+  },
+  "baseline_validation": {
+    "method": "free_llm32_scientist",
+    "budget": 333,
+    "rmse": 8.04399728543959,
+    "mae": 5.287642431403944,
+    "r2": 0.1636396455548056,
+    "nrmse": 0.905933029109455,
+    "fixed_denominator": 8.879240547556758,
+    "prediction_sha256": "7b3c165ddfc0ab1a8f6a24373f57ad128d0350bda82abb0cc50351c1483d84b4",
+    "checkpoint_sha256": "1a9da9a78f2b763abd744e8e970f75ef90d6d7dd897aeeff50432d32ae7839b5"
+  },
+  "trial_validation": {
+    "budget": 365,
+    "rmse": 7.850579890408612,
+    "mae": 4.999286508753232,
+    "r2": 0.2033765577332054,
+    "nrmse": 0.8841499279540077,
+    "fixed_denominator": 8.879240547556758
+  },
+  "relative_error_reduction_percent": {
+    "rmse": 2.4044935393138576,
+    "mae": 5.453393008160519,
+    "nrmse": 2.4044935393138647
+  },
+  "verification": {
+    "artifact_hashes": "PASS",
+    "completed_round_replay": "PASS_NO_REFIT_OR_LABEL_ACCESS",
+    "same_validation_rows": true,
+    "same_training_config": true,
+    "same_initialization": true,
+    "audit_events": [
+      {
+        "purpose": "fit",
+        "requested_rows": 32,
+        "allowed": true
+      },
+      {
+        "purpose": "fit",
+        "requested_rows": 365,
+        "allowed": true
+      },
+      {
+        "purpose": "validation",
+        "requested_rows": 247,
+        "allowed": true
+      }
+    ],
+    "test_labels_read": 0
+  },
+  "selection_commit": "d84c962f27f3b312843b94ecd6d5447c359db7fa",
+  "files": {
+    "studies/active_learning/odh_free_llm32_global_v3/protocol.json": "594f501aa956a6ddc3d922e97474564e117e5a7641f5146a103ce8ec2803bc22",
+    "studies/active_learning/odh_free_llm32_global_v3/test_gate.json": "6ac56131991bf644be411ce548c75697297bcfe3c15785aeb5062e038fd0bbbf",
+    "studies/active_learning/odh_free_llm32_global_v3/verification/live_global_selection.json": "77f9ac4ca35408f414ff13a41c16c8755183d2154a950fff3eca5e560d23d8b0",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/complete.json": "a7942116a240dbec478337778cc4d987fd0eb3949bf8e45cc63f7dc1f4863dc3",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/selection_seal.json": "8be6c5d6a21b9e807f5e43b0381ba40d773e78fd539db3cd8b8827c77ec7e589",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/fit/fit.json": "4e0f2886eed586b3ce040f4494a3c08b3089465790e1dafacd8a57e647554ef4",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/validation.json": "b1781600cbf72628c32ed2db698750e075a261615377e75c046eefa97dbc8864",
+    "studies/active_learning/odh_free_llm32_global_v3/label_access_audit.csv": "0ee649ed1c7669caf6a4ef7d1ba7ccc23948460ed71a081e9f5f09c8badbe826",
+    "studies/active_learning/odh_free_llm32_scientist_v1/results/validation_metrics.json": "c2c29aeed79b26b460647d74ef0858971f0c535fb42fc7c25e0c59ee4517712e"
+  },
+  "note": "One completed acquisition/training round at seed 1525; not a six-round result or a general superiority claim. NRMSE uses the frozen L333 denominator."
+}

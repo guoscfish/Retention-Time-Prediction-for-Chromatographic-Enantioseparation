@@ -1,0 +1,17 @@
+{
+  "budget": 365,
+  "test_labels": 0,
+  "files": {
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/fit/input.json": "116785c5379ada5da6415bd60539bb1e9b674ddf5d243d12951bb7ca3fadcbea",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/fit/attempt_000/best.pt": "d6cb85a2f3079edaae0e3463159aabec4c9c8b44b58c62139751bb3f4dd4c6eb",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/fit/attempt_000/training_curve.csv": "6dae18a4568de562e4f3f0d2a803f3daf8366c3ba52f94d28b82eb2714b80c28",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/fit/attempt_000/validation_predictions.npz": "f885e47844b4e5d269666ab857c353c8ea2006fc7c3eccce2453fb990fbc7d96",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/fit/attempt_000/final.pt": "40f14c80f116cf0d63b7fdc13daa6fcf3de0bbc02f84f5c23fa97470323fe035",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/fit/attempt_000/final_validation_predictions.npz": "534f8f0ee5f02b1997242a6f1679f2d07dbea81d5d6ea47039a5b083e66a1d53",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/fit/fit.json": "4e0f2886eed586b3ce040f4494a3c08b3089465790e1dafacd8a57e647554ef4",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/validation.json": "b1781600cbf72628c32ed2db698750e075a261615377e75c046eefa97dbc8864",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/feedback.json": "f52a2f8b0ad34a0b9b17e3fb6273394c329913ddbe1fa2bc03721bf437a83ac8",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/feedback_seal.json": "d34c572a04978623add5fb9455e0c3d4ac2b67140863cbedce88d10578cd2fc0",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/selection_seal.json": "8be6c5d6a21b9e807f5e43b0381ba40d773e78fd539db3cd8b8827c77ec7e589"
+  }
+}
