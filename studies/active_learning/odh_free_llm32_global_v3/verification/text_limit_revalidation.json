@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "selected_count": 32,
+  "original_receipt_sha256": "837efac1db7aeb418a3cf29c7a1b13cd8f1b5d421fe41fb3596493b2d34d842a",
+  "reused_receipt_sha256": "837efac1db7aeb418a3cf29c7a1b13cd8f1b5d421fe41fb3596493b2d34d842a",
+  "additional_llm_calls": 0,
+  "new_labels_revealed": 0,
+  "policy": "Original response accepted without alteration under user-requested advisory text lengths."
+}

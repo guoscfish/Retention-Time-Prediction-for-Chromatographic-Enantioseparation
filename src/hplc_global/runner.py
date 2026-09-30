@@ -116,6 +116,7 @@ def verify_implementation(protocol):
         "src/hplc_global/runner.py",
         "src/hplc_global/planner.py",
         "src/hplc_global/transport.py",
+        "src/hplc_global/verification.py",
     }
     if (
         amendment["protocol_sha256"] != sha(STUDY / "protocol.json")

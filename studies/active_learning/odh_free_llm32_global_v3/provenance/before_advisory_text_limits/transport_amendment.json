@@ -99,10 +99,10 @@
     "src/hplc_global/__init__.py": "0b4a80a157c556c4b4a69464d4582ae34c1e49059698d1642bde15bb2692c399",
     "src/hplc_global/codec.py": "e36cc633b9f983ecef9710c1ae815c175d829837d36e24bcacb73e0d7cf84a31",
     "src/hplc_global/continuous.py": "377b374333a192115f6bd832195833f9d6847ff4b6fc478e901b58abc00c7005",
-    "src/hplc_global/planner.py": "e44f5a027dc2c13f5ce6a47a927da1ba17d55c22d8b805322f41c2153131acd7",
-    "src/hplc_global/runner.py": "f9bb3d4d6315c8c07163e08400d0bef402eaba1e7a4c7808d73d39810ca08c21",
+    "src/hplc_global/planner.py": "24ba990b98f467292792a0eedf552e69301b671a54a6fd07fe887a98b32f14dd",
+    "src/hplc_global/runner.py": "610fa8e7230dea2093873e0c710c1d9ef4ba788e853473c17142b03707fc528f",
     "src/hplc_global/transport.py": "10702b73dc29207e9c3cb1e9e1cdaaa3a08ec5569ba55b071d5dd7fc87622014",
-    "src/hplc_global/verification.py": "325f1687c3ba0609016f0792ef9f75e1b8d1c013c16c291e416a6309e6378ae2",
+    "src/hplc_global/verification.py": "82395e0b999bebbcbc312c4dcdd4de167d2f4e9543218a3e01a7eb727a44970f",
     "src/reproduction/official.py": "38a0c5b938d461a9b3f986a78826ea256f6869f3cf77b471a892d53d644257ce"
   },
   "scientific_payload_changed": false,
@@ -116,18 +116,7 @@
     "studies/active_learning/odh_free_llm32_global_v3/provenance/before_phase_transport/pytest.xml": "8357bd4b358c100ebdb226c384deb28b2d3f21505fced1e4c4dea66823e67b7c",
     "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/global_selection.attempt_01.failed.json": "f60e827b8c12b7a808bc1338a74cdbc6f75b76c894b2e6340c8164ee5a220cd5",
     "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/global_selection.request.json": "d145a028e3b2e47dcd7f8f212a881087f0ff2f93514b237f20ccd68dbd615da6",
-    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/global_selection.attempt_01.started.json": "d808744120063c94fd5cf7f5b06ae17c8557aa7535410c812d6bc125d3078dfc",
-    "studies/active_learning/odh_free_llm32_global_v3/provenance/before_advisory_text_limits/transport_amendment.json": "8a737dfb0ad99ba52130d15b1141509aca658d9c7a3a46d4e04d43bbf651863c",
-    "studies/active_learning/odh_free_llm32_global_v3/provenance/before_advisory_text_limits/test_gate.json": "6ac56131991bf644be411ce548c75697297bcfe3c15785aeb5062e038fd0bbbf"
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/global_selection.attempt_01.started.json": "d808744120063c94fd5cf7f5b06ae17c8557aa7535410c812d6bc125d3078dfc"
   },
-  "official_phase_documentation": "https://developers.openai.com/api/docs/guides/reasoning",
-  "text_validation_amendment": {
-    "user_request": "\u4e3a\u4ec0\u4e48\u8981\u6709\u957f\u5ea6\u9650\u5236\u554a\uff1f\u4e0d\u80fd\u53d6\u6d88\u5417",
-    "effective_from_round": 1,
-    "policy": "Per-field text token maxima are advisory; text types/nonempty requirements and all other scientific validation remain enforced.",
-    "prompt": "Unchanged registered prompt; brevity instructions are advisory.",
-    "context_and_output_limits": "Unchanged; full-input context admission remains mandatory.",
-    "selection_policy": "No edits to response content; revalidate original rejected response before considering a new request.",
-    "test_gate": "test_gate_text_v1.json"
-  }
+  "official_phase_documentation": "https://developers.openai.com/api/docs/guides/reasoning"
 }

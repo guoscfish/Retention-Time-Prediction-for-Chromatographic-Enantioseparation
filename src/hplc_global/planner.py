@@ -3,9 +3,9 @@
 from hplc_al.common import stable_hash, write_once
 from hplc_al.llm.execution import log
 from hplc_al.llm.full_pool import LIMITS as V2_LIMITS
-from hplc_al.llm.full_pool import token_bound, validate_cards
+from hplc_al.llm.full_pool import BATCH_SIZE, token_bound, validate_cards
 from hplc_al.llm.memory import validate_observations
-from hplc_al.llm.planner import ARBITRATE_PROMPT, SCIENCE, Journal, validate_selection
+from hplc_al.llm.planner import ARBITRATE_PROMPT, SCIENCE, Journal
 from hplc_al.llm.responses_transport import call, encode
 from hplc_al.llm.wire import display_numbers, replace
 
@@ -40,6 +40,140 @@ Return exactly one selection object after considering ALL supplied candidates.
 """
     + ARBITRATE_PROMPT.split("Final answer: ", 1)[1]
 )
+
+
+def _text(value):
+    return isinstance(value, str) and bool(value.strip())
+
+
+def _require_text(value, *, empty=False):
+    """Text validity only: length guidance is advisory in global V3."""
+    if not isinstance(value, str) or (not empty and not value.strip()):
+        raise ValueError("scientific text must be a valid nonempty string")
+
+
+def validate_selection(value, packet_hash, legal, visible, observed, previous):
+    """Preserve V2 scientific checks; explanation length is advisory only."""
+    required = {
+        "type",
+        "packet_hash",
+        "choices",
+        "hypotheses",
+        "previous_hypothesis_updates",
+        "feedback_interpretation",
+        "batch_rationale",
+        "unresolved_questions",
+    }
+    if (
+        set(value) != required
+        or value["type"] != "selection"
+        or value["packet_hash"] != packet_hash
+    ):
+        raise ValueError("selection schema/packet binding mismatch")
+    choices = value["choices"]
+    ids = [c["id"] for c in choices]
+    if (
+        len(ids) != BATCH_SIZE
+        or len(set(ids)) != BATCH_SIZE
+        or not set(ids) <= set(legal) & set(visible)
+    ):
+        raise ValueError(
+            "exactly 32 distinct legal arbitration-visible candidates required"
+        )
+    hypotheses = value["hypotheses"]
+    hids = [h["id"] for h in hypotheses]
+    if len(hids) > 8 or len(set(hids)) != len(hids) or set(hids) & set(previous):
+        raise ValueError("invalid/reused hypothesis identity")
+    for c in choices:
+        if set(c) != {
+            "id",
+            "reason",
+            "scientific_role",
+            "hypothesis_id",
+            "evidence_ids",
+        }:
+            raise ValueError("invalid choice schema")
+        if not _text(c["reason"]) or not _text(c["scientific_role"]):
+            raise ValueError("missing choice rationale")
+        _require_text(c["reason"])
+        _require_text(c["scientific_role"])
+        if c["hypothesis_id"] is not None and c["hypothesis_id"] not in set(hids) | set(
+            previous
+        ):
+            raise ValueError("unknown choice hypothesis")
+    for h in hypotheses:
+        if set(h) != {
+            "id",
+            "claim",
+            "alternative",
+            "expected_sign",
+            "candidate_ids",
+            "evidence_ids",
+            "learning_value",
+        }:
+            raise ValueError("invalid hypothesis schema")
+        if any(
+            not _text(h[k]) for k in ("id", "claim", "alternative", "learning_value")
+        ):
+            raise ValueError("missing scientific hypothesis")
+        for key in ("id", "claim", "alternative", "learning_value"):
+            _require_text(h[key])
+        if (
+            not h["candidate_ids"]
+            or len(h["candidate_ids"]) > 8
+            or len(set(h["candidate_ids"])) != len(h["candidate_ids"])
+            or not set(h["candidate_ids"]) <= set(ids)
+            or h["expected_sign"] not in (-1, 0, 1)
+        ):
+            raise ValueError("invalid hypothesis prediction")
+    for item in choices + hypotheses:
+        if (
+            not isinstance(item["evidence_ids"], list)
+            or not set(item["evidence_ids"]) <= set(observed)
+            or len(item["evidence_ids"]) > 4
+        ):
+            raise ValueError("evidence must be observed")
+    updates = value["previous_hypothesis_updates"]
+    if len(updates) != len(previous) or {u["id"] for u in updates} != set(previous):
+        raise ValueError("every previous hypothesis needs one update")
+    for u in updates:
+        if set(u) != {
+            "id",
+            "status",
+            "reason",
+            "supporting_observations",
+            "contradicting_observations",
+        }:
+            raise ValueError("invalid hypothesis update")
+        evidence = u["supporting_observations"] + u["contradicting_observations"]
+        _require_text(u["reason"])
+        if (
+            len(u["supporting_observations"]) > 4
+            or len(u["contradicting_observations"]) > 4
+        ):
+            raise ValueError("too many update evidence references")
+        if (
+            u["status"] not in ("supported", "weakened", "contradicted", "unresolved")
+            or not _text(u["reason"])
+            or not set(evidence) <= set(observed)
+            or (u["status"] != "unresolved" and not evidence)
+        ):
+            raise ValueError("unsupported hypothesis update")
+    if (
+        not _text(value["batch_rationale"])
+        or not isinstance(value["feedback_interpretation"], str)
+        or (previous and not _text(value["feedback_interpretation"]))
+        or not isinstance(value["unresolved_questions"], list)
+        or any(not _text(q) for q in value["unresolved_questions"])
+    ):
+        raise ValueError("missing feedback/batch interpretation")
+    _require_text(value["batch_rationale"])
+    _require_text(value["feedback_interpretation"], empty=not previous)
+    if len(value["unresolved_questions"]) > 8:
+        raise ValueError("too many unresolved questions")
+    for question in value["unresolved_questions"]:
+        _require_text(question)
+    return ids
 
 
 class ContextCapacityError(ValueError):

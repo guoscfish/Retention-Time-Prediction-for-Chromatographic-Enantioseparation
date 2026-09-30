@@ -235,7 +235,10 @@ def selection_diagnostics(cards, saved):
 
 
 def verify_gate(study, protocol, sources):
-    gate = read_json(study / "test_gate.json")
+    gate_path = study / "test_gate_text_v1.json"
+    if not gate_path.exists():
+        gate_path = study / "test_gate.json"
+    gate = read_json(gate_path)
     if (
         gate["status"] != "PASS"
         or gate["source_hashes"] != sources

@@ -417,3 +417,42 @@ def test_phase_transport_joins_fragmented_json():
         for t in ['{"ok":', "true}"]
     ]
     assert extract_answer(pieces)[0] == '{"ok":true}'
+
+
+def test_global_text_lengths_are_advisory_but_evidence_stays_observed(tmp_path):
+    from hplc_global.planner import validate_selection
+    from hplc_al.llm.planner import validate_selection as legacy_validate
+
+    saved = plan(**parameters(tmp_path), transport=simulated_transport)
+    value = copy.deepcopy(saved['response'])
+    long_text = 'A chemically qualified explanation with uncertainty. ' * 100
+    value['choices'][0]['reason'] = long_text
+    value['choices'][0]['scientific_role'] = long_text
+    for key in ('claim', 'alternative', 'learning_value'):
+        value['hypotheses'][0][key] = long_text
+    value['batch_rationale'] = long_text
+    value['feedback_interpretation'] = long_text
+    value['unresolved_questions'] = [long_text]
+    value['previous_hypothesis_updates'] = [{
+        'id': 'prior', 'status': 'unresolved', 'reason': long_text,
+        'supporting_observations': [], 'contradicting_observations': [],
+    }]
+    args = (saved['packet_hash'], saved['visible_candidates'],
+            saved['visible_candidates'], [], ['prior'])
+    assert validate_selection(value, *args) == saved['selected_ids']
+    with pytest.raises(ValueError, match='field bound'):
+        legacy_validate(value, *args)
+    value['choices'][0]['evidence_ids'] = ['unobserved']
+    with pytest.raises(ValueError, match='evidence must be observed'):
+        validate_selection(value, *args)
+
+
+@pytest.mark.parametrize('bad', ['', '   ', None, 12])
+def test_global_text_relaxation_does_not_allow_missing_rationale(tmp_path, bad):
+    from hplc_global.planner import validate_selection
+    saved = plan(**parameters(tmp_path), transport=simulated_transport)
+    value = copy.deepcopy(saved['response'])
+    value['choices'][0]['reason'] = bad
+    with pytest.raises(ValueError):
+        validate_selection(value, saved['packet_hash'], saved['visible_candidates'],
+                           saved['visible_candidates'], [], [])

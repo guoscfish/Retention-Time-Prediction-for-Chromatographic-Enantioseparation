@@ -1,6 +1,6 @@
-# IN_PROGRESS
+# INTERRUPTED
 
-Execution started; inspect per-round complete.json for verified checkpoints.
+Verified completed rounds: 1/6; L365.
 
 Registered: token4research / gpt-6-astra / high; six batches of32, stop at L525.
 This is the last recorded checkpoint, not a claim that a process is still alive.
