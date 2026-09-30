@@ -1,0 +1,724 @@
+{
+  "study": "odh_free_llm32_global_v3",
+  "seed": 1525,
+  "method": "odh_free_llm32_global_v3/1525/free_llm32_global",
+  "round": 1,
+  "selected": [
+    2197,
+    2198,
+    3655,
+    3574,
+    3757,
+    3833,
+    2035,
+    223,
+    4149,
+    1016,
+    335,
+    1019,
+    1018,
+    4841,
+    4842,
+    1467,
+    1466,
+    3592,
+    3593,
+    1097,
+    1098,
+    318,
+    317,
+    3073,
+    968,
+    969,
+    800,
+    4423,
+    2579,
+    1076,
+    2797,
+    2725
+  ],
+  "selected_hash": "2074cad3742d8c6214f457fe7e72a0d4ac35bad14b3734c38adebc6347309e53",
+  "L_hash": "daa2d08cf5fd1bbe11dfa80367c283b446352a7b0cfa9329acdcb55117151e23",
+  "U_hash": "2636db53b550b8d6cd5234fc0bee1aa2d42c63499ef30d6b0f0061a7d4b91a86",
+  "response": {
+    "type": "selection",
+    "packet_hash": "f444283e6dc746b99104f46fe51e58acd25a82f202a196b90547a070395872b6",
+    "choices": [
+      {
+        "id": "r009bbb584775",
+        "reason": "Test ortho-methoxy transfer from the previously underpredicted para-methoxy diarylnitro pair.",
+        "scientific_role": "Substitution transfer probe",
+        "hypothesis_id": "R1_nitro",
+        "evidence_ids": [
+          "r904ca5b9cdf2",
+          "r389b25fe94fd"
+        ]
+      },
+      {
+        "id": "rf196000ae9cf",
+        "reason": "Complete the ortho-methoxy pair at identical conditions and challenge its large predicted stereochemical gap.",
+        "scientific_role": "Matched enantiomer control",
+        "hypothesis_id": "R1_nitro",
+        "evidence_ids": [
+          "r904ca5b9cdf2",
+          "r389b25fe94fd"
+        ]
+      },
+      {
+        "id": "r44b0af03ffca",
+        "reason": "Measure the unsubstituted aryl parent at the same IPA and flow as the long-retained fluoro and chloro observations.",
+        "scientific_role": "Matched parent control",
+        "hypothesis_id": "R1_sulfonyl",
+        "evidence_ids": [
+          "r853387671ca3",
+          "r21fb18d47ac5"
+        ]
+      },
+      {
+        "id": "raf84c8db1032",
+        "reason": "Extend the matched para-halogen series to bromine without changing recorded IPA or flow.",
+        "scientific_role": "Halogen transfer probe",
+        "hypothesis_id": "R1_sulfonyl",
+        "evidence_ids": [
+          "r853387671ca3",
+          "r21fb18d47ac5"
+        ]
+      },
+      {
+        "id": "r10d0ea3a5a9d",
+        "reason": "Complete the para-fluoro enantiomer pair after its measured partner substantially exceeded the previous frozen center.",
+        "scientific_role": "Stereochemical transfer anchor",
+        "hypothesis_id": "R1_sulfonyl",
+        "evidence_ids": [
+          "r21fb18d47ac5",
+          "r3339cd16fd17",
+          "r853387671ca3"
+        ]
+      },
+      {
+        "id": "r7853d982dae6",
+        "reason": "Measure the opposite alcohol enantiomer at 5% IPA to separate stereochemical effects from the observed condition response.",
+        "scientific_role": "Condition-series stereo control",
+        "hypothesis_id": "R1_IPA",
+        "evidence_ids": [
+          "r5fd5783db462",
+          "r2c0e05b0a3eb"
+        ]
+      },
+      {
+        "id": "rd518907d3c7c",
+        "reason": "Complete the opposite-enantiomer 2% versus 5% IPA contrast at fixed flow.",
+        "scientific_role": "Matched condition contrast",
+        "hypothesis_id": "R1_IPA",
+        "evidence_ids": [
+          "r5fd5783db462",
+          "r2c0e05b0a3eb"
+        ]
+      },
+      {
+        "id": "r095edc8d161a",
+        "reason": "Test transfer from the measured silyl-alkyne amide to a phenyl analogue with a substantially revised center.",
+        "scientific_role": "Post-retraining transfer probe",
+        "hypothesis_id": "R1_silicon",
+        "evidence_ids": [
+          "r27cf79b602a6",
+          "r2c7046c109ed"
+        ]
+      },
+      {
+        "id": "rea3559f1eb9f",
+        "reason": "Extend silicon-containing supervision to a silyl ether with different bonding topology and recorded conditions.",
+        "scientific_role": "Cross-family silicon probe",
+        "hypothesis_id": "R1_silicon",
+        "evidence_ids": [
+          "r2c7046c109ed",
+          "rcef55553c516",
+          "r053e22b5cf22"
+        ]
+      },
+      {
+        "id": "r9f71e1f496ba",
+        "reason": "Measure the opposite pyrimidyl-isoxazoline enantiomer after the previous large overprediction.",
+        "scientific_role": "Heteroaryl stereo control",
+        "hypothesis_id": "R1_isox",
+        "evidence_ids": [
+          "r0a5b24bb447a"
+        ]
+      },
+      {
+        "id": "r1f2cba2765d1",
+        "reason": "Complete the aryl-isoxazoline enantiomer comparison at the same conditions as the selected pyrimidyl compound.",
+        "scientific_role": "Matched chemical control",
+        "hypothesis_id": "R1_isox",
+        "evidence_ids": [
+          "r0f7fd44b33cc",
+          "r0a5b24bb447a"
+        ]
+      },
+      {
+        "id": "r11c970e86c4f",
+        "reason": "Anchor the lower predicted member of a biphenyl cyanoester pair with a large stereochemical prediction difference.",
+        "scientific_role": "Predicted-gap anchor",
+        "hypothesis_id": "R1_pair_gaps",
+        "evidence_ids": [
+          "ra4f561f742a2",
+          "r5dcb1f727254",
+          "r904ca5b9cdf2",
+          "r389b25fe94fd"
+        ]
+      },
+      {
+        "id": "r638e5248d541",
+        "reason": "Complete the cyanoester pair and test whether its roughly sixteen-milliliter predicted gap is realized.",
+        "scientific_role": "Predicted-gap challenge",
+        "hypothesis_id": "R1_pair_gaps",
+        "evidence_ids": [
+          "ra4f561f742a2",
+          "r5dcb1f727254",
+          "r904ca5b9cdf2",
+          "r389b25fe94fd"
+        ]
+      },
+      {
+        "id": "r23f36b634746",
+        "reason": "Explore a donor-free polyaryl hydrocarbon with high gradient distance and a large predicted enantiomer contrast.",
+        "scientific_role": "Chemical coverage expansion",
+        "hypothesis_id": "R1_pair_gaps",
+        "evidence_ids": []
+      },
+      {
+        "id": "r8d212aa264dc",
+        "reason": "Provide the matched hydrocarbon enantiomer, distinguishing stereochemical prediction differences from scaffold-level retention.",
+        "scientific_role": "Matched enantiomer control",
+        "hypothesis_id": "R1_pair_gaps",
+        "evidence_ids": []
+      },
+      {
+        "id": "refb9248cc198",
+        "reason": "Challenge the high predicted member of a simple diaryl ketone pair whose counterpart has a much lower center.",
+        "scientific_role": "Ketone stereochemical probe",
+        "hypothesis_id": "R1_pair_gaps",
+        "evidence_ids": []
+      },
+      {
+        "id": "rf7d45e75975f",
+        "reason": "Anchor the low predicted diaryl ketone enantiomer at identical IPA and flow.",
+        "scientific_role": "Low-center matched control",
+        "hypothesis_id": "R1_pair_gaps",
+        "evidence_ids": []
+      },
+      {
+        "id": "r0688b15eb01d",
+        "reason": "Extend sulfoxide supervision to an aldehyde-substituted aromatic pair at high gradient distance.",
+        "scientific_role": "Sulfoxide topology expansion",
+        "hypothesis_id": "R1_pair_gaps",
+        "evidence_ids": [
+          "r8dc701d107b9",
+          "rd7d46de7703e"
+        ]
+      },
+      {
+        "id": "rd3404f690abe",
+        "reason": "Complete the aldehyde-sulfoxide pair and test its approximately eight-milliliter predicted stereochemical difference.",
+        "scientific_role": "Matched sulfur stereo control",
+        "hypothesis_id": "R1_pair_gaps",
+        "evidence_ids": [
+          "r8dc701d107b9",
+          "rd7d46de7703e"
+        ]
+      },
+      {
+        "id": "r1e16ac30c1c7",
+        "reason": "Probe a high-center beta-hydroxyamide, separating donor-carbonyl spacing from the observed alpha-hydroxyketone behavior.",
+        "scientific_role": "Donor-carbonyl topology probe",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r6b1399c09769",
+          "r2f7e2b7998c8"
+        ]
+      },
+      {
+        "id": "rbf289bbaa4fb",
+        "reason": "Complete the beta-hydroxyamide pair to distinguish family-level retention from stereochemical recognition.",
+        "scientific_role": "Matched polar enantiomer control",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r6b1399c09769",
+          "r2f7e2b7998c8"
+        ]
+      },
+      {
+        "id": "rb51da33949f1",
+        "reason": "Measure the higher predicted phenyl thioether-ester enantiomer, bridging observed naphthyl and pyridyl examples.",
+        "scientific_role": "Thioether parent anchor",
+        "hypothesis_id": "R1_thioether",
+        "evidence_ids": [
+          "r7e09153ebc87",
+          "rb5505e5056cf",
+          "r4f032bed09c2"
+        ]
+      },
+      {
+        "id": "rac7573625d37",
+        "reason": "Complete the parent thioether-ester pair at 1% IPA and test its large predicted gap.",
+        "scientific_role": "Matched thioether stereo control",
+        "hypothesis_id": "R1_thioether",
+        "evidence_ids": [
+          "r7e09153ebc87",
+          "rb5505e5056cf",
+          "r4f032bed09c2"
+        ]
+      },
+      {
+        "id": "re8727112487b",
+        "reason": "Measure the opposite dimethoxy hydroxyketone enantiomer after substantial underprediction of its measured partner.",
+        "scientific_role": "Observed-neighbor stereo anchor",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r6b1399c09769",
+          "r2f7e2b7998c8"
+        ]
+      },
+      {
+        "id": "r92751a5e54eb",
+        "reason": "Replace N-phenyl with N-methyl in the fluorinated imidazole ketone neighborhood implicated in the largest previous error.",
+        "scientific_role": "Heterocycle substitution probe",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "ra4f561f742a2",
+          "r5dcb1f727254",
+          "r0c301df57c0b",
+          "raf6b51f7a922"
+        ]
+      },
+      {
+        "id": "r57432fe5e27c",
+        "reason": "Complete the bis-CF3 oxazolidinone pair while testing whether cyclic-carbamate behavior remains substitution-specific.",
+        "scientific_role": "Cyclic-carbamate stereo anchor",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r0156e4903857",
+          "rec9ad4cf42bf"
+        ]
+      },
+      {
+        "id": "reb9d68146646",
+        "reason": "Extend the measured para-methoxy seven-membered lactam to meta substitution at the supplied conditions.",
+        "scientific_role": "Lactam positional expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "rf3169787dfec"
+        ]
+      },
+      {
+        "id": "r1ce6d69bff93",
+        "reason": "Add an aminopurine-bearing arylidene cyclobutane with a distinct nitrogen-rich topology and high gradient distance.",
+        "scientific_role": "Heterocycle coverage expansion",
+        "hypothesis_id": null,
+        "evidence_ids": []
+      },
+      {
+        "id": "rcd71ff230818",
+        "reason": "Probe a long-chain oxygenated lactone with high center and high gradient distance, beyond the measured small lactones.",
+        "scientific_role": "Size and topology expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r6bbdc0d1b0a7",
+          "r31ea25d4436f"
+        ]
+      },
+      {
+        "id": "r18e41156451b",
+        "reason": "Explore an N-sulfonyl indole ketone with high gradient distance and a different carbonyl environment from observed imidazole ketones.",
+        "scientific_role": "Carbonyl heterocycle expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "ra4f561f742a2",
+          "r5dcb1f727254"
+        ]
+      },
+      {
+        "id": "r6cd3527500a2",
+        "reason": "Add a donor-bearing cyclopentenone with bis-CF3 aryl substitution, testing transfer beyond cyclic carbamates.",
+        "scientific_role": "Donor topology expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r0156e4903857"
+        ]
+      },
+      {
+        "id": "r0a00af65d409",
+        "reason": "Probe an aldehyde-bearing bromoindole at high gradient distance, extending indole chemistry beyond the measured amide family.",
+        "scientific_role": "Indole functional-group expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r27cf79b602a6",
+          "r2c7046c109ed"
+        ]
+      }
+    ],
+    "hypotheses": [
+      {
+        "id": "R1_nitro",
+        "claim": "The ortho-methoxy diarylnitro pair may still exceed the retrained frozen centers, extending prior para-methoxy underprediction despite changed substitution geometry.",
+        "alternative": "Retraining may have corrected the local bias, or ortho substitution may reduce retention enough to produce zero or positive signed errors.",
+        "expected_sign": -1,
+        "candidate_ids": [
+          "r009bbb584775",
+          "rf196000ae9cf"
+        ],
+        "evidence_ids": [
+          "r904ca5b9cdf2",
+          "r389b25fe94fd",
+          "r152aeb274ce3",
+          "rc9e581a4d195"
+        ],
+        "learning_value": "Test residual transfer after retraining while separating positional substitution from stereochemistry."
+      },
+      {
+        "id": "R1_sulfonyl",
+        "claim": "Selected aryl sulfonyl pyrrolidines may remain underpredicted after retraining, with transferable long retention across parent, bromo, and opposite-fluoro examples.",
+        "alternative": "The revised centers may be adequate; substitution and stereochemistry may limit the previous negative-error pattern to measured compounds.",
+        "expected_sign": -1,
+        "candidate_ids": [
+          "r44b0af03ffca",
+          "raf84c8db1032",
+          "r10d0ea3a5a9d"
+        ],
+        "evidence_ids": [
+          "r853387671ca3",
+          "r21fb18d47ac5",
+          "r3339cd16fd17",
+          "r1c2cb56d33e0"
+        ],
+        "learning_value": "Map residual bias using matched-condition parent, halogen, and stereochemical controls."
+      },
+      {
+        "id": "R1_IPA",
+        "claim": "The opposite bis-CF3 alcohol enantiomer may show a larger RTv increase from 5% to 2% IPA than its approximately 1.45 mL predicted increase.",
+        "alternative": "Its condition response may be weaker or stereochemically different; the earlier enantiomer's response need not transfer quantitatively.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r7853d982dae6",
+          "rd518907d3c7c"
+        ],
+        "evidence_ids": [
+          "r5fd5783db462",
+          "r2c0e05b0a3eb"
+        ],
+        "learning_value": "Extend a clean condition contrast into a two-enantiomer comparison without assuming a residual direction."
+      },
+      {
+        "id": "R1_silicon",
+        "claim": "Previously observed silicon-containing failures may leave transferable residuals after retraining in the selected alkynyl amide and silyl ether.",
+        "alternative": "Revised predictions may already capture retention, and silicon-containing families may have unrelated residual behavior.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r095edc8d161a",
+          "rea3559f1eb9f"
+        ],
+        "evidence_ids": [
+          "r2c7046c109ed",
+          "r27cf79b602a6",
+          "rcef55553c516",
+          "r053e22b5cf22"
+        ],
+        "learning_value": "Test post-retraining transfer across silicon bonding environments without treating interval shape as epistemic uncertainty."
+      },
+      {
+        "id": "R1_pair_gaps",
+        "claim": "Large predicted enantiomer gaps in selected hydrocarbon, ketone, cyanoester, and sulfoxide pairs may reflect genuine scaffold-specific recognition.",
+        "alternative": "Measured gaps may shrink or reverse, indicating that current stereochemical prediction contrasts are exaggerated or incorrectly ordered.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r23f36b634746",
+          "r8d212aa264dc",
+          "refb9248cc198",
+          "rf7d45e75975f",
+          "r11c970e86c4f",
+          "r638e5248d541",
+          "r0688b15eb01d",
+          "rd3404f690abe"
+        ],
+        "evidence_ids": [
+          "ra4f561f742a2",
+          "r5dcb1f727254",
+          "r904ca5b9cdf2",
+          "r389b25fe94fd"
+        ],
+        "learning_value": "Resolve large predicted contrasts using identical-constitution, identical-condition measurements across distinct chemical environments."
+      },
+      {
+        "id": "R1_thioether",
+        "claim": "The parent phenyl thioether-ester pair may preserve the large stereochemical retention separation suggested by its frozen centers.",
+        "alternative": "The measured separation may be modest, as in the observed pyridyl pair, or reverse with aromatic substitution.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "rb51da33949f1",
+          "rac7573625d37"
+        ],
+        "evidence_ids": [
+          "rb5505e5056cf",
+          "r4f032bed09c2",
+          "r7e09153ebc87"
+        ],
+        "learning_value": "Bridge aromatic substitution and stereochemical supervision in a family spanning moderate and long observed retention."
+      },
+      {
+        "id": "R1_isox",
+        "claim": "The pyrimidyl-over-aryl retention contrast may persist in the opposite isoxazoline enantiomers at identical recorded conditions.",
+        "alternative": "Stereochemical recognition may substantially alter or reverse the contrast; extra acceptors alone do not establish its cause.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r9f71e1f496ba",
+          "r1f2cba2765d1"
+        ],
+        "evidence_ids": [
+          "r0a5b24bb447a",
+          "r0f7fd44b33cc"
+        ],
+        "learning_value": "Test transfer of the measured chemical contrast after the original prediction overestimated both compounds."
+      }
+    ],
+    "previous_hypothesis_updates": [
+      {
+        "id": "R0_nitro",
+        "status": "supported",
+        "reason": "All four selected diarylnitro compounds had negative frozen signed errors, despite substantial substitution-dependent enantiomer differences.",
+        "supporting_observations": [
+          "r152aeb274ce3",
+          "rc9e581a4d195",
+          "r904ca5b9cdf2",
+          "r389b25fe94fd"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_silyl",
+        "status": "supported",
+        "reason": "All three selected silicon-containing compounds exceeded their frozen centers; error magnitudes varied substantially, without establishing a shared mechanism.",
+        "supporting_observations": [
+          "r2c7046c109ed",
+          "rcef55553c516",
+          "r053e22b5cf22"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_IPA",
+        "status": "supported",
+        "reason": "Lowering IPA increased measured RTv by 4.14 mL versus approximately 0.367 mL predicted; both endpoints were overpredicted.",
+        "supporting_observations": [
+          "r5fd5783db462",
+          "r2c0e05b0a3eb"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_pyrrolidine",
+        "status": "supported",
+        "reason": "The selected chloro and fluoro pyrrolidines exceeded frozen centers by approximately 16.05 and 22.20 mL.",
+        "supporting_observations": [
+          "r853387671ca3",
+          "r21fb18d47ac5"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_isoxazoline",
+        "status": "supported",
+        "reason": "Pyrimidyl RTv exceeded aryl RTv by 11.872 mL, supporting the relative contrast; predictions exaggerated it, and the acceptor mechanism remains unresolved.",
+        "supporting_observations": [
+          "r0a5b24bb447a",
+          "r0f7fd44b33cc"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_stereo",
+        "status": "supported",
+        "reason": "Imidazole and diazepinone pairs showed substantial differences with opposite CIP-based retention ordering, supporting scaffold-specific stereochemical effects.",
+        "supporting_observations": [
+          "ra4f561f742a2",
+          "r5dcb1f727254",
+          "ra946f8bec399",
+          "r05e82ac56feb"
+        ],
+        "contradicting_observations": []
+      }
+    ],
+    "feedback_interpretation": "The previous batch supports local underprediction in diarylnitro, sulfonyl-pyrrolidine, and selected silicon-containing compounds, not a universal correction. Isoxazolines, the nitrobenzoate acetal, and the cyclohexyl sulfonyl ketone were overpredicted. The alcohol contrast established stronger IPA sensitivity than predicted. These are historical frozen errors, not errors of current candidates. Current centers are MSE-trained predictions, not medians; widths are not calibrated epistemic uncertainty, and coverage is raw-gradient distance percentile. Matching residual signs would not establish chemical mechanisms.",
+    "batch_rationale": "All 4082 candidates were considered globally. The batch combines targeted follow-up of observed failures, clean IPA and chemical controls, large predicted stereochemical contrasts, and distinct exploratory chemistries. Matched pairs distinguish scaffold-level retention from stereochemical effects, while parent and substitution probes test transfer after retraining. Repeated identical-condition records were avoided; the repeated alcohol identity deliberately changes IPA. High-distance examples were chosen for chemical learning value, not presumed error, and no page or scaffold quotas were used.",
+    "unresolved_questions": [
+      "Have retrained centers corrected the diarylnitro and sulfonyl-pyrrolidine underprediction, or does residual bias transfer to unmeasured substitutions?",
+      "Does the bis-CF3 alcohol's IPA response transfer quantitatively between enantiomers?",
+      "Which large predicted enantiomer gaps are measured, exaggerated, or reversed?",
+      "Do silicon-containing residuals transfer across bonding environments after retraining?",
+      "Does the pyrimidyl-isoxazoline contrast persist across enantiomers without implying an acceptor-based mechanism?",
+      "How strongly do aromatic substitution and stereochemistry interact in thioether-ester retention?",
+      "Do high-distance donor-carbonyl and nitrogen-rich structures provide transferable labels beyond immediate analogues?"
+    ]
+  },
+  "prediction_before_measurement": {
+    "2197": [
+      35.86196517944336,
+      38.843536376953125,
+      43.29769515991211
+    ],
+    "2198": [
+      25.97686004638672,
+      28.716262817382812,
+      31.591888427734375
+    ],
+    "3655": [
+      32.38462448120117,
+      35.55008316040039,
+      39.55685043334961
+    ],
+    "3574": [
+      36.7681770324707,
+      40.40274429321289,
+      44.508506774902344
+    ],
+    "3757": [
+      40.235050201416016,
+      43.9215087890625,
+      48.15040588378906
+    ],
+    "3833": [
+      8.146827697753906,
+      10.089166641235352,
+      12.691510200500488
+    ],
+    "2035": [
+      9.346321105957031,
+      11.538081169128418,
+      14.304051399230957
+    ],
+    "223": [
+      8.487566947937012,
+      15.495377540588379,
+      14.583747863769531
+    ],
+    "4149": [
+      16.358924865722656,
+      21.604652404785156,
+      19.920204162597656
+    ],
+    "1016": [
+      16.60063362121582,
+      19.266345977783203,
+      21.83633804321289
+    ],
+    "335": [
+      7.615177154541016,
+      9.575343132019043,
+      11.276643753051758
+    ],
+    "1019": [
+      12.4261474609375,
+      14.568480491638184,
+      16.0306396484375
+    ],
+    "1018": [
+      27.757312774658203,
+      30.70077133178711,
+      34.9446907043457
+    ],
+    "4841": [
+      26.384275436401367,
+      29.115705490112305,
+      33.43312072753906
+    ],
+    "4842": [
+      13.078350067138672,
+      15.451107025146484,
+      18.43905258178711
+    ],
+    "1467": [
+      18.649646759033203,
+      20.784223556518555,
+      24.819246292114258
+    ],
+    "1466": [
+      4.022682189941406,
+      5.052795886993408,
+      6.3111042976379395
+    ],
+    "3592": [
+      21.5296630859375,
+      24.79082679748535,
+      27.48601531982422
+    ],
+    "3593": [
+      29.62602424621582,
+      32.97936248779297,
+      36.6356201171875
+    ],
+    "1097": [
+      32.590877532958984,
+      35.89158248901367,
+      40.782676696777344
+    ],
+    "1098": [
+      28.671749114990234,
+      31.544565200805664,
+      36.38795471191406
+    ],
+    "318": [
+      23.191741943359375,
+      25.99337387084961,
+      29.755661010742188
+    ],
+    "317": [
+      10.613326072692871,
+      12.708054542541504,
+      15.142004013061523
+    ],
+    "3073": [
+      19.028337478637695,
+      22.090087890625,
+      25.351837158203125
+    ],
+    "968": [
+      14.453801155090332,
+      16.91681480407715,
+      19.164770126342773
+    ],
+    "969": [
+      32.58732604980469,
+      36.1600341796875,
+      39.516754150390625
+    ],
+    "800": [
+      24.887794494628906,
+      27.799358367919922,
+      31.374664306640625
+    ],
+    "4423": [
+      17.20580291748047,
+      18.72115707397461,
+      21.466508865356445
+    ],
+    "2579": [
+      24.755027770996094,
+      30.009986877441406,
+      34.06734848022461
+    ],
+    "1076": [
+      22.23521614074707,
+      24.95319366455078,
+      29.361591339111328
+    ],
+    "2797": [
+      11.5188627243042,
+      14.007173538208008,
+      16.808992385864258
+    ],
+    "2725": [
+      18.107742309570312,
+      19.287189483642578,
+      21.92576026916504
+    ]
+  }
+}
