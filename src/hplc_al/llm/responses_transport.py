@@ -7,6 +7,7 @@ import http.client
 import json
 import os
 import re
+import time
 import tomllib
 import urllib.error
 import urllib.request
@@ -142,6 +143,75 @@ def encode(value):
     ).encode("utf-8")
 
 
+def wire_payload(messages, config, max_output_tokens):
+    """Delivery-only addition; payload() remains the frozen scientific identity."""
+    return {**payload(messages, config, max_output_tokens), "stream": True}
+
+
+def _progress(message):
+    print(
+        f"[{datetime.now(timezone.utc).isoformat()}] Responses: {message}", flush=True
+    )
+
+
+def _stream_result(response, stats, started):
+    """Consume SSE, accepting only a complete response, never partial text.
+
+    Only fixed event labels and counters enter logs. Provider errors, deltas and
+    reasoning are neither printed nor persisted. Completed output is validated
+    by the same checks used for legacy JSON responses below.
+    """
+    data = []
+    size = 0
+    last_log = time.monotonic()
+    # More than enough for the registered 32k output budget, but bounded even if
+    # a broken endpoint never sends an SSE event separator.
+    limit = 16 * 1024 * 1024
+    while True:
+        line = response.readline(limit + 1)
+        if not line:
+            raise TransportError("RESPONSES_STREAM_INTERRUPTED")
+        size += len(line)
+        stats["bytes_received"] += len(line)
+        if size > limit:
+            raise TransportError("RESPONSES_STREAM_EVENT_TOO_LARGE")
+        if stats["first_byte_seconds"] is None:
+            stats["first_byte_seconds"] = round(time.monotonic() - started, 3)
+            _progress(
+                f"first stream data received after {stats['first_byte_seconds']}s"
+            )
+        now = time.monotonic()
+        if now - last_log >= 15:
+            _progress(
+                f"receiving stream; events={stats['events_received']}, "
+                f"bytes={stats['bytes_received']}, elapsed={now - started:.0f}s"
+            )
+            last_log = now
+        line = line.rstrip(b"\r\n")
+        if line:
+            if line.startswith(b"data:"):
+                value = line[5:]
+                data.append(value[1:] if value.startswith(b" ") else value)
+            continue
+        size = 0
+        if not data:
+            continue  # comments/keepalives are not completion events
+        raw = b"\n".join(data)
+        data = []
+        if raw == b"[DONE]":
+            raise TransportError("RESPONSES_STREAM_INTERRUPTED")
+        event = json.loads(raw)
+        if not isinstance(event, dict) or not isinstance(event.get("type"), str):
+            raise TransportError("RESPONSES_SCHEMA_FAILURE")
+        stats["events_received"] += 1
+        kind = event["type"]
+        if kind == "response.completed":
+            return event.get("response")
+        if kind in {"error", "response.failed", "response.incomplete"}:
+            # Fail closed: never retry an unknown semantic/provider failure.
+            raise TransportError("RESPONSES_STREAM_FAILED")
+
+
 class _NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         raise TransportError("RESPONSES_REDIRECT_FORBIDDEN")
@@ -149,24 +219,45 @@ class _NoRedirect(urllib.request.HTTPRedirectHandler):
 
 def call(messages, config, max_output_tokens=MAX_OUTPUT_TOKENS, *, opener=None):
     key = require_key(config)
-    body = encode(payload(messages, config, max_output_tokens))
-    request_hash = hashlib.sha256(body).hexdigest()
+    request_hash = hashlib.sha256(
+        encode(payload(messages, config, max_output_tokens))
+    ).hexdigest()
+    body = encode(wire_payload(messages, config, max_output_tokens))
     request = urllib.request.Request(
         config["base_url"] + "/responses",
         data=body,
         headers={
             "Authorization": "Bearer " + key,
             "Content-Type": "application/json",
-            "Accept": "application/json",
+            "Accept": "text/event-stream, application/json",
             "User-Agent": USER_AGENT,
         },
     )
+    started = time.monotonic()
+    stats = {"events_received": 0, "bytes_received": 0, "first_byte_seconds": None}
+    response_format = "json"
     try:
         open_request = opener or urllib.request.build_opener(_NoRedirect()).open
         with open_request(request, timeout=600) as response:
             if not 200 <= response.status < 300:
                 raise TransportError("RESPONSES_HTTP_FAILURE")
-            result = json.loads(response.read())
+            headers = getattr(response, "headers", {})
+            content_type = (
+                headers.get("Content-Type", "application/json")
+                .split(";")[0]
+                .strip()
+                .lower()
+            )
+            _progress(f"HTTP response opened after {time.monotonic() - started:.1f}s")
+            if content_type == "text/event-stream":
+                response_format = "sse"
+                result = _stream_result(response, stats, started)
+            elif content_type == "application/json":
+                # Some compatible providers return JSON despite stream=true.
+                # Accept a complete response without sending a fallback request.
+                result = json.loads(response.read())
+            else:
+                raise TransportError("RESPONSES_CONTENT_TYPE_INVALID")
     except urllib.error.HTTPError as error:
         # Classify a known gateway rejection, but never expose remote error text:
         # it can contain credentials or other untrusted fields.
@@ -241,6 +332,12 @@ def call(messages, config, max_output_tokens=MAX_OUTPUT_TOKENS, *, opener=None):
         "served_model": served,
         "usage": usage,
         "request_sha256": request_hash,
+        "request_hash_scope": "scientific_payload_without_stream",
+        "wire_request_sha256": hashlib.sha256(body).hexdigest(),
+        "transport": "responses_sse",
+        "response_format": response_format,
+        "stream": stats,
+        "elapsed_seconds": round(time.monotonic() - started, 3),
         "answer_sha256": hashlib.sha256(answer.encode()).hexdigest(),
         "provider_id": config["provider_id"],
         "base_url_hostname": urlsplit(config["base_url"]).hostname,

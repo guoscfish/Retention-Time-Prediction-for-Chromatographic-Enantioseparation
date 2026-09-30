@@ -135,3 +135,32 @@ Verification: 196 tests passed; frozen payload AST and prompts checked; four act
 receipts replayed offline without new requests; simulated full-pool audit matches the
 original; content-free third-party preflight passed. No real acquisition was started
 by the repair. Run the same `run` command to resume.
+
+## Streaming delivery repair (2026-09-30)
+
+The user requested a fix after seven `screen_007` attempts each returned HTTP 524
+at approximately 126 seconds. The transport now sends `stream: true` and reads
+Responses SSE events as they arrive, accepting only `response.completed`. A dropped
+stream is retryable; partial text never becomes a saved answer. Completed responses
+still undergo all existing JSON, model, tool, usage and scientific validation.
+A provider that returns a complete JSON response is accepted without another call.
+
+The frozen `payload()` and existing journal request files retain their scientific
+identity, so the seven saved receipts remain reusable. For new calls,
+`request_sha256` binds the unchanged scientific payload; `wire_request_sha256`
+binds the actual transmitted body including `stream: true`. Both hashes and the
+transport mode are recorded on each new dispatch and receipt. The first transition
+from legacy delivery skips the legacy backoff once, preserving all attempt numbers
+and outcomes. Later retries keep the existing bounded exponential backoff.
+
+Logs distinguish local waiting from bytes/events actually received from the server.
+They never print model deltas, reasoning or provider error bodies. Receipt usage is
+reported only for completed responses; a failed attempt's provider charges remain
+unknown. Streaming can avoid a gateway timeout when the provider sends timely
+headers/events or keepalives; it cannot guarantee recovery from an upstream outage.
+See the [official streaming guide](https://developers.openai.com/api/docs/guides/streaming-responses).
+
+This delivery-only amendment preserves the protocol seal, prompts, provider, model,
+reasoning effort, candidate chunking and label-reveal barrier. Prior execution
+amendment/gate files are archived byte-for-byte under `provenance/pre_streaming/`;
+the current gate records fresh regression evidence and source hashes.

@@ -1,6 +1,7 @@
 """User-authorized operational retries and terminal progress; no scientific edits."""
 
 import csv
+import hashlib
 import re
 import threading
 import time
@@ -8,7 +9,7 @@ from contextlib import contextmanager
 from datetime import datetime, timezone
 
 from ..common import read_json, write_once
-from .responses_transport import TransportError
+from .responses_transport import TransportError, call, encode, wire_payload
 
 MAX_ATTEMPTS = 5
 RETRY_DELAYS = (15, 30, 60, 60)
@@ -36,6 +37,7 @@ def retryable(error):
         "RESPONSES_HTTP_522",
         "RESPONSES_HTTP_524",
         "RESPONSES_NETWORK_FAILURE",
+        "RESPONSES_STREAM_INTERRUPTED",
     }
 
 
@@ -148,13 +150,21 @@ def request_with_retries(
     if count >= MAX_ATTEMPTS and not retry_forever:
         raise TransportError("RESPONSES_RETRY_LIMIT_EXHAUSTED")
     attempt = count + 1
+    delivery_changed = (
+        count > 0
+        and transport is call
+        and read_json(path(count, "started")).get("transport") != "responses_sse"
+    )
     while True:
-        if attempt > 1:
+        if delivery_changed:
+            log(f"{name}: switching to SSE delivery; preserving {count} earlier attempts")
+            delivery_changed = False
+        elif attempt > 1:
             delay = retry_delay(attempt - 1)
             log(
                 f"{name}: retry {attempt}"
                 + (f"/{MAX_ATTEMPTS}" if not retry_forever else "")
-                + f" in {delay}s; identical request, possible duplicate charge"
+                + f" in {delay}s; same scientific payload, possible duplicate charge"
             )
             time.sleep(delay)
         write_once(
@@ -166,6 +176,16 @@ def request_with_retries(
                 "origin": "authorized identical-request retry"
                 if attempt > 1
                 else "initial request",
+                **(
+                    {
+                        "transport": "responses_sse",
+                        "wire_request_sha256": hashlib.sha256(
+                            encode(wire_payload(messages, config, budget))
+                        ).hexdigest(),
+                    }
+                    if transport is call
+                    else {}
+                ),
             },
         )
         started = time.monotonic()
@@ -175,7 +195,7 @@ def request_with_retries(
         )
         try:
             with heartbeat(
-                f"{name} attempt {attempt}"
+                f"{name} attempt {attempt}: awaiting complete response"
                 + (f"/{MAX_ATTEMPTS}" if not retry_forever else "")
             ):
                 result = transport(messages, config, budget)

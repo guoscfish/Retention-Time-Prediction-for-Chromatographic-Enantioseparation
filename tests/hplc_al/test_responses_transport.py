@@ -117,12 +117,15 @@ def test_explicit_wire_contract_and_safe_receipt(monkeypatch):
         "tools": [],
         "store": False,
         "max_output_tokens": 2048,
+        "stream": True,
     }
     assert req.get_header("Authorization") == "Bearer " + KEY
     assert req.get_header("User-agent") == rt.USER_AGENT
-    assert req.get_header("Accept") == "application/json"
+    assert req.get_header("Accept") == "text/event-stream, application/json"
     assert receipt["client_user_agent"] == rt.USER_AGENT
-    assert receipt["request_sha256"] == hashlib.sha256(req.data).hexdigest()
+    assert receipt["wire_request_sha256"] == hashlib.sha256(req.data).hexdigest()
+    del body["stream"]
+    assert receipt["request_sha256"] == hashlib.sha256(rt.encode(body)).hexdigest()
     assert receipt["answer_sha256"] == hashlib.sha256(answer.encode()).hexdigest()
     assert (
         receipt["provider_id"] == "token4research"
@@ -265,3 +268,116 @@ def test_http_diagnostic_never_echoes_body_or_retries(monkeypatch, body, code):
         rt.call([{"role": "user", "content": "{}"}], CONFIG, opener=opener)
     assert str(error.value).split(":")[0] == code
     assert KEY not in str(error.value) and len(calls) == 1
+
+
+class SSE(io.BytesIO):
+    status = 200
+    headers = {"Content-Type": "text/event-stream; charset=utf-8"}
+
+
+def sse_event(event):
+    return b"data: " + json.dumps(event, ensure_ascii=False).encode() + b"\r\n\r\n"
+
+
+def test_stream_keeps_legacy_identity_and_complete_validation(monkeypatch, capsys):
+    monkeypatch.setenv(CONFIG["env_key"], KEY)
+    value = response()
+    value["output"][-1]["content"][0]["text"] = '{"status":"完成"}'
+    events = (
+        b": keepalive\r\n\r\n"
+        + sse_event({"type": "response.created", "response": {"status": "in_progress"}})
+        + sse_event({"type": "response.output_text.delta", "delta": KEY})
+        + b'event: response.completed\r\ndata: {"type":"response.completed",\r\ndata: "response": '
+        + json.dumps(value, ensure_ascii=False).encode()
+        + b"}\r\n\r\n"
+    )
+    messages = [{"role": "user", "content": "fixture"}]
+    answer, receipt = rt.call(messages, CONFIG, opener=lambda *a, **k: SSE(events))
+    assert json.loads(answer) == {"status": "完成"}
+    assert (
+        receipt["request_sha256"]
+        == hashlib.sha256(rt.encode(rt.payload(messages, CONFIG, 32000))).hexdigest()
+    )
+    assert receipt["response_format"] == "sse"
+    assert receipt["stream"]["events_received"] == 3
+    assert receipt["usage"] == {"input_tokens": 10, "output_tokens": 5}
+    assert KEY not in capsys.readouterr().out + json.dumps(receipt)
+
+
+@pytest.mark.parametrize(
+    "ending", [b"", b"data: [DONE]\n\n", b'data: {"type":"response.completed"}']
+)
+def test_stream_disconnect_never_accepts_partial_output(monkeypatch, ending):
+    from hplc_al.llm.execution import retryable
+
+    monkeypatch.setenv(CONFIG["env_key"], KEY)
+    body = (
+        sse_event({"type": "response.output_text.delta", "delta": '{"status":"ok"}'})
+        + ending
+    )
+    with pytest.raises(rt.TransportError, match="STREAM_INTERRUPTED") as exc:
+        rt.call(
+            [{"role": "user", "content": "fixture"}],
+            CONFIG,
+            opener=lambda *a, **k: SSE(body),
+        )
+    assert retryable(exc.value)
+
+
+@pytest.mark.parametrize("kind", ["error", "response.failed", "response.incomplete"])
+def test_stream_terminal_failure_is_safe_and_not_resampled(monkeypatch, kind, capsys):
+    from hplc_al.llm.execution import retryable
+
+    monkeypatch.setenv(CONFIG["env_key"], KEY)
+    body = sse_event({"type": kind, "error": {"message": KEY}})
+    with pytest.raises(rt.TransportError, match="STREAM_FAILED") as exc:
+        rt.call(
+            [{"role": "user", "content": "fixture"}],
+            CONFIG,
+            opener=lambda *a, **k: SSE(body),
+        )
+    assert not retryable(exc.value)
+    assert KEY not in str(exc.value) + capsys.readouterr().out
+
+
+@pytest.mark.parametrize("fault", ["incomplete", "tool", "wrong_model", "secret_echo"])
+def test_completed_stream_uses_same_scientific_checks(monkeypatch, fault):
+    monkeypatch.setenv(CONFIG["env_key"], KEY)
+    value = response()
+    if fault == "incomplete":
+        value["status"] = "incomplete"
+    elif fault == "tool":
+        value["output"].append({"type": "function_call"})
+    elif fault == "wrong_model":
+        value["model"] = "different"
+    else:
+        value["id"] = KEY
+    body = sse_event({"type": "response.completed", "response": value})
+    with pytest.raises(rt.TransportError) as exc:
+        rt.call(
+            [{"role": "user", "content": "fixture"}],
+            CONFIG,
+            opener=lambda *a, **k: SSE(body),
+        )
+    assert KEY not in str(exc.value)
+
+
+def test_stream_schema_and_read_failure_distinguished(monkeypatch):
+    monkeypatch.setenv(CONFIG["env_key"], KEY)
+    with pytest.raises(rt.TransportError, match="SCHEMA_FAILURE"):
+        rt.call(
+            [{"role": "user", "content": "fixture"}],
+            CONFIG,
+            opener=lambda *a, **k: SSE(b"data: not-json\n\n"),
+        )
+
+    class Broken(SSE):
+        def readline(self, size):
+            raise TimeoutError
+
+    with pytest.raises(rt.TransportError, match="NETWORK_FAILURE"):
+        rt.call(
+            [{"role": "user", "content": "fixture"}],
+            CONFIG,
+            opener=lambda *a, **k: Broken(),
+        )

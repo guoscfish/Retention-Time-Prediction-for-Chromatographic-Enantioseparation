@@ -287,3 +287,51 @@ def test_failure_status_written_before_lock_release(monkeypatch, tmp_path):
     status = read_json(tmp_path / "execution_status.json")
     assert status["status"] == "STOPPED_FAILURE" and status["budget"] == 333
     assert read_json(tmp_path / "last_failure.json")["error"] == "RESPONSES_HTTP_524"
+
+
+def test_stream_resume_reuses_legacy_receipt_and_records_wire_identity(
+    monkeypatch, tmp_path
+):
+    import json
+
+    from test_responses_transport import SSE, response, sse_event
+
+    from hplc_al.llm import responses_transport as rt
+
+    monkeypatch.setenv(CONFIG["env_key"], "fake-secret-only")
+    # A legacy response can be read with the new transport without dispatching.
+    journal(tmp_path, success).ask("screen_000", MESSAGES)
+    legacy_bytes = (tmp_path / "screen_000.receipt.json").read_bytes()
+    captured = []
+    value = response()
+    value["model"] = CONFIG["model"]
+
+    class Opener:
+        def open(self, request, timeout):
+            captured.append(request)
+            return SSE(sse_event({"type": "response.completed", "response": value}))
+
+    monkeypatch.setattr(rt.urllib.request, "build_opener", lambda *a: Opener())
+    assert journal(tmp_path, rt.call).ask("screen_000", MESSAGES) == {"ok": True}
+    assert not captured
+    assert (tmp_path / "screen_000.receipt.json").read_bytes() == legacy_bytes
+
+    # Simulate a previously timed-out request without inventing a receipt.
+    def timeout(*args):
+        raise TransportError("RESPONSES_HTTP_524")
+
+    with pytest.raises(TransportError):
+        journal(tmp_path, timeout).ask("screen_001", MESSAGES)
+    prior = {p.name: p.read_bytes() for p in tmp_path.glob("screen_001.*")}
+    j = Journal(
+        tmp_path, CONFIG, LIMITS, rt.call, retry_requests=True, retry_forever=True
+    )
+    assert j.ask("screen_001", MESSAGES) == {"status": "ok"}
+    assert len(captured) == 1
+    assert json.loads(captured[0].data).pop("stream") is True
+    assert all((tmp_path / name).read_bytes() == body for name, body in prior.items())
+    started = read_json(tmp_path / "screen_001.attempt_06.started.json")
+    receipt = read_json(tmp_path / "screen_001.receipt.json")["receipt"]
+    assert started["transport"] == receipt["transport"] == "responses_sse"
+    assert started["wire_request_sha256"] == receipt["wire_request_sha256"]
+    assert started["request_sha256"] == receipt["request_sha256"]

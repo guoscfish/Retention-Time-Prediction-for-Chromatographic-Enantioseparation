@@ -1,6 +1,6 @@
 {
   "kind": "USER_AUTHORIZED_EXECUTION_ONLY_AMENDMENT",
-  "date": "2026-09-30",
+  "date": "2026-09-29",
   "authorization": "\u5141\u8bb8 V2 \u4ec5\u4fee\u6539\u65e5\u5fd7\u548c\u91cd\u8bd5\uff0c\u590d\u7528\u5df2\u6709\u7ed3\u679c",
   "original_checkpoint_commit": "75dd26d",
   "protocol_sha256": "fe9c32ae92663cf3dabe8cbcb0e7e6f344428ba2aa209a6753061cbca557f564",
@@ -73,13 +73,13 @@
     "src/hplc_al/llm/continuous.py": "7c7a00d8e0f106be34a41e6620aa23f0f18f5815b1f64b87c9109da4980da665",
     "src/hplc_al/llm/credentials.py": "06dfdaf8ffa2d12d4253bdfb2ac1d9599ef0e77aa96ec52b99ebae1d4a56cc54",
     "src/hplc_al/llm/dry_run.py": "e9f885423dde601cd38e36acc26e9b853b87a3a137054f787897e439af030b12",
-    "src/hplc_al/llm/execution.py": "ab70f537084e30bd68484d74004cbd9ecb6a580d0fa8119f87460b06f7337c15",
+    "src/hplc_al/llm/execution.py": "cfaafb0319b12dc1274035c405aa3c1bb303378f6189aee1585a7b8551f2c64a",
     "src/hplc_al/llm/full_pool.py": "1e78b66eaff9d6a4507808c4533a1245e32a351abeaea1662ad618be238973ac",
     "src/hplc_al/llm/memory.py": "57b2a7f187e044cf5e95911d328c4d060ac4559eaad0d8ec846963fb01b2301e",
     "src/hplc_al/llm/planner.py": "a7638d6f1eae9aab50131ac8a9aad80bf5b88c9c64ce1c5b1f7cc16be85917ef",
     "src/hplc_al/llm/reporting.py": "8ca3fbf13b03f28eeb7f4d2906934d5d78ad9405ac42e3d87cd5b6ac6fefc321",
-    "src/hplc_al/llm/responses_transport.py": "b287db595ec5c31c8121b15383a80cd9e30381490d9badd322353cd0743b29c5",
-    "src/hplc_al/llm/runner.py": "96e17761aec53e6b02824d2577c7a3c589187891c53a96712c610baf0222dcc1",
+    "src/hplc_al/llm/responses_transport.py": "2e940182619dc1c0c279148b76dd9a4eab8627f941f6f6053b726d705a9b4238",
+    "src/hplc_al/llm/runner.py": "1b5f6c2c5c9cd00a204f7cab0b5aa088a9ecd2b51f4f0ece6a3f2e25d60be884",
     "src/hplc_al/llm/wire.py": "579d7fc30c2f9754150f9fccff4a2e8cc7a73910c71bf25e4ac1697cd3b6b7e0",
     "src/hplc_al/preflight_v2.py": "20e7c90ca857c502385b80f144a0f875f633a0dc3ff55252b46c3a2e0af9afd1",
     "src/hplc_al/protocol.py": "116796e7dba7e804bc6deb6c79abf90e76485df8ac26d2cd7119460386d13a10",
@@ -110,28 +110,13 @@
     "count ambiguous interrupted attempts and original screen_004 as append-only dispatch attempts",
     "reuse the first validated saved response; do not resample semantic/schema failures",
     "append-only attempt intents/outcomes; unknown unreturned usage remains unknown",
-    "after the five-attempt burst, continue identical transient retries with bounded exponential backoff until success or operator interruption",
-    "SSE delivery with actual wire hashing, safe server-event progress, complete-response-only validation and legacy cache reuse"
+    "after the five-attempt burst, continue identical transient retries with bounded exponential backoff until success or operator interruption"
   ],
   "preserved": [
     "original protocol and lock bytes",
-    "prompts, model, high reasoning, scientific payload, candidate chunks and nomination bounds",
+    "prompts, model, high reasoning, wire payload, candidate chunks and nomination bounds",
     "all original requests and four scientific receipts",
     "predictor, original trainer, labels and selection barrier"
   ],
-  "limitation": "Streaming depends on timely upstream events/keepalives; interrupted or failed requests may still incur unknown provider charges.",
-  "transport_amendment": {
-    "user_request": "\u4e3a\u4ec0\u4e48\u4f1a\u5b58\u5728\u8fd9\u4e2a524\u95ee\u9898\uff0c\u8fd9\u4e2aapi\u7528\u8d77\u6765\u5e94\u8be5\u6ca1\u95ee\u9898\u7684\uff0c\u5e2e\u6211\u89e3\u51b3\u4e00\u4e0b",
-    "wire_changes": {
-      "stream": true
-    },
-    "scientific_payload_changed": false,
-    "previous_execution_records": {
-      "studies/active_learning/odh_free_llm32_fullpool_v2/provenance/pre_streaming/execution_amendment.json": "ad1242c0375a95acc109b5f90b4e770017aaa448ac7506f1cf7e0c06bd429dc4",
-      "studies/active_learning/odh_free_llm32_fullpool_v2/provenance/pre_streaming/execution_test_gate.json": "bc1b534d67a8cc2edbc6b402bb0cd9c281e289220b021e38a97f9a6bb4f384ff"
-    },
-    "request_hash_scope": "scientific_payload_without_stream",
-    "wire_hash_scope": "actual_transmitted_body",
-    "existing_saved_receipts": 7
-  }
+  "limitation": "No streaming or request-content change. Persistent transient failures continue until operator interruption and may incur duplicate provider charges."
 }

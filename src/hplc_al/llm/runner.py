@@ -117,10 +117,16 @@ def verify_execution_amendment(protocol):
         or amendment["max_attempts_per_scientific_request"] != 5
         or amendment["scientific_request_payload_changed"] is not False
         or amendment.get("persistent_transient_retries") is not True
+        or amendment.get("transport_amendment", {}).get("wire_changes")
+        != {"stream": True}
+        or amendment.get("transport_amendment", {}).get("scientific_payload_changed")
+        is not False
+        or not amendment.get("transport_amendment", {}).get("user_request")
     ):
         raise RuntimeError(
             "execution amendment/source mismatch; no scientific execution"
         )
+    verify_files(ROOT, amendment["transport_amendment"]["previous_execution_records"])
     gate = read_json(STUDY / "execution_test_gate.json")
     if gate["status"] != "PASS" or gate["source_hashes"] != current:
         raise RuntimeError("passing tests for execution amendment required")
