@@ -1,0 +1,11 @@
+{
+  "status": "REJECTED_FIELD_LENGTH",
+  "utc": "2026-09-30T16:54:32.696495+00:00",
+  "field": "previous_hypothesis_updates.reason",
+  "actual_tokens": 36,
+  "limit_tokens": 32,
+  "other_validation_checks": "PASS_DIAGNOSTIC_ONLY",
+  "receipt_sha256": "837efac1db7aeb418a3cf29c7a1b13cd8f1b5d421fe41fb3596493b2d34d842a",
+  "retry_policy": "Retry identical registered request; preserve request intent and attempt counters; no prompt, validation, model, or selection edits.",
+  "new_labels_revealed": 0
+}
