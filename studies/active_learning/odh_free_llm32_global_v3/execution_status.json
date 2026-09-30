@@ -1,8 +1,3 @@
 {
-  "status": "ONE_ROUND_TRIAL_COMPLETE",
-  "completed_rounds": 1,
-  "budget": 365,
-  "stopped_after_requested_one_round": true,
-  "next_round_started": false,
-  "result": "results/one_round_trial.json"
+  "status": "IN_PROGRESS"
 }
