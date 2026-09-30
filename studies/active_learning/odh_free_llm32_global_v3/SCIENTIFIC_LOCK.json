@@ -1,0 +1,4 @@
+{
+  "protocol_sha256": "594f501aa956a6ddc3d922e97474564e117e5a7641f5146a103ce8ec2803bc22",
+  "rule": "All candidates in one decision; never reuse V2 screening."
+}

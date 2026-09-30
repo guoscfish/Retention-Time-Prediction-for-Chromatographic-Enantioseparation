@@ -1,0 +1,8 @@
+{
+  "request_sha256": "29e1304008a42b3327f09639fe04fce116c12ccee5de618e66421caa74ce0e9a",
+  "attempt": 1,
+  "timestamp": "2026-09-30T15:29:47.139360+00:00",
+  "elapsed_seconds": 232.246,
+  "error": "RESPONSES_UNIQUE_MESSAGE_REQUIRED",
+  "retryable": false
+}

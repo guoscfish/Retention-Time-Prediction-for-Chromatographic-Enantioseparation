@@ -1,0 +1,23 @@
+{
+  "status": "REAL_GLOBAL_SELECTION_PASS",
+  "round": 0,
+  "candidate_count": 4114,
+  "selected_count": 32,
+  "configured_context_tokens": 1050000,
+  "configured_context_source": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+  "estimated_total_budget": 528941,
+  "actual_usage": {
+    "input_tokens": 414325,
+    "output_tokens": 5061
+  },
+  "elapsed_seconds": 167.368,
+  "message_extraction": "final_answer_phase",
+  "output_message_count": 1,
+  "provider_supported_this_request": true,
+  "provider_maximum_context_independently_verified": false,
+  "completed_training_rounds": 0,
+  "new_acquisition_labels_revealed": 0,
+  "test_labels_read": 0,
+  "selection_seal_sha256": "8be6c5d6a21b9e807f5e43b0381ba40d773e78fd539db3cd8b8827c77ec7e589",
+  "note": "A real full-pool request passed transport and scientific schema validation. This is not a claim that all six acquisition/training rounds have completed."
+}

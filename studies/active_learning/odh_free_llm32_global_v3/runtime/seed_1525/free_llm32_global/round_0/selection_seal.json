@@ -1,0 +1,22 @@
+{
+  "protocol_sha256": "594f501aa956a6ddc3d922e97474564e117e5a7641f5146a103ce8ec2803bc22",
+  "files": {
+    "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/prepared.json": "3b2faf34f207084280b25631d291b7c1c7d8d9bd4b119f27f0893bdaa69d94d2",
+    "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/model_state.npz": "98c8a907d3f9a9ef1df47b663b8a3ee1ae960b65ca5407647c65d92f6445cca5",
+    "studies/active_learning/odh_free_llm32_scientist_v1/provenance/successful_execution/runtime/seed_1525/free_llm32_scientist/round_0/observed.json": "f2ada7c58f403eeae8da268a140973a2bd5eefc4cfe16908833b5ee3a49a648f",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/packet.json": "0a80bc39358ff80e2ee1178b6e354a599bfc209d69e0bb7f979289fb67c43402",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/global_selection_phase_v1.attempt_01.started.json": "3344dd5686d48df9f8189093bddde0de3b1b8a9f6812dceb21c0d6b6925855c6",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/global_selection_phase_v1.receipt.json": "258966a9d06ff59e4161b5e2f656fc4866049d5ba158c32d325fa57b98f42c07",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/binding.json": "0509b473679f079d05e6cd48e1fcf9ae6cbfd029df4e6ab36ff4145c1af4a75b",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/global_selection.attempt_01.failed.json": "f60e827b8c12b7a808bc1338a74cdbc6f75b76c894b2e6340c8164ee5a220cd5",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/wire_aliases.json": "ecc6e896b660f32294649e58a447c04f7740c171efb22e797c8bfa1a64f4d638",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/context_admission.json": "92dfd04d463329e1621f040086d95b3ddb9151af0d79983262400b10bb078f58",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/selection.json": "89ac7d007d9b17b4a32435b270862440e82123c70c1499a00358ef4322657da6",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/global_selection.attempt_01.started.json": "d808744120063c94fd5cf7f5b06ae17c8557aa7535410c812d6bc125d3078dfc",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/global_selection_phase_v1.request.json": "d145a028e3b2e47dcd7f8f212a881087f0ff2f93514b237f20ccd68dbd615da6",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/llm/global_selection.request.json": "d145a028e3b2e47dcd7f8f212a881087f0ff2f93514b237f20ccd68dbd615da6",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/selection.json": "c2259a8d250d0e048a36d9ae2cb1ef63b7f79ff1c3322e455bd0251fcd56e4ce",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/diagnostics.json": "91895d41b4bfd93994b718f2b5572b7f08359039c236a1599537aaa5233c4d90",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_0/prepared.json": "a3e263ad495ec5019287fef18d0df0cc143a1bc7fe4f3d5ba8bed8ebcb78aa92"
+  }
+}

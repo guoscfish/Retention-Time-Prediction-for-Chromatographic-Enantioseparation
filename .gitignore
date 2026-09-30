@@ -46,3 +46,9 @@ studies/active_learning/odh_free_llm32_fullpool_v2/**/*.npz
 studies/active_learning/odh_free_llm32_fullpool_v2/.runner.lock
 
 studies/active_learning/odh_free_llm32_fullpool_v2/.pipeline.lock
+
+# Global V3 execution artifacts
+studies/active_learning/odh_free_llm32_global_v3/**/*.pt
+studies/active_learning/odh_free_llm32_global_v3/**/*.npz
+studies/active_learning/odh_free_llm32_global_v3/.runner.lock
+studies/active_learning/odh_free_llm32_global_v3/.pipeline.lock

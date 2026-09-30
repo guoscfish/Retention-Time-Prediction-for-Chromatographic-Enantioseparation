@@ -1,0 +1,8 @@
+{
+  "request_sha256": "29e1304008a42b3327f09639fe04fce116c12ccee5de618e66421caa74ce0e9a",
+  "attempt": 1,
+  "timestamp": "2026-09-30T15:25:54.894920+00:00",
+  "origin": "initial request",
+  "transport": "responses_sse",
+  "wire_request_sha256": "6b509a7c3680d5d58f95e25dd6b1116f26030dafc4cab6395b83bc4b16475c32"
+}
