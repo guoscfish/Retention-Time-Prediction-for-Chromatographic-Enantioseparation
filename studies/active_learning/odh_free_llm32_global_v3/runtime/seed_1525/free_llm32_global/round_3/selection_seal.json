@@ -1,0 +1,23 @@
+{
+  "protocol_sha256": "594f501aa956a6ddc3d922e97474564e117e5a7641f5146a103ce8ec2803bc22",
+  "files": {
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_2/fit/fit.json": "b709edb14c4248e0793824c05d4677e17c4eb28003977bf45cfe533f6f832237",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_2/fit/input.json": "93fad5ef151be9e022fff9ec86e5c4a717f41bac964eb5e63874428dcd26c789",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_2/fit/attempt_000/best.pt": "9ecf63e5abd2026c6495060005224d9488bf773b3ed86f5a98048cf8e2bb14c1",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_2/fit/attempt_000/training_curve.csv": "31a7fdb7752969862fbfa05bbdd99fb47c2ed6813a9923933741e14eecb7cad4",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_2/fit/attempt_000/validation_predictions.npz": "172e7975e49b281abbdeed157b7c7a2cd4d0d8f59f96da43f8a0da4f2675f8e2",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_2/fit/attempt_000/final.pt": "71745f658817e08ffc75edb5b08f2ba7b66881b41927e221586adc04d965270e",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_2/fit/attempt_000/final_validation_predictions.npz": "f194197f1aa93c6a2fe86013ec80748e764b0e01fe1f5c24c7a17ca95b2e8b0e",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_3/packet.json": "1c15e7a4b8bde5cd090e5df2cc3ed1fe0d64446197db7dfbda44968c96ec90f3",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_3/llm/global_selection_phase_v1.attempt_01.started.json": "36088fda2078a0bbff69f7f15bbc04d4a775da42c8e774d930c664c1d45cf704",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_3/llm/global_selection_phase_v1.receipt.json": "3e2cd55c7db61c7f6c6510ceaf70ad39d083ee10935b69ec23cedba325cdadd1",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_3/llm/binding.json": "b4cc04554ceaafa34a9e5bf45efb1776aada5aab684412f850eecc306596c353",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_3/llm/wire_aliases.json": "162a61bdea56f7ead209d631e4947f261e77ecef2d43708f2848994d2cb01d50",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_3/llm/context_admission.json": "c6528fd8233783791af7fda8f3274a701813c0911e2002f99497aeba201a7fd9",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_3/llm/selection.json": "288bb9f5ccdd23d36a4d5840bd2e4bdd484ca525ed6a072188d89cc96ba5fcb3",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_3/llm/global_selection_phase_v1.request.json": "ad35df2260f4eb1d6a7e0ddbf04e48096c2b13f13b31fdbefe40eac768d9eac9",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_3/selection.json": "931f94464cfb1b71b658d1851443fd6d9aa22653ce15c54d878cf6eb31d1ab91",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_3/diagnostics.json": "b1bcaed3084460ad7f2624b821441083436509e84a2dd33270a5e8d970bcd7a9",
+    "studies/active_learning/odh_free_llm32_global_v3/runtime/seed_1525/free_llm32_global/round_3/prepared.json": "54e3ba19d1707e4ee15006654762ffce34a867d2e9b9e413a783447b727c7621"
+  }
+}

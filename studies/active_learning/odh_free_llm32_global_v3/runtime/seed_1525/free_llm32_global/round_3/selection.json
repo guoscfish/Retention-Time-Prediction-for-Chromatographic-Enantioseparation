@@ -1,0 +1,815 @@
+{
+  "study": "odh_free_llm32_global_v3",
+  "seed": 1525,
+  "method": "odh_free_llm32_global_v3/1525/free_llm32_global",
+  "round": 3,
+  "selected": [
+    2722,
+    3511,
+    3379,
+    2685,
+    2703,
+    2702,
+    132,
+    248,
+    2072,
+    4919,
+    629,
+    143,
+    254,
+    442,
+    3158,
+    3157,
+    3736,
+    4737,
+    4028,
+    3733,
+    3732,
+    3071,
+    2277,
+    1009,
+    1070,
+    4707,
+    2477,
+    2911,
+    798,
+    876,
+    3294,
+    2968
+  ],
+  "selected_hash": "9cc53cec6388e9aa1a805ac0e5d4c993c775c14bd7b197d051e21fed73de92c6",
+  "L_hash": "0942fee895fdf9cca0f8c2bbe19e5d8cdd28c3a201480e4bf4ac8b4fd984275e",
+  "U_hash": "6bba74b49599108f9a211488689b32076d9d83915a3d88f741fc5ac8e071c9fb",
+  "response": {
+    "type": "selection",
+    "packet_hash": "03e2716062e040351031cd43a293d31d72df23b7a1a5af08f67d19b625271e4d",
+    "choices": [
+      {
+        "id": "r5102b0da3947",
+        "reason": "Test high-center diarylnitro retention after mixed positional residuals.",
+        "scientific_role": "Nitro positional probe",
+        "hypothesis_id": "R2_nitro_position",
+        "evidence_ids": [
+          "r0c88faa4a9e8",
+          "r78f4befc93ef",
+          "re3b5c11f2a4d"
+        ]
+      },
+      {
+        "id": "rb889c0a2b185",
+        "reason": "Measure a chlorinated diarylnitro stereochemical transfer case.",
+        "scientific_role": "Nitro stereo probe",
+        "hypothesis_id": "R2_nitro_position",
+        "evidence_ids": [
+          "r009bbb584775",
+          "rf196000ae9cf",
+          "r152aeb274ce3"
+        ]
+      },
+      {
+        "id": "r559ac790b905",
+        "reason": "Test fluorinated diarylnitro substitution and residual direction.",
+        "scientific_role": "Nitro halogen control",
+        "hypothesis_id": "R2_nitro_position",
+        "evidence_ids": [
+          "r78f4befc93ef",
+          "re3b5c11f2a4d",
+          "r0c88faa4a9e8"
+        ]
+      },
+      {
+        "id": "r5304a49d5714",
+        "reason": "Extend nitro positional supervision to dimethoxy substitution.",
+        "scientific_role": "Nitro substitution expansion",
+        "hypothesis_id": "R2_nitro_position",
+        "evidence_ids": [
+          "r904ca5b9cdf2",
+          "r389b25fe94fd",
+          "r0c88faa4a9e8"
+        ]
+      },
+      {
+        "id": "r0734273ceec0",
+        "reason": "Complete a high-retention diarylnitro stereochemical contrast.",
+        "scientific_role": "High-retention nitro control",
+        "hypothesis_id": "R2_nitro_position",
+        "evidence_ids": [
+          "r904ca5b9cdf2",
+          "r389b25fe94fd",
+          "r152aeb274ce3",
+          "rc9e581a4d195"
+        ]
+      },
+      {
+        "id": "r999f446241c7",
+        "reason": "Pair a high-coverage diarylnitro candidate with c95.",
+        "scientific_role": "Matched nitro stereopair",
+        "hypothesis_id": "R2_nitro_position",
+        "evidence_ids": [
+          "r904ca5b9cdf2",
+          "r389b25fe94fd",
+          "r152aeb274ce3",
+          "rc9e581a4d195"
+        ]
+      },
+      {
+        "id": "rd0edfbe426a0",
+        "reason": "Recheck sulfur-bound fluorination after uniform overprediction.",
+        "scientific_role": "Fluoro thioether probe",
+        "hypothesis_id": "R2_thio_F",
+        "evidence_ids": [
+          "r5cff832ed4e5",
+          "r8fb951953aae",
+          "r8c6aea48a4c4",
+          "rd62082bf4108"
+        ]
+      },
+      {
+        "id": "rd1d6f4b1b4f3",
+        "reason": "Complete a retrained fluorinated thioether stereopair.",
+        "scientific_role": "Fluoro thioether control",
+        "hypothesis_id": "R2_thio_F",
+        "evidence_ids": [
+          "r5cff832ed4e5",
+          "r8fb951953aae",
+          "r8c6aea48a4c4",
+          "rd62082bf4108"
+        ]
+      },
+      {
+        "id": "r096af30c96be",
+        "reason": "Measure one endpoint of a para-chloro alcohol IPA contrast.",
+        "scientific_role": "IPA condition endpoint",
+        "hypothesis_id": "R2_IPA_transfer",
+        "evidence_ids": [
+          "r78422a818a27",
+          "rbb8d894e9b81"
+        ]
+      },
+      {
+        "id": "r5b2404692d52",
+        "reason": "Complete the para-chloro alcohol condition contrast.",
+        "scientific_role": "Matched IPA contrast",
+        "hypothesis_id": "R2_IPA_transfer",
+        "evidence_ids": [
+          "r78422a818a27",
+          "rbb8d894e9b81"
+        ]
+      },
+      {
+        "id": "rd414180d964d",
+        "reason": "Anchor short-chain fluorinated imidazole retention.",
+        "scientific_role": "Short-chain imidazole",
+        "hypothesis_id": "R2_imid_chain",
+        "evidence_ids": [
+          "r9ab86cae15cb",
+          "r335ee6ab935a",
+          "r0c301df57c0b",
+          "raf6b51f7a922"
+        ]
+      },
+      {
+        "id": "r4abcb2d85150",
+        "reason": "Extend fluorinated imidazole supervision to a longer chain.",
+        "scientific_role": "Long-chain imidazole",
+        "hypothesis_id": "R2_imid_chain",
+        "evidence_ids": [
+          "r9ab86cae15cb",
+          "r335ee6ab935a",
+          "r0c301df57c0b",
+          "raf6b51f7a922"
+        ]
+      },
+      {
+        "id": "r33156f9b2d43",
+        "reason": "Add a benzodioxane primary-amide functional-group label.",
+        "scientific_role": "Dioxane amide probe",
+        "hypothesis_id": "R2_dioxane",
+        "evidence_ids": [
+          "r62bdaf640f36",
+          "r8d00449ee01d",
+          "r374b6fff4c40"
+        ]
+      },
+      {
+        "id": "r4c7e77632711",
+        "reason": "Test an ester variant in the benzodioxane functional-group series.",
+        "scientific_role": "Dioxane ester control",
+        "hypothesis_id": "R2_dioxane",
+        "evidence_ids": [
+          "r62bdaf640f36",
+          "r8d00449ee01d"
+        ]
+      },
+      {
+        "id": "r64453f5670fe",
+        "reason": "Measure one member of a positional sulfonyl-pyrrolidine stereopair.",
+        "scientific_role": "Sulfonyl stereo probe",
+        "hypothesis_id": "R2_sulfonyl_stereo",
+        "evidence_ids": [
+          "r8fc48dd07d48",
+          "rc95642cc95aa",
+          "raf84c8db1032",
+          "r853387671ca3"
+        ]
+      },
+      {
+        "id": "re8d378ad48d0",
+        "reason": "Complete the positional sulfonyl-pyrrolidine stereopair.",
+        "scientific_role": "Matched sulfonyl control",
+        "hypothesis_id": "R2_sulfonyl_stereo",
+        "evidence_ids": [
+          "r8fc48dd07d48",
+          "rc95642cc95aa",
+          "raf84c8db1032",
+          "r853387671ca3"
+        ]
+      },
+      {
+        "id": "rf8b29b105445",
+        "reason": "Extend sulfonyl-pyrrolidine transfer to a fused aryl substituent.",
+        "scientific_role": "Sulfonyl retention extension",
+        "hypothesis_id": "R2_sulfonyl_stereo",
+        "evidence_ids": [
+          "r8fc48dd07d48",
+          "rc95642cc95aa",
+          "r44b0af03ffca",
+          "r10d0ea3a5a9d"
+        ]
+      },
+      {
+        "id": "r01418b7c940a",
+        "reason": "Test a low-center enol ester with altered halogenation.",
+        "scientific_role": "Low-center enol probe",
+        "hypothesis_id": "R2_enol_low",
+        "evidence_ids": [
+          "r44eda6070306",
+          "r2de17215ebb5",
+          "r2c7fe9b498da"
+        ]
+      },
+      {
+        "id": "r14152acff189",
+        "reason": "Add a matched low-center enol ester control.",
+        "scientific_role": "Enol diastereomer control",
+        "hypothesis_id": "R2_enol_low",
+        "evidence_ids": [
+          "r44eda6070306",
+          "r2de17215ebb5",
+          "r2c7fe9b498da"
+        ]
+      },
+      {
+        "id": "r741e00bfef65",
+        "reason": "Measure the opposite cyclic-urea stereoisomer at high predicted retention.",
+        "scientific_role": "Cyclic urea stereopair",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "rdee9ecac2154",
+          "rec9ad4cf42bf",
+          "r57432fe5e27c",
+          "r0156e4903857"
+        ]
+      },
+      {
+        "id": "ra3224e9ee03f",
+        "reason": "Expand cyclic-urea supervision to a bis-CF3 analogue.",
+        "scientific_role": "Cyclic urea substitution",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "rdee9ecac2154",
+          "r57432fe5e27c",
+          "r0156e4903857",
+          "rec9ad4cf42bf"
+        ]
+      },
+      {
+        "id": "rfa2855f43cac",
+        "reason": "Measure a matched stereochemical pair after prior gap reversals.",
+        "scientific_role": "Stereochemical arbitration",
+        "hypothesis_id": "R1_pair_gaps",
+        "evidence_ids": [
+          "ra4f561f742a2",
+          "r5dcb1f727254",
+          "r638e5248d541",
+          "r23f36b634746"
+        ]
+      },
+      {
+        "id": "rb1cce5dded94",
+        "reason": "Complete the matched pair under the same recorded conditions.",
+        "scientific_role": "Matched stereo control",
+        "hypothesis_id": "R1_pair_gaps",
+        "evidence_ids": [
+          "ra4f561f742a2",
+          "r5dcb1f727254",
+          "r638e5248d541",
+          "r23f36b634746"
+        ]
+      },
+      {
+        "id": "ref2c64fc9b35",
+        "reason": "Extend hydroxyamide labels to a thienyl donor-carbonyl topology.",
+        "scientific_role": "Hydroxyamide topology",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r8407ada617b2",
+          "r8e39376ebcb3",
+          "r1e16ac30c1c7",
+          "rbf289bbaa4fb"
+        ]
+      },
+      {
+        "id": "r467623fe0eca",
+        "reason": "Test cyclohexyl hydroxyamide transfer beyond aromatic examples.",
+        "scientific_role": "Hydroxyamide boundary",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r8407ada617b2",
+          "r8e39376ebcb3",
+          "r1e16ac30c1c7",
+          "rbf289bbaa4fb"
+        ]
+      },
+      {
+        "id": "rb8d1f2bbf2cb",
+        "reason": "Probe a high-retention thienyl sulfonyl-lactam topology.",
+        "scientific_role": "Sulfonyl lactam expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r39468946d529",
+          "r44b0af03ffca",
+          "r10d0ea3a5a9d"
+        ]
+      },
+      {
+        "id": "rd8b3e876b777",
+        "reason": "Add high-coverage fused amine chemistry for representation breadth.",
+        "scientific_role": "Fused amine expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r0413a73f0ad1",
+          "r1ce6d69bff93",
+          "r4f091b192505"
+        ]
+      },
+      {
+        "id": "rb3dca1b89ae1",
+        "reason": "Test oxygenated lactone transfer at high predicted retention.",
+        "scientific_role": "Lactone topology probe",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "rcd71ff230818",
+          "rda8dcafe597c",
+          "r31ea25d4436f",
+          "r6bbdc0d1b0a7"
+        ]
+      },
+      {
+        "id": "reafb010bf9ea",
+        "reason": "Extend aldehyde ester supervision beyond the observed benzhydryl pair.",
+        "scientific_role": "Aldehyde ester expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r87487730d0f7",
+          "rf5e491fa5649",
+          "r6b1399c09769",
+          "rda8dcafe597c"
+        ]
+      },
+      {
+        "id": "rb5ffe0cb3404",
+        "reason": "Add a thiophene cyanoester label for heteroaryl coverage.",
+        "scientific_role": "Heteroaryl cyanoester",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r638e5248d541",
+          "r11c970e86c4f",
+          "r9ab86cae15cb",
+          "r92751a5e54eb"
+        ]
+      },
+      {
+        "id": "re3df43b50826",
+        "reason": "Probe nitrogen-rich polar retention outside the aminopurine pair.",
+        "scientific_role": "Nitrogen-rich expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r4f091b192505",
+          "r1ce6d69bff93",
+          "rdee9ecac2154"
+        ]
+      },
+      {
+        "id": "r50d54e46ed7c",
+        "reason": "Measure a high-coverage fused lactone-imine topology.",
+        "scientific_role": "Fused lactone expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "rcd71ff230818",
+          "rda8dcafe597c",
+          "r31ea25d4436f",
+          "r6bbdc0d1b0a7"
+        ]
+      }
+    ],
+    "hypotheses": [],
+    "previous_hypothesis_updates": [
+      {
+        "id": "R0_nitro",
+        "status": "supported",
+        "reason": "Multiple diarylnitro labels remained underpredicted across substitution and stereochemistry.",
+        "supporting_observations": [
+          "r152aeb274ce3",
+          "rc9e581a4d195",
+          "r904ca5b9cdf2",
+          "r389b25fe94fd"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_silyl",
+        "status": "supported",
+        "reason": "Original silicon probes all exceeded their frozen centers, with substantial residuals.",
+        "supporting_observations": [
+          "r2c7046c109ed",
+          "rcef55553c516",
+          "r053e22b5cf22"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_IPA",
+        "status": "supported",
+        "reason": "Lower IPA increased measured RTv much more than predicted in both alcohol contrasts.",
+        "supporting_observations": [
+          "r5fd5783db462",
+          "r2c0e05b0a3eb",
+          "r7853d982dae6",
+          "rd518907d3c7c"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_pyrrolidine",
+        "status": "supported",
+        "reason": "Original chloro and fluoro pyrrolidines strongly exceeded their frozen centers.",
+        "supporting_observations": [
+          "r853387671ca3",
+          "r21fb18d47ac5"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_isoxazoline",
+        "status": "supported",
+        "reason": "Pyrimidyl compounds exceeded aryl controls across both measured stereochemical comparisons.",
+        "supporting_observations": [
+          "r0a5b24bb447a",
+          "r0f7fd44b33cc",
+          "r9f71e1f496ba",
+          "r1f2cba2765d1"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_stereo",
+        "status": "supported",
+        "reason": "Measured stereochemical ordering differed across scaffolds, supporting scaffold-specific recognition.",
+        "supporting_observations": [
+          "ra4f561f742a2",
+          "r5dcb1f727254",
+          "ra946f8bec399",
+          "r05e82ac56feb"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R1_nitro",
+        "status": "contradicted",
+        "reason": "Both ortho-methoxy candidates were overpredicted rather than underpredicted.",
+        "supporting_observations": [],
+        "contradicting_observations": [
+          "r009bbb584775",
+          "rf196000ae9cf"
+        ]
+      },
+      {
+        "id": "R1_sulfonyl",
+        "status": "weakened",
+        "reason": "Parent and fluoro residuals were negative, while bromine was slightly positive.",
+        "supporting_observations": [
+          "r44b0af03ffca",
+          "r10d0ea3a5a9d"
+        ],
+        "contradicting_observations": [
+          "raf84c8db1032",
+          "r8fc48dd07d48"
+        ]
+      },
+      {
+        "id": "R1_IPA",
+        "status": "supported",
+        "reason": "The opposite alcohol showed a much larger-than-predicted IPA response.",
+        "supporting_observations": [
+          "r7853d982dae6",
+          "rd518907d3c7c"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R1_silicon",
+        "status": "supported",
+        "reason": "Post-retraining silicon probes retained substantial residuals across bonding environments.",
+        "supporting_observations": [
+          "r095edc8d161a",
+          "rea3559f1eb9f"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R1_pair_gaps",
+        "status": "contradicted",
+        "reason": "Hydrocarbon and cyanoester stereochemical gaps collapsed or reversed.",
+        "supporting_observations": [],
+        "contradicting_observations": [
+          "r23f36b634746",
+          "r8d212aa264dc",
+          "r11c970e86c4f",
+          "r638e5248d541"
+        ]
+      },
+      {
+        "id": "R1_thioether",
+        "status": "weakened",
+        "reason": "The parent pair retained a gap but reversed the predicted ordering and shrank in magnitude.",
+        "supporting_observations": [
+          "rac7573625d37",
+          "rb51da33949f1"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R1_isox",
+        "status": "supported",
+        "reason": "The opposite pyrimidyl compound still exceeded its aryl control substantially.",
+        "supporting_observations": [
+          "r9f71e1f496ba",
+          "r1f2cba2765d1"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R2_nitro_position",
+        "status": "supported",
+        "reason": "Meta, para-fluoro, and ortho series showed substitution-dependent retention and stereochemical behavior.",
+        "supporting_observations": [
+          "r0c88faa4a9e8",
+          "r78f4befc93ef",
+          "re3b5c11f2a4d",
+          "r009bbb584775"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R2_thio_F",
+        "status": "supported",
+        "reason": "All four fluorinated thioether candidates were substantially overpredicted.",
+        "supporting_observations": [
+          "r5cff832ed4e5",
+          "r8fb951953aae",
+          "r8c6aea48a4c4",
+          "rd62082bf4108"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R2_IPA_transfer",
+        "status": "supported",
+        "reason": "Para-chloro alcohol response increased far more than its nearly flat predicted contrast.",
+        "supporting_observations": [
+          "r78422a818a27",
+          "rbb8d894e9b81"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R2_imid_chain",
+        "status": "weakened",
+        "reason": "Short-chain labels were overpredicted and did not establish a monotonic chain-length trend.",
+        "supporting_observations": [
+          "r9ab86cae15cb",
+          "r335ee6ab935a"
+        ],
+        "contradicting_observations": [
+          "r0c301df57c0b",
+          "raf6b51f7a922"
+        ]
+      },
+      {
+        "id": "R2_dioxane",
+        "status": "contradicted",
+        "reason": "Acid and ester responses were nearly equal despite a large predicted separation.",
+        "supporting_observations": [],
+        "contradicting_observations": [
+          "r62bdaf640f36",
+          "r8d00449ee01d"
+        ]
+      },
+      {
+        "id": "R2_sulfonyl_stereo",
+        "status": "unresolved",
+        "reason": "Single bromo and ortho-chloro observations do not establish matched stereochemical gaps.",
+        "supporting_observations": [
+          "r8fc48dd07d48",
+          "rc95642cc95aa"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R2_enol_low",
+        "status": "supported",
+        "reason": "Both non-silicon low-center enol esters exceeded their frozen centers.",
+        "supporting_observations": [
+          "r44eda6070306",
+          "r2de17215ebb5"
+        ],
+        "contradicting_observations": []
+      }
+    ],
+    "feedback_interpretation": "Historical labels support local, scaffold-dependent residual transfer. Diarylnitro and fluorinated thioether behavior remains substitution-sensitive; IPA effects transferred more clearly. Large stereochemical prediction gaps often collapsed or reversed. Low-center failures also occur outside silicon chemistry. Current centers remain MSE-trained point predictions, widths are uncalibrated, and coverage is a raw-gradient distance percentile. Residual sign matches do not establish mechanisms.",
+    "batch_rationale": "All 4,018 candidates were compared globally across the 14 delivery pages. The 32 selections prioritize unresolved matched controls for nitro substitution, fluorinated thioethers, IPA, imidazole chains, dioxane functional groups, sulfonyl stereochemistry, and low-center enol esters. Remaining slots add stereopairs and chemically distinct donor-carbonyl, lactone, heteroaryl, fused-amine, and nitrogen-rich labels. No page or scaffold quotas were used.",
+    "unresolved_questions": [
+      "Does diarylnitro residual direction depend on substitution position, halogen, and stereochemistry?",
+      "Do retrained fluorinated thioether centers remain systematically high across new constitutional variants?",
+      "Does the para-chloro alcohol IPA response reproduce across additional condition endpoints?",
+      "Can short and long side-chain fluorinated imidazoles establish a retention trend?",
+      "How should benzodioxane amide, ester, and acid labels be reconciled?",
+      "Do unmeasured sulfonyl-pyrrolidine stereopairs show substantial gaps?",
+      "Do low-center enol ester failures persist across halogen and heteroaryl variants?",
+      "Which exploratory donor-carbonyl and heteroaryl labels transfer beyond immediate analogues?"
+    ]
+  },
+  "prediction_before_measurement": {
+    "2722": [
+      24.21335792541504,
+      29.747556686401367,
+      41.6051025390625
+    ],
+    "3511": [
+      28.448625564575195,
+      35.48970413208008,
+      50.23294448852539
+    ],
+    "3379": [
+      22.540210723876953,
+      26.195816040039062,
+      36.72818374633789
+    ],
+    "2685": [
+      25.938243865966797,
+      31.24631690979004,
+      44.129268646240234
+    ],
+    "2703": [
+      39.23508834838867,
+      50.59324264526367,
+      70.53467559814453
+    ],
+    "2702": [
+      33.84988784790039,
+      42.361385345458984,
+      59.52075958251953
+    ],
+    "132": [
+      12.553407669067383,
+      16.003015518188477,
+      23.308244705200195
+    ],
+    "248": [
+      13.43130111694336,
+      17.35392189025879,
+      24.762989044189453
+    ],
+    "2072": [
+      10.54251766204834,
+      15.781502723693848,
+      18.9227237701416
+    ],
+    "4919": [
+      9.152175903320312,
+      12.946793556213379,
+      16.602590560913086
+    ],
+    "629": [
+      14.210200309753418,
+      17.51031494140625,
+      26.012451171875
+    ],
+    "143": [
+      11.142024040222168,
+      12.993352890014648,
+      21.460464477539062
+    ],
+    "254": [
+      9.897699356079102,
+      11.621027946472168,
+      17.590789794921875
+    ],
+    "442": [
+      9.3406400680542,
+      11.401274681091309,
+      16.25733184814453
+    ],
+    "3158": [
+      33.20964813232422,
+      42.789737701416016,
+      58.035316467285156
+    ],
+    "3157": [
+      34.72278594970703,
+      44.99298858642578,
+      61.428714752197266
+    ],
+    "3736": [
+      29.769969940185547,
+      39.22378158569336,
+      52.6109504699707
+    ],
+    "4737": [
+      2.0249295234680176,
+      2.033595085144043,
+      22.959257125854492
+    ],
+    "4028": [
+      1.4717445373535156,
+      1.8677136898040771,
+      20.785451889038086
+    ],
+    "3733": [
+      30.882368087768555,
+      40.10147476196289,
+      54.32389450073242
+    ],
+    "3732": [
+      17.871871948242188,
+      22.145523071289062,
+      30.80411148071289
+    ],
+    "3071": [
+      12.297074317932129,
+      16.613967895507812,
+      22.723255157470703
+    ],
+    "2277": [
+      8.723644256591797,
+      11.682701110839844,
+      17.267589569091797
+    ],
+    "1009": [
+      31.17700958251953,
+      41.91682815551758,
+      55.98649215698242
+    ],
+    "1070": [
+      17.89038848876953,
+      22.594253540039062,
+      31.6766414642334
+    ],
+    "4707": [
+      32.773590087890625,
+      44.42413330078125,
+      59.5592155456543
+    ],
+    "2477": [
+      22.545333862304688,
+      27.850597381591797,
+      37.72282791137695
+    ],
+    "2911": [
+      21.51988983154297,
+      26.859176635742188,
+      37.030601501464844
+    ],
+    "798": [
+      21.51873779296875,
+      29.33870506286621,
+      37.517215728759766
+    ],
+    "876": [
+      21.583112716674805,
+      30.166099548339844,
+      39.612388610839844
+    ],
+    "3294": [
+      25.460561752319336,
+      31.555627822875977,
+      45.85007095336914
+    ],
+    "2968": [
+      21.074298858642578,
+      28.52451515197754,
+      38.54812240600586
+    ]
+  }
+}
