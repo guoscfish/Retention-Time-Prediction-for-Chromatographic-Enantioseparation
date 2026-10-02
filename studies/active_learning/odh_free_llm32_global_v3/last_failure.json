@@ -1,5 +1,5 @@
 {
-  "status": "INTERRUPTED",
-  "error": "LOCAL_OR_VALIDATION_FAILURE",
-  "completed_rounds": 1
+  "status": "STOPPED_FAILURE",
+  "error": "RESPONSES_HTTP_429",
+  "completed_rounds": 2
 }

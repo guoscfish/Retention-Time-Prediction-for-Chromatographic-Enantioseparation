@@ -1,9 +1,9 @@
-# IN_PROGRESS
+# STOPPED_PROVIDER_DAILY_LIMIT
 
-Verified completed rounds: 1/6; L365.
+Completed 2/6 rounds, L397. Target remains six rounds, L525.
 
-Registered: token4research / gpt-6-astra / high; six batches of32, stop at L525.
-This is the last recorded checkpoint, not a claim that a process is still alive.
-Resume with `.conda-hplc-al/bin/python scripts/run_hplc_global_v3.py run`.
-Completed responses/fits are verified and reused; transient requests retry at most five times with bounded backoff.
-See `execution_status.json` and `results/summary.json` when complete.
+On 2026-10-02 (Asia/Shanghai), five content-free preflight retries failed with HTTP 429. Diagnostic requests confirmed USAGE_LIMIT_EXCEEDED / DAILY_LIMIT_EXCEEDED. The provider supplied no reset time. No process is running and no new scientific request or label access occurred during this resume.
+
+The third-round response was archived because it omitted six historical hypothesis updates. Its original request and attempt counters are retained for an identical full-pool retry after quota recovery.
+
+Resume using the command in execution_status.json; completed rounds are verified and reused.

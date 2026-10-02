@@ -1,0 +1,14 @@
+{
+  "status": "INCOMPLETE_HYPOTHESIS_UPDATES",
+  "missing": [
+    "R0_IPA",
+    "R0_isoxazoline",
+    "R0_nitro",
+    "R0_pyrrolidine",
+    "R0_silyl",
+    "R0_stereo"
+  ],
+  "receipt_sha256": "567e3f429062a384d7eea9d93233b69289ad850865befc04e89ee935d57d4630",
+  "new_labels_revealed": 0,
+  "retry_policy": "Identical registered full-pool request; preserve attempt counters and original response."
+}
