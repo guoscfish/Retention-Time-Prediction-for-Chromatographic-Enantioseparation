@@ -1,0 +1,49 @@
+{
+  "initialization_seed": 1525,
+  "training_seed": 1525,
+  "initialization_hash": "82f9d7e78b7f6a4794be4114605ed8d8ef7e37d7d2ca3cd8c8c0add062c164da",
+  "checkpoint_state_hash": "01c395ce9b04de86fec23be98e0d5998342ec3d766956bc01d382a322f53db7e",
+  "checkpoint_path": "attempt_000/best.pt",
+  "checkpoint_hash": "27dce508625a9d5993e52d5abe1a85ee150b1bb9c19f2fd1fff72ceb2ab980c4",
+  "epochs_run": 208,
+  "total_optimizer_steps": 624,
+  "best_epoch": 108,
+  "best_validation_mse": 61.583069057351,
+  "best_validation_metrics": {
+    "rmse": 7.847488073093899,
+    "mae": 5.107404537046486,
+    "r2": 0.20400390735027196,
+    "nrmse": 0.6722448851876911
+  },
+  "best_optimizer_step": 324,
+  "final_validation_metrics": {
+    "rmse": 8.086720638166035,
+    "mae": 5.623090536488212,
+    "r2": 0.15473188302409235,
+    "nrmse": 0.6927384325167373
+  },
+  "final_checkpoint_path": "attempt_000/final.pt",
+  "final_checkpoint_hash": "dd2e7674abe0f54c8aad3d6346aa97dd387ab571139ed5c0a9d0ecf8a6b90b93",
+  "stopped_epoch": 208,
+  "seconds": 233.85327316704206,
+  "stopping_reason": "patience",
+  "attempted_fits": 1,
+  "abandoned_attempts": [],
+  "L_hash": "4b57587c1c57f1952d671a24499145d6fa95455c036c0d15c4932fe0a1693987",
+  "budget": 525,
+  "steps_per_epoch": 3,
+  "observed_batch_sizes": [
+    256,
+    256,
+    13
+  ],
+  "input_hash": "c591868698cc2446bc3f22c3ae9e40b590e87bc7ad42d39d8a04cd675423e765",
+  "files": {
+    "input.json": "c591868698cc2446bc3f22c3ae9e40b590e87bc7ad42d39d8a04cd675423e765",
+    "attempt_000/best.pt": "27dce508625a9d5993e52d5abe1a85ee150b1bb9c19f2fd1fff72ceb2ab980c4",
+    "attempt_000/training_curve.csv": "999393218902ce4f620987491adb9fab1d0d0827ee6ddc086d4861b5921d7fc6",
+    "attempt_000/validation_predictions.npz": "43efb047a2fdfbedf6853cf746d1ae021b86eede69869cb44d6dc7ff95478046",
+    "attempt_000/final.pt": "dd2e7674abe0f54c8aad3d6346aa97dd387ab571139ed5c0a9d0ecf8a6b90b93",
+    "attempt_000/final_validation_predictions.npz": "0dfccace8995c22b55028950f97196c2df301a341bce5d8ddbae83ca6e2e1160"
+  }
+}
