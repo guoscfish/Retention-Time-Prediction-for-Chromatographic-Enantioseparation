@@ -1,0 +1,1799 @@
+{
+  "study": "odh_free_llm32_global_v3",
+  "seed": 1525,
+  "method": "odh_free_llm32_global_v3/1525/free_llm32_global",
+  "round": 2,
+  "response": {
+    "type": "selection",
+    "packet_hash": "0e38d69b39c0237ef0598bdd05255921a89636b25519a25277a4156e967b45db",
+    "choices": [
+      {
+        "id": "r0c88faa4a9e8",
+        "reason": "Add meta-methoxy substitution between measured ortho and para examples whose retention and historical residuals differed substantially.",
+        "scientific_role": "Positional substitution control",
+        "hypothesis_id": "R2_nitro_position",
+        "evidence_ids": [
+          "r009bbb584775",
+          "rf196000ae9cf",
+          "r904ca5b9cdf2",
+          "r389b25fe94fd"
+        ]
+      },
+      {
+        "id": "r78f4befc93ef",
+        "reason": "Test para-fluoro diarylnitro retention where current centers suggest almost no enantiomer separation.",
+        "scientific_role": "Halogen and stereochemical probe",
+        "hypothesis_id": "R2_nitro_position",
+        "evidence_ids": [
+          "r152aeb274ce3",
+          "r3ccba366843c",
+          "r009bbb584775",
+          "rf196000ae9cf"
+        ]
+      },
+      {
+        "id": "re3b5c11f2a4d",
+        "reason": "Complete the para-fluoro pair at identical conditions to distinguish substitution effects from stereochemical prediction errors.",
+        "scientific_role": "Matched enantiomer control",
+        "hypothesis_id": "R2_nitro_position",
+        "evidence_ids": [
+          "r152aeb274ce3",
+          "r3ccba366843c",
+          "r009bbb584775",
+          "rf196000ae9cf"
+        ]
+      },
+      {
+        "id": "r5cff832ed4e5",
+        "reason": "Challenge the high center for fluorination on the sulfur-bound aryl ring relative to the measured parent thioether.",
+        "scientific_role": "Fluorination placement probe",
+        "hypothesis_id": "R2_thio_F",
+        "evidence_ids": [
+          "rac7573625d37",
+          "rb51da33949f1"
+        ]
+      },
+      {
+        "id": "r8fb951953aae",
+        "reason": "Complete the sulfur-bound para-fluoro pair and test whether its predicted long retention applies to both enantiomers.",
+        "scientific_role": "Matched thioether enantiomer",
+        "hypothesis_id": "R2_thio_F",
+        "evidence_ids": [
+          "rac7573625d37",
+          "rb51da33949f1"
+        ]
+      },
+      {
+        "id": "r8c6aea48a4c4",
+        "reason": "Move fluorine to the carbon-bound aryl ring while preserving recorded conditions, directly testing constitutional transfer.",
+        "scientific_role": "Matched constitutional control",
+        "hypothesis_id": "R2_thio_F",
+        "evidence_ids": [
+          "rac7573625d37",
+          "rb51da33949f1"
+        ]
+      },
+      {
+        "id": "rd62082bf4108",
+        "reason": "Complete the carbon-bound para-fluoro pair, separating fluorination placement from stereochemistry across four matched experiments.",
+        "scientific_role": "Stereochemical interaction control",
+        "hypothesis_id": "R2_thio_F",
+        "evidence_ids": [
+          "rac7573625d37",
+          "rb51da33949f1"
+        ]
+      },
+      {
+        "id": "r78422a818a27",
+        "reason": "Establish the 5% IPA endpoint for a para-chloro alcohol, extending the measured bis-CF3 condition response.",
+        "scientific_role": "Condition response anchor",
+        "hypothesis_id": "R2_IPA_transfer",
+        "evidence_ids": [
+          "r7853d982dae6",
+          "rd518907d3c7c",
+          "r5fd5783db462",
+          "r2c0e05b0a3eb"
+        ]
+      },
+      {
+        "id": "rbb8d894e9b81",
+        "reason": "Measure the identical alcohol at 2% IPA and fixed flow, testing a nearly flat predicted condition response.",
+        "scientific_role": "Matched IPA contrast",
+        "hypothesis_id": "R2_IPA_transfer",
+        "evidence_ids": [
+          "r7853d982dae6",
+          "rd518907d3c7c",
+          "r5fd5783db462",
+          "r2c0e05b0a3eb"
+        ]
+      },
+      {
+        "id": "r4f091b192505",
+        "reason": "Complete the aminopurine cyclobutane enantiomer comparison after its partner showed substantial historical underprediction.",
+        "scientific_role": "Nitrogen-rich stereo anchor",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r1ce6d69bff93"
+        ]
+      },
+      {
+        "id": "r9ab86cae15cb",
+        "reason": "Measure the methyl-side-chain fluorinated imidazole ketone to resolve retention transfer across the observed alkyl and phenyl series.",
+        "scientific_role": "Side-chain length anchor",
+        "hypothesis_id": "R2_imid_chain",
+        "evidence_ids": [
+          "r0c301df57c0b",
+          "raf6b51f7a922",
+          "ra4f561f742a2",
+          "r5dcb1f727254"
+        ]
+      },
+      {
+        "id": "r335ee6ab935a",
+        "reason": "Add the ethyl-side-chain analogue at identical conditions and matched CIP configuration, testing the predicted chain-length trend.",
+        "scientific_role": "Matched homolog contrast",
+        "hypothesis_id": "R2_imid_chain",
+        "evidence_ids": [
+          "r0c301df57c0b",
+          "raf6b51f7a922",
+          "ra4f561f742a2",
+          "r5dcb1f727254"
+        ]
+      },
+      {
+        "id": "r8407ada617b2",
+        "reason": "Extend hydroxyamide supervision to a thienyl compound with altered donor-carbonyl spacing and substantial predicted retention.",
+        "scientific_role": "Donor topology expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r1e16ac30c1c7",
+          "rbf289bbaa4fb"
+        ]
+      },
+      {
+        "id": "r8e39376ebcb3",
+        "reason": "Probe a cyclohexyl hydroxyamide with a lower center, testing the limits of transfer from long-retained aromatic hydroxyamides.",
+        "scientific_role": "Hydroxyamide transfer boundary",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r1e16ac30c1c7",
+          "rbf289bbaa4fb"
+        ]
+      },
+      {
+        "id": "r62bdaf640f36",
+        "reason": "Measure a high-center benzodioxane carboxylic acid alongside its methyl ester under identical recorded conditions.",
+        "scientific_role": "Acid versus ester probe",
+        "hypothesis_id": "R2_dioxane",
+        "evidence_ids": []
+      },
+      {
+        "id": "r8d00449ee01d",
+        "reason": "Anchor the methyl ester for a clean acid-ester contrast at 2% IPA and flow 1.0.",
+        "scientific_role": "Matched functional-group control",
+        "hypothesis_id": "R2_dioxane",
+        "evidence_ids": []
+      },
+      {
+        "id": "r374b6fff4c40",
+        "reason": "Extend the benzodioxane series to a primary amide at its supplied conditions, adding donor-bearing chemical coverage.",
+        "scientific_role": "Amide coverage extension",
+        "hypothesis_id": "R2_dioxane",
+        "evidence_ids": [
+          "rec9ad4cf42bf",
+          "r1e16ac30c1c7"
+        ]
+      },
+      {
+        "id": "rbe108a26d2eb",
+        "reason": "Explore a high-center sulfonamide cyclopentenone with a matched parent, testing retention transfer into a distinct donor-carbonyl arrangement.",
+        "scientific_role": "Retention-tail exploration",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r6cd3527500a2"
+        ]
+      },
+      {
+        "id": "r8e53b24bd1e9",
+        "reason": "Provide the unsubstituted aryl comparison for the selected methoxy/bromo cyclopentenone at identical IPA and flow.",
+        "scientific_role": "Matched aromatic substitution control",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r6cd3527500a2"
+        ]
+      },
+      {
+        "id": "r39468946d529",
+        "reason": "Test high predicted retention in a thienyl N-sulfonyl lactam, expanding beyond the measured sulfonyl pyrrolidine family.",
+        "scientific_role": "Sulfonyl topology expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r44b0af03ffca",
+          "raf84c8db1032",
+          "r10d0ea3a5a9d"
+        ]
+      },
+      {
+        "id": "r0413a73f0ad1",
+        "reason": "Add a quinolyl alkyne with dimethoxy tetralin topology and high gradient distance, broadening nitrogen-containing aromatic supervision.",
+        "scientific_role": "Chemical coverage expansion",
+        "hypothesis_id": null,
+        "evidence_ids": []
+      },
+      {
+        "id": "r0321f8f5c28a",
+        "reason": "Explore a fused cyclic carbamate-ketone whose topology differs from the substitution-sensitive measured oxazolidinones.",
+        "scientific_role": "Fused carbonyl topology probe",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r57432fe5e27c",
+          "r0156e4903857",
+          "rec9ad4cf42bf"
+        ]
+      },
+      {
+        "id": "rdee9ecac2154",
+        "reason": "Add a fluorophenyl cyclic urea with two donors and high gradient distance, extending donor-carbonyl coverage beyond existing lactams.",
+        "scientific_role": "Cyclic urea exploration",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "rf3169787dfec",
+          "rec9ad4cf42bf"
+        ]
+      },
+      {
+        "id": "r4b2e792d7d55",
+        "reason": "Anchor a high-center furyl diol and test stereochemical prediction differences in a compact oxygen-rich heteroaromatic environment.",
+        "scientific_role": "Polar heteroaryl stereo anchor",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "rb33661cd4f4b"
+        ]
+      },
+      {
+        "id": "r982a8147aa4b",
+        "reason": "Complete the furyl diol pair under identical conditions to distinguish shared polar retention from its predicted enantiomer gap.",
+        "scientific_role": "Matched diol enantiomer",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "rb33661cd4f4b"
+        ]
+      },
+      {
+        "id": "r96d09337014c",
+        "reason": "Measure the opposite phenyl silyl-alkyne amide enantiomer after the prior transfer probe was overpredicted.",
+        "scientific_role": "Post-retraining silicon control",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "r095edc8d161a",
+          "r27cf79b602a6",
+          "r2c7046c109ed"
+        ]
+      },
+      {
+        "id": "r8fc48dd07d48",
+        "reason": "Complete the para-bromo sulfonyl pyrrolidine pair, challenging its predicted separation against small measured fluoro and chloro gaps.",
+        "scientific_role": "Sulfonyl stereo transfer",
+        "hypothesis_id": "R2_sulfonyl_stereo",
+        "evidence_ids": [
+          "raf84c8db1032",
+          "r10d0ea3a5a9d",
+          "r21fb18d47ac5",
+          "r853387671ca3"
+        ]
+      },
+      {
+        "id": "rc95642cc95aa",
+        "reason": "Complete the ortho-chloro sulfonyl pyrrolidine pair, resolving positional effects using the already measured para-chloro pair.",
+        "scientific_role": "Positional stereo control",
+        "hypothesis_id": "R2_sulfonyl_stereo",
+        "evidence_ids": [
+          "r1c2cb56d33e0",
+          "r3339cd16fd17",
+          "r853387671ca3"
+        ]
+      },
+      {
+        "id": "r44eda6070306",
+        "reason": "Directly test a near-zero center in a non-silicon enol ester with a related measured analogue.",
+        "scientific_role": "Low-center extrapolation probe",
+        "hypothesis_id": "R2_enol_low",
+        "evidence_ids": [
+          "r2c7fe9b498da"
+        ]
+      },
+      {
+        "id": "r2de17215ebb5",
+        "reason": "Measure the matched diastereomer to determine whether both low centers reflect shared retention or configuration-dependent behavior.",
+        "scientific_role": "Matched diastereomer control",
+        "hypothesis_id": "R2_enol_low",
+        "evidence_ids": [
+          "r2c7fe9b498da"
+        ]
+      },
+      {
+        "id": "rda8dcafe597c",
+        "reason": "Probe a benzyl-substituted diaryl lactone with high gradient distance, testing transfer beyond the overpredicted fused oxygenated lactone.",
+        "scientific_role": "Lactone topology boundary",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "rcd71ff230818",
+          "r1aeacee89c15"
+        ]
+      },
+      {
+        "id": "r71363f713f45",
+        "reason": "Replace the phenyl neighborhood with furan in an aldehyde-bearing ester, extending measured retention supervision into a distinct heteroaromatic environment.",
+        "scientific_role": "Heteroaryl ester expansion",
+        "hypothesis_id": null,
+        "evidence_ids": [
+          "rd1a1366cb1ff",
+          "r87487730d0f7",
+          "rf5e491fa5649"
+        ]
+      }
+    ],
+    "hypotheses": [
+      {
+        "id": "R2_nitro_position",
+        "claim": "Diarylnitro retention and stereochemical separation may depend strongly on substitution position; the meta-methoxy and para-fluoro measurements can delimit transfer from the observed ortho and para series.",
+        "alternative": "Current centers may capture these substitutions adequately, with no remaining systematic positional or stereochemical residual.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r0c88faa4a9e8",
+          "r78f4befc93ef",
+          "re3b5c11f2a4d"
+        ],
+        "evidence_ids": [
+          "r009bbb584775",
+          "rf196000ae9cf",
+          "r904ca5b9cdf2",
+          "r389b25fe94fd"
+        ],
+        "learning_value": "Resolve positional transfer after the ortho-methoxy pair contradicted the previous underprediction hypothesis."
+      },
+      {
+        "id": "R2_thio_F",
+        "claim": "The selected para-fluorinated thioether esters may be overpredicted relative to their measured parent, despite the current centers assigning long retention to both fluorination placements.",
+        "alternative": "Fluorination may genuinely increase retention substantially, with its placement and stereochemistry producing effects absent from the parent.",
+        "expected_sign": 1,
+        "candidate_ids": [
+          "r5cff832ed4e5",
+          "r8fb951953aae",
+          "r8c6aea48a4c4",
+          "rd62082bf4108"
+        ],
+        "evidence_ids": [
+          "rac7573625d37",
+          "rb51da33949f1"
+        ],
+        "learning_value": "Separate fluorination placement, shared scaffold retention, and stereochemical effects using four same-condition measurements."
+      },
+      {
+        "id": "R2_IPA_transfer",
+        "claim": "The para-chloro alcohol may show a larger RTv increase from 5% to 2% IPA than the approximately 0.92 mL increase predicted at fixed flow.",
+        "alternative": "The stronger IPA response observed for bis-CF3 alcohols may not transfer quantitatively to the para-chloro analogue.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r78422a818a27",
+          "rbb8d894e9b81"
+        ],
+        "evidence_ids": [
+          "r7853d982dae6",
+          "rd518907d3c7c",
+          "r5fd5783db462",
+          "r2c0e05b0a3eb"
+        ],
+        "learning_value": "Test condition sensitivity across aromatic substitution without changing identity, stereochemistry, or flow within the contrast."
+      },
+      {
+        "id": "R2_imid_chain",
+        "claim": "The methyl and ethyl side-chain fluorinated imidazole ketones may reveal a retention trend that cannot be inferred reliably from the observed longer alkyl and phenyl examples.",
+        "alternative": "Current centers may interpolate the side-chain dependence adequately; the large phenyl-example errors may remain local.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r9ab86cae15cb",
+          "r335ee6ab935a"
+        ],
+        "evidence_ids": [
+          "r0c301df57c0b",
+          "raf6b51f7a922",
+          "ra4f561f742a2",
+          "r5dcb1f727254"
+        ],
+        "learning_value": "Resolve side-chain transfer with matched configuration and recorded conditions in a previously problematic ketone family."
+      },
+      {
+        "id": "R2_dioxane",
+        "claim": "The benzodioxane acid may retain substantially longer than its methyl ester at identical conditions; the primary amide supplies contextual coverage at its different recorded IPA.",
+        "alternative": "The predicted acid-ester separation may be exaggerated, and the amide cannot isolate functional-group effects because its IPA differs.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r62bdaf640f36",
+          "r8d00449ee01d",
+          "r374b6fff4c40"
+        ],
+        "evidence_ids": [],
+        "learning_value": "Measure a clean acid-ester contrast while expanding a common oxygenated scaffold into primary-amide chemistry."
+      },
+      {
+        "id": "R2_sulfonyl_stereo",
+        "claim": "The unmeasured bromo and ortho-chloro sulfonyl pyrrolidines may expose substitution-specific stereochemical gaps beyond the small measured para-fluoro and para-chloro differences.",
+        "alternative": "Their gaps may also be small, indicating that the current bromo and ortho-chloro predictions exaggerate stereochemical separation.",
+        "expected_sign": 0,
+        "candidate_ids": [
+          "r8fc48dd07d48",
+          "rc95642cc95aa"
+        ],
+        "evidence_ids": [
+          "raf84c8db1032",
+          "r1c2cb56d33e0",
+          "r3339cd16fd17",
+          "r853387671ca3"
+        ],
+        "learning_value": "Complete two observed-neighbor pairs without assuming universal CIP ordering or persistent underprediction."
+      },
+      {
+        "id": "R2_enol_low",
+        "claim": "Both selected multiaryl enol ester diastereomers may retain longer than their sub-2 mL frozen centers, extending the retention scale of the measured related ester.",
+        "alternative": "Their substitution and configuration may genuinely yield short retention; the neighboring observation may not transfer.",
+        "expected_sign": -1,
+        "candidate_ids": [
+          "r44eda6070306",
+          "r2de17215ebb5"
+        ],
+        "evidence_ids": [
+          "r2c7fe9b498da"
+        ],
+        "learning_value": "Test low-center behavior outside silicon-containing chemistry with a matched diastereomer comparison."
+      }
+    ],
+    "previous_hypothesis_updates": [
+      {
+        "id": "R0_nitro",
+        "status": "supported",
+        "reason": "The original four compounds remain underpredicted historically; subsequent ortho-methoxy failures restrict broader transfer, rather than overturning those measurements.",
+        "supporting_observations": [
+          "r152aeb274ce3",
+          "rc9e581a4d195",
+          "r904ca5b9cdf2",
+          "r389b25fe94fd"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_silyl",
+        "status": "supported",
+        "reason": "All three original low-center probes exceeded their frozen centers; later silicon examples show that this direction is not universal.",
+        "supporting_observations": [
+          "r2c7046c109ed",
+          "rcef55553c516",
+          "r053e22b5cf22"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_IPA",
+        "status": "supported",
+        "reason": "The original alcohol increased 4.14 mL at lower IPA; the opposite enantiomer independently showed an even larger increase.",
+        "supporting_observations": [
+          "r5fd5783db462",
+          "r2c0e05b0a3eb",
+          "r7853d982dae6",
+          "rd518907d3c7c"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_pyrrolidine",
+        "status": "supported",
+        "reason": "The original chloro and fluoro probes exceeded their frozen centers; later parent and opposite-fluoro measurements also retained negative residuals.",
+        "supporting_observations": [
+          "r853387671ca3",
+          "r21fb18d47ac5",
+          "r44b0af03ffca",
+          "r10d0ea3a5a9d"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_isoxazoline",
+        "status": "supported",
+        "reason": "Pyrimidyl retention exceeded the aryl comparison in both measured enantiomer sets; the proposed acceptor mechanism remains unresolved.",
+        "supporting_observations": [
+          "r0a5b24bb447a",
+          "r0f7fd44b33cc",
+          "r9f71e1f496ba",
+          "r1f2cba2765d1"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R0_stereo",
+        "status": "supported",
+        "reason": "Imidazole and diazepinone pairs retain opposite CIP-based ordering, supporting scaffold-specific stereochemical supervision.",
+        "supporting_observations": [
+          "ra4f561f742a2",
+          "r5dcb1f727254",
+          "ra946f8bec399",
+          "r05e82ac56feb"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R1_nitro",
+        "status": "contradicted",
+        "reason": "Both ortho-methoxy compounds were overpredicted, by 24.89 and 5.17 mL, contradicting the proposed negative residual transfer.",
+        "supporting_observations": [],
+        "contradicting_observations": [
+          "r009bbb584775",
+          "rf196000ae9cf"
+        ]
+      },
+      {
+        "id": "R1_sulfonyl",
+        "status": "weakened",
+        "reason": "Parent and opposite-fluoro compounds remained underpredicted, but the bromo analogue was slightly overpredicted; residual direction is substitution-specific.",
+        "supporting_observations": [
+          "r44b0af03ffca",
+          "r10d0ea3a5a9d"
+        ],
+        "contradicting_observations": [
+          "raf84c8db1032"
+        ]
+      },
+      {
+        "id": "R1_IPA",
+        "status": "supported",
+        "reason": "The opposite alcohol enantiomer increased 7.26 mL from 5% to 2% IPA, versus approximately 1.45 mL predicted.",
+        "supporting_observations": [
+          "r7853d982dae6",
+          "rd518907d3c7c"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R1_silicon",
+        "status": "supported",
+        "reason": "Substantial residuals persisted in both probes, now as overprediction; this supports residual persistence but not transfer of the earlier underprediction direction.",
+        "supporting_observations": [
+          "r095edc8d161a",
+          "rea3559f1eb9f"
+        ],
+        "contradicting_observations": []
+      },
+      {
+        "id": "R1_pair_gaps",
+        "status": "contradicted",
+        "reason": "The hydrocarbon gap nearly vanished and the cyanoester ordering reversed; the large frozen contrasts did not preserve measured stereochemical behavior.",
+        "supporting_observations": [],
+        "contradicting_observations": [
+          "r23f36b634746",
+          "r8d212aa264dc",
+          "r11c970e86c4f",
+          "r638e5248d541"
+        ]
+      },
+      {
+        "id": "R1_thioether",
+        "status": "weakened",
+        "reason": "A sizable 8.4 mL gap remained, but ordering reversed and magnitude fell from approximately 13.29 mL predicted.",
+        "supporting_observations": [],
+        "contradicting_observations": [
+          "rac7573625d37",
+          "rb51da33949f1"
+        ]
+      },
+      {
+        "id": "R1_isox",
+        "status": "supported",
+        "reason": "The opposite pyrimidyl compound exceeded its aryl comparison by 21.304 mL; this confirms the relative contrast without establishing its mechanism.",
+        "supporting_observations": [
+          "r9f71e1f496ba",
+          "r1f2cba2765d1"
+        ],
+        "contradicting_observations": []
+      }
+    ],
+    "feedback_interpretation": "Historical errors show substitution-specific transfer failures: ortho-methoxy nitro and later silicon probes reversed earlier residual directions. Several predicted stereochemical gaps reversed or collapsed, while stronger-than-predicted IPA sensitivity persisted in both alcohol enantiomers. Sulfonyl pyrrolidine residuals were mixed. These frozen historical errors are not current-candidate errors. Centers are MSE-trained predictions, not medians; widths are not calibrated epistemic uncertainty, and coverage is nearest-labeled raw-gradient distance percentile. Relative contrasts and matching residual signs do not establish chemical mechanisms.",
+    "batch_rationale": "All 4,050 candidates were considered globally. The batch combines observed-neighbor completions, a clean IPA contrast, four thioether fluorination controls, matched homologs, and chemically distinct coverage extensions. Acid-ester and cyclopentenone comparisons isolate useful chemical changes; the amide supplies contextual coverage at different IPA. Selection avoids redundant identical-condition experiments and balances long-retention learning with direct low-center tests. No page, scaffold, stereochemistry, or condition quotas were imposed.",
+    "unresolved_questions": [
+      "Does meta-methoxy diarylnitro retention resemble the ortho or para series, and does para-fluorination preserve their stereochemical separation?",
+      "Are high centers for fluorinated thioether esters justified, and does fluorine placement change retention independently of stereochemistry?",
+      "Does stronger-than-predicted IPA sensitivity transfer from bis-CF3 to para-chloro alcohols?",
+      "How does fluorinated imidazole-ketone retention vary between short alkyl, longer alkyl, and phenyl side chains?",
+      "Is the large predicted benzodioxane acid-ester contrast measured at fixed conditions?",
+      "Do bromo and ortho-chloro sulfonyl pyrrolidines have larger stereochemical gaps than their para-fluoro and para-chloro counterparts?",
+      "Do near-zero enol ester centers represent genuine short retention or a local prediction failure?",
+      "Which exploratory donor-carbonyl, heteroaryl, and lactone labels transfer beyond their immediate chemical neighborhoods?"
+    ]
+  },
+  "observations": [
+    {
+      "smiles": "COc1cccc([C@H](C[N+](=O)[O-])c2ccc(C)cc2)c1",
+      "scaffold": "c1ccc(Cc2ccccc2)cc1",
+      "identity": "d3885e24d4168ff5",
+      "scaffold_group": "82e0b05966f30d5b",
+      "functional_groups": [
+        "NH0",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 8,
+          "CIP": "R"
+        }
+      ],
+      "MW": 271.316,
+      "LogP": 3.4122200000000023,
+      "TPSA": 52.37,
+      "HBD": 0,
+      "HBA": 3,
+      "ipa_fraction": 0.1,
+      "flow": 1.5,
+      "id": "r0c88faa4a9e8",
+      "premeasurement_prediction": [
+        28.9346923828125,
+        37.268310546875,
+        45.777095794677734
+      ],
+      "premeasurement_center": 37.268310546875,
+      "response": 46.5,
+      "signed_error": -9.231689453125,
+      "abs_error": 9.231689453125,
+      "selection_reason": "Add meta-methoxy substitution between measured ortho and para examples whose retention and historical residuals differed substantially.",
+      "hypothesis_id": "R2_nitro_position",
+      "scientific_role": "Positional substitution control"
+    },
+    {
+      "smiles": "Cc1ccc([C@@H](C[N+](=O)[O-])c2ccc(F)cc2)cc1",
+      "scaffold": "c1ccc(Cc2ccccc2)cc1",
+      "identity": "813f2fa24823c17c",
+      "scaffold_group": "82e0b05966f30d5b",
+      "functional_groups": [
+        "NH0",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 7,
+          "CIP": "R"
+        }
+      ],
+      "MW": 259.28,
+      "LogP": 3.542720000000002,
+      "TPSA": 43.14,
+      "HBD": 0,
+      "HBA": 2,
+      "ipa_fraction": 0.1,
+      "flow": 1.5,
+      "id": "r78f4befc93ef",
+      "premeasurement_prediction": [
+        19.179590225219727,
+        21.46889877319336,
+        30.139440536499023
+      ],
+      "premeasurement_center": 21.46889877319336,
+      "response": 20.399999618530273,
+      "signed_error": 1.068899154663086,
+      "abs_error": 1.068899154663086,
+      "selection_reason": "Test para-fluoro diarylnitro retention where current centers suggest almost no enantiomer separation.",
+      "hypothesis_id": "R2_nitro_position",
+      "scientific_role": "Halogen and stereochemical probe"
+    },
+    {
+      "smiles": "Cc1ccc([C@H](C[N+](=O)[O-])c2ccc(F)cc2)cc1",
+      "scaffold": "c1ccc(Cc2ccccc2)cc1",
+      "identity": "83cdb8fdb76dc400",
+      "scaffold_group": "82e0b05966f30d5b",
+      "functional_groups": [
+        "NH0",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 7,
+          "CIP": "S"
+        }
+      ],
+      "MW": 259.28,
+      "LogP": 3.542720000000002,
+      "TPSA": 43.14,
+      "HBD": 0,
+      "HBA": 2,
+      "ipa_fraction": 0.1,
+      "flow": 1.5,
+      "id": "re3b5c11f2a4d",
+      "premeasurement_prediction": [
+        19.192880630493164,
+        22.419431686401367,
+        29.75078773498535
+      ],
+      "premeasurement_center": 22.419431686401367,
+      "response": 37.349998474121094,
+      "signed_error": -14.930566787719727,
+      "abs_error": 14.930566787719727,
+      "selection_reason": "Complete the para-fluoro pair at identical conditions to distinguish substitution effects from stereochemical prediction errors.",
+      "hypothesis_id": "R2_nitro_position",
+      "scientific_role": "Matched enantiomer control"
+    },
+    {
+      "smiles": "CCOC(=O)C[C@@H](Sc1ccc(F)cc1)c1ccccc1",
+      "scaffold": "c1ccc(CSc2ccccc2)cc1",
+      "identity": "78cface641fa5001",
+      "scaffold_group": "4a7fda1cf2340960",
+      "functional_groups": [
+        "ester",
+        "ether",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 6,
+          "CIP": "R"
+        }
+      ],
+      "MW": 304.386,
+      "LogP": 4.612300000000004,
+      "TPSA": 26.3,
+      "HBD": 0,
+      "HBA": 3,
+      "ipa_fraction": 0.01,
+      "flow": 1.0,
+      "id": "r5cff832ed4e5",
+      "premeasurement_prediction": [
+        27.441696166992188,
+        34.663578033447266,
+        42.437252044677734
+      ],
+      "premeasurement_center": 34.663578033447266,
+      "response": 9.600000381469727,
+      "signed_error": 25.06357765197754,
+      "abs_error": 25.06357765197754,
+      "selection_reason": "Challenge the high center for fluorination on the sulfur-bound aryl ring relative to the measured parent thioether.",
+      "hypothesis_id": "R2_thio_F",
+      "scientific_role": "Fluorination placement probe"
+    },
+    {
+      "smiles": "CCOC(=O)C[C@H](Sc1ccc(F)cc1)c1ccccc1",
+      "scaffold": "c1ccc(CSc2ccccc2)cc1",
+      "identity": "f5cbff7e5712c3d3",
+      "scaffold_group": "4a7fda1cf2340960",
+      "functional_groups": [
+        "ester",
+        "ether",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 6,
+          "CIP": "S"
+        }
+      ],
+      "MW": 304.386,
+      "LogP": 4.612300000000004,
+      "TPSA": 26.3,
+      "HBD": 0,
+      "HBA": 3,
+      "ipa_fraction": 0.01,
+      "flow": 1.0,
+      "id": "r8fb951953aae",
+      "premeasurement_prediction": [
+        26.492292404174805,
+        33.4294319152832,
+        40.907005310058594
+      ],
+      "premeasurement_center": 33.4294319152832,
+      "response": 19.200000762939453,
+      "signed_error": 14.22943115234375,
+      "abs_error": 14.22943115234375,
+      "selection_reason": "Complete the sulfur-bound para-fluoro pair and test whether its predicted long retention applies to both enantiomers.",
+      "hypothesis_id": "R2_thio_F",
+      "scientific_role": "Matched thioether enantiomer"
+    },
+    {
+      "smiles": "CCOC(=O)C[C@H](Sc1ccccc1)c1ccc(F)cc1",
+      "scaffold": "c1ccc(CSc2ccccc2)cc1",
+      "identity": "70689a7fc92f662f",
+      "scaffold_group": "4a7fda1cf2340960",
+      "functional_groups": [
+        "ester",
+        "ether",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 6,
+          "CIP": "S"
+        }
+      ],
+      "MW": 304.386,
+      "LogP": 4.612300000000003,
+      "TPSA": 26.3,
+      "HBD": 0,
+      "HBA": 3,
+      "ipa_fraction": 0.01,
+      "flow": 1.0,
+      "id": "r8c6aea48a4c4",
+      "premeasurement_prediction": [
+        26.87074089050293,
+        33.96064758300781,
+        41.4913215637207
+      ],
+      "premeasurement_center": 33.96064758300781,
+      "response": 7.5,
+      "signed_error": 26.460647583007812,
+      "abs_error": 26.460647583007812,
+      "selection_reason": "Move fluorine to the carbon-bound aryl ring while preserving recorded conditions, directly testing constitutional transfer.",
+      "hypothesis_id": "R2_thio_F",
+      "scientific_role": "Matched constitutional control"
+    },
+    {
+      "smiles": "CCOC(=O)C[C@@H](Sc1ccccc1)c1ccc(F)cc1",
+      "scaffold": "c1ccc(CSc2ccccc2)cc1",
+      "identity": "3713fc48cb84f949",
+      "scaffold_group": "4a7fda1cf2340960",
+      "functional_groups": [
+        "ester",
+        "ether",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 6,
+          "CIP": "R"
+        }
+      ],
+      "MW": 304.386,
+      "LogP": 4.612300000000003,
+      "TPSA": 26.3,
+      "HBD": 0,
+      "HBA": 3,
+      "ipa_fraction": 0.01,
+      "flow": 1.0,
+      "id": "rd62082bf4108",
+      "premeasurement_prediction": [
+        26.645397186279297,
+        33.42813491821289,
+        41.41836166381836
+      ],
+      "premeasurement_center": 33.42813491821289,
+      "response": 10.600000381469727,
+      "signed_error": 22.828134536743164,
+      "abs_error": 22.828134536743164,
+      "selection_reason": "Complete the carbon-bound para-fluoro pair, separating fluorination placement from stereochemistry across four matched experiments.",
+      "hypothesis_id": "R2_thio_F",
+      "scientific_role": "Stereochemical interaction control"
+    },
+    {
+      "smiles": "C[C@@H](O)c1ccc(Cl)cc1",
+      "scaffold": "c1ccccc1",
+      "identity": "8ce5c393f42de48d",
+      "scaffold_group": "7165dcf6be1f831d",
+      "functional_groups": [
+        "Al_OH",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 1,
+          "CIP": "R"
+        }
+      ],
+      "MW": 156.612,
+      "LogP": 2.3933,
+      "TPSA": 20.23,
+      "HBD": 1,
+      "HBA": 1,
+      "ipa_fraction": 0.05,
+      "flow": 1.0,
+      "id": "r78422a818a27",
+      "premeasurement_prediction": [
+        12.182486534118652,
+        16.871471405029297,
+        18.319515228271484
+      ],
+      "premeasurement_center": 16.871471405029297,
+      "response": 8.890000343322754,
+      "signed_error": 7.981471061706543,
+      "abs_error": 7.981471061706543,
+      "selection_reason": "Establish the 5% IPA endpoint for a para-chloro alcohol, extending the measured bis-CF3 condition response.",
+      "hypothesis_id": "R2_IPA_transfer",
+      "scientific_role": "Condition response anchor"
+    },
+    {
+      "smiles": "C[C@@H](O)c1ccc(Cl)cc1",
+      "scaffold": "c1ccccc1",
+      "identity": "8ce5c393f42de48d",
+      "scaffold_group": "7165dcf6be1f831d",
+      "functional_groups": [
+        "Al_OH",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 1,
+          "CIP": "R"
+        }
+      ],
+      "MW": 156.612,
+      "LogP": 2.3933,
+      "TPSA": 20.23,
+      "HBD": 1,
+      "HBA": 1,
+      "ipa_fraction": 0.02,
+      "flow": 1.0,
+      "id": "rbb8d894e9b81",
+      "premeasurement_prediction": [
+        12.961886405944824,
+        17.791053771972656,
+        19.25894546508789
+      ],
+      "premeasurement_center": 17.791053771972656,
+      "response": 15.079999923706055,
+      "signed_error": 2.7110538482666016,
+      "abs_error": 2.7110538482666016,
+      "selection_reason": "Measure the identical alcohol at 2% IPA and fixed flow, testing a nearly flat predicted condition response.",
+      "hypothesis_id": "R2_IPA_transfer",
+      "scientific_role": "Matched IPA contrast"
+    },
+    {
+      "smiles": "Nc1ncnc2c1ncn2[C@H]1CC/C1=C\\c1ccccc1",
+      "scaffold": "C(=C1CCC1n1cnc2cncnc21)c1ccccc1",
+      "identity": "15c92b1c51bb7758",
+      "scaffold_group": "50c35056f7773886",
+      "functional_groups": [
+        "NH0",
+        "NH2"
+      ],
+      "stereocenters": [
+        {
+          "atom": 10,
+          "CIP": "S"
+        }
+      ],
+      "MW": 277.33099999999996,
+      "LogP": 2.827000000000001,
+      "TPSA": 69.62,
+      "HBD": 1,
+      "HBA": 5,
+      "ipa_fraction": 0.05,
+      "flow": 0.5,
+      "id": "r4f091b192505",
+      "premeasurement_prediction": [
+        32.12712097167969,
+        37.825836181640625,
+        51.64241027832031
+      ],
+      "premeasurement_center": 37.825836181640625,
+      "response": 37.69850158691406,
+      "signed_error": 0.1273345947265625,
+      "abs_error": 0.1273345947265625,
+      "selection_reason": "Complete the aminopurine cyclobutane enantiomer comparison after its partner showed substantial historical underprediction.",
+      "hypothesis_id": null,
+      "scientific_role": "Nitrogen-rich stereo anchor"
+    },
+    {
+      "smiles": "C[C@@H](F)C(=O)c1nccn1-c1ccccc1",
+      "scaffold": "c1ccc(-n2ccnc2)cc1",
+      "identity": "ca5dcfd457b9d99c",
+      "scaffold_group": "8e0651abd9866cfd",
+      "functional_groups": [
+        "NH0",
+        "ketone",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 1,
+          "CIP": "R"
+        }
+      ],
+      "MW": 218.231,
+      "LogP": 2.4130000000000003,
+      "TPSA": 34.89,
+      "HBD": 0,
+      "HBA": 3,
+      "ipa_fraction": 0.02,
+      "flow": 1.0,
+      "id": "r9ab86cae15cb",
+      "premeasurement_prediction": [
+        14.482842445373535,
+        17.761783599853516,
+        23.682514190673828
+      ],
+      "premeasurement_center": 17.761783599853516,
+      "response": 16.899999618530273,
+      "signed_error": 0.8617839813232422,
+      "abs_error": 0.8617839813232422,
+      "selection_reason": "Measure the methyl-side-chain fluorinated imidazole ketone to resolve retention transfer across the observed alkyl and phenyl series.",
+      "hypothesis_id": "R2_imid_chain",
+      "scientific_role": "Side-chain length anchor"
+    },
+    {
+      "smiles": "CC[C@@H](F)C(=O)c1nccn1-c1ccccc1",
+      "scaffold": "c1ccc(-n2ccnc2)cc1",
+      "identity": "1369396b44f5f65f",
+      "scaffold_group": "8e0651abd9866cfd",
+      "functional_groups": [
+        "NH0",
+        "ketone",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 2,
+          "CIP": "R"
+        }
+      ],
+      "MW": 232.258,
+      "LogP": 2.8031000000000015,
+      "TPSA": 34.89,
+      "HBD": 0,
+      "HBA": 3,
+      "ipa_fraction": 0.02,
+      "flow": 1.0,
+      "id": "r335ee6ab935a",
+      "premeasurement_prediction": [
+        12.305553436279297,
+        15.247751235961914,
+        20.977697372436523
+      ],
+      "premeasurement_center": 15.247751235961914,
+      "response": 8.800000190734863,
+      "signed_error": 6.447751045227051,
+      "abs_error": 6.447751045227051,
+      "selection_reason": "Add the ethyl-side-chain analogue at identical conditions and matched CIP configuration, testing the predicted chain-length trend.",
+      "hypothesis_id": "R2_imid_chain",
+      "scientific_role": "Matched homolog contrast"
+    },
+    {
+      "smiles": "O=C(CCC[C@H](O)c1cccs1)Nc1ccccc1",
+      "scaffold": "O=C(CCCCc1cccs1)Nc1ccccc1",
+      "identity": "7260e1304f53b983",
+      "scaffold_group": "6b6c367115aecc93",
+      "functional_groups": [
+        "Al_OH",
+        "NH1",
+        "amide"
+      ],
+      "stereocenters": [
+        {
+          "atom": 1,
+          "CIP": "S"
+        }
+      ],
+      "MW": 275.37300000000005,
+      "LogP": 3.5905000000000022,
+      "TPSA": 49.33,
+      "HBD": 2,
+      "HBA": 3,
+      "ipa_fraction": 0.1,
+      "flow": 1.0,
+      "id": "r8407ada617b2",
+      "premeasurement_prediction": [
+        23.955835342407227,
+        30.39055824279785,
+        39.30548858642578
+      ],
+      "premeasurement_center": 30.39055824279785,
+      "response": 34.79999923706055,
+      "signed_error": -4.409440994262695,
+      "abs_error": 4.409440994262695,
+      "selection_reason": "Extend hydroxyamide supervision to a thienyl compound with altered donor-carbonyl spacing and substantial predicted retention.",
+      "hypothesis_id": null,
+      "scientific_role": "Donor topology expansion"
+    },
+    {
+      "smiles": "O=C(CCC[C@@H](O)C1CCCCC1)Nc1ccccc1",
+      "scaffold": "O=C(CCCCC1CCCCC1)Nc1ccccc1",
+      "identity": "caff20e8e0f97bcb",
+      "scaffold_group": "3c0a08c338acb87e",
+      "functional_groups": [
+        "Al_OH",
+        "NH1",
+        "amide"
+      ],
+      "stereocenters": [
+        {
+          "atom": 1,
+          "CIP": "R"
+        }
+      ],
+      "MW": 275.39200000000005,
+      "LogP": 3.736600000000003,
+      "TPSA": 49.33,
+      "HBD": 2,
+      "HBA": 2,
+      "ipa_fraction": 0.05,
+      "flow": 0.7,
+      "id": "r8e39376ebcb3",
+      "premeasurement_prediction": [
+        13.747279167175293,
+        16.040637969970703,
+        24.55604362487793
+      ],
+      "premeasurement_center": 16.040637969970703,
+      "response": 29.68000030517578,
+      "signed_error": -13.639362335205078,
+      "abs_error": 13.639362335205078,
+      "selection_reason": "Probe a cyclohexyl hydroxyamide with a lower center, testing the limits of transfer from long-retained aromatic hydroxyamides.",
+      "hypothesis_id": null,
+      "scientific_role": "Hydroxyamide transfer boundary"
+    },
+    {
+      "smiles": "O=C(O)[C@@H]1COc2ccccc2O1",
+      "scaffold": "c1ccc2c(c1)OCCO2",
+      "identity": "1e77255276d223ae",
+      "scaffold_group": "aa3704c2dab7db53",
+      "functional_groups": [
+        "ether",
+        "COO"
+      ],
+      "stereocenters": [
+        {
+          "atom": 3,
+          "CIP": "S"
+        }
+      ],
+      "MW": 180.159,
+      "LogP": 0.911,
+      "TPSA": 55.760000000000005,
+      "HBD": 1,
+      "HBA": 3,
+      "ipa_fraction": 0.02,
+      "flow": 1.0,
+      "id": "r62bdaf640f36",
+      "premeasurement_prediction": [
+        28.763431549072266,
+        37.177528381347656,
+        46.59888458251953
+      ],
+      "premeasurement_center": 37.177528381347656,
+      "response": 20.700000762939453,
+      "signed_error": 16.477527618408203,
+      "abs_error": 16.477527618408203,
+      "selection_reason": "Measure a high-center benzodioxane carboxylic acid alongside its methyl ester under identical recorded conditions.",
+      "hypothesis_id": "R2_dioxane",
+      "scientific_role": "Acid versus ester probe"
+    },
+    {
+      "smiles": "COC(=O)[C@@H]1COc2ccccc2O1",
+      "scaffold": "c1ccc2c(c1)OCCO2",
+      "identity": "30d6ec6df02a1315",
+      "scaffold_group": "aa3704c2dab7db53",
+      "functional_groups": [
+        "ester",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 4,
+          "CIP": "S"
+        }
+      ],
+      "MW": 194.186,
+      "LogP": 0.9993999999999998,
+      "TPSA": 44.760000000000005,
+      "HBD": 0,
+      "HBA": 4,
+      "ipa_fraction": 0.02,
+      "flow": 1.0,
+      "id": "r8d00449ee01d",
+      "premeasurement_prediction": [
+        13.944401741027832,
+        17.193561553955078,
+        22.43669319152832
+      ],
+      "premeasurement_center": 17.193561553955078,
+      "response": 19.700000762939453,
+      "signed_error": -2.506439208984375,
+      "abs_error": 2.506439208984375,
+      "selection_reason": "Anchor the methyl ester for a clean acid-ester contrast at 2% IPA and flow 1.0.",
+      "hypothesis_id": "R2_dioxane",
+      "scientific_role": "Matched functional-group control"
+    },
+    {
+      "smiles": "NC(=O)[C@@H]1COc2ccccc2O1",
+      "scaffold": "c1ccc2c(c1)OCCO2",
+      "identity": "a87773e478837d27",
+      "scaffold_group": "aa3704c2dab7db53",
+      "functional_groups": [
+        "NH2",
+        "amide",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 3,
+          "CIP": "S"
+        }
+      ],
+      "MW": 179.17499999999998,
+      "LogP": 0.3116999999999994,
+      "TPSA": 61.55000000000001,
+      "HBD": 1,
+      "HBA": 3,
+      "ipa_fraction": 0.15,
+      "flow": 1.0,
+      "id": "r374b6fff4c40",
+      "premeasurement_prediction": [
+        16.798931121826172,
+        22.096532821655273,
+        28.405391693115234
+      ],
+      "premeasurement_center": 22.096532821655273,
+      "response": 9.699999809265137,
+      "signed_error": 12.396533012390137,
+      "abs_error": 12.396533012390137,
+      "selection_reason": "Extend the benzodioxane series to a primary amide at its supplied conditions, adding donor-bearing chemical coverage.",
+      "hypothesis_id": "R2_dioxane",
+      "scientific_role": "Amide coverage extension"
+    },
+    {
+      "smiles": "COc1ccc([C@@H]2CC(=O)/C(=C(\\NS(=O)(=O)c3ccc(OC)cc3)c3ccccc3)[C@H]2c2ccc(Br)cc2)cc1",
+      "scaffold": "O=C1CC(c2ccccc2)C(c2ccccc2)C1=C(NS(=O)(=O)c1ccccc1)c1ccccc1",
+      "identity": "31b49d0e79bdaa5d",
+      "scaffold_group": "f49c0b141ea60745",
+      "functional_groups": [
+        "NH1",
+        "ether",
+        "ketone",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 8,
+          "CIP": "R"
+        },
+        {
+          "atom": 13,
+          "CIP": "R"
+        }
+      ],
+      "MW": 618.5490000000001,
+      "LogP": 6.696300000000007,
+      "TPSA": 81.7,
+      "HBD": 1,
+      "HBA": 5,
+      "ipa_fraction": 0.1,
+      "flow": 0.75,
+      "id": "rbe108a26d2eb",
+      "premeasurement_prediction": [
+        32.66797637939453,
+        43.08009338378906,
+        51.91088104248047
+      ],
+      "premeasurement_center": 43.08009338378906,
+      "response": 52.724998474121094,
+      "signed_error": -9.644905090332031,
+      "abs_error": 9.644905090332031,
+      "selection_reason": "Explore a high-center sulfonamide cyclopentenone with a matched parent, testing retention transfer into a distinct donor-carbonyl arrangement.",
+      "hypothesis_id": null,
+      "scientific_role": "Retention-tail exploration"
+    },
+    {
+      "smiles": "COc1ccc(S(=O)(=O)N/C(=C2\\C(=O)C[C@@H](c3ccccc3)[C@@H]2c2ccccc2)c2ccccc2)cc1",
+      "scaffold": "O=C1CC(c2ccccc2)C(c2ccccc2)C1=C(NS(=O)(=O)c1ccccc1)c1ccccc1",
+      "identity": "273abe1565398357",
+      "scaffold_group": "f49c0b141ea60745",
+      "functional_groups": [
+        "NH1",
+        "ether",
+        "ketone"
+      ],
+      "stereocenters": [
+        {
+          "atom": 20,
+          "CIP": "R"
+        },
+        {
+          "atom": 21,
+          "CIP": "R"
+        }
+      ],
+      "MW": 509.62700000000024,
+      "LogP": 5.925200000000006,
+      "TPSA": 72.47,
+      "HBD": 1,
+      "HBA": 4,
+      "ipa_fraction": 0.1,
+      "flow": 0.75,
+      "id": "r8e53b24bd1e9",
+      "premeasurement_prediction": [
+        26.197425842285156,
+        35.48632049560547,
+        42.00069808959961
+      ],
+      "premeasurement_center": 35.48632049560547,
+      "response": 19.649999618530273,
+      "signed_error": 15.836320877075195,
+      "abs_error": 15.836320877075195,
+      "selection_reason": "Provide the unsubstituted aryl comparison for the selected methoxy/bromo cyclopentenone at identical IPA and flow.",
+      "hypothesis_id": null,
+      "scientific_role": "Matched aromatic substitution control"
+    },
+    {
+      "smiles": "Cc1ccc(S(=O)(=O)N2C(=O)C[C@H](c3cccs3)C=C2c2ccccc2)cc1",
+      "scaffold": "O=C1CC(c2cccs2)C=C(c2ccccc2)N1S(=O)(=O)c1ccccc1",
+      "identity": "b591075548f1cd91",
+      "scaffold_group": "db0150f1e6f9b03e",
+      "functional_groups": [
+        "NH0",
+        "amide"
+      ],
+      "stereocenters": [
+        {
+          "atom": 14,
+          "CIP": "S"
+        }
+      ],
+      "MW": 409.53200000000004,
+      "LogP": 4.802420000000004,
+      "TPSA": 54.45,
+      "HBD": 0,
+      "HBA": 4,
+      "ipa_fraction": 0.05,
+      "flow": 0.6,
+      "id": "r39468946d529",
+      "premeasurement_prediction": [
+        29.74361228942871,
+        39.163665771484375,
+        45.72007369995117
+      ],
+      "premeasurement_center": 39.163665771484375,
+      "response": 45.84000015258789,
+      "signed_error": -6.676334381103516,
+      "abs_error": 6.676334381103516,
+      "selection_reason": "Test high predicted retention in a thienyl N-sulfonyl lactam, expanding beyond the measured sulfonyl pyrrolidine family.",
+      "hypothesis_id": null,
+      "scientific_role": "Sulfonyl topology expansion"
+    },
+    {
+      "smiles": "COc1cc2c(cc1OC)[C@@H](C#Cc1cccc3ncccc13)CCC2",
+      "scaffold": "C(#CC1CCCc2ccccc21)c1cccc2ncccc12",
+      "identity": "07fe93a070485bf9",
+      "scaffold_group": "76c9038f66ea07e9",
+      "functional_groups": [
+        "NH0",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 8,
+          "CIP": "R"
+        }
+      ],
+      "MW": 343.42600000000016,
+      "LogP": 4.723600000000004,
+      "TPSA": 31.35,
+      "HBD": 0,
+      "HBA": 3,
+      "ipa_fraction": 0.05,
+      "flow": 1.0,
+      "id": "r0413a73f0ad1",
+      "premeasurement_prediction": [
+        15.573687553405762,
+        21.577449798583984,
+        27.445707321166992
+      ],
+      "premeasurement_center": 21.577449798583984,
+      "response": 22.700000762939453,
+      "signed_error": -1.1225509643554688,
+      "abs_error": 1.1225509643554688,
+      "selection_reason": "Add a quinolyl alkyne with dimethoxy tetralin topology and high gradient distance, broadening nitrogen-containing aromatic supervision.",
+      "hypothesis_id": null,
+      "scientific_role": "Chemical coverage expansion"
+    },
+    {
+      "smiles": "C=CC[C@]12COC(=O)N1CC(=O)c1ccccc12",
+      "scaffold": "O=C1CN2C(=O)OCC2c2ccccc21",
+      "identity": "bbd2cc9f78a68241",
+      "scaffold_group": "8eb0f39fdad3c84a",
+      "functional_groups": [
+        "NH0",
+        "amide",
+        "ether",
+        "ketone"
+      ],
+      "stereocenters": [
+        {
+          "atom": 3,
+          "CIP": "S"
+        }
+      ],
+      "MW": 243.26199999999997,
+      "LogP": 2.1065,
+      "TPSA": 46.61,
+      "HBD": 0,
+      "HBA": 3,
+      "ipa_fraction": 0.1,
+      "flow": 0.8,
+      "id": "r0321f8f5c28a",
+      "premeasurement_prediction": [
+        20.378389358520508,
+        28.026840209960938,
+        34.76451873779297
+      ],
+      "premeasurement_center": 28.026840209960938,
+      "response": 36.79999923706055,
+      "signed_error": -8.77315902709961,
+      "abs_error": 8.77315902709961,
+      "selection_reason": "Explore a fused cyclic carbamate-ketone whose topology differs from the substitution-sensitive measured oxazolidinones.",
+      "hypothesis_id": null,
+      "scientific_role": "Fused carbonyl topology probe"
+    },
+    {
+      "smiles": "O=C1NCCN[C@@H]1c1ccc(F)cc1",
+      "scaffold": "O=C1NCCNC1c1ccccc1",
+      "identity": "342c6d8debd7c124",
+      "scaffold_group": "57115b8617fd75f7",
+      "functional_groups": [
+        "NH1",
+        "amide",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 7,
+          "CIP": "R"
+        }
+      ],
+      "MW": 194.20899999999997,
+      "LogP": 0.5861999999999997,
+      "TPSA": 41.129999999999995,
+      "HBD": 2,
+      "HBA": 2,
+      "ipa_fraction": 0.1,
+      "flow": 1.0,
+      "id": "rdee9ecac2154",
+      "premeasurement_prediction": [
+        21.100112915039062,
+        25.9016170501709,
+        35.61014938354492
+      ],
+      "premeasurement_center": 25.9016170501709,
+      "response": 47.099998474121094,
+      "signed_error": -21.198381423950195,
+      "abs_error": 21.198381423950195,
+      "selection_reason": "Add a fluorophenyl cyclic urea with two donors and high gradient distance, extending donor-carbonyl coverage beyond existing lactams.",
+      "hypothesis_id": null,
+      "scientific_role": "Cyclic urea exploration"
+    },
+    {
+      "smiles": "OC[C@H](O)c1ccco1",
+      "scaffold": "c1ccoc1",
+      "identity": "53d66557273f27e3",
+      "scaffold_group": "2ad90a72deb18e8b",
+      "functional_groups": [
+        "Al_OH"
+      ],
+      "stereocenters": [
+        {
+          "atom": 2,
+          "CIP": "S"
+        }
+      ],
+      "MW": 128.12699999999998,
+      "LogP": 0.3052999999999999,
+      "TPSA": 53.6,
+      "HBD": 2,
+      "HBA": 3,
+      "ipa_fraction": 0.04,
+      "flow": 0.9,
+      "id": "r4b2e792d7d55",
+      "premeasurement_prediction": [
+        26.93797492980957,
+        34.95859146118164,
+        43.059627532958984
+      ],
+      "premeasurement_center": 34.95859146118164,
+      "response": 21.600000381469727,
+      "signed_error": 13.358591079711914,
+      "abs_error": 13.358591079711914,
+      "selection_reason": "Anchor a high-center furyl diol and test stereochemical prediction differences in a compact oxygen-rich heteroaromatic environment.",
+      "hypothesis_id": null,
+      "scientific_role": "Polar heteroaryl stereo anchor"
+    },
+    {
+      "smiles": "OC[C@@H](O)c1ccco1",
+      "scaffold": "c1ccoc1",
+      "identity": "6fd91868d3ebe706",
+      "scaffold_group": "2ad90a72deb18e8b",
+      "functional_groups": [
+        "Al_OH"
+      ],
+      "stereocenters": [
+        {
+          "atom": 2,
+          "CIP": "R"
+        }
+      ],
+      "MW": 128.12699999999998,
+      "LogP": 0.3052999999999999,
+      "TPSA": 53.6,
+      "HBD": 2,
+      "HBA": 3,
+      "ipa_fraction": 0.04,
+      "flow": 0.9,
+      "id": "r982a8147aa4b",
+      "premeasurement_prediction": [
+        22.34316635131836,
+        28.394866943359375,
+        35.655574798583984
+      ],
+      "premeasurement_center": 28.394866943359375,
+      "response": 26.010000228881836,
+      "signed_error": 2.384866714477539,
+      "abs_error": 2.384866714477539,
+      "selection_reason": "Complete the furyl diol pair under identical conditions to distinguish shared polar retention from its predicted enantiomer gap.",
+      "hypothesis_id": null,
+      "scientific_role": "Matched diol enantiomer"
+    },
+    {
+      "smiles": "CC(C)[Si](C#C[C@H](CC(=O)NC(C)(C)c1ccccn1)c1ccccc1)(C(C)C)C(C)C",
+      "scaffold": "O=C(CCc1ccccc1)NCc1ccccn1",
+      "identity": "be4448378e4b8519",
+      "scaffold_group": "8f23f8652e572917",
+      "functional_groups": [
+        "NH0",
+        "NH1",
+        "amide"
+      ],
+      "stereocenters": [
+        {
+          "atom": 6,
+          "CIP": "R"
+        }
+      ],
+      "MW": 448.72700000000015,
+      "LogP": 6.828200000000007,
+      "TPSA": 41.99,
+      "HBD": 1,
+      "HBA": 2,
+      "ipa_fraction": 0.03,
+      "flow": 0.7,
+      "id": "r96d09337014c",
+      "premeasurement_prediction": [
+        8.242297172546387,
+        7.563390731811523,
+        24.328594207763672
+      ],
+      "premeasurement_center": 7.563390731811523,
+      "response": 7.349999904632568,
+      "signed_error": 0.21339082717895508,
+      "abs_error": 0.21339082717895508,
+      "selection_reason": "Measure the opposite phenyl silyl-alkyne amide enantiomer after the prior transfer probe was overpredicted.",
+      "hypothesis_id": null,
+      "scientific_role": "Post-retraining silicon control"
+    },
+    {
+      "smiles": "Cc1ccc(S(=O)(=O)N2CC[C@@H](c3ccc(Br)cc3)C2)cc1",
+      "scaffold": "O=S(=O)(c1ccccc1)N1CCC(c2ccccc2)C1",
+      "identity": "4a647948b02df6ad",
+      "scaffold_group": "e82055973bd7359a",
+      "functional_groups": [
+        "NH0",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 13,
+          "CIP": "S"
+        }
+      ],
+      "MW": 380.30699999999996,
+      "LogP": 3.9357200000000034,
+      "TPSA": 37.38,
+      "HBD": 0,
+      "HBA": 2,
+      "ipa_fraction": 0.03,
+      "flow": 1.0,
+      "id": "r8fc48dd07d48",
+      "premeasurement_prediction": [
+        35.238285064697266,
+        46.75344467163086,
+        53.95538330078125
+      ],
+      "premeasurement_center": 46.75344467163086,
+      "response": 40.5,
+      "signed_error": 6.253444671630859,
+      "abs_error": 6.253444671630859,
+      "selection_reason": "Complete the para-bromo sulfonyl pyrrolidine pair, challenging its predicted separation against small measured fluoro and chloro gaps.",
+      "hypothesis_id": "R2_sulfonyl_stereo",
+      "scientific_role": "Sulfonyl stereo transfer"
+    },
+    {
+      "smiles": "Cc1ccc(S(=O)(=O)N2CC[C@@H](c3ccccc3Cl)C2)cc1",
+      "scaffold": "O=S(=O)(c1ccccc1)N1CCC(c2ccccc2)C1",
+      "identity": "c026f6479a67239a",
+      "scaffold_group": "e82055973bd7359a",
+      "functional_groups": [
+        "NH0",
+        "halogen"
+      ],
+      "stereocenters": [
+        {
+          "atom": 13,
+          "CIP": "S"
+        }
+      ],
+      "MW": 335.856,
+      "LogP": 3.826620000000003,
+      "TPSA": 37.38,
+      "HBD": 0,
+      "HBA": 2,
+      "ipa_fraction": 0.03,
+      "flow": 1.0,
+      "id": "rc95642cc95aa",
+      "premeasurement_prediction": [
+        31.82094383239746,
+        42.44881057739258,
+        48.65333557128906
+      ],
+      "premeasurement_center": 42.44881057739258,
+      "response": 38.900001525878906,
+      "signed_error": 3.548809051513672,
+      "abs_error": 3.548809051513672,
+      "selection_reason": "Complete the ortho-chloro sulfonyl pyrrolidine pair, resolving positional effects using the already measured para-chloro pair.",
+      "hypothesis_id": "R2_sulfonyl_stereo",
+      "scientific_role": "Positional stereo control"
+    },
+    {
+      "smiles": "CCCC(=O)O/C(=C1/C(c2ccccc2)=C[C@@H](C)[C@@H]1c1ccc(C)cc1)c1ccccc1",
+      "scaffold": "C1=C(c2ccccc2)C(=Cc2ccccc2)C(c2ccccc2)C1",
+      "identity": "b35416d8e4c8696f",
+      "scaffold_group": "4cf70f2fce33445e",
+      "functional_groups": [
+        "ester",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 14,
+          "CIP": "R"
+        },
+        {
+          "atom": 15,
+          "CIP": "R"
+        }
+      ],
+      "MW": 422.56800000000015,
+      "LogP": 7.566520000000008,
+      "TPSA": 26.3,
+      "HBD": 0,
+      "HBA": 2,
+      "ipa_fraction": 0.01,
+      "flow": 0.7,
+      "id": "r44eda6070306",
+      "premeasurement_prediction": [
+        0.0,
+        0.47752344608306885,
+        12.373603820800781
+      ],
+      "premeasurement_center": 0.47752344608306885,
+      "response": 4.900000095367432,
+      "signed_error": -4.422476649284363,
+      "abs_error": 4.422476649284363,
+      "selection_reason": "Directly test a near-zero center in a non-silicon enol ester with a related measured analogue.",
+      "hypothesis_id": "R2_enol_low",
+      "scientific_role": "Low-center extrapolation probe"
+    },
+    {
+      "smiles": "CCCC(=O)O/C(=C1/C(c2ccccc2)=C[C@@H](C)[C@H]1c1ccc(C)cc1)c1ccccc1",
+      "scaffold": "C1=C(c2ccccc2)C(=Cc2ccccc2)C(c2ccccc2)C1",
+      "identity": "87f04b3782ea7fa2",
+      "scaffold_group": "4cf70f2fce33445e",
+      "functional_groups": [
+        "ester",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 14,
+          "CIP": "S"
+        },
+        {
+          "atom": 15,
+          "CIP": "R"
+        }
+      ],
+      "MW": 422.56800000000015,
+      "LogP": 7.566520000000008,
+      "TPSA": 26.3,
+      "HBD": 0,
+      "HBA": 2,
+      "ipa_fraction": 0.01,
+      "flow": 0.7,
+      "id": "r2de17215ebb5",
+      "premeasurement_prediction": [
+        0.0,
+        1.5530322790145874,
+        12.503634452819824
+      ],
+      "premeasurement_center": 1.5530322790145874,
+      "response": 4.199999809265137,
+      "signed_error": -2.6469675302505493,
+      "abs_error": 2.6469675302505493,
+      "selection_reason": "Measure the matched diastereomer to determine whether both low centers reflect shared retention or configuration-dependent behavior.",
+      "hypothesis_id": "R2_enol_low",
+      "scientific_role": "Matched diastereomer control"
+    },
+    {
+      "smiles": "O=C1OC(c2ccccc2)=C[C@H](c2ccccc2)[C@@H]1Cc1ccccc1",
+      "scaffold": "O=C1OC(c2ccccc2)=CC(c2ccccc2)C1Cc1ccccc1",
+      "identity": "4b1d103cec35d234",
+      "scaffold_group": "a6925191d2db2d27",
+      "functional_groups": [
+        "ester",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 5,
+          "CIP": "S"
+        },
+        {
+          "atom": 6,
+          "CIP": "S"
+        }
+      ],
+      "MW": 340.4220000000001,
+      "LogP": 5.227000000000005,
+      "TPSA": 26.3,
+      "HBD": 0,
+      "HBA": 2,
+      "ipa_fraction": 0.002,
+      "flow": 0.5,
+      "id": "rda8dcafe597c",
+      "premeasurement_prediction": [
+        15.92248821258545,
+        23.145753860473633,
+        24.37151336669922
+      ],
+      "premeasurement_center": 23.145753860473633,
+      "response": 37.70000076293945,
+      "signed_error": -14.55424690246582,
+      "abs_error": 14.55424690246582,
+      "selection_reason": "Probe a benzyl-substituted diaryl lactone with high gradient distance, testing transfer beyond the overpredicted fused oxygenated lactone.",
+      "hypothesis_id": null,
+      "scientific_role": "Lactone topology boundary"
+    },
+    {
+      "smiles": "CCOC(=O)[C@H](CC=O)Cc1ccco1",
+      "scaffold": "c1ccoc1",
+      "identity": "a1d81bfe6e8a5613",
+      "scaffold_group": "2ad90a72deb18e8b",
+      "functional_groups": [
+        "ester",
+        "ether"
+      ],
+      "stereocenters": [
+        {
+          "atom": 5,
+          "CIP": "S"
+        }
+      ],
+      "MW": 210.22899999999998,
+      "LogP": 1.5904000000000003,
+      "TPSA": 56.510000000000005,
+      "HBD": 0,
+      "HBA": 4,
+      "ipa_fraction": 0.02,
+      "flow": 1.0,
+      "id": "r71363f713f45",
+      "premeasurement_prediction": [
+        16.761857986450195,
+        19.90592384338379,
+        26.906099319458008
+      ],
+      "premeasurement_center": 19.90592384338379,
+      "response": 14.600000381469727,
+      "signed_error": 5.3059234619140625,
+      "abs_error": 5.3059234619140625,
+      "selection_reason": "Replace the phenyl neighborhood with furan in an aldehyde-bearing ester, extending measured retention supervision into a distinct heteroaromatic environment.",
+      "hypothesis_id": null,
+      "scientific_role": "Heteroaryl ester expansion"
+    }
+  ]
+}
