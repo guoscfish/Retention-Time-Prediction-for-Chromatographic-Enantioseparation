@@ -1,0 +1,7 @@
+{
+  "scientific_dispatch_intents": 8,
+  "validated_response_receipts": 6,
+  "attempts_without_usage_receipts": 2,
+  "billing_for_attempts_without_receipts": "unknown; may include duplicate charges",
+  "note": "Write-ahead intents can include a crash before network dispatch. Receipt usage excludes unreturned attempts."
+}

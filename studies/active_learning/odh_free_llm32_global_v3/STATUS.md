@@ -1,6 +1,6 @@
-# IN_PROGRESS
+# COMPLETE_PHASE1_L525
 
-Verified completed rounds: 5/6; L493.
+Verified completed rounds: 6/6; L525.
 
 Registered: token4research / gpt-6-astra / high; six batches of32, stop at L525.
 This is the last recorded checkpoint, not a claim that a process is still alive.

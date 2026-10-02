@@ -1,0 +1,241 @@
+{
+  "status": "COMPLETE_PHASE1_L525",
+  "study": "odh_free_llm32_global_v3",
+  "validation": [
+    {
+      "budget": 333,
+      "rmse": 8.04399728543959,
+      "mae": 5.287642431403944,
+      "r2": 0.1636396455548056,
+      "nrmse": 0.905933029109455,
+      "fixed_denominator": 8.879240547556758
+    },
+    {
+      "budget": 365,
+      "rmse": 7.850579890408612,
+      "mae": 4.999286508753232,
+      "r2": 0.2033765577332054,
+      "nrmse": 0.8841499279540077,
+      "fixed_denominator": 8.879240547556758
+    },
+    {
+      "budget": 397,
+      "rmse": 7.982775415810334,
+      "mae": 5.203597011836434,
+      "r2": 0.17632206968964248,
+      "nrmse": 0.8990380847387788,
+      "fixed_denominator": 8.879240547556758
+    },
+    {
+      "budget": 429,
+      "rmse": 7.836030399359823,
+      "mae": 5.05294340197374,
+      "r2": 0.20632658830185346,
+      "nrmse": 0.8825113316156313,
+      "fixed_denominator": 8.879240547556758
+    },
+    {
+      "budget": 461,
+      "rmse": 7.800388544113048,
+      "mae": 4.844429240053,
+      "r2": 0.21353014878865495,
+      "nrmse": 0.8784972658792793,
+      "fixed_denominator": 8.879240547556758
+    },
+    {
+      "budget": 493,
+      "rmse": 8.112537190074525,
+      "mae": 5.343763687350006,
+      "r2": 0.14932629477450332,
+      "nrmse": 0.9136521470078651,
+      "fixed_denominator": 8.879240547556758
+    },
+    {
+      "budget": 525,
+      "rmse": 7.847488073093899,
+      "mae": 5.107404537046486,
+      "r2": 0.20400390735027196,
+      "nrmse": 0.8838017205484133,
+      "fixed_denominator": 8.879240547556758
+    }
+  ],
+  "label_aulc": {
+    "interval": [
+      333,
+      525
+    ],
+    "raw_nrmse_area": 171.28691622478388,
+    "mean_nrmse": 0.892119355337416
+  },
+  "test_labels": 0,
+  "diagnostics": [
+    {
+      "mode": "global_all_candidates",
+      "input_coverage": 1.0,
+      "visible_candidate_count": 4114,
+      "screening_calls": 0,
+      "llm_total_calls": 1,
+      "selected_coverage": {
+        "min": 0.08027883966719136,
+        "q10": 0.13730604902181245,
+        "q25": 0.5977063188666517,
+        "median": 0.9739149988756466,
+        "q75": 0.991005172026085,
+        "q90": 0.9983584438947605,
+        "max": 1.0
+      },
+      "selected_q_width": {
+        "min": 8.47177791595459,
+        "q10": 13.896606159210204,
+        "q25": 15.936006546020508,
+        "median": 19.834821701049805,
+        "q75": 25.875733375549316,
+        "q90": 32.12418785095216,
+        "max": 108.1328387260437
+      },
+      "scaffold_diversity": 24,
+      "stereo_contrast_pairs": 1,
+      "exact_identity_condition_contrast_pairs": 1
+    },
+    {
+      "mode": "global_all_candidates",
+      "input_coverage": 1.0,
+      "visible_candidate_count": 4082,
+      "screening_calls": 0,
+      "llm_total_calls": 1,
+      "selected_coverage": {
+        "min": 0.2653474252304925,
+        "q10": 0.41436923768832923,
+        "q25": 0.6918147065437373,
+        "median": 0.9201709017315043,
+        "q75": 0.9826287384753767,
+        "q90": 0.9974814481673038,
+        "max": 1.0
+      },
+      "selected_q_width": {
+        "min": 2.288422107696533,
+        "q10": 3.6771217346191407,
+        "q25": 4.669397354125977,
+        "median": 6.132890224456787,
+        "q75": 7.137837886810303,
+        "q90": 7.73791732788086,
+        "max": 9.312320709228516
+      },
+      "scaffold_diversity": 21,
+      "stereo_contrast_pairs": 7,
+      "exact_identity_condition_contrast_pairs": 1
+    },
+    {
+      "mode": "global_all_candidates",
+      "input_coverage": 1.0,
+      "visible_candidate_count": 4050,
+      "screening_calls": 0,
+      "llm_total_calls": 1,
+      "selected_coverage": {
+        "min": 0.09467056442545536,
+        "q10": 0.5075556554980887,
+        "q25": 0.7845738700247358,
+        "median": 0.9753766584214076,
+        "q75": 0.991061389700922,
+        "q90": 0.9966044524398471,
+        "max": 1.0
+      },
+      "selected_q_width": {
+        "min": 6.137028694152832,
+        "q10": 8.510276699066162,
+        "q25": 10.746050119400024,
+        "median": 14.400421142578125,
+        "q75": 16.003920316696167,
+        "q90": 17.736148071289065,
+        "max": 19.515289306640625
+      },
+      "scaffold_diversity": 18,
+      "stereo_contrast_pairs": 5,
+      "exact_identity_condition_contrast_pairs": 1
+    },
+    {
+      "mode": "global_all_candidates",
+      "input_coverage": 1.0,
+      "visible_candidate_count": 4018,
+      "screening_calls": 0,
+      "llm_total_calls": 1,
+      "selected_coverage": {
+        "min": 0.1394198335956825,
+        "q10": 0.2927816505509332,
+        "q25": 0.5012367888464133,
+        "median": 0.863278614796492,
+        "q75": 0.9607038452889589,
+        "q90": 0.9918821677535417,
+        "max": 0.9997751293006522
+      },
+      "selected_q_width": {
+        "min": 6.916691780090332,
+        "q10": 8.396580028533936,
+        "q25": 11.187475204467773,
+        "median": 16.69511127471924,
+        "q75": 22.048484325408936,
+        "q90": 25.586351394653324,
+        "max": 31.29958724975586
+      },
+      "scaffold_diversity": 20,
+      "stereo_contrast_pairs": 2,
+      "exact_identity_condition_contrast_pairs": 0
+    },
+    {
+      "mode": "global_all_candidates",
+      "input_coverage": 1.0,
+      "visible_candidate_count": 3986,
+      "screening_calls": 0,
+      "llm_total_calls": 1,
+      "selected_coverage": {
+        "min": 0.10434000449741399,
+        "q10": 0.15606026534742523,
+        "q25": 0.48493366314369235,
+        "median": 0.8116707892961548,
+        "q75": 0.9536204182595008,
+        "q90": 0.9848662019338881,
+        "max": 1.0
+      },
+      "selected_q_width": {
+        "min": 0.15477943420410156,
+        "q10": 1.6832814693450928,
+        "q25": 2.1938304901123047,
+        "median": 3.332914352416992,
+        "q75": 3.8387694358825684,
+        "q90": 4.621146774291993,
+        "max": 6.770038604736328
+      },
+      "scaffold_diversity": 17,
+      "stereo_contrast_pairs": 2,
+      "exact_identity_condition_contrast_pairs": 0
+    },
+    {
+      "mode": "global_all_candidates",
+      "input_coverage": 1.0,
+      "visible_candidate_count": 3954,
+      "screening_calls": 0,
+      "llm_total_calls": 1,
+      "selected_coverage": {
+        "min": 0.11153586687654599,
+        "q10": 0.2100742073307848,
+        "q25": 0.7471891162581517,
+        "median": 0.9133123454013942,
+        "q75": 0.96402068810434,
+        "q90": 0.9860580166404318,
+        "max": 0.9937036204182595
+      },
+      "selected_q_width": {
+        "min": 2.841614246368408,
+        "q10": 8.868557453155518,
+        "q25": 9.945258617401123,
+        "median": 11.72294807434082,
+        "q75": 13.616892337799072,
+        "q90": 14.881476211547852,
+        "max": 17.292804718017578
+      },
+      "scaffold_diversity": 14,
+      "stereo_contrast_pairs": 4,
+      "exact_identity_condition_contrast_pairs": 0
+    }
+  ]
+}
