@@ -1,0 +1,28 @@
+{
+  "mode": "global_all_candidates",
+  "input_coverage": 1.0,
+  "visible_candidate_count": 3954,
+  "screening_calls": 0,
+  "llm_total_calls": 1,
+  "selected_coverage": {
+    "min": 0.11153586687654599,
+    "q10": 0.2100742073307848,
+    "q25": 0.7471891162581517,
+    "median": 0.9133123454013942,
+    "q75": 0.96402068810434,
+    "q90": 0.9860580166404318,
+    "max": 0.9937036204182595
+  },
+  "selected_q_width": {
+    "min": 2.841614246368408,
+    "q10": 8.868557453155518,
+    "q25": 9.945258617401123,
+    "median": 11.72294807434082,
+    "q75": 13.616892337799072,
+    "q90": 14.881476211547852,
+    "max": 17.292804718017578
+  },
+  "scaffold_diversity": 14,
+  "stereo_contrast_pairs": 4,
+  "exact_identity_condition_contrast_pairs": 0
+}
