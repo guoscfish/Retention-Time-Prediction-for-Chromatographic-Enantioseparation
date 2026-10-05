@@ -2,11 +2,11 @@
 
 - Original QGeoGNN model and paper code: [`code/`](code/); original datasets: [`dataset/`](dataset/).
 - Reproduction: [`src/reproduction/`](src/reproduction/) and [baseline audit](docs/research/ODH_BASELINE_REPRODUCTION.md).
-- Active learning framework: [`src/hplc_al/`](src/hplc_al/).
+- Active learning framework: [`src/hplc_al/`](src/hplc_al/); full-pool global LLM implementation: [`src/hplc_global/`](src/hplc_global/).
 - Recommended numerical comparator: [raw-gradient LCMD confirmation v2](studies/active_learning/odh_lcmd_confirmation_v2/).
-- Current LLM protocol: [FullPool-LLM32 v2](studies/active_learning/odh_free_llm32_fullpool_v2/README.md), direct Responses HTTP; no scientific run yet.
-- Frozen Free-LLM32 v1: [results and provenance](studies/active_learning/odh_free_llm32_scientist_v1/README.md).
-- [Canonical study index](studies/active_learning/README.md) · [cleanup audit](docs/repository/CLEANUP_AUDIT.md) · [cleanup report](docs/repository/CLEANUP_REPORT.md) · [legacy history](docs/archive/LLM_HYBRID_LEGACY_HISTORY.md).
+- Current LLM results: [Global-LLM32 v3](studies/active_learning/odh_free_llm32_global_v3/STATUS.md), all six rounds complete through L525; full-pool Responses requests, validation only.
+- Latest comparison figures and report: [2026-10-05 results overview](artifacts/analysis/odh_results_20261005/REPORT.md).
+- [Canonical study index](studies/active_learning/README.md) · [cleanup audit](docs/repository/CLEANUP_AUDIT.md) · [latest cleanup](docs/repository/CLEANUP_20261005.md) · [historical cleanup report](docs/repository/CLEANUP_REPORT.md) · [legacy history](docs/archive/LLM_HYBRID_LEGACY_HISTORY.md).
 
 The paper README and original usage notes follow. Research development evidence above
 must not be confused with the original paper's full-data benchmark.

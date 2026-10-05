@@ -9,37 +9,26 @@ TAG = "archive/pre-cleanup-free-llm32-2026-09-29"
 V1 = ROOT / "studies/active_learning/odh_free_llm32_scientist_v1"
 
 
-def test_relocated_success_and_legacy_bytes_unchanged():
-    for path in [
-        V1 / "provenance/relocation_manifest.json",
-        ROOT / "studies/archive/llm_hybrid/relocation_manifest.json",
-    ]:
-        mapping = read_json(path)
-        for old, item in mapping.items():
-            destination = ROOT / item["path"]
-            if item["tracked"]:
-                original = subprocess.check_output(
-                    ["git", "show", f"{TAG}:{old}"], cwd=ROOT
-                )
-                assert (
-                    hashlib.sha256(original).hexdigest()
-                    == item["sha256"]
-                    == sha(destination)
-                )
-            elif destination.exists():
-                assert sha(destination) == item["sha256"]
+def test_retained_v3_dependencies_match_original_hashes():
+    mapping = read_json(V1 / "provenance/relocation_manifest.json")
+    inventory = read_json(ROOT / "docs/repository/cleanup_20261005.json")
+    retained = set(inventory["retained_frozen_v3_dependency_paths"])
+    for old, item in mapping.items():
+        if item["path"] not in retained:
+            continue
+        destination = ROOT / item["path"]
+        if item["tracked"]:
+            original = subprocess.check_output(["git", "show", f"{TAG}:{old}"], cwd=ROOT)
+            assert hashlib.sha256(original).hexdigest() == item["sha256"] == sha(destination)
+        elif destination.exists():
+            assert sha(destination) == item["sha256"]
 
 
-def test_frozen_v1_results():
-    metrics = read_json(V1 / "results/validation_metrics.json")
-    rows = [r for r in metrics if r["method"] == "free_llm32_scientist"]
-    assert [r["budget"] for r in rows] == [333, 365, 397]
-    assert [round(r["rmse"], 6) for r in rows] == [8.043997, 8.052217, 8.022899]
-    aulc = read_json(V1 / "results/partial_aulc.json")
-    assert [round(r["mean_nrmse"], 6) for r in aulc] == [0.905802, 0.906640, 0.883564]
-    audit = read_json(V1 / "provenance/successful_execution/final_audit.json")
-    assert audit["actual_llm_calls"] == 10 and audit["test_truth_access_count"] == 0
-    assert not (V1 / "EXECUTION_STATUS.md").exists()
+def test_retired_experiments_are_absent():
+    assert not (ROOT / "studies/archive/llm_hybrid").exists()
+    assert not (V1 / "provenance/successful_execution/final_audit.json").exists()
+    assert not (V1 / "results/partial_aulc.json").exists()
+    assert not (ROOT / "studies/active_learning/odh_free_llm32_fullpool_v2/runtime/seed_1525/free_llm32_fullpool/round_0/llm").exists()
 
 
 def test_no_legacy_scientific_runtime():

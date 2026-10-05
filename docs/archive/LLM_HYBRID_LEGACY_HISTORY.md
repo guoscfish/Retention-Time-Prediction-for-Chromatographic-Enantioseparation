@@ -1,5 +1,7 @@
 # LLM hybrid legacy history
 
+Current checkout update (2026-10-05): these incomplete experiments were deleted at the user's request. This document describes historical evidence; the former archive paths below no longer exist. Use the recorded Git tags to inspect history.
+
 All versions originate in commit `9155889` and are protected by pushed annotated tags
 `archive/pre-cleanup-ivr-hybrid-2026-09-29` and
 `archive/pre-cleanup-free-llm32-2026-09-29`. The former contains the original paths;

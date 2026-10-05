@@ -1,0 +1,14 @@
+{
+  "tests": "248 passed in 21.75s",
+  "test_log_sha256": "1152a98ec74741ae7e24aee7432251daab5870ac4826ec007e5ef14c021856b6",
+  "v3_verification": "PASS: all six rounds, Git seals, frozen implementation, protocol and baseline packet after cleanup",
+  "report_rebuilt": true,
+  "new_scientific_calls": 0,
+  "new_training": 0,
+  "designated_credential_scan": "PASS",
+  "largest_new_blob_bytes": 3665160,
+  "retired_files_deleted": 301,
+  "retained_baseline_dependency_files": 8,
+  "publication_target": "origin/main",
+  "history_rewrite": false
+}
