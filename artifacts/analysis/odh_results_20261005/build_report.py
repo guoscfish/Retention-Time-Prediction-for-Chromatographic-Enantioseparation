@@ -125,7 +125,7 @@ common429=[{'method':label,'mean_nrmse':aulc(rows,429)} for label,rows in curves
 write_json('comparison_data.json',{'global_rounds':rounds,'matched_333_397':common,'matched_333_429':common429,'traditional_seed525':trad_summary,'raw_unit_maxdet_seed525':transfer_summary,'paired_confirmation':paired,'six_round_artifact_verification':'PASS','matched_training_and_validation_rows':'PASS','llm_test_labels':0,'label_audit_events':len(audit_rows)})
 # Detail export is generated from the same read-only sources used by the figures.
 with (OUT/'matched_validation_metrics.csv').open('w') as f:
-    w=csv.DictWriter(f,fieldnames=['method','seed','budget','rmse','mae','r2','nrmse']);w.writeheader()
+    w=csv.DictWriter(f,lineterminator='\n',fieldnames=['method','seed','budget','rmse','mae','r2','nrmse']);w.writeheader()
     for label,rows in curves.items():
         for r in rows:w.writerow({'method':label,'seed':1525,**{k:r[k] for k in ['budget','rmse','mae','r2','nrmse']}})
 
